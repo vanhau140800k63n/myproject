@@ -28,7 +28,9 @@
 
 <body>
     @include('partial.header')
-    @yield('content')
+    <div class="box">
+        @yield('content')
+    </div>
     @include('partial.footer')
 </body>
 

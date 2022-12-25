@@ -16,6 +16,10 @@
     font-weight: 800;
 }
 
+.header-box .search {
+    width: 500px;
+}
+
 .search-box {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     display: inline-block;
@@ -104,4 +108,47 @@
     color: #fff;
     background: #000;
     border-radius: 20px;
+}
+
+.header-user .login:hover {
+    background: rgb(44, 43, 43);
+}
+
+.header-box .menu {
+    display: flex;
+}
+
+.menu-category {
+    padding: 0 35px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-category.active {
+    color: #fff;
+    background: #000;
+}
+
+.menu-items {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+    background: #000;
+}
+
+.menu-category.active .menu-items {
+    display: flex;
+}
+
+.menu-item {
+    padding: 10px 25px;
+}
+
+.menu-item:hover {
+    background: rgb(171, 171, 171);
 }

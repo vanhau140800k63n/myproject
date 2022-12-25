@@ -14,6 +14,12 @@ a {
     text-decoration: none;
 }
 
+.box {
+    margin-top: 100px;
+    margin: 100px auto 0 auto;
+	padding: 20px;
+}
+
 @media only screen and (min-width: 1400px) {
     .box {
         max-width: 1320px;
