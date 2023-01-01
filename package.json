@@ -32,5 +32,9 @@
   "bugs": {
     "url": "https://github.com/vanhau140800k63n/myproject/issues"
   },
-  "homepage": "https://github.com/vanhau140800k63n/myproject#readme"
+  "homepage": "https://github.com/vanhau140800k63n/myproject#readme",
+  "dependencies": {
+    "@codemirror/lang-javascript": "^6.1.2",
+    "codemirror": "^6.0.1"
+  }
 }

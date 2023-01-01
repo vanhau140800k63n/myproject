@@ -2,5 +2,7 @@
 @section('meta')
 @endsection
 @section('content')
-Chúng ta không thuộc về nhau
+
+<div id=editor></div>
+<script type=module src="{{ asset('js/code-mirror.js') }}"></script>
 @endsection
