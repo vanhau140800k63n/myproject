@@ -7,16 +7,16 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
         <a class="sidebar-brand brand-logo" href="{{ route('admin.dashboard') }}"><img
-                src="{{ asset('css/assets/images/logo.png') }}" alt="logo" style="margin: 0;" /></a>
+                src="{{ asset('lib/assets/images/logo.png') }}" alt="logo" style="margin: 0;" /></a>
         <a class="sidebar-brand brand-logo-mini" href="{{ route('admin.dashboard') }}"><img
-                src="{{ asset('css/assets/images/logo-mini.png') }}" alt="logo" /></a>
+                src="{{ asset('lib/assets/images/logo-mini.png') }}" alt="logo" /></a>
     </div>
     <ul class="nav">
         <li class="nav-item profile">
             <div class="profile-desc">
                 <div class="profile-pic">
                     <div class="count-indicator">
-                        <img class="img-xs rounded-circle " src="{{ asset('css/assets/images/faces/face.png') }}"
+                        <img class="img-xs rounded-circle " src="{{ asset('lib/assets/images/faces/face.png') }}"
                             alt="">
                         <span class="count bg-success"></span>
                     </div>

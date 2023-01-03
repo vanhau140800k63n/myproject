@@ -1,7 +1,7 @@
 <nav class="navbar p-0 fixed-top d-flex flex-row">
     <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
         <a class="navbar-brand brand-logo-mini" href="{{ route('admin.dashboard') }}"><img
-                src="{{ asset('css/assets/images/logo-mini.png') }}" alt="logo" /></a>
+                src="{{ asset('lib/assets/images/logo-mini.png') }}" alt="logo" /></a>
     </div>
     <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -15,9 +15,6 @@
             </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
-            <li class="nav-item dropdown d-none d-lg-block">
-                <a class="nav-link btn btn-success create-new-button" href="" target="_blank">Xem website</a>
-            </li>
             <li class="nav-item dropdown border-left">
                 <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
                     data-bs-toggle="dropdown">
@@ -46,7 +43,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-bs-toggle="dropdown">
                     <div class="navbar-profile">
-                        <img class="img-xs rounded-circle" src="{{ asset('css/assets/images/faces/face.png') }}"
+                        <img class="img-xs rounded-circle" src="{{ asset('lib/assets/images/faces/face.png') }}"
                             alt="">
                         <p class="mb-0 d-none d-sm-block navbar-profile-name">aaa</p>
                         <i class="mdi mdi-menu-down d-none d-sm-block"></i>
@@ -63,7 +60,7 @@
                             </div>
                         </div>
                         <div class="preview-item-content">
-                            <p class="preview-subject mb-1">Thiết lập</p>
+                            <p class="preview-subject mb-1">Thông tin</p>
                         </div>
                     </a>
                     <div class="dropdown-divider"></div>
@@ -78,7 +75,7 @@
                         </div>
                     </a>
                     <div class="dropdown-divider"></div>
-                    <p class="p-3 mb-0 text-center">Nâng cao</p>
+                    <p class="p-3 mb-0 text-center">@devsne</p>
                 </div>
             </li>
         </ul>
