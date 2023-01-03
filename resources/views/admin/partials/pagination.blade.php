@@ -1,5 +1,4 @@
 @if ($paginator->hasPages())
-<!-- Pagination -->
 <div class="pull-right pagination" style="float: right">
     <ul class="pagination">
         @if (!$paginator->onFirstPage())
@@ -33,24 +32,4 @@
         @endif
     </ul>
 </div>
-<!-- Pagination -->
 @endif
-
-<!-- <div class="template-demo">
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-outline-secondary">1</button>
-        <button type="button" class="btn btn-outline-secondary">2</button>
-        <button type="button" class="btn btn-outline-secondary">3</button>
-    </div>
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-outline-secondary">
-            <i class="mdi mdi-heart-outline"></i>
-        </button>
-        <button type="button" class="btn btn-outline-secondary">
-            <i class="mdi mdi-calendar"></i>
-        </button>
-        <button type="button" class="btn btn-outline-secondary">
-            <i class="mdi mdi-clock"></i>
-        </button>
-    </div>
-</div> -->
