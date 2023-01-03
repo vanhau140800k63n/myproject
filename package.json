@@ -35,6 +35,7 @@
   "homepage": "https://github.com/vanhau140800k63n/myproject#readme",
   "dependencies": {
     "@codemirror/lang-javascript": "^6.1.2",
+    "@codemirror/theme-one-dark": "^6.1.0",
     "codemirror": "^6.0.1"
   }
 }
