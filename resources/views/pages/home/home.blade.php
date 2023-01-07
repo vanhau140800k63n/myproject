@@ -15,6 +15,10 @@
     <div id=editor>
     </div>
     <br>
+    <?php
+       $a = 2;
+    ?>
+    {{ $a == 1 ? 2 : 3 }}
     <div id=editor1></div>
     <button id="btn"> akjs </button>
     <script src="{{ asset('js/code-mirror.js') }}"></script>

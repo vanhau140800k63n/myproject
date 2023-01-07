@@ -12,6 +12,10 @@
             padding-right: 10px;
             transition: 0.3s;
         }
+        
+        .tox .tox-statusbar {
+            display: none !important;
+        }
     </style>
 @endsection
 @section('content')

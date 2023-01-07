@@ -10,7 +10,7 @@
         <ul class="navbar-nav w-100">
             <li class="nav-item w-100">
                 <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                    <input type="text" class="form-control" style="color: #fff" placeholder="Tìm kiếm phim">
+                    <input type="text" class="form-control" style="color: #fff" placeholder="Tìm kiếm từ khóa">
                 </form>
             </li>
         </ul>
