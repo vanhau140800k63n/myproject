@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\RegisterAccount;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 
 class AuthController extends Controller
 {
@@ -29,7 +31,7 @@ class AuthController extends Controller
         if (Auth::check()) {
             return redirect()->route('admin.dashboard');
         } else {
-            return view('admin.pages.user_pages.register');
+            return view('admin.pages.register');
         }
     }
 
@@ -61,35 +63,25 @@ class AuthController extends Controller
         $this->validate(
             $req,
             [
-                'name' => 'required|max:100',
                 'email' => 'required|email|unique:users,email',
-                'password' => 'required|min:6|max:30',
-                'phone' => 'required|max:15|regex:/[0]\d{9,11}$/'
             ],
             [
-                'name.required' => 'Vui lòng nhập tên',
-                'phone.required' => 'Vui lòng nhập số điện thoại',
-                'phone.regex' => 'Số điện thoại không hợp lệ',
                 'email.required' => 'Vui lòng nhập email',
                 'email.email' => 'Email không hợp lệ',
                 'email.unique' => 'Email này đã tồn tại',
-                'password.required' => 'Vui lòng nhập mật khẩu',
-                'password.min' => 'Mật khẩu quá ngắn (ít nhất 6 ký tự)',
             ]
         );
 
         $user = new User();
-        $user->full_name = $req->name;
         $user->email = $req->email;
-        $user->phone = $req->phone;
-        $user->password = Hash::make($req->password);
-        $user->password_show = $req->password;
-        $user->current_movies = '1,2,3,4,5,6';
-        $user->view_movies = '.1-0+0 .2-0+0 .3-0+0 .4-0+0 .5-0+0 .6-0+0';
-
         $user->save();
+        
+        Mail::to($user->email)->send(new RegisterAccount($user->email));
 
-        $alert = 'Đăng kí tài khoản thành công';
-        return redirect()->back()->with('alert', $alert);
+        return redirect()->route('confirm_register');
+    }
+
+    public function confirmRegister($req) {
+        return view('admin.pages.confirm_register');
     }
 }

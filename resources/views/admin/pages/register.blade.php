@@ -1,26 +1,21 @@
 @extends('admin.master_auth')
 @section('head')
-    <title>Đăng nhập - Devsne</title>
-@endsection  
+    <title>Đăng ký - Devsne</title>
+@endsection
 
 @section('content')
     <div class="limiter">
         <div class="container-login" style="">
             <div class="wrap-login">
-                <form class="login-form">
+                <form class="login-form" method="POST" action="{{ route('post_register') }}">
+                    @csrf
                     <span class="login-form-title">
-                        ĐĂNG NHẬP
+                        ĐĂNG KÝ
                     </span>
 
                     <div class="wrap-input">
-                        <span class="label-input">Email / Số điện thoại</span>
-                        <input class="input" type="text" name="username" placeholder="Nhập emai hoặc số điện thoại">
-                        <span class="focus-input" data-symbol="∙"></span>
-                    </div>
-
-                    <div class="wrap-input">
-                        <span class="label-input">Mật khẩu</span>
-                        <input class="input" type="password" name="pass" placeholder="Nhập mật khẩu">
+                        <span class="label-input">Email</span>
+                        <input class="input" type="email" name="email" placeholder="Nhập emai">
                         <span class="focus-input" data-symbol="∙"></span>
                     </div>
 
@@ -34,7 +29,7 @@
                         <div class="wrap-login-form-btn">
                             <div class="login-form-bgbtn"></div>
                             <button class="login-form-btn">
-                                Login
+                                Đăng ký
                             </button>
                         </div>
                     </div>
@@ -57,16 +52,15 @@
 
                     <div class="flex-col-c">
                         <span class="txt1">
-                            Nếu bạn chưa có tài khoản
+                            Nếu bạn đã có tài khoản
                         </span>
 
-                        <a href="{{ route('register') }}" class="txt2">
-                            Đăng ký
+                        <a href="{{ route('login') }}" class="txt2">
+                            Đăng nhập
                         </a>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <div id="dropDownSelect1"></div>
 @endsection

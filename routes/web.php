@@ -22,6 +22,7 @@ Route::get('/login', [AuthController::class, 'getLogin'])->name('login');
 Route::post('/post-login', [AuthController::class, 'postLogin'])->name('post_login');
 Route::get('/register', [AuthController::class, 'getRegister'])->name('register');
 Route::post('/post-register', [AuthController::class, 'postRegister'])->name('post_register');
+Route::get('/confirm-register', [AuthController::class, 'confirmRegister'])->name('confirm_register');
 Route::get('/logout', [AuthController::class, 'getLogout'])->name('logout');
 
 Route::prefix('admin')->name('admin.')->group(function () {
