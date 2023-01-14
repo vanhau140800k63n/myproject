@@ -1,21 +1,21 @@
 @extends('admin.master_auth')
 @section('head')
-    <title>Đăng ký - Devsne</title>
+    <title>Quên mật khẩu - Devsne</title>
 @endsection
 
 @section('content')
     <div class="limiter">
         <div class="container-login" style="">
             <div class="wrap-login">
-                <form class="login-form" method="POST" action="{{ route('post_register') }}">
+                <form class="login-form" method="POST" action="{{ route('post_forgot_password') }}">
                     @csrf
                     <span class="login-form-title">
-                        ĐĂNG KÝ
+                        Quên mật khẩu
                     </span>
 
                     <div class="wrap-input">
                         <span class="label-input">Email</span>
-                        <input class="input" type="email" name="email" placeholder="Nhập email">
+                        <input class="input" type="email" name="email" placeholder="Nhập email lấy lại mật khẩu">
                         <span class="focus-input" data-symbol="∙"></span>
                     </div>
 
@@ -27,17 +27,17 @@
                         </div>
                     @endif
 
-                    <div class="text-right">
-                        <a href="{{ route('forgot_password') }}" class="fg-password">
-                            Quên mật khẩu?
-                        </a>
-                    </div>
+                    @if (session()->get('alert'))
+                        <div class="error-text">
+                            Không tìm thấy email trùng khớp
+                        </div>
+                    @endif
 
                     <div class="container-login-form-btn">
                         <div class="wrap-login-form-btn">
                             <div class="login-form-bgbtn"></div>
                             <button class="login-form-btn">
-                                Đăng ký
+                                Xác nhận
                             </button>
                         </div>
                     </div>

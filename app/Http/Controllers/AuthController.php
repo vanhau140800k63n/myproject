@@ -44,6 +44,42 @@ class AuthController extends Controller
         }
     }
 
+    public function forgotPassword()
+    {
+        return view('admin.pages.forgot_password');
+    }
+
+    public function postForgotPassword(Request $req)
+    {
+        $this->validate(
+            $req,
+            [
+                'email' => 'required|email',
+            ],
+            [
+                'email.required' => 'Vui lòng nhập email',
+                'email.email' => 'Email không hợp lệ',
+            ]
+        );
+
+        $user = $this->userRepository->getUserByEmail($req->email);
+        if ($user !== false) {
+            $dataUpdate = [
+                'register_token' => hash('sha256', AuthConstants::SECRET_STR . $req->email),
+                'register_token_expired' => date(CommonConstants::FORMAT_TIME, time() + 1800)
+            ];
+
+            $userUpdate = $this->userRepository->updateUser($user->id, $dataUpdate);
+
+            if ($userUpdate !== false) {
+                Mail::to($user->email)->send(new RegisterAccount($user->email, $user->id));
+                return redirect()->route('confirm_reset_password', ['token' => $dataUpdate['register_token']]);
+            }
+        }
+
+        return redirect()->back()->with('alert', 'Email không đúng');
+    }
+
     public function postLogin(Request $req)
     {
         $this->validate(
@@ -81,21 +117,26 @@ class AuthController extends Controller
             ]
         );
 
-        $user = new User();
-        $user->email = $req->email;
-        $user->register_token = hash('sha256', AuthConstants::SECRET_STR. $req->email);
-        $user->register_token_expired = date(CommonConstants::FORMAT_TIME, time() + 1800);
-        $user->save();
-        
-        Mail::to($user->email)->send(new RegisterAccount($user->email, $user->id));
+        $dataCreate = [
+            'email' => $req->email,
+            'register_token' => hash('sha256', AuthConstants::SECRET_STR . $req->email),
+            'register_token_expired' => date(CommonConstants::FORMAT_TIME, time() + 1800)
+        ];
+
+        $user = $this->userRepository->createUser($dataCreate);
+
+        if ($user !== false) {
+            Mail::to($user->email)->send(new RegisterAccount($user->email, $user->id));
+        }
 
         return redirect()->route('confirm_register', ['token' => $user->register_token]);
     }
 
-    public function confirmRegister(Request $req) {
-        if(isset($req->token)) {
+    public function confirmRegister(Request $req)
+    {
+        if (isset($req->token)) {
             $user = $this->userRepository->getUserByToken($req->token);
-            if($user !== false) {
+            if ($user !== false) {
                 return view('admin.pages.confirm_register')->with(['email' => $user->email]);
             } else {
                 return view('admin.pages.confirm_register')->with(['alert' => 'token expired']);
@@ -104,16 +145,30 @@ class AuthController extends Controller
         return view('admin.pages.error');
     }
 
-    public function changePassword(Request $req) {
-        if(isset($req->token) && isset($req->user_id)) {
-            $user = $this->userRepository->getUserById($req->user_id);
-            if($user !== false) {
-                if($req->token === hash('sha256', $user->email . AuthConstants::CP_STR)) {
+    public function changePassword(Request $req)
+    {
+        if (isset($req->token) && isset($req->user_id)) {
+            $user = $this->userRepository->getUserChangePassword($req->user_id);
+            if ($user !== false) {
+                if ($req->token === hash('sha256', $user->email . AuthConstants::CP_STR)) {
                     return view('admin.pages.change_password')->with(['email' => $user->email]);
                 }
             }
         }
 
+        return view('admin.pages.error');
+    }
+
+    public function confirmResetPassword(Request $req)
+    {
+        if (isset($req->token)) {
+            $user = $this->userRepository->getUserByToken($req->token);
+            if ($user !== false) {
+                return view('admin.pages.confirm_reset_password')->with(['email' => $user->email]);
+            } else {
+                return view('admin.pages.confirm_reset_password')->with(['alert' => 'token expired']);
+            }
+        }
         return view('admin.pages.error');
     }
 }

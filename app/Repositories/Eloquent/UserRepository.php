@@ -15,28 +15,63 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
         $this->user = new User();
     }
 
-    public function createUser($data) {
+    public function createUser($data)
+    {
+        $query = $this->user;
+        $user = $this->retryCreate($query, $data);
 
+        if ($user !== false) {
+            return $user;
+        }
+
+        return false;
     }
 
-    public function getUserByToken($token) {
+    public function updateUser($id, $data)
+    {
+        $query = $this->user->where('id', $id)->first();
+        $user =  $this->retryUpdate($query, $data);
+
+        if ($user !== false) {
+            return $user;
+        }
+
+        return false;
+    }
+
+    public function getUserByToken($token)
+    {
         $query = $this->user->where('register_token', $token)->where('register_token_expired', '>', now());
 
         $users = $this->retryQuery($query);
 
-        if($users !== false && $users->count() > 0) {
+        if ($users !== false && $users->count() > 0) {
             return $users->first();
         }
 
         return false;
     }
 
-    public function getUserById($id) {
+    public function getUserChangePassword($id)
+    {
         $query = $this->user->where('id', $id)->where('register_token_expired', '>', now());
 
         $users = $this->retryQuery($query);
 
-        if($users !== false && $users->count() > 0) {
+        if ($users !== false && $users->count() > 0) {
+            return $users->first();
+        }
+
+        return false;
+    }
+
+    public function getUserByEmail($email)
+    {
+        $query = $this->user->where('email', $email);
+
+        $users = $this->retryQuery($query);
+
+        if ($users !== false && $users->count() > 0) {
             return $users->first();
         }
 

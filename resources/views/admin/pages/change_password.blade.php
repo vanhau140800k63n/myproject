@@ -32,6 +32,14 @@
                         <span class="focus-input" data-symbol="∙"></span>
                     </div>
 
+                    @if (count($errors) > 0)
+                        <div class="error-text">
+                            @foreach ($errors->all() as $err)
+                                {{ $err }} <br>
+                            @endforeach
+                        </div>
+                    @endif
+
                     <div class="container-login-form-btn">
                         <div class="wrap-login-form-btn">
                             <div class="login-form-bgbtn"></div>

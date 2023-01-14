@@ -26,6 +26,8 @@ Route::get('/confirm-register', [AuthController::class, 'confirmRegister'])->nam
 Route::get('/change-password', [AuthController::class, 'changePassword'])->name('change_password');
 Route::post('/change-password-confirm', [AuthController::class, 'changePasswordConfirm'])->name('change_password_confirm');
 Route::get('/forgot-password', [AuthController::class, 'forgotPassword'])->name('forgot_password');
+Route::post('/post-forgot-password', [AuthController::class, 'postForgotPassword'])->name('post_forgot_password');
+Route::get('/confirm-reset-password', [AuthController::class, 'confirmResetPassword'])->name('confirm_reset_password');
 Route::get('/logout', [AuthController::class, 'getLogout'])->name('logout');
 
 Route::prefix('admin')->name('admin.')->group(function () {
