@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Config\AuthConstants;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -14,15 +15,17 @@ class RegisterAccount extends Mailable
     use Queueable, SerializesModels;
 
     protected $email;
+    protected $user_id;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($email)
+    public function __construct($email, $user_id)
     {
         $this->email = $email;
+        $this->user_id = $user_id;
     }
 
     /**
@@ -33,7 +36,7 @@ class RegisterAccount extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Register Account',
+            subject: 'Đăng ký tài khoản',
         );
     }
 
@@ -47,7 +50,9 @@ class RegisterAccount extends Mailable
         return new Content(
             view: 'admin.email.register',
             with: [
-                'email' => $this->email
+                'email' => $this->email,
+                'user_id' => $this->user_id,
+                'token' => hash('sha256', $this->email . AuthConstants::CP_STR)
             ],
         );
     }

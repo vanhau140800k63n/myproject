@@ -331,6 +331,19 @@ a {
     color: #a64bf4;
 }
 
+.form-noti {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.form-noti span {
+    font-weight: 500;
+}
+
+.error-text {
+    text-align: center;
+    color: #c80000;
+}
 /*//////////////////////////////////////////////////////////////////
 [ Responsive ]*/
 

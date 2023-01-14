@@ -1,27 +1,26 @@
 @extends('admin.master_auth')
 @section('head')
     <title>Hoàn tất đăng ký</title>
-@endsection  
+@endsection
 @section('content')
     <div class="limiter">
         <div class="container-login" style="">
             <div class="wrap-login">
-                <form class="login-form">
-                    <span class="login-form-title">
-                        Chào mừng
-                    </span>
-                    <div class="form-title-email">
-                        <b>vanhau140800@gmail.com </b> đến với cộng đồng <b>devsne</b>
-                    </div>
-                    <div class="container-login-form-btn">
-                        <div class="wrap-login-form-btn">
-                            <div class="login-form-bgbtn"></div>
-                            <button class="login-form-btn">
-                                Đổi mật khẩu
-                            </button>
+                <div class="login-form">
+                    @if (isset($email))
+                        <span class="login-form-title">
+                            Chào mừng
+                        </span>
+                        <div class="form-noti">
+                            <span>{{ $email }} </span> đến với cộng đồng <span>devsne</span> <br>
+                            Vui lòng kiểm tra mail và hoàn tất đăng ký
                         </div>
-                    </div>
-                </form>
+                    @elseif (isset($alert))
+                        <div class="form-noti">
+                            <span> Mã token đã hết hạn hoặc không đúng </span>
+                        </div>
+                    @endif
+                </div>
             </div>
         </div>
     </div>

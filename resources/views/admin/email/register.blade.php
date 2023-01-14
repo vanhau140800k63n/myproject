@@ -7,15 +7,16 @@
                     <span class="login-form-title">
                         Chào mừng
                     </span>
-                    <div class="form-title-email">
-                        <b>vanhau140800@gmail.com </b> đến với cộng đồng <b>devsne</b>
+                    <div class="form-noti">
+                        <span>vanhau140800@gmail.com </span> đến với cộng đồng <span>devsne</span>
                     </div>
                     <div class="container-login-form-btn">
                         <div class="wrap-login-form-btn">
                             <div class="login-form-bgbtn"></div>
-                            <button class="login-form-btn">
+                            <a class="login-form-btn"
+                                href="{{ route('change_password', ['user_id' => $user_id, 'token' => $token]) }}">
                                 Đổi mật khẩu
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </form>

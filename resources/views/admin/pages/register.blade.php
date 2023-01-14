@@ -19,8 +19,16 @@
                         <span class="focus-input" data-symbol="∙"></span>
                     </div>
 
+                    @if (count($errors) > 0)
+                        <div class="error-text">
+                            @foreach ($errors->all() as $err)
+                                {{ $err }} <br>
+                            @endforeach
+                        </div>
+                    @endif
+
                     <div class="text-right">
-                        <a href="#" class="fg-password">
+                        <a href="{{ route('forgot_password') }}" class="fg-password">
                             Quên mật khẩu?
                         </a>
                     </div>
