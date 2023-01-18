@@ -1,6 +1,6 @@
 @extends('admin.master_auth')
 @section('head')
-    <title>Đổi mật khẩu</title>
+    <title>Xác minh tài khoản</title>
 @endsection
 @section('content')
     <div class="limiter">
@@ -9,10 +9,10 @@
                 <div class="login-form">
                     @if (isset($email))
                         <span class="login-form-title">
-                            Xin chào
+                            Xác minh tài khoản
                         </span>
                         <div class="form-noti">
-                            <span>{{ $email }} </span><br>
+                            Xin chào <span>{{ $email }}</span>,<br>
                             Vui lòng kiểm tra mail để thay đổi mật khẩu
                         </div>
                     @elseif (isset($alert))

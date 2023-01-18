@@ -24,7 +24,7 @@ Route::get('/register', [AuthController::class, 'getRegister'])->name('register'
 Route::post('/post-register', [AuthController::class, 'postRegister'])->name('post_register');
 Route::get('/confirm-register', [AuthController::class, 'confirmRegister'])->name('confirm_register');
 Route::get('/change-password', [AuthController::class, 'changePassword'])->name('change_password');
-Route::post('/change-password-confirm', [AuthController::class, 'changePasswordConfirm'])->name('change_password_confirm');
+Route::post('/post-change-password', [AuthController::class, 'postChangePassword'])->name('post_change_password');
 Route::get('/forgot-password', [AuthController::class, 'forgotPassword'])->name('forgot_password');
 Route::post('/post-forgot-password', [AuthController::class, 'postForgotPassword'])->name('post_forgot_password');
 Route::get('/confirm-reset-password', [AuthController::class, 'confirmResetPassword'])->name('confirm_reset_password');

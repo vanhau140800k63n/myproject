@@ -29,7 +29,7 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
 
     public function updateUser($id, $data)
     {
-        $query = $this->user->where('id', $id)->first();
+        $query = $this->user->where('id', $id);
         $user =  $this->retryUpdate($query, $data);
 
         if ($user !== false) {
@@ -41,7 +41,7 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
 
     public function getUserByToken($token)
     {
-        $query = $this->user->where('register_token', $token)->where('register_token_expired', '>', now());
+        $query = $this->user->where('token', $token)->where('token_expired', '>', now());
 
         $users = $this->retryQuery($query);
 
@@ -54,7 +54,7 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
 
     public function getUserChangePassword($id)
     {
-        $query = $this->user->where('id', $id)->where('register_token_expired', '>', now());
+        $query = $this->user->where('id', $id)->where('token_expired', '>', now());
 
         $users = $this->retryQuery($query);
 

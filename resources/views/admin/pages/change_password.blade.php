@@ -1,13 +1,13 @@
 @extends('admin.master_auth')
 @section('head')
-    <title>Đăng nhập - Devsne</title>
+    <title>Đổi mật khẩu - Devsne</title>
 @endsection
 
 @section('content')
     <div class="limiter">
         <div class="container-login" style="">
             <div class="wrap-login">
-                <form class="login-form" method="POST" action="{{ route('change_password_confirm') }}">
+                <form class="login-form" method="POST" action="{{ route('post_change_password') }}">
                     @csrf
                     <span class="login-form-title">
                         Đổi mật khẩu
@@ -20,6 +20,8 @@
                         </span>
                     </div>
 
+                    <input type="text" name="user_id" value="{{ $user_id }}">
+
                     <div class="wrap-input">
                         <span class="label-input">Mật khẩu</span>
                         <input class="input" type="password" name="pass" placeholder="Nhập mật khẩu">
@@ -28,7 +30,7 @@
 
                     <div class="wrap-input">
                         <span class="label-input">Nhập lại mật khẩu</span>
-                        <input class="input" type="password" name="pass" placeholder="Nhập mật khẩu">
+                        <input class="input" type="password" name="pass_confirm" placeholder="Nhập mật khẩu">
                         <span class="focus-input" data-symbol="∙"></span>
                     </div>
 

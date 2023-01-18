@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Config\AuthConstants;
-use App\Config\CommonConstants;
-use App\Mail\RegisterAccount;
-use App\Models\User;
-use App\Repositories\UserRepositoryInterface;
+use App\Mail\ResetPassword;
 use Illuminate\Http\Request;
+use App\Config\AuthConstants;
+use App\Mail\RegisterAccount;
+use App\Config\CommonConstants;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use App\Repositories\UserRepositoryInterface;
 
 class AuthController extends Controller
 {
@@ -65,15 +65,14 @@ class AuthController extends Controller
         $user = $this->userRepository->getUserByEmail($req->email);
         if ($user !== false) {
             $dataUpdate = [
-                'register_token' => hash('sha256', AuthConstants::SECRET_STR . $req->email),
-                'register_token_expired' => date(CommonConstants::FORMAT_TIME, time() + 1800)
+                'token' => hash('sha256', AuthConstants::SECRET_STR . $req->email),
+                'token_expired' => date(CommonConstants::FORMAT_TIME, time() + 1800)
             ];
 
             $userUpdate = $this->userRepository->updateUser($user->id, $dataUpdate);
-
             if ($userUpdate !== false) {
-                Mail::to($user->email)->send(new RegisterAccount($user->email, $user->id));
-                return redirect()->route('confirm_reset_password', ['token' => $dataUpdate['register_token']]);
+                Mail::to($user->email)->send(new ResetPassword($user->email, $user->id));
+                return redirect()->route('confirm_reset_password', ['token' => $dataUpdate['token']]);
             }
         }
 
@@ -119,8 +118,8 @@ class AuthController extends Controller
 
         $dataCreate = [
             'email' => $req->email,
-            'register_token' => hash('sha256', AuthConstants::SECRET_STR . $req->email),
-            'register_token_expired' => date(CommonConstants::FORMAT_TIME, time() + 1800)
+            'token' => hash('sha256', AuthConstants::SECRET_STR . $req->email),
+            'token_expired' => date(CommonConstants::FORMAT_TIME, time() + 1800)
         ];
 
         $user = $this->userRepository->createUser($dataCreate);
@@ -129,7 +128,7 @@ class AuthController extends Controller
             Mail::to($user->email)->send(new RegisterAccount($user->email, $user->id));
         }
 
-        return redirect()->route('confirm_register', ['token' => $user->register_token]);
+        return redirect()->route('confirm_register', ['token' => $user->token]);
     }
 
     public function confirmRegister(Request $req)
@@ -151,7 +150,7 @@ class AuthController extends Controller
             $user = $this->userRepository->getUserChangePassword($req->user_id);
             if ($user !== false) {
                 if ($req->token === hash('sha256', $user->email . AuthConstants::CP_STR)) {
-                    return view('admin.pages.change_password')->with(['email' => $user->email]);
+                    return view('admin.pages.change_password')->with(['email' => $user->email, 'user_id' => $user->id]);
                 }
             }
         }
@@ -170,5 +169,30 @@ class AuthController extends Controller
             }
         }
         return view('admin.pages.error');
+    }
+
+    public function postChangePassword(Request $req)
+    {
+        $this->validate(
+            $req,
+            [
+                'pass' => 'required|min:6|max:30|same:pass_confirm',
+                'user_id' => 'required'
+            ],
+            [
+                'pass.required' => 'Vui lòng nhập mật khẩu',
+                'pass.min' => 'Mật khẩu dưới 6 ký tự',
+                'pass.max' => 'Mật khẩu vượt quá 30 ký tự',
+                'pass.same' => 'Mật khẩu không trùng khớp',
+                'user_id.required' => 'Tài khoản không tồn tại'
+            ]
+        );
+
+        $user = $this->userRepository->getUserChangePassword($req->user_id);
+        if ($user !== false) {
+            
+        }
+
+        return 1;
     }
 }
