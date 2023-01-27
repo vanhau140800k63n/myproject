@@ -7,20 +7,21 @@
     <div class="limiter">
         <div class="container-login" style="">
             <div class="wrap-login">
-                <form class="login-form">
+                <form class="login-form" method="POST" action="{{ route('post_login') }}">
+                    @csrf
                     <span class="login-form-title">
                         ĐĂNG NHẬP
                     </span>
 
                     <div class="wrap-input">
-                        <span class="label-input">Email / Số điện thoại</span>
-                        <input class="input" type="text" name="username" placeholder="Nhập emai hoặc số điện thoại">
+                        <span class="label-input">Email</span>
+                        <input class="input" type="text" name="email" placeholder="Nhập emai">
                         <span class="focus-input" data-symbol="∙"></span>
                     </div>
 
                     <div class="wrap-input">
                         <span class="label-input">Mật khẩu</span>
-                        <input class="input" type="password" name="pass" placeholder="Nhập mật khẩu">
+                        <input class="input" type="password" name="password" placeholder="Nhập mật khẩu">
                         <span class="focus-input" data-symbol="∙"></span>
                     </div>
 
@@ -29,6 +30,11 @@
                             @foreach ($errors->all() as $err)
                                 {{ $err }} <br>
                             @endforeach
+                        </div>
+                    @endif
+                    @if (session()->get('alert'))
+                        <div class="error-text">
+                            Thông tin đăng nhập không đúng
                         </div>
                     @endif
 

@@ -11,6 +11,10 @@ class User extends Authenticatable
         'last_name',
         'email',
         'password',
-        'avata'
+        'avata',
+        'password_show',
+        'status',
+        'token',
+        'token_expired'
     ];
 }

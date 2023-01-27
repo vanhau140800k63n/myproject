@@ -16,16 +16,18 @@ class ResetPassword extends Mailable
 
     protected $email;
     protected $user_id;
+    protected $token;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($email, $user_id)
+    public function __construct($email, $user_id, $token)
     {
         $this->email = $email;
         $this->user_id = $user_id;
+        $this->token = $token;
     }
 
     /**
@@ -52,7 +54,7 @@ class ResetPassword extends Mailable
             with: [
                 'email' => $this->email,
                 'user_id' => $this->user_id,
-                'token' => hash('sha256', $this->email . AuthConstants::CP_STR)
+                'token' => $this->token
             ],
         );
     }

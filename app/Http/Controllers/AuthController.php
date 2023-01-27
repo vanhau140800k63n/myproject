@@ -65,14 +65,14 @@ class AuthController extends Controller
         $user = $this->userRepository->getUserByEmail($req->email);
         if ($user !== false) {
             $dataUpdate = [
-                'token' => hash('sha256', AuthConstants::SECRET_STR . $req->email),
+                'token' => hash('sha256', AuthConstants::SECRET_STR . $req->email. time()),
                 'token_expired' => date(CommonConstants::FORMAT_TIME, time() + 1800)
             ];
 
             $userUpdate = $this->userRepository->updateUser($user->id, $dataUpdate);
             if ($userUpdate !== false) {
-                Mail::to($user->email)->send(new ResetPassword($user->email, $user->id));
-                return redirect()->route('confirm_reset_password', ['token' => $dataUpdate['token']]);
+                Mail::to($user->email)->send(new ResetPassword($user->email, $user->id, $dataUpdate['token']));
+                return redirect()->route('confirm_reset_password', ['user_id' => $user->id]);
             }
         }
 
@@ -96,9 +96,9 @@ class AuthController extends Controller
 
         $credentials = array('email' => $req->email, 'password' => $req->password);
         if (Auth::attempt($credentials)) {
-            return redirect()->route('admin.dashboard');
+            return redirect()->route('home');
         } else {
-            return redirect()->back()->with('message', 'Thông tin đăng nhập không đúng!');
+            return redirect()->back()->with('alert', 'Thông tin đăng nhập không đúng!');
         }
     }
 
@@ -118,23 +118,23 @@ class AuthController extends Controller
 
         $dataCreate = [
             'email' => $req->email,
-            'token' => hash('sha256', AuthConstants::SECRET_STR . $req->email),
+            'token' => hash('sha256', AuthConstants::SECRET_STR . $req->email . time()),
             'token_expired' => date(CommonConstants::FORMAT_TIME, time() + 1800)
         ];
 
         $user = $this->userRepository->createUser($dataCreate);
 
         if ($user !== false) {
-            Mail::to($user->email)->send(new RegisterAccount($user->email, $user->id));
+            Mail::to($user->email)->send(new RegisterAccount($user->email, $user->id, $user->token));
         }
 
-        return redirect()->route('confirm_register', ['token' => $user->token]);
+        return redirect()->route('confirm_register', ['user_id' => $user->id]);
     }
 
     public function confirmRegister(Request $req)
     {
-        if (isset($req->token)) {
-            $user = $this->userRepository->getUserByToken($req->token);
+        if (isset($req->user_id)) {
+            $user = $this->userRepository->getUserById($req->user_id);
             if ($user !== false) {
                 return view('admin.pages.confirm_register')->with(['email' => $user->email]);
             } else {
@@ -147,11 +147,10 @@ class AuthController extends Controller
     public function changePassword(Request $req)
     {
         if (isset($req->token) && isset($req->user_id)) {
-            $user = $this->userRepository->getUserChangePassword($req->user_id);
+            $user = $this->userRepository->getUserByToken($req->user_id, $req->token);
             if ($user !== false) {
-                if ($req->token === hash('sha256', $user->email . AuthConstants::CP_STR)) {
-                    return view('admin.pages.change_password')->with(['email' => $user->email, 'user_id' => $user->id]);
-                }
+                $changeStatus = $this->userRepository->changeStatus($user->id, AuthConstants::RESET_PASSWORD);
+                return view('admin.pages.change_password')->with(['email' => $user->email, 'user_id' => $user->id, 'token' => $req->token]);
             }
         }
 
@@ -160,8 +159,8 @@ class AuthController extends Controller
 
     public function confirmResetPassword(Request $req)
     {
-        if (isset($req->token)) {
-            $user = $this->userRepository->getUserByToken($req->token);
+        if (isset($req->user_id)) {
+            $user = $this->userRepository->getUserById($req->user_id);
             if ($user !== false) {
                 return view('admin.pages.confirm_reset_password')->with(['email' => $user->email]);
             } else {
@@ -190,7 +189,7 @@ class AuthController extends Controller
 
         $user = $this->userRepository->getUserChangePassword($req->user_id);
         if ($user !== false) {
-            
+            $user = $this->userRepository->updatePassword($user->id, $req->pass);
         }
 
         return 1;

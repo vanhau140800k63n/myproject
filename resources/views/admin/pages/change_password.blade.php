@@ -7,7 +7,7 @@
     <div class="limiter">
         <div class="container-login" style="">
             <div class="wrap-login">
-                <form class="login-form" method="POST" action="{{ route('post_change_password') }}">
+                <form class="login-form" method="POST" action="{{ route('post_change_password', ['user_id' => $user_id]) }}">
                     @csrf
                     <span class="login-form-title">
                         Đổi mật khẩu
@@ -19,8 +19,6 @@
                             {{ $email }}
                         </span>
                     </div>
-
-                    <input type="text" name="user_id" value="{{ $user_id }}">
 
                     <div class="wrap-input">
                         <span class="label-input">Mật khẩu</span>

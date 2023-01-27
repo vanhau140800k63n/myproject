@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class CheckAuth
+class CheckLoggedOut
 {
     /**
      * Handle an incoming request.
@@ -17,10 +17,10 @@ class CheckAuth
      */
     public function handle(Request $request, Closure $next)
     {
-        if(Auth::check()) {
+        if (!Auth::check()) {
             return $next($request);
         } else {
-            return redirect('login')->with('message', 'Bạn không phải là ADMIN');
+            return redirect('home');
         }
     }
 }
