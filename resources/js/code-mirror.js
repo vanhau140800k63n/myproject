@@ -30,16 +30,4 @@ $('#btn').click(function () {
     })
 })
 
-// try {
-//     let text = eval(view.state.doc.toString());
-
-// } catch (error) {
-//     let text = error;
-//     let view1 = new EditorView({
-//         extensions: [basicSetup, oneDark],
-//         parent: document.querySelector("#editor1"),
-//         doc: text
-//     })
-// }
-
 

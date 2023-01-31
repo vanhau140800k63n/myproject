@@ -14,7 +14,7 @@
 .header-box .logo {
     font-size: 20px;
     font-weight: 800;
-    color: rgba(14,143,213,1);
+    color: rgba(14, 143, 213, 1);
 }
 
 .header-box .search {
@@ -36,18 +36,22 @@
     padding: 5px 15px 5px 5px;
     box-sizing: border-box;
     border-radius: 20px;
-    transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 150ms;
+    transition: width 300ms cubic-bezier(0.1, 0, 0.5, 0.1) 150ms;
     display: inline-block;
-    color: rgb(114, 115, 115);
+    color: rgb(179, 182, 182);
 }
 
 .search-icon {
     margin: 10px;
-    color: rgb(158, 159, 159);
+    color: rgb(179, 182, 182);
 }
 
 .search-box:has(input[type=text]:focus) {
     border-color: rgb(104, 101, 101);
+}
+
+.search-box:has(input[type=text]:focus) .search-icon {
+    color: rgb(104, 101, 101);
 }
 
 .search-box input[type=text]:focus {
@@ -57,7 +61,7 @@
 .search-box input[type=text]:focus,
 .search-box input[type=text]:not(:placeholder-shown) {
     width: 400px;
-    transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: width 300ms cubic-bezier(0.1, 0, 0.5, 0.1);
 }
 
 .search-box button[type=reset] {
@@ -98,7 +102,7 @@
     font-weight: 500;
     padding: 5px 15px;
     color: #fff;
-    background: linear-gradient(90deg, rgba(14,143,213,1) 0%, rgba(22,147,215,1) 51%, rgba(22,176,227,1) 100%);
+    background: linear-gradient(90deg, rgba(14, 143, 213, 1) 0%, rgba(22, 147, 215, 1) 51%, rgba(22, 176, 227, 1) 100%);
     border-radius: 20px;
 }
 
@@ -117,12 +121,12 @@
     height: 60px;
     display: flex;
     align-items: center;
-    color: rgba(14,143,213,1);
+    color: rgba(14, 143, 213, 1);
 }
 
 .menu-category.active {
     color: #fff;
-    background: linear-gradient(90deg, rgba(14,143,213,1) 0%, rgba(22,147,215,1) 51%, rgba(22,176,227,1) 100%);
+    background: linear-gradient(90deg, rgba(14, 143, 213, 1) 0%, rgba(22, 147, 215, 1) 51%, rgba(22, 176, 227, 1) 100%);
 }
 
 .menu-items {
@@ -131,7 +135,7 @@
     left: 0;
     width: 100%;
     display: none;
-    background: linear-gradient(90deg, rgba(14,143,213,1) 0%, rgba(22,147,215,1) 51%, rgba(22,176,227,1) 100%);
+    background: linear-gradient(90deg, rgba(14, 143, 213, 1) 0%, rgba(22, 147, 215, 1) 51%, rgba(22, 176, 227, 1) 100%);
 }
 
 .menu-category.active .menu-items {
