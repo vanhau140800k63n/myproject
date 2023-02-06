@@ -40,4 +40,9 @@ class LessonController extends Controller
 
         return view('admin.pages.lesson.lesson_list', compact('lesson_list'));
     }
+
+    public function addLessonAdmin(Request $req) {
+        $course_list = $this->lessonRepository->getCourseListAdmin();
+        return view('admin.pages.lesson.lesson_add', compact('course_list'));
+    }
 }

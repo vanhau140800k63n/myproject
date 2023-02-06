@@ -1,13 +1,16 @@
 @extends('admin.master')
 @section('head')
-    <title> Khóa học </title>
+    <title> Khóa học | Devsne</title>
 @endsection
 @section('content')
     <div class="row ">
         <div class="col-12 grid-margin">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Khóa học</h4>
+                    <div style="display: flex">
+                        <h4 class="card-title">Khóa học</h4>
+                        <a href="{{ route('admin.course.lesson.add') }}"> them </a>
+                    </div>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>

@@ -25,5 +25,5 @@
             </div>
         @endforeach
     </div>
-    <script src="{{ asset('js/code-mirror.js') }}"></script>
+    <script src="{{ asset(mix('js/code-mirror.js')) }}"></script>
 @endsection

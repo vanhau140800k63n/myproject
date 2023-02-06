@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="{{ asset('lib/assets/vendors/mdi/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('lib/assets/vendors/css/vendor.bundle.base.css') }}">
     <script src="{{ asset('js/assets/jquery.min.js') }}"></script>
-    {{-- <link rel="stylesheet" href="{{ asset('lib/assets/vendors/flag-icon-css/css/flag-icon.min.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('lib/assets/css/style.css') }}">
     <link rel="shortcut icon" href="{{ asset('img/logo1.png') }}" />
 </head>
@@ -31,6 +30,7 @@
     <script src="{{ asset('lib/assets/vendors/js/vendor.bundle.base.js') }}"></script>
     <script src="{{ asset('lib/assets/js/misc.js') }}"></script>
     <script src="{{ asset('lib/assets/js/dashboard.js') }}"></script>
+    <script src="{{ asset('js/admin.js') }}"></script>
     <script>
         $.ajaxSetup({
             headers: {

@@ -21,18 +21,9 @@
 @section('content')
     <div class="content-wrapper">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 test">
                 {{-- <textarea id="myeditorinstance" name="description"></textarea> --}}
             </div>
         </div>
     </div>
-    <script src="{{ asset('lib/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
-    <script>
-        tinymce.init({
-            selector: 'textarea#myeditorinstance', // Replace this CSS selector to match the placeholder element for TinyMCE
-            plugins: 'code table lists image',
-            toolbar: 'undo redo | formatselect| bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table | forecolor backcolor | image',
-            images_file_types: 'jpg,svg,webp',
-        });
-    </script>
 @endsection
