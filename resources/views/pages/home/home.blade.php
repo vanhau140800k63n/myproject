@@ -3,7 +3,7 @@
     <style>
         .cm-content,
         .cm-gutter {
-            min-height: 150px;
+            min-height: 460px;
         }
 
         .cm-scroller {
@@ -12,16 +12,18 @@
     </style>
 @endsection
 @section('content')
-    <div id=editor>
+    <div class="home_lession">
+        @foreach ($p_languages as $p_language)
+            <div class="home_lession_item">
+                <input id="input_{{ $p_language->name }}" value="{{ $p_language->home_content }}" color="{{ $p_language->color }}" hidden>
+                <div class="home_lession_card" id="{{ $p_language->name }}"></div>
+                <div class="home_lession_cover"></div>
+                <div class="home_lession_info">
+                    Học {{ $p_language->full_name }} miễn phí
+                </div>
+                {{-- <button class="submit"> submit </button> --}}
+            </div>
+        @endforeach
     </div>
-    <br>
-    <?php
-       $a = 2;
-    ?>
-    {{ $a == 1 ? 2 : 3 }}
-    <div id=editor1></div>
-    <button id="btn"> akjs </button>
     <script src="{{ asset('js/code-mirror.js') }}"></script>
-    <script type="text/javascript">
-    </script>
 @endsection

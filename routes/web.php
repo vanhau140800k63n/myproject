@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'getHomePage'])->name('home');
+Route::post('/submit', [HomeController::class, 'submit'])->name('submit');
+Route::get('/test', [HomeController::class, 'test'])->name('test');
 
 Route::middleware(['check.logged_out'])->group(function () {
     Route::get('/login', [AuthController::class, 'getLogin'])->name('login');

@@ -1,7 +1,17 @@
-body {
+@font-face {
+    font-family: 'jetbrains';
+    src: url('../fonts/ttf/JetBrainsMono-Light.ttf');
+}
+
+* {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 0;
+    font-size: 14px;
+}
+
+.home_lession_card * {
+    font-family: 'jetbrains';
     font-size: 14px;
 }
 
@@ -17,7 +27,7 @@ a {
 .box {
     margin-top: 100px;
     margin: 100px auto 0 auto;
-	padding: 20px;
+    padding: 20px;
 }
 
 @media only screen and (min-width: 1400px) {

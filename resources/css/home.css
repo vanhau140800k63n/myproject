@@ -1,0 +1,36 @@
+.home_lession {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem 2rem;
+    margin-top: 10px;
+}
+
+.home_lession_item {
+    position: relative;
+}
+
+.home_lession_cover {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: calc(100% - 50px);
+    background: transparent;
+    top: 0;
+}
+
+.home_lession_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.home_lession_item:hover .home_lession_info {
+    font-size: 15px;
+}

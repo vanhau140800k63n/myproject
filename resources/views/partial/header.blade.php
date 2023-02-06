@@ -37,7 +37,7 @@
         </form>
     </div>
     <div class="header-user">
-        <a class="login" href=""> Đăng nhập </a>
+        <a class="login" href="{{ route('login') }}"> Đăng nhập </a>
     </div>
 </div>
 <script src="{{ asset(mix('js/assets/header.js')) }}"></script>
