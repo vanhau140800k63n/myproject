@@ -20,7 +20,7 @@ class CheckLoggedOut
         if (!Auth::check()) {
             return $next($request);
         } else {
-            return redirect('home');
+            return redirect()->route('home');
         }
     }
 }

@@ -21,7 +21,7 @@
                         <span class="count bg-success"></span>
                     </div>
                     <div class="profile-name">
-                        <h5 class="mb-0 font-weight-normal">aaa</h5>
+                        <h5 class="mb-0 font-weight-normal">{{ $user->first_name . ' ' . $user->last_name }}</h5>
                         <span>Admin</span>
                     </div>
                 </div>
@@ -36,66 +36,27 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
-                aria-controls="ui-basic">
+            <a class="nav-link" href="{{ route('admin.course.list') }}">
                 <span class="menu-icon">
-                    <i class="mdi mdi-laptop"></i>
+                    <i class="mdi mdi-speedometer"></i>
                 </span>
-                <span class="menu-title">Phát triển phim</span>
-                <i class="menu-arrow" style="color: #fff;"></i>
+                <span class="menu-title">Khóa học</span>
             </a>
-            <div class="collapse" id="ui-basic">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <span class="menu-icon">
-                                <i style="color: #4ad1d5" class="mdi mdi-plus"></i>
-                            </span> Tạo mới
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <span class="menu-icon">
-                                <i style="color: #4ad1d5" class="mdi mdi-trending-up"></i>
-                            </span> Thiết lập phim
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <span class="menu-icon">
-                                <i style="color: #4ad1d5" class="mdi mdi-film"></i>
-                            </span> Website của bạn
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" data-bs-toggle="collapse" href="#ui-news" aria-expanded="false" aria-controls="ui-news">
+            <a class="nav-link" href="">
                 <span class="menu-icon">
-                    <i class="mdi mdi-newspaper"></i>
+                    <i class="mdi mdi-speedometer"></i>
                 </span>
-                <span class="menu-title">Tin tức</span>
-                <i class="menu-arrow" style="color: #fff;"></i>
+                <span class="menu-title">Project</span>
             </a>
-            <div class="collapse" id="ui-news">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <span class="menu-icon">
-                                <i style="color: #4ad1d5" class="mdi mdi-format-list-bulleted"></i>
-                            </span> Danh sách
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </li>
         <li class="nav-item menu-items">
             <a class="nav-link" href="">
                 <span class="menu-icon">
                     <i class="mdi mdi-account-star"></i>
                 </span>
-                <span class="menu-title">Người phát triển</span>
+                <span class="menu-title">Thành viên</span>
             </a>
         </li>
     </ul>

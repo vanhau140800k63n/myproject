@@ -22,4 +22,16 @@ class PLanguageRepository extends BaseRepository implements PLanguageRepositoryI
 
         return $pLanguages;
     }
+
+    public function getPLanguageIdByName($name)
+    {
+        $query = $this->p_language->where('name', $name);
+
+        $p_language = $this->retryQuery($query);
+        if($p_language !== false && $p_language->count() > 0) {
+            return $p_language->first()->id;
+        }
+
+        return false;
+    }
 }

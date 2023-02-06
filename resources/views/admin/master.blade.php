@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <?php
+    $user = \Illuminate\Support\Facades\Auth::user();
+    ?>
     <div class="container-scroller">
         @include('admin.partials._sidebar')
         <div class="container-fluid page-body-wrapper">

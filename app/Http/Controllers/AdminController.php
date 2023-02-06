@@ -9,8 +9,6 @@ class AdminController extends Controller
 {
     public function getDashboard()
     {
-        $user = Auth::user();
-
-        return view('admin.dashboard', compact('user'));
+        return view('admin.dashboard');
     }
 }

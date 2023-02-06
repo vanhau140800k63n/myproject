@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LessonController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,4 +44,8 @@ Route::middleware(['check.logged'])->group(function () {
 
 Route::prefix('admin')->middleware(['check.logged'])->name('admin.')->group(function () {
     Route::get('/dashboard', [AdminController::class, 'getDashboard'])->name('dashboard');
+    Route::prefix('course')->name('course.')->group(function () {
+        Route::get('/', [LessonController::class, 'getCourseListAdmin'])->name('list');
+        Route::get('/{name}', [LessonController::class, 'getLessonListAdmin'])->name('lesson_list');
+    });
 });

@@ -20,7 +20,7 @@ class CheckLogged
         if(Auth::check()) {
             return $next($request);
         } else {
-            return redirect('login')->with('message', 'Bạn không phải là ADMIN');
+            return redirect()->route('login');
         }
     }
 }
