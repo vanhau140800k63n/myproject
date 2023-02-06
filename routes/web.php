@@ -20,6 +20,10 @@ Route::get('/', [HomeController::class, 'getHomePage'])->name('home');
 Route::post('/submit', [HomeController::class, 'submit'])->name('submit');
 Route::get('/test', [HomeController::class, 'test'])->name('test');
 
+Route::prefix('learn')->name('learn.')->group(function () {
+    Route::get('/{lang}', [MovieController::class, 'getMovie'])->name('detail'); // used
+});
+
 Route::middleware(['check.logged_out'])->group(function () {
     Route::get('/login', [AuthController::class, 'getLogin'])->name('login');
     Route::post('/post-login', [AuthController::class, 'postLogin'])->name('post_login');

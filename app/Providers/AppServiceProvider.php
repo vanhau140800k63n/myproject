@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
+use App\Repositories\Eloquent\LessonRepository;
 use App\Repositories\Eloquent\PLanguageRepository;
 use App\Repositories\Eloquent\UserRepository;
+use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
@@ -22,6 +24,9 @@ class AppServiceProvider extends ServiceProvider
         });
         $this->app->singleton(PLanguageRepositoryInterface::class, function () {
             return new PLanguageRepository();
+        });
+        $this->app->singleton(LessonRepositoryInterface::class, function () {
+            return new LessonRepository();
         });
     }
 
