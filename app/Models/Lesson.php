@@ -10,4 +10,9 @@ class Lesson extends Model
     use HasFactory;
 
     protected $table = 'lesson';
+    protected $fillable = [
+        'title',
+        'sub_title',
+        'course_id'
+    ];
 }

@@ -49,6 +49,7 @@ Route::prefix('admin')->middleware(['check.logged'])->name('admin.')->group(func
         Route::get('/{name}', [LessonController::class, 'getLessonListAdmin'])->name('lesson_list');
         Route::prefix('lesson')->name('lesson.')->group(function () {
             Route::get('/add', [LessonController::class, 'addLessonAdmin'])->name('add');
+            Route::post('/add_lesson_info', [LessonController::class, 'addLessonInfoAdmin'])->name('add_lesson_info');
         });
     });
 });

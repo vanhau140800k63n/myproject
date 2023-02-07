@@ -29,11 +29,11 @@ class LessonController extends Controller
     public function getLessonListAdmin(Request $req)
     {
         if (isset($req->name)) {
-            $p_language_id = $this->pLanguageRepository->getPLanguageIdByName($req->name);
-            if ($p_language_id === false) {
+            $course_id = $this->pLanguageRepository->getPLanguageIdByName($req->name);
+            if ($course_id === false) {
                 return view('admin.pages.error_admin');
             }
-            $lesson_list = $this->lessonRepository->getLessonListAdmin($p_language_id);
+            $lesson_list = $this->lessonRepository->getLessonListAdmin($course_id);
         } else {
             return view('admin.pages.error_admin');
         }
@@ -44,5 +44,17 @@ class LessonController extends Controller
     public function addLessonAdmin(Request $req) {
         $course_list = $this->lessonRepository->getCourseListAdmin();
         return view('admin.pages.lesson.lesson_add', compact('course_list'));
+    }
+
+    public function addLessonInfoAdmin(Request $req) {
+        if(isset($req->course_id) && $req->course_id != null && $req->course_id != '') {
+            $course = $this->lessonRepository->addCourse($req->all());
+
+            if($course !== false) {
+                return response()->json($course);
+            }
+        }
+
+        return response()->json(false);
     }
 }

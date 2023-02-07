@@ -3,28 +3,40 @@
     <title> Thêm bài giảng | Devsne</title>
 @endsection
 @section('content')
-    <div class="row ">
-        <div class="col-12 grid-margin">
-            <div>
-                <button>
-                    Lưu
-                </button>
-            </div>
-            <div>
-                <div class="form_lesson_info">
-                    <div class="custom-select" style="width:200px;">
-                        <select>
-                            <option value="0">Chọn khóa học:</option>
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="lesson_save">
+                    <div class="lesson_save_error"> Vui lòng chọn khóa học</div>
+                    <button class="lesson_btn_save btn btn-primary">
+                        Lưu
+                    </button>
+                </div>
+                <div>
+                    <div class="lesson_info">
+                        <select class="course_select">
+                            <option value='0'>Chọn khóa học:</option>
                             @foreach ($course_list as $course)
                                 <option value="{{ $course->id }}">{{ $course->full_name }}</option>
                             @endforeach
                         </select>
+                        <input type="text" class="form-control main_title" style="color: #fff"
+                            placeholder="Tiêu đề chính">
+                        <input type="text" class="form-control sub_title" style="color: #fff" placeholder="Tiêu đề phụ">
                     </div>
-                    <input>
+                    <div class="lesson_content">
+                    </div>
+                    <div class="lesson_content_add">
+                        <select class="lesson_content_select">
+                            <option value="0">Chọn mục:</option>
+                            <option value="text">Văn bản</option>
+                            @foreach ($course_list as $course)
+                                <option value="{{ $course->name }}">Code {{ $course->full_name }}</option>
+                            @endforeach
+                        </select>
+                        <button type="button" class="lesson_content_btn_add btn btn-info btn-fw">Thêm</button>
+                    </div>
                 </div>
-                <div class="test">
-                </div>
-                <button class="add_test">add</button>
             </div>
         </div>
     </div>

@@ -21,7 +21,7 @@
 @section('content')
     <div class="content-wrapper">
         <div class="row">
-            <div class="col-sm-12 test">
+            <div class="col-sm-12">
                 {{-- <textarea id="myeditorinstance" name="description"></textarea> --}}
             </div>
         </div>

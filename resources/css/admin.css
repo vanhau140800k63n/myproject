@@ -1,3 +1,65 @@
-.form_lesson_info {
+.lesson_info {
     display: flex;
+}
+
+.lesson_save {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.lesson_save_error {
+    background-color: #dd4545;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+}
+
+.lesson_btn_save {
+    width: 15%;
+}
+
+.lesson_info {
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.lesson_content_form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main_title {
+    width: 45%;
+}
+
+.sub_title {
+    width: 30%;
+}
+
+.course_select {
+    width: 20%;
+}
+
+.lesson_content_form {
+    padding: 15px;
+    border: 1px solid #fff;
+    border-style: dashed;
+    border-radius: 5px;
+}
+
+.lesson_content_form_title {
+    margin-bottom: 15px;
+}
+
+.lesson_content_add {
+    display: flex;
+}
+
+.lesson_content_btn_add {
+    margin-left: 20px;
 }

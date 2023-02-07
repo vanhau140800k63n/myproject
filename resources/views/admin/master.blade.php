@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="{{ asset('lib/assets/vendors/css/vendor.bundle.base.css') }}">
     <script src="{{ asset('js/assets/jquery.min.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('lib/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset(mix('css/admin.css')) }}">
     <link rel="shortcut icon" href="{{ asset('img/logo1.png') }}" />
+    <style>
+        .tox-tinymce {
+            height: 400px !important;
+        }
+    </style>
 </head>
 
 <body>

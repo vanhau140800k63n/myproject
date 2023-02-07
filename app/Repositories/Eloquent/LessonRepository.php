@@ -24,15 +24,26 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
         $course_list = $this->retryQuery($query);
 
         foreach ($course_list as $lesson) {
-            $lesson->lession_num = $this->lesson->where('p_language_id', $lesson->id)->get()->count();
+            $lesson->lession_num = $this->lesson->where('course_id', $lesson->id)->get()->count();
         }
 
         return $course_list;
     }
 
-    public function getLessonListAdmin($p_language_id) {
-        $query = $this->lesson->where('p_language_id', $p_language_id);
+    public function getLessonListAdmin($course_id) {
+        $query = $this->lesson->where('course_id', $course_id);
 
         return $this->retryQuery($query);
+    }
+
+    public function addCourse($data) {
+        $query = $this->lesson;
+        $data_create = [
+            'title' => $data['main_title'],
+            'sub_title' => $data['sub_title'],
+            'course_id' => $data['course_id']
+        ];
+
+        return $this->retryCreate($query, $data_create);
     }
 }
