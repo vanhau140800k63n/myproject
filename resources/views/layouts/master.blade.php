@@ -28,9 +28,7 @@
 
 <body>
     @include('partial.header')
-    <div class="box">
-        @yield('content')
-    </div>
+    @yield('content')
     @include('partial.footer')
     <script type="text/javascript">
         $.ajaxSetup({

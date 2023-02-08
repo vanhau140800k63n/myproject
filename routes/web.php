@@ -22,7 +22,7 @@ Route::post('/submit', [HomeController::class, 'submit'])->name('submit');
 Route::get('/test', [HomeController::class, 'test'])->name('test');
 
 Route::prefix('learn')->name('learn.')->group(function () {
-    Route::get('/{lang}', [MovieController::class, 'getMovie'])->name('detail'); // used
+    Route::get('/{lang}/{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
 });
 
 Route::middleware(['check.logged_out'])->group(function () {
@@ -50,6 +50,11 @@ Route::prefix('admin')->middleware(['check.logged'])->name('admin.')->group(func
         Route::prefix('lesson')->name('lesson.')->group(function () {
             Route::get('/add', [LessonController::class, 'addLessonAdmin'])->name('add');
             Route::post('/add_lesson_info', [LessonController::class, 'addLessonInfoAdmin'])->name('add_lesson_info');
+            Route::post('/update_lesson_info', [LessonController::class, 'updateLessonInfoAdmin'])->name('update_lesson_info');
+            Route::post('/add_lesson_item', [LessonController::class, 'addLessonItemAdmin'])->name('add_lesson_item');
+            Route::post('/update_lesson_item', [LessonController::class, 'updateLessonItemAdmin'])->name('update_lesson_item');
+            Route::post('/del_lesson_item', [LessonController::class, 'delLessonItemAdmin'])->name('del_lesson_item');
+            Route::get('/detail', [LessonController::class, 'lessonDetailAdmin'])->name('detail');
         });
     });
 });

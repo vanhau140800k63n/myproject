@@ -7,13 +7,13 @@
         <div class="row">
             <div class="col-12 grid-margin">
                 <div class="lesson_save">
-                    <div class="lesson_save_error"> Vui lòng chọn khóa học</div>
+                    <div class="lesson_save_alert"> Vui lòng chọn khóa học</div>
                     <button class="lesson_btn_save btn btn-primary">
                         Lưu
                     </button>
                 </div>
                 <div>
-                    <div class="lesson_info">
+                    <div class="lesson_info" type="add">
                         <select class="course_select">
                             <option value='0'>Chọn khóa học:</option>
                             @foreach ($course_list as $course)

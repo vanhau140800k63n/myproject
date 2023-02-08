@@ -1,0 +1,19 @@
+.lesson_box {
+    display: flex;
+    min-height: 1000px;
+    padding-top: 60px;
+}
+
+.lesson_box_catecgory {
+    width: 15%;
+    background: rgb(135, 130, 130);
+}
+
+.lesson_box_content {
+    width: 65%;
+}
+
+.lesson_box_other {
+    width: 20%;
+    background: #ed5829;
+}

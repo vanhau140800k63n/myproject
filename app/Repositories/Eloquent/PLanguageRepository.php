@@ -34,4 +34,12 @@ class PLanguageRepository extends BaseRepository implements PLanguageRepositoryI
 
         return false;
     }
+
+    public function getCourseAdmin($id) {
+        return $this->p_language->find($id);
+    }
+
+    public function getCourseByName($name) {
+        return $this->p_language->where('name', $name)->first();
+    }
 }

@@ -16,6 +16,7 @@ class LessonItem extends Model
         'lesson_id',
         'index',
         'p_language_id',
-        'status'
+        'status',
+        'type'
     ];
 }

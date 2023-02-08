@@ -5,6 +5,8 @@ namespace App\Repositories;
 interface LessonRepositoryInterface
 {
     public function getCourseListAdmin();
-    public function getLessonListAdmin($course_id);
-    public function addCourse($data);
+    public function getLessonList($course_id);
+    public function addLesson($data);
+    public function updateLesson($data);
+    public function getLessonAdmin($id);
 }
