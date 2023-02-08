@@ -20,7 +20,7 @@
                         color="{{ $p_language->color }}" hidden>
                     <div class="home_lession_card" id="{{ $p_language->name }}"></div>
                     <div class="home_lession_cover"></div>
-                    <a class="home_lession_info">
+                    <a class="home_lession_info" href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}">
                         Học {{ $p_language->full_name }} miễn phí
                     </a>
                     {{-- <button class="submit"> submit </button> --}}

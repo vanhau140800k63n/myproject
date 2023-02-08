@@ -111,4 +111,13 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
     {
         return $this->lesson->find($id);
     }
+
+    public function getLessonBySlug($slug, $course_id)
+    {
+        return $this->lesson->where('slug', $slug)->where('course_id', $course_id)->first();
+    }
+
+    public function getLessonIntro($course_id) {
+        return $this->lesson->where('course_id', $course_id)->first();
+    }
 }

@@ -48,8 +48,4 @@ class LessonItemRepository extends BaseRepository implements LessonItemRepositor
     public function delItem($id) {
         return $this->lesson_item->where('id', $id)->delete();
     }
-
-    public function getLessonDetailBySlug($slug) {
-        return $this->lesson_item->where('slug', $slug)->orderBy('index', 'ASC')->get();
-    }
 }

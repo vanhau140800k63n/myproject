@@ -9,4 +9,6 @@ interface LessonRepositoryInterface
     public function addLesson($data);
     public function updateLesson($data);
     public function getLessonAdmin($id);
+    public function getLessonBySlug($slug, $course_id);
+    public function getLessonIntro($course_id);
 }

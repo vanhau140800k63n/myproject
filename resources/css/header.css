@@ -49,7 +49,7 @@
 }
 
 .search-box:has(input[type=text]:focus) {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.3) 0px 0px 0px 1px;
 }
 
 .search-box:has(input[type=text]:focus) .search-icon {
@@ -153,4 +153,8 @@
 
 .menu-item:hover {
     background: rgb(171, 171, 171);
+}
+
+.logo_image {
+    width: 30px;
 }

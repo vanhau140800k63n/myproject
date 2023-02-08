@@ -1,34 +1,35 @@
 <div class="header-box">
-    <div class="logo">DEVSNE</div>
-    <div class="menu">
+    <div class="logo"><a href="{{ route('home') }}"><img class="logo_image" src="{{ asset(mix('image/logo1.png')) }}"></a>
+    </div>
+    {{-- <div class="menu">
         <div class="menu-category active"> Học tập
-            {{-- <div class="menu-items">
+            <div class="menu-items">
                 <div class="menu-item"> SQL </div>
                 <div class="menu-item"> Java </div>
                 <div class="menu-item"> Python </div>
                 <div class="menu-item"> PHP </div>
                 <div class="menu-item"> HTML </div>
-            </div> --}}
+            </div>
         </div>
         <div class="menu-category"> Tài liệu
-            {{-- <div class="menu-items">
+            <div class="menu-items">
                 <div class="menu-item"> Tín hiệu </div>
                 <div class="menu-item"> Lập trình mạng </div>
                 <div class="menu-item"> Pacman Project </div>
                 <div class="menu-item"> Web Project </div>
                 <div class="menu-item"> HTML </div>
-            </div> --}}
+            </div>
         </div>
         <div class="menu-category"> Blog
-            {{-- <div class="menu-items">
+            <div class="menu-items">
                 <div class="menu-item"> Tín hiệu </div>
                 <div class="menu-item"> Lập trình mạng </div>
                 <div class="menu-item"> Pacman Project </div>
                 <div class="menu-item"> Web Project </div>
                 <div class="menu-item"> HTML </div>
-            </div> --}}
+            </div>
         </div>
-    </div>
+    </div> --}}
     <div class="search">
         <form class="search-box">
             <i class="fas fa-search search-icon"></i>

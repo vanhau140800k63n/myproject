@@ -8,5 +8,4 @@ interface LessonItemRepositoryInterface
     public function getLessonDetail($lesson_id);
     public function updateItem($data);
     public function delItem($id);
-    public function getLessonDetailBySlug($slug);
 }

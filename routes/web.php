@@ -22,7 +22,8 @@ Route::post('/submit', [HomeController::class, 'submit'])->name('submit');
 Route::get('/test', [HomeController::class, 'test'])->name('test');
 
 Route::prefix('learn')->name('learn.')->group(function () {
-    Route::get('/{lang}/{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
+    Route::get('/{course}/{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
+    Route::get('/{course}', [LessonController::class, 'getLessonIntro'])->name('lesson_intro');
 });
 
 Route::middleware(['check.logged_out'])->group(function () {

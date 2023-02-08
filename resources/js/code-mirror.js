@@ -75,3 +75,19 @@ $('.home_lession_card').each(function () {
 
     $(this).parent().children('.home_lession_info').css('background', $('#input_' + language).attr('color'));
 })
+
+$('.lesson_box_content .lesson_content').each(function() {
+    if($(this).find('.lession_card').length > 0) {
+        $(this).find('.lesson_content_head').append('<button> Run code </button>');
+        $(this).addClass('code_box');
+        let lesson_cart = $(this).find('.lession_card');
+        let content = lesson_cart.attr('value').replaceAll('\\n', '\n');
+        let val = lesson_cart.attr('lang');
+
+        view = new EditorView({
+            extensions: [basicSetup, oneDark, language_list[val]],
+            parent: document.querySelector(".lession_card#" + lesson_cart.attr('id')),
+            doc: content
+        })
+    }
+})

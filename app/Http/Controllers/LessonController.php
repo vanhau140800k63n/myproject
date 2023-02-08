@@ -112,21 +112,42 @@ class LessonController extends Controller
         return response()->json(false);
     }
 
-    public function delLessonItemAdmin(Request $req) {
-        if(isset($req->id)) {
+    public function delLessonItemAdmin(Request $req)
+    {
+        if (isset($req->id)) {
             $del_lesson_item = $this->lessonItemRepository->delItem($req->id);
         }
 
         return response()->json(true);
     }
 
-    public function getLessonDetail($course, $slug) {
+    public function getLessonDetail($course, $slug)
+    {
         $course = $this->pLanguageRepository->getCourseByName($course);
-        if($course !== false) {
+        if ($course !== false) {
             $lesson_list = $this->lessonRepository->getLessonList($course->id);
-            $lesson_detail = $this->lessonItemRepository->getLessonDetailBySlug($slug);
+            $lesson = $this->lessonRepository->getLessonBySlug($slug, $course->id);
+            if ($lesson !== null) {
+                $lesson_detail = $this->lessonItemRepository->getLessonDetail($lesson->id);
+                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson'));
+            }
+        }
+        return view('pages.errors.error404');
+    }
+
+    public function getLessonIntro($course)
+    {
+        $course = $this->pLanguageRepository->getCourseByName($course);
+        if ($course !== false) {
+            $lesson_list = $this->lessonRepository->getLessonList($course->id);
+            $lesson = $this->lessonRepository->getLessonIntro($course->id);
+
+            if ($lesson !== null) {
+                $lesson_detail = $this->lessonItemRepository->getLessonDetail($lesson->id);
+                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson'));
+            }
         }
 
-        return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course'));
+        return view('pages.errors.error404');
     }
 }
