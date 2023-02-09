@@ -11,6 +11,9 @@
         }
     </style>
 @endsection
+@section('head')
+<title>Trang chủ</title>
+@endsection
 @section('content')
     <div class="box">
         <div class="home_lession">

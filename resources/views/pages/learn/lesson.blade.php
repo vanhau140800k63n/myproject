@@ -11,6 +11,9 @@
         }
     </style>
 @endsection
+@section('head')
+<title>{{ $lesson->title }}</title>
+@endsection
 @section('content')
     <div class="lesson_box">
         <div class="lesson_box_category">
@@ -18,7 +21,7 @@
             <div class="lesson_box_category_list">
                 @foreach ($lesson_list as $lesson_item)
                     <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_item->slug]) }}"
-                        class="lesson_box_category_item">{{ $lesson_item->sub_title }}</a>
+                        class="lesson_box_category_item{{ $lesson_item->id === $lesson->id ? ' active': '' }}">{{ $lesson_item->sub_title }}</a>
                 @endforeach
             </div>
         </div>
@@ -34,6 +37,10 @@
                     @else
                         <div class="lession_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
                             lang="{{ $item->p_language_id }}"></div>
+                        <div class="compiler_code_title"> Compiler </div>
+                        <div class="compiler_code" id="compiler{{ $item->p_language_id . $item->id }}">
+
+                        </div>
                     @endif
                 </div>
             @endforeach

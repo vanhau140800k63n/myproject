@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'getHomePage'])->name('home');
 Route::post('/submit', [HomeController::class, 'submit'])->name('submit');
 Route::get('/test', [HomeController::class, 'test'])->name('test');
+Route::post('/build_code_php', [LessonController::class, 'buildCodePHP'])->name('build_code_php');
 
 Route::prefix('learn')->name('learn.')->group(function () {
     Route::get('/{course}/{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
@@ -41,6 +42,10 @@ Route::middleware(['check.logged_out'])->group(function () {
 
 Route::middleware(['check.logged'])->group(function () {
     Route::get('/logout', [AuthController::class, 'getLogout'])->name('logout');
+    Route::prefix('user')->name('user.')->group(function () {
+        Route::get('/{id}', [AuthController::class, 'getUserInfo'])->name('info');
+        Route::post('/update', [AuthController::class, 'updateUserInfo'])->name('update');
+    });
 });
 
 Route::prefix('admin')->middleware(['check.logged'])->name('admin.')->group(function () {

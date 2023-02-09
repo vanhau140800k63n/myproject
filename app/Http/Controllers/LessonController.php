@@ -150,4 +150,9 @@ class LessonController extends Controller
 
         return view('pages.errors.error404');
     }
+
+    public function buildCodePHP(Request $req)
+    {
+        return eval($req->content);
+    }
 }

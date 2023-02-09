@@ -72,11 +72,34 @@
     margin-bottom: 20px;
 }
 
-.lesson_content *{
+.lesson_content * {
     font-size: 17px;
     line-height: 1.8;
 }
 
 .lesson_content strong {
     font-weight: 500;
+}
+
+.compiler_code_title {
+    background: #4b515c;
+    margin-top: 20px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.compiler_code {
+    height: 100px;
+    background: #282c34;
+    padding: 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.lesson_box_category_item.active {
+    color: #fff;
+    background: #8a867f;
 }

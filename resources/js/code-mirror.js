@@ -16,6 +16,8 @@ let language_list = {
     cpp: cpp()
 }
 
+let view = {}
+
 $('.home_lession_card').each(function () {
     let language = $(this).attr('id');
     let text = $('#input_' + language).val();
@@ -76,18 +78,45 @@ $('.home_lession_card').each(function () {
     $(this).parent().children('.home_lession_info').css('background', $('#input_' + language).attr('color'));
 })
 
-$('.lesson_box_content .lesson_content').each(function() {
-    if($(this).find('.lession_card').length > 0) {
-        $(this).find('.lesson_content_head').append('<button> Run code </button>');
+$('.lesson_box_content .lesson_content').each(function () {
+    if ($(this).find('.lession_card').length > 0) {
+        $(this).find('.lesson_content_head').append('<button class="run_code"> Run code </button>');
         $(this).addClass('code_box');
         let lesson_cart = $(this).find('.lession_card');
         let content = lesson_cart.attr('value').replaceAll('\\n', '\n');
         let val = lesson_cart.attr('lang');
 
-        view = new EditorView({
+        view[lesson_cart.attr('id')] = new EditorView({
             extensions: [basicSetup, oneDark, language_list[val]],
             parent: document.querySelector(".lession_card#" + lesson_cart.attr('id')),
             doc: content
         })
     }
 })
+
+$('.run_code').click(function () {
+    let code_editer = $(this).parent().parent().find('.lession_card');
+    let content = view[code_editer.attr('id')].state.doc.toString();
+    content = content.replace('<?php', '');
+
+    let _token = $('input[name="_token"]').val();
+    $.ajax({
+        url: "http://localhost:8003/build_code_php",
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        type: "POST",
+        dataType: 'json',
+        data: {
+            content: content,
+            _token: _token
+        }
+    }).done(function (data) {
+        $('#compiler' + code_editer.attr('id')).html(data);
+        return true;
+    }).fail(function (e) {
+        $('#compiler' + code_editer.attr('id')).html(e.responseText);
+        return false;
+    });
+})
+

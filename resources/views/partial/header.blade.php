@@ -38,7 +38,18 @@
         </form>
     </div>
     <div class="header-user">
-        <a class="login" href="{{ route('login') }}"> Đăng nhập </a>
+        @if (!\Illuminate\Support\Facades\Auth::check())
+            <a class="login" href="{{ route('login') }}"> Đăng nhập </a>
+        @else
+            <div class="user_info_box">
+                <?php
+                $user = \Illuminate\Support\Facades\Auth::user();
+                ?>
+                <a href="{{ route('user.info', ['id' => $user->id]) }}">
+                    <img class="login_img" src="{{ isset($user->avata) ? $user->avata : asset('img/no_avata.jpg') }}">
+                </a>
+            </div>
+        @endif
     </div>
 </div>
 <script src="{{ asset(mix('js/assets/header.js')) }}"></script>

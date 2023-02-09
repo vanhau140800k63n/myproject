@@ -65,7 +65,7 @@ class AuthController extends Controller
         $user = $this->userRepository->getUserByEmail($req->email);
         if ($user !== false) {
             $dataUpdate = [
-                'token' => hash('sha256', AuthConstants::SECRET_STR . $req->email. time()),
+                'token' => hash('sha256', AuthConstants::SECRET_STR . $req->email . time()),
                 'token_expired' => date(CommonConstants::FORMAT_TIME, time() + 1800)
             ];
 
@@ -193,5 +193,17 @@ class AuthController extends Controller
         }
 
         return 1;
+    }
+
+    public function getUserInfo(Request $req)
+    {
+        if (isset($req->id) && Auth::id() === intval($req->id)) {
+            $user = $this->userRepository->getUserById($req->id);
+            if ($user !== null) {
+                return view('pages.user.info', compact('user'));
+            }
+        }
+
+        return view('pages.errors.error404');
     }
 }

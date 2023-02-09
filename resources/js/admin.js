@@ -82,7 +82,7 @@ $('.lesson_btn_save').click(function () {
 
         let index_form = 0;
         $('.lesson_content_form').each(function () {
-            let index = index_form;
+            let index = $('.lesson_content_form').index($(this));
             let title_content_item = $(this).find('.lesson_content_form_title').val();
             let type = $(this).attr('type');
             let content = '';
