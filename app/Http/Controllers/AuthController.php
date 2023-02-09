@@ -10,6 +10,7 @@ use App\Config\CommonConstants;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Repositories\UserRepositoryInterface;
+use Illuminate\Support\Facades\File;
 
 class AuthController extends Controller
 {
@@ -195,15 +196,45 @@ class AuthController extends Controller
         return 1;
     }
 
-    public function getUserInfo(Request $req)
+    public function getUserInfo()
     {
-        if (isset($req->id) && Auth::id() === intval($req->id)) {
-            $user = $this->userRepository->getUserById($req->id);
+        if (Auth::id()) {
+            $user = $this->userRepository->getUserById(Auth::id());
             if ($user !== null) {
                 return view('pages.user.info', compact('user'));
             }
         }
 
         return view('pages.errors.error404');
+    }
+
+    public function updateUserInfo(Request $req)
+    {
+        $data_path = null;
+        if ($req->hasFile('avata')) {
+            $avata = $req->file('avata');
+            $name = 'avata_user' . Auth::id() . time();
+            $data_path = $name . '.' . pathinfo($avata->getClientOriginalName(), PATHINFO_EXTENSION);
+            $avata->move('img/avata_user/', $data_path);
+
+            if (Auth::user()->avata !== null) {
+                File::delete(Auth::user()->avata);
+            }
+        }
+
+        $data = $req->all();
+        $dataUpdate = [
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
+            'phone' => $data['phone']
+        ];
+
+        if (!is_null($data_path)) {
+            $dataUpdate['avata'] = 'img/avata_user/' . $data_path;
+        }
+
+        $user = $this->userRepository->updateUserInfo($dataUpdate);
+
+        return redirect()->back();
     }
 }

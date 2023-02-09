@@ -91,7 +91,7 @@
 }
 
 .compiler_code {
-    height: 100px;
+    min-height: 100px;
     background: #282c34;
     padding: 20px;
     color: #fff;

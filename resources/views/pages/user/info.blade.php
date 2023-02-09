@@ -6,16 +6,17 @@
 @endsection
 @section('content')
     <div class="box">
-        <form>
+        <form method="POST" action="{{ route('user.update') }}" enctype="multipart/form-data">
+            @csrf
             <div class="user_box">
                 <div class="user_image">
                     <div class="card">
                         <div class="card_header">Ảnh đại diện</div>
                         <div class="card_body text_center">
-                            <img class="img_account_profile rounded_circle" src="{{ isset($user->avata) ? $user->avata : asset('img/no_avata.jpg') }}"
-                                alt="">
+                            <img class="img_account_profile rounded_circle"
+                                src="{{ isset($user->avata) ? asset($user->avata) : asset('img/no_avata.jpg') }}" alt="">
                             <div class="post_img_noti">Ảnh JPG hoặc PNG nhở hơn 5MB </div>
-                            <input style="display:none" type="file" id="post_avata">
+                            <input type="file" id="post_avata" name="avata" hidden>
                             <button class="post_img_btn" type="button"
                                 onclick="document.getElementById('post_avata').click()">Tải ảnh</button>
                         </div>
@@ -27,22 +28,25 @@
                         <div class="user_info_name">
                             <div class="user_info_name_detail">
                                 <label class="user_info_label" for="first_name">Họ</label>
-                                <input class="user_info_input" id="first_name" type="text"
+                                <input class="user_info_input" id="first_name" type="text" name="first_name"
                                     value="{{ $user->first_name }}">
                             </div>
                             <div class="user_info_name_detail">
                                 <label class="user_info_label" for="last_name">Tên</label>
-                                <input class="user_info_input" id="last_name" type="text" value="{{ $user->last_name }}">
+                                <input class="user_info_input" id="last_name" type="text" name="last_name"
+                                    value="{{ $user->last_name }}">
                             </div>
                         </div>
                         <div class="user_info_item">
                             <label class="user_info_label" for="email">Địa chỉ email</label>
-                            <input class="user_info_input" id="email" type="email" value="{{ $user->email }}">
+                            <input class="user_info_input" id="email" type="email" value="{{ $user->email }}"
+                                disabled>
                         </div>
 
                         <div class="user_info_item">
                             <label class="user_info_label" for="phone">Số điện thoại</label>
-                            <input class="user_info_input" id="phone" type="text" value="{{ $user->phone }}">
+                            <input class="user_info_input" id="phone" type="text" name="phone"
+                                value="{{ $user->phone }}">
                         </div>
 
                         <div class="user_info_action">
@@ -53,5 +57,6 @@
                 </div>
             </div>
         </form>
+        <div style="height: 300px"></div>
     </div>
 @endsection

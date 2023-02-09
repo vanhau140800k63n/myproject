@@ -43,12 +43,12 @@ Route::middleware(['check.logged_out'])->group(function () {
 Route::middleware(['check.logged'])->group(function () {
     Route::get('/logout', [AuthController::class, 'getLogout'])->name('logout');
     Route::prefix('user')->name('user.')->group(function () {
-        Route::get('/{id}', [AuthController::class, 'getUserInfo'])->name('info');
+        Route::get('/info', [AuthController::class, 'getUserInfo'])->name('info');
         Route::post('/update', [AuthController::class, 'updateUserInfo'])->name('update');
     });
 });
 
-Route::prefix('admin')->middleware(['check.logged'])->name('admin.')->group(function () {
+Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(function () {
     Route::get('/dashboard', [AdminController::class, 'getDashboard'])->name('dashboard');
     Route::prefix('course')->name('course.')->group(function () {
         Route::get('/', [LessonController::class, 'getCourseListAdmin'])->name('list');

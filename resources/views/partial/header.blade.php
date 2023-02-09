@@ -45,8 +45,8 @@
                 <?php
                 $user = \Illuminate\Support\Facades\Auth::user();
                 ?>
-                <a href="{{ route('user.info', ['id' => $user->id]) }}">
-                    <img class="login_img" src="{{ isset($user->avata) ? $user->avata : asset('img/no_avata.jpg') }}">
+                <a href="{{ route('user.info') }}">
+                    <img class="login_img" src="{{ isset($user->avata) ? asset($user->avata) : asset('img/no_avata.jpg') }}">
                 </a>
             </div>
         @endif

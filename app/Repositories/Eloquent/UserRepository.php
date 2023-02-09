@@ -6,6 +6,7 @@ use App\Config\AuthConstants;
 use App\Models\User;
 use App\Repositories\Eloquent\BaseRepository;
 use App\Repositories\UserRepositoryInterface;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class UserRepository extends BaseRepository implements UserRepositoryInterface
@@ -92,7 +93,8 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
         return false;
     }
 
-    public function changeStatus($id, $status) {
+    public function changeStatus($id, $status)
+    {
         $query = $this->user->where('id', $id);
 
         $dataUpdate = [
@@ -107,7 +109,8 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
         return false;
     }
 
-    public function updatePassword($id, $pass) {
+    public function updatePassword($id, $pass)
+    {
         $query = $this->user->where('id', $id);
 
         $dataUpdate = [
@@ -125,5 +128,10 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
         }
 
         return false;
+    }
+
+    public function updateUserInfo($data)
+    {
+        return $this->user->where('id', Auth::id())->update($data);
     }
 }

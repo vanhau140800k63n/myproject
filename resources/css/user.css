@@ -1,10 +1,13 @@
 .img_account_profile {
     height: 10rem;
+    width: 10rem;
     margin-bottom: 20px;
+    object-fit: contain;
 }
 
 .rounded_circle {
     border-radius: 50% !important;
+    border: 2px solid #626365;
 }
 
 .card {
@@ -83,7 +86,7 @@
 
 .user_info_label {
     font-weight: 500;
-    display:inline-block;
+    display: inline-block;
     margin-bottom: 5px;
 }
 
@@ -114,4 +117,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.user_info_input:disabled {
+    background: #c5ccd6;
 }
