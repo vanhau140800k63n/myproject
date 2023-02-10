@@ -16,7 +16,7 @@
                             <img class="img_account_profile rounded_circle"
                                 src="{{ isset($user->avata) ? asset($user->avata) : asset('img/no_avata.jpg') }}" alt="">
                             <div class="post_img_noti">Ảnh JPG hoặc PNG nhở hơn 5MB </div>
-                            <input type="file" id="post_avata" name="avata" hidden>
+                            <input type="file" id="post_avata" name="avata" hidden accept="image/*">
                             <button class="post_img_btn" type="button"
                                 onclick="document.getElementById('post_avata').click()">Tải ảnh</button>
                         </div>
@@ -52,6 +52,8 @@
                         <div class="user_info_action">
                             <button class="user_info_btn_save" type="submit">Lưu thay đổi</button>
                             <a class="user_info_btn_logout" href="{{ route('logout') }}">Đăng xuất</a>
+                            <div class="form_submit_noti"> {{ Session::get('noti') }} </div>
+                            <div class="form_submit_error"> {{ Session::get('error') }} </div>
                         </div>
                     </div>
                 </div>

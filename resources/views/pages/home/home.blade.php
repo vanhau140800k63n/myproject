@@ -12,7 +12,7 @@
     </style>
 @endsection
 @section('head')
-<title>Trang chủ</title>
+    <title>Trang chủ</title>
 @endsection
 @section('content')
     <div class="box">

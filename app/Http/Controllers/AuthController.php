@@ -223,9 +223,13 @@ class AuthController extends Controller
         }
 
         $data = $req->all();
+        if (!(array_key_exists('first_name', $data) && array_key_exists('first_name', $data) && array_key_exists('phone', $data))) {
+            return redirect()->back()->with('error', 'Cập nhật lỗi');
+        }
+
         $dataUpdate = [
             'first_name' => $data['first_name'],
-            'last_name' => $data['last_name'],
+            'last_name' => $data['first_name'],
             'phone' => $data['phone']
         ];
 
@@ -235,6 +239,6 @@ class AuthController extends Controller
 
         $user = $this->userRepository->updateUserInfo($dataUpdate);
 
-        return redirect()->back();
+        return redirect()->back()->with('noti', 'Cập nhật thông tin thành công');
     }
 }

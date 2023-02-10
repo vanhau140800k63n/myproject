@@ -94,29 +94,49 @@ $('.lesson_box_content .lesson_content').each(function () {
     }
 })
 
+const originalLog = console.log;
+
+console.log = function (...value) {
+    originalLog.apply(console, value);
+    return value;
+};
+
 $('.run_code').click(function () {
     let code_editer = $(this).parent().parent().find('.lession_card');
+    let lang = code_editer.attr('lang');
     let content = view[code_editer.attr('id')].state.doc.toString();
-    content = content.replace('<?php', '');
+    if (lang == 'php') {
+        content = content.replace('<?php', '');
 
-    let _token = $('input[name="_token"]').val();
-    $.ajax({
-        url: "http://localhost:8003/build_code_php",
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        type: "POST",
-        dataType: 'json',
-        data: {
-            content: content,
-            _token: _token
+        let _token = $('input[name="_token"]').val();
+        $.ajax({
+            url: "http://localhost:8003/build_code_php",
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            type: "POST",
+            dataType: 'json',
+            data: {
+                content: content,
+                _token: _token
+            }
+        }).done(function (data) {
+            $('#compiler' + code_editer.attr('id')).html(data);
+            return true;
+        }).fail(function (e) {
+            $('#compiler' + code_editer.attr('id')).html(e.responseText);
+            return false;
+        });
+    } else if (lang == 'js') {
+        let value = '';
+        try {
+            value = eval(content);
+        } catch (error) {
+            value = error;
         }
-    }).done(function (data) {
-        $('#compiler' + code_editer.attr('id')).html(data);
-        return true;
-    }).fail(function (e) {
-        $('#compiler' + code_editer.attr('id')).html(e.responseText);
-        return false;
-    });
+        $('#compiler' + code_editer.attr('id')).html(value);
+    } else if(lang == 'html') {
+        $('#compiler' + code_editer.attr('id')).append(content);
+    }
 })
 

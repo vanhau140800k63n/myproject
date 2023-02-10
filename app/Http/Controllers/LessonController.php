@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\PageException;
 use App\Repositories\LessonItemRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
+use DivisionByZeroError;
+use Exception;
 use Illuminate\Http\Request;
+use Throwable;
 
 class LessonController extends Controller
 {
@@ -132,7 +136,8 @@ class LessonController extends Controller
                 return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson'));
             }
         }
-        return view('pages.errors.error404');
+        
+        throw new PageException();
     }
 
     public function getLessonIntro($course)
@@ -148,11 +153,15 @@ class LessonController extends Controller
             }
         }
 
-        return view('pages.errors.error404');
+        throw new PageException();
     }
 
     public function buildCodePHP(Request $req)
     {
-        return eval($req->content);
+        try {
+            return eval($req->content);
+        } catch (Throwable $ex) {
+            return $ex->getMessage();
+        }
     }
 }

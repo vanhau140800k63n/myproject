@@ -108,6 +108,7 @@
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
+    margin-left: 10px;
 }
 
 .post_img_btn {
@@ -121,4 +122,21 @@
 
 .user_info_input:disabled {
     background: #c5ccd6;
+}
+
+.user_info_action {
+    display: flex;
+    align-items: center;
+}
+
+.form_submit_noti {
+    margin-left: 20px;
+    font-weight: 500;
+    color: rgb(41, 203, 82);
+}
+
+.form_submit_error {
+    margin-left: 20px;
+    font-weight: 500;
+    color: rgb(206, 37, 11);
 }

@@ -86,20 +86,40 @@
     margin-top: 20px;
     padding: 0 20px;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
 }
 
 .compiler_code {
     min-height: 100px;
     background: #282c34;
-    padding: 20px;
+    padding: 10px 20px;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
 }
 
 .lesson_box_category_item.active {
     color: #fff;
     background: #8a867f;
+}
+
+.lession_card * {
+    font-size: 14px;
+}
+
+.lesson_content table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #dddddd;
+}
+
+.lesson_content td {
+    padding: 6px 25px;
+    font-size: 15px;
+}
+
+.lesson_content tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
 }
