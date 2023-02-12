@@ -21,7 +21,7 @@
     padding: 15px 20px;
     font-weight: 400;
     color: #fff;
-    background: rgb(87, 86, 93);
+    background: linear-gradient(to right, #2b5876 0%, #30709b 51%, #1e4d6c 100%);
     text-transform: uppercase;
 }
 
@@ -42,7 +42,7 @@
 
 .lesson_box_content_title {
     padding: 20px 30px;
-    background: rgb(153, 151, 168);
+    background-image: radial-gradient( circle 1017px at 1.4% 22.8%,  rgba(97,76,141,1) 31.9%, rgb(94, 82, 194) 90% );
     color: #fff;
     font-size: 20px;
     font-weight: 600;
@@ -72,9 +72,9 @@
     margin-bottom: 20px;
 }
 
-.lesson_content * {
+.lesson_content.html_box *{
     font-size: 17px;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .lesson_content strong {
@@ -84,10 +84,14 @@
 .compiler_code_title {
     background: #4b515c;
     margin-top: 20px;
-    padding: 0 20px;
+    padding: 2px 20px;
     color: #fff;
     font-size: 14px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
 }
 
 .compiler_code {
@@ -101,11 +105,7 @@
 
 .lesson_box_category_item.active {
     color: #fff;
-    background: #8a867f;
-}
-
-.lession_card * {
-    font-size: 14px;
+    background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 }
 
 .lesson_content table {
@@ -122,4 +122,22 @@
 
 .lesson_content tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
+}
+
+.compiler_html {
+    min-height: 150px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.w3-codespan {
+    background: #d5d5dc;
+    font-size: 15px !important;
+    padding: 0 4px;
+    border-radius: 5px;
 }

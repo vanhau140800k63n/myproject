@@ -8,7 +8,7 @@
                         Chào mừng
                     </span>
                     <div class="form-noti">
-                        <span>vanhau140800@gmail.com </span> đến với cộng đồng <span>devsne</span>
+                        <span>{{ $email }} </span> đến với cộng đồng <span>devsne</span>
                     </div>
                     <div class="container-login-form-btn">
                         <div class="wrap-login-form-btn">

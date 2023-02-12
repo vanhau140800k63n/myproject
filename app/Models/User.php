@@ -16,6 +16,7 @@ class User extends Authenticatable
         'status',
         'token',
         'token_expired',
-        'phone'
+        'phone',
+        'role'
     ];
 }

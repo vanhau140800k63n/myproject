@@ -18,19 +18,22 @@ class HomeController extends Controller
         $this->pLanguageRepository = $pLanguageRepository;
     }
 
-    public function getHomePage() {
+    public function getHomePage()
+    {
         $pLanguages = $this->pLanguageRepository->getPLanguageHome();
         return view('pages.home.home')->with(['p_languages' => $pLanguages]);
     }
 
-    public function submit(Request $req) {
+    public function submit(Request $req)
+    {
         $pLang = PLanguage::where('name', $req->language)->first();
         $pLang->home_content = $req->text;
         $pLang->save();
         return 1;
     }
 
-    public function test(Request $req) {
+    public function test(Request $req)
+    {
         $pLang = PLanguage::find(2);
         dd(json_decode($pLang->home_content));
     }

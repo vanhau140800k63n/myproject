@@ -22,7 +22,7 @@
                     <input id="input_{{ $p_language->name }}" value="{{ $p_language->home_content }}"
                         color="{{ $p_language->color }}" hidden>
                     <div class="home_lession_card" id="{{ $p_language->name }}"></div>
-                    <div class="home_lession_cover"></div>
+                    <a href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}"><div class="home_lession_cover"></div></a>
                     <a class="home_lession_info" href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}">
                         Học {{ $p_language->full_name }} miễn phí
                     </a>

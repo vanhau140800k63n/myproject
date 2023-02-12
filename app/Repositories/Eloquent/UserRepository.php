@@ -20,14 +20,7 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
 
     public function createUser($data)
     {
-        $query = $this->user;
-        $user = $this->retryCreate($query, $data);
-
-        if ($user !== false) {
-            return $user;
-        }
-
-        return false;
+        return $this->user->create($data);
     }
 
     public function updateUser($id, $data)

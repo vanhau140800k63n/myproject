@@ -94,20 +94,33 @@ $('.lesson_btn_save').click(function () {
                 let id = $(this).find('textarea').attr('id');
                 content = tinyMCE.get(id).getContent();
             } else {
-                content = '';
                 code = $(this).attr('code');
-                view[$(this).attr('id')].state.doc.text.forEach(element => {
-                    if (element != null) {
-                        content += element + '\\n';
-                    } else {
-                        content += '\\n';
-                    }
-                });
+                content = view[$(this).attr('id')].state.doc.toString();
+                // if (view[$(this).attr('id')].state.doc.text != undefined) {
+                //     view[$(this).attr('id')].state.doc.text.forEach(element => {
+                //         if (element != null) {
+                //             content += element + '\\n';
+                //         } else {
+                //             content += '\\n';
+                //         }
+                //     });
+                // } else {
+                //     view[$(this).attr('id')].state.doc.children.forEach(children => {
+                //         children.text.forEach(element => {
+                //             if (element != null) {
+                //                 content += element + '\\n';
+                //             } else {
+                //                 content += '\\n';
+                //             }
+                //         });
+                //     });
+                // }
 
-                content = content.slice(0, -2);
+                // content = content.slice(0, -2); // remove "\n"
             }
             let _token = $('input[name="_token"]').val();
-            if ($(this).attr('status') == 'new') {
+            let is_new_content = ($(this).attr('status') == 'new');
+            if (is_new_content) {
                 url_item = "http://localhost:8003/admin/course/lesson/add_lesson_item";
                 data_item = {
                     content: content,
@@ -145,7 +158,8 @@ $('.lesson_btn_save').click(function () {
                 if (index_form == lesson_content_form_length) {
                     if ($('.lesson_info').attr('type') == 'add') {
                         location.href = 'http://localhost:8003/admin/course';
-                        return false;
+                    } else {
+                        location.reload();
                     }
                     $('.lesson_save_alert').css('background-color', '#4CAF50');
                     $('.lesson_save_alert').html('Lưu thành công');

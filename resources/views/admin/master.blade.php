@@ -36,7 +36,7 @@
     <script src="{{ asset('lib/assets/vendors/js/vendor.bundle.base.js') }}"></script>
     <script src="{{ asset('lib/assets/js/misc.js') }}"></script>
     <script src="{{ asset('lib/assets/js/dashboard.js') }}"></script>
-    <script src="{{ asset('js/admin.js') }}"></script>
+    <script src="{{ asset(mix('js/admin.js')) }}"></script>
     <script>
         $.ajaxSetup({
             headers: {

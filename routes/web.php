@@ -38,6 +38,7 @@ Route::middleware(['check.logged_out'])->group(function () {
     Route::get('/forgot-password', [AuthController::class, 'forgotPassword'])->name('forgot_password');
     Route::post('/post-forgot-password', [AuthController::class, 'postForgotPassword'])->name('post_forgot_password');
     Route::get('/confirm-reset-password', [AuthController::class, 'confirmResetPassword'])->name('confirm_reset_password');
+    Route::get('/change-password-success', [AuthController::class, 'changePasswordSuccess'])->name('change_password_success');
 });
 
 Route::middleware(['check.logged'])->group(function () {

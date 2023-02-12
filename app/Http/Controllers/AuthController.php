@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
@@ -73,7 +74,7 @@ class AuthController extends Controller
             $userUpdate = $this->userRepository->updateUser($user->id, $dataUpdate);
             if ($userUpdate !== false) {
                 Mail::to($user->email)->send(new ResetPassword($user->email, $user->id, $dataUpdate['token']));
-                return redirect()->route('confirm_reset_password', ['user_id' => $user->id]);
+                return redirect()->route('confirm_reset_password')->with('user_id', $user->id);
             }
         }
 
@@ -129,17 +130,30 @@ class AuthController extends Controller
             Mail::to($user->email)->send(new RegisterAccount($user->email, $user->id, $user->token));
         }
 
-        return redirect()->route('confirm_register', ['user_id' => $user->id]);
+        return redirect()->route('confirm_register')->with('user_id', $user->id);
     }
 
-    public function confirmRegister(Request $req)
+    public function confirmRegister()
     {
-        if (isset($req->user_id)) {
-            $user = $this->userRepository->getUserById($req->user_id);
+        if (Session::has('user_id')) {
+            $user = $this->userRepository->getUserById(Session::get('user_id'));
             if ($user !== false) {
                 return view('admin.pages.confirm_register')->with(['email' => $user->email]);
             } else {
                 return view('admin.pages.confirm_register')->with(['alert' => 'token expired']);
+            }
+        }
+        return view('admin.pages.error');
+    }
+
+    public function confirmResetPassword()
+    {
+        if (Session::has('user_id')) {
+            $user = $this->userRepository->getUserById(Session::get('user_id'));
+            if ($user !== false) {
+                return view('admin.pages.confirm_reset_password')->with(['email' => $user->email]);
+            } else {
+                return view('admin.pages.confirm_reset_password')->with(['alert' => 'token expired']);
             }
         }
         return view('admin.pages.error');
@@ -155,19 +169,6 @@ class AuthController extends Controller
             }
         }
 
-        return view('admin.pages.error');
-    }
-
-    public function confirmResetPassword(Request $req)
-    {
-        if (isset($req->user_id)) {
-            $user = $this->userRepository->getUserById($req->user_id);
-            if ($user !== false) {
-                return view('admin.pages.confirm_reset_password')->with(['email' => $user->email]);
-            } else {
-                return view('admin.pages.confirm_reset_password')->with(['alert' => 'token expired']);
-            }
-        }
         return view('admin.pages.error');
     }
 
@@ -191,9 +192,18 @@ class AuthController extends Controller
         $user = $this->userRepository->getUserChangePassword($req->user_id);
         if ($user !== false) {
             $user = $this->userRepository->updatePassword($user->id, $req->pass);
+            return redirect()->route('change_password_success')->with('noti', 'Success');
         }
 
-        return 1;
+        return view('admin.pages.error');
+    }
+
+    public function changePasswordSuccess() {
+        if(Session::has('noti')) {
+            return view('admin.pages.change_password_success');
+        } else {
+            return view('admin.pages.error');
+        }
     }
 
     public function getUserInfo()

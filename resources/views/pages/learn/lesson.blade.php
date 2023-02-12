@@ -37,10 +37,14 @@
                     @else
                         <div class="lession_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
                             lang="{{ $item->p_language_id }}"></div>
-                        <div class="compiler_code_title"> Compiler </div>
-                        <div class="compiler_code" id="compiler{{ $item->p_language_id . $item->id }}">
-
+                        <div class="compiler_code_title"> {{ $item->p_language_id != 'html' ? 'Compiler' : 'HTML Iframe' }} 
+                            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
                         </div>
+                        @if($item->p_language_id != 'html')
+                        <div class="compiler_code" id="compiler{{ $item->p_language_id . $item->id }}"></div>
+                        @else
+                        <div class="compiler_html" id="html{{ $item->p_language_id . $item->id }}"></div>
+                        @endif
                     @endif
                 </div>
             @endforeach
