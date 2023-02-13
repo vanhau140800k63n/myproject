@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('head')
-    <title> Thêm bài giảng | Devsne</title>
+    <title> Chi tiết | Devsne</title>
 @endsection
 @section('content')
     <div class="content-wrapper">

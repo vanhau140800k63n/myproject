@@ -7,6 +7,8 @@ import { java } from "@codemirror/lang-java"
 import { html } from "@codemirror/lang-html"
 import { cpp } from "@codemirror/lang-cpp"
 
+var domain = 'http://localhost:8003/';
+
 let language_list = {
     php: php(),
     js: javascript(),
@@ -56,7 +58,7 @@ $('.home_lession_card').each(function () {
         });
         let _token = $('input[name="_token"]').val();
         $.ajax({
-            url: "http://localhost:8003/submit",
+            url: domain + "submit",
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
@@ -114,7 +116,7 @@ $('.run_code').click(function () {
 
         let _token = $('input[name="_token"]').val();
         $.ajax({
-            url: "http://localhost:8003/build_code_php",
+            url: domain + "build_code_php",
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },

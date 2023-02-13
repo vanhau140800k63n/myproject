@@ -7,8 +7,6 @@ use App\Repositories\LessonItemRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
-use DivisionByZeroError;
-use Exception;
 use Illuminate\Http\Request;
 use Throwable;
 

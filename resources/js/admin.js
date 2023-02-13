@@ -7,6 +7,8 @@ import { java } from "@codemirror/lang-java"
 import { html } from "@codemirror/lang-html"
 import { cpp } from "@codemirror/lang-cpp"
 
+var domain = 'http://localhost:8003/';
+
 let language_list = {
     php: php(),
     js: javascript(),
@@ -49,7 +51,7 @@ $('.lesson_btn_save').click(function () {
     let lesson_id = $('.lesson_info').attr('lesson_id');
 
     if ($('.lesson_info').attr('type') == 'add') {
-        url = "http://localhost:8003/admin/course/lesson/add_lesson_info";
+        url = domain + "admin/course/lesson/add_lesson_info";
         data = {
             course_id: course_id,
             main_title: main_title,
@@ -57,7 +59,7 @@ $('.lesson_btn_save').click(function () {
             _token: _token
         };
     } else {
-        url = "http://localhost:8003/admin/course/lesson/update_lesson_info";
+        url = domain + "admin/course/lesson/update_lesson_info";
         data = {
             id: lesson_id,
             course_id: course_id,
@@ -121,7 +123,7 @@ $('.lesson_btn_save').click(function () {
             let _token = $('input[name="_token"]').val();
             let is_new_content = ($(this).attr('status') == 'new');
             if (is_new_content) {
-                url_item = "http://localhost:8003/admin/course/lesson/add_lesson_item";
+                url_item = domain + "admin/course/lesson/add_lesson_item";
                 data_item = {
                     content: content,
                     title: title_content_item,
@@ -132,7 +134,7 @@ $('.lesson_btn_save').click(function () {
                     _token: _token
                 };
             } else {
-                url_item = "http://localhost:8003/admin/course/lesson/update_lesson_item";
+                url_item = domain + "admin/course/lesson/update_lesson_item";
                 data_item = {
                     id: $(this).attr('id'),
                     content: content,
@@ -233,7 +235,7 @@ $('.lesson_content_form_remove_btn').click(function () {
     let lesson_form = $(this).parent().parent();
     let _token = $('input[name="_token"]').val();
     $.ajax({
-        url: "http://localhost:8003/admin/course/lesson/del_lesson_item",
+        url: domain + "admin/course/lesson/del_lesson_item",
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
