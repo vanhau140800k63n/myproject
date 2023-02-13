@@ -16,6 +16,10 @@
     font-size: 14px;
 }
 
+.cm-scroller {
+    overflow: hidden !important;
+}
+
 input {
     box-sizing: border-box
 }
