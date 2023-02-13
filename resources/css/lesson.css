@@ -4,6 +4,10 @@
     padding-top: 60px;
 }
 
+.lesson_box * {
+    box-sizing: border-box;
+}
+
 .lesson_box_category {
     width: 15%;
 }
@@ -31,6 +35,11 @@
     color: #000;
 }
 
+.lesson_box_category_item div {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .lesson_box_category_list {
     display: flex;
     flex-direction: column;
@@ -42,7 +51,7 @@
 
 .lesson_box_content_title {
     padding: 20px 30px;
-    background-image: radial-gradient( circle 1017px at 1.4% 22.8%,  rgba(97,76,141,1) 31.9%, rgb(94, 82, 194) 90% );
+    background-image: radial-gradient(circle 1017px at 1.4% 22.8%, rgba(97, 76, 141, 1) 31.9%, rgb(94, 82, 194) 90%);
     color: #fff;
     font-size: 20px;
     font-weight: 600;
@@ -72,7 +81,7 @@
     margin-bottom: 20px;
 }
 
-.lesson_content.html_box *{
+.lesson_content.html_box * {
     font-size: 17px;
     line-height: 1.6;
 }
@@ -140,4 +149,36 @@
     font-size: 15px !important;
     padding: 0 4px;
     border-radius: 5px;
+}
+
+.lesson_box_other {
+    padding: 20px;
+}
+
+.other_course_item {
+    width: 100%;
+    display: flex;
+}
+
+.other_course_item_text {
+    padding: 10px 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.other_course_item_text {
+    color: #fff;
+    padding: 10px 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-transform: uppercase;
+}
+
+.other_course_item_text div {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.other_course_item_text:hover div {
+    color: #fff;
+    font-weight: 500;
 }

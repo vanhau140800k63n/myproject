@@ -12,7 +12,7 @@
     </style>
 @endsection
 @section('head')
-<title>{{ $lesson->title }}</title>
+    <title>{{ $lesson->title }}</title>
 @endsection
 @section('content')
     <div class="lesson_box">
@@ -21,7 +21,9 @@
             <div class="lesson_box_category_list">
                 @foreach ($lesson_list as $lesson_item)
                     <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_item->slug]) }}"
-                        class="lesson_box_category_item{{ $lesson_item->id === $lesson->id ? ' active': '' }}">{{ $lesson_item->sub_title }}</a>
+                        class="lesson_box_category_item{{ $lesson_item->id === $lesson->id ? ' active' : '' }}">
+                        <div>{{ $lesson_item->sub_title }}</div>
+                    </a>
                 @endforeach
             </div>
         </div>
@@ -37,19 +39,49 @@
                     @else
                         <div class="lession_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
                             lang="{{ $item->p_language_id }}"></div>
-                        <div class="compiler_code_title"> {{ $item->p_language_id != 'html' ? 'Compiler' : 'HTML Iframe' }} 
-                            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                        <div class="compiler_code_title"> {{ $item->p_language_id != 'html' ? 'Compiler' : 'HTML Iframe' }}
+                            <div class="lds-ring">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </div>
-                        @if($item->p_language_id != 'html')
-                        <div class="compiler_code" id="compiler{{ $item->p_language_id . $item->id }}"></div>
+                        @if ($item->p_language_id != 'html')
+                            <div class="compiler_code" id="compiler{{ $item->p_language_id . $item->id }}"></div>
                         @else
-                        <div class="compiler_html" id="html{{ $item->p_language_id . $item->id }}"></div>
+                            <div class="compiler_html" id="html{{ $item->p_language_id . $item->id }}"></div>
                         @endif
                     @endif
                 </div>
             @endforeach
         </div>
-        <div class="lesson_box_other"></div>
+        <div class="lesson_box_other">
+            <?php
+            $course_list = \App\Models\PLanguage::where('id', '!=', $course->id)->get();
+            $i = 0;
+            ?>
+            <div class="other_course_list">
+                @foreach ($course_list as $course_item)
+                    <div class="other_course_item">
+                        @if ($i % 2 == 0)
+                            <div style="width:10%"> </div>
+                        @endif
+                        <a href="{{ route('learn.lesson_intro', ['course' => $course_item->name]) }}"
+                            class="other_course_item_text" style="background: {{ $course_item->color }}; width:90%">
+                            <div>Khóa học
+                                {{ $course_item->full_name }}</div>
+                        </a>
+                        @if ($i % 2 == 1)
+                            <div style="width:10%"> </div>
+                        @endif
+                        <?php
+                        ++$i;
+                        ?>
+                    </div>
+                @endforeach
+            </div>
+        </div>
     </div>
     <script src="{{ asset(mix('js/code-mirror.js')) }}"></script>
 @endsection
