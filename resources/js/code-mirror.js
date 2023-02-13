@@ -200,7 +200,28 @@ $('.run_code').click(function () {
                 }
             }).catch(error => console.log('error', error));
     } else if (lang == 'cpp') {
-       
+        $('#compiler' + code_editer.attr('id')).html('');
+        let JSCPP = require("JSCPP");
+        var code = content;
+        var input = "";
+        var output = "";
+        var config = {
+            stdio: {
+                write: function (s) {
+                    output += s;
+                }
+            }
+        };
+        try {
+            let exitCode = JSCPP.run(code, input, config);
+            output = output.replaceAll(' ', '&nbsp;');
+            output = output.replaceAll('\n', '<br>');
+            $('#compiler' + code_editer.attr('id')).append(output);
+            compiler_code_loading.hide();
+        } catch (error) {
+            $('#compiler' + code_editer.attr('id')).append(error);
+            compiler_code_loading.hide();
+        }
     }
 })
 
