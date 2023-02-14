@@ -15,7 +15,15 @@ class ProjectRepository extends BaseRepository implements ProjectRepositoryInter
         $this->project = new Project();
     }
 
-    public function getProjectList() {
+    public function getProjectList()
+    {
         return $this->project->all();
+    }
+
+    public function getProjectHome()
+    {
+        return $this->project->selectRaw('project.*, CONCAT(users.last_name, " ", users.first_name) as author_name, users.avata as author_avata')
+            ->join('users', 'project.created_by', '=', 'users.id')
+            ->take(5)->get();
     }
 }

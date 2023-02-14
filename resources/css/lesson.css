@@ -65,9 +65,10 @@
 
 .code_box {
     padding: 15px 25px;
-    border: 1px solid #000;
-    border-style: dashed;
+    /* border: 1px solid #000;
+    border-style: dashed; */
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .lesson_content_title {

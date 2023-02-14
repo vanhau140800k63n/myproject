@@ -28,6 +28,10 @@ Route::prefix('learn')->name('learn.')->group(function () {
     Route::get('/{course}', [LessonController::class, 'getLessonIntro'])->name('lesson_intro');
 });
 
+Route::prefix('project')->name('project.')->group(function () {
+    Route::get('/{slug}', [ProjectController::class, 'getProjectIntro'])->name('project_intro');
+});
+
 Route::middleware(['check.logged_out'])->group(function () {
     Route::get('/login', [AuthController::class, 'getLogin'])->name('login');
     Route::post('/post-login', [AuthController::class, 'postLogin'])->name('post_login');
