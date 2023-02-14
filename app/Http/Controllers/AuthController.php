@@ -48,11 +48,13 @@ class AuthController extends Controller
 
     public function forgotPassword()
     {
+        return view('admin.pages.error');
         return view('admin.pages.forgot_password');
     }
 
     public function postForgotPassword(Request $req)
     {
+        return view('admin.pages.error');
         $this->validate(
             $req,
             [
@@ -73,6 +75,7 @@ class AuthController extends Controller
 
             $userUpdate = $this->userRepository->updateUser($user->id, $dataUpdate);
             if ($userUpdate !== false) {
+                return route('change_password', ['user_id' => $user->id, 'token' => $dataUpdate['token']]);
                 Mail::to($user->email)->send(new ResetPassword($user->email, $user->id, $dataUpdate['token']));
                 return redirect()->route('confirm_reset_password')->with('user_id', $user->id);
             }
