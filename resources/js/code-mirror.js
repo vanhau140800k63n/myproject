@@ -7,7 +7,7 @@ import { java } from "@codemirror/lang-java"
 import { html } from "@codemirror/lang-html"
 import { cpp } from "@codemirror/lang-cpp"
 
-var domain = 'http://localhost:8003/';
+var domain = 'https://devsne.vn/';
 
 let language_list = {
     php: php(),

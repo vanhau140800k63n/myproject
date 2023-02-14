@@ -72339,7 +72339,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var domain = 'http://localhost:8003/';
+var domain = 'https://devsne.vn/';
 var language_list = {
   php: (0,_codemirror_lang_php__WEBPACK_IMPORTED_MODULE_0__.php)(),
   js: (0,_codemirror_lang_javascript__WEBPACK_IMPORTED_MODULE_1__.javascript)(),

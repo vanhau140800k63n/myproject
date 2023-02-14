@@ -7,7 +7,7 @@ import { java } from "@codemirror/lang-java"
 import { html } from "@codemirror/lang-html"
 import { cpp } from "@codemirror/lang-cpp"
 
-var domain = 'http://localhost:8003/';
+var domain = 'https://devsne.vn/';
 
 let language_list = {
     php: php(),
@@ -159,7 +159,7 @@ $('.lesson_btn_save').click(function () {
                 ++index_form;
                 if (index_form == lesson_content_form_length) {
                     if ($('.lesson_info').attr('type') == 'add') {
-                        location.href = 'http://localhost:8003/admin/course';
+                        location.href = domain + 'admin/course';
                     } else {
                         location.reload();
                     }

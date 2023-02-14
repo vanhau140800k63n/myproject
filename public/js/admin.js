@@ -30020,7 +30020,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var domain = 'http://localhost:8003/';
+var domain = 'https://devsne.vn/';
 var language_list = {
   php: (0,_codemirror_lang_php__WEBPACK_IMPORTED_MODULE_0__.php)(),
   js: (0,_codemirror_lang_javascript__WEBPACK_IMPORTED_MODULE_1__.javascript)(),
@@ -30163,7 +30163,7 @@ $('.lesson_btn_save').click(function () {
         ++index_form;
         if (index_form == lesson_content_form_length) {
           if ($('.lesson_info').attr('type') == 'add') {
-            location.href = 'http://localhost:8003/admin/course';
+            location.href = domain + 'admin/course';
           } else {
             location.reload();
           }
