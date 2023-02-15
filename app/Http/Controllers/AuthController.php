@@ -198,8 +198,9 @@ class AuthController extends Controller
         return view('admin.pages.error');
     }
 
-    public function changePasswordSuccess() {
-        if(Session::has('noti')) {
+    public function changePasswordSuccess()
+    {
+        if (Session::has('noti')) {
             return view('admin.pages.change_password_success');
         } else {
             return view('admin.pages.error');
@@ -238,8 +239,8 @@ class AuthController extends Controller
         }
 
         $dataUpdate = [
-            'first_name' => $data['first_name'],
-            'last_name' => $data['last_name'],
+            'first_name' => empty($data['first_name']) ? '' : $data['first_name'],
+            'last_name' => empty($data['last_name']) ? '' : $data['last_name'],
             'phone' => $data['phone']
         ];
 

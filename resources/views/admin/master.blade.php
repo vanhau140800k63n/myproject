@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('head')
+    <link rel="shortcut icon" href="{{ asset('image/logo1.png') }}" />
     <link rel="stylesheet" href="{{ asset('lib/assets/vendors/mdi/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('lib/assets/vendors/css/vendor.bundle.base.css') }}">
     <script src="{{ asset('js/assets/jquery.min.js') }}"></script>

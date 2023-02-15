@@ -95,7 +95,7 @@
 }
 
 .user_info_btn_save {
-    background: rgb(54, 104, 220);
+    background: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -104,7 +104,7 @@
 }
 
 .user_info_btn_logout {
-    background: rgb(223, 64, 6);
+    background: linear-gradient( 68.3deg,  rgb(195, 60, 19) 0.4%, rgb(218, 37, 9) 100.2% );
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -112,7 +112,7 @@
 }
 
 .post_img_btn {
-    background: rgb(54, 104, 220);
+    background: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
     color: #fff;
     padding: 5px 10px;
     border: none;

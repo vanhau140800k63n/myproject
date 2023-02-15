@@ -49,6 +49,20 @@
     flex-direction: column;
 }
 
+.home_lession_item {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.run_code {
+    background: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
 .lesson_box_content {
     padding: 50px 30px;
 }
@@ -128,9 +142,16 @@
     border: 1px solid #dddddd;
 }
 
+.lesson_content table h2 {
+    font-weight: 500;
+}
+
+.lesson_content td * {
+    font-size: 15px !important;
+}
+
 .lesson_content td {
     padding: 6px 25px;
-    font-size: 15px;
     border: 1px solid #dddddd;
 }
 
@@ -138,6 +159,7 @@
     padding: 6px 25px;
     font-size: 15px;
     border: 1px solid #dddddd;
+    font-weight: 500;
 }
 
 .lesson_content tbody tr:nth-of-type(even) {
