@@ -25,6 +25,7 @@ class HomeController extends Controller
     {
         $pLanguages = $this->pLanguageRepository->getPLanguageHome();
         $project_list = $this->projectRepository->getProjectHome();
+        // dd($project_list);
         return view('pages.home.home')->with(['p_languages' => $pLanguages, 'project_list' => $project_list]);
     }
 

@@ -61,12 +61,12 @@
     font-weight: 600;
     margin-bottom: 20px;
     border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 6px 5px;
 }
 
 .code_box {
     padding: 15px 25px;
-    border: 1px solid #000;
-    border-style: dashed;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
     border-radius: 5px;
 }
 
@@ -124,18 +124,20 @@
 .lesson_content table {
     border-collapse: collapse;
     margin: 25px 0;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
     border: 1px solid #dddddd;
 }
 
 .lesson_content td {
     padding: 6px 25px;
     font-size: 15px;
+    border: 1px solid #dddddd;
 }
 
 .lesson_content th {
     padding: 6px 25px;
     font-size: 15px;
+    border: 1px solid #dddddd;
 }
 
 .lesson_content tbody tr:nth-of-type(even) {
