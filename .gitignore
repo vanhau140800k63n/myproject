@@ -20,3 +20,4 @@ yarn-error.log
 /public/fonts/
 /public/image/
 /public/mix-manifest.json
+composer.lock

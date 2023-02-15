@@ -20,4 +20,5 @@ mix.js('resources/js/app.js', 'public/js')
     .copyDirectory('resources/css/login', 'public/css/login')
     .copyDirectory('resources/fonts', 'public/fonts')
     .copyDirectory('resources/image', 'public/image')
+    .copyDirectory('resources/img', 'public/img')
 mix.version();

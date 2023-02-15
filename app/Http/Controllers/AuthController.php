@@ -239,7 +239,7 @@ class AuthController extends Controller
 
         $dataUpdate = [
             'first_name' => $data['first_name'],
-            'last_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
             'phone' => $data['phone']
         ];
 
