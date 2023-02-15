@@ -341,7 +341,7 @@ a {
 .home_project {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 2rem 2rem;
+    gap: 1rem 1rem;
     margin-top: 10px;
     margin-bottom: 50px;
 }
@@ -551,7 +551,7 @@ a {
 .lesson_content table {
     border-collapse: collapse;
     margin: 25px 0;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
     border: 1px solid #dddddd;
 }
 
@@ -565,6 +565,11 @@ a {
     padding: 6px 25px;
     font-size: 15px;
     border: 1px solid #dddddd;
+}
+
+.lesson_content tr td h2 {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .lesson_content tbody tr:nth-of-type(even) {

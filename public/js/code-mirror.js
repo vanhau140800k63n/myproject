@@ -15167,7 +15167,6 @@ const includes = {
     ctime: __webpack_require__(/*! ./includes/ctime */ "./node_modules/JSCPP/lib/includes/ctime.js"),
     iomanip: __webpack_require__(/*! ./includes/iomanip */ "./node_modules/JSCPP/lib/includes/iomanip.js"),
     foo: __webpack_require__(/*! ./includes/dummy_class_foo */ "./node_modules/JSCPP/lib/includes/dummy_class_foo.js"),
-    string: string
 };
 const headerAlias = {
     "ctype.h": "cctype",
