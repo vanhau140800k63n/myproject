@@ -33,24 +33,30 @@
                 <div class="lesson_content">
                     <div class="lesson_content_head">
                         <div class="lesson_content_title">{{ $item->title }}</div>
+                        @if ($item->type !== 'text' && $item->compiler === 1)
+                            <button class="run_code"> Run code </button>
+                        @endif
                     </div>
                     @if ($item->type === 'text')
                         {!! $item->content !!}
                     @else
                         <div class="lession_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
                             lang="{{ $item->p_language_id }}"></div>
-                        <div class="compiler_code_title"> {{ $item->p_language_id != 'html' ? 'Compiler' : 'HTML Iframe' }}
-                            <div class="lds-ring">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                        @if ($item->compiler === 1)
+                            <div class="compiler_code_title">
+                                {{ $item->p_language_id != 'html' ? 'Compiler' : 'HTML Iframe' }}
+                                <div class="lds-ring">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
                             </div>
-                        </div>
-                        @if ($item->p_language_id != 'html')
-                            <div class="compiler_code" id="compiler{{ $item->p_language_id . $item->id }}"></div>
-                        @else
-                            <div class="compiler_html" id="html{{ $item->p_language_id . $item->id }}"></div>
+                            @if ($item->p_language_id != 'html')
+                                <div class="compiler_code" id="compiler{{ $item->p_language_id . $item->id }}"></div>
+                            @else
+                                <div class="compiler_html" id="html{{ $item->p_language_id . $item->id }}"></div>
+                            @endif
                         @endif
                     @endif
                 </div>

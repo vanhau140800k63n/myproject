@@ -83,7 +83,6 @@ $('.home_lession_card').each(function () {
 
 $('.lesson_box_content .lesson_content').each(function () {
     if ($(this).find('.lession_card').length > 0) {
-        $(this).find('.lesson_content_head').append('<button class="run_code"> Run code </button>');
         $(this).addClass('code_box');
         let lesson_cart = $(this).find('.lession_card');
         let content = lesson_cart.attr('value').replaceAll('\\n', '\n');
@@ -95,7 +94,7 @@ $('.lesson_box_content .lesson_content').each(function () {
             doc: content
         })
     } else {
-        $(this).addClass('html_box');
+        $(this).addClass('text_box');
     }
 })
 

@@ -104,7 +104,7 @@
 }
 
 .user_info_btn_logout {
-    background: linear-gradient( 68.3deg,  rgb(195, 60, 19) 0.4%, rgb(218, 37, 9) 100.2% );
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(247,87,0,1) 0%, rgba(249,0,0,1) 90.1% );
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;

@@ -22,6 +22,7 @@ class LessonItemRepository extends BaseRepository implements LessonItemRepositor
             'type' => $data['type'],
             'index' => $data['index'],
             'p_language_id' => $data['code'],
+            'compiler' => $data['compiler'],
             'lesson_id' => $data['lesson_id']
         ];
 
@@ -39,6 +40,7 @@ class LessonItemRepository extends BaseRepository implements LessonItemRepositor
             'type' => $data['type'],
             'index' => $data['index'],
             'p_language_id' => $data['code'],
+            'compiler' => $data['compiler'],
             'lesson_id' => $data['lesson_id']
         ];
 

@@ -92,6 +92,11 @@ $('.lesson_btn_save').click(function () {
             let code = '';
             let url_item = '';
             let data_item = {};
+            let form_type = $(this).find('.lesson_content_form_type');
+            let compiler = 1;
+            if (form_type.hasClass('not_run')) {
+                compiler = 0;
+            }
 
             if (type == 'text') {
                 let id = $(this).find('textarea').attr('id');
@@ -99,27 +104,6 @@ $('.lesson_btn_save').click(function () {
             } else {
                 code = $(this).attr('code');
                 content = view[$(this).attr('id')].state.doc.toString();
-                // if (view[$(this).attr('id')].state.doc.text != undefined) {
-                //     view[$(this).attr('id')].state.doc.text.forEach(element => {
-                //         if (element != null) {
-                //             content += element + '\\n';
-                //         } else {
-                //             content += '\\n';
-                //         }
-                //     });
-                // } else {
-                //     view[$(this).attr('id')].state.doc.children.forEach(children => {
-                //         children.text.forEach(element => {
-                //             if (element != null) {
-                //                 content += element + '\\n';
-                //             } else {
-                //                 content += '\\n';
-                //             }
-                //         });
-                //     });
-                // }
-
-                // content = content.slice(0, -2); // remove "\n"
             }
             let _token = $('input[name="_token"]').val();
             let is_new_content = ($(this).attr('status') == 'new');
@@ -132,6 +116,7 @@ $('.lesson_btn_save').click(function () {
                     index: index,
                     lesson_id: lesson_id,
                     code: code,
+                    compiler: compiler,
                     _token: _token
                 };
             } else {
@@ -144,6 +129,7 @@ $('.lesson_btn_save').click(function () {
                     index: index,
                     lesson_id: lesson_id,
                     code: code,
+                    compiler: compiler,
                     _token: _token
                 };
             }
@@ -160,7 +146,7 @@ $('.lesson_btn_save').click(function () {
                 ++index_form;
                 if (index_form == lesson_content_form_length) {
                     if ($('.lesson_info').attr('type') == 'add') {
-                        location.href = 'http://localhost:8003/admin/course';
+                        location.href = domain + 'admin/course';
                     } else {
                         location.reload();
                     }
@@ -264,3 +250,11 @@ function generateId(len) {
     window.crypto.getRandomValues(arr)
     return Array.from(arr, dec2hex).join('')
 }
+
+$('.lesson_content_form_type').click(function () {
+    if ($(this).hasClass('not_run')) {
+        $(this).removeClass('not_run');
+    } else {
+        $(this).addClass('not_run');
+    }
+})

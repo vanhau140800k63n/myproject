@@ -1,13 +1,13 @@
 @extends('admin.master')
 @section('head')
-    <title> Project </title>
+    <title> Post </title>
 @endsection
 @section('content')
     <div class="row ">
         <div class="col-12 grid-margin">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Project</h4>
+                    <h4 class="card-title">Post</h4>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -19,11 +19,10 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($project_list as $project)
+                                @foreach ($post_list as $post)
                                     <tr>
-                                        <td> {{ $project->id }} </td>
-                                        <td> {{ $project->title }} </td>
-                                        <td> 0 </td>
+                                        <td> {{ $post->id }} </td>
+                                        <td> {{ $post->title }} </td>
                                         <td> 0 </td>
                                         <td> <a href="">Chi tiết</a>
                                         </td>

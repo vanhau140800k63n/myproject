@@ -1,4 +1,4 @@
 
 $(document).ready(() => {
-    $('.home_project_img').height($('.home_project_img').width());
+    $('.home_post_img').height($('.home_post_img').width() * 2 / 3);
 });

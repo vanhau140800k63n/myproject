@@ -44,11 +44,11 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ route('admin.project.list') }}">
+            <a class="nav-link" href="{{ route('admin.post.list') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-speedometer"></i>
                 </span>
-                <span class="menu-title">Project</span>
+                <span class="menu-title">Post</span>
             </a>
         </li>
         <li class="nav-item menu-items">

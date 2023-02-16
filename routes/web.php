@@ -4,7 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LessonController;
-use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,8 +28,8 @@ Route::prefix('learn')->name('learn.')->group(function () {
     Route::get('/{course}', [LessonController::class, 'getLessonIntro'])->name('lesson_intro');
 });
 
-Route::prefix('project')->name('project.')->group(function () {
-    Route::get('/{slug}', [ProjectController::class, 'getProjectIntro'])->name('project_intro');
+Route::prefix('post')->name('post.')->group(function () {
+    Route::get('/{slug}', [PostController::class, 'getPostDetail'])->name('detail');
 });
 
 Route::middleware(['check.logged_out'])->group(function () {
@@ -69,7 +69,8 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
             Route::get('/detail', [LessonController::class, 'lessonDetailAdmin'])->name('detail');
         });
     });
-    Route::prefix('project')->name('project.')->group(function () {
-        Route::get('/', [ProjectController::class, 'getProjectListAdmin'])->name('list');
+    Route::prefix('post')->name('post.')->group(function () {
+        Route::get('/', [PostController::class, 'getPostListAdmin'])->name('list');
+        Route::get('/{id}', [PostController::class, 'getPostContentAdmin'])->name('content');
     });
 });

@@ -34,7 +34,7 @@
                                 <div class="lesson_content_form_info">
                                     <input type="text" class="form-control lesson_content_form_title" style="color: #fff"
                                         placeholder="Tiêu đề" value="{{ $item->title }}">
-                                    <div class="lesson_content_form_type">{{ is_null($item->p_language_id) ? 'text' : $item->p_language_id }}</div>
+                                    <div class="lesson_content_form_type {{ $item->compiler == 0 ? 'not_run' : '' }}">{{ is_null($item->p_language_id) ? 'text' : $item->p_language_id }}</div>
                                     <button class="lesson_content_form_remove_btn btn btn-danger btn-fw"> Xóa </button>
                                 </div>
                                 @if ($item->type === 'text')

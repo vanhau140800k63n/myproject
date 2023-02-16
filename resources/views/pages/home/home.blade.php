@@ -34,21 +34,21 @@
             @endforeach
         </div>
         <h2 class="home_title">Bài viết nổi bật</h2>
-        <div class="home_project">
-            @foreach ($project_list as $project)
-                <div class="home_project_item">
-                    <a href="{{ route('project.project_intro', ['slug' => $project->slug]) }}">
-                        <img class="home_project_img" src="{{ $project->image }}">
-                        <p class="home_project_item_title">{{ $project->title }}</p>
+        <div class="home_post">
+            @foreach ($post_list as $post)
+                <div class="home_post_item">
+                    <a href="{{ route('post.detail', ['slug' => $post->slug]) }}">
+                        <img class="home_post_img" src="{{ $post->image }}">
+                        <p class="home_post_item_title">{{ $post->title }}</p>
                     </a>
-                    <a href="" class="home_project_author">
-                        <img class="home_project_author_img" src="{{ $project->author_avata }}">
-                        <div class="home_project_author_name"> {{ $project->author_name }}</div>
+                    <a href="" class="home_post_author">
+                        <img class="home_post_author_img" src="{{ $post->author_avata }}">
+                        <div class="home_post_author_name"> {{ $post->author_name }}</div>
                     </a>
                 </div>
             @endforeach
         </div>
-        <h2 class="home_title">Blog</h2>
+        <h2 class="home_title">Xem thêm</h2>
     </div>
     <script src="{{ asset(mix('js/code-mirror.js')) }}"></script>
 @endsection

@@ -99,7 +99,7 @@
     margin-bottom: 20px;
 }
 
-.lesson_content.html_box * {
+.lesson_content.text_box * {
     font-size: 17px;
     line-height: 1.6;
 }
@@ -142,6 +142,10 @@
     border: 1px solid #dddddd;
 }
 
+.lesson_content table * {
+    font-family: monospace;
+}
+
 .lesson_content table h2 {
     font-weight: 500;
 }
@@ -182,6 +186,11 @@
     font-size: 15px !important;
     padding: 0 4px;
     border-radius: 5px;
+    font-family: monospace;
+}
+
+.w3-codespan * {
+    font-family: monospace;
 }
 
 .lesson_box_other {

@@ -79,6 +79,10 @@
     font-weight: 500;
 }
 
+.lesson_content_form_type.not_run {
+    background-color: rgb(180, 186, 192);
+}
+
 .lesson_content_form_remove_btn, .lesson_content_new_form_remove_btn {
     width: 8%;
     min-width: 0 !important;
