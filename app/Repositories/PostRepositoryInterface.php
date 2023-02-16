@@ -9,5 +9,5 @@ interface PostRepositoryInterface
     public function addPost($data);
     public function updatePost($data);
     public function getPostAdmin($id);
-    public function getPostBySlug($slug, $course_id);
+    public function getPostBySlug($slug);
 }

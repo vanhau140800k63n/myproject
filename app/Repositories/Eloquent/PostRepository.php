@@ -99,8 +99,8 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
         return $this->post->find($id);
     }
 
-    public function getPostBySlug($slug, $course_id)
+    public function getPostBySlug($slug)
     {
-        return $this->post->where('slug', $slug)->where('course_id', $course_id)->first();
+        return $this->post->where('slug', $slug)->first();
     }
 }

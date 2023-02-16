@@ -54,7 +54,7 @@
 }
 
 .run_code {
-    background: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+    background: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
     color: #fff;
     padding: 5px 10px;
     border: none;
@@ -225,4 +225,28 @@ code * {
     color: #fff;
     font-weight: 600;
     font-size: 12px;
+}
+
+.lesson_more {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #909fa9;
+}
+
+.lesson_more_title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    background: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgba(121,137,212,1) 91.2% );    padding: 12px 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 10px;
+}
+
+.lesson_more_item {
+    padding: 5px 10px;
+    font-weight: 500;
 }

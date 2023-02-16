@@ -8,6 +8,6 @@ class PageException extends Exception
 {
     public function render($request)
     {
-        return response()->view('pages.errors.error404');
+        return response()->view('errors.404');
     }
 }

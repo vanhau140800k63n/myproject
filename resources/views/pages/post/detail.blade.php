@@ -3,7 +3,7 @@
     <style>
         .cm-content,
         .cm-gutter {
-            min-height: 100px;
+            min-height: 20px;
         }
 
         .cm-scroller {
@@ -12,27 +12,19 @@
     </style>
 @endsection
 @section('head')
-    <title>{{ $lesson->title }}</title>
+    <title>{{ $post->title }}</title>
 @endsection
 @section('content')
-    <div class="lesson_box">
-        <div class="lesson_box_category">
-            <div class="lesson_box_category_title">Khóa học {{ $course->full_name }}</div>
-            <div class="lesson_box_category_list">
-                @foreach ($lesson_list as $lesson_item)
-                    <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_item->slug]) }}"
-                        class="lesson_box_category_item{{ $lesson_item->id === $lesson->id ? ' active' : '' }}">
-                        <div>{{ $lesson_item->sub_title }}</div>
-                    </a>
-                @endforeach
-            </div>
+    <div class="post_box">
+        <div class="post_box_category">
+            
         </div>
-        <div class="lesson_box_content">
-            <div class="lesson_box_content_title">{{ $lesson->title }}</div>
-            @foreach ($lesson_detail as $item)
-                <div class="lesson_content">
-                    <div class="lesson_content_head">
-                        <div class="lesson_content_title">{{ $item->title }}</div>
+        <div class="post_box_content">
+            <div class="post_box_content_title">{{ $post->title }}</div>
+            @foreach ($post_detail as $item)
+                <div class="post_content">
+                    <div class="post_content_head">
+                        <div class="post_content_title">{{ $item->title }}</div>
                         @if ($item->type !== 'text' && $item->compiler === 1)
                             <button class="run_code"> Run code </button>
                         @endif
@@ -40,7 +32,7 @@
                     @if ($item->type === 'text')
                         {!! $item->content !!}
                     @else
-                        <div class="lesson_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
+                        <div class="post_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
                             lang="{{ $item->p_language_id }}"></div>
                         @if ($item->compiler === 1)
                             <div class="compiler_code_title">
@@ -62,21 +54,11 @@
                 </div>
             @endforeach
         </div>
-        <div class="lesson_box_other">
+        <div class="post_box_other">
             <?php
-            $course_list = \App\Models\PLanguage::where('id', '!=', $course->id)->get();
-            $lesson_more = $lesson_list->where('parent', $lesson->id);
+            $course_list = \App\Models\PLanguage::all();
             $i = 0;
             ?>
-            @if ($lesson_more->count() > 0)
-                <div class="lesson_more">
-                    <div class="lesson_more_title">Tham khảo thêm</div>
-                    @foreach ($lesson_more as $lesson_more_item)
-                        <a class="lesson_more_item"
-                            href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_more_item->slug]) }}">{{ $lesson_more_item->title }}</a>
-                    @endforeach
-                </div>
-            @endif
             <div class="other_course_list">
                 @foreach ($course_list as $course_item)
                     <div class="other_course_item">
@@ -99,5 +81,5 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset(mix('js/code-mirror.js')) }}"></script>
+    <script src="{{ asset(mix('js/post.js')) }}"></script>
 @endsection

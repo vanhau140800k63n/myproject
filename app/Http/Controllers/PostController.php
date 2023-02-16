@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Config\AdminConstants;
+use App\Exceptions\PageException;
 use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
@@ -105,5 +106,17 @@ class PostController extends Controller
         }
 
         return response()->json(true);
+    }
+
+    public function getPostDetail($slug)
+    {
+    
+        $post = $this->postRepository->getPostBySlug($slug);
+        if($post !== null) {
+            $post_detail = $this->contentItemRepository->getPostDetail($post->id);
+            return view('pages.post.detail', compact('post', 'post_detail'));
+        }
+
+        throw new PageException();
     }
 }
