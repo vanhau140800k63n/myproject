@@ -24,7 +24,7 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
         $course_list = $this->retryQuery($query);
 
         foreach ($course_list as $lesson) {
-            $lesson->lession_num = $this->lesson->where('course_id', $lesson->id)->get()->count();
+            $lesson->lesson_num = $this->lesson->where('course_id', $lesson->id)->get()->count();
         }
 
         return $course_list;
@@ -66,6 +66,7 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
             'title' => $data['main_title'],
             'sub_title' => $data['sub_title'],
             'course_id' => $data['course_id'],
+            'parent' => $data['parent'],
             'slug' => $str
         ];
 
@@ -100,6 +101,7 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
             'title' => $data['main_title'],
             'sub_title' => $data['sub_title'],
             'course_id' => $data['course_id'],
+            'parent' => $data['parent'],
             'slug' => $str
         ];
 

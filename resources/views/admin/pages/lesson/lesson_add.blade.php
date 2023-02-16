@@ -24,6 +24,12 @@
                             placeholder="Tiêu đề chính">
                         <input type="text" class="form-control sub_title" style="color: #fff" placeholder="Tiêu đề phụ">
                     </div>
+                    <div class="lesson_main">
+                        <label>Bài viết chính</label>
+                        <select class="lesson_main_select" style="width:100%">
+                            
+                        </select>
+                    </div>
                     <div class="lesson_content">
                     </div>
                     <div class="lesson_content_add">
@@ -41,4 +47,5 @@
         </div>
     </div>
     <script src="{{ asset('lib/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
+    <script src="{{ asset(mix('js/admin.js')) }}"></script>
 @endsection

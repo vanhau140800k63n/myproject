@@ -22,54 +22,48 @@ $(document).ready(() => {
 
     var view = {};
 
-    $('.lesson_btn_save').click(function () {
-        let course_id = $('.course_select').val();
-        if (course_id == 0) {
-            $('.lesson_save_alert').css('background-color', '#dd4545');
-            $('.lesson_save_alert').html('Vui lòng chọn khóa học');
-            $('.lesson_save_alert').css('opacity', 1);
+    $('.post_btn_save').click(function () {
+        let post_type = $('.post_type_select').val();
+        if (post_type == 0) {
+            $('.post_save_alert').css('background-color', '#dd4545');
+            $('.post_save_alert').html('Vui lòng loại bài viết');
+            $('.post_save_alert').css('opacity', 1);
             setTimeout(() => {
-                $('.lesson_save_alert').css('opacity', 0);
+                $('.post_save_alert').css('opacity', 0);
             }, 2000);
             return false;
         }
 
-        let lesson_content_form_length = $('.lesson_content_form').length;
-        if (lesson_content_form_length == 0) {
-            $('.lesson_save_alert').css('background-color', '#dd4545');
-            $('.lesson_save_alert').html('Vui lòng thêm nội dung');
-            $('.lesson_save_alert').css('opacity', 1);
+        let post_content_form_length = $('.post_content_form').length;
+        if (post_content_form_length == 0) {
+            $('.post_save_alert').css('background-color', '#dd4545');
+            $('.post_save_alert').html('Vui lòng thêm nội dung');
+            $('.post_save_alert').css('opacity', 1);
             setTimeout(() => {
-                $('.lesson_save_alert').css('opacity', 0);
+                $('.post_save_alert').css('opacity', 0);
             }, 2000);
             return false;
         }
 
-        let main_title = $('.main_title').val();
-        let sub_title = $('.sub_title').val();
+        let title = $('.post_title').val();
         let _token = $('input[name="_token"]').val();
         let url = '';
         let data = {};
-        let lesson_id = $('.lesson_info').attr('lesson_id');
-        let parent = $(".lesson_main_select").val();
+        let post_id = $('.post_info').attr('post_id');
 
-        if ($('.lesson_info').attr('type') == 'add') {
-            url = domain + "admin/course/lesson/add_lesson_info";
+        if ($('.post_info').attr('type') == 'add') {
+            url = domain + "admin/post/add_post_info";
             data = {
-                course_id: course_id,
-                main_title: main_title,
-                sub_title: sub_title,
-                parent: parent,
+                title: title,
+                type: post_type,
                 _token: _token
             };
         } else {
-            url = domain + "admin/course/lesson/update_lesson_info";
+            url = domain + "admin/post/update_post_info";
             data = {
-                id: lesson_id,
-                course_id: course_id,
-                main_title: main_title,
-                sub_title: sub_title,
-                parent: parent,
+                id: post_id,
+                title: title,
+                type: post_type,
                 _token: _token
             };
         }
@@ -84,19 +78,19 @@ $(document).ready(() => {
             data: data
         }).done(function (data) {
             if (data.id != undefined) {
-                lesson_id = data.id;
+                post_id = data.id;
             }
 
             let index_form = 0;
-            $('.lesson_content_form').each(function () {
-                let index = $('.lesson_content_form').index($(this));
-                let title_content_item = $(this).find('.lesson_content_form_title').val();
+            $('.post_content_form').each(function () {
+                let index = $('.post_content_form').index($(this));
+                let title_content_item = $(this).find('.post_content_form_title').val();
                 let type = $(this).attr('type');
                 let content = '';
                 let code = '';
                 let url_item = '';
                 let data_item = {};
-                let form_type = $(this).find('.lesson_content_form_type');
+                let form_type = $(this).find('.post_content_form_type');
                 let compiler = 1;
                 if (form_type.hasClass('not_run')) {
                     compiler = 0;
@@ -112,26 +106,26 @@ $(document).ready(() => {
                 let _token = $('input[name="_token"]').val();
                 let is_new_content = ($(this).attr('status') == 'new');
                 if (is_new_content) {
-                    url_item = domain + "admin/course/lesson/add_lesson_item";
+                    url_item = domain + "admin/post/add_post_item";
                     data_item = {
                         content: content,
                         title: title_content_item,
                         type: type,
                         index: index,
-                        lesson_id: lesson_id,
+                        post_id: post_id,
                         code: code,
                         compiler: compiler,
                         _token: _token
                     };
                 } else {
-                    url_item = domain + "admin/course/lesson/update_lesson_item";
+                    url_item = domain + "admin/post/update_post_item";
                     data_item = {
                         id: $(this).attr('id'),
                         content: content,
                         title: title_content_item,
                         type: type,
                         index: index,
-                        lesson_id: lesson_id,
+                        post_id: post_id,
                         code: code,
                         compiler: compiler,
                         _token: _token
@@ -148,17 +142,17 @@ $(document).ready(() => {
                     data: data_item
                 }).done(function (data) {
                     ++index_form;
-                    if (index_form == lesson_content_form_length) {
-                        if ($('.lesson_info').attr('type') == 'add') {
-                            location.href = domain + 'admin/course';
+                    if (index_form == post_content_form_length) {
+                        if ($('.post_info').attr('type') == 'add') {
+                            location.href = domain + 'admin/post';
                         } else {
                             location.reload();
                         }
-                        $('.lesson_save_alert').css('background-color', '#4CAF50');
-                        $('.lesson_save_alert').html('Lưu thành công');
-                        $('.lesson_save_alert').css('opacity', 1);
+                        $('.post_save_alert').css('background-color', '#4CAF50');
+                        $('.post_save_alert').html('Lưu thành công');
+                        $('.post_save_alert').css('opacity', 1);
                         setTimeout(() => {
-                            $('.lesson_save_alert').css('opacity', 0);
+                            $('.post_save_alert').css('opacity', 0);
                         }, 2000);
                     }
                     return false;
@@ -172,14 +166,14 @@ $(document).ready(() => {
 
     })
 
-    $('.lesson_content_btn_add').click(function () {
-        let val = $('.lesson_content_select').val();
+    $('.post_content_btn_add').click(function () {
+        let val = $('.post_content_select').val();
         let text_rand = generateId(4);
 
         if (val == 0) {
             return false;
         } else if (val == 'text') {
-            $('.lesson_content').append('<div class="lesson_content_form" type="text" status="new"><div class="lesson_content_form_info"><input type="text" class="form-control lesson_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new"><div class="lesson_content_form_type">text</div><button class="lesson_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><textarea id="text' + text_rand + '" name="description"></textarea></div>');
+            $('.post_content').append('<div class="post_content_form" type="text" status="new"><div class="post_content_form_info"><input type="text" class="form-control post_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new"><div class="post_content_form_type">text</div><button class="post_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><textarea id="text' + text_rand + '" name="description"></textarea></div>');
             tinymce.init({
                 selector: 'textarea#text' + text_rand,
                 plugins: 'code table lists image',
@@ -187,20 +181,20 @@ $(document).ready(() => {
                 images_file_types: 'jpg,svg,webp',
             });
         } else {
-            $('.lesson_content').append('<div class="lesson_content_form" type="code" id="' + text_rand + '" code="' + val + '" status="new"><div class="lesson_content_form_info"><input type="text" class="form-control lesson_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new"><div class="lesson_content_form_type">' + val + '</div><button class="lesson_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><div class="lesson_card" id="' + val + text_rand + '"></div></div>');
+            $('.post_content').append('<div class="post_content_form" type="code" id="' + text_rand + '" code="' + val + '" status="new"><div class="post_content_form_info"><input type="text" class="form-control post_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new"><div class="post_content_form_type">' + val + '</div><button class="post_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><div class="post_card" id="' + val + text_rand + '"></div></div>');
             view[text_rand] = new EditorView({
                 extensions: [basicSetup, oneDark, language_list[val]],
-                parent: document.querySelector(".lesson_card#" + val + text_rand),
+                parent: document.querySelector(".post_card#" + val + text_rand),
                 doc: ''
             })
         }
 
-        $('.lesson_content_new_form_remove_btn').click(function () {
+        $('.post_content_new_form_remove_btn').click(function () {
             $(this).parent().parent().remove();
         })
     })
 
-    $('.lesson_content_form').each(function () {
+    $('.post_content_form').each(function () {
         let type = $(this).attr('type');
         let id = $(this).attr('id');
 
@@ -212,32 +206,32 @@ $(document).ready(() => {
                 images_file_types: 'jpg,svg,webp',
             });
         } else {
-            let content = $(this).find('.lesson_card').attr('value').replaceAll('\\n', '\n');
+            let content = $(this).find('.post_card').attr('value').replaceAll('\\n', '\n');
             let val = $(this).attr('code');
             view[id] = new EditorView({
                 extensions: [basicSetup, oneDark, language_list[val]],
-                parent: document.querySelector(".lesson_card#" + val + id),
+                parent: document.querySelector(".post_card#" + val + id),
                 doc: content
             })
         }
     })
 
-    $('.lesson_content_form_remove_btn').click(function () {
-        let lesson_form = $(this).parent().parent();
+    $('.post_content_form_remove_btn').click(function () {
+        let post_form = $(this).parent().parent();
         let _token = $('input[name="_token"]').val();
         $.ajax({
-            url: domain + "admin/course/lesson/del_lesson_item",
+            url: domain + "admin/post/del_post_item",
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             type: "POST",
             dataType: 'json',
             data: {
-                id: lesson_form.attr('id'),
+                id: post_form.attr('id'),
                 _token: _token
             }
         }).done(function (data) {
-            lesson_form.remove();
+            post_form.remove();
             return true;
         }).fail(function (e) {
             return false;
@@ -255,38 +249,11 @@ $(document).ready(() => {
         return Array.from(arr, dec2hex).join('')
     }
 
-    $('.lesson_content_form_type').click(function () {
+    $('.post_content_form_type').click(function () {
         if ($(this).hasClass('not_run')) {
             $(this).removeClass('not_run');
         } else {
             $(this).addClass('not_run');
         }
     })
-
-    $('.course_select').change(function () {
-        let _token = $('input[name="_token"]').val();
-        $.ajax({
-            url: domain + "admin/course/lesson/list_main",
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            type: "POST",
-            dataType: 'json',
-            data: {
-                id: $(this).val(),
-                _token: _token
-            }
-        }).done(function (data) {
-            if ($(".lesson_main_select").length) {
-                $(".lesson_main_select").html(data);
-                $(".lesson_main_select").select2();
-                $(".lesson_main").show();
-            }
-            return true;
-        }).fail(function (e) {
-            return false;
-        });
-    })
-
-    $(".lesson_main.active").find('.lesson_main_select').select2();
 })

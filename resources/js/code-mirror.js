@@ -21,14 +21,14 @@ let language_list = {
 
 let view = {}
 
-$('.home_lession_card').each(function () {
+$('.home_lesson_card').each(function () {
     let language = $(this).attr('id');
     let text = $('#input_' + language).val();
     text = text.replaceAll('\\n', '\n');
 
     let view = new EditorView({
         extensions: [basicSetup, oneDark, language_list[language]],
-        parent: document.querySelector(".home_lession_card#" + language),
+        parent: document.querySelector(".home_lesson_card#" + language),
         doc: ''
     })
 
@@ -78,19 +78,19 @@ $('.home_lession_card').each(function () {
         });
     })
 
-    $(this).parent().children('.home_lession_info').css('background', $('#input_' + language).attr('color'));
+    $(this).parent().children('.home_lesson_info').css('background', $('#input_' + language).attr('color'));
 })
 
 $('.lesson_box_content .lesson_content').each(function () {
-    if ($(this).find('.lession_card').length > 0) {
+    if ($(this).find('.lesson_card').length > 0) {
         $(this).addClass('code_box');
-        let lesson_cart = $(this).find('.lession_card');
+        let lesson_cart = $(this).find('.lesson_card');
         let content = lesson_cart.attr('value').replaceAll('\\n', '\n');
         let val = lesson_cart.attr('lang');
 
         view[lesson_cart.attr('id')] = new EditorView({
             extensions: [basicSetup, oneDark, language_list[val]],
-            parent: document.querySelector(".lession_card#" + lesson_cart.attr('id')),
+            parent: document.querySelector(".lesson_card#" + lesson_cart.attr('id')),
             doc: content
         })
     } else {
@@ -108,7 +108,7 @@ console.log = function (...value) {
 $('.run_code').click(function () {
     let compiler_code_loading = $(this).parent().parent().find('.lds-ring');
     compiler_code_loading.show();
-    let code_editer = $(this).parent().parent().find('.lession_card');
+    let code_editer = $(this).parent().parent().find('.lesson_card');
     let lang = code_editer.attr('lang');
     let content = view[code_editer.attr('id')].state.doc.toString();
     if (lang == 'php') {

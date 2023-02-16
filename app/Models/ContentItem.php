@@ -18,6 +18,7 @@ class ContentItem extends Model
         'p_language_id',
         'status',
         'type',
-        'compiler'
+        'compiler',
+        'post_id'
     ];
 }

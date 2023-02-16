@@ -17,16 +17,16 @@
 @section('content')
     <div class="box">
         <h2 class="home_title">Khóa học</h2>
-        <div class="home_lession">
+        <div class="home_lesson">
             @foreach ($p_languages as $p_language)
-                <div class="home_lession_item">
+                <div class="home_lesson_item">
                     <input id="input_{{ $p_language->name }}" value="{{ $p_language->home_content }}"
                         color="{{ $p_language->color }}" hidden>
-                    <div class="home_lession_card" id="{{ $p_language->name }}"></div>
+                    <div class="home_lesson_card" id="{{ $p_language->name }}"></div>
                     <a href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}">
-                        <div class="home_lession_cover"></div>
+                        <div class="home_lesson_cover"></div>
                     </a>
-                    <a class="home_lession_info" href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}">
+                    <a class="home_lesson_info" href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}">
                         Học {{ $p_language->full_name }} miễn phí
                     </a>
                     {{-- <button class="submit"> submit </button> --}}

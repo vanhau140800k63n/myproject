@@ -40,7 +40,7 @@
                     @if ($item->type === 'text')
                         {!! $item->content !!}
                     @else
-                        <div class="lession_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
+                        <div class="lesson_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
                             lang="{{ $item->p_language_id }}"></div>
                         @if ($item->compiler === 1)
                             <div class="compiler_code_title">

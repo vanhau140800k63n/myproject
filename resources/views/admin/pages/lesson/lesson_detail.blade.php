@@ -15,11 +15,10 @@
                 <div>
                     <div class="lesson_info" type="update" lesson_id="{{ $lesson->id }}">
                         <select class="course_select">
-                            <option value='0'>Chọn khóa học:</option>
                             @foreach ($course_list as $course)
-                                <option value="{{ $course->id }}"
-                                    {{ $course->id === $course_selected->id ? 'selected' : '' }}>{{ $course->full_name }}
-                                </option>
+                                @if ($course->id === $course_selected->id)
+                                    <option value="{{ $course->id }}" selected>{{ $course->full_name }}</option>
+                                @endif
                             @endforeach
                         </select>
                         <input type="text" class="form-control main_title" style="color: #fff"
@@ -27,20 +26,33 @@
                         <input type="text" class="form-control sub_title" style="color: #fff" placeholder="Tiêu đề phụ"
                             value="{{ $lesson->sub_title }}">
                     </div>
+                    <div class="lesson_main active">
+                        <label>Bài viết chính</label>
+                        <select class="lesson_main_select" style="width:100%">
+                            <option value="0"> Chọn bài viết chính </option>
+                            @foreach ($lesson_list as $lesson_list_item)
+                                <option value="{{ $lesson_list_item->id }}"
+                                    {{ $lesson->parent === $lesson_list_item->id ? 'selected' : '' }}>
+                                    {{ $lesson_list_item->title }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
                     <div class="lesson_content">
                         @foreach ($lesson_detail as $item)
-                            <div class="lesson_content_form" type="{{ $item->type }}"
-                                id="{{ $item->id }}" code="{{ $item->p_language_id }}">
+                            <div class="lesson_content_form" type="{{ $item->type }}" id="{{ $item->id }}"
+                                code="{{ $item->p_language_id }}">
                                 <div class="lesson_content_form_info">
                                     <input type="text" class="form-control lesson_content_form_title" style="color: #fff"
                                         placeholder="Tiêu đề" value="{{ $item->title }}">
-                                    <div class="lesson_content_form_type {{ $item->compiler == 0 ? 'not_run' : '' }}">{{ is_null($item->p_language_id) ? 'text' : $item->p_language_id }}</div>
+                                    <div class="lesson_content_form_type {{ $item->compiler == 0 ? 'not_run' : '' }}">
+                                        {{ is_null($item->p_language_id) ? 'text' : $item->p_language_id }}</div>
                                     <button class="lesson_content_form_remove_btn btn btn-danger btn-fw"> Xóa </button>
                                 </div>
                                 @if ($item->type === 'text')
                                     <textarea id="text-{{ $item->id }}" name="description">{{ $item->content }}</textarea>
                                 @else
-                                    <div class="lession_card" id="{{ $item->p_language_id . $item->id }}"
+                                    <div class="lesson_card" id="{{ $item->p_language_id . $item->id }}"
                                         value="{{ $item->content }}" lang="{{ $item->p_language_id }}"></div>
                                 @endif
                             </div>
@@ -61,4 +73,5 @@
         </div>
     </div>
     <script src="{{ asset('lib/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
+    <script src="{{ asset(mix('js/admin.js')) }}"></script>
 @endsection

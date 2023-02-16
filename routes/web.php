@@ -67,10 +67,17 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
             Route::post('/update_lesson_item', [LessonController::class, 'updateLessonItemAdmin'])->name('update_lesson_item');
             Route::post('/del_lesson_item', [LessonController::class, 'delLessonItemAdmin'])->name('del_lesson_item');
             Route::get('/detail', [LessonController::class, 'lessonDetailAdmin'])->name('detail');
+            Route::post('/list_main', [LessonController::class, 'lessonListMainAdmin'])->name('list_main');
         });
     });
     Route::prefix('post')->name('post.')->group(function () {
         Route::get('/', [PostController::class, 'getPostListAdmin'])->name('list');
-        Route::get('/{id}', [PostController::class, 'getPostContentAdmin'])->name('content');
+        Route::get('/add', [PostController::class, 'addPostAdmin'])->name('add');
+        Route::post('/add_post_info', [PostController::class, 'addPostInfoAdmin'])->name('add_post_info');
+        Route::post('/update_post_info', [PostController::class, 'updatePostInfoAdmin'])->name('update_post_info');
+        Route::post('/add_post_item', [PostController::class, 'addPostItemAdmin'])->name('add_post_item');
+        Route::post('/update_post_item', [PostController::class, 'updatePostItemAdmin'])->name('update_post_item');
+        Route::post('/del_post_item', [PostController::class, 'delPostItemAdmin'])->name('del_post_item');
+        Route::get('/detail/{id}', [PostController::class, 'postDetailAdmin'])->name('detail');
     });
 });

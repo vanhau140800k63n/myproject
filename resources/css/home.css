@@ -1,4 +1,4 @@
-.home_lession {
+.home_lesson {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem 2rem;
@@ -6,11 +6,11 @@
     margin-bottom: 50px;
 }
 
-.home_lession_item {
+.home_lesson_item {
     position: relative;
 }
 
-.home_lession_cover {
+.home_lesson_cover {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -19,7 +19,7 @@
     top: 0;
 }
 
-.home_lession_info {
+.home_lesson_info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +31,7 @@
     transition: 0.2s;
 }
 
-.home_lession_item:hover .home_lession_info {
+.home_lesson_item:hover .home_lesson_info {
     font-size: 15px;
 }
 

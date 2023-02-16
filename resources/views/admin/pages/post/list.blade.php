@@ -7,7 +7,10 @@
         <div class="col-12 grid-margin">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Post</h4>
+                    <div style="display: flex; justify-content: space-between;">
+                        <h4 class="card-title">Post</h4>
+                        <a class="btn btn-primary" style="display: flex; align-items: center; justify-content: center;" href="{{ route('admin.post.add') }}"> Thêm </a>
+                    </div>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -24,7 +27,7 @@
                                         <td> {{ $post->id }} </td>
                                         <td> {{ $post->title }} </td>
                                         <td> 0 </td>
-                                        <td> <a href="">Chi tiết</a>
+                                        <td> <a href="{{ route('admin.post.detail', ['id' => $post->id]) }}">Chi tiết</a>
                                         </td>
                                     </tr>
                                 @endforeach

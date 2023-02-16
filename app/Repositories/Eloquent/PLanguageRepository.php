@@ -17,10 +17,7 @@ class PLanguageRepository extends BaseRepository implements PLanguageRepositoryI
 
     public function getPLanguageHome()
     {
-        $query = $this->p_language;
-        $pLanguages = $this->retryQuery($query);
-
-        return $pLanguages;
+        return $this->p_language->all();
     }
 
     public function getPLanguageIdByName($name)

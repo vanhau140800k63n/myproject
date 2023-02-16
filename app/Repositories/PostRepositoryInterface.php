@@ -6,4 +6,8 @@ interface PostRepositoryInterface
 {
     public function getPostList();
     public function getPostHome();
+    public function addPost($data);
+    public function updatePost($data);
+    public function getPostAdmin($id);
+    public function getPostBySlug($slug, $course_id);
 }

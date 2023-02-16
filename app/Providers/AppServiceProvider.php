@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\ContentItem;
+use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\Eloquent\ContentItemRepository;
 use App\Repositories\Eloquent\LessonItemRepository;
 use App\Repositories\Eloquent\LessonRepository;
@@ -40,8 +40,8 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(PostRepositoryInterface::class, function () {
             return new PostRepository();
         });
-        $this->app->singleton(ContentItemRepository::class, function () {
-            return new ContentItem();
+        $this->app->singleton(ContentItemRepositoryInterface::class, function () {
+            return new ContentItemRepository();
         });
     }
 

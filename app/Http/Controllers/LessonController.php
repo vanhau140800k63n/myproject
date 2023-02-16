@@ -93,8 +93,9 @@ class LessonController extends Controller
                 $course_selected = $this->pLanguageRepository->getCourseAdmin($lesson->course_id);
                 if ($course_selected !== null) {
                     $course_list = $this->lessonRepository->getCourseListAdmin();
+                    $lesson_list = $this->lessonRepository->getLessonList($lesson->course_id);
                     $lesson_detail = $this->lessonItemRepository->getLessonDetail($req->id);
-                    return view('admin.pages.lesson.lesson_detail', compact('lesson', 'lesson_detail', 'course_selected', 'course_list'));
+                    return view('admin.pages.lesson.lesson_detail', compact('lesson', 'lesson_detail', 'course_selected', 'course_list', 'lesson_list'));
                 }
             }
         }
@@ -134,7 +135,7 @@ class LessonController extends Controller
                 return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson'));
             }
         }
-        
+
         throw new PageException();
     }
 
@@ -161,5 +162,17 @@ class LessonController extends Controller
         } catch (Throwable $ex) {
             return $ex->getMessage();
         }
+    }
+
+    public function lessonListMainAdmin(Request $req)
+    {
+        $lesson_list = $this->lessonRepository->getLessonList($req->id);
+        $output = '<option value="0">Chọn bài viết chính</option>';
+
+        foreach ($lesson_list as $lesson) {
+            $output .= '<option value="' . $lesson->id . '">' . $lesson->title . '</option>';
+        }
+
+        return response()->json($output);
     }
 }
