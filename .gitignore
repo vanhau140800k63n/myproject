@@ -19,6 +19,7 @@ yarn-error.log
 /resources/lib/
 /resources/fonts/
 /resources/image/
+/public/image/
 public/.DS_Store
 public/Archive.zip
 public/__MACOSX/

@@ -23,6 +23,10 @@
                         </select>
                         <input type="text" class="form-control post_title" style="color: #fff"
                             placeholder="Tiêu đề chính" value="{{ $post->title }}">
+                        <input type="text" class="form-control post_img" style="color: #fff"
+                            placeholder="Thêm ảnh" value="{{ $post->image }}">
+                        <input type="text" class="form-control post_view" style="color: #fff"
+                            placeholder="Lượt view" value="{{ $post->view }}">
                     </div>
                     <div class="post_content">
                         @foreach ($post_detail as $item)

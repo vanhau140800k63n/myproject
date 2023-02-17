@@ -1,6 +1,22 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./resources/js/domain.js":
+/*!********************************!*\
+  !*** ./resources/js/domain.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "domain": () => (/* binding */ domain)
+/* harmony export */ });
+var domain = 'http://localhost:8003/';
+// export const domain = 'https://devsne.vn/';
+
+/***/ }),
+
 /***/ "./node_modules/process/browser.js":
 /*!*****************************************!*\
   !*** ./node_modules/process/browser.js ***!
@@ -30003,15 +30019,17 @@ var __webpack_exports__ = {};
   !*** ./resources/js/post_admin.js ***!
   \************************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! codemirror */ "./node_modules/@codemirror/view/dist/index.js");
-/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! codemirror */ "./node_modules/codemirror/dist/index.js");
-/* harmony import */ var _codemirror_lang_javascript__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @codemirror/lang-javascript */ "./node_modules/@codemirror/lang-javascript/dist/index.js");
-/* harmony import */ var _codemirror_lang_php__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @codemirror/lang-php */ "./node_modules/@codemirror/lang-php/dist/index.js");
-/* harmony import */ var _codemirror_lang_python__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @codemirror/lang-python */ "./node_modules/@codemirror/lang-python/dist/index.js");
-/* harmony import */ var _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @codemirror/theme-one-dark */ "./node_modules/@codemirror/theme-one-dark/dist/index.js");
-/* harmony import */ var _codemirror_lang_java__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @codemirror/lang-java */ "./node_modules/@codemirror/lang-java/dist/index.js");
-/* harmony import */ var _codemirror_lang_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @codemirror/lang-html */ "./node_modules/@codemirror/lang-html/dist/index.js");
-/* harmony import */ var _codemirror_lang_cpp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @codemirror/lang-cpp */ "./node_modules/@codemirror/lang-cpp/dist/index.js");
+/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! codemirror */ "./node_modules/@codemirror/view/dist/index.js");
+/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! codemirror */ "./node_modules/codemirror/dist/index.js");
+/* harmony import */ var _codemirror_lang_javascript__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @codemirror/lang-javascript */ "./node_modules/@codemirror/lang-javascript/dist/index.js");
+/* harmony import */ var _codemirror_lang_php__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @codemirror/lang-php */ "./node_modules/@codemirror/lang-php/dist/index.js");
+/* harmony import */ var _codemirror_lang_python__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @codemirror/lang-python */ "./node_modules/@codemirror/lang-python/dist/index.js");
+/* harmony import */ var _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @codemirror/theme-one-dark */ "./node_modules/@codemirror/theme-one-dark/dist/index.js");
+/* harmony import */ var _codemirror_lang_java__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @codemirror/lang-java */ "./node_modules/@codemirror/lang-java/dist/index.js");
+/* harmony import */ var _codemirror_lang_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @codemirror/lang-html */ "./node_modules/@codemirror/lang-html/dist/index.js");
+/* harmony import */ var _codemirror_lang_cpp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @codemirror/lang-cpp */ "./node_modules/@codemirror/lang-cpp/dist/index.js");
+/* harmony import */ var _domain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domain */ "./resources/js/domain.js");
+
 
 
 
@@ -30021,15 +30039,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 $(document).ready(function () {
-  // var domain = 'http://localhost:8003/';
-  var domain = 'https://devsne.vn/';
   var language_list = {
-    php: (0,_codemirror_lang_php__WEBPACK_IMPORTED_MODULE_0__.php)(),
-    js: (0,_codemirror_lang_javascript__WEBPACK_IMPORTED_MODULE_1__.javascript)(),
-    py: (0,_codemirror_lang_python__WEBPACK_IMPORTED_MODULE_2__.python)(),
-    java: (0,_codemirror_lang_java__WEBPACK_IMPORTED_MODULE_3__.java)(),
-    html: (0,_codemirror_lang_html__WEBPACK_IMPORTED_MODULE_4__.html)(),
-    cpp: (0,_codemirror_lang_cpp__WEBPACK_IMPORTED_MODULE_5__.cpp)()
+    php: (0,_codemirror_lang_php__WEBPACK_IMPORTED_MODULE_1__.php)(),
+    js: (0,_codemirror_lang_javascript__WEBPACK_IMPORTED_MODULE_2__.javascript)(),
+    py: (0,_codemirror_lang_python__WEBPACK_IMPORTED_MODULE_3__.python)(),
+    java: (0,_codemirror_lang_java__WEBPACK_IMPORTED_MODULE_4__.java)(),
+    html: (0,_codemirror_lang_html__WEBPACK_IMPORTED_MODULE_5__.html)(),
+    cpp: (0,_codemirror_lang_cpp__WEBPACK_IMPORTED_MODULE_6__.cpp)()
   };
   var view = {};
   $('.post_btn_save').click(function () {
@@ -30058,19 +30074,25 @@ $(document).ready(function () {
     var url = '';
     var data = {};
     var post_id = $('.post_info').attr('post_id');
+    var post_img = $('.post_img').val();
+    var post_view = $('.post_view').val();
     if ($('.post_info').attr('type') == 'add') {
-      url = domain + "admin/post/add_post_info";
+      url = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/add_post_info";
       data = {
         title: title,
         type: post_type,
+        post_img: post_img,
+        post_view: post_view,
         _token: _token
       };
     } else {
-      url = domain + "admin/post/update_post_info";
+      url = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/update_post_info";
       data = {
         id: post_id,
         title: title,
         type: post_type,
+        post_img: post_img,
+        post_view: post_view,
         _token: _token
       };
     }
@@ -30110,7 +30132,7 @@ $(document).ready(function () {
         var _token = $('input[name="_token"]').val();
         var is_new_content = $(this).attr('status') == 'new';
         if (is_new_content) {
-          url_item = domain + "admin/post/add_post_item";
+          url_item = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/add_post_item";
           data_item = {
             content: content,
             title: title_content_item,
@@ -30122,7 +30144,7 @@ $(document).ready(function () {
             _token: _token
           };
         } else {
-          url_item = domain + "admin/post/update_post_item";
+          url_item = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/update_post_item";
           data_item = {
             id: $(this).attr('id'),
             content: content,
@@ -30147,7 +30169,7 @@ $(document).ready(function () {
           ++index_form;
           if (index_form == post_content_form_length) {
             if ($('.post_info').attr('type') == 'add') {
-              location.href = domain + 'admin/post';
+              location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'admin/post';
             } else {
               location.reload();
             }
@@ -30182,8 +30204,8 @@ $(document).ready(function () {
       });
     } else {
       $('.post_content').append('<div class="post_content_form" type="code" id="' + text_rand + '" code="' + val + '" status="new"><div class="post_content_form_info"><input type="text" class="form-control post_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new"><div class="post_content_form_type">' + val + '</div><button class="post_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><div class="post_card" id="' + val + text_rand + '"></div></div>');
-      view[text_rand] = new codemirror__WEBPACK_IMPORTED_MODULE_6__.EditorView({
-        extensions: [codemirror__WEBPACK_IMPORTED_MODULE_7__.basicSetup, _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_8__.oneDark, language_list[val]],
+      view[text_rand] = new codemirror__WEBPACK_IMPORTED_MODULE_7__.EditorView({
+        extensions: [codemirror__WEBPACK_IMPORTED_MODULE_8__.basicSetup, _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_9__.oneDark, language_list[val]],
         parent: document.querySelector(".post_card#" + val + text_rand),
         doc: ''
       });
@@ -30205,8 +30227,8 @@ $(document).ready(function () {
     } else {
       var content = $(this).find('.post_card').attr('value').replaceAll('\\n', '\n');
       var val = $(this).attr('code');
-      view[id] = new codemirror__WEBPACK_IMPORTED_MODULE_6__.EditorView({
-        extensions: [codemirror__WEBPACK_IMPORTED_MODULE_7__.basicSetup, _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_8__.oneDark, language_list[val]],
+      view[id] = new codemirror__WEBPACK_IMPORTED_MODULE_7__.EditorView({
+        extensions: [codemirror__WEBPACK_IMPORTED_MODULE_8__.basicSetup, _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_9__.oneDark, language_list[val]],
         parent: document.querySelector(".post_card#" + val + id),
         doc: content
       });
@@ -30216,7 +30238,7 @@ $(document).ready(function () {
     var post_form = $(this).parent().parent();
     var _token = $('input[name="_token"]').val();
     $.ajax({
-      url: domain + "admin/post/del_post_item",
+      url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/del_post_item",
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
       },

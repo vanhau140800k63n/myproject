@@ -15,6 +15,7 @@ class Post extends Model
         'image',
         'slug',
         'created_by',
-        'type'
+        'type',
+        'view'
     ];
 }
