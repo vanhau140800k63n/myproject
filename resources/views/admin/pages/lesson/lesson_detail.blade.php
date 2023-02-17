@@ -32,7 +32,7 @@
                             <option value="0"> Chọn bài viết chính </option>
                             @foreach ($lesson_list as $lesson_list_item)
                                 <option value="{{ $lesson_list_item->id }}"
-                                    {{ $lesson->parent === $lesson_list_item->id ? 'selected' : '' }}>
+                                    {{ intval($lesson->parent) === intval($lesson_list_item->id) ? 'selected' : '' }}>
                                     {{ $lesson_list_item->title }}
                                 </option>
                             @endforeach
