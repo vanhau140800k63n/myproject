@@ -19,4 +19,6 @@ yarn-error.log
 /public/lib/
 /public/fonts/
 /public/image/
-/public/mix-manifest.json
+public/.DS_Store
+public/Archive.zip
+public/__MACOSX/
