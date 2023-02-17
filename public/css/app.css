@@ -583,6 +583,11 @@ a {
     line-height: 1.6;
 }
 
+.text_box h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .lesson_content strong {
     font-weight: 500;
 }
@@ -634,6 +639,7 @@ a {
 }
 
 .lesson_content td {
+    font-size: 15px !important;
     padding: 6px 25px;
     border: 1px solid #dddddd;
 }
@@ -642,7 +648,7 @@ a {
     padding: 6px 25px;
     font-size: 15px;
     border: 1px solid #dddddd;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .lesson_content tbody tr:nth-of-type(even) {
