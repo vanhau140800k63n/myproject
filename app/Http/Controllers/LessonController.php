@@ -175,4 +175,13 @@ class LessonController extends Controller
 
         return response()->json($output);
     }
+
+    public function delLessonAdmin(Request $req)
+    {
+        if (isset($req->id)) {
+            $del_lesson = $this->lessonRepository->delLessonAdmin($req->id);
+        }
+
+        return redirect()->back();
+    }
 }

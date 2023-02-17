@@ -9,16 +9,18 @@
                 <div class="card-body">
                     <div style="display: flex; justify-content: space-between;">
                         <h4 class="card-title">Post</h4>
-                        <a class="btn btn-primary" style="display: flex; align-items: center; justify-content: center;" href="{{ route('admin.post.add') }}"> Thêm </a>
+                        <a class="btn btn-primary" style="display: flex; align-items: center; justify-content: center;"
+                            href="{{ route('admin.post.add') }}"> Thêm </a>
                     </div>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th> ID </th>
-                                    <th> Title </th>
-                                    <th> Số lượng </th>
-                                    <th> Chi tiết </th>
+                                    <th width="10%"> ID </th>
+                                    <th width="60%"> Title </th>
+                                    <th width="10%"> Số lượng </th>
+                                    <th width="10%"> Chi tiết </th>
+                                    <th width="10%"> Thao tác </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -27,7 +29,13 @@
                                         <td> {{ $post->id }} </td>
                                         <td> {{ $post->title }} </td>
                                         <td> 0 </td>
-                                        <td> <a href="{{ route('admin.post.detail', ['id' => $post->id]) }}">Chi tiết</a>
+                                        <td> <a class="btn btn-info"
+                                                style="display: flex; align-items: center; justify-content: center;"
+                                                href="{{ route('admin.post.detail', ['id' => $post->id]) }}">Chi tiết</a>
+                                        </td>
+                                        <td> <a class="btn btn-danger"
+                                                style="display: flex; align-items: center; justify-content: center;"
+                                                href="{{ route('admin.post.del', ['id' => $post->id]) }}">Xóa</a>
                                         </td>
                                     </tr>
                                 @endforeach

@@ -37,8 +37,11 @@
         <div class="home_post">
             @foreach ($post_list as $post)
                 <div class="home_post_item">
-                    <a href="{{ route('post.detail', ['slug' => $post->slug]) }}">
+                    <a class="home_post_content" href="{{ route('post.detail', ['slug' => $post->slug]) }}">
                         <img class="home_post_img" src="{{ $post->image }}">
+                        <div class="home_post_img_cover">
+                            <button class="home_post_btn_show">Xem thêm</button>
+                        </div>
                         <p class="home_post_item_title">{{ $post->title }}</p>
                     </a>
                     <a href="" class="home_post_author">

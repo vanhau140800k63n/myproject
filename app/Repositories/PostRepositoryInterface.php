@@ -10,4 +10,5 @@ interface PostRepositoryInterface
     public function updatePost($data);
     public function getPostAdmin($id);
     public function getPostBySlug($slug);
+    public function delPostAdmin($id);
 }

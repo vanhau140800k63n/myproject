@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Config;
-final class AuthConstants {
+
+final class AuthConstants
+{
     public const SECRET_STR = 'devsne-user';
     public const CP_STR = 'cp';
     public const RESET_PASSWORD = 3;

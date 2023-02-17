@@ -68,6 +68,7 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
             Route::post('/del_lesson_item', [LessonController::class, 'delLessonItemAdmin'])->name('del_lesson_item');
             Route::get('/detail', [LessonController::class, 'lessonDetailAdmin'])->name('detail');
             Route::post('/list_main', [LessonController::class, 'lessonListMainAdmin'])->name('list_main');
+            Route::get('/del_lesson', [LessonController::class, 'delLessonAdmin'])->name('del_lesson');
         });
     });
     Route::prefix('post')->name('post.')->group(function () {
@@ -79,5 +80,6 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::post('/update_post_item', [PostController::class, 'updatePostItemAdmin'])->name('update_post_item');
         Route::post('/del_post_item', [PostController::class, 'delPostItemAdmin'])->name('del_post_item');
         Route::get('/detail/{id}', [PostController::class, 'postDetailAdmin'])->name('detail');
+        Route::get('/del', [PostController::class, 'delPostAdmin'])->name('del');
     });
 });

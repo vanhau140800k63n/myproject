@@ -44,16 +44,54 @@
 }
 
 .home_post_item {
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
+}
+
+.home_post_content {
+    position: relative;
 }
 
 .home_post_img {
     width: 100%;
     object-fit: cover;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px;
+}
+
+.home_post_img_cover {
+    position: absolute;
+    width: 100%;
+    background: #00000045;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: 0.1s;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_post_btn_show {
+    opacity: 0;
+    background: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.home_post_content:hover .home_post_btn_show {
+    transform: translateY(-10px);
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+}
+
+.home_post_content:hover .home_post_img_cover {
+    opacity: 1;
 }
 
 .home_title {
@@ -99,9 +137,13 @@
 .home_post_item_title {
     font-weight: 500;
     margin: 10px 0;
-    padding-top: 5px;
     flex-shrink: 1;
-    border-top: 1px solid rgb(213, 212, 212);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
 }
 
 .home_post_author {
@@ -126,4 +168,8 @@
     margin-left: 5px;
     color: #fff;
     font-size: 12px;
+}
+
+.home_post_author_name:hover {
+    font-weight: 500;
 }

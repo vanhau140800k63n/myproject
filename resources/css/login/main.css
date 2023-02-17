@@ -53,9 +53,7 @@ button:hover {
 }
 
 .bg3 {
-    background: repeating-conic-gradient(from 3deg at 25% 25%,
-            hsl(200, 100%, 50%) 0deg 15deg,
-            hsl(200, 100%, 60%) 10deg 30deg);
+    background: #6495ed;
 }
 
 .container-login {

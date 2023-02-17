@@ -48,11 +48,13 @@ class AuthController extends Controller
 
     public function forgotPassword()
     {
+        return view('admin.pages.error');
         return view('admin.pages.forgot_password');
     }
 
     public function postForgotPassword(Request $req)
     {
+        return view('admin.pages.error');
         $this->validate(
             $req,
             [
@@ -127,10 +129,12 @@ class AuthController extends Controller
         $user = $this->userRepository->createUser($dataCreate);
 
         if ($user !== false) {
+            return redirect()->route('change_password', ['user_id' => $user->id, 'token' => $user->token]);
             Mail::to($user->email)->send(new RegisterAccount($user->email, $user->id, $user->token));
         }
 
-        return redirect()->route('confirm_register')->with('user_id', $user->id);
+        return view('admin.pages.error');
+        // return redirect()->route('confirm_register')->with('user_id', $user->id);
     }
 
     public function confirmRegister()

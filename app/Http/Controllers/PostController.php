@@ -110,7 +110,6 @@ class PostController extends Controller
 
     public function getPostDetail($slug)
     {
-    
         $post = $this->postRepository->getPostBySlug($slug);
         if($post !== null) {
             $post_detail = $this->contentItemRepository->getPostDetail($post->id);
@@ -118,5 +117,13 @@ class PostController extends Controller
         }
 
         throw new PageException();
+    }
+
+    public function delPostAdmin(Request $req) {
+        if (isset($req->id)) {
+            $del_post = $this->postRepository->delPostAdmin($req->id);
+        }
+
+        return redirect()->back();
     }
 }
