@@ -33,7 +33,7 @@
                 <div class="lesson_content">
                     <div class="lesson_content_head">
                         <div class="lesson_content_title">{{ $item->title }}</div>
-                        @if ($item->type !== 'text' && $item->compiler === 1)
+                        @if ($item->type !== 'text' && intval($item->compiler) === 1)
                             <button class="run_code"> Run code </button>
                         @endif
                     </div>
@@ -42,7 +42,7 @@
                     @else
                         <div class="lesson_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
                             lang="{{ $item->p_language_id }}"></div>
-                        @if (true)
+                        @if (intval($item->compiler) == 1)
                             <div class="compiler_code_title">
                                 {{ $item->p_language_id != 'html' ? 'Compiler' : 'HTML Iframe' }}
                                 <div class="lds-ring">
