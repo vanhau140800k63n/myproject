@@ -12,8 +12,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "domain": () => (/* binding */ domain)
 /* harmony export */ });
-var domain = 'http://localhost:8003/';
-// export const domain = 'https://devsne.vn/';
+// export const domain = 'http://localhost:8003/';
+var domain = 'https://devsne.vn/';
 
 /***/ }),
 
@@ -30081,8 +30081,8 @@ $(document).ready(function () {
       data = {
         title: title,
         type: post_type,
-        post_img: post_img,
-        post_view: post_view,
+        image: post_img,
+        view: post_view,
         _token: _token
       };
     } else {
@@ -30091,8 +30091,8 @@ $(document).ready(function () {
         id: post_id,
         title: title,
         type: post_type,
-        post_img: post_img,
-        post_view: post_view,
+        image: post_img,
+        view: post_view,
         _token: _token
       };
     }
