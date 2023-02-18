@@ -19,8 +19,9 @@
                             <option value='1'>Project</option>
                             <option value='2'>Blog</option>
                         </select>
-                        <input type="text" class="form-control post_title" style="color: #fff"
-                            placeholder="Tiêu đề">
+                        <input type="text" class="form-control post_title" style="color: #fff" placeholder="Tiêu đề">
+                        <input type="text" class="form-control post_img" style="color: #fff" placeholder="Thêm ảnh">
+                        <input type="text" class="form-control post_view" style="color: #fff" placeholder="Lượt view">
                     </div>
                     <div class="post_content">
                     </div>
