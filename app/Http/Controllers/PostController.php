@@ -9,6 +9,7 @@ use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class PostController extends Controller
 {
@@ -43,8 +44,13 @@ class PostController extends Controller
 
     public function addPostInfoAdmin(Request $req)
     {
+        $data = $req->all();
         if (isset($req->type) && $req->type != null && $req->type != '') {
-            $post = $this->postRepository->addPost($req->all());
+            $data['slug'] = $this->makeSlug($data['title']);
+            if (isset($req->image) && $req->image != null && $req->image != '') {
+                $data['image'] = $this->saveImage($req->image, $data['slug']);
+            }
+            $post = $this->postRepository->addPost($data);
 
             if ($post !== false) {
                 return response()->json($post);
@@ -88,8 +94,15 @@ class PostController extends Controller
 
     public function updatepostInfoAdmin(Request $req)
     {
-        if (isset($req->type) && $req->type != null && $req->type != '') {
-            $post = $this->postRepository->updatePost($req->all());
+        $data = $req->all();
+        $post = $this->postRepository->getpostAdmin($req->id);
+        if ($post != null && isset($req->type) && $req->type != null && $req->type != '') {
+            $data['slug'] = $this->makeSlug($data['title']);
+            if ($data['image'] != $post->image) {
+                File::delete($post->image);
+                $data['image'] = $this->saveImage($data['image'], $data['slug']);
+            }
+            $post = $this->postRepository->updatePost($data);
 
             if ($post !== false) {
                 return response()->json($post);
@@ -111,7 +124,7 @@ class PostController extends Controller
     public function getPostDetail($slug)
     {
         $post = $this->postRepository->getPostBySlug($slug);
-        if($post !== null) {
+        if ($post !== null) {
             $post_detail = $this->contentItemRepository->getPostDetail($post->id);
             return view('pages.post.detail', compact('post', 'post_detail'));
         }
@@ -119,7 +132,8 @@ class PostController extends Controller
         throw new PageException();
     }
 
-    public function delPostAdmin(Request $req) {
+    public function delPostAdmin(Request $req)
+    {
         if (isset($req->id)) {
             $del_post = $this->postRepository->delPostAdmin($req->id);
         }
