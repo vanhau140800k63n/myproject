@@ -25,9 +25,10 @@ class Controller extends BaseController
                     $imgFile->resize(300, null, function ($constraint) {
                         $constraint->aspectRatio();
                     });
-                    $imgFile->save('image/post/' . $name . '.jpg');
+                    $imageName = 'image/post/' . $name . rand(1000, 9999) . '.jpg';
+                    $imgFile->save($imageName);
 
-                    return 'image/post/' . $name . '.jpg';
+                    return $imageName;
                 }
             } catch (Throwable $ex) {
                 return $ex->getMessage();
