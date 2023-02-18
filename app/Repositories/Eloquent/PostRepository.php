@@ -30,30 +30,16 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
 
     public function addPost($data)
     {
-        $str = $this->makeSlug($data['title']);
+        $data['created_by'] = Auth::id();
 
-        $data_create = [
-            'title' => $data['title'],
-            'slug' => $str,
-            'type' => $data['type'],
-            'created_by' => Auth::id()
-        ];
-
-        return $this->post->create($data_create);
+        return $this->post->create($data);
     }
 
     public function updatePost($data)
     {
-        $str = $this->makeSlug($data['title']);
+        $data['created_by'] = Auth::id();
 
-        $data_update = [
-            'title' => $data['title'],
-            'type' => $data['type'],
-            'slug' => $str,
-            'created_by' => Auth::id()
-        ];
-
-        $post_update = $this->post->where('id', $data['id'])->update($data_update);
+        $post_update = $this->post->where('id', $data['id'])->update($data);
         return true;
     }
 
