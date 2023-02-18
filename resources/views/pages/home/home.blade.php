@@ -42,6 +42,7 @@
                         <div class="home_post_img_cover">
                             <button class="home_post_btn_show">Xem thêm</button>
                         </div>
+                        <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $post->view }} lượt xem</div>
                         <p class="home_post_item_title">{{ $post->title }}</p>
                     </a>
                     <a href="" class="home_post_author">
