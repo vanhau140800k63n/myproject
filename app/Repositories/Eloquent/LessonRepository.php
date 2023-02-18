@@ -37,6 +37,10 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
         return $this->retryQuery($query);
     }
 
+    public function getLessonListParent($course_id) {
+        return $this->lesson->where('course_id', $course_id)->where('parent', 0)->get();
+    }
+
     public function addLesson($data)
     {
         $query = $this->lesson;
@@ -90,5 +94,17 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
     public function delLessonAdmin($id)
     {
         return $this->lesson->where('id', $id)->delete();
+    }
+
+    public function getLessonListAll() {
+        return $this->lesson->all();
+    }
+
+    public function getLessonById($id) {
+        return $this->lesson->find(intval($id));
+    }
+
+    public function getLessonChildList($id) {
+        return $this->lesson->where('parent', $id)->get();
     }
 }

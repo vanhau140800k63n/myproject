@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('meta')
     <style>
-        .cm-content,
-        .cm-gutter {
-            min-height: 20px;
+        .ͼ1.cm-editor {
+            min-height: 100px;
+            max-height: 300px !important;
         }
 
         .cm-scroller {

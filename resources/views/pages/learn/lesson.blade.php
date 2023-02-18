@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('meta')
     <style>
-        .cm-content,
-        .cm-gutter {
+        .ͼ1.cm-editor {
             min-height: 100px;
+            max-height: 300px !important;
         }
 
         .cm-scroller {
@@ -21,9 +21,17 @@
             <div class="lesson_box_category_list">
                 @foreach ($lesson_list as $lesson_item)
                     <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_item->slug]) }}"
-                        class="lesson_box_category_item{{ $lesson_item->id === $lesson->id ? ' active' : '' }}">
+                        class="lesson_box_category_item{{ $lesson_item->id === $lesson->id || (isset($lesson_parent->id) && $lesson_item->id === $lesson_parent->id) ? ' active' : '' }}">
                         <div>{{ $lesson_item->sub_title }}</div>
                     </a>
+                    @if ($lesson_item->id === $lesson->id || (isset($lesson_parent->id) && $lesson_item->id === $lesson_parent->id))
+                        @foreach ($lesson_child_list as $lesson_child_item)
+                            <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_child_item->slug]) }}"
+                                class="lesson_box_category_child_item{{ $lesson_child_item->id === $lesson->id ? ' active' : '' }}">
+                                <div>{{ $lesson_child_item->sub_title }}</div>
+                            </a>
+                        @endforeach
+                    @endif
                 @endforeach
             </div>
         </div>
@@ -65,13 +73,12 @@
         <div class="lesson_box_other">
             <?php
             $course_list = \App\Models\PLanguage::where('id', '!=', $course->id)->get();
-            $lesson_more = $lesson_list->where('parent', $lesson->id);
             $i = 0;
             ?>
-            @if ($lesson_more->count() > 0)
+            @if ($lesson_child_list->count() > 0)
                 <div class="lesson_more">
                     <div class="lesson_more_title">Tham khảo thêm</div>
-                    @foreach ($lesson_more as $lesson_more_item)
+                    @foreach ($lesson_child_list as $lesson_more_item)
                         <a class="lesson_more_item"
                             href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_more_item->slug]) }}">{{ $lesson_more_item->title }}</a>
                     @endforeach

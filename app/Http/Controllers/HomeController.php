@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\PLanguage;
+use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
@@ -13,12 +14,18 @@ class HomeController extends Controller
     private $userRepository;
     private $pLanguageRepository;
     private $postRepository;
+    private $lessonRepository;
 
-    public function __construct(UserRepositoryInterface $userRepository, PLanguageRepositoryInterface $pLanguageRepository, PostRepositoryInterface $postRepository)
-    {
+    public function __construct(
+        UserRepositoryInterface $userRepository,
+        PLanguageRepositoryInterface $pLanguageRepository,
+        PostRepositoryInterface $postRepository,
+        LessonRepositoryInterface $lessonRepository
+    ) {
         $this->userRepository = $userRepository;
         $this->pLanguageRepository = $pLanguageRepository;
         $this->postRepository = $postRepository;
+        $this->lessonRepository = $lessonRepository;
     }
 
     public function getHomePage()
@@ -36,9 +43,98 @@ class HomeController extends Controller
         return 1;
     }
 
-    public function test(Request $req)
+    public function updateMeta(Request $req)
     {
-        $pLang = PLanguage::find(2);
-        dd(json_decode($pLang->home_content));
+        $lesson_list = $this->lessonRepository->getLessonListAll();
+        $post_list = $this->postRepository->getPostList();
+        foreach ($lesson_list as $lesson) {
+            if ($lesson->meta == '' || $lesson->meta == null) {
+                $str = $lesson->title;
+                $i = 0;
+                $data = [];
+                $output = '';
+                while (strlen($str) > 0) {
+                    $index = strpos($str, ' ');
+                    if ($index == null) {
+                        $data[$i] = $str;
+                        $str = '';
+                    } else {
+                        $data[$i] = substr($str, 0, $index);
+                        $str = substr($str, $index + 1);
+                        ++$i;
+                    }
+                }
+                $size = sizeof($data);
+                if ($size > 2) {
+                    if ($size == 3) {
+                        $pos = 2;
+                    } else if ($size >= 7) {
+                        $pos = $size - 3;
+                    } else {
+                        $pos = $size - 2;
+                    }
+                    for ($i = $pos; $i < $size; ++$i) {
+                        for ($j = 0; $j <= $size - $i; ++$j) {
+                            for ($k = $j; $k < $j + $i; ++$k) {
+                                if ($k == $j + $i - 1) {
+                                    $output .= $data[$k] . ', ';
+                                } else {
+                                    $output .= $data[$k] . ' ';
+                                }
+                            }
+                        }
+                    }
+                }
+
+                $lesson->meta = $output;
+            }
+            $lesson->save();
+        }
+
+        foreach ($post_list as $post) {
+            if ($post->meta == '' || $post->meta == null) {
+                $str = $post->title;
+                $i = 0;
+                $data = [];
+                $output = '';
+                while (strlen($str) > 0) {
+                    $index = strpos($str, ' ');
+                    if ($index == null) {
+                        $data[$i] = $str;
+                        $str = '';
+                    } else {
+                        $data[$i] = substr($str, 0, $index);
+                        $str = substr($str, $index + 1);
+                        ++$i;
+                    }
+                }
+                $size = sizeof($data);
+                if ($size > 2) {
+                    if ($size == 3) {
+                        $pos = 2;
+                    } else if ($size >= 7) {
+                        $pos = $size - 3;
+                    } else {
+                        $pos = $size - 2;
+                    }
+                    for ($i = $pos; $i < $size; ++$i) {
+                        for ($j = 0; $j <= $size - $i; ++$j) {
+                            for ($k = $j; $k < $j + $i; ++$k) {
+                                if ($k == $j + $i - 1) {
+                                    $output .= $data[$k] . ', ';
+                                } else {
+                                    $output .= $data[$k] . ' ';
+                                }
+                            }
+                        }
+                    }
+                }
+
+                $post->meta = $output;
+            }
+            $post->save();
+        }
+
+        return 1;
     }
 }

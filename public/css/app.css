@@ -17,7 +17,7 @@
 }
 
 .cm-scroller {
-    overflow: hidden !important;
+    overflow-x: hidden !important;
 }
 
 input {
@@ -536,11 +536,24 @@ a {
 
 .lesson_box_category_item {
     padding: 10px 20px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) -1px 0px 0px 1px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) -1px 0px 0px 1px; */
+    border-top: 1px solid #dddddd;
     color: #000;
 }
 
 .lesson_box_category_item div {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.lesson_box_category_child_item {
+    padding: 10px 20px;
+    margin-left: 20px;
+    border-top: 1px solid #dddddd;
+    color: #000;
+}
+
+.lesson_box_category_child_item div {
     white-space: nowrap;
     overflow: hidden;
 }
@@ -639,6 +652,11 @@ a {
 .lesson_box_category_item.active {
     color: #fff;
     background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+.lesson_box_category_child_item.active {
+    color: #fff;
+    background: linear-gradient(135deg, #435662 0%, #2c2e50 100%);
 }
 
 .lesson_content table {

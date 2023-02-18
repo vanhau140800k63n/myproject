@@ -128,11 +128,18 @@ class LessonController extends Controller
     {
         $course = $this->pLanguageRepository->getCourseByName($course);
         if ($course !== false) {
-            $lesson_list = $this->lessonRepository->getLessonList($course->id);
+            $lesson_list = $this->lessonRepository->getLessonListParent($course->id);
             $lesson = $this->lessonRepository->getLessonBySlug($slug, $course->id);
             if ($lesson !== null) {
+                $lesson_parent = $this->lessonRepository->getLessonById($lesson->parent);
+                $lesson_child_list = null;
+                if ($lesson_parent != null) {
+                    $lesson_child_list = $this->lessonRepository->getLessonChildList($lesson_parent->id);
+                } else {
+                    $lesson_child_list = $this->lessonRepository->getLessonChildList($lesson->id);
+                }
                 $lesson_detail = $this->lessonItemRepository->getLessonDetail($lesson->id);
-                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson'));
+                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list'));
             }
         }
 
@@ -143,12 +150,19 @@ class LessonController extends Controller
     {
         $course = $this->pLanguageRepository->getCourseByName($course);
         if ($course !== false) {
-            $lesson_list = $this->lessonRepository->getLessonList($course->id);
+            $lesson_list = $this->lessonRepository->getLessonListParent($course->id);
             $lesson = $this->lessonRepository->getLessonIntro($course->id);
 
             if ($lesson !== null) {
+                $lesson_parent = $this->lessonRepository->getLessonById($lesson->parent);
+                $lesson_child_list = null;
+                if ($lesson_parent != null) {
+                    $lesson_child_list = $this->lessonRepository->getLessonChildList($lesson_parent->id);
+                } else {
+                    $lesson_child_list = $this->lessonRepository->getLessonChildList($lesson->id);
+                }
                 $lesson_detail = $this->lessonItemRepository->getLessonDetail($lesson->id);
-                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson'));
+                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list'));
             }
         }
 

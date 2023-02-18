@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'getHomePage'])->name('home');
 Route::post('/submit', [HomeController::class, 'submit'])->name('submit');
-Route::get('/test', [HomeController::class, 'test'])->name('test');
+Route::get('/update_meta', [HomeController::class, 'updateMeta'])->name('update_meta');
 Route::post('/build_code_php', [LessonController::class, 'buildCodePHP'])->name('build_code_php');
 
 Route::prefix('learn')->name('learn.')->group(function () {
