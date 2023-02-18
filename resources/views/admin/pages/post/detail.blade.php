@@ -16,7 +16,7 @@
                     <div class="post_info" type="update" post_id="{{ $post->id }}">
                         <select class="post_type_select">
                             @foreach ($post_types as $key => $post_type)
-                                @if ($key === $post->type)
+                                @if (intval($key) === intval($post->type))
                                     <option value="{{ $key }}" selected>{{ $post_type }}</option>
                                 @endif
                             @endforeach
