@@ -2213,7 +2213,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 $(document).ready(function () {
   $('.home_post_img').height($('.home_post_img').width() * 2 / 3);
   $('.home_post_img_cover').height($('.home_post_img').height());
-  $('.lesson_box_category_fixed')[0].scrollTo(100);
+  if (navigator.userAgent.indexOf('Mac OS X') == -1) {
+    $(".lesson_box_category_fixed").addClass("pc_scroll");
+  }
+  // $('.lesson_box_category_fixed')[0].scrollTo(100);
 });
 
 /***/ }),
