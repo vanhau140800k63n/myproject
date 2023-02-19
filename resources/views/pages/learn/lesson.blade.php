@@ -17,22 +17,24 @@
 @section('content')
     <div class="lesson_box">
         <div class="lesson_box_category">
-            <div class="lesson_box_category_title">Khóa học {{ $course->full_name }}</div>
-            <div class="lesson_box_category_list">
-                @foreach ($lesson_list as $lesson_item)
-                    <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_item->slug]) }}"
-                        class="lesson_box_category_item{{ $lesson_item->id === $lesson->id || (isset($lesson_parent->id) && $lesson_item->id === $lesson_parent->id) ? ' active' : '' }}">
-                        <div>{{ $lesson_item->sub_title }}</div>
-                    </a>
-                    @if ($lesson_item->id === $lesson->id || (isset($lesson_parent->id) && $lesson_item->id === $lesson_parent->id))
-                        @foreach ($lesson_child_list as $lesson_child_item)
-                            <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_child_item->slug]) }}"
-                                class="lesson_box_category_child_item{{ $lesson_child_item->id === $lesson->id ? ' active' : '' }}">
-                                <div>{{ $lesson_child_item->sub_title }}</div>
-                            </a>
-                        @endforeach
-                    @endif
-                @endforeach
+            <div class="lesson_box_category_fixed">
+                <div class="lesson_box_category_title">Khóa học {{ $course->full_name }}</div>
+                <div class="lesson_box_category_list">
+                    @foreach ($lesson_list as $lesson_item)
+                        <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_item->slug]) }}"
+                            class="lesson_box_category_item{{ $lesson_item->id === $lesson->id || (isset($lesson_parent->id) && $lesson_item->id === $lesson_parent->id) ? ' active' : '' }}">
+                            <div>{{ $lesson_item->sub_title }}</div>
+                        </a>
+                        @if ($lesson_item->id === $lesson->id || (isset($lesson_parent->id) && $lesson_item->id === $lesson_parent->id))
+                            @foreach ($lesson_child_list as $lesson_child_item)
+                                <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_child_item->slug]) }}"
+                                    class="lesson_box_category_child_item{{ $lesson_child_item->id === $lesson->id ? ' active' : '' }}">
+                                    <div>{{ $lesson_child_item->sub_title }}</div>
+                                </a>
+                            @endforeach
+                        @endif
+                    @endforeach
+                </div>
             </div>
         </div>
         <div class="lesson_box_content">
