@@ -2217,7 +2217,8 @@ $(document).ready(function () {
     $(".lesson_box_category_fixed").addClass("pc_scroll");
     $("body").addClass("pc_scroll");
   }
-  // $('.lesson_box_category_fixed')[0].scrollTo(100);
+  var index_lesson_box_category = $('.lesson_box_category_item').index($('.lesson_box_category_item.active'));
+  $('.lesson_box_category_fixed').scrollTop($('.lesson_box_category_item').outerHeight() * index_lesson_box_category);
 });
 
 /***/ }),
