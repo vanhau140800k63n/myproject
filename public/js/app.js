@@ -2215,6 +2215,7 @@ $(document).ready(function () {
   $('.home_post_img_cover').height($('.home_post_img').height());
   if (navigator.userAgent.indexOf('Mac OS X') == -1) {
     $(".lesson_box_category_fixed").addClass("pc_scroll");
+    $("body").addClass("pc_scroll");
   }
   // $('.lesson_box_category_fixed')[0].scrollTo(100);
 });
