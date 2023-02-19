@@ -1,5 +1,22 @@
 @extends('layouts.master')
 @section('meta')
+    <meta name="description"
+        content="{!! $lesson->title !!}, Devsne đã tổng hợp hơn 30 khóa học miễn phí về html, css, javascript, python, java, c++. Khóa học đi kèm luyện tập trực tuyến sẽ giúp bạn nhanh chóng cải thiện được khả năng lập trình">
+    <meta name="keywords"
+        content="devsne, devsnevn, Miễn phí Lập trình Khóa học, php, java, python, c++, Cpp, HTML, css, javascript,{!! $lesson->meta !!}">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://devsne.vn/">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{!! $lesson->title !!} - Khóa học lập trình miễn phí">
+    <meta property="og:description"
+        content="{!! $lesson->title !!}, Devsne đã tổng hợp hơn 30 khóa học miễn phí về html, css, javascript, python, java, c++. Khóa học đi kèm luyện tập trực tuyến sẽ giúp bạn nhanh chóng cải thiện được khả năng lập trình">
+    <meta property="og:url" content="https://devsne.vn/">
+    <meta property="og:site_name" content="DEVSNE.VN">
+    <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
+    <meta property="og:image" content="">
     <style>
         .ͼ1.cm-editor {
             min-height: 100px;
@@ -18,7 +35,7 @@
     <div class="lesson_box">
         <div class="lesson_box_category">
             <div class="lesson_box_category_fixed">
-            <div class="lesson_box_category_title">Khóa học {{ $course->full_name }}</div>
+                <div class="lesson_box_category_title">Khóa học {{ $course->full_name }}</div>
                 <div class="lesson_box_category_list">
                     @foreach ($lesson_list as $lesson_item)
                         <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_item->slug]) }}"

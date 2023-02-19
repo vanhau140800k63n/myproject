@@ -125,6 +125,8 @@ class PostController extends Controller
     {
         $post = $this->postRepository->getPostBySlug($slug);
         if ($post !== null) {
+            $post->view += 1;
+            $post->save();
             $post_detail = $this->contentItemRepository->getPostDetail($post->id);
             return view('pages.post.detail', compact('post', 'post_detail'));
         }
