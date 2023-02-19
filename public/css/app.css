@@ -556,7 +556,7 @@ a {
     padding: 15px 20px;
     font-weight: 400;
     color: #fff;
-    background: linear-gradient(to right, #2b5876 0%, #30709b 51%, #1e4d6c 100%);
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
     text-transform: uppercase;
 }
 
