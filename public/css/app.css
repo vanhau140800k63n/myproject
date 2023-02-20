@@ -1418,6 +1418,10 @@ code * {
         margin: 10px 0;
     }
 
+    .text_box {
+        padding: 0 10px;
+    }
+
     .code_box *{
         font-size: 12px !important;
     }
