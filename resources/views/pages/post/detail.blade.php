@@ -16,7 +16,7 @@
     <meta property="og:url" content="https://devsne.vn/">
     <meta property="og:site_name" content="DEVSNE.VN">
     <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
-    <meta property="og:image" content="{{ $post->image }}">
+    <meta property="og:image" content="{{ asset($post->image) }}">
     <style>
         .ͼ1.cm-editor {
             min-height: 100px;
