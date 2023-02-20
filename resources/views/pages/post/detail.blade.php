@@ -20,7 +20,7 @@
     <style>
         .ͼ1.cm-editor {
             min-height: 100px;
-            max-height: 300px !important;
+            max-height: 500px !important;
         }
 
         .cm-scroller {
