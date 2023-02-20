@@ -553,6 +553,10 @@ a {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1rem 1rem;
     }
+
+    .home_lesson_card * {
+        font-size: 12px !important;
+    }
 }
 .lesson_box {
     display: flex;
@@ -1344,6 +1348,7 @@ code * {
 
 .post_content img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 10px 0;
 }
 
 @media only screen and (min-width: 1400px) {}
@@ -1378,8 +1383,44 @@ code * {
     }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 767px) {}
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .post_box_content_title {
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
 
-@media only screen and (max-width: 576px) {}
+@media only screen and (max-width: 576px) {
+    .post_box_content_title {
+        padding: 12px 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .post_box_content {
+        padding: 30px 5px;
+    }
+
+    .post_content.code_box {
+        padding: 10px;
+    }
+
+    .post_content_title {
+        font-size: 15px !important;
+    }
+
+    .post_content.text_box * {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .text_box img {
+        margin: 10px 0;
+    }
+
+    .code_box *{
+        font-size: 12px !important;
+    }
+}
 
 
