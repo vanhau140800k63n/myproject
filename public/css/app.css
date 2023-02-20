@@ -301,6 +301,23 @@ a {
        object-fit: contain;
 }
 
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {
+    .search {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {}
+
+@media only screen and (max-width: 576px) {}
 .home_lesson {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -490,7 +507,7 @@ a {
     color: #fff;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 10px;
-    background: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    background: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
     font-size: 12px;
 }
 
@@ -499,6 +516,23 @@ a {
     margin-right: 5px;
     font-size: 9px !important;
 }
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .home_lesson {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        /* gap: 2rem 2rem; */
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {}
+
+@media only screen and (max-width: 576px) {}
 .lesson_box {
     display: flex;
     min-height: 1000px;
@@ -1210,7 +1244,8 @@ code * {
 
 .post_box_content_title {
     padding: 20px 30px;
-    background-image: linear-gradient( 96.5deg,  rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% );    color: #fff;
+    background-image: linear-gradient(96.5deg, rgba(39, 103, 187, 1) 10.4%, rgba(16, 72, 144, 1) 87.7%);
+    color: #fff;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -1289,5 +1324,41 @@ code * {
 .post_content img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {
+    .post_box {
+        flex-direction: column;
+        min-height: -moz-fit-content;
+        min-height: fit-content;
+    }
+
+    .post_box_content {
+        width: 100%;
+    }
+
+    .post_box_other {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .post_box_content_title {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {}
+
+@media only screen and (max-width: 576px) {}
 
 
