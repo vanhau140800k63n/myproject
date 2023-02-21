@@ -24,6 +24,10 @@
             max-height: 300px !important;
         }
 
+        .ͼ1.cm-editor {
+            max-height: 300px !important;
+        }
+
         .cm-scroller {
             overflow: auto;
         }
@@ -55,7 +59,7 @@
                 </div>
             </div>
             <div class="lesson_box_category_toggle"></div>
-            <div class="lesson_box_category_toggle_show"><i class="fa-solid fa-list"></i></div>
+            <div class="lesson_box_category_toggle_show"></div>
         </div>
         <div class="lesson_box_content">
             <div class="lesson_box_content_title">{{ $lesson->title }}</div>
