@@ -8,4 +8,5 @@ interface PLanguageRepositoryInterface
     public function getPLanguageIdByName($name);
     public function getCourseAdmin($id);
     public function getCourseByName($name);
+    public function searchCourses($key);
 }

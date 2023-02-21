@@ -53,7 +53,13 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
         return $this->post->where('slug', $slug)->first();
     }
 
-    public function delPostAdmin($id) {
+    public function delPostAdmin($id)
+    {
         return $this->post->where('id', $id)->delete();
+    }
+
+    public function searchPost($key)
+    {
+        return $this->post->where('title', 'like', '%' . $key . '%')->take(5)->get();
     }
 }

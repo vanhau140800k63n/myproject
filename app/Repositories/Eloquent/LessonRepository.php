@@ -37,7 +37,8 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
         return $this->retryQuery($query);
     }
 
-    public function getLessonListParent($course_id) {
+    public function getLessonListParent($course_id)
+    {
         return $this->lesson->where('course_id', $course_id)->where('parent', 0)->get();
     }
 
@@ -96,15 +97,25 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
         return $this->lesson->where('id', $id)->delete();
     }
 
-    public function getLessonListAll() {
+    public function getLessonListAll()
+    {
         return $this->lesson->all();
     }
 
-    public function getLessonById($id) {
+    public function getLessonById($id)
+    {
         return $this->lesson->find(intval($id));
     }
 
-    public function getLessonChildList($id) {
+    public function getLessonChildList($id)
+    {
         return $this->lesson->where('parent', $id)->get();
+    }
+
+    public function searchLesson($key, $count)
+    {
+        return $this->lesson->selectRaw('lesson.*, p_language.image as image, p_language.name as course_name')
+        ->join('p_language', 'p_language.id', '=' , 'lesson.course_id')
+        ->where('lesson.title', 'like', '%' . $key . '%')->orWhere('lesson.sub_title', 'like', '%' . $key . '%')->take($count)->get();
     }
 }

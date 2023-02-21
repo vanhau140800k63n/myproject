@@ -39,4 +39,8 @@ class PLanguageRepository extends BaseRepository implements PLanguageRepositoryI
     public function getCourseByName($name) {
         return $this->p_language->where('name', $name)->first();
     }
+
+    public function searchCourses($key) {
+        return $this->p_language->where('full_name', 'like', '%' . $key . '%')->take(5)->get();
+    }
 }

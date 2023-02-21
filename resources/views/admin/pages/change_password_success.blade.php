@@ -10,6 +10,14 @@
                     <span class="login-form-title">
                         Đổi mật khẩu thành công
                     </span>
+                    <div class="container-login-form-btn">
+                        <div class="wrap-login-form-btn">
+                            <div class="login-form-bgbtn"></div>
+                            <a href="{{ route('login') }}" class="login-form-btn">
+                                Đăng nhập
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

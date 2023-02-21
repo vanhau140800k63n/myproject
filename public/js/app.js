@@ -2165,6 +2165,7 @@ module.exports = {
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 __webpack_require__(/*! ./user */ "./resources/js/user.js");
 __webpack_require__(/*! ./home */ "./resources/js/home.js");
+__webpack_require__(/*! ./header */ "./resources/js/header.js");
 
 /***/ }),
 
@@ -2201,6 +2202,68 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/domain.js":
+/*!********************************!*\
+  !*** ./resources/js/domain.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "domain": () => (/* binding */ domain)
+/* harmony export */ });
+// export const domain = 'http://localhost:8003/';
+var domain = 'https://devsne.vn/';
+
+/***/ }),
+
+/***/ "./resources/js/header.js":
+/*!********************************!*\
+  !*** ./resources/js/header.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _domain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domain */ "./resources/js/domain.js");
+
+$(document).ready(function () {
+  $('.search_input').keyup(function () {
+    var key = $(this).val();
+    if (key != '') {
+      $('.search_result_box').html('');
+      $('.search_loading_title').html('Tìm kiếm từ khóa: ' + key);
+      $('.search_loading .lds-ring').show();
+      $('.search_result').show();
+      var _token = $('input[name="_token"]').val();
+      $.ajax({
+        url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'search-key',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        type: "POST",
+        dataType: 'json',
+        data: {
+          key: key,
+          _token: _token
+        }
+      }).done(function (data) {
+        $('.search_result_box').html(data);
+        $('.search_loading .lds-ring').hide();
+        return false;
+      }).fail(function (e) {
+        $('.search_loading .lds-ring').hide();
+        return false;
+      });
+    } else {
+      $('.search_result').hide();
+    }
+  });
+});
 
 /***/ }),
 
@@ -19738,6 +19801,18 @@ process.umask = function() { return 0; };
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
 /******/ 		};
 /******/ 	})();
 /******/ 	

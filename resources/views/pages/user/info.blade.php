@@ -14,11 +14,13 @@
                         <div class="card_header">Ảnh đại diện</div>
                         <div class="card_body text_center">
                             <img class="img_account_profile rounded_circle"
-                                src="{{ isset($user->avata) ? asset($user->avata) : asset('img/no_avata.jpg') }}" alt="">
+                                src="{{ isset($user->avata) ? asset($user->avata) : asset('img/no_avata.jpg') }}"
+                                alt="">
                             <div class="post_img_noti">Ảnh JPG hoặc PNG nhở hơn 5MB </div>
                             <input type="file" id="post_avata" name="avata" hidden accept="image/*">
                             <button class="post_img_btn" type="button"
-                                onclick="document.getElementById('post_avata').click()">Tải ảnh</button>
+                                onclick="document.getElementById('post_avata').click()">Tải ảnh
+                                <i class="fa-solid fa-upload"></i></button>
                         </div>
                     </div>
                 </div>

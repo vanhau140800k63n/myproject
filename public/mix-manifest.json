@@ -1,10 +1,10 @@
 {
-    "/js/app.js": "/js/app.js?id=a5efbdad4d8fa1f58ce3e453eb6c90d2",
+    "/js/app.js": "/js/app.js?id=1fcd486e387600120c473d4bc2130596",
     "/js/code-mirror.js": "/js/code-mirror.js?id=71c9581ff0dfeae77a607d3f26495344",
     "/js/admin.js": "/js/admin.js?id=63ead7adf1fa371c000cd56f6b2ad1e2",
     "/js/post_admin.js": "/js/post_admin.js?id=890d0155f68f0e67929fbeb4f9cdf840",
     "/js/post.js": "/js/post.js?id=c6cfa0fe94ccba569b1ccee08b286dc4",
-    "/css/app.css": "/css/app.css?id=8ca1924956bf9c259dfcb915b0c9983d",
+    "/css/app.css": "/css/app.css?id=b1fbe20ea35d09502b3387c08be84b37",
     "/css/admin.css": "/css/admin.css?id=4f87089d5ea9f7587c4257f51c74ee56",
     "/js/assets/header.js": "/js/assets/header.js?id=34797e86026da7ba5bdcbdf4599cf36b",
     "/js/assets/jquery.min.js": "/js/assets/jquery.min.js?id=7c14a783dfeb3d238ccd3edd840d82ee",
@@ -435,5 +435,11 @@
     "/lib/tinymce/themes/silver/theme.min.js": "/lib/tinymce/themes/silver/theme.min.js?id=b3493e52cead762071027bd286b6ae21",
     "/lib/tinymce/tinymce.d.ts": "/lib/tinymce/tinymce.d.ts?id=3d33fa4536930510ec54150f7ec6cb78",
     "/lib/tinymce/tinymce.js": "/lib/tinymce/tinymce.js?id=5ba4b604940b79be0c64edc0ad0f0a95",
-    "/lib/tinymce/tinymce.min.js": "/lib/tinymce/tinymce.min.js?id=8c14e90c6082ec7fc0b8fdf7e220b18c"
+    "/lib/tinymce/tinymce.min.js": "/lib/tinymce/tinymce.min.js?id=8c14e90c6082ec7fc0b8fdf7e220b18c",
+    "/image/courses/cpp.png": "/image/courses/cpp.png?id=470090411c5d6d67e2dd98fb56463097",
+    "/image/courses/html.png": "/image/courses/html.png?id=9373e5d45951b0eda4d40706f35f78e4",
+    "/image/courses/java.png": "/image/courses/java.png?id=b5199ee257658c800ab423dd4ab35808",
+    "/image/courses/js.png": "/image/courses/js.png?id=f0d8dddd4f7b13bca1d024148e6975dc",
+    "/image/courses/php.png": "/image/courses/php.png?id=12f3a9d52a99e6453adffee855c4270f",
+    "/image/courses/py.png": "/image/courses/py.png?id=06c86e39424174b30c5ff39111746812"
 }

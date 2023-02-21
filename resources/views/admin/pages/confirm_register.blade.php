@@ -13,7 +13,7 @@
                         </span>
                         <div class="form-noti">
                             <span>{{ $email }} </span> đến với cộng đồng <span>devsne</span> <br>
-                            Vui lòng kiểm tra mail và hoàn tất đăng ký
+                            Vui lòng kiểm tra mail và hoàn tất đăng ký (Email có thể bị đưa vào thư mục spam)
                         </div>
                     @elseif (isset($alert))
                         <div class="form-noti">

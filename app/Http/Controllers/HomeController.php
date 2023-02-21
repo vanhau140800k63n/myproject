@@ -137,4 +137,48 @@ class HomeController extends Controller
 
         return 1;
     }
+
+    public function searchKey(Request $req)
+    {
+        $output = '';
+        $search_courses = $this->pLanguageRepository->searchCourses($req->key);
+        $search_lesson = null;
+        if ($search_courses->count() < 5) {
+            $search_lesson = $this->lessonRepository->searchLesson($req->key, 5 - $search_courses->count());
+        }
+        $search_posts = $this->postRepository->searchPost($req->key);
+        if ($search_courses->count() > 0) {
+            $output .= '<div class="search_result_title">Khóa học</div>';
+            foreach ($search_courses as $course) {
+                $output .= '<a href="' . route('learn.lesson_intro', ['course' => $course->name]) . '" class="search_result_content_item">
+                    <img class="search_result_img" src="' . asset($course->image) . '">
+                    <p class="search_result_name"> Khóa học ' . $course->full_name . '</p>
+                </a>';
+            }
+        }
+
+        if ($search_lesson->count() > 0) {
+            if ($output === '') {
+                $output .= '<div class="search_result_title">Khóa học</div>';
+            }
+            foreach ($search_lesson as $lesson) {
+                $output .= '<a href="' . route('learn.lesson_detail', ['course' => $lesson->course_name, 'slug' => $lesson->slug]) . '" class="search_result_content_item">
+                    <img class="search_result_img" src="' . asset($lesson->image) . '">
+                    <p class="search_result_name">' . $lesson->title . '</p>
+                </a>';
+            }
+        }
+
+        if ($search_posts->count() > 0) {
+            $output .= '<div class="search_result_title">Bài viết</div>';
+            foreach ($search_posts as $post) {
+                $output .= '<a href="' . route('post.detail', ['slug' => $post->slug]) . '" class="search_result_content_item">
+                    <img class="search_result_img" src="' . asset($post->image) . '">
+                    <p class="search_result_name">' . $post->title . '</p>
+                </a>';
+            }
+        }
+
+        return response()->json($output);
+    }
 }

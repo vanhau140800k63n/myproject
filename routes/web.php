@@ -22,6 +22,7 @@ Route::get('/', [HomeController::class, 'getHomePage'])->name('home');
 Route::post('/submit', [HomeController::class, 'submit'])->name('submit');
 Route::get('/update_meta', [HomeController::class, 'updateMeta'])->name('update_meta');
 Route::post('/build_code_php', [LessonController::class, 'buildCodePHP'])->name('build_code_php');
+Route::post('/search-key', [HomeController::class, 'searchKey'])->name('search_key');
 
 Route::prefix('learn')->name('learn.')->group(function () {
     Route::get('/{course}/{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
