@@ -813,12 +813,21 @@ a {
 .lesson_content_title {
     font-size: 19px !important;
     font-weight: 500;
+    width: 70%;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
 }
 
 .lesson_content_head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .lesson_content {
@@ -1021,6 +1030,26 @@ code * {
         font-size: 15px;
         text-align: center;
     }
+
+    .lesson_box_category_fixed {
+        width: 65%;
+        height: calc(100vh - 40px);
+        display: none;
+        z-index: 10;
+    }
+
+    .lesson_box_category {
+        width: 100%;
+    }
+
+    .lesson_box_category_title {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .lesson_box_category_toggle_show {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1039,24 +1068,12 @@ code * {
     }
 
     .lesson_content_title {
-        font-size: 15px !important;
+        font-size: 12px !important;
     }
 
     .lesson_content.text_box * {
         font-size: 15px;
         line-height: 1.4;
-    }
-
-    .text_box img {
-        margin: 10px 0;
-    }
-
-    .text_box {
-        padding: 0 10px;
-    }
-
-    .code_box * {
-        font-size: 12px !important;
     }
 
     .lesson_box {
@@ -1508,12 +1525,20 @@ code * {
 .post_content_title {
     font-size: 19px !important;
     font-weight: 500;
+    width: 70%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
 }
 
 .post_content_head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .post_content {
@@ -1634,7 +1659,7 @@ code * {
     }
 
     .post_content_title {
-        font-size: 15px !important;
+        font-size: 12px !important;
     }
 
     .post_content.text_box * {
@@ -1650,7 +1675,7 @@ code * {
     }
 
     .code_box *{
-        font-size: 12px !important;
+        font-size: 12px;
     }
 
     .post_box {
