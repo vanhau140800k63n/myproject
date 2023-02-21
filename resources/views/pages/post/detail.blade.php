@@ -51,7 +51,7 @@
                     @else
                         <div class="post_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
                             lang="{{ $item->p_language_id }}"></div>
-                        @if ($item->compiler === 1)
+                        @if (intval($item->compiler) === 1)
                             <div class="compiler_code_title">
                                 {{ $item->p_language_id != 'html' ? 'Compiler' : 'HTML Iframe' }}
                                 <div class="lds-ring">
