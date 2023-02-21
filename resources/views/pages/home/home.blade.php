@@ -17,16 +17,6 @@
     <meta property="og:site_name" content="DEVSNE.VN">
     <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
     <meta property="og:image" content="">
-    <style>
-        .cm-content,
-        .cm-gutter {
-            min-height: 460px;
-        }
-
-        .cm-scroller {
-            overflow: auto;
-        }
-    </style>
 @endsection
 @section('head')
     <title>Trang chủ</title>

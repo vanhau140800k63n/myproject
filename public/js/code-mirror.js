@@ -72565,6 +72565,18 @@ $('.run_code').click(function () {
     }
   }
 });
+$(".lesson_box_category_toggle_show").click(function () {
+  $('.lesson_box_category_fixed').animate({
+    'width': 'toggle'
+  });
+  $(".lesson_box_category_toggle").show();
+});
+$(".lesson_box_category_toggle").click(function () {
+  $('.lesson_box_category_fixed').animate({
+    'width': 'toggle'
+  });
+  $(this).hide();
+});
 })();
 
 /******/ })()
