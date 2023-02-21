@@ -1079,7 +1079,7 @@ code * {
         overflow: hidden;
     }
 
-    .lesson_box_category_toggle {
+    .lesson_box_category_toggle_show {
         display: block;
     }
 }
