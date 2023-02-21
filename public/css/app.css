@@ -710,6 +710,7 @@ a {
     background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     z-index: 9;
+    display: none;
 }
 
 .pc_scroll::-webkit-scrollbar-track {
@@ -1076,6 +1077,10 @@ code * {
     .lesson_box_category_title {
         white-space: nowrap;
         overflow: hidden;
+    }
+
+    .lesson_box_category_toggle {
+        display: block;
     }
 }
 .footer_box {
