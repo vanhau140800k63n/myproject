@@ -18,7 +18,8 @@
     <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
     <meta property="og:image" content="">
     <style>
-        .ͼ1.cm-editor {
+        .cm-content,
+        .cm-gutter {
             min-height: 100px;
             max-height: 300px !important;
         }
