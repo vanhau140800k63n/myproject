@@ -30169,7 +30169,7 @@ $(document).ready(function () {
           ++index_form;
           if (index_form == lesson_content_form_length) {
             if ($('.lesson_info').attr('type') == 'add') {
-              location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'admin/course';
+              location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'admin/course/' + $('.course_select').children(":selected").attr('name');
             } else {
               location.reload();
             }

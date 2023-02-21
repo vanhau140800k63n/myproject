@@ -8,6 +8,9 @@
             <div class="col-12 grid-margin">
                 <div class="lesson_save">
                     <div class="lesson_save_alert"> Vui lòng chọn khóa học</div>
+                    <a href="{{ route('admin.course.lesson_list', $course_selected->name) }}" class="lesson_btn_back btn btn-warning">
+                        Trở lại
+                    </a>
                     <button class="lesson_btn_save btn btn-primary">
                         Lưu
                     </button>

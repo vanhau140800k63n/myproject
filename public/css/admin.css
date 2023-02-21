@@ -10,7 +10,7 @@
 
 .lesson_save_alert {
     background-color: #dd4545;
-    width: 80%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,6 +20,10 @@
 
 .lesson_btn_save {
     width: 15%;
+}
+
+.lesson_btn_back {
+    width: 10%;
 }
 
 .lesson_info {

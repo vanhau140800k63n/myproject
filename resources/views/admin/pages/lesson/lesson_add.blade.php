@@ -8,6 +8,9 @@
             <div class="col-12 grid-margin">
                 <div class="lesson_save">
                     <div class="lesson_save_alert"> Vui lòng chọn khóa học</div>
+                    <a href="{{ route('admin.course.list') }}" class="lesson_btn_back btn btn-warning">
+                        Trở lại
+                    </a>
                     <button class="lesson_btn_save btn btn-primary">
                         Lưu
                     </button>
@@ -17,7 +20,7 @@
                         <select class="course_select">
                             <option value='0'>Chọn khóa học:</option>
                             @foreach ($course_list as $course)
-                                <option value="{{ $course->id }}">{{ $course->full_name }}</option>
+                                <option value="{{ $course->id }}" name="{{ $course->name }}">{{ $course->full_name }}</option>
                             @endforeach
                         </select>
                         <input type="text" class="form-control main_title" style="color: #fff"
