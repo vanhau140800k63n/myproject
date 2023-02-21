@@ -1278,6 +1278,11 @@ code * {
     box-shadow: rgb(0 0 0 / 16%) 0px 6px 5px;
 }
 
+.post_content_title {
+    font-size: 19px !important;
+    font-weight: 500;
+}
+
 .post_content_head {
     display: flex;
     justify-content: space-between;
