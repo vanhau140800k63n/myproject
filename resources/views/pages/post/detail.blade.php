@@ -42,7 +42,7 @@
                 <div class="post_content">
                     <div class="post_content_head">
                         <div class="post_content_title">{{ $item->title }}</div>
-                        @if ($item->type !== 'text' && $item->compiler === 1)
+                        @if ($item->type !== 'text' && intval($item->compiler) === 1)
                             <button class="run_code"> Run code </button>
                         @endif
                     </div>
