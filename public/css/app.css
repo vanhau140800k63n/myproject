@@ -390,8 +390,8 @@ a {
     margin-bottom: 50px;
 }
 
-.cm-content,
-.cm-gutter {
+.home_lesson .cm-content,
+.home_lesson .cm-gutter {
     min-height: 460px;
 }
 
@@ -637,8 +637,8 @@ a {
         margin: 6px 5px;
     }
 
-    .cm-content,
-    .cm-gutter {
+    .home_lesson .cm-content,
+    .home_lesson .cm-gutter {
         min-height: 400px;
     }
 
