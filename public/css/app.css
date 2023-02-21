@@ -35,7 +35,6 @@ a {
 }
 
 .box {
-    margin-top: 100px;
     margin: 100px auto 0 auto;
     padding: 20px;
 }
@@ -105,6 +104,10 @@ a {
 @media only screen and (max-width: 576px) {
     .cm-scroller {
         overflow-x: scroll !important;
+    }
+
+    .box {
+        margin: 50px auto 0 auto;
     }
 }
 .header-box {
@@ -366,7 +369,19 @@ a {
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {}
 
-@media only screen and (max-width: 576px) {}
+@media only screen and (max-width: 576px) {
+    .header-user .login {
+        font-size: 12px;
+    }
+
+    .header-box {
+        height: 45px;
+    }
+
+    .logo_image {
+        width: 25px;
+    }
+}
 .home_lesson {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1479,6 +1494,10 @@ code * {
 
     .code_box *{
         font-size: 12px !important;
+    }
+
+    .post_box {
+        padding-top: 45px;
     }
 }
 
