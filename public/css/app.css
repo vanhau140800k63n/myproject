@@ -1116,6 +1116,7 @@ code * {
 
     .lesson_box_category_toggle_show {
         display: block;
+        top: 60px;
     }
 }
 
@@ -1135,11 +1136,11 @@ code * {
     }
 
     .lesson_content_title {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
 
     .lesson_content.text_box * {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.4;
     }
 
@@ -1758,11 +1759,11 @@ code * {
     }
 
     .post_content_title {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
 
     .post_content.text_box * {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.4;
     }
     .text_box img {
