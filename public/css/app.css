@@ -381,6 +381,11 @@ a {
     .logo_image {
         width: 25px;
     }
+
+    .login_img {
+        width: 30px;
+        height: 30px;
+    }
 }
 .home_lesson {
     display: grid;
