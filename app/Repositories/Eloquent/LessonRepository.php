@@ -47,7 +47,7 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
         $query = $this->lesson;
 
         $course_name = $this->p_language->where('id', $data['course_id'])->first()->name;
-        $str = $this->makeSlug($course_name . ' ' . $data['sub_title']);
+        $str = $this->makeSlug($data['sub_title']);
 
         $data_create = [
             'title' => $data['main_title'],
@@ -63,7 +63,7 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
     public function updateLesson($data)
     {
         $course_name = $this->p_language->where('id', $data['course_id'])->first()->name;
-        $str = $this->makeSlug($course_name . ' ' . $data['sub_title']);
+        $str = $this->makeSlug($data['sub_title']);
 
         $data_update = [
             'title' => $data['main_title'],
