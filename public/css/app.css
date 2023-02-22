@@ -1167,6 +1167,10 @@ code * {
     .lesson_box_category_toggle_show {
         display: block;
     }
+
+    code {
+        font-size: 13px !important;
+    }
 }
 .footer_box {
     height: 300px;
