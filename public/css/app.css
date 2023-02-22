@@ -288,8 +288,8 @@ a {
     border-radius: 25px;
     cursor: pointer;
     border: 2px solid #626365;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .search_result {
@@ -559,6 +559,8 @@ a {
     padding: 1px;
     /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset; */
     border-radius: 25px;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .home_post_author_name {
@@ -1126,8 +1128,8 @@ code * {
     height: 10rem;
     width: 10rem;
     margin-bottom: 20px;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .rounded_circle {
