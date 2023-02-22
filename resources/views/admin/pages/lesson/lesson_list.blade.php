@@ -27,7 +27,7 @@
                                 @foreach ($lesson_list as $lesson)
                                     <tr>
                                         <td> {{ $lesson->id }} </td>
-                                        <td> {{ $lesson->title }} </td>
+                                        <td> {{ $lesson->sub_title }} </td>
                                         <td style="text-align: center"> 0 </td>
                                         <td> <a class="btn btn-info"
                                                 style="display: flex; align-items: center; justify-content: center;"
