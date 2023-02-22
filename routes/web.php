@@ -70,6 +70,7 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
             Route::get('/detail', [LessonController::class, 'lessonDetailAdmin'])->name('detail');
             Route::post('/list_main', [LessonController::class, 'lessonListMainAdmin'])->name('list_main');
             Route::get('/del_lesson', [LessonController::class, 'delLessonAdmin'])->name('del_lesson');
+            Route::post('/change_lesson_item_type', [LessonController::class, 'changeLessonItemType'])->name('change_lesson_item_type');
         });
     });
     Route::prefix('post')->name('post.')->group(function () {

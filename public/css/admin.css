@@ -71,7 +71,11 @@
 }
 
 .lesson_content_form_title {
-    width: 80%;
+    width: 65%;
+}
+
+.lesson_content_form_select {
+    width: 10%;
 }
 
 .lesson_content_form_type {

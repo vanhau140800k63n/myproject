@@ -8,7 +8,8 @@
             <div class="col-12 grid-margin">
                 <div class="lesson_save">
                     <div class="lesson_save_alert"> Vui lòng chọn khóa học</div>
-                    <a href="{{ route('admin.course.lesson_list', $course_selected->name) }}" class="lesson_btn_back btn btn-warning">
+                    <a href="{{ route('admin.course.lesson_list', $course_selected->name) }}"
+                        class="lesson_btn_back btn btn-warning">
                         Trở lại
                     </a>
                     <button class="lesson_btn_save btn btn-primary">
@@ -48,6 +49,16 @@
                                 <div class="lesson_content_form_info">
                                     <input type="text" class="form-control lesson_content_form_title" style="color: #fff"
                                         placeholder="Tiêu đề" value="{{ $item->title }}">
+                                    <select class="lesson_content_form_select">
+                                        @if (!is_null($item->p_language_id))
+                                            @foreach ($course_list as $course)
+                                                <option value="{{ $course->name }}"
+                                                    {{ $item->p_language_id == $course->name ? ' selected' : '' }}>
+                                                    {{ $course->full_name }}
+                                                </option>
+                                            @endforeach
+                                        @endif
+                                    </select>
                                     <div class="lesson_content_form_type {{ $item->compiler == 0 ? 'not_run' : '' }}">
                                         {{ is_null($item->p_language_id) ? 'text' : $item->p_language_id }}</div>
                                     <button class="lesson_content_form_remove_btn btn btn-danger btn-fw"> Xóa </button>

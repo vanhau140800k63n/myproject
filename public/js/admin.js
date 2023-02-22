@@ -30297,6 +30297,27 @@ $(document).ready(function () {
     });
   });
   $(".lesson_main.active").find('.lesson_main_select').select2();
+  $('.lesson_content_form_select').change(function () {
+    var _token = $('input[name="_token"]').val();
+    $.ajax({
+      url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/course/lesson/change_lesson_item_type",
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      type: "POST",
+      dataType: 'json',
+      data: {
+        p_language_id: $(this).val(),
+        id: $(this).parent().parent().attr('id'),
+        _token: _token
+      }
+    }).done(function (data) {
+      location.reload();
+      return true;
+    }).fail(function (e) {
+      return false;
+    });
+  });
 });
 })();
 

@@ -50,4 +50,8 @@ class LessonItemRepository extends BaseRepository implements LessonItemRepositor
     public function delItem($id) {
         return $this->lesson_item->where('id', $id)->delete();
     }
+
+    public function changeLessonItemType($data) {
+        return $this->lesson_item->where('id', $data['id'])->update(['p_language_id' => $data['p_language_id']]);
+    }
 }

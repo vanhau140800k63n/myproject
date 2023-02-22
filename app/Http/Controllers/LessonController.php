@@ -198,4 +198,10 @@ class LessonController extends Controller
 
         return redirect()->back();
     }
+
+    public function changeLessonItemType(Request $req) {
+        $lesson_item = $this->lessonItemRepository->changeLessonItemType($req->all());
+
+        return response()->json($lesson_item);
+    }
 }
