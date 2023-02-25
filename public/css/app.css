@@ -539,7 +539,7 @@ a {
     margin: 10px 0;
     flex-shrink: 1;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
