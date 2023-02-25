@@ -25,7 +25,7 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
     {
         return $this->post->selectRaw('post.*, CONCAT(users.last_name, " ", users.first_name) as author_name, users.avata as author_avata')
             ->join('users', 'post.created_by', '=', 'users.id')
-            ->take(5)->get();
+            ->get();
     }
 
     public function addPost($data)
@@ -60,6 +60,6 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
 
     public function searchPost($key)
     {
-        return $this->post->where('title', 'like', '%' . $key . '%')->get();
+        return $this->post->where('title', 'like', '%' . $key . '%')->take(5)->get();
     }
 }
