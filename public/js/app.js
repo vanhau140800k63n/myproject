@@ -2279,6 +2279,7 @@ $(document).ready(function () {
   if (navigator.userAgent.indexOf('Mac OS X') == -1) {
     $(".lesson_box_category_fixed").addClass("pc_scroll");
     $("body").addClass("pc_scroll");
+    $(".cm-scroller").addClass("pc_scroll");
   }
   var index_lesson_box_category = $('.lesson_box_category_item').index($('.lesson_box_category_item.active'));
   $('.lesson_box_category_fixed').scrollTop($('.lesson_box_category_item').outerHeight() * index_lesson_box_category);
