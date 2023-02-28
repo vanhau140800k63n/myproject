@@ -670,6 +670,8 @@ a {
 
     .home_lesson_info {
         height: 35px;
+        font-size: 13px;
+        font-weight: 600;
     }
 
     .home_title {
