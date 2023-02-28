@@ -584,7 +584,6 @@ a {
     right: 0;
     top: 0;
     color: #fff;
-    border-top-right-radius: 5px;
     border-bottom-left-radius: 10px;
     background: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
     font-size: 12px;
@@ -672,6 +671,9 @@ a {
         font-size: 13px;
         font-weight: 600;
     }
+    .home_lesson_item:hover .home_lesson_info {
+        font-size: 14px;
+    }
 
     .home_title {
         height: 30px;
@@ -697,7 +699,7 @@ a {
     }
 
     .fa-eye {
-        line-height: 11px !important;
+        line-height: 12px !important;
     }
 
     .home_post_view {
