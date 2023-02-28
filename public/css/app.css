@@ -908,7 +908,7 @@ a {
 .lesson_content table {
     border-collapse: collapse;
     margin: 25px 0;
-    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 1px;
     border: 1px solid #dddddd;
 }
 
@@ -1666,7 +1666,7 @@ code * {
 .post_content table {
     border-collapse: collapse;
     margin: 25px 0;
-    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 1px;
     border: 1px solid #dddddd;
 }
 
