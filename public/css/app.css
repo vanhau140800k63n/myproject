@@ -456,7 +456,6 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    border-radius: 10px;
 }
 
 .home_post_img_cover {
@@ -695,6 +694,14 @@ a {
         border-bottom: 15px solid transparent;
         border-left: 12px solid #fff;
         border-radius: 0;
+    }
+
+    .fa-eye {
+        line-height: 11px !important;
+    }
+
+    .home_post_view {
+        font-size: 10px;
     }
 }
 .lesson_box {
