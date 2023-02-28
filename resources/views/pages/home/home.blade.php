@@ -19,7 +19,7 @@
     <meta property="og:image" content="">
 @endsection
 @section('head')
-    <title>Trang chủ</title>
+    <title>Trang chủ - Khóa học lập trình miễn phí</title>
 @endsection
 @section('content')
     <div class="box">

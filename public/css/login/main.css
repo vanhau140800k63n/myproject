@@ -40,6 +40,7 @@ button:hover {
     font-size: 14px;
     line-height: 1.5;
     font-weight: 500;
+    max-width: 90%;
     color: #333333;
     text-transform: uppercase;
 }
@@ -349,5 +350,18 @@ a {
     .wrap-login {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .login-form-title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        height: 40px;
+    }
+
+    .login-form-btn {
+        height: 40px;
     }
 }
