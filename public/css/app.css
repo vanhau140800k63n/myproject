@@ -1577,6 +1577,10 @@ code * {
     padding-top: 60px;
 }
 
+.post_box img {
+    margin: 20px 0;
+}
+
 .post_box * {
     box-sizing: border-box;
 }
@@ -1795,6 +1799,10 @@ code * {
 
     .post_box {
         padding-top: 45px;
+    }
+
+    .post_box img {
+        max-width: 90%;
     }
 }
 
