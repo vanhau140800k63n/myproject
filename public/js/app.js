@@ -2283,6 +2283,12 @@ $(document).ready(function () {
   }
   var index_lesson_box_category = $('.lesson_box_category_item').index($('.lesson_box_category_item.active'));
   $('.lesson_box_category_fixed').scrollTop($('.lesson_box_category_item').outerHeight() * index_lesson_box_category);
+  width_device = $('html').width();
+  if (width_device < 576 && $("body").children('.post_box').length > 0) {
+    post_img = $('.text_box img');
+    width_post_img = post_img.width();
+    post_img.height(width_post_img / post_img.attr('width') * post_img.attr('height'));
+  }
 });
 
 /***/ }),

@@ -1577,10 +1577,6 @@ code * {
     padding-top: 60px;
 }
 
-.post_box img {
-    margin: 20px 0;
-}
-
 .post_box * {
     box-sizing: border-box;
 }
@@ -1786,7 +1782,8 @@ code * {
         line-height: 1.4;
     }
     .text_box img {
-        margin: 10px 0;
+        margin: 25px 0;
+        max-width: 90%;
     }
 
     .text_box {
@@ -1799,10 +1796,6 @@ code * {
 
     .post_box {
         padding-top: 45px;
-    }
-
-    .post_box img {
-        max-width: 90%;
     }
 }
 
