@@ -3,14 +3,14 @@
     <meta name="description"
         content="Devsne đã tổng hợp hơn 30 khóa học miễn phí về html, css, javascript, python, java, c++. Khóa học đi kèm luyện tập trực tuyến sẽ giúp bạn nhanh chóng cải thiện được khả năng lập trình">
     <meta name="keywords"
-        content="devsne, devsnevn, Miễn phí Lập trình Khóa học, php, java, python, c++, Cpp, HTML, css, javascript, Khóa học Lập trình Miễn phí, Khóa học Lập trình Với Giá 0, Khóa học Lập trình Trực tuyến,Học Lập trình Miễn phí,Học Lập trình Trực tuyến,Lập trình Khóa học Miễn phí,Lập trình Khóa học Trực tuyến,Khóa học Lập trình Online,Học Lập trình Online,Lập trình Khóa học Online,Lập trình Khóa học Miễn phí Trực tuyến,Khóa học Lập trình Dành cho Người mới,Học Lập trình Miễn phí Trực tuyến,Học Lập trình Trực tuyến Online,Khóa học Lập trình Trực tuyến Miễn phí">
+        content="devsne, devsnevn, Miễn phí Lập trình Khóa học, php, java, python, c++, cpp, html, css, javascript, Khóa học Lập trình Miễn phí, Khóa học Lập trình Với Giá 0, Khóa học Lập trình Trực tuyến,Học Lập trình Miễn phí,Học Lập trình Trực tuyến,Lập trình Khóa học Miễn phí,Lập trình Khóa học Trực tuyến,Khóa học Lập trình Online,Học Lập trình Online,Lập trình Khóa học Online,Lập trình Khóa học Miễn phí Trực tuyến,Khóa học Lập trình Dành cho Người mới,Học Lập trình Miễn phí Trực tuyến,Học Lập trình Trực tuyến Online,Khóa học Lập trình Trực tuyến Miễn phí">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://devsne.vn/">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="DEVSNE.VN - Khóa học lập trình miễn phí">
+    <meta property="og:title" content="Khóa học lập trình miễn phí - DEVSNE.VN">
     <meta property="og:description"
         content="Devsne đã tổng hợp hơn 30 khóa học miễn phí về html, css, javascript, python, java, c++. Khóa học đi kèm luyện tập trực tuyến sẽ giúp bạn nhanh chóng cải thiện được khả năng lập trình">
     <meta property="og:url" content="https://devsne.vn/">

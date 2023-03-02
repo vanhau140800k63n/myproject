@@ -127,7 +127,7 @@ class LessonController extends Controller
     public function getLessonDetail($course, $slug)
     {
         $course = $this->pLanguageRepository->getCourseByName($course);
-        if ($course !== false) {
+        if ($course !== null) {
             $lesson_list = $this->lessonRepository->getLessonListParent($course->id);
             $lesson = $this->lessonRepository->getLessonBySlug($slug, $course->id);
             if ($lesson !== null) {
@@ -149,10 +149,9 @@ class LessonController extends Controller
     public function getLessonIntro($course)
     {
         $course = $this->pLanguageRepository->getCourseByName($course);
-        if ($course !== false) {
+        if ($course !== null) {
             $lesson_list = $this->lessonRepository->getLessonListParent($course->id);
             $lesson = $this->lessonRepository->getLessonIntro($course->id);
-
             if ($lesson !== null) {
                 $lesson_parent = $this->lessonRepository->getLessonById($lesson->parent);
                 $lesson_child_list = null;
@@ -199,7 +198,8 @@ class LessonController extends Controller
         return redirect()->back();
     }
 
-    public function changeLessonItemType(Request $req) {
+    public function changeLessonItemType(Request $req)
+    {
         $lesson_item = $this->lessonItemRepository->changeLessonItemType($req->all());
 
         return response()->json($lesson_item);
