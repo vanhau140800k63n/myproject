@@ -1612,10 +1612,6 @@ code * {
     color: #000;
 }
 
-.text_box img {
-    margin: 30px 0;
-}
-
 .post_box_category_item div {
     white-space: nowrap;
     overflow: hidden;
@@ -1719,7 +1715,7 @@ code * {
 
 .post_content img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 @media only screen and (min-width: 1400px) {}
