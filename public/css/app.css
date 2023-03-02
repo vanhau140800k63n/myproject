@@ -1781,6 +1781,7 @@ code * {
         font-size: 14px;
         line-height: 1.4;
     }
+
     .text_box img {
         margin: 25px 0;
         max-width: 90%;
@@ -1790,7 +1791,7 @@ code * {
         padding: 0 10px;
     }
 
-    .code_box *{
+    .code_box * {
         font-size: 12px;
     }
 
