@@ -1835,6 +1835,10 @@ code * {
         font-size: 12px !important;
         font-weight: 500;
     }
+
+    .post_content td p {
+        max-width: calc(100vh - 40px);
+    }
 }
 
 
