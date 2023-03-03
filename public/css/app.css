@@ -1830,6 +1830,11 @@ code * {
     .post_content td * {
         font-size: 12px !important;
     }
+
+    .post_content a {
+        font-size: 12px !important;
+        font-weight: 500;
+    }
 }
 
 
