@@ -1734,7 +1734,18 @@ code * {
     margin: 30px 0;
 }
 
-.post_content a {
+.btn_format_1 {
+    background: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px !important;
+    font-weight: 500;
+}
+
+.btn_format_2 {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(247, 87, 0, 1) 0%, rgba(249, 0, 0, 1) 90.1%);
     color: #fff;
     padding: 5px 15px;
     border: none;
