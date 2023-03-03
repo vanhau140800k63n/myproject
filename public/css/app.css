@@ -923,6 +923,7 @@ a {
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 1px;
     border: 1px solid #dddddd;
     overflow: hidden;
+    table-layout: fixed;
 }
 
 .lesson_content table * {
@@ -1693,6 +1694,7 @@ code * {
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 1px;
     border: 1px solid #dddddd;
     overflow: hidden;
+    table-layout: fixed;
 }
 
 .post_content table * {

@@ -2276,7 +2276,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.home_post_img').height($('.home_post_img').width() * 2 / 3);
   $('.home_post_img_cover').height($('.home_post_img').height());
-  $('.post_content td').width($('.post_content').width());
   if (navigator.userAgent.indexOf('Mac OS X') == -1) {
     $(".lesson_box_category_fixed").addClass("pc_scroll");
     $("body").addClass("pc_scroll");
