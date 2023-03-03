@@ -1845,7 +1845,7 @@ code * {
         font-size: 12px !important;
     }
 
-    .post_content a {
+    .btn_format_1, .btn_format_2 {
         font-size: 12px !important;
         font-weight: 500;
     }

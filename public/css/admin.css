@@ -97,126 +97,41 @@
     min-width: 0 !important;
 }
 
+.post_content_form {
+    padding: 15px;
+    border: 1px solid #fff;
+    border-style: dashed;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.post_save {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.post_save_alert {
+    background-color: #dd4545;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+}
+
+.post_btn_save {
+    width: 15%;
+}
+
 .post_info {
     display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin-bottom: 20px;
     flex-wrap: wrap;
-}
-
-.post_save {
-    display: flex;
-    justify-content: space-between;
-    margin: 15px 0;
-}
-
-.post_save_alert {
-    background-color: #dd4545;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    opacity: 0;
-}
-
-.post_btn_save {
-    width: 15%;
-}
-
-.post_info {
-    text-transform: uppercase;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.post_content_form {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.post_content_form {
-    padding: 15px;
-    border: 1px solid #fff;
-    border-style: dashed;
-    border-radius: 5px;
-}
-
-.post_content_add {
-    display: flex;
-}
-
-.post_content_btn_add {
-    margin-left: 20px;
-}
-
-.post_content_form_info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.post_content_form_title {
-    width: 80%;
-}
-
-.post_content_form_type {
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(56, 116, 116);
-    font-weight: 500;
-}
-
-.post_content_form_type.not_run {
-    background-color: rgb(180, 186, 192);
-}
-
-.post_content_form_remove_btn,
-.post_content_new_form_remove_btn {
-    width: 8%;
-    min-width: 0 !important;
-}
-
-.post_info {
-    display: flex;
-}
-
-.post_save {
-    display: flex;
-    justify-content: space-between;
-    margin: 15px 0;
-}
-
-.post_save_alert {
-    background-color: #dd4545;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    opacity: 0;
-}
-
-.post_btn_save {
-    width: 15%;
-}
-
-.post_info {
-    text-transform: uppercase;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.post_content_form {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.post_content_form {
-    padding: 15px;
-    border: 1px solid #fff;
-    border-style: dashed;
-    border-radius: 5px;
 }
 
 .post_content_add {
@@ -281,4 +196,9 @@
 
 .lesson_main.active {
     display: block;
+}
+
+.post_save_end {
+    display: flex;
+    justify-content: flex-end;
 }

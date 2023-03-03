@@ -59,6 +59,11 @@
                         <button type="button" class="post_content_btn_add btn btn-info btn-fw">Thêm</button>
                     </div>
                 </div>
+                <div class="post_save_end">
+                    <button class="post_btn_save btn btn-primary">
+                        Lưu
+                    </button>
+                </div>
             </div>
         </div>
     </div>
