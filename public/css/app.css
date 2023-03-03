@@ -1810,6 +1810,16 @@ code * {
     .post_box {
         padding-top: 45px;
     }
+
+    .post_content td {
+        padding: 5px;
+        border: 1px solid #dddddd;
+        font-size: 12px;
+    }
+
+    .post_content td * {
+        font-size: 12px;
+    }
 }
 
 
