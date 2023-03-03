@@ -1721,10 +1721,10 @@ code * {
 .post_content a {
     background: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
     color: #fff;
-    padding: 8px 15px;
+    padding: 5px 15px;
     border: none;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 15px !important;
     font-weight: 500;
 }
 
