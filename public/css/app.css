@@ -1183,6 +1183,16 @@ code * {
     code {
         font-size: 13px !important;
     }
+
+    .lesson_content td {
+        padding: 5px;
+        border: 1px solid #dddddd;
+        font-size: 12px !important;
+    }
+
+    .lesson_content td * {
+        font-size: 12px !important;
+    }
 }
 .footer_box {
     height: 300px;
@@ -1814,11 +1824,11 @@ code * {
     .post_content td {
         padding: 5px;
         border: 1px solid #dddddd;
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
     .post_content td * {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 }
 
