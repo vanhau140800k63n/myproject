@@ -1038,6 +1038,24 @@ code * {
     font-weight: 500;
 }
 
+.lesson_pre_next {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lesson_pre_next a {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px !important;
+    font-weight: 500;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .lesson_box {
         flex-wrap: wrap;
@@ -1195,6 +1213,11 @@ code * {
 
     .lesson_content td * {
         font-size: 12px !important;
+    }
+
+    .lesson_pre_next a {
+        font-size: 12px !important;
+        font-weight: 500;
     }
 }
 .footer_box {

@@ -7,13 +7,13 @@
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://devsne.vn/">
+    <link rel="canonical" href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson->slug]) }}">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ $lesson->title }} - Khóa học lập trình miễn phí">
     <meta property="og:description"
         content="{{ $lesson->title }}, Devsne đã tổng hợp hơn 30 khóa học miễn phí về html, css, javascript, python, java, c++. Khóa học đi kèm luyện tập trực tuyến sẽ giúp bạn nhanh chóng cải thiện được khả năng lập trình">
-    <meta property="og:url" content="https://devsne.vn/">
+    <meta property="og:url" content="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson->slug]) }}">
     <meta property="og:site_name" content="{{ $lesson->title }}">
     <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
     <meta property="og:image" content="{{ asset($course->image) }}">
@@ -94,6 +94,10 @@
                     @endif
                 </div>
             @endforeach
+            <div class="lesson_pre_next">
+                <a class="lesson_pre_btn" href="{{ $pre_lesson }}"> Bài trước </a>
+                <a class="lesson_next_btn" href="{{ $next_lesson }}"> Bài sau </a>
+            </div>
         </div>
         <div class="lesson_box_other">
             <?php

@@ -139,7 +139,15 @@ class LessonController extends Controller
                     $lesson_child_list = $this->lessonRepository->getLessonChildList($lesson->id);
                 }
                 $lesson_detail = $this->lessonItemRepository->getLessonDetail($lesson->id);
-                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list'));
+                $pre_lesson = $this->lessonRepository->getPreLesson($lesson->id, $course->id);
+                if ($pre_lesson !== '') {
+                    $pre_lesson = route('learn.lesson_detail', ['course' => $course->name, 'slug' => $pre_lesson->slug]);
+                }
+                $next_lesson = $this->lessonRepository->getNextLesson($lesson->id, $course->id);
+                if ($next_lesson !== '') {
+                    $next_lesson = route('learn.lesson_detail', ['course' => $course->name, 'slug' => $next_lesson->slug]);
+                }
+                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list', 'pre_lesson', 'next_lesson'));
             }
         }
 
@@ -161,7 +169,15 @@ class LessonController extends Controller
                     $lesson_child_list = $this->lessonRepository->getLessonChildList($lesson->id);
                 }
                 $lesson_detail = $this->lessonItemRepository->getLessonDetail($lesson->id);
-                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list'));
+                $pre_lesson = $this->lessonRepository->getPreLesson($lesson->id, $course->id);
+                if ($pre_lesson !== '') {
+                    $pre_lesson = route('learn.lesson_detail', ['course' => $course->name, 'slug' => $pre_lesson->slug]);
+                }
+                $next_lesson = $this->lessonRepository->getNextLesson($lesson->id, $course->id);
+                if ($next_lesson !== '') {
+                    $next_lesson = route('learn.lesson_detail', ['course' => $course->name, 'slug' => $next_lesson->slug]);
+                }
+                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list', 'pre_lesson', 'next_lesson'));
             }
         }
 

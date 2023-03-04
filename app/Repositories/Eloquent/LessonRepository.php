@@ -115,7 +115,27 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
     public function searchLesson($key, $count)
     {
         return $this->lesson->selectRaw('lesson.*, p_language.image as image, p_language.name as course_name')
-        ->join('p_language', 'p_language.id', '=' , 'lesson.course_id')
-        ->where('lesson.title', 'like', '%' . $key . '%')->orWhere('lesson.sub_title', 'like', '%' . $key . '%')->take($count)->get();
+            ->join('p_language', 'p_language.id', '=', 'lesson.course_id')
+            ->where('lesson.title', 'like', '%' . $key . '%')->orWhere('lesson.sub_title', 'like', '%' . $key . '%')->take($count)->get();
+    }
+
+    public function getPreLesson($id, $course_id)
+    {
+        $pre_lesson = $this->lesson->where('course_id', $course_id)->where('id', '<', $id)->first();
+        if ($pre_lesson !== null) {
+            return $pre_lesson;
+        } else {
+            return '';
+        }
+    }
+
+    public function getNextLesson($id, $course_id)
+    {
+        $next_lesson = $this->lesson->where('course_id', $course_id)->where('id', '>', $id)->first();
+        if ($next_lesson !== null) {
+            return $next_lesson;
+        } else {
+            return '';
+        }
     }
 }

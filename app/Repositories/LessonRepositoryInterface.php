@@ -17,4 +17,6 @@ interface LessonRepositoryInterface
     public function getLessonById($id);
     public function getLessonChildList($id);
     public function searchLesson($key, $count);
+    public function getPreLesson($id, $course_id);
+    public function getNextLesson($id, $course_id);
 }
