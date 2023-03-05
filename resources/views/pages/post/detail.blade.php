@@ -72,29 +72,42 @@
             @endforeach
         </div>
         <div class="post_box_other">
-            <?php
-            $course_list = \App\Models\PLanguage::all();
-            $i = 0;
-            ?>
-            <div class="other_course_list">
-                @foreach ($course_list as $course_item)
-                    <div class="other_course_item">
-                        @if ($i % 2 == 0)
-                            <div style="width:10%"> </div>
-                        @endif
-                        <a href="{{ route('learn.lesson_intro', ['course' => $course_item->name]) }}"
-                            class="other_course_item_text" style="background: {{ $course_item->color }}; width:90%">
-                            <div>Khóa học
-                                {{ $course_item->full_name }}</div>
-                        </a>
-                        @if ($i % 2 == 1)
-                            <div style="width:10%"> </div>
-                        @endif
+            <div class="post_box_other_fixed">
+                <div class="catalogue">
+                    <div class="catalogue_title">Mục lục</div>
+                    <div class="catalogue_content">
                         <?php
-                        ++$i;
+                        $catalogue_item_index = 1;
                         ?>
+                        @foreach ($post_detail as $catalogue_item)
+                            <div class="catalogue_item_title" index="{{ ++$catalogue_item_index }}">{{ $catalogue_item->title }}</div>
+                        @endforeach
                     </div>
-                @endforeach
+                </div>
+                <?php
+                $course_list = \App\Models\PLanguage::all();
+                $i = 0;
+                ?>
+                <div class="other_course_list">
+                    @foreach ($course_list as $course_item)
+                        <div class="other_course_item">
+                            @if ($i % 2 == 0)
+                                <div style="width:10%"> </div>
+                            @endif
+                            <a href="{{ route('learn.lesson_intro', ['course' => $course_item->name]) }}"
+                                class="other_course_item_text" style="background: {{ $course_item->color }}; width:90%">
+                                <div>Khóa học
+                                    {{ $course_item->full_name }}</div>
+                            </a>
+                            @if ($i % 2 == 1)
+                                <div style="width:10%"> </div>
+                            @endif
+                            <?php
+                            ++$i;
+                            ?>
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>

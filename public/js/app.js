@@ -2289,6 +2289,9 @@ $(document).ready(function () {
     width_post_img = post_img.width();
     post_img.height(width_post_img / post_img.attr('width') * post_img.attr('height'));
   }
+  $('.catalogue_item_title').click(function () {
+    $(window).scrollTop($('.post_content:nth-child(' + $(this).attr('index') + ')').position().top - 70);
+  });
 });
 
 /***/ }),

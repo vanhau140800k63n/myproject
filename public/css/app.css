@@ -1634,7 +1634,13 @@ code * {
 }
 
 .post_box_other {
+    position: relative;
     width: 20%;
+}
+
+.post_box_other_fixed {
+    position: fixed;
+    padding: 20px;
 }
 
 .post_box_category_title {
@@ -1750,10 +1756,6 @@ code * {
     background-color: #f3f3f3;
 }
 
-.post_box_other {
-    padding: 20px;
-}
-
 .post_content img {
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 1px;
     margin: 30px 0;
@@ -1779,6 +1781,44 @@ code * {
     font-weight: 500;
 }
 
+.catalogue_title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(247, 87, 0, 1) 0%, rgba(249, 0, 0, 1) 90.1%);
+    padding: 12px 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 10px;
+}
+
+.catalogue {
+    margin-bottom: 40px;
+}
+
+.catalogue_item_title {
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.catalogue_item_title:hover {
+    font-weight: 500;
+}
+
+.catalogue_item_title::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 25px;
+    background: #000;
+    left: -20px;
+    top: 5px;
+}
+
 @media only screen and (min-width: 1400px) {}
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}
@@ -1801,6 +1841,14 @@ code * {
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+
+    .post_box_other_fixed {
+        position: relative;
+    }
+
+    .other_course_list {
+        padding: 0 30px;
     }
 }
 
@@ -1870,7 +1918,8 @@ code * {
         font-size: 12px !important;
     }
 
-    .btn_format_1, .btn_format_2 {
+    .btn_format_1,
+    .btn_format_2 {
         font-size: 12px !important;
         font-weight: 500;
     }
