@@ -1055,6 +1055,7 @@ code * {
 .lesson_box_other_fixed {
     position: fixed;
     padding: 20px;
+    width: inherit;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1654,6 +1655,7 @@ code * {
 .post_box_other_fixed {
     position: fixed;
     padding: 20px;
+    width: inherit;
 }
 
 .post_box_category_title {
