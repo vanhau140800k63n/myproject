@@ -13,7 +13,8 @@
     <meta property="og:title" content="{{ $lesson->title }} - Khóa học lập trình miễn phí">
     <meta property="og:description"
         content="{{ $lesson->title }}, Devsne đã tổng hợp hơn 30 khóa học miễn phí về html, css, javascript, python, java, c++. Khóa học đi kèm luyện tập trực tuyến sẽ giúp bạn nhanh chóng cải thiện được khả năng lập trình">
-    <meta property="og:url" content="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson->slug]) }}">
+    <meta property="og:url"
+        content="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson->slug]) }}">
     <meta property="og:site_name" content="{{ $lesson->title }}">
     <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
     <meta property="og:image" content="{{ asset($course->image) }}">
@@ -100,38 +101,52 @@
             </div>
         </div>
         <div class="lesson_box_other">
-            <?php
-            $course_list = \App\Models\PLanguage::where('id', '!=', $course->id)->get();
-            $i = 0;
-            ?>
-            @if ($lesson_child_list->count() > 0)
-                <div class="lesson_more">
-                    <div class="lesson_more_title">Tham khảo thêm</div>
-                    @foreach ($lesson_child_list as $lesson_more_item)
-                        <a class="lesson_more_item"
-                            href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_more_item->slug]) }}">{{ $lesson_more_item->title }}</a>
+            <div class="lesson_box_other_fixed">
+                <div class="catalogue">
+                    <div class="catalogue_title">Mục lục</div>
+                    <div class="catalogue_content">
+                        <?php
+                        $catalogue_item_index = 1;
+                        ?>
+                        @foreach ($lesson_detail as $catalogue_item)
+                            <div class="catalogue_item_title" index="{{ ++$catalogue_item_index }}">
+                                {{ $catalogue_item->title }}</div>
+                        @endforeach
+                    </div>
+                </div>
+                <?php
+                $course_list = \App\Models\PLanguage::where('id', '!=', $course->id)->get();
+                $i = 0;
+                ?>
+                @if ($lesson_child_list->count() > 0)
+                    <div class="lesson_more">
+                        <div class="lesson_more_title">Tham khảo thêm</div>
+                        @foreach ($lesson_child_list as $lesson_more_item)
+                            <a class="lesson_more_item"
+                                href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_more_item->slug]) }}">{{ $lesson_more_item->title }}</a>
+                        @endforeach
+                    </div>
+                @endif
+                <div class="other_course_list">
+                    @foreach ($course_list as $course_item)
+                        <div class="other_course_item">
+                            @if ($i % 2 == 0)
+                                <div style="width:10%"> </div>
+                            @endif
+                            <a href="{{ route('learn.lesson_intro', ['course' => $course_item->name]) }}"
+                                class="other_course_item_text" style="background: {{ $course_item->color }}; width:90%">
+                                <div>Khóa học
+                                    {{ $course_item->full_name }}</div>
+                            </a>
+                            @if ($i % 2 == 1)
+                                <div style="width:10%"> </div>
+                            @endif
+                            <?php
+                            ++$i;
+                            ?>
+                        </div>
                     @endforeach
                 </div>
-            @endif
-            <div class="other_course_list">
-                @foreach ($course_list as $course_item)
-                    <div class="other_course_item">
-                        @if ($i % 2 == 0)
-                            <div style="width:10%"> </div>
-                        @endif
-                        <a href="{{ route('learn.lesson_intro', ['course' => $course_item->name]) }}"
-                            class="other_course_item_text" style="background: {{ $course_item->color }}; width:90%">
-                            <div>Khóa học
-                                {{ $course_item->full_name }}</div>
-                        </a>
-                        @if ($i % 2 == 1)
-                            <div style="width:10%"> </div>
-                        @endif
-                        <?php
-                        ++$i;
-                        ?>
-                    </div>
-                @endforeach
             </div>
         </div>
     </div>

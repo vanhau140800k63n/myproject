@@ -2290,7 +2290,12 @@ $(document).ready(function () {
     post_img.height(width_post_img / post_img.attr('width') * post_img.attr('height'));
   }
   $('.catalogue_item_title').click(function () {
-    $(window).scrollTop($('.post_content:nth-child(' + $(this).attr('index') + ')').position().top - 70);
+    if ($('body').has('.post_box').length) {
+      $(window).scrollTop($('.post_content:nth-child(' + $(this).attr('index') + ')').position().top - 70);
+    }
+    if ($('body').has('.lesson_box').length) {
+      $(window).scrollTop($('.lesson_content:nth-child(' + $(this).attr('index') + ')').position().top - 70);
+    }
   });
 });
 
