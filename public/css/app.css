@@ -1082,6 +1082,10 @@ code * {
     .lesson_box_other_fixed {
         position: relative;
     }
+
+    .lesson_box_other_fixed {
+        width: auto;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1112,6 +1116,10 @@ code * {
 
     .lesson_box_other_fixed {
         position: relative;
+    }
+
+    .lesson_box_other_fixed {
+        width: auto;
     }
 }
 
@@ -1800,7 +1808,7 @@ code * {
     color: #fff;
     font-weight: 500;
     font-size: 15px;
-    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(247, 87, 0, 1) 0%, rgba(249, 0, 0, 1) 90.1%);
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
     padding: 12px 10px;
     border-radius: 5px;
     text-align: center;
