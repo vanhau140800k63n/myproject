@@ -19,7 +19,7 @@
     <meta property="og:image" content="{{ asset($post->image) }}">
     <style>
         .ͼ1.cm-editor {
-            min-height: 100px;
+            min-height: 50px;
             max-height: 500px !important;
         }
 

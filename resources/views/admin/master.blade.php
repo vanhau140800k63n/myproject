@@ -19,6 +19,10 @@
         .tox-tinymce {
             height: 400px !important;
         }
+        .ͼ1.cm-editor {
+            min-height: 50px;
+            max-height: 500px !important;
+        }
     </style>
 </head>
 
