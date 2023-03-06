@@ -21,7 +21,7 @@
     <style>
         .cm-content,
         .cm-gutter {
-            min-height: 100px;
+            /* min-height: 100px; */
         }
 
         .ͼ1.cm-editor {
