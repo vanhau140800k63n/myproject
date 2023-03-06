@@ -47,10 +47,16 @@
                         @endif
                     </div>
                     @if ($item->type === 'text')
-                        {!! $item->content !!}
+                        <div class="post_content_text">
+                            {!! $item->content !!}
+                        </div>
                     @else
                         <div class="post_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
-                            lang="{{ $item->p_language_id }}"></div>
+                            lang="{{ $item->p_language_id }}">
+                            @if ($item->type !== 'text')
+                                <button class="copy_code"> Copy </button>
+                            @endif
+                        </div>
                         @if (intval($item->compiler) === 1)
                             <div class="compiler_code_title">
                                 {{ $item->p_language_id != 'html' ? 'Compiler' : 'HTML Iframe' }}
@@ -80,7 +86,8 @@
                         $catalogue_item_index = 1;
                         ?>
                         @foreach ($post_detail as $catalogue_item)
-                            <div class="catalogue_item_title" index="{{ ++$catalogue_item_index }}">{{ $catalogue_item->title }}</div>
+                            <div class="catalogue_item_title" index="{{ ++$catalogue_item_index }}">
+                                {{ $catalogue_item->title }}</div>
                         @endforeach
                     </div>
                 </div>

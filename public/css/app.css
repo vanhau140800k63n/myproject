@@ -833,6 +833,21 @@ a {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+.copy_code {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(83.2deg, rgb(243, 240, 247) 10.8%, rgb(219, 218, 242) 94.3%);
+    color: #000;
+    padding: 5px 10px;
+    min-width: 75px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-bottom-left-radius: 5px;
+}
+
 .lesson_box_content_title {
     padding: 20px 30px;
     background-image: radial-gradient(circle 1017px at 1.4% 22.8%, rgba(97, 76, 141, 1) 31.9%, rgb(94, 82, 194) 90%);
@@ -1027,6 +1042,10 @@ code * {
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin-bottom: 10px;
+}
+
+.lesson_card {
+    position: relative;
 }
 
 .lesson_more_item {
@@ -1241,6 +1260,10 @@ code * {
     .lesson_pre_next a {
         font-size: 12px !important;
         font-weight: 500;
+    }
+
+    .copy_code {
+        padding: 3px 10px;
     }
 }
 .footer_box {
@@ -1724,6 +1747,10 @@ code * {
     align-items: center;
 }
 
+.post_card {
+    position: relative;
+}
+
 .post_content {
     margin-bottom: 20px;
 }
@@ -1779,7 +1806,7 @@ code * {
     background-color: #f3f3f3;
 }
 
-.post_content img {
+.post_content_text img {
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 1px;
     margin: 30px 0;
 }

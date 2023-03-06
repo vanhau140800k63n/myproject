@@ -2297,6 +2297,21 @@ $(document).ready(function () {
       $(window).scrollTop($('.lesson_content:nth-child(' + $(this).attr('index') + ')').position().top - 70);
     }
   });
+  $('.copy_code').click(function () {
+    var temp = $("<textarea>");
+    $("body").append(temp);
+    if ($(this).parent().parent().find('.lesson_card').length) {
+      temp.val($(this).parent().parent().find('.lesson_card').attr('value')).select();
+    } else {
+      temp.val($(this).parent().parent().find('.post_card').attr('value')).select();
+    }
+    document.execCommand("copy");
+    temp.remove();
+    $('.copy_code').html('Copied!');
+    setTimeout(function () {
+      $('.copy_code').html('Copy');
+    }, 2000);
+  });
 });
 
 /***/ }),
