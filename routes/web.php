@@ -25,7 +25,7 @@ Route::post('/build_code_php', [LessonController::class, 'buildCodePHP'])->name(
 Route::post('/search-key', [HomeController::class, 'searchKey'])->name('search_key');
 
 Route::prefix('learn')->name('learn.')->group(function () {
-    Route::get('/{course}/{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
+    Route::get('/{course}-{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
     Route::get('/{course}', [LessonController::class, 'getLessonIntro'])->name('lesson_intro');
 });
 

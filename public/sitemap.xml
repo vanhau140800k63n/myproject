@@ -1,362 +1,361 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://devsne.vn/</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/login</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/js</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/py</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/java</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/html</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/cpp</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/post/xay-dung-game-co-tuong-bang-java</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/post/lam-game-tower-defense-bang-java</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/post/tim-hieu-ve-chatgpt</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/forgot-password</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/register</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-gioi-thieu-php</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-bien-trong-php</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-echo-va-print</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-kieu-du-lieu</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-thao-tac-voi-string</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-so-trong-php</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-ham-toan-hoc-php</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-constants-trong-php</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-toan-tu-php</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-if-else-elseif</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-switch</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-while-loop</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-for-loop</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-break-continue</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-functions</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-arrays-php</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-associative-arrays</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-multidimensional-arrays</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-sorting-arrays</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-date-time</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-include</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-file-handing</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-file-open-read</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-files-create-write</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-file-upload</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-cookies</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-sessions</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-filters</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-filters-advanced</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-callback</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-json-php</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-exceptions</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-oop</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-classes-objects</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-constructor</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-destructor</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-access-modifiers</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-inheritance</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-constants</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-abstract-classes</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-interface</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-traits</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-static-methods</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-static-properties</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-namespaces</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-iterables</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/js/js-gioi-thieu-javascript</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/py/py-gioi-thieu-python</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/java/java-gioi-thieu-java</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/java/java-dau-ra-in-java</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/java/java-java-comments</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/java/java-java-variables</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/java/java-print-variables</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/html/html-gioi-thieu-html</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/cpp/cpp-gioi-thieu-c-</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-array-function</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://devsne.vn/learn/php/php-php-array-change-key-case</loc>
-  <lastmod>2023-02-19T04:51:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
+  <url>
+    <loc>https://devsne.vn/</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/login</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/js</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/py</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/java</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/html</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/cpp</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/post/xay-dung-game-co-tuong-bang-java</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/post/lam-game-tower-defense-bang-java</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/post/tim-hieu-ve-chatgpt</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/forgot-password</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/register</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-gioi-thieu-php</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-bien-trong-php</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-echo-va-print</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-kieu-du-lieu</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-thao-tac-voi-string</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-so-trong-php</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-ham-toan-hoc-php</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-constants-trong-php</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-toan-tu-php</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-if-else-elseif</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-switch</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-while-loop</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-for-loop</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-break-continue</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-functions</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-arrays-php</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-associative-arrays</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-multidimensional-arrays</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-sorting-arrays</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-date-time</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-include</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-file-handing</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-file-open-read</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-files-create-write</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-file-upload</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-cookies</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-sessions</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-filters</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-filters-advanced</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-callback</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-json-php</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-exceptions</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-oop</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-classes-objects</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-constructor</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-destructor</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-access-modifiers</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-inheritance</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-constants</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-abstract-classes</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-interface</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-traits</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-static-methods</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-static-properties</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-namespaces</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-iterables</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/js/js-gioi-thieu-javascript</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/py/py-gioi-thieu-python</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/java-java-gioi-thieu-java</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/java-java-dau-ra-in-java</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/java-java-java-comments</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/java-java-java-variables</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/java-java-print-variables</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/html/html-gioi-thieu-html</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/cpp/cpp-gioi-thieu-c-</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-array-function</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://devsne.vn/learn/php-php-php-array-change-key-case</loc>
+    <lastmod>2023-02-19T04:51:55+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
 
 
 </urlset>
