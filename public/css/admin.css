@@ -185,6 +185,19 @@
     margin-top: 20px;
 }
 
+.post_category {
+    width: 60%;
+    margin-top: 20px;
+}
+
+.post_category_select {
+    width: 30%;
+}
+
+.select2 {
+    margin-top: 20px;
+}
+
 .post_type_select {
     width: 25%;
 }

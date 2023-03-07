@@ -30076,6 +30076,7 @@ $(document).ready(function () {
     var post_id = $('.post_info').attr('post_id');
     var post_img = $('.post_img').val();
     var post_view = $('.post_view').val();
+    var post_category = $('.post_category').val();
     if ($('.post_info').attr('type') == 'add') {
       url = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/add_post_info";
       data = {
@@ -30083,6 +30084,7 @@ $(document).ready(function () {
         type: post_type,
         image: post_img,
         view: post_view,
+        category: post_category,
         _token: _token
       };
     } else {
@@ -30093,6 +30095,7 @@ $(document).ready(function () {
         type: post_type,
         image: post_img,
         view: post_view,
+        category: post_category,
         _token: _token
       };
     }
@@ -30270,6 +30273,14 @@ $(document).ready(function () {
       $(this).removeClass('not_run');
     } else {
       $(this).addClass('not_run');
+    }
+  });
+  $('.post_category_select').select2();
+  $('.post_category_select').change(function () {
+    if ($('.post_category').val() == '') {
+      $('.post_category').val($(this).val());
+    } else {
+      $('.post_category').val($('.post_category').val() + ',' + $(this).val());
     }
   });
 });

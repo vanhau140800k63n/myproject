@@ -1703,6 +1703,32 @@ code * {
     color: #000;
 }
 
+.post_box_info {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-style: dashed;
+    margin-bottom: 20px;
+}
+
+.post_info_category {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.post_info_category_title {
+    font-weight: 500;
+}
+
+.post_info_category_item {
+    padding: 2px 7px;
+    background-image: radial-gradient( circle 674px at 18.3% 77%,  rgba(139,186,244,1) 3.4%, rgba(15,51,92,1) 56.6% );
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .post_box_category_item div {
     white-space: nowrap;
     overflow: hidden;
@@ -1973,6 +1999,14 @@ code * {
     .btn_format_2 {
         font-size: 12px !important;
         font-weight: 500;
+    }
+
+    .post_box_info {
+        padding: 5px 10px;
+    }
+
+    .post_box_info * {
+        font-size: 12px;
     }
 }
 

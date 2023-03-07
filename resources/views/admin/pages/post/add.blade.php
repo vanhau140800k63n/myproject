@@ -22,6 +22,15 @@
                         <input type="text" class="form-control post_title" style="color: #fff" placeholder="Tiêu đề">
                         <input type="text" class="form-control post_img" style="color: #fff" placeholder="Thêm ảnh">
                         <input type="text" class="form-control post_view" style="color: #fff" placeholder="Lượt view">
+                        <input type="text" class="form-control post_category" style="color: #fff"
+                            placeholder="Thêm danh mục">
+                        <select class="form-control post_category_select">
+                            <option value="0" selected>Chọn danh mục</option>
+                            @foreach ($category_list as $category)
+                                <option value="{{ $category->title }}"> {{ $category->title }}
+                                </option>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="post_content">
                     </div>

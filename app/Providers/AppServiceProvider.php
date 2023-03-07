@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\ContentItemRepositoryInterface;
+use App\Repositories\Eloquent\CategoryRepository;
 use App\Repositories\Eloquent\ContentItemRepository;
 use App\Repositories\Eloquent\LessonItemRepository;
 use App\Repositories\Eloquent\LessonRepository;
@@ -42,6 +44,9 @@ class AppServiceProvider extends ServiceProvider
         });
         $this->app->singleton(ContentItemRepositoryInterface::class, function () {
             return new ContentItemRepository();
+        });
+        $this->app->singleton(CategoryRepositoryInterface::class, function () {
+            return new CategoryRepository();
         });
     }
 
