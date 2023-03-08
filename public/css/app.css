@@ -1712,16 +1712,38 @@ code * {
 }
 
 .post_box_info {
-    padding: 10px 20px;
-    border: 1px solid #000;
-    border-style: dashed;
-    margin-bottom: 20px;
+    
+}
+
+.post_info_attr {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.post_info_attr div {
+    margin-left: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: #8b8b8f;
+}
+
+.post_info_attr i {
+    margin-right: 5px;
+    font-size: 15px !important;
 }
 
 .post_info_category {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-style: dashed;
+    margin-bottom: 20px;
 }
 
 .post_info_category_title {
@@ -2070,11 +2092,11 @@ code * {
         font-weight: 500;
     }
 
-    .post_box_info {
+    .post_info_category {
         padding: 5px 10px;
     }
 
-    .post_box_info * {
+    .post_info_category * {
         font-size: 12px;
     }
 
