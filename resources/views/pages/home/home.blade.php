@@ -36,7 +36,6 @@
                     <a class="home_lesson_info" href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}">
                         Học {{ $p_language->full_name }} miễn phí
                     </a>
-                    {{-- <button class="submit"> submit </button> --}}
                 </div>
             @endforeach
         </div>
