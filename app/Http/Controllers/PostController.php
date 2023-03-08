@@ -8,6 +8,7 @@ use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
+use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -17,8 +18,10 @@ class PostController extends Controller
     private $pLanguageRepository;
     private $postRepository;
     private $contentItemRepository;
+    private $userRepository;
 
     public function __construct(
+        UserRepositoryInterface $userRepository,
         PLanguageRepositoryInterface $pLanguageRepository,
         PostRepositoryInterface $postRepository,
         ContentItemRepositoryInterface $contentItemRepository,
@@ -28,6 +31,7 @@ class PostController extends Controller
         $this->pLanguageRepository = $pLanguageRepository;
         $this->postRepository = $postRepository;
         $this->contentItemRepository = $contentItemRepository;
+        $this->userRepository = $userRepository;
     }
 
     public function getPostListAdmin()
@@ -136,7 +140,8 @@ class PostController extends Controller
             $post->save();
             $post_detail = $this->contentItemRepository->getPostDetail($post->id);
             $category_titles = $this->categoryRepository->getCategoryTitle(explode('-', $post->category));
-            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles'));
+            $author = $this->userRepository->getUserById($post->created_by);
+            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author'));
         }
 
         throw new PageException();

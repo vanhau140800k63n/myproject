@@ -46,7 +46,6 @@
                         <div class="post_info_category_item"> {{ $category_title }}</div>
                     @endforeach
                 </div>
-                <div class=""></div>
             </div>
             @foreach ($post_detail as $item)
                 <div class="post_content">
@@ -89,6 +88,11 @@
         </div>
         <div class="post_box_other">
             <div class="post_box_other_fixed">
+                <div class="post_info_author">
+                    <img class="post_author_info_img" src="{{ asset($author->avata) }}">
+                    <div class="post_author_info_name"> {{ $author->last_name . ' ' . $author->first_name }} </div>
+                    <button class="post_author_btn_follow">Theo dõi</button>
+                </div>
                 <div class="catalogue">
                     <div class="catalogue_title">Mục lục</div>
                     <div class="catalogue_content">
