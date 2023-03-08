@@ -40,6 +40,7 @@
             <div class="post_box_content_title">{{ $post->title }}</div>
             <div class="post_box_info">
                 <div class="post_info_attr">
+                    <div class="post_info_attr_date">{{ date_format($post->created_at,"s:i:H d/m/Y") }}</div>
                     <div class="post_info_attr_view"><i class="fa-solid fa-eye"></i>{{ $post->view }}</div>
                     <div class="post_info_attr_comment"><i class="fa-solid fa-comments"></i> 0</div>
                     <div class="post_info_attr_bookmark"><i class="fa-solid fa-bookmark"></i> 0</div>

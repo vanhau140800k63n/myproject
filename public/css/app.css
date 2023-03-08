@@ -1728,6 +1728,11 @@ code * {
     display: flex;
     align-items: center;
     color: #8b8b8f;
+    cursor: pointer;
+}
+
+.post_info_attr div:hover {
+    color: #2b245f;
 }
 
 .post_info_attr i {
