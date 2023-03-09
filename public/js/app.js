@@ -2298,6 +2298,7 @@ $(document).ready(function () {
     }
   });
   $('.copy_code').click(function () {
+    var copy_btn = $(this);
     var temp = $("<textarea>");
     $("body").append(temp);
     if ($(this).parent().parent().find('.lesson_card').length) {
@@ -2307,9 +2308,9 @@ $(document).ready(function () {
     }
     document.execCommand("copy");
     temp.remove();
-    $('.copy_code').html('Copied!');
+    copy_btn.html('Copied!');
     setTimeout(function () {
-      $('.copy_code').html('Copy');
+      copy_btn.html('Copy');
     }, 2000);
   });
 });
