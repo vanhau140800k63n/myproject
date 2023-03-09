@@ -1280,6 +1280,7 @@ code * {
     flex-direction: column;
     justify-content: flex-end;
     border-top: 1px solid rgb(172, 165, 165);
+    margin-top: 50px;
 }
 
 .footer__copyright__text {
