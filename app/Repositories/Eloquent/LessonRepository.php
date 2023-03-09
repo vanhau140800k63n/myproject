@@ -131,7 +131,7 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
 
     public function getNextLesson($id, $course_id)
     {
-        $next_lesson = $this->lesson->where('course_id', $course_id)->where('id', '>', $id)->first();
+        $next_lesson = $this->lesson->where('course_id', $course_id)->where('id', '>', $id)->orderBy('id', 'DESC')->first();
         if ($next_lesson !== null) {
             return $next_lesson;
         } else {
