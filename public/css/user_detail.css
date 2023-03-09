@@ -1098,11 +1098,7 @@ button.bg-white:focus {
 }
 
 .opacity-8 {
-    opacity: .8 !important;
-}
-
-.opacity-8 {
-    opacity: .9 !important;
+    opacity: .3 !important;
 }
 
 .center {

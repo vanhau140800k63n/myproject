@@ -66,15 +66,15 @@
                         </div>
                         <div class="card-body">
                             <form>
-                                <h6 class="heading-small text-muted mb-4">User information</h6>
+                                <h6 class="heading-small text-muted mb-4">Hoạt động gần đây</h6>
                                 <div class="pl-lg-4">     
                                 </div>
                                 <hr class="my-4">
-                                <h6 class="heading-small text-muted mb-4">Contact information</h6>
+                                <h6 class="heading-small text-muted mb-4">Bài viết</h6>
                                 <div class="pl-lg-4">
                                 </div>
                                 <hr class="my-4">
-                                <h6 class="heading-small text-muted mb-4">About me</h6>
+                                <h6 class="heading-small text-muted mb-4">Thành tích</h6>
                                 <div class="pl-lg-4">
                                 </div>
                             </form>
