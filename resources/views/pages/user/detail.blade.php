@@ -8,7 +8,7 @@
 @section('content')
     <div class="main-content">
         <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
-            style="min-height: 450px; background-image: url({{ asset('image/bg_user.jpg') }}); background-size: contain; background-position: center top;">
+            style="min-height: 450px; background-size: contain; background-position: center top;">
             <span class="mask bg-gradient-default opacity-8"></span>
         </div>
         <!-- Page content -->
