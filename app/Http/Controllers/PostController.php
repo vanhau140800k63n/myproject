@@ -106,7 +106,7 @@ class PostController extends Controller
         $data = $req->all();
         $post = $this->postRepository->getpostAdmin($req->id);
         if ($post != null && isset($req->type) && $req->type != null && $req->type != '') {
-            $data['slug'] = $this->makeSlug($data['title']);
+            $data['slug'] = $this->makeSlug($data['title']) . '-' . $req->id;
             $category_list = explode(',', $data['category']);
             $data['category'] = $this->categoryRepository->updateCategory($category_list);
             if ($data['image'] != $post->image) {
