@@ -1958,7 +1958,10 @@ code * {
     word-break: break-word;
     max-width: 140px;
     font-size: 12px;
-    
+}
+
+.post_author_info_name:hover {
+    text-decoration: underline;
 }
 
 .post_author_btn_follow {

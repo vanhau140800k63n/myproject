@@ -1,10 +1,11 @@
 {
-    "/js/app.js": "/js/app.js?id=2c12188b96c243a6895b4a2779f35029",
+    "/js/app.js": "/js/app.js?id=51957c58e1ed0e63c2eeeecda71914d8",
     "/js/code-mirror.js": "/js/code-mirror.js?id=012daedfc6df0155e33a0a08eee179b2",
     "/js/admin.js": "/js/admin.js?id=b4ac7203dab066721671aff5ec8d2f64",
     "/js/post_admin.js": "/js/post_admin.js?id=7ef92d707b9acc5c6ef6ae9158d7ba78",
     "/js/post.js": "/js/post.js?id=c6cfa0fe94ccba569b1ccee08b286dc4",
-    "/css/app.css": "/css/app.css?id=74633ff424e01b01365c6cbcfec0d08d",
+    "/css/app.css": "/css/app.css?id=9adddefaba1f286bafafb97befc0463b",
+    "/css/user_detail.css": "/css/user_detail.css?id=e0d5bb012ec853db565596eb3e1d6454",
     "/css/admin.css": "/css/admin.css?id=6cd4ecacfd67e64270e0f8d0ee657e93",
     "/js/assets/header.js": "/js/assets/header.js?id=34797e86026da7ba5bdcbdf4599cf36b",
     "/js/assets/jquery.min.js": "/js/assets/jquery.min.js?id=7c14a783dfeb3d238ccd3edd840d82ee",
@@ -441,5 +442,7 @@
     "/lib/tinymce/themes/silver/theme.min.js": "/lib/tinymce/themes/silver/theme.min.js?id=b3493e52cead762071027bd286b6ae21",
     "/lib/tinymce/tinymce.d.ts": "/lib/tinymce/tinymce.d.ts?id=3d33fa4536930510ec54150f7ec6cb78",
     "/lib/tinymce/tinymce.js": "/lib/tinymce/tinymce.js?id=5ba4b604940b79be0c64edc0ad0f0a95",
-    "/lib/tinymce/tinymce.min.js": "/lib/tinymce/tinymce.min.js?id=8c14e90c6082ec7fc0b8fdf7e220b18c"
+    "/lib/tinymce/tinymce.min.js": "/lib/tinymce/tinymce.min.js?id=8c14e90c6082ec7fc0b8fdf7e220b18c",
+    "/img/avata_user/avata_user11678333879.jpg": "/img/avata_user/avata_user11678333879.jpg?id=9e8e0582aa8d0a1711ebb21c651b7243",
+    "/image/bg_user.jpg": "/image/bg_user.jpg?id=3311a31f0a2da9910d354af068f2e289"
 }

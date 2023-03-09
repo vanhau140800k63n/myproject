@@ -96,7 +96,7 @@
             <div class="post_box_other_fixed">
                 <div class="post_info_author">
                     <img class="post_author_info_img" src="{{ asset($author->avata) }}">
-                    <div class="post_author_info_name"> {{ $author->last_name . ' ' . $author->first_name }} </div>
+                    <a href="{{ route('user_detail', ['id' => $author->id]) }}" class="post_author_info_name"> {{ $author->last_name . ' ' . $author->first_name }} </a>
                     <button class="post_author_btn_follow">Theo dõi</button>
                 </div>
                 <div class="catalogue">
