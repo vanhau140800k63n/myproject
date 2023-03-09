@@ -121,7 +121,7 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
 
     public function getPreLesson($id, $course_id)
     {
-        $pre_lesson = $this->lesson->where('course_id', $course_id)->where('id', '<', $id)->first();
+        $pre_lesson = $this->lesson->where('course_id', $course_id)->where('id', '<', $id)->orderBy('id', 'DESC')->first();
         if ($pre_lesson !== null) {
             return $pre_lesson;
         } else {
@@ -131,7 +131,7 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
 
     public function getNextLesson($id, $course_id)
     {
-        $next_lesson = $this->lesson->where('course_id', $course_id)->where('id', '>', $id)->orderBy('id', 'DESC')->first();
+        $next_lesson = $this->lesson->where('course_id', $course_id)->where('id', '>', $id)->first();
         if ($next_lesson !== null) {
             return $next_lesson;
         } else {
