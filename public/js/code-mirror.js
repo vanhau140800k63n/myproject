@@ -72563,6 +72563,46 @@ $('.run_code').click(function () {
       $('#compiler' + code_editer.attr('id')).append(error);
       compiler_code_loading.hide();
     }
+  } else if (lang == 'py') {
+    $('#compiler' + code_editer.attr('id')).html('');
+    var myHeaders = new Headers();
+    myHeaders.append("Host", "api.extendsclass.com");
+    myHeaders.append("sec-ch-ua", "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"");
+    myHeaders.append("sec-ch-ua-platform", "\"macOS\"");
+    myHeaders.append("sec-ch-ua-mobile", "?0");
+    myHeaders.append("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36");
+    myHeaders.append("Content-Type", "text/plain;charset=UTF-8");
+    myHeaders.append("Accept", "*/*");
+    myHeaders.append("Origin", "https://extendsclass.com");
+    myHeaders.append("Sec-Fetch-Site", "same-site");
+    myHeaders.append("Sec-Fetch-Mode", "cors");
+    myHeaders.append("Sec-Fetch-Dest", "empty");
+    myHeaders.append("Referer", "https://extendsclass.com/");
+    myHeaders.append("Accept-Language", "en-US,en;q=0.9,vi;q=0.8,ja;q=0.7");
+    var raw = content;
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+    fetch("https://api.extendsclass.com/convert/python/es6", requestOptions).then(function (response) {
+      return response.json();
+    }).then(function (result) {
+      var stdout = result.stdout;
+      if (stdout.includes("'\n")) {
+        $('#compiler' + code_editer.attr('id')).html(stdout);
+        compiler_code_loading.hide();
+        return true;
+      }
+      stdout = stdout.replaceAll("console.log(", "$('#compiler" + code_editer.attr('id') + "').append('<br>' + ");
+      $('#compiler' + code_editer.attr('id')).append("<script>\n" + stdout + "\n</script>");
+      $('#compiler' + code_editer.attr('id') + ' br').first().remove();
+      compiler_code_loading.hide();
+    })["catch"](function (error) {
+      $('#compiler' + code_editer.attr('id')).html('Compiler Error!');
+      compiler_code_loading.hide();
+    });
   }
 });
 $(".lesson_box_category_toggle_show").click(function () {
