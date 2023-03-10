@@ -17,8 +17,8 @@
     <meta property="og:site_name" content="DEVSNE.VN">
     <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
     <meta property="og:image" content="">
-    <link rel="stylesheet" href="https://devsnes.github.io/nooff/main.css">
-    <script src="https://devsnes.github.io/nooff/main.js" type="module" defer></script>
+    {{-- <link rel="stylesheet" href="https://devsnes.github.io/nooff/main.css"> --}}
+    {{-- <script src="https://devsnes.github.io/nooff/main.js" type="module" defer></script> --}}
 
     <link href="{{ asset(mix('home_lib/circle-website.min.css')) }}" rel="stylesheet" type="text/css">
     <script type="text/javascript">
