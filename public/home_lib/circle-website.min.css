@@ -2305,10 +2305,7 @@ ul {
     align-items: center;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    background-image: url("https://assets.website-files.com/61e57244c283e5456130c457/61e5b01707b14538b566ef9e_bg_hero.svg");
-    background-position: 50% 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgb(58, 60, 83) 87.1% );
     color: #fff
 }
 
@@ -2328,10 +2325,7 @@ ul {
     align-items: center;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    background-image: url("https://assets.website-files.com/61e57244c283e5456130c457/61e5b01762453649e5ffe2a6_bg_courses.svg");
-    background-position: 0 100%;
-    background-size: cover;
-    background-repeat: no-repeat
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgb(58, 60, 83) 87.1% );
 }
 
 .section.mod--steps {
