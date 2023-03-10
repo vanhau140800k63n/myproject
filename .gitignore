@@ -19,6 +19,7 @@ yarn-error.log
 /resources/lib/
 /resources/fonts/
 /resources/image/
+/resources/home_lib/
 /public/image/
 public/.DS_Store
 public/Archive.zip
