@@ -571,10 +571,10 @@
                 </div>
             @endforeach
         </div>
-        <div class="game_design">
+        {{-- <div class="game_design">
             <div class="game_editer"></div>
             @include('pages.home.nooff')
-        </div>
+        </div> --}}
         <div class="home_post">
             @foreach ($post_list as $post)
                 <div class="home_post_item">
