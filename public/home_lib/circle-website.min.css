@@ -2182,7 +2182,7 @@ textarea.w-select {
 body {
     margin: 0;
     min-height: 100%;
-    background-color: #f8efe5;
+    background-color: #fff;
     color: #333;
     font-size: 18px;
     line-height: 20px
@@ -2351,7 +2351,7 @@ ul {
     align-items: flex-start;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    background-color: #f8efe5
+    background-color: #fff
 }
 
 .section.mod--reviews {
@@ -2371,7 +2371,7 @@ ul {
     align-items: center;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    background-color: #f8efe5
+    background-color: #fff
 }
 
 .section.mod--questions {
@@ -2677,7 +2677,7 @@ ul {
     -ms-flex-align: end;
     align-items: flex-end;
     border-radius: 80px;
-    background-color: #f8efe5;
+    background-color: #fff;
     color: #1b1b1b
 }
 
@@ -2813,7 +2813,7 @@ ul {
     -ms-flex-align: start;
     align-items: flex-start;
     border-radius: 40px;
-    background-color: #f8efe5;
+    background-color: #fff;
     cursor: pointer
 }
 
@@ -2935,7 +2935,7 @@ ul {
     -ms-flex-align: center;
     align-items: center;
     
-    color: #f8efe5;
+    color: #fff;
     font-weight: 700;
     text-align: center;
     letter-spacing: -.01em
@@ -3920,7 +3920,7 @@ ul {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: #f8efe5
+    background-color: #fff
 }
 
 .section-slides {
@@ -4199,7 +4199,7 @@ ul {
     margin-left: auto;
     padding: 0;
     border-radius: 40px;
-    background-color: #f8efe5;
+    background-color: #fff;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
