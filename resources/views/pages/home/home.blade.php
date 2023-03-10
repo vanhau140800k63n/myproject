@@ -17,13 +17,15 @@
     <meta property="og:site_name" content="DEVSNE.VN">
     <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
     <meta property="og:image" content="">
+    <link rel="stylesheet" href="https://devsnes.github.io/nooff/main.css">
+    <script src="https://devsnes.github.io/nooff/main.js" type="module" defer></script>
 @endsection
 @section('head')
     <title>Trang chủ - Khóa học lập trình miễn phí</title>
 @endsection
 @section('content')
     <div class="box">
-        <h2 class="home_title">Khóa học</h2>
+        {{-- <h2 class="home_title">Khóa học</h2> --}}
         <div class="home_lesson">
             @foreach ($p_languages as $p_language)
                 <div class="home_lesson_item">
@@ -39,7 +41,12 @@
                 </div>
             @endforeach
         </div>
-        <h2 class="home_title">Bài viết nổi bật</h2>
+        {{-- <h2 class="home_title">Lập trình game</h2> --}}
+        <div class="game_design">
+            <div class="game_editer"></div>
+            @include('pages.home.nooff')
+        </div>
+        {{-- <h2 class="home_title">Bài viết nổi bật</h2> --}}
         <div class="home_post">
             @foreach ($post_list as $post)
                 <div class="home_post_item">
@@ -58,7 +65,7 @@
                 </div>
             @endforeach
         </div>
-        <h2 class="home_title">Xem thêm</h2>
+        {{-- <h2 class="home_title">Xem thêm</h2> --}}
     </div>
     <script src="{{ asset(mix('js/code-mirror.js')) }}"></script>
 @endsection

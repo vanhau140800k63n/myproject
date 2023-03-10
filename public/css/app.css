@@ -604,6 +604,35 @@ a {
     font-size: 9px !important;
 }
 
+.game_design {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.game_editer {
+    width: 40%;
+}
+
+.game_editer * {
+    font-size: 12px !important;
+}
+
+.game_editer .ͼ1.cm-editor {
+    height: 100%;
+    /* max-height: 500px !important; */
+}
+
+#nooff_game_box {
+    width: 55%;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgb(232, 232, 232);
+    /* border-style: dashed; */
+}
+
 @media only screen and (min-width: 1400px) {}
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}
@@ -680,6 +709,7 @@ a {
         font-size: 13px;
         font-weight: 600;
     }
+
     .home_lesson_item:hover .home_lesson_info {
         font-size: 14px;
     }
