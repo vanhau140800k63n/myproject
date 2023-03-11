@@ -2297,6 +2297,9 @@ $(document).ready(function () {
       $(window).scrollTop($('.lesson_content:nth-child(' + $(this).attr('index') + ')').position().top - 70);
     }
   });
+  $('.hero__btn-wrap').click(function () {
+    $(window).scrollTop($('.home_lesson').position().top - 70);
+  });
   $('.copy_code').click(function () {
     var copy_btn = $(this);
     var temp = $("<textarea>");

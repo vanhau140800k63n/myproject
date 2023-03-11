@@ -2305,7 +2305,7 @@ ul {
     align-items: center;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgb(58, 60, 83) 87.1% );
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgb(58, 60, 83) 87.1%);
     color: #fff
 }
 
@@ -2325,7 +2325,7 @@ ul {
     align-items: center;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgb(58, 60, 83) 87.1% );
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgb(58, 60, 83) 87.1%);
 }
 
 .section.mod--steps {
@@ -2562,7 +2562,7 @@ ul {
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    background-image: linear-gradient(90deg, rgba(200,194,221,1) 0%, rgba(178,166,223,1) 100%);
+    background-image: linear-gradient(90deg, rgba(200, 194, 221, 1) 0%, rgba(178, 166, 223, 1) 100%);
 }
 
 .btn.btn--header {
@@ -2825,7 +2825,7 @@ ul {
     text-decoration: none;
     font-weight: 500;
     color: #fff;
-    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgb(58, 60, 83) 87.1% );
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgb(58, 60, 83) 87.1%);
     border-radius: 20px;
 }
 
@@ -3507,9 +3507,6 @@ ul {
 
 .btn__txt {
     z-index: 2;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -3521,6 +3518,10 @@ ul {
     align-items: center;
     text-align: center;
     font-weight: 600;
+}
+
+.hero__btn-wrap {
+    cursor: pointer;
 }
 
 .btn__txt.mod--submit {

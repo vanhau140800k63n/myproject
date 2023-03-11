@@ -67,15 +67,16 @@
                                 </div>
                                 <div data-w-id="a8616800-07f8-0697-9681-2671b00ca6a7"
                                     style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                    class="hero__btn-wrap"><a data-remodal-target="form" href=""
-                                        class="btn mod--hero w-inline-block">
+                                    class="hero__btn-wrap">
+                                    <div data-remodal-target="form" class="btn mod--hero w-inline-block">
                                         <div class="btn__bg-wrap">
                                             <div class="btn__bg"
                                                 style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
                                             </div>
                                         </div>
                                         <div class="btn__txt">Bắt đầu ngay</div>
-                                    </a></div>
+                                    </div>
+                                </div>
                             </div>
                             <div data-w-id="b9bc89e3-fe08-d373-2233-6ff7b6612753" class="hero_illustr-wrap"
                                 style="opacity: 1;">
