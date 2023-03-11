@@ -262,7 +262,8 @@
                                                 và giúp đơn giản hóa việc
                                                 phát triển các ứng dụng phức tạp.
                                             </h3>
-                                        </div><a href="{{ route('learn.lesson_intro', ['course' => 'laravel']) }}" class="courses__more">Học ngay</a>
+                                        </div><a href="{{ route('learn.lesson_intro', ['course' => 'laravel']) }}"
+                                            class="courses__more">Học ngay</a>
                                         <div class="courses__illustr-wrap"><img
                                                 src="{{ asset(mix('home_lib/61e95527a42b3b2259997ca9_courses_illustr-clock.svg')) }}"
                                                 loading="lazy" alt="" class="courses__illustr">
@@ -291,7 +292,8 @@
                                             <div class="courses__type">ReactJS</div>
                                             <h3 class="courses__title">Là Framework JavaScript mã nguồn mở được sử dụng để
                                                 xây dựng các giao diện người dùng.</h3>
-                                        </div><a href="{{ route('learn.lesson_intro', ['course' => 'reactjs']) }}" class="courses__more">Học ngay</a>
+                                        </div><a href="{{ route('learn.lesson_intro', ['course' => 'reactjs']) }}"
+                                            class="courses__more">Học ngay</a>
                                         <div class="courses__illustr-wrap"><img
                                                 src="{{ asset(mix('home_lib/61e957020b93d471c75bfa1a_courses_illustr-screen2.svg')) }}"
                                                 loading="lazy" alt="" class="courses__illustr mod--2"><img
@@ -322,7 +324,8 @@
                                             <h3 class="courses__title">Là Framework JavaScript mã nguồn mở được sử dụng để
                                                 xây dựng các giao diện người dùng và các ứng dụng web độc lập.
                                             </h3>
-                                        </div><a href="{{ route('learn.lesson_intro', ['course' => 'vuejs']) }}" class="courses__more">Học ngay</a>
+                                        </div><a href="{{ route('learn.lesson_intro', ['course' => 'vuejs']) }}"
+                                            class="courses__more">Học ngay</a>
                                         <div class="courses__illustr-wrap"><img
                                                 src="{{ asset(mix('home_lib/61e96e8e0177b619671e0411_courses_illustr-graph.svg')) }}"
                                                 loading="lazy" alt="" class="courses__illustr"><img
