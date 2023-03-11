@@ -180,7 +180,7 @@
                                 </div>
                                 <div class="steps__col mod--2"
                                     style="will-change: transform; transform: translate3d(0px, -10%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                    <h2>Lập trình Game</h2>
+                                    <h2 style="font-weight: 700">Lập trình Game</h2>
                                     <ul role="list" class="steps__list">
                                         <li class="steps__list-item">
                                             <div class="steps__numb"><img
