@@ -393,7 +393,7 @@ a {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem 2rem;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .home_lesson .cm-content,

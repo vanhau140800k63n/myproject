@@ -2365,7 +2365,7 @@ ul {
     align-items: center;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    background-color: #fff
+    background-color: #fff;
 }
 
 .section.mod--questions {
@@ -2539,9 +2539,6 @@ ul {
 
 .btn {
     position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
     min-height: 70px;
@@ -2564,7 +2561,8 @@ ul {
     text-align: center;
     letter-spacing: 1px;
     text-decoration: none;
-    text-transform: uppercase
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, rgba(200,194,221,1) 0%, rgba(178,166,223,1) 100%);
 }
 
 .btn.btn--header {
@@ -2815,25 +2813,24 @@ ul {
     margin-bottom: 16px;
     font-size: 22px;
     letter-spacing: 1px;
-    text-transform: uppercase
+    font-weight: 700;
 }
 
 .courses__more {
     position: relative;
     z-index: 2;
     display: inline-block;
-    padding-right: 32px;
-    background-image: url("https://assets.website-files.com/61e57244c283e5456130c457/61e6a36de31b0c9a3300d6c6_ico_arrow-blue.svg");
-    background-position: 100% 50%;
-    background-size: auto;
-    background-repeat: no-repeat;
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
-    color: #0f86a1;
-    font-size: 22px;
-    letter-spacing: .01em;
+    padding: 10px 20px;
+    font-size: 16px;
     text-decoration: none;
-    text-transform: uppercase
+    font-weight: 500;
+    color: #fff;
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgb(58, 60, 83) 87.1% );
+    border-radius: 20px;
+}
+
+.courses__title {
+    font-size: 18px;
 }
 
 .courses__illustr {

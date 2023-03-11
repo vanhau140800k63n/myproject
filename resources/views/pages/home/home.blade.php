@@ -63,12 +63,12 @@
                                     <p data-w-id="631697bc-a7d4-4d9b-4421-9e54447c68df"
                                         style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                                         class="subheading mod--hero">Với các khóa học lập trình miễn phí <br>
-                                    HTML, PHP, Javascript, Python, C++, Java</p>
+                                        HTML, PHP, Javascript, Python, C++, Java</p>
                                 </div>
                                 <div data-w-id="a8616800-07f8-0697-9681-2671b00ca6a7"
                                     style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                    class="hero__btn-wrap"><a data-remodal-target="form"
-                                        href="" class="btn mod--hero w-inline-block">
+                                    class="hero__btn-wrap"><a data-remodal-target="form" href=""
+                                        class="btn mod--hero w-inline-block">
                                         <div class="btn__bg-wrap">
                                             <div class="btn__bg"
                                                 style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -93,30 +93,12 @@
                                                         loading="eager"
                                                         style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                                                         alt="" class="hero__counts-img">
-                                                    <div class="hero__counts-numb">200+</div>
+                                                    <div class="hero__counts-numb">Python</div>
                                                 </div>
                                                 <div class="wrap-hide">
                                                     <p style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                                        class="hero__counts-p">Ideal courses to sell physical and
-                                                        digital products from your
-                                                        site<br>on WordPress.com</p>
-                                                </div>
-                                            </div>
-                                            <div style="width: 2px;" class="hero__counts-dash"></div>
-                                        </div>
-                                        <div class="swiper-slide mod--numb">
-                                            <div class="hero__numb-block">
-                                                <div class="hero__counts-img-wrap"><img
-                                                        src="{{ asset(mix('home_lib/61e5adc434c4cc7fcbb10af6_hero_numb-01.svg')) }}"
-                                                        loading="eager"
-                                                        style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                                        alt="" class="hero__counts-img">
-                                                    <div class="hero__counts-numb">150+</div>
-                                                </div>
-                                                <div class="wrap-hide">
-                                                    <p style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                                        class="hero__counts-p">Experts share their knowledge on building
-                                                        and growing a web presence.
+                                                        class="hero__counts-p">Phát triển web, xử lý dữ liệu, machine
+                                                        learning, game, đồ họa, ...
                                                     </p>
                                                 </div>
                                             </div>
@@ -129,13 +111,30 @@
                                                         loading="eager"
                                                         style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                                                         alt="" class="hero__counts-img">
-                                                    <div class="hero__counts-numb">10k+</div>
+                                                    <div class="hero__counts-numb">Java</div>
                                                 </div>
                                                 <div class="wrap-hide">
                                                     <p style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                                        class="hero__counts-p">Small businesses and online stores call
-                                                        WordPress.com home. No code,
-                                                        no complexities.</p>
+                                                        class="hero__counts-p">Phát triển các ứng dụng web, mobile,
+                                                        desktop, game, cơ sở dữ liệu, ...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div style="width: 2px;" class="hero__counts-dash"></div>
+                                        </div>
+                                        <div class="swiper-slide mod--numb">
+                                            <div class="hero__numb-block">
+                                                <div class="hero__counts-img-wrap"><img
+                                                        src="{{ asset(mix('home_lib/61e5adc434c4cc7fcbb10af6_hero_numb-01.svg')) }}"
+                                                        loading="eager"
+                                                        style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                                        alt="" class="hero__counts-img">
+                                                    <div class="hero__counts-numb">C++</div>
+                                                </div>
+                                                <div class="wrap-hide">
+                                                    <p style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                                        class="hero__counts-p">Phát triển Web, game, đồ họa, Robotics, viết
+                                                        ứng dụng hệ thống và phần cứng, ...</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -175,20 +174,12 @@
                                                     style="will-change: width, height; height: 50px;"></div>
                                             </div>
                                             <div class="steps__illustr-graph-dot mod--4"></div>
-                                        </div><img
-                                            src="{{ asset(mix('home_lib/61e945a07b8315127f9563e6_step_illustr-smile.svg')) }}"
-                                            loading="lazy" data-w-id="4cfc4b26-19d1-8d31-f6bb-44fd16ca6f12"
-                                            alt="" class="steps__illustr-smile"
-                                            style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img
-                                            src="{{ asset(mix('home_lib/61e945a0b4854d57c4921c22_step_illustr-hand.svg')) }}"
-                                            loading="lazy" data-w-id="72b9017d-5a47-5401-4afb-fc474e9c6f55"
-                                            alt="" class="steps__illustr-hand"
-                                            style="will-change: transform; transform: translate3d(7px, 32px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(34deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="steps__col mod--2"
                                     style="will-change: transform; transform: translate3d(0px, -10%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                    <h2>Syllabus of courses</h2>
+                                    <h2>Lập trình Game</h2>
                                     <ul role="list" class="steps__list">
                                         <li class="steps__list-item">
                                             <div class="steps__numb"><img
@@ -198,10 +189,11 @@
                                                     alt="" class="steps__numb-img">
                                                 <div class="steps__numb-txt">01</div>
                                             </div>
-                                            <h3 class="steps__list-title">Videos from professionals</h3>
-                                            <p class="steps__list-p">Our specialists will help you create any website.
-                                                With our help, you can
-                                                handle any task, also you get a personalized consultation.</p>
+                                            <h3 class="steps__list-title">Đồ họa và thiết kế</h3>
+                                            <p class="steps__list-p">Đồ họa và thiết kế tạo ra trải nghiệm hấp dẫn cho
+                                                người chơi. Không
+                                                chỉ cần có đồ họa đẹp mắt, mà còn phải có sự phối hợp hài hòa giữa màu sắc,
+                                                âm thanh và các hiệu ứng để tạo ra một thế giới sống động.</p>
                                             <div style="width: 74px;" class="steps__list-arrow-wrap"><img
                                                     src="{{ asset(mix('home_lib/61e5adc40ddc66aafb697c3d_steps_arrow.svg')) }}"
                                                     loading="lazy" alt="" class="steps__list-arrow"></div>
@@ -214,10 +206,9 @@
                                                     alt="" class="steps__numb-img">
                                                 <div class="steps__numb-txt">02</div>
                                             </div>
-                                            <h3 class="steps__list-title">Practical independent work</h3>
-                                            <p class="steps__list-p">Learn how to organize your website, create engaging
-                                                content, protect your
-                                                site, and achieve search engine rankings.</p>
+                                            <h3 class="steps__list-title">Lập trình đa nền tảng</h3>
+                                            <p class="steps__list-p">Game có thể chạy được trên nhiều hệ điều hành
+                                                khác nhau như iOS, Android, Windows, Xbox hoặc PlayStation.</p>
                                             <div class="steps__list-arrow-wrap mod--2" style="width: 74px;"><img
                                                     src="{{ asset(mix('home_lib/61e5adc40ddc66aafb697c3d_steps_arrow.svg')) }}"
                                                     loading="lazy" alt="" class="steps__list-arrow"></div>
@@ -230,10 +221,9 @@
                                                     alt="" class="steps__numb-img">
                                                 <div class="steps__numb-txt">03</div>
                                             </div>
-                                            <h3 class="steps__list-title">Feedback from specialists</h3>
-                                            <p class="steps__list-p">Structure and visualize new knowledge. You send the
-                                                practical work to the
-                                                reviewing specialists and receive individual feedback.</p>
+                                            <h3 class="steps__list-title">Tối ưu hóa và kiểm thử</h3>
+                                            <p class="steps__list-p">Tối ưu hóa bao gồm
+                                                tối ưu hóa nguồn tài nguyên, độ trễ và tốc độ khung hình</p>
                                             <div class="steps__list-arrow-wrap mod--3" style="width: 148px;"><img
                                                     src="{{ asset(mix('home_lib/61e5adc4fe559a406b5d0195_steps_arrow-plane.svg')) }}"
                                                     loading="lazy" alt="" class="steps__list-arrow"></div>
@@ -251,15 +241,14 @@
                             <div class="courses__heading-wrap">
                                 <div class="wrap-hide">
                                     <h2 data-w-id="59f15cc6-f7f7-b018-eeee-392bf2018629" class="heading--margin-0"
-                                        style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                        Professional courses <br>on creating websites</h2>
+                                        style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; font-weight: 700">
+                                        Framework<br>PHP, Javascript</h2>
                                 </div>
                                 <div class="wrap-hide">
                                     <p data-w-id="59f15cc6-f7f7-b018-eeee-392bf201862d" class="subheading mod--courses"
                                         style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                        Our courses are complete professional courses of&nbsp;high quality that include
-                                        a set of video
-                                        lessons, practical and training materials.</p>
+                                        Các khóa học của chúng tôi là các khóa học chuyên nghiệp có chất lượng
+                                        cao bao gồm một tập hợp các bài học, tài liệu thực hành.</p>
                                 </div>
                             </div>
                             <div class="courses__columns">
@@ -267,12 +256,12 @@
                                     style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
                                     <div data-remodal-target="form" class="courses__block">
                                         <div class="courses__txt-wrap">
-                                            <div class="courses__type">design</div>
-                                            <h3 class="courses__title">How to make a quality site in WordPress in 40
-                                                hours without experience
+                                            <div class="courses__type">Laravel</div>
+                                            <h3 class="courses__title"> Là Framework PHP cung cấp nhiều đặc tính tiện ích
+                                                và giúp đơn giản hóa việc
+                                                phát triển các ứng dụng phức tạp.
                                             </h3>
-                                        </div><a href="" class="courses__more">Read
-                                            more</a>
+                                        </div><a href="" class="courses__more">Học ngay</a>
                                         <div class="courses__illustr-wrap"><img
                                                 src="{{ asset(mix('home_lib/61e95527a42b3b2259997ca9_courses_illustr-clock.svg')) }}"
                                                 loading="lazy" alt="" class="courses__illustr">
@@ -298,11 +287,10 @@
                                     style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
                                     <div data-remodal-target="form" class="courses__block">
                                         <div class="courses__txt-wrap">
-                                            <div class="courses__type">programming</div>
-                                            <h3 class="courses__title">WordPress: How to start in a developer without
-                                                any basic knowledge</h3>
-                                        </div><a href="" class="courses__more">Read
-                                            more</a>
+                                            <div class="courses__type">ReactJS</div>
+                                            <h3 class="courses__title">Là Framework JavaScript mã nguồn mở được sử dụng để
+                                                xây dựng các giao diện người dùng.</h3>
+                                        </div><a href="" class="courses__more">Học ngay</a>
                                         <div class="courses__illustr-wrap"><img
                                                 src="{{ asset(mix('home_lib/61e957020b93d471c75bfa1a_courses_illustr-screen2.svg')) }}"
                                                 loading="lazy" alt="" class="courses__illustr mod--2"><img
@@ -329,12 +317,11 @@
                                     style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
                                     <div data-remodal-target="form" class="courses__block">
                                         <div class="courses__txt-wrap">
-                                            <div class="courses__type">seo</div>
-                                            <h3 class="courses__title">Creating dynamic sites with CMS WordPress + SEO
-                                                for WordPress websites
+                                            <div class="courses__type">VueJS</div>
+                                            <h3 class="courses__title">Là Framework JavaScript mã nguồn mở được sử dụng để
+                                                xây dựng các giao diện người dùng và các ứng dụng web độc lập.
                                             </h3>
-                                        </div><a href="" class="courses__more">Read
-                                            more</a>
+                                        </div><a href="" class="courses__more">Học ngay</a>
                                         <div class="courses__illustr-wrap"><img
                                                 src="{{ asset(mix('home_lib/61e96e8e0177b619671e0411_courses_illustr-graph.svg')) }}"
                                                 loading="lazy" alt="" class="courses__illustr"><img
@@ -366,8 +353,8 @@
                     <section id="reviews" class="section mod--reviews">
                         <div data-w-id="45113257-d841-df6c-5982-f2b5d696bb96" class="content">
                             <h2 data-w-id="45113257-d841-df6c-5982-f2b5d696bb9b" class="heading--center"
-                                style="opacity: 0; transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                Students reviews</h2>
+                                style="opacity: 0; transform: translate3d(0px, 50px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; font-weight: 700">
+                                Đánh giá khóa học</h2>
                             <div data-swiper="reviews" class="swiper swiper--reviews">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide mod--reviews">
@@ -375,8 +362,7 @@
                                             <div data-w-id="b1aba590-6da4-7582-aa6a-37309ea3bcdc"
                                                 class="reviews__ava-wrap"
                                                 style="transform: translate3d(0px, 0px, 0px) scale3d(0.7, 0.7, 1) rotateX(0deg) rotateY(0deg) rotateZ(-10deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
-                                                <img src="{{ asset(mix('home_lib/61f12115d2c42237cc77dc02_reviews_ava-03.png')) }}"
-                                                    loading="lazy" width="123.5" alt=""
+                                                <img src="" loading="lazy" width="123.5" alt=""
                                                     class="reviews__ava"><img
                                                     src="{{ asset(mix('home_lib/61f1243b04b9643a7746ea4c_spot.svg')) }}"
                                                     loading="lazy" alt="" class="reviews__ava-spot mod--1">
@@ -387,13 +373,13 @@
                                                 <h3 data-w-id="97b716b0-1c96-8fcb-71e7-362803c34f5c"
                                                     class="reviews__title"
                                                     style="transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                                    Anna Tyuneva</h3>
+                                                    Bài tập thực hành</h3>
                                             </div>
                                             <div class="wrap-hide">
                                                 <p data-w-id="c97e8ba7-e028-c47a-47d8-058230c087d3" class="reviews__p"
                                                     style="transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                                    The course is great! Teachers talks very interesting and accessible.
-                                                    Thank you very much!</p>
+                                                    Khóa học lập trình trực tuyến sẽ cung cấp cho học viên nhiều bài tập
+                                                    thực hành để giúp họ áp dụng kiến thức được học vào thực tế.</p>
                                             </div>
                                         </div>
                                         <div data-w-id="96fe40c1-1dc8-b204-a700-5616474391fc" class="reviews__dash"
@@ -405,8 +391,7 @@
                                             <div data-w-id="98053f3f-402c-a915-c120-e2115c35d951"
                                                 class="reviews__ava-wrap"
                                                 style="transform: translate3d(0px, 0px, 0px) scale3d(0.7, 0.7, 1) rotateX(0deg) rotateY(0deg) rotateZ(-10deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
-                                                <img src="{{ asset(mix('home_lib/61f121152eac3681505273a6_reviews_ava-02.png')) }}"
-                                                    loading="lazy" width="123" alt=""
+                                                <img src="" loading="lazy" width="123" alt=""
                                                     class="reviews__ava"><img
                                                     src="{{ asset(mix('home_lib/61f1243b04b9643a7746ea4c_spot.svg')) }}"
                                                     loading="lazy" alt="" class="reviews__ava-spot mod--2">
@@ -417,13 +402,13 @@
                                                 <h3 data-w-id="804f1866-1e41-a54a-1285-a742d0257ffc"
                                                     class="reviews__title"
                                                     style="transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                                    Mykola Dunayev</h3>
+                                                    Ví dụ minh họa</h3>
                                             </div>
                                             <div class="wrap-hide">
                                                 <p data-w-id="804f1866-1e41-a54a-1285-a742d0257ffe" class="reviews__p"
                                                     style="transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                                    The course is clear enough. Well explained a lot of practice. I
-                                                    recommend to everyone!</p>
+                                                    Khóa học lập trình trực tuyến sẽ cung cấp cho học viên nhiều ví dụ minh
+                                                    họa để họ có thể hiểu rõ hơn cách áp dụng kiến thức vào thực tế.</p>
                                             </div>
                                         </div>
                                         <div data-w-id="804f1866-1e41-a54a-1285-a742d0258000" class="reviews__dash"
@@ -435,8 +420,7 @@
                                             <div data-w-id="ac92c6d4-b63f-868e-4e4f-1913ee8aad1c"
                                                 class="reviews__ava-wrap"
                                                 style="transform: translate3d(0px, 0px, 0px) scale3d(0.7, 0.7, 1) rotateX(0deg) rotateY(0deg) rotateZ(-10deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
-                                                <img src="{{ asset(mix('home_lib/61f12115930f78ec44be53c2_reviews_ava-01.png')) }}"
-                                                    loading="lazy" width="125" alt=""
+                                                <img src="" loading="lazy" width="125" alt=""
                                                     class="reviews__ava"><img
                                                     src="{{ asset(mix('home_lib/61f1243b04b9643a7746ea4c_spot.svg')) }}"
                                                     loading="lazy" alt="" class="reviews__ava-spot mod--3">
@@ -447,13 +431,13 @@
                                                 <h3 data-w-id="a856a692-fdfd-94c9-d172-b93c8cbf81c9"
                                                     class="reviews__title"
                                                     style="transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                                    Nastya Kozarchuk</h3>
+                                                    Thông tin cập nhật</h3>
                                             </div>
                                             <div class="wrap-hide">
                                                 <p data-w-id="a856a692-fdfd-94c9-d172-b93c8cbf81cb" class="reviews__p"
                                                     style="transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                                    The training was in one breath. Very accessible courses, everything
-                                                    is very clear and good.
+                                                    Khóa học lập trình trực tuyến sẽ cập nhật các kiến thức, công nghệ mới
+                                                    nhất để giúp học viên cập nhật kiến thức và thực hành thành công hơn.
                                                 </p>
                                             </div>
                                         </div>
@@ -565,7 +549,8 @@
                     <a href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}">
                         <div class="home_lesson_cover"></div>
                     </a>
-                    <a class="home_lesson_info" href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}">
+                    <a class="home_lesson_info"
+                        href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}">
                         Học {{ $p_language->full_name }} miễn phí
                     </a>
                 </div>
