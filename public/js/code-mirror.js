@@ -72362,11 +72362,6 @@ var language_list = {
   cpp: (0,_codemirror_lang_cpp__WEBPACK_IMPORTED_MODULE_6__.cpp)()
 };
 var view = {};
-var editer = new codemirror__WEBPACK_IMPORTED_MODULE_7__.EditorView({
-  extensions: [codemirror__WEBPACK_IMPORTED_MODULE_8__.basicSetup, _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_9__.oneDark, (0,_codemirror_lang_javascript__WEBPACK_IMPORTED_MODULE_2__.javascript)()],
-  parent: document.querySelector(".game_editer"),
-  doc: ''
-});
 $('.home_lesson_card').each(function () {
   var language = $(this).attr('id');
   var text = $('#input_' + language).val();

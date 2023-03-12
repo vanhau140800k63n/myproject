@@ -181,4 +181,8 @@ class HomeController extends Controller
 
         return response()->json($output);
     }
+
+    public function getGameDesignPage() {
+        return view('pages.game.design');
+    }
 }

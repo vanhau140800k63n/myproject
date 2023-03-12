@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'getHomePage'])->name('home');
+Route::get('/game-design', [HomeController::class, 'getGameDesignPage'])->name('game_design');
 Route::get('/u/{id}', [UserController::class, 'getUserInfoDetail'])->name('user_detail');
 Route::post('/submit', [HomeController::class, 'submit'])->name('submit');
 Route::get('/update_meta', [HomeController::class, 'updateMeta'])->name('update_meta');

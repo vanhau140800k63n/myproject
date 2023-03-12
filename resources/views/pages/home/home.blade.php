@@ -17,8 +17,6 @@
     <meta property="og:site_name" content="DEVSNE.VN">
     <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
     <meta property="og:image" content="">
-    {{-- <link rel="stylesheet" href="https://devsnes.github.io/nooff/main.css"> --}}
-    {{-- <script src="https://devsnes.github.io/nooff/main.js" type="module" defer></script> --}}
 
     <link href="{{ asset(mix('home_lib/circle-website.min.css')) }}" rel="stylesheet" type="text/css">
     <script type="text/javascript">
@@ -65,17 +63,35 @@
                                         class="subheading mod--hero">Với các khóa học lập trình miễn phí <br>
                                         HTML, PHP, Javascript, Python, C++, Java</p>
                                 </div>
-                                <div data-w-id="a8616800-07f8-0697-9681-2671b00ca6a7"
-                                    style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                    class="hero__btn-wrap">
-                                    <div data-remodal-target="form" class="btn mod--hero w-inline-block">
-                                        <div class="btn__bg-wrap">
-                                            <div class="btn__bg"
-                                                style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+
+                                <div style="display: flex">
+                                    <div data-w-id="a8616800-07f8-0697-9681-2671b00ca6a7"
+                                        style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                        class="hero__btn-wrap start_now">
+                                        <div data-remodal-target="form" class="btn mod--hero w-inline-block">
+                                            <div class="btn__bg-wrap">
+                                                <div class="btn__bg"
+                                                    style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                                </div>
                                             </div>
+                                            <div class="btn__txt">Bắt đầu ngay</div>
                                         </div>
-                                        <div class="btn__txt">Bắt đầu ngay</div>
                                     </div>
+
+                                    <a href="{{ route('game_design') }}" data-w-id="a8616800-07f8-0697-9681-2671b00ca6a7"
+                                        style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; margin-left: 30px"
+                                        class="hero__btn-wrap">
+                                        <div data-remodal-target="form" class="btn mod--hero w-inline-block">
+                                            <div class="btn__bg-wrap" style="background-color: #8BC6EC;
+                                            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+                                            ">
+                                                <div class="btn__bg"
+                                                    style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                                </div>
+                                            </div>
+                                            <div class="btn__txt">Lập trình game</div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div data-w-id="b9bc89e3-fe08-d373-2233-6ff7b6612753" class="hero_illustr-wrap"
@@ -560,10 +576,6 @@
                 </div>
             @endforeach
         </div>
-        {{-- <div class="game_design">
-            <div class="game_editer"></div>
-            @include('pages.home.nooff')
-        </div> --}}
         <div class="home_post">
             @foreach ($post_list as $post)
                 <div class="home_post_item">
