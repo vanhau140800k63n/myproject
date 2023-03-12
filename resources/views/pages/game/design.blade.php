@@ -2,6 +2,15 @@
 @section('head')
     <title> Game Design </title>
     <link rel="stylesheet" href="https://devsnes.github.io/nooff/main.css">
+    <style>
+        .footer_box {
+            display: none;
+        }
+
+        .header-box {
+            display: none;
+        }
+    </style>
     <script src="https://devsnes.github.io/nooff/main.js" type="module" defer></script>
 @endsection
 @section('content')
