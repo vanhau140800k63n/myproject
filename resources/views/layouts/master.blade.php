@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-wf-domain="circle-website.webflow.io" data-wf-page="61ee93d45d7f5743a65b8815"
-data-wf-site="61e57244c283e5456130c457">
+    data-wf-site="61e57244c283e5456130c457">
 
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,8 @@ data-wf-site="61e57244c283e5456130c457">
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="{{ asset('js/assets/jquery.min.js') }}"></script>
     <script src="{{ asset(mix('js/app.js')) }}"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
+        crossorigin="anonymous"></script>
     @yield('head')
     <?php
     header('Access-Control-Allow-Origin: *');
