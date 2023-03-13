@@ -2185,7 +2185,6 @@ body {
     background-color: #fff;
     color: #333;
     font-size: 18px;
-    line-height: 20px
 }
 
 h1 {
@@ -4326,6 +4325,10 @@ ul {
     position: absolute;
     top: 0;
     right: 1rem
+}
+
+.page-wrap {
+    line-height: 20px;
 }
 
 @media screen and (max-width:991px) {
