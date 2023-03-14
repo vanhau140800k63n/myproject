@@ -19,11 +19,6 @@
     <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
     <meta property="og:image" content="{{ asset($course->image) }}">
     <style>
-        .cm-content,
-        .cm-gutter {
-            /* min-height: 100px; */
-        }
-
         .ͼ1.cm-editor {
             max-height: 300px !important;
         }

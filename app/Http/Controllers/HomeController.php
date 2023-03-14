@@ -183,6 +183,7 @@ class HomeController extends Controller
     }
 
     public function getGameDesignPage() {
-        return view('pages.game.design');
+        $course_list = $this->pLanguageRepository->getPLanguageHome();
+        return view('pages.game.design', compact('course_list'));
     }
 }

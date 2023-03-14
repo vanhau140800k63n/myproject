@@ -2316,6 +2316,7 @@ $(document).ready(function () {
       copy_btn.html('Copy');
     }, 2000);
   });
+  $('.game_design .ͼ1.cm-editor').css('height', $('.game_creen').height());
 });
 
 /***/ }),
