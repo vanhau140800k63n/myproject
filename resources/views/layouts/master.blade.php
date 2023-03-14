@@ -21,8 +21,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="{{ asset('js/assets/jquery.min.js') }}"></script>
     <script src="{{ asset(mix('js/app.js')) }}"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
-        crossorigin="anonymous"></script>
     @yield('head')
     <?php
     header('Access-Control-Allow-Origin: *');
