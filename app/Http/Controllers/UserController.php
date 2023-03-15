@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\PageException;
 use App\Repositories\UserRepositoryInterface;
 
 class UserController extends Controller
@@ -16,6 +17,9 @@ class UserController extends Controller
     public function getUserInfoDetail($id)
     {
         $user = $this->userRepository->getUserById($id);
+        if($user === null) {
+            throw new PageException();
+        }
         return view('pages.user.detail', compact('user'));
     }
 
