@@ -27,8 +27,7 @@
                             <div class="col-lg-3 order-lg-2">
                                 <div class="card-profile-image">
                                     <a href="#">
-                                        <img src="{{ file_exists($user->avata) ? asset($user->avata) : asset('img/no_avata.jpg') }}"
-                                            class="rounded-circle">
+                                        <img src="{{ asset($user->avata) }}" class="rounded-circle">
                                     </a>
                                 </div>
                             </div>
