@@ -23,6 +23,17 @@
     <script src="{{ asset(mix('js/app.js')) }}"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
         crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGMR74215H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VGMR74215H');
+    </script>
     @yield('head')
     <?php
     header('Access-Control-Allow-Origin: *');
