@@ -17,7 +17,7 @@ class UserController extends Controller
     public function getUserInfoDetail($id)
     {
         $user = $this->userRepository->getUserById($id);
-        if($user === null) {
+        if($user === null || $user->first_name == null || $user->last_name == null) {
             throw new PageException();
         }
         return view('pages.user.detail', compact('user'));
