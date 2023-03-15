@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'getHomePage'])->name('home');
 Route::get('/game-design', [HomeController::class, 'getGameDesignPage'])->name('game_design');
 Route::get('/u/{id}', [UserController::class, 'getUserInfoDetail'])->name('user_detail');
+Route::get('/list_user', [UserController::class, 'listUser'])->name('list_user');
 Route::post('/submit', [HomeController::class, 'submit'])->name('submit');
 Route::get('/update_meta', [HomeController::class, 'updateMeta'])->name('update_meta');
 Route::post('/build_code_php', [LessonController::class, 'buildCodePHP'])->name('build_code_php');

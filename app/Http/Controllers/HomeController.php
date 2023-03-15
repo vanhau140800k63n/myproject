@@ -182,7 +182,8 @@ class HomeController extends Controller
         return response()->json($output);
     }
 
-    public function getGameDesignPage() {
+    public function getGameDesignPage()
+    {
         $course_list = $this->pLanguageRepository->getPLanguageHome();
         return view('pages.game.design', compact('course_list'));
     }
