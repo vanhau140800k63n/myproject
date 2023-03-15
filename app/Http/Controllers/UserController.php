@@ -32,7 +32,7 @@ class UserController extends Controller
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => 'action=ten_tieng_viet_random&gender=male&is_fullname=yes&surname_option=select&surname=Hoàng&so_luong=16&exclude=&lang=vi',
+            CURLOPT_POSTFIELDS => 'action=ten_tieng_viet_random&gender=male&is_fullname=yes&surname_option=select&surname=Nguyễn&so_luong=16&exclude=&lang=vi',
             CURLOPT_HTTPHEADER => array(
                 'Host: dichthuatphuongdong.com',
                 'Cookie: PHPSESSID=6849cc6dc4de50b8d1f5985bcecf0bc1; _ga=GA1.1.180132158.1678784778; __gads=ID=9b32a5382766635b-2234b6f1fbdb004f:T=1678784778:RT=1678784778:S=ALNI_MbtYAcL5yDneY27kMo2gaNvfQ5beQ; __gpi=UID=00000bd9614b9f63:T=1678784778:RT=1678784778:S=ALNI_Mbzzs20iKiMzdTcmBQzTeckCYt1Dg; _ga_QNF8ZRW013=GS1.1.1678784777.1.1.1678784787.50.0.0; FCNEC=%5B%5B%22AKsRol870Fjy3Qiy66rAWXvxwQ_ir8HHjr2kBPpIAb1ID6H5FQUKXA6DQ78nawcSJGGzr3edGk47BOf5CY2c2SDDmYwS6O3oybYKF7CDjTN-oR46RH6Zol4NM4l8y_Q8Qlpic_ElTl7vEkQARmn_MWtkrq7MfYflwA%3D%3D%22%5D%2Cnull%2C%5B%5D%5D',
@@ -58,8 +58,8 @@ class UserController extends Controller
         foreach ($response as $user) {
             $data = [
                 'email' => $this->generateRandomString(),
-                'last_name' => substr($user, 0, strpos($user, 'Hoàng') - 1),
-                'first_name' => 'Hoàng'
+                'last_name' => substr($user, 0, strpos($user, 'Nguyễn') - 1),
+                'first_name' => 'Nguyễn'
             ];
 
             $user = $this->userRepository->createUser($data);

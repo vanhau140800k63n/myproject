@@ -37,11 +37,11 @@
                                 <div class="col">
                                     <div class="card-profile-stats d-flex justify-content-center mt-md-5">
                                         <div>
-                                            <span class="heading">22</span>
+                                            <span class="heading">0</span>
                                             <span class="description">Theo dõi</span>
                                         </div>
                                         <div>
-                                            <span class="heading">10</span>
+                                            <span class="heading">0</span>
                                             <span class="description">Bài viết</span>
                                         </div>
                                     </div>
@@ -67,7 +67,7 @@
                         <div class="card-body">
                             <form>
                                 <h6 class="heading-small text-muted mb-4">Hoạt động gần đây</h6>
-                                <div class="pl-lg-4">     
+                                <div class="pl-lg-4">
                                 </div>
                                 <hr class="my-4">
                                 <h6 class="heading-small text-muted mb-4">Bài viết</h6>
