@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <title>{{ $user->last_name . ' ' . $user->first_name }} - Devsnevn</title>
+    <title>{{ $user->last_name . ' ' . $user->first_name }} - Thành viên Devsne</title>
     <link rel="stylesheet" href="{{ asset(mix('css/user_detail.css')) }}">
 @endsection
 @section('content')

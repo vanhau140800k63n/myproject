@@ -189,7 +189,11 @@ class LessonController extends Controller
         try {
             return eval($req->content);
         } catch (Throwable $ex) {
-            return $ex->getMessage();
+            $message = $ex->getMessage();
+            if(str_contains($message, 'App\Http\Controllers\LessonController')) {
+                $message = str_replace('App\Http\Controllers\LessonController', '', $message);
+            }
+            return $message;
         }
     }
 

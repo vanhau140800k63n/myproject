@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('head')
-    <title> Game Design </title>
+    <title> Game Design - Devsne</title>
     <style>
         .footer_box {
             display: none;
