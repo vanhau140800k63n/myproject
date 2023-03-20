@@ -187,4 +187,12 @@ class HomeController extends Controller
         $course_list = $this->pLanguageRepository->getPLanguageHome();
         return view('pages.game.design', compact('course_list'));
     }
+
+    public function search($key) {
+        $count = 16;
+        $lessons = $this->lessonRepository->searchLesson($key, $count);
+        $posts = $this->postRepository->searchPost($key);
+
+        return view('pages.search.result', compact('lessons', 'posts', 'key'));
+    }
 }

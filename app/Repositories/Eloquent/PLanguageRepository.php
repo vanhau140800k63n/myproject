@@ -25,22 +25,25 @@ class PLanguageRepository extends BaseRepository implements PLanguageRepositoryI
         $query = $this->p_language->where('name', $name);
 
         $p_language = $this->retryQuery($query);
-        if($p_language !== false && $p_language->count() > 0) {
+        if ($p_language !== false && $p_language->count() > 0) {
             return $p_language->first()->id;
         }
 
         return false;
     }
 
-    public function getCourseAdmin($id) {
+    public function getCourseAdmin($id)
+    {
         return $this->p_language->find($id);
     }
 
-    public function getCourseByName($name) {
+    public function getCourseByName($name)
+    {
         return $this->p_language->where('name', $name)->first();
     }
 
-    public function searchCourses($key) {
+    public function searchCourses($key)
+    {
         return $this->p_language->where('full_name', 'like', '%' . $key . '%')->take(5)->get();
     }
 }

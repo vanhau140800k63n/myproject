@@ -303,6 +303,7 @@ a {
     border-radius: 5px;
     padding: 5px 15px;
     display: none;
+
 }
 
 .search_result_title {
@@ -343,6 +344,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .search_loading_title {
@@ -602,6 +604,28 @@ a {
 .fa-eye {
     margin-right: 5px;
     font-size: 9px !important;
+}
+
+.search_advance_box {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.search_advance_title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.home_post_img_title {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    top: 0;
+    text-align: center;
+    width: -webkit-fill-available;
+    padding: 0 20px;
 }
 
 @media only screen and (min-width: 1400px) {}

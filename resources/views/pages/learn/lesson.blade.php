@@ -27,6 +27,7 @@
             overflow: auto;
         }
     </style>
+    <link rel="stylesheet" href="{{ asset(mix('lib/tinymce/skins/ui/oxide/content.min.css')) }}">
 @endsection
 @section('head')
     <title>{{ $lesson->title }}</title>

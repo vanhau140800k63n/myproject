@@ -15,7 +15,8 @@ class ContentItemRepository extends BaseRepository implements ContentItemReposit
         $this->content_item = new ContentItem();
     }
 
-    public function addItem($data) {
+    public function addItem($data)
+    {
         $data_create = [
             'title' => $data['title'],
             'content' => $data['content'],
@@ -29,11 +30,13 @@ class ContentItemRepository extends BaseRepository implements ContentItemReposit
         return $this->content_item->create($data_create);
     }
 
-    public function getPostDetail($post_id) {
+    public function getPostDetail($post_id)
+    {
         return $this->content_item->where('post_id', $post_id)->orderBy('index', 'ASC')->get();
     }
 
-    public function updateItem($data) {
+    public function updateItem($data)
+    {
         $data_update = [
             'title' => $data['title'],
             'content' => $data['content'],
@@ -47,7 +50,8 @@ class ContentItemRepository extends BaseRepository implements ContentItemReposit
         return $this->content_item->where('id', $data['id'])->update($data_update);
     }
 
-    public function delItem($id) {
+    public function delItem($id)
+    {
         return $this->content_item->where('id', $id)->delete();
     }
 }

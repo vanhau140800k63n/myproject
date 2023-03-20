@@ -138,4 +138,9 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
             return '';
         }
     }
+
+    public function searchAdvanceLesson($key)
+    {
+        $result = $this->lesson->where('title', 'like', '%' . $key . '%');
+    }
 }

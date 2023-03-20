@@ -2263,6 +2263,9 @@ $(document).ready(function () {
       $('.search_result').hide();
     }
   });
+  $('.search_loading').click(function () {
+    location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'search/' + $('.search_input').val();
+  });
 });
 
 /***/ }),
