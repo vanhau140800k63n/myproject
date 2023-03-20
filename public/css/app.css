@@ -1020,7 +1020,7 @@ code {
     background: #d5d5dc;
     font-size: 15px !important;
     padding: 0 4px;
-    border-radius: 5px;
+    border-radius: 3px;
     font-family: monospace;
 }
 
@@ -1108,6 +1108,7 @@ code * {
     position: fixed;
     padding: 20px;
     width: inherit;
+    overflow-y: scroll;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1721,6 +1722,7 @@ code * {
     position: fixed;
     padding: 20px;
     width: inherit;
+    overflow-y: scroll;
 }
 
 .post_box_category_title {
