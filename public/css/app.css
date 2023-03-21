@@ -969,7 +969,7 @@ a {
 
 .lesson_content table {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 10px 0 25px 0;
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 1px;
     border: 1px solid #dddddd;
     overflow: hidden;
