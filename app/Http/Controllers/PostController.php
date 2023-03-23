@@ -156,4 +156,37 @@ class PostController extends Controller
 
         return redirect()->back();
     }
+
+    public function duplicatePost($id)
+    {
+        $post = $this->postRepository->getPostAdmin($id);
+
+        if ($post != null) {
+            $dataPost = [
+                'title' => $post->title,
+                'type' => $post->type,
+                'image' => $post->image,
+                'slug' => $post->slug,
+                'view' => $post->view,
+                'category' => $post->category
+            ];
+            $new_post = $this->postRepository->addPost($dataPost);
+
+            $post_detail = $this->contentItemRepository->getPostDetail($post->id);
+            foreach($post_detail as $item) {
+                $dataContent = [
+                    'title' => $item->title,
+                    'content' => $item->content,
+                    'type' => $item->type,
+                    'post_id' => $new_post->id,
+                    'index' => $item->index,
+                    'code' => $item->p_language_id,
+                    'compiler' => $item->compiler,
+                ];
+                $new_content = $this->contentItemRepository->addItem($dataContent);
+            }
+        }
+
+        return redirect()->back();
+    }
 }

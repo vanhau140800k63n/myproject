@@ -18,7 +18,7 @@
                                 <tr>
                                     <th width="10%"> ID </th>
                                     <th width="60%"> Title </th>
-                                    <th width="10%"> Số lượng </th>
+                                    <th width="10%"> Bản sao </th>
                                     <th width="10%"> Chi tiết </th>
                                     <th width="10%"> Thao tác </th>
                                 </tr>
@@ -28,7 +28,9 @@
                                     <tr>
                                         <td> {{ $post->id }} </td>
                                         <td> {{ $post->title }} </td>
-                                        <td> 0 </td>
+                                        <td> <a class="btn btn-info"
+                                            style="display: flex; align-items: center; justify-content: center;"
+                                            href="{{ route('admin.post.duplicate', ['id' => $post->id]) }}">Duplicate</a> </td>
                                         <td> <a class="btn btn-info"
                                                 style="display: flex; align-items: center; justify-content: center;"
                                                 href="{{ route('admin.post.detail', ['id' => $post->id]) }}">Chi tiết</a>
