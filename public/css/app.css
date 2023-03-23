@@ -1887,6 +1887,7 @@ code * {
     padding: 6px 25px;
     border: 1px solid #dddddd;
     font-size: 15px !important;
+    overflow: hidden;
 }
 
 .post_content th {
