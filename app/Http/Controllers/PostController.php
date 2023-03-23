@@ -44,7 +44,8 @@ class PostController extends Controller
     {
         $category_list = $this->categoryRepository->getListCategory();
         $course_list = $this->pLanguageRepository->getPLanguageHome();
-        return view('admin.pages.post.add', compact('course_list', 'category_list'));
+        $post_types = AdminConstants::POST_TYPE;
+        return view('admin.pages.post.add', compact('course_list', 'category_list', 'post_types'));
     }
 
     public function addPostInfoAdmin(Request $req)

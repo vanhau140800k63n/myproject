@@ -16,8 +16,11 @@
                     <div class="post_info" type="add">
                         <select class="post_type_select">
                             <option value='0'>Thể loại:</option>
-                            <option value='1'>Project</option>
-                            <option value='2'>Blog</option>
+                            @foreach ($post_types as $key => $post_type)
+                                @if (intval($key) === intval($post->type))
+                                    <option value="{{ $key }}" selected>{{ $post_type }}</option>
+                                @endif
+                            @endforeach
                         </select>
                         <input type="text" class="form-control post_title" style="color: #fff" placeholder="Tiêu đề">
                         <input type="text" class="form-control post_img" style="color: #fff" placeholder="Thêm ảnh">
