@@ -1884,10 +1884,11 @@ code * {
 }
 
 .post_content td {
-    padding: 6px 25px;
+    padding: 6px 15px;
     border: 1px solid #dddddd;
     font-size: 14px !important;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .post_content th {
