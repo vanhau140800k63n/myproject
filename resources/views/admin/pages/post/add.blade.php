@@ -17,9 +17,7 @@
                         <select class="post_type_select">
                             <option value='0'>Thể loại:</option>
                             @foreach ($post_types as $key => $post_type)
-                                @if (intval($key) === intval($post->type))
-                                    <option value="{{ $key }}" selected>{{ $post_type }}</option>
-                                @endif
+                                <option value="{{ $key }}" selected>{{ $post_type }}</option>
                             @endforeach
                         </select>
                         <input type="text" class="form-control post_title" style="color: #fff" placeholder="Tiêu đề">
