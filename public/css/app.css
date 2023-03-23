@@ -1880,13 +1880,13 @@ code * {
 }
 
 .post_content td * {
-    font-size: 15px !important;
+    font-size: 14px !important;
 }
 
 .post_content td {
     padding: 6px 25px;
     border: 1px solid #dddddd;
-    font-size: 15px !important;
+    font-size: 14px !important;
     overflow: hidden;
 }
 
@@ -1963,6 +1963,14 @@ code * {
     background: #000;
     left: -20px;
     top: 5px;
+}
+
+.api_list_title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #1e4d6c;
 }
 
 .post_info_author {

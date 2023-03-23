@@ -142,7 +142,8 @@ class PostController extends Controller
             $post_detail = $this->contentItemRepository->getPostDetail($post->id);
             $category_titles = $this->categoryRepository->getCategoryTitle(explode('-', $post->category));
             $author = $this->userRepository->getUserById($post->created_by);
-            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author'));
+            $posts = $this->postRepository->getPostList();
+            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'posts'));
         }
 
         throw new PageException();

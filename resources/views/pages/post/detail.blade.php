@@ -25,6 +25,10 @@
         .cm-scroller {
             overflow: auto;
         }
+
+        .home_post {
+            gap: 1rem 1rem !important;
+        }
     </style>
 @endsection
 @section('head')
@@ -39,7 +43,7 @@
             <div class="post_box_content_title">{{ $post->title }}</div>
             <div class="post_box_info">
                 <div class="post_info_attr">
-                    <div class="post_info_attr_date">{{ date_format($post->created_at,"H:i d/m/Y") }}</div>
+                    <div class="post_info_attr_date">{{ date_format($post->created_at, 'H:i d/m/Y') }}</div>
                     <div class="post_info_attr_view"><i class="fa-solid fa-eye"></i>{{ $post->view }}</div>
                     <div class="post_info_attr_comment"><i class="fa-solid fa-comments"></i> 0</div>
                     <div class="post_info_attr_bookmark"><i class="fa-solid fa-bookmark"></i> 0</div>
@@ -90,12 +94,35 @@
                     @endif
                 </div>
             @endforeach
+
+            <?php
+            $api_posts = \App\Models\Post::where('type', 3)->get();
+            ?>
+            @if ($api_posts->count() > 0)
+                <div class="api_list_title">Một số API khác</div>
+                <div class="home_post">
+                    @foreach ($api_posts as $post)
+                        <div class="home_post_item">
+                            <a class="home_post_content" href="{{ route('post.detail', ['slug' => $post->slug]) }}">
+                                <img class="home_post_img" src="{{ asset($post->image) }}">
+                                <div class="home_post_img_cover">
+                                    <button class="home_post_btn_show">Xem thêm</button>
+                                </div>
+                                <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $post->view }} lượt xem
+                                </div>
+                                <p class="home_post_item_title">{{ $post->title }}</p>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+            @endif
         </div>
         <div class="post_box_other">
             <div class="post_box_other_fixed">
                 <div class="post_info_author">
                     <img class="post_author_info_img" src="{{ asset($author->avata) }}">
-                    <a href="{{ route('user_detail', ['id' => $author->id]) }}" class="post_author_info_name"> {{ $author->last_name . ' ' . $author->first_name }} </a>
+                    <a href="{{ route('user_detail', ['id' => $author->id]) }}" class="post_author_info_name">
+                        {{ $author->last_name . ' ' . $author->first_name }} </a>
                     <button class="post_author_btn_follow">Theo dõi</button>
                 </div>
                 <div class="catalogue">
