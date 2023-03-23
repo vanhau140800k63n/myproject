@@ -24,7 +24,7 @@
                             <button class="home_post_btn_show">Xem thêm</button>
                         </div>
                         {{-- <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $post->view }} lượt xem</div> --}}
-                        <div class="home_post_img_title">{{ $lesson->title }}</div>
+                        {{-- <div class="home_post_img_title">{{ $lesson->title }}</div> --}}
                         <p class="home_post_item_title">{{ $lesson->title }}</p>
                     </a>
                     {{-- <a href="{{ route('user_detail', ['id' => $post->author_id]) }}" class="home_post_author">
