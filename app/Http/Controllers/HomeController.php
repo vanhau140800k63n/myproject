@@ -171,11 +171,16 @@ class HomeController extends Controller
 
         if ($search_posts->count() > 0) {
             $output .= '<div class="search_result_title">Bài viết</div>';
+            $index = 0;
             foreach ($search_posts as $post) {
+                ++$index;
                 $output .= '<a href="' . route('post.detail', ['slug' => $post->slug]) . '" class="search_result_content_item">
                     <img class="search_result_img" src="' . asset($post->image) . '">
                     <p class="search_result_name">' . $post->title . '</p>
                 </a>';
+                if($index == 5) {
+                    break;
+                }
             }
         }
 

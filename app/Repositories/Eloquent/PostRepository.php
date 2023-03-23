@@ -60,6 +60,6 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
 
     public function searchPost($key)
     {
-        return $this->post->where('title', 'like', '%' . $key . '%')->take(5)->get();
+        return $this->post->where('title', 'like', '%' . $key . '%')->get();
     }
 }
