@@ -36,7 +36,7 @@
             @foreach ($posts as $post)
                 <div class="home_post_item">
                     <a class="home_post_content" href="{{ route('post.detail', ['slug' => $post->slug]) }}">
-                        <img class="home_post_img" src="{{ $post->image }}">
+                        <img class="home_post_img" src="{{ asset($post->image) }}">
                         <div class="home_post_img_cover">
                             <button class="home_post_btn_show">Xem thêm</button>
                         </div>
