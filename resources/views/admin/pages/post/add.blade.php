@@ -15,9 +15,9 @@
                 <div>
                     <div class="post_info" type="add">
                         <select class="post_type_select">
-                            <option value='0'>Thể loại:</option>
+                            <option value='0' selected>Thể loại:</option>
                             @foreach ($post_types as $key => $post_type)
-                                <option value="{{ $key }}" selected>{{ $post_type }}</option>
+                                <option value="{{ $key }}">{{ $post_type }}</option>
                             @endforeach
                         </select>
                         <input type="text" class="form-control post_title" style="color: #fff" placeholder="Tiêu đề">
