@@ -96,7 +96,7 @@
             @endforeach
 
             <?php
-            $api_posts = \App\Models\Post::where('type', 3)->get();
+            $api_posts = \App\Models\Post::where('type', 3)->orderBy('title')->get();
             ?>
             @if ($api_posts->count() > 0)
                 <div class="api_list_title">Một số API khác</div>
