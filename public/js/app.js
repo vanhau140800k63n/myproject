@@ -2266,6 +2266,12 @@ $(document).ready(function () {
   $('.search_loading').click(function () {
     location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'search/' + $('.search_input').val();
   });
+  $('.search_input').keydown(function (event) {
+    var id = event.key || event.which || event.keyCode || 0;
+    if (id == 13 && $(this).val() != "") {
+      location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'search/' + $(this).val();
+    }
+  });
 });
 
 /***/ }),
