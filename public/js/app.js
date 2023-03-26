@@ -2232,7 +2232,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _domain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domain */ "./resources/js/domain.js");
 
 $(document).ready(function () {
-  $('.search_input').keyup(function () {
+  $('.search_input').keyup(function (event) {
     var key = $(this).val();
     if (key != '') {
       $('.search_result_box').html('');
@@ -2267,7 +2267,7 @@ $(document).ready(function () {
     location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'search/' + $('.search_input').val();
   });
   $('.search_input').keydown(function (event) {
-    var id = event.key || event.which || event.keyCode || 0;
+    var id = event.which;
     if (id == 13 && $(this).val() != "") {
       location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'search/' + $(this).val();
     }
