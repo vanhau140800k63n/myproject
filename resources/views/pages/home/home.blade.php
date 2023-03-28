@@ -262,10 +262,7 @@
                                         Framework<br>PHP, Javascript</h2>
                                 </div>
                                 <div class="wrap-hide">
-                                    <p data-w-id="59f15cc6-f7f7-b018-eeee-392bf201862d" class="subheading mod--courses"
-                                        style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                        Các khóa học của chúng tôi là các khóa học chuyên nghiệp có chất lượng
-                                        cao bao gồm một tập hợp các bài học, tài liệu thực hành.</p>
+                                   
                                 </div>
                             </div>
                             <div class="courses__columns">

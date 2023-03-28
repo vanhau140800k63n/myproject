@@ -893,6 +893,10 @@ a {
     box-shadow: rgb(0 0 0 / 16%) 0px 6px 5px;
 }
 
+.code_box {
+    margin: 10px 0;
+}
+
 .lesson_content_title {
     font-size: 19px !important;
     font-weight: 500;
