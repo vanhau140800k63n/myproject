@@ -309,7 +309,8 @@ a {
 .search_result_title {
     font-weight: 500;
     border-bottom: 1px solid #dadce1;
-    margin-top: 10px;
+    margin: 10px 0;
+    padding-bottom: 5px;
 }
 
 .search_result_img {
@@ -892,12 +893,6 @@ a {
     box-shadow: rgb(0 0 0 / 16%) 0px 6px 5px;
 }
 
-.code_box {
-    padding: 15px 25px;
-    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
-    border-radius: 5px;
-}
-
 .lesson_content_title {
     font-size: 19px !important;
     font-weight: 500;
@@ -1240,10 +1235,6 @@ code * {
 
     .lesson_box_content {
         padding: 30px 5px;
-    }
-
-    .lesson_content.code_box {
-        padding: 10px;
     }
 
     .lesson_content_title {
@@ -2095,10 +2086,6 @@ code * {
 
     .post_box_content {
         padding: 30px 5px;
-    }
-
-    .post_content.code_box {
-        padding: 10px;
     }
 
     .post_content_title {
