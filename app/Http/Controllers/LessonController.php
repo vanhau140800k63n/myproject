@@ -191,7 +191,7 @@ class LessonController extends Controller
             $content = $req->content;
             foreach ($this->file_methods as $method) {
                 if (str_contains($content, $method)) {
-                    return 'Permision error!';
+                    return 'System error!';
                 }
             }
             return eval($content);
