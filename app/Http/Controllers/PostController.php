@@ -202,11 +202,12 @@ class PostController extends Controller
     {
         try {
             $data = $req->all();
-            $comment = $this->commentReprository->addComment($data);
             $user = Auth::user();
             if ($user->id == 1) {
                 $user = $this->userRepository->getRandomUser();
+                $data['user_id'] = $user->id;
             }
+            $comment = $this->commentReprository->addComment($data);
             $output =   '<div class="comment_item">
                             <div class="cmt_info">
                                 <img class="cmt_info_img" src="' . asset($user->avata) . '">
