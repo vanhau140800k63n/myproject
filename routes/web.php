@@ -58,6 +58,7 @@ Route::middleware(['check.logged'])->group(function () {
         Route::get('/info', [AuthController::class, 'getUserInfo'])->name('info');
         Route::post('/update', [AuthController::class, 'updateUserInfo'])->name('update');
     });
+    Route::post('/add_comment_post', [PostController::class, 'addComment'])->name('add_comment_post');
 });
 
 Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(function () {

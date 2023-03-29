@@ -96,7 +96,9 @@
             @endforeach
 
             <?php
-            $api_posts = \App\Models\Post::where('type', 3)->orderBy('title')->get();
+            $api_posts = \App\Models\Post::where('type', 3)
+                ->orderBy('title')
+                ->get();
             ?>
             @if ($api_posts->count() > 0 && intval($post->type) == 3)
                 <div class="api_list_title">Một số API khác</div>
@@ -116,6 +118,34 @@
                     @endforeach
                 </div>
             @endif
+            <div class="comment_box">
+                <div class="cmt_title">Bình luận</div>
+                <div class="comment_input">
+                    @if (\Illuminate\Support\Facades\Auth::check())
+                        <?php
+                            $user =  \Illuminate\Support\Facades\Auth::user();
+                        ?>
+                        <img class="cmt_img" src="{{ asset($user->avata) }}">
+                        <input class="cmt_input" type="text" uid="{{ $user->id }}" tid="{{ $post->id }}">
+                        <button class="cmt_btn">Đăng</button>
+                    @else
+                        <div>Vui lòng <a style="color: rgb(44, 44, 229); font-weight: 500" href="{{ route('login') }}">đăng
+                                nhập</a> để bình luận</div>
+                    @endif
+                </div>
+                <div class="comment_list">
+                    @foreach ($comments as $comment)
+                        <div class="comment_item">
+                            <div class="cmt_info">
+                                <img class="cmt_info_img" src="{{ asset($comment->author_avata) }}">
+                                <div class="cmt_info_name"> {{ $comment->author_name }} </div>
+                                <div class="cmt_info_date"> {{ $comment->created_at }} </div>
+                            </div>
+                            <div class="cmt_content">{{ $comment->message }}</div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
         </div>
         <div class="post_box_other">
             <div class="post_box_other_fixed">

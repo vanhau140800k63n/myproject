@@ -72565,6 +72565,32 @@ $('.run_code').click(function () {
     }
   }
 });
+$('.cmt_btn').click(function () {
+  if ($('.cmt_input').val() == '') {
+    return false;
+  }
+  var _token = $('input[name="_token"]').val();
+  $.ajax({
+    url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "add_comment_post",
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    type: "POST",
+    dataType: 'json',
+    data: {
+      message: $('.cmt_input').val(),
+      user_id: $('.cmt_input').attr('uid'),
+      target_id: $('.cmt_input').attr('tid'),
+      type: 2,
+      _token: _token
+    }
+  }).done(function (data) {
+    $('.comment_list').html(data + $('.comment_list').html());
+    return true;
+  }).fail(function (e) {
+    return false;
+  });
+});
 })();
 
 /******/ })()

@@ -4,5 +4,6 @@ namespace App\Repositories;
 
 interface CommentRepositoryInterface
 {
-   
+   public function getPostComments($id);
+   public function addComment($data);
 }
