@@ -72585,6 +72585,7 @@ $('.cmt_btn').click(function () {
       _token: _token
     }
   }).done(function (data) {
+    $('.cmt_input').val('');
     $('.comment_list').html(data + $('.comment_list').html());
     return true;
   }).fail(function (e) {
