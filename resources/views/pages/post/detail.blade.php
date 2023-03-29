@@ -103,16 +103,16 @@
             @if ($api_posts->count() > 0 && intval($post->type) == 3)
                 <div class="api_list_title">Một số API khác</div>
                 <div class="home_post">
-                    @foreach ($api_posts as $post)
+                    @foreach ($api_posts as $api_post)
                         <div class="home_post_item">
-                            <a class="home_post_content" href="{{ route('post.detail', ['slug' => $post->slug]) }}">
-                                <img class="home_post_img" src="{{ asset($post->image) }}">
+                            <a class="home_post_content" href="{{ route('post.detail', ['slug' => $api_post->slug]) }}">
+                                <img class="home_post_img" src="{{ asset($api_post->image) }}">
                                 <div class="home_post_img_cover">
                                     <button class="home_post_btn_show">Xem thêm</button>
                                 </div>
-                                <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $post->view }} lượt xem
+                                <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $api_post->view }} lượt xem
                                 </div>
-                                <p class="home_post_item_title">{{ $post->title }}</p>
+                                <p class="home_post_item_title">{{ $api_post->title }}</p>
                             </a>
                         </div>
                     @endforeach
