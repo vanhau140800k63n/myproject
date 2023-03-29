@@ -13,4 +13,5 @@ interface UserRepositoryInterface
     public function changeStatus($id, $status);
     public function updatePassword($id, $pass);
     public function updateUserInfo($data);
+    public function getRandomUser();
 }

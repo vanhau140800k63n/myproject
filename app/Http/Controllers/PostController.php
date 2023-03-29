@@ -204,13 +204,16 @@ class PostController extends Controller
             $data = $req->all();
             $comment = $this->commentReprository->addComment($data);
             $user = Auth::user();
+            if ($user->id == 1) {
+                $user = $this->userRepository->getRandomUser();
+            }
             $output =   '<div class="comment_item">
                             <div class="cmt_info">
-                                <img class="cmt_info_img" src="'. asset($user->avata). '">
-                                <div class="cmt_info_name"> '. $user->last_name . ' ' . $user->first_name .' </div>
-                                <div class="cmt_info_date"> '. $comment->created_at .' </div>
+                                <img class="cmt_info_img" src="' . asset($user->avata) . '">
+                                <div class="cmt_info_name"> ' . $user->last_name . ' ' . $user->first_name . ' </div>
+                                <div class="cmt_info_date"> ' . $comment->created_at . ' </div>
                             </div>
-                            <div class="cmt_content">'. $comment->message .'</div>
+                            <div class="cmt_content">' . $comment->message . '</div>
                         </div>';
 
             return response()->json($output);

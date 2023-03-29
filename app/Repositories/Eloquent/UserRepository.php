@@ -127,4 +127,8 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
     {
         return $this->user->where('id', Auth::id())->update($data);
     }
+
+    public function getRandomUser() {
+        return $this->user->inRandomOrder()->first();
+    }
 }
