@@ -16,6 +16,7 @@ class LessonController extends Controller
     private $pLanguageRepository;
     private $lessonRepository;
     private $lessonItemRepository;
+    private $file_methods = ['fopen', 'fclose', 'fread', 'fwrite', 'file_exists', 'filesize', 'unlink', 'copy', 'rename', 'mkdir', 'opendir', 'readdir', 'closedir', 'is_readable', 'is_writable', 'exec', 'shell_exec'];
 
     public function __construct(UserRepositoryInterface $userRepository, PLanguageRepositoryInterface $pLanguageRepository, LessonRepositoryInterface $lessonRepository, LessonItemRepositoryInterface $lessonItemRepository)
     {
@@ -187,10 +188,16 @@ class LessonController extends Controller
     public function buildCodePHP(Request $req)
     {
         try {
-            return eval($req->content);
+            $content = $req->content;
+            foreach ($this->file_methods as $method) {
+                if (str_contains($content, $method)) {
+                    return 'Permision error!';
+                }
+            }
+            return eval($content);
         } catch (Throwable $ex) {
             $message = $ex->getMessage();
-            if(str_contains($message, 'App\Http\Controllers\LessonController')) {
+            if (str_contains($message, 'App\Http\Controllers\LessonController')) {
                 $message = str_replace('App\Http\Controllers\LessonController', '', $message);
             }
             return $message;
