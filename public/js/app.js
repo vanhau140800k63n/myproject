@@ -2287,6 +2287,7 @@ $(document).ready(function () {
   $('.home_post_img_cover').height($('.home_post_img').height());
   if (navigator.userAgent.indexOf('Mac OS X') == -1) {
     $(".lesson_box_category_fixed").addClass("pc_scroll");
+    $(".lesson_box_other_fixed").addClass("pc_scroll");
     $("body").addClass("pc_scroll");
     $(".cm-scroller").addClass("pc_scroll");
     $(".post_box_other_fixed").addClass("pc_scroll");
