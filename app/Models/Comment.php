@@ -14,6 +14,7 @@ class Comment extends Model
         'message',
         'user_id',
         'target_id',
-        'type'
+        'type',
+        'created_at'
     ];
 }
