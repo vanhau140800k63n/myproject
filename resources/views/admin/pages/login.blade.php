@@ -13,6 +13,7 @@
                         ĐĂNG NHẬP
                     </span>
 
+                    <input name="prev_url" value="{{ $prev_url }}" style="display: none">
                     <div class="wrap-input">
                         <span class="label-input">Email</span>
                         <input class="input" type="text" name="email" placeholder="Nhập emai">

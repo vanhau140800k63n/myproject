@@ -27,14 +27,15 @@ class AuthController extends Controller
         if (Auth::check()) {
             return redirect()->route('admin.dashboard');
         } else {
-            return view('admin.pages.login');
+            $prev_url = url()->previous();
+            return view('admin.pages.login', compact('prev_url'));
         }
     }
 
     public function getLogout()
     {
         Auth::logout();
-        return redirect()->route('login');
+        return redirect()->route('home');
     }
 
     public function getRegister()
@@ -100,6 +101,9 @@ class AuthController extends Controller
 
         $credentials = array('email' => $req->email, 'password' => $req->password);
         if (Auth::attempt($credentials)) {
+            if ($req->has('prev_url')) {
+                return redirect()->to($req->prev_url);
+            }
             return redirect()->route('home');
         } else {
             return redirect()->back()->with('alert', 'Thông tin đăng nhập không đúng!');
