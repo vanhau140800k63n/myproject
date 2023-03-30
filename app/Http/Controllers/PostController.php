@@ -203,16 +203,24 @@ class PostController extends Controller
         try {
             $data = $req->all();
             $user = Auth::user();
+            $image = '';
+
             if ($user->id == 1) {
                 $user = $this->userRepository->getRandomUser();
                 $data['user_id'] = $user->id;
+                if ($req->image != '') {
+                    $image = $req->image;
+                    $this->userRepository->updateUser($user->id, ['avata' => $image]);
+                }
                 $rand_time = mt_rand(time() - 5184000, time());
                 $data['created_at'] =  date("Y-m-d H:i:s", $rand_time);
             }
+            $author_image = $image == '' ? asset($user->avata) : $image;
+
             $comment = $this->commentReprository->addComment($data);
             $output =   '<div class="comment_item">
                             <div class="cmt_info">
-                                <img class="cmt_info_img" src="' . asset($user->avata) . '">
+                                <img class="cmt_info_img" src="' . $author_image . '">
                                 <div class="cmt_info_name"> ' . $user->last_name . ' ' . $user->first_name . ' </div>
                                 <div class="cmt_info_date"> ' . $comment->created_at . ' </div>
                             </div>

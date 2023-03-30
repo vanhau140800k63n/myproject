@@ -178,7 +178,7 @@ class HomeController extends Controller
                     <img class="search_result_img" src="' . asset($post->image) . '">
                     <p class="search_result_name">' . $post->title . '</p>
                 </a>';
-                if($index == 5) {
+                if ($index == 5) {
                     break;
                 }
             }
@@ -193,7 +193,8 @@ class HomeController extends Controller
         return view('pages.game.design', compact('course_list'));
     }
 
-    public function search($key) {
+    public function search($key)
+    {
         $count = 16;
         $lessons = $this->lessonRepository->searchLesson($key, $count);
         $posts = $this->postRepository->searchPost($key);
