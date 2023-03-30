@@ -206,6 +206,8 @@ class PostController extends Controller
             if ($user->id == 1) {
                 $user = $this->userRepository->getRandomUser();
                 $data['user_id'] = $user->id;
+                $rand_time = mt_rand(time() - 5184000, time());
+                $data['created_at'] =  date("Y-m-d H:i:s", $rand_time);
             }
             $comment = $this->commentReprository->addComment($data);
             $output =   '<div class="comment_item">
