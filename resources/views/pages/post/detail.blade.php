@@ -52,7 +52,7 @@
                     <div class="post_info_category_title">Từ khóa:</div>
                     <?php $category_titles = explode(',', $category_titles); ?>
                     @foreach ($category_titles as $category_title)
-                        <div class="post_info_category_item"> {{ $category_title }}</div>
+                        <a href="{{ route('search', $category_title) }}" class="post_info_category_item"> {{ $category_title }}</a>
                     @endforeach
                 </div>
             </div>
