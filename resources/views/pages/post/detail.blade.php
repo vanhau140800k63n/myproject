@@ -31,6 +31,7 @@
         }
     </style>
     <link rel="stylesheet" href="{{ asset(mix('lib/tinymce/skins/ui/oxide/content.min.css')) }}">
+    <link rel="stylesheet" href="{{ asset(mix('css/update.css')) }}">
 @endsection
 @section('head')
     <title>{{ $post->title }}</title>
