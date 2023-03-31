@@ -30,6 +30,7 @@
             gap: 1rem 1rem !important;
         }
     </style>
+    <link rel="stylesheet" href="{{ asset(mix('lib/tinymce/skins/ui/oxide/content.min.css')) }}">
 @endsection
 @section('head')
     <title>{{ $post->title }}</title>
@@ -52,7 +53,8 @@
                     <div class="post_info_category_title">Từ khóa:</div>
                     <?php $category_titles = explode(',', $category_titles); ?>
                     @foreach ($category_titles as $category_title)
-                        <a href="{{ route('search', $category_title) }}" class="post_info_category_item"> {{ $category_title }}</a>
+                        <a href="{{ route('search', $category_title) }}" class="post_info_category_item">
+                            {{ $category_title }}</a>
                     @endforeach
                 </div>
             </div>
@@ -123,7 +125,7 @@
                 <div class="comment_input">
                     @if (\Illuminate\Support\Facades\Auth::check())
                         <?php
-                            $user =  \Illuminate\Support\Facades\Auth::user();
+                        $user = \Illuminate\Support\Facades\Auth::user();
                         ?>
                         <img class="cmt_img" src="{{ asset($user->avata) }}">
                         <input class="cmt_input" type="text" uid="{{ $user->id }}" tid="{{ $post->id }}">

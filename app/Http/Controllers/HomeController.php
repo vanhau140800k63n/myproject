@@ -35,12 +35,10 @@ class HomeController extends Controller
         return view('pages.home.home')->with(['p_languages' => $pLanguages, 'post_list' => $post_list]);
     }
 
-    public function submit(Request $req)
+    public function test(Request $req)
     {
-        $pLang = PLanguage::where('name', $req->language)->first();
-        $pLang->home_content = $req->text;
-        $pLang->save();
-        return 1;
+        $content = file_get_contents('https://viblo.asia/p/cach-su-dung-file-api-trong-html-5-gDVK2nVeKLj');
+        return view('test', compact('content'));
     }
 
     public function updateMeta(Request $req)
