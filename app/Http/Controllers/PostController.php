@@ -61,11 +61,11 @@ class PostController extends Controller
             $data['slug'] = $this->makeSlug($data['title']);
             $category_list = explode(',', $data['category']);
             $data['category'] = $this->categoryRepository->updateCategory($category_list);
-            if (isset($req->image) && $req->image != null && $req->image != '') {
+            if (isset($req->image) && $req->image != null && $req->image != '' && $req->image != 'img/common.jpg') {
                 $data['image'] = $this->saveImage($req->image, $data['slug']);
             }
             $post = $this->postRepository->addPost($data);
-
+            $update_post = $this->postRepository->updatePost(['id' => $post->id, 'slug' => $data['slug'] . '-' . $post->id]);
             if ($post !== false) {
                 return response()->json($post);
             }
@@ -116,7 +116,7 @@ class PostController extends Controller
             $data['slug'] = $this->makeSlug($data['title']) . '-' . $req->id;
             $category_list = explode(',', $data['category']);
             $data['category'] = $this->categoryRepository->updateCategory($category_list);
-            if ($data['image'] != $post->image) {
+            if ($data['image'] != $post->image && $data['image'] != 'img/common.jpg') {
                 File::delete($post->image);
                 $data['image'] = $this->saveImage($data['image'], $data['slug']);
             }
@@ -233,7 +233,8 @@ class PostController extends Controller
         }
     }
 
-    public function getContentUrl(Request $req) {
+    public function getContentUrl(Request $req)
+    {
         $content = file_get_contents($req->url);
         return response()->json($content);
     }
