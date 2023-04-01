@@ -11,9 +11,8 @@ class Content extends Model
 
     protected $table = 'content';
     protected $fillable = [
-        'title',
-        'sub_title',
-        'course_id',
-        'slug',
+        'type',
+        'content',
+        'status'
     ];
 }

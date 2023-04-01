@@ -14,4 +14,24 @@ class ContentRepository extends BaseRepository implements ContentRepositoryInter
     {
         $this->content = new Content();
     }
+
+    public function findContentUrl($url)
+    {
+        return $this->content->where('content', $url)->first();
+    }
+
+    public function createContentUrl($data)
+    {
+        return $this->content->create($data);
+    }
+
+    public function getContentUnPublicUrl()
+    {
+        return $this->content->where('type', 1)->where('status', 0)->first();
+    }
+
+    public function updateContentUrl($data, $id)
+    {
+        return $this->content->where('id', $id)->update($data);
+    }
 }

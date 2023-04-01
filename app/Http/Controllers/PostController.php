@@ -7,6 +7,7 @@ use App\Exceptions\PageException;
 use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\CommentRepositoryInterface;
 use App\Repositories\ContentItemRepositoryInterface;
+use App\Repositories\ContentRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
@@ -23,6 +24,7 @@ class PostController extends Controller
     private $contentItemRepository;
     private $userRepository;
     private $commentReprository;
+    private $contentRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
@@ -30,7 +32,8 @@ class PostController extends Controller
         PostRepositoryInterface $postRepository,
         ContentItemRepositoryInterface $contentItemRepository,
         CategoryRepositoryInterface $categoryRepository,
-        CommentRepositoryInterface $commentReprository
+        CommentRepositoryInterface $commentReprository,
+        ContentRepositoryInterface $contentRepository
     ) {
         $this->categoryRepository = $categoryRepository;
         $this->pLanguageRepository = $pLanguageRepository;
@@ -38,6 +41,7 @@ class PostController extends Controller
         $this->contentItemRepository = $contentItemRepository;
         $this->userRepository = $userRepository;
         $this->commentReprository = $commentReprository;
+        $this->contentRepository = $contentRepository;
     }
 
     public function getPostListAdmin()
@@ -237,5 +241,36 @@ class PostController extends Controller
     {
         $content = file_get_contents($req->url);
         return response()->json($content);
+    }
+
+    public function autoAddUrl()
+    {
+        return view('admin.pages.post.auto_add_url');
+    }
+
+    public function autoAddPost()
+    {
+        $content = $this->contentRepository->getContentUnPublicUrl();
+        if($content == null) {
+            return 'done';
+        }
+        $update_content = $this->contentRepository->updateContentUrl(['status' => 1], $content->id);
+        return view('admin.pages.post.auto_add_post', compact('content'));
+    }
+
+    public function autoUrlToDb(Request $req)
+    {
+        $content = $this->contentRepository->findContentUrl($req->url);
+        if ($content == null) {
+            $data = [
+                'content' => $req->url,
+                'type' => 1,
+                'status' => 0,
+            ];
+
+            $content = $this->contentRepository->createContentUrl($data);
+        }
+
+        return true;
     }
 }

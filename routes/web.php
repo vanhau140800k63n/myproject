@@ -91,5 +91,8 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::get('/del', [PostController::class, 'delPostAdmin'])->name('del');
         Route::get('/duplicate/{id}', [PostController::class, 'duplicatePost'])->name('duplicate');
         Route::post('/get_content_url', [PostController::class, 'getContentUrl'])->name('get_content_url');
+        Route::get('/auto_add_url', [PostController::class, 'autoAddUrl'])->name('auto_add_url');
+        Route::get('/auto_add_post', [PostController::class, 'autoAddPost'])->name('auto_add_post');
+        Route::post('/add_url_to_db', [PostController::class, 'autoUrlToDb'])->name('add_url_to_db');
     });
 });

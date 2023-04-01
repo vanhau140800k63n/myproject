@@ -6,10 +6,12 @@ use App\Repositories\ActionRepositoryInterface;
 use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\CommentRepositoryInterface;
 use App\Repositories\ContentItemRepositoryInterface;
+use App\Repositories\ContentRepositoryInterface;
 use App\Repositories\Eloquent\ActionRepository;
 use App\Repositories\Eloquent\CategoryRepository;
 use App\Repositories\Eloquent\CommentRepository;
 use App\Repositories\Eloquent\ContentItemRepository;
+use App\Repositories\Eloquent\ContentRepository;
 use App\Repositories\Eloquent\LessonItemRepository;
 use App\Repositories\Eloquent\LessonRepository;
 use App\Repositories\Eloquent\PLanguageRepository;
@@ -57,6 +59,9 @@ class AppServiceProvider extends ServiceProvider
         });
         $this->app->singleton(ActionRepositoryInterface::class, function () {
             return new ActionRepository();
+        });
+        $this->app->singleton(ContentRepositoryInterface::class, function () {
+            return new ContentRepository();
         });
     }
 

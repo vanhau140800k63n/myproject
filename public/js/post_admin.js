@@ -30052,6 +30052,7 @@ $(document).ready(function () {
     cpp: (0,_codemirror_lang_cpp__WEBPACK_IMPORTED_MODULE_6__.cpp)()
   };
   var view = {};
+  var check_auto = $('.content-wrapper').hasClass('auto_add_post');
   $('.post_btn_save').click(function () {
     var post_type = $('.post_type_select').val();
     if (post_type == 0) {
@@ -30179,7 +30180,10 @@ $(document).ready(function () {
         }).done(function (data) {
           ++index_form;
           if (index_form == post_content_form_length) {
-            if ($('.post_info').attr('type') == 'add') {
+            if (check_auto) {
+              location.reload();
+            } else if ($('.post_info').attr('type') == 'add') {
+              return false;
               location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'admin/post';
             } else {
               location.reload();
@@ -30326,8 +30330,13 @@ $(document).ready(function () {
                 $('.url_content canvas').remove();
                 $('.url_content p').prepend('&nbsp;&nbsp;&nbsp;&nbsp;');
                 $('.post_content').html('<div class="post_content_form" type="text" status="new"><div class="post_content_form_info"><input type="text" class="form-control post_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new"><div class="post_content_form_type">text</div><button class="post_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><textarea id="url_content" name="description"></textarea></div>');
+                if (check_auto) {
+                  setTimeout(function () {
+                    $('.post_btn_save').click();
+                  }, 2000);
+                }
                 return _context.abrupt("return", true);
-              case 13:
+              case 14:
               case "end":
                 return _context.stop();
             }
@@ -30341,6 +30350,9 @@ $(document).ready(function () {
       return false;
     });
   });
+  if (check_auto) {
+    $('.content_url_get').click();
+  }
 });
 })();
 
