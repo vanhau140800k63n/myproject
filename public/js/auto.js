@@ -128,7 +128,7 @@ $(document).ready(function () {
   }
   setInterval(function () {
     addUrl(page_url_index++);
-  }, 20000);
+  }, 8000);
 });
 })();
 
