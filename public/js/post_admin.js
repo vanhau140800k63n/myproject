@@ -30358,6 +30358,9 @@ $(document).ready(function () {
         return _ref.apply(this, arguments);
       };
     }()).fail(function (e) {
+      if (check_auto) {
+        location.reload();
+      }
       return false;
     });
   });
