@@ -30053,7 +30053,14 @@ $(document).ready(function () {
   };
   var view = {};
   var check_auto = $('.content-wrapper').hasClass('auto_add_post');
+  var check_add_post = true;
   $('.post_btn_save').click(function () {
+    if (check_auto && !check_add_post) {
+      return false;
+    }
+    check_add_post = false;
+    console.log(1);
+    return false;
     var post_type = $('.post_type_select').val();
     if (post_type == 0) {
       $('.post_save_alert').css('background-color', '#dd4545');
