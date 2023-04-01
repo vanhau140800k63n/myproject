@@ -25,6 +25,8 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
     {
         return $this->post->selectRaw('post.*, CONCAT(users.last_name, " ", users.first_name) as author_name, users.avata as author_avata, users.id as author_id')
             ->join('users', 'post.created_by', '=', 'users.id')
+            ->inRandomOrder()
+            ->take(30)
             ->get();
     }
 
