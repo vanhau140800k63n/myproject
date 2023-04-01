@@ -30322,12 +30322,12 @@ $(document).ready(function () {
                 $('.post_category').val(tag.slice(0, -1));
                 $('.url_content').html($('.md-contents').html());
                 $('.url_content button').remove();
-                $('.url_content img').remove();
+                // $('.url_content img').remove();
                 $('.url_content canvas').remove();
                 $('.url_content p').prepend('&nbsp;&nbsp;&nbsp;&nbsp;');
                 $('.post_content').html('<div class="post_content_form" type="text" status="new"><div class="post_content_form_info"><input type="text" class="form-control post_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new"><div class="post_content_form_type">text</div><button class="post_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><textarea id="url_content" name="description"></textarea></div>');
                 return _context.abrupt("return", true);
-              case 14:
+              case 13:
               case "end":
                 return _context.stop();
             }
