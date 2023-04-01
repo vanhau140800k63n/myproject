@@ -14,6 +14,11 @@
                 </div>
                 <div>
                     <div class="post_info" type="add">
+                        <input type="text" class="form-control content_url" style="color: #fff; width: 80%; margin-bottom:20px" placeholder="Url">
+                        <button class="content_url_get btn btn-primary" style="width: 15%; margin-bottom:20px">
+                            Get
+                        </button>
+                        <div class="url_content" style="display: none"></div>
                         <select class="post_type_select">
                             <option value='0' selected>Thể loại:</option>
                             @foreach ($post_types as $key => $post_type)

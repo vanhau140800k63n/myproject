@@ -232,4 +232,9 @@ class PostController extends Controller
             return response()->json(false);
         }
     }
+
+    public function getContentUrl(Request $req) {
+        $content = file_get_contents($req->url);
+        return response()->json($content);
+    }
 }

@@ -90,5 +90,6 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::get('/detail/{id}', [PostController::class, 'postDetailAdmin'])->name('detail');
         Route::get('/del', [PostController::class, 'delPostAdmin'])->name('del');
         Route::get('/duplicate/{id}', [PostController::class, 'duplicatePost'])->name('duplicate');
+        Route::post('/get_content_url', [PostController::class, 'getContentUrl'])->name('get_content_url');
     });
 });
