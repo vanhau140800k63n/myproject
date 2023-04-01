@@ -2328,6 +2328,9 @@ $(document).ready(function () {
     }, 2000);
   });
   $('.game_design .ͼ1.cm-editor').css('height', $('.game_creen').height());
+  if ($('img').attr('data-full-src') != undefined) {
+    $('img').attr('src', $('img').attr('data-full-src'));
+  }
 });
 
 /***/ }),
