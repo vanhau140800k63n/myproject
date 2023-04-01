@@ -30306,6 +30306,7 @@ $(document).ready(function () {
       }
     }).done( /*#__PURE__*/function () {
       var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(data) {
+        var tag;
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -30313,7 +30314,12 @@ $(document).ready(function () {
                 $('.url_content').html(data);
                 $('.post_img').val('img/common.jpg');
                 $('.post_view').val(500 + Math.floor(Math.random() * 9999) + 1);
-                $('.post_title').val($('.article-content__title').html());
+                $('.post_title').val($('.article-content__title').html().trim());
+                tag = '';
+                $('.el-tag').each(function () {
+                  tag += $(this).text().trim() + ',';
+                });
+                $('.post_category').val(tag.slice(0, -1));
                 $('.url_content').html($('.md-contents').html());
                 $('.url_content button').remove();
                 $('.url_content img').remove();
@@ -30321,7 +30327,7 @@ $(document).ready(function () {
                 $('.url_content p').prepend('&nbsp;&nbsp;&nbsp;&nbsp;');
                 $('.post_content').html('<div class="post_content_form" type="text" status="new"><div class="post_content_form_info"><input type="text" class="form-control post_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new"><div class="post_content_form_type">text</div><button class="post_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><textarea id="url_content" name="description"></textarea></div>');
                 return _context.abrupt("return", true);
-              case 11:
+              case 14:
               case "end":
                 return _context.stop();
             }
