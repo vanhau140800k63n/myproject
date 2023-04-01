@@ -43,3 +43,8 @@ h1 {
     margin: 40px 0 20px;
     font-weight: 600;
 }
+
+iframe {
+    width: 100%;
+    min-height: 300px;
+}
