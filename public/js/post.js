@@ -72630,6 +72630,9 @@ $('.cmt_btn').click( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRu
     }
   }, _callee);
 })));
+$('.article-img').attr('src', $('.article-img').attr('data-full-src'));
+$('.article-img').attr('width', '');
+$('.article-img').attr('height', '');
 })();
 
 /******/ })()

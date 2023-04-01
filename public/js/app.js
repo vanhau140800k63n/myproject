@@ -2328,11 +2328,6 @@ $(document).ready(function () {
     }, 2000);
   });
   $('.game_design .ͼ1.cm-editor').css('height', $('.game_creen').height());
-  $('img').each(function () {
-    if ($(this).attr('data-full-src') != undefined) {
-      $(this).attr('src', $('img').attr('data-full-src'));
-    }
-  });
 });
 
 /***/ }),
