@@ -18,7 +18,7 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
 
     public function getPostList()
     {
-        return $this->post->all();
+        return $this->post->orderBy('updated_at', 'desc')->get();
     }
 
     public function getPostHome()
