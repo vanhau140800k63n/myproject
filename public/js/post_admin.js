@@ -30059,8 +30059,6 @@ $(document).ready(function () {
       return false;
     }
     check_add_post = false;
-    console.log(1);
-    return false;
     var post_type = $('.post_type_select').val();
     if (post_type == 0) {
       $('.post_save_alert').css('background-color', '#dd4545');
