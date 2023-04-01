@@ -83,7 +83,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _domain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domain */ "./resources/js/domain.js");
 
 $(document).ready(function () {
-  var page_url_index = 300;
+  var page_url_index = 370;
   function addUrl(p_url_index) {
     var _token = $('input[name="_token"]').val();
     $.ajax({
@@ -128,7 +128,7 @@ $(document).ready(function () {
   }
   setInterval(function () {
     addUrl(page_url_index++);
-  }, 8000);
+  }, 10000);
 });
 })();
 
