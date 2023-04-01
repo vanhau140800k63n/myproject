@@ -30202,10 +30202,16 @@ $(document).ready(function () {
           }
           return false;
         }).fail(function (e) {
+          if (check_auto) {
+            location.reload();
+          }
           return false;
         });
       });
     }).fail(function (e) {
+      if (check_auto) {
+        location.reload();
+      }
       return false;
     });
   });

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\PLanguage;
+use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
@@ -15,17 +16,20 @@ class HomeController extends Controller
     private $pLanguageRepository;
     private $postRepository;
     private $lessonRepository;
+    private $categoryRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
         PLanguageRepositoryInterface $pLanguageRepository,
         PostRepositoryInterface $postRepository,
-        LessonRepositoryInterface $lessonRepository
+        LessonRepositoryInterface $lessonRepository,
+        CategoryRepositoryInterface $categoryRepository
     ) {
         $this->userRepository = $userRepository;
         $this->pLanguageRepository = $pLanguageRepository;
         $this->postRepository = $postRepository;
         $this->lessonRepository = $lessonRepository;
+        $this->categoryRepository = $categoryRepository;
     }
 
     public function getHomePage()
@@ -195,7 +199,8 @@ class HomeController extends Controller
     {
         $count = 16;
         $lessons = $this->lessonRepository->searchLesson($key, $count);
-        $posts = $this->postRepository->searchPost($key);
+        $categories = $this->categoryRepository->getCategorySearch($key);
+        $posts = $this->postRepository->searchPostRaw($key, $categories);
 
         return view('pages.search.result', compact('lessons', 'posts', 'key'));
     }
