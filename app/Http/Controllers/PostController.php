@@ -153,8 +153,16 @@ class PostController extends Controller
             $category_titles = $this->categoryRepository->getCategoryTitle(explode('-', $post->category));
             $author = $this->userRepository->getUserById($post->created_by);
             $posts = $this->postRepository->getPostList();
+            $categories = explode(' ', $post->category);
+            $raw = 'title like "%' . $slug . '%"';
+            foreach ($categories as $category) {
+                if ($category != '') {
+                    $raw .= ' or category like "%-' . $category . '%"' .  ' or category like "%-' . $category . '-%"' . ' or category like "%' . $category . '-%"';
+                }
+            }
+            $posts_related = $this->postRepository->searchPostRaw($raw);
             $comments = $this->commentReprository->getPostComments($post->id);
-            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'posts', 'comments'));
+            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'posts', 'comments', 'posts_related'));
         }
 
         throw new PageException();
@@ -251,7 +259,7 @@ class PostController extends Controller
     public function autoAddPost()
     {
         $content = $this->contentRepository->getContentUnPublicUrl();
-        if($content == null) {
+        if ($content == null) {
             return 'done';
         }
         $update_content = $this->contentRepository->updateContentUrl(['status' => 1], $content->id);

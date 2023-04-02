@@ -65,12 +65,8 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
         return $this->post->where('title', 'like', '%' . $key . '%')->get();
     }
 
-    public function searchPostRaw($key, $categories)
+    public function searchPostRaw($raw)
     {
-        $raw = 'title like "%' . $key . '%"';
-        foreach($categories as $category) {
-            $raw .= ' or category like "%-' . $category->id . '%"' .  ' or category like "%-' . $category->id . '-%"' . ' or category like "%' . $category->id . '-%"';
-        }
         return $this->post->whereRaw($raw)->get();
     }
 }

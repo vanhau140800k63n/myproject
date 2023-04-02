@@ -54,9 +54,9 @@
                     <div class="post_info_category_title">Từ khóa:</div>
                     <?php $category_titles = explode(',', $category_titles); ?>
                     @foreach ($category_titles as $category_title)
-                        @if($category_title != '')
-                        <a href="{{ route('search', $category_title) }}" class="post_info_category_item">
-                            {{ $category_title }}</a>
+                        @if ($category_title != '')
+                            <a href="{{ route('search', $category_title) }}" class="post_info_category_item">
+                                {{ $category_title }}</a>
                         @endif
                     @endforeach
                 </div>
@@ -105,24 +105,6 @@
                 ->orderBy('title')
                 ->get();
             ?>
-            @if ($api_posts->count() > 0 && intval($post->type) == 3)
-                <div class="api_list_title">Một số API khác</div>
-                <div class="home_post">
-                    @foreach ($api_posts as $api_post)
-                        <div class="home_post_item">
-                            <a class="home_post_content" href="{{ route('post.detail', ['slug' => $api_post->slug]) }}">
-                                <img class="home_post_img" src="{{ asset($api_post->image) }}">
-                                <div class="home_post_img_cover">
-                                    <button class="home_post_btn_show">Xem thêm</button>
-                                </div>
-                                <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $api_post->view }} lượt xem
-                                </div>
-                                <p class="home_post_item_title">{{ $api_post->title }}</p>
-                            </a>
-                        </div>
-                    @endforeach
-                </div>
-            @endif
             <div class="comment_box">
                 <div class="cmt_title">Bình luận</div>
                 <div class="comment_input">
@@ -151,6 +133,44 @@
                     @endforeach
                 </div>
             </div>
+
+            @if ($api_posts->count() > 0 && intval($post->type) == 3)
+                <div class="api_list_title">Một số API khác</div>
+                <div class="home_post">
+                    @foreach ($api_posts as $api_post)
+                        <div class="home_post_item">
+                            <a class="home_post_content" href="{{ route('post.detail', ['slug' => $api_post->slug]) }}">
+                                <img class="home_post_img" src="{{ asset($api_post->image) }}">
+                                <div class="home_post_img_cover">
+                                    <button class="home_post_btn_show">Xem thêm</button>
+                                </div>
+                                <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $api_post->view }} lượt xem
+                                </div>
+                                <p class="home_post_item_title">{{ $api_post->title }}</p>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+            @endif
+
+            @if ($posts_related->count() > 0 && intval($post->type) != 3)
+                <div class="api_list_title">Một số bài viết liên quan</div>
+                <div class="home_post">
+                    @foreach ($posts_related as $related_post)
+                        <div class="home_post_item">
+                            <a class="home_post_content" href="{{ route('post.detail', ['slug' => $related_post->slug]) }}">
+                                <img class="home_post_img" src="{{ asset($related_post->image) }}">
+                                <div class="home_post_img_cover">
+                                    <button class="home_post_btn_show">Xem thêm</button>
+                                </div>
+                                <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $related_post->view }} lượt xem
+                                </div>
+                                <p class="home_post_item_title">{{ $related_post->title }}</p>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+            @endif
         </div>
         <div class="post_box_other">
             <div class="post_box_other_fixed">

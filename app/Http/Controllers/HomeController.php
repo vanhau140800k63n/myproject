@@ -207,7 +207,11 @@ class HomeController extends Controller
         $count = 16;
         $lessons = $this->lessonRepository->searchLesson($key, $count);
         $categories = $this->categoryRepository->getCategorySearch($key);
-        $posts = $this->postRepository->searchPostRaw($key, $categories);
+        $raw = 'title like "%' . $key . '%"';
+        foreach ($categories as $category) {
+            $raw .= ' or category like "%-' . $category->id . '%"' .  ' or category like "%-' . $category->id . '-%"' . ' or category like "%' . $category->id . '-%"';
+        }
+        $posts = $this->postRepository->searchPostRaw($raw);
 
         return view('pages.search.result', compact('lessons', 'posts', 'key'));
     }
