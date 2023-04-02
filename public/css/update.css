@@ -59,3 +59,25 @@
 .post_content_text .emoji {
     display: none;
 }
+
+
+.post_content_text h3 code {
+    font-size: 22px !important;
+    font-weight: 500;
+}
+
+.post_content_text h4 code {
+    font-size: 20px !important;
+    font-weight: 500;
+}
+
+
+.post_content_text h2 code {
+    font-size: 24px !important;
+    font-weight: 500;
+}
+
+.post_content_text h1 code {
+    font-size: 28px !important;
+    font-weight: 600;
+}
