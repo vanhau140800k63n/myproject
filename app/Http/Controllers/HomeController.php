@@ -41,8 +41,15 @@ class HomeController extends Controller
 
     public function test(Request $req)
     {
-        $content = file_get_contents('https://viblo.asia/p/cach-su-dung-file-api-trong-html-5-gDVK2nVeKLj');
-        return view('test', compact('content'));
+        $posts = $this->postRepository->getPostList();
+        foreach ($posts as $post) {
+            $output =  '&lt;url&gt;<br>
+                            &lt;loc&gt;' . route('post.detail', $post->slug) . '&lt;/loc&gt;<br>
+                            &lt;lastmod&gt;2023-03-31T09:47:43+00:00&lt;/lastmod&gt;<br>
+                            &lt;priority&gt;0.51&lt;/priority&gt;<br>
+                        &lt;/url&gt;<br>';
+            echo ($output);
+        }
     }
 
     public function updateMeta(Request $req)
