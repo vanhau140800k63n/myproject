@@ -67,6 +67,6 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
 
     public function searchPostRaw($raw, $count)
     {
-        return $this->post->whereRaw($raw)->take($count)->get();
+        return $this->post->whereRaw($raw)->inRandomOrder()->take($count)->get();
     }
 }
