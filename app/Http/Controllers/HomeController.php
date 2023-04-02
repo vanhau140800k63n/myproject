@@ -211,7 +211,7 @@ class HomeController extends Controller
         foreach ($categories as $category) {
             $raw .= ' or category like "' . $category->id . '-%"' .  ' or category like "%-' . $category->id . '-%"' . ' or category like "%-' . $category->id . '"';
         }
-        $posts = $this->postRepository->searchPostRaw($raw);
+        $posts = $this->postRepository->searchPostRaw($raw, 30);
 
         return view('pages.search.result', compact('lessons', 'posts', 'key'));
     }

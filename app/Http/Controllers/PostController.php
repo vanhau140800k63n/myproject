@@ -160,7 +160,7 @@ class PostController extends Controller
                     $raw .= ' or category like "' . $category . '-%"' .  ' or category like "%-' . $category . '-%"' . ' or category like "%-' . $category . '"';
                 }
             }
-            $posts_related = $this->postRepository->searchPostRaw($raw);
+            $posts_related = $this->postRepository->searchPostRaw($raw, 10);
             $comments = $this->commentReprository->getPostComments($post->id);
             return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'posts', 'comments', 'posts_related'));
         }

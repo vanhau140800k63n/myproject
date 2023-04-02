@@ -65,8 +65,8 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
         return $this->post->where('title', 'like', '%' . $key . '%')->get();
     }
 
-    public function searchPostRaw($raw)
+    public function searchPostRaw($raw, $count)
     {
-        return $this->post->whereRaw($raw)->get();
+        return $this->post->whereRaw($raw)->take($count)->get();
     }
 }
