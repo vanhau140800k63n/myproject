@@ -157,7 +157,7 @@ class PostController extends Controller
             $raw = 'title like "%' . $post->title . '%"';
             foreach ($categories as $category) {
                 if ($category != '') {
-                    $raw .= ' or category like "%-' . $category . '%"' .  ' or category like "%-' . $category . '-%"' . ' or category like "%' . $category . '-%"';
+                    $raw .= ' or category like "' . $category . '-%"' .  ' or category like "%-' . $category . '-%"' . ' or category like "%-' . $category . '"';
                 }
             }
             $posts_related = $this->postRepository->searchPostRaw($raw);

@@ -209,7 +209,7 @@ class HomeController extends Controller
         $categories = $this->categoryRepository->getCategorySearch($key);
         $raw = 'title like "%' . $key . '%"';
         foreach ($categories as $category) {
-            $raw .= ' or category like "%-' . $category->id . '%"' .  ' or category like "%-' . $category->id . '-%"' . ' or category like "%' . $category->id . '-%"';
+            $raw .= ' or category like "' . $category->id . '-%"' .  ' or category like "%-' . $category->id . '-%"' . ' or category like "%-' . $category->id . '"';
         }
         $posts = $this->postRepository->searchPostRaw($raw);
 
