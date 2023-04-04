@@ -44,17 +44,19 @@ class HomeController extends Controller
         $posts = $this->postRepository->getPostChangeTitle();
         foreach ($posts as $post) {
             if($post->title_update != null && $post->title_update != "") {
-                $post->title = $post->title_update;
-                $data['slug'] = $this->makeSlug($post->title) . '-' . $post->id;
+                $title = substr($post->title_update, strpos($post->title_update, '. ') + 2);
+                $data['title'] = $title;
+                $data['slug'] = $this->makeSlug($title) . '-' . $post->id;
                 $data['id'] = $post->id;
                 $update = $this->postRepository->updatePost($data);
             }
         }
-        // $posts = $this->postRepository->getPostList();
-        // foreach ($posts as $post) {
-        //     if($post->title_update != null)
-        //     echo ($post->id . '. ' . $post->title . '<br>' . $post->title_update . '<br><br>');
-        // }
+
+        $posts = $this->postRepository->getPostList();
+        foreach ($posts as $post) {
+            if($post->title_update != null)
+            echo ($post->id . '. ' . $post->title . '<br>' . $post->title_update . '<br><br>');
+        }
         // $posts = $this->postRepository->getPostList();
         // foreach ($posts as $post) {
         //     $output =  '&lt;url&gt;<br>
