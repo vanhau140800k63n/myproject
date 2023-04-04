@@ -292,7 +292,6 @@ class PostController extends Controller
         foreach ($posts as $post) {
             $str .= $i++ . '. ' . $post->title . '\\n';
             $id_list .= $post->id . '-';
-            if ($i == 6) break;
         }
         $id_list = substr($id_list, 0, -1);
 
