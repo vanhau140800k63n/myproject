@@ -45,7 +45,7 @@ class HomeController extends Controller
         $i = 1;
         foreach ($posts as $post) {
             if($post->title_update != null)
-            echo ($i++ . '. ' . $post->title . ' - ' . $post->title_update . '<br>');
+            echo ($i++ . '. ' . $post->title . '<br>' . $post->title_update . '<br><br>');
         }
         // $posts = $this->postRepository->getPostList();
         // foreach ($posts as $post) {
