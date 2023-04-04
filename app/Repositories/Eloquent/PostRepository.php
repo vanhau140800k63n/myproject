@@ -71,6 +71,6 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
     }
 
     public function getPostChangeTitle() {
-        return $this->post->whereNull('title_update')->where('id', '>', 42)->orderBy('id')->take(5)->get();
+        return $this->post->whereNull('title_update')->where('id', '>', 4000)->orderBy('id')->take(10)->get();
     }
 }
