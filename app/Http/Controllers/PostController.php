@@ -318,6 +318,6 @@ class PostController extends Controller
             $post_update = $this->postRepository->updatePost($data);
         }
 
-        return redirect()->route('auto_update_title_post');
+        return redirect()->route('admin.post.auto_update_title_post');
     }
 }

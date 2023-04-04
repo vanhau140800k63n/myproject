@@ -17,6 +17,7 @@ class Post extends Model
         'created_by',
         'type',
         'view',
-        'category'
+        'category',
+        'title_update'
     ];
 }
