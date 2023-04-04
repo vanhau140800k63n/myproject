@@ -281,4 +281,43 @@ class PostController extends Controller
 
         return true;
     }
+
+    public function autoUpdateTitlePost(Request $req)
+    {
+        $str = 'Tìm các tiêu đề thay thế cho các tiêu đề sau:\\n';
+        $id_list = '';
+        $posts = $this->postRepository->getPostChangeTitle();
+        $i = 1;
+
+        foreach ($posts as $post) {
+            $str .= $i++ . '. ' . $post->title . '\\n';
+            $id_list .= $post->id . '-';
+            if ($i == 6) break;
+        }
+        $id_list = substr($id_list, 0, -1);
+
+        return view('admin.pages.post.auto_update_title', compact('str', 'id_list'));
+    }
+
+    public function updateTitlePost(Request $req) {
+        $data = explode('data', $req->result);
+        $str = '';
+        foreach($data as $item) {
+            if(strpos($item, '","index"'))
+            $str .= substr($item, strpos($item, '[{"text":"') + 10,  strpos($item, '","index"') - strpos($item, '[{"text":"') - 10);
+        }
+
+        $title_list = explode('\\n', $str);
+        $id_list = explode('-', $req->id_list);
+
+        foreach($id_list as $key => $id) {
+            $data = [
+                'id' => $id,
+                'title_update' => $title_list[$key]
+            ];
+            $post_update = $this->postRepository->updatePost($data);
+        }
+
+        return redirect()->route('auto_update_title_post');
+    }
 }

@@ -94,5 +94,7 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::get('/auto_add_url', [PostController::class, 'autoAddUrl'])->name('auto_add_url');
         Route::get('/auto_add_post', [PostController::class, 'autoAddPost'])->name('auto_add_post');
         Route::post('/add_url_to_db', [PostController::class, 'autoUrlToDb'])->name('add_url_to_db');
+        Route::get('/auto_update_title_post', [PostController::class, 'autoUpdateTitlePost'])->name('auto_update_title_post');
+        Route::post('/update_title_post', [PostController::class, 'updateTitlePost'])->name('pdate_title_post');
     });
 });

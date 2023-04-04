@@ -69,4 +69,8 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
     {
         return $this->post->whereRaw($raw)->inRandomOrder()->take($count)->get();
     }
+
+    public function getPostChangeTitle() {
+        return $this->post->whereNull('title_update')->take(5)->get();
+    }
 }
