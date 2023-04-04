@@ -41,11 +41,20 @@ class HomeController extends Controller
 
     public function test(Request $req)
     {
-        $posts = $this->postRepository->getPostList();
+        $posts = $this->postRepository->getPostChangeTitle();
         foreach ($posts as $post) {
-            if($post->title_update != null)
-            echo ($post->id . '. ' . $post->title . '<br>' . $post->title_update . '<br><br>');
+            if($post->title_update != null && $post->title_update != "") {
+                $post->title = $post->title_update;
+                $data['slug'] = $this->makeSlug($post->title) . '-' . $post->id;
+                $data['id'] = $post->id;
+                $update = $this->postRepository->updatePost($data);
+            }
         }
+        // $posts = $this->postRepository->getPostList();
+        // foreach ($posts as $post) {
+        //     if($post->title_update != null)
+        //     echo ($post->id . '. ' . $post->title . '<br>' . $post->title_update . '<br><br>');
+        // }
         // $posts = $this->postRepository->getPostList();
         // foreach ($posts as $post) {
         //     $output =  '&lt;url&gt;<br>
