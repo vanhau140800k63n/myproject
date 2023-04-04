@@ -30188,7 +30188,6 @@ $(document).ready(function () {
             if (check_auto) {
               location.reload();
             } else if ($('.post_info').attr('type') == 'add') {
-              return false;
               location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'admin/post';
             } else {
               location.reload();
