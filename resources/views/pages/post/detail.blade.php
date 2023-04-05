@@ -168,6 +168,14 @@
                                 <a href="{{ route('post.detail', ['slug' => $related_post->slug]) }}">
                                     <h2>{{ $related_post->title }}</h2>
                                 </a>
+                                <?php $categories = App\Models\Post::whereIn('id', explode('-', $post->category))->get(); ?>
+                                <div style="display: flex; flex-wrap: wrap; margin-top: 10px">
+                                    @foreach ($categories as $category)
+                                        <a href="{{ route('search', $category->title) }}"
+                                            class="post_info_category_item">
+                                            {{ $category->title }}</a>
+                                    @endforeach
+                                </div>
                             </div>
                             <a class="post_list_item_img"
                                 href="{{ route('post.detail', ['slug' => $related_post->slug]) }}"><img
