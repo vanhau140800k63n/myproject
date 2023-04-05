@@ -39,7 +39,7 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
 
     public function updatePost($data)
     {
-        $data['created_by'] = 1;
+        $data['created_by'] = Auth::id();
 
         $post_update = $this->post->where('id', $data['id'])->update($data);
         return true;

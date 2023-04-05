@@ -41,31 +41,31 @@ class HomeController extends Controller
 
     public function test(Request $req)
     {
-        $posts = $this->postRepository->getPostChangeTitle();
-        foreach ($posts as $post) {
-            if($post->title_update != null && $post->title_update != "") {
-                $title = substr($post->title_update, strpos($post->title_update, '. ') + 2);
-                $data['title'] = $title;
-                $data['slug'] = $this->makeSlug($title) . '-' . $post->id;
-                $data['id'] = $post->id;
-                $update = $this->postRepository->updatePost($data);
-            }
-        }
+        // $posts = $this->postRepository->getPostChangeTitle();
+        // foreach ($posts as $post) {
+        //     if($post->title_update != null && $post->title_update != "") {
+        //         $title = substr($post->title_update, strpos($post->title_update, '. ') + 2);
+        //         $data['title'] = $title;
+        //         $data['slug'] = $this->makeSlug($title) . '-' . $post->id;
+        //         $data['id'] = $post->id;
+        //         $update = $this->postRepository->updatePost($data);
+        //     }
+        // }
 
-        $posts = $this->postRepository->getPostList();
-        foreach ($posts as $post) {
-            if($post->title_update != null)
-            echo ($post->id . '. ' . $post->title . '<br>' . $post->title_update . '<br><br>');
-        }
         // $posts = $this->postRepository->getPostList();
         // foreach ($posts as $post) {
-        //     $output =  '&lt;url&gt;<br>
-        //                     &lt;loc&gt;' . route('post.detail', $post->slug) . '&lt;/loc&gt;<br>
-        //                     &lt;lastmod&gt;2023-03-31T09:47:43+00:00&lt;/lastmod&gt;<br>
-        //                     &lt;priority&gt;0.51&lt;/priority&gt;<br>
-        //                 &lt;/url&gt;<br>';
-        //     echo ($output);
+        //     if($post->title_update != null)
+        //     echo ($post->id . '. ' . $post->title . '<br>' . $post->title_update . '<br><br>');
         // }
+        $posts = $this->postRepository->getPostChangeTitle();
+        foreach ($posts as $post) {
+            $output =  '&lt;url&gt;<br>
+                            &lt;loc&gt;' . route('post.detail', $post->slug) . '&lt;/loc&gt;<br>
+                            &lt;lastmod&gt;2023-03-31T09:47:43+00:00&lt;/lastmod&gt;<br>
+                            &lt;priority&gt;0.51&lt;/priority&gt;<br>
+                        &lt;/url&gt;<br>';
+            echo ($output);
+        }
     }
 
     public function updateMeta(Request $req)
