@@ -168,7 +168,7 @@
                                 <a href="{{ route('post.detail', ['slug' => $related_post->slug]) }}">
                                     <h2>{{ $related_post->title }}</h2>
                                 </a>
-                                <?php $categories = App\Models\Post::whereIn('id', explode('-', $post->category))->get(); ?>
+                                <?php $categories = App\Models\Post::whereIn('id', explode('-', $related_post->category))->get(); ?>
                                 <div style="display: flex; flex-wrap: wrap; margin-top: 10px">
                                     @foreach ($categories as $category)
                                         <a href="{{ route('search', $category->title) }}"
