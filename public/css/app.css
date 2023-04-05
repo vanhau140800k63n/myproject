@@ -1304,6 +1304,7 @@ code * {
     justify-content: flex-end;
     border-top: 1px solid rgb(172, 165, 165);
     margin-top: 50px;
+    background: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
 }
 
 .footer__copyright__text {
@@ -1708,6 +1709,8 @@ code * {
     width: 65%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     overflow: hidden;
+    padding: 50px 30px;
+    z-index: 1;
 }
 
 .post_box_other {
@@ -1799,10 +1802,6 @@ code * {
 .post_box_category_list {
     display: flex;
     flex-direction: column;
-}
-
-.post_box_content {
-    padding: 50px 30px;
 }
 
 .post_box_content_title {
