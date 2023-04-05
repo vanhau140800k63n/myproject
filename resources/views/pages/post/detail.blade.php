@@ -51,7 +51,7 @@
                     <div class="post_info_attr_bookmark"><i class="fa-solid fa-bookmark"></i> 0</div>
                 </div>
                 <div class="post_info_category">
-                    <div class="post_info_category_title">Từ khóa:</div>
+                    <div class="post_info_category_title">Để xuất:</div>
                     <?php $category_titles = explode(',', $category_titles); ?>
                     @foreach ($category_titles as $category_title)
                         @if ($category_title != '')
@@ -153,7 +153,7 @@
                 </div>
             @endif
 
-            @if ($posts_related->count() > 0 && intval($post->type) != 3)
+            @if ($posts_related->count() > 0)
                 <div class="api_list_title">Một số bài viết liên quan</div>
                 <div class="home_post">
                     @foreach ($posts_related as $related_post)
