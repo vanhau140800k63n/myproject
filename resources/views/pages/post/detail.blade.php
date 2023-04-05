@@ -193,6 +193,7 @@
                         {{ $author->last_name . ' ' . $author->first_name }} </a>
                     <button class="post_author_btn_follow">Theo dõi</button>
                 </div>
+                @if($post_detail->count() > 1)
                 <div class="catalogue">
                     <div class="catalogue_title">Mục lục</div>
                     <div class="catalogue_content">
@@ -205,6 +206,7 @@
                         @endforeach
                     </div>
                 </div>
+                @endif
                 <?php
                 $course_list = \App\Models\PLanguage::all();
                 $i = 0;
