@@ -2212,6 +2212,10 @@ code * {
         padding: 15px 30px;
         font-size: 18px;
     }
+
+    .post_info_category_item {
+        font-size: 13px;
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
@@ -2219,6 +2223,10 @@ code * {
         padding: 10px 15px;
         font-size: 15px;
         text-align: center;
+    }
+
+    .post_info_category_item {
+        font-size: 12px;
     }
 }
 
@@ -2240,6 +2248,10 @@ code * {
     .post_content.text_box * {
         font-size: 14px;
         line-height: 1.4;
+    }
+
+    .post_info_category_item {
+        font-size: 11px;
     }
 
     .text_box img {
