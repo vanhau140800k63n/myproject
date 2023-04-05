@@ -67,10 +67,14 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
 
     public function searchPostRaw($raw, $count)
     {
-        return $this->post->whereRaw($raw)->inRandomOrder()->take($count)->get();
+        return $this->post
+            ->selectRaw('post.*, CONCAT(users.last_name, " ", users.first_name) as author_name, users.avata as author_avata, users.id as author_id')
+            ->join('users', 'post.created_by', '=', 'users.id')
+            ->whereRaw($raw)->inRandomOrder()->take($count)->get();
     }
 
-    public function getPostChangeTitle() {
+    public function getPostChangeTitle()
+    {
         return $this->post->whereNotNull('title_update')->get();
     }
 }

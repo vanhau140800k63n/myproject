@@ -45,7 +45,8 @@
             <div class="post_box_content_title">{{ $post->title }}</div>
             <div class="post_box_info">
                 <div class="post_info_attr">
-                    <div class="post_info_attr_date">{{ $post->created_at != null ? date_format($post->created_at, 'H:i d/m/Y') : '' }}</div>
+                    <div class="post_info_attr_date">
+                        {{ $post->created_at != null ? date_format($post->created_at, 'H:i d/m/Y') : '' }}</div>
                     <div class="post_info_attr_view"><i class="fa-solid fa-eye"></i>{{ $post->view }}</div>
                     <div class="post_info_attr_comment"><i class="fa-solid fa-comments"></i> 0</div>
                     <div class="post_info_attr_bookmark"><i class="fa-solid fa-bookmark"></i> 0</div>
@@ -155,18 +156,20 @@
 
             @if ($posts_related->count() > 0)
                 <div class="api_list_title">Một số bài viết liên quan</div>
-                <div class="home_post">
+                <div class="post_list">
                     @foreach ($posts_related as $related_post)
-                        <div class="home_post_item">
-                            <a class="home_post_content" href="{{ route('post.detail', ['slug' => $related_post->slug]) }}">
-                                <img class="home_post_img" src="{{ asset($related_post->image) }}">
-                                <div class="home_post_img_cover">
-                                    <button class="home_post_btn_show">Xem thêm</button>
-                                </div>
-                                <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $related_post->view }} lượt xem
-                                </div>
-                                <p class="home_post_item_title">{{ $related_post->title }}</p>
-                            </a>
+                        <div class="post_list_item">
+                            <div class="post_list_item_info">
+                                <a>
+                                    <img src="{{ asset($related_post->author_avata) }}">
+                                    <span>{{ $related_post->author_name }}</span>
+                                    <span style="color: #9a352e">{{ $related_post->view }} lượt xem</span>
+                                </a>
+                                <a href="{{ route('post.detail', ['slug' => $related_post->slug]) }}">
+                                    <h2>{{ $related_post->title }}</h2>
+                                </a>
+                            </div>
+                            <a class="post_list_item_img" href="{{ route('post.detail', ['slug' => $related_post->slug]) }}"><img src="{{ asset($related_post->image) }}"></a>
                         </div>
                     @endforeach
                 </div>
