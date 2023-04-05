@@ -1305,6 +1305,8 @@ code * {
     border-top: 1px solid rgb(172, 165, 165);
     margin-top: 50px;
     background: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    position: relative;
+    z-index: 1;
 }
 
 .footer__copyright__text {

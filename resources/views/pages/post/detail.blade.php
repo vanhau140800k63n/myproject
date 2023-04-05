@@ -158,18 +158,30 @@
                 <div class="api_list_title">Một số bài viết liên quan</div>
                 <div class="post_list">
                     @foreach ($posts_related as $related_post)
+                        <?php
+                            $category_titles
+                        ?>
                         <div class="post_list_item">
                             <div class="post_list_item_info">
                                 <a>
                                     <img src="{{ asset($related_post->author_avata) }}">
                                     <span>{{ $related_post->author_name }}</span>
-                                    <span style="color: #9a352e">{{ $related_post->view }} lượt xem</span>
+                                    <span style="color: #ed5829">{{ $related_post->view }} lượt xem</span>
                                 </a>
                                 <a href="{{ route('post.detail', ['slug' => $related_post->slug]) }}">
                                     <h2>{{ $related_post->title }}</h2>
                                 </a>
+                                <?php $category_titles = explode(',', $category_titles); ?>
+                                @foreach ($category_titles as $category_title)
+                                    @if ($category_title != '')
+                                        <a href="{{ route('search', $category_title) }}" class="post_info_category_item">
+                                            {{ $category_title }}</a>
+                                    @endif
+                                @endforeach
                             </div>
-                            <a class="post_list_item_img" href="{{ route('post.detail', ['slug' => $related_post->slug]) }}"><img src="{{ asset($related_post->image) }}"></a>
+                            <a class="post_list_item_img"
+                                href="{{ route('post.detail', ['slug' => $related_post->slug]) }}"><img
+                                    src="{{ asset($related_post->image) }}"></a>
                         </div>
                     @endforeach
                 </div>
