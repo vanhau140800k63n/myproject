@@ -20,9 +20,12 @@
                                     <option value="{{ $key }}" selected>{{ $post_type }}</option>
                                 @endif
                             @endforeach
-                        </select>
+                        </select>                       
                         <input type="text" class="form-control post_title" style="color: #fff"
                             placeholder="Tiêu đề chính" value="{{ $post->title }}">
+                        @if($post->title_update != null || $post->title_update != '')
+                        <p>OK</p>
+                        @endif
                         <input type="text" class="form-control post_img" style="color: #fff" placeholder="Thêm ảnh"
                             value="{{ $post->image }}">
                         <input type="text" class="form-control post_view" style="color: #fff" placeholder="Lượt view"
