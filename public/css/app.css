@@ -810,6 +810,7 @@ a {
     z-index: 1;
     padding: 50px 30px;
     overflow: hidden;
+    margin-bottom: 200px;
 }
 
 .lesson_box_other {
@@ -1713,6 +1714,7 @@ code * {
     overflow: hidden;
     padding: 50px 30px;
     z-index: 1;
+    margin-bottom: 200px;
 }
 
 .post_box_other {
