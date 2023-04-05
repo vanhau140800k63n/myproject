@@ -154,10 +154,10 @@ class PostController extends Controller
             $author = $this->userRepository->getUserById($post->created_by);
             $posts = $this->postRepository->getPostList();
             $categories = explode('-', $post->category);
-            $raw = 'title like "%' . $post->title . '%"';
+            $raw = 'post.title like "%' . $post->title . '%"';
             foreach ($categories as $category) {
                 if ($category != '') {
-                    $raw .= ' or category like "' . $category . '-%"' .  ' or category like "%-' . $category . '-%"' . ' or category like "%-' . $category . '"';
+                    $raw .= ' or post.category like "' . $category . '-%"' .  ' or post.category like "%-' . $category . '-%"' . ' or post.category like "%-' . $category . '"';
                 }
             }
             $posts_related = $this->postRepository->searchPostRaw($raw, 10);

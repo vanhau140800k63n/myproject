@@ -223,9 +223,9 @@ class HomeController extends Controller
         $count = 16;
         $lessons = $this->lessonRepository->searchLesson($key, $count);
         $categories = $this->categoryRepository->getCategorySearch($key);
-        $raw = 'title like "%' . $key . '%"';
+        $raw = 'post.title like "%' . $key . '%"';
         foreach ($categories as $category) {
-            $raw .= ' or category like "' . $category->id . '-%"' .  ' or category like "%-' . $category->id . '-%"' . ' or category like "%-' . $category->id . '"';
+            $raw .= ' or post.category like "' . $category->id . '-%"' .  ' or post.category like "%-' . $category->id . '-%"' . ' or post.category like "%-' . $category->id . '"';
         }
         $posts = $this->postRepository->searchPostRaw($raw, 30);
 
