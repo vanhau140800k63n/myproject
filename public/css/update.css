@@ -81,3 +81,25 @@
     font-size: 28px !important;
     font-weight: 600;
 }
+
+
+.post_content_text h3 a {
+    font-size: 22px !important;
+    font-weight: 500;
+}
+
+.post_content_text h4 a {
+    font-size: 20px !important;
+    font-weight: 500;
+}
+
+
+.post_content_text h2 a {
+    font-size: 24px !important;
+    font-weight: 500;
+}
+
+.post_content_text h1 a {
+    font-size: 28px !important;
+    font-weight: 600;
+}
