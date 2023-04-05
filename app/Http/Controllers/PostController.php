@@ -121,7 +121,9 @@ class PostController extends Controller
             $category_list = explode(',', $data['category']);
             $data['category'] = $this->categoryRepository->updateCategory($category_list);
             if ($data['image'] != $post->image && $data['image'] != 'img/common.jpg') {
-                File::delete($post->image);
+                if ($post->image != 'img/common.jpg') {
+                    File::delete($post->image);
+                }
                 $data['image'] = $this->saveImage($data['image'], $data['slug']);
             }
             $post = $this->postRepository->updatePost($data);
@@ -298,18 +300,19 @@ class PostController extends Controller
         return view('admin.pages.post.auto_update_title', compact('str', 'id_list'));
     }
 
-    public function updateTitlePost(Request $req) {
+    public function updateTitlePost(Request $req)
+    {
         $data = explode('data', $req->result);
         $str = '';
-        foreach($data as $item) {
-            if(strpos($item, '","index"'))
-            $str .= substr($item, strpos($item, '[{"text":"') + 10,  strpos($item, '","index"') - strpos($item, '[{"text":"') - 10);
+        foreach ($data as $item) {
+            if (strpos($item, '","index"'))
+                $str .= substr($item, strpos($item, '[{"text":"') + 10,  strpos($item, '","index"') - strpos($item, '[{"text":"') - 10);
         }
 
         $title_list = explode('\\n', $str);
         $id_list = explode('-', $req->id_list);
 
-        foreach($id_list as $key => $id) {
+        foreach ($id_list as $key => $id) {
             $data = [
                 'id' => $id,
                 'title_update' => $title_list[$key]
