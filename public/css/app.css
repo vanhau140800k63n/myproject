@@ -2311,6 +2311,18 @@ code * {
         font-size: 12px;
         padding: 5px 10px;
     }
+
+    .post_list_item {
+        padding: 10px;
+    }
+
+    .post_list_item_info h2 {
+        font-size: 14px;
+    }
+
+    .post_list_item_info span {
+        font-size: 12px;
+    }
 }
 .game_design {
     display: flex;
