@@ -83,7 +83,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _domain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domain */ "./resources/js/domain.js");
 
 $(document).ready(function () {
-  var page_url_index = 100;
+  var page_url_index = $('.url_content').attr('page');
   function addUrl(p_url_index) {
     var _token = $('input[name="_token"]').val();
     $.ajax({
@@ -94,14 +94,14 @@ $(document).ready(function () {
       type: "POST",
       dataType: 'json',
       data: {
-        url: 'https://viblo.asia/newest?page=' + p_url_index,
+        url: 'https://websolutionstuff.com/post?page=' + p_url_index,
         _token: _token
       }
     }).done(function (data) {
       $('.url_content').html(data);
-      $('.post-title--inline h3 a').each(function () {
+      $('.post_link').each(function () {
         var href = $(this).attr('href');
-        if (href.includes('/p/')) {
+        if (href.includes('/post/')) {
           var _token = $('input[name="_token"]').val();
           $.ajax({
             url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/add_url_to_db",
@@ -111,7 +111,7 @@ $(document).ready(function () {
             type: "POST",
             dataType: 'json',
             data: {
-              url: 'https://viblo.asia' + href,
+              url: href,
               _token: _token
             }
           }).done(function (data) {
@@ -126,8 +126,9 @@ $(document).ready(function () {
       return false;
     });
   }
-  setInterval(function () {
-    addUrl(page_url_index++);
+  addUrl(page_url_index);
+  setTimeout(function () {
+    location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/auto_add_url?page=" + ++page_url_index;
   }, 10000);
 });
 })();

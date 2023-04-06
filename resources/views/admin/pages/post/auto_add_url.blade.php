@@ -3,6 +3,6 @@
     <title> Thêm URL | Devsne</title>
 @endsection
 @section('content')
-    <div class="url_content" style="display: none"></div>
+    <div class="url_content" style="display: none" page="{{ $page }}"></div>
     <script src="{{ asset(mix('js/auto.js')) }}"></script>
 @endsection

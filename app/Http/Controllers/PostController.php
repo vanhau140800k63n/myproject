@@ -253,9 +253,10 @@ class PostController extends Controller
         return response()->json($content);
     }
 
-    public function autoAddUrl()
+    public function autoAddUrl(Request $req)
     {
-        return view('admin.pages.post.auto_add_url');
+        $page = $req->page;
+        return view('admin.pages.post.auto_add_url', compact('page'));
     }
 
     public function autoAddPost()

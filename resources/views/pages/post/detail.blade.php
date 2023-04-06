@@ -32,6 +32,7 @@
     </style>
     <link rel="stylesheet" href="{{ asset(mix('lib/tinymce/skins/ui/oxide/content.min.css')) }}">
     <link rel="stylesheet" href="{{ asset(mix('css/update.css')) }}">
+    {{-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css"> --}}
 @endsection
 @section('head')
     <title>{{ $post->title }}</title>
@@ -193,19 +194,19 @@
                         {{ $author->last_name . ' ' . $author->first_name }} </a>
                     <button class="post_author_btn_follow">Theo dõi</button>
                 </div>
-                @if($post_detail->count() > 1)
-                <div class="catalogue">
-                    <div class="catalogue_title">Mục lục</div>
-                    <div class="catalogue_content">
-                        <?php
-                        $catalogue_item_index = 2;
-                        ?>
-                        @foreach ($post_detail as $catalogue_item)
-                            <div class="catalogue_item_title" index="{{ ++$catalogue_item_index }}">
-                                {{ $catalogue_item->title }}</div>
-                        @endforeach
+                @if ($post_detail->count() > 1)
+                    <div class="catalogue">
+                        <div class="catalogue_title">Mục lục</div>
+                        <div class="catalogue_content">
+                            <?php
+                            $catalogue_item_index = 2;
+                            ?>
+                            @foreach ($post_detail as $catalogue_item)
+                                <div class="catalogue_item_title" index="{{ ++$catalogue_item_index }}">
+                                    {{ $catalogue_item->title }}</div>
+                            @endforeach
+                        </div>
                     </div>
-                </div>
                 @endif
                 <?php
                 $course_list = \App\Models\PLanguage::all();
