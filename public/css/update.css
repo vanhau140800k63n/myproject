@@ -26,6 +26,10 @@
     margin-top: 10px;
 }
 
+.post_content_text pre {
+    margin-top: 10px;
+}
+
 .post_content_text h2 strong {
     font-size: 24px !important;
     margin: 35px 0 15px;
