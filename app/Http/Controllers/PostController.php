@@ -151,6 +151,10 @@ class PostController extends Controller
         if($post == null) {
             $id = end(explode('-', $slug));
             $post = $this->postRepository->getPostById(intval($id));
+            
+            if($post != null) {
+                return redirect()->route('post.detail', $post->slug);
+            }
         }
 
         if ($post !== null) {
