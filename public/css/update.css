@@ -1,23 +1,30 @@
+:root {
+    --h1-size: 28px;
+    --h2-size: 24px;
+    --h3-size: 22px;
+    --h4-size: 20px;
+}
+
 .post_content_text h3 {
-    font-size: 22px !important;
+    font-size: var(--h3-size) !important;
     margin: 30px 0 15px;
     font-weight: 500;
 }
 
 .post_content_text h4 {
-    font-size: 20px !important;
+    font-size: var(--h3-size) !important;
     margin: 12px 0;
     font-weight: 500;
 }
 
 .post_content_text h3 strong {
-    font-size: 22px !important;
+    font-size: var(--h3-size) !important;
     margin: 30px 0 15px;
     font-weight: 500;
 }
 
 .post_content_text h4 strong {
-    font-size: 20px !important;
+    font-size: var(--h4-size) !important;
     margin: 12px 0;
     font-weight: 500;
 }
@@ -31,19 +38,19 @@
 }
 
 .post_content_text h2 strong {
-    font-size: 24px !important;
+    font-size: var(--h2-size) !important;
     margin: 35px 0 15px;
     font-weight: 500;
 }
 
 .post_content_text h2 {
-    font-size: 24px !important;
+    font-size: var(--h2-size) !important;
     margin: 35px 0 15px;
     font-weight: 500;
 }
 
 .post_content_text h1 {
-    font-size: 28px !important;
+    font-size: var(--h1-size) !important;
     margin: 40px 0 20px;
     font-weight: 600;
 }
@@ -66,48 +73,67 @@
 
 
 .post_content_text h3 code {
-    font-size: 22px !important;
+    font-size: var(--h3-size) !important;
     font-weight: 500;
 }
 
 .post_content_text h4 code {
-    font-size: 20px !important;
+    font-size: var(--h4-size) !important;
     font-weight: 500;
 }
 
 
 .post_content_text h2 code {
-    font-size: 24px !important;
+    font-size: var(--h2-size) !important;
     font-weight: 500;
 }
 
 .post_content_text h1 code {
-    font-size: 28px !important;
+    font-size: var(--h1-size) !important;
     font-weight: 600;
 }
 
 
 .post_content_text h3 a {
-    font-size: 22px !important;
+    font-size: var(--h3-size) !important;
     font-weight: 500;
 }
 
 .post_content_text h4 a {
-    font-size: 20px !important;
+    font-size: var(--h4-size) !important;
     font-weight: 500;
 }
 
 
 .post_content_text h2 a {
-    font-size: 24px !important;
+    font-size: var(--h2-size) !important;
     font-weight: 500;
 }
 
 .post_content_text h1 a {
-    font-size: 28px !important;
+    font-size: var(--h1-size) !important;
     font-weight: 600;
 }
 
 .post_content_text a {
     color: #ed5829;
+}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {}
+
+@media only screen and (max-width: 576px) {
+    .post_content_text {
+        --h1-size: 24px;
+        --h2-size: 20px;
+        --h3-size: 18px;
+        --h4-size: 16px;
+    }
 }
