@@ -30,9 +30,13 @@
             gap: 1rem 1rem !important;
         }
     </style>
-    <link rel="stylesheet" href="{{ asset(mix('lib/tinymce/skins/ui/oxide/content.min.css')) }}">
+    @if ($theme == 1)
+        <link rel="stylesheet" href="{{ asset(mix('lib/tinymce/skins/ui/oxide/content.min.css')) }}">
+    @endif
     <link rel="stylesheet" href="{{ asset(mix('css/update.css')) }}">
-    {{-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css"> --}}
+    @if ($theme == 2)
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css">
+    @endif
 @endsection
 @section('head')
     <title>{{ $post->title }}</title>

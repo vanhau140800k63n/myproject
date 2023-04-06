@@ -152,6 +152,13 @@ class PostController extends Controller
             $post->view += 1;
             $post->save();
             $post_detail = $this->contentItemRepository->getPostDetail($post->id);
+            $theme = 1;
+            if($post_detail->count() == 1) {
+                $post_detail_first = $post_detail->first();
+                if($post_detail_first->title == "Let's get started") {
+                    $theme = 2;
+                }
+            }
             $category_titles = $this->categoryRepository->getCategoryTitle(explode('-', $post->category));
             $author = $this->userRepository->getUserById($post->created_by);
             $posts = $this->postRepository->getPostList();
@@ -164,7 +171,7 @@ class PostController extends Controller
             }
             $posts_related = $this->postRepository->searchPostRaw($raw, 10);
             $comments = $this->commentReprository->getPostComments($post->id);
-            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'posts', 'comments', 'posts_related'));
+            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'posts', 'comments', 'posts_related', 'theme'));
         }
 
         throw new PageException();
