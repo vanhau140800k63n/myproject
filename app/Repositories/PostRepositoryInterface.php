@@ -14,4 +14,5 @@ interface PostRepositoryInterface
     public function searchPost($key);
     public function searchPostRaw($raw, $count);
     public function getPostChangeTitle();
+    public function getPostById($id);
 }

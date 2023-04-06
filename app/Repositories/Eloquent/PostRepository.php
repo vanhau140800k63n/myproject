@@ -78,4 +78,8 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
     {
         return $this->post->whereNotNull('title_update')->get();
     }
+
+    public function getPostById($id) {
+        return $this->post->find($id);
+    }
 }

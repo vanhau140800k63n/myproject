@@ -148,6 +148,11 @@ class PostController extends Controller
     public function getPostDetail($slug)
     {
         $post = $this->postRepository->getPostBySlug($slug);
+        if($post == null) {
+            $id = end(explode('-', $slug));
+            $post = $this->postRepository->getPostById(intval($id));
+        }
+
         if ($post !== null) {
             $post->view += 1;
             $post->save();
