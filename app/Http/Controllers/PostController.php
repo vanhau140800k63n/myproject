@@ -153,10 +153,12 @@ class PostController extends Controller
             $post->save();
             $post_detail = $this->contentItemRepository->getPostDetail($post->id);
             $theme = 1;
-            if($post_detail->count() == 1) {
-                $post_detail_first = $post_detail->first();
-                if($post_detail_first->title == "Let's get started") {
-                    $theme = 2;
+            if ($post_detail->count() == 1) {
+                foreach ($post_detail as $item) {
+                    if ($item->title == "Let's get started") {
+                        $theme = 2;
+                    }
+                    break;
                 }
             }
             $category_titles = $this->categoryRepository->getCategoryTitle(explode('-', $post->category));
