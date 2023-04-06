@@ -35,7 +35,9 @@
     @endif
     <link rel="stylesheet" href="{{ asset(mix('css/update.css')) }}">
     @if ($theme == 2)
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css">
+        <script>hljs.highlightAll();</script>
     @endif
 @endsection
 @section('head')
@@ -150,7 +152,8 @@
                                 <div class="home_post_img_cover">
                                     <button class="home_post_btn_show">Xem thêm</button>
                                 </div>
-                                <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $api_post->view }} lượt xem
+                                <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $api_post->view }} lượt
+                                    xem
                                 </div>
                                 <p class="home_post_item_title">{{ $api_post->title }}</p>
                             </a>
