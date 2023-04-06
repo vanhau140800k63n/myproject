@@ -149,7 +149,8 @@ class PostController extends Controller
     {
         $post = $this->postRepository->getPostBySlug($slug);
         if($post == null) {
-            $id = end(explode('-', $slug));
+            $slug_arr = explode('-', $slug);
+            $id = $slug_arr[count($slug_arr) - 1];
             $post = $this->postRepository->getPostById(intval($id));
             
             if($post != null) {
