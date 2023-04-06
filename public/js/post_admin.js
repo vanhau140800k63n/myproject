@@ -30328,25 +30328,31 @@ $(document).ready(function () {
                 $('.url_content').html(data);
                 $('.post_img').val('img/common.jpg');
                 $('.post_view').val(500 + Math.floor(Math.random() * 9999) + 1);
-                $('.post_title').val($('.article-content__title').html().trim());
+                $('.post_title').val($('h1').html().trim());
                 tag = '';
-                $('.el-tag').each(function () {
+                $('.badge.badge-primary.pb-1').each(function () {
                   tag += $(this).text().trim() + ',';
                 });
                 $('.post_category').val(tag.slice(0, -1));
-                $('.url_content').html($('.md-contents').html());
+                $('.url_content').html($('.card-body').html());
                 $('.url_content button').remove();
-                // $('.url_content img').remove();
+                $('.url_content img').attr('src', 'https://websolutionstuff.com' + $('.url_content img').attr('src'));
+                $('.url_content a').removeAttr('href');
                 $('.url_content canvas').remove();
                 $('.url_content p').prepend('&nbsp;&nbsp;&nbsp;&nbsp;');
-                $('.post_content').html('<div class="post_content_form" type="text" status="new"><div class="post_content_form_info"><input type="text" class="form-control post_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new"><div class="post_content_form_type">text</div><button class="post_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><textarea id="url_content" name="description"></textarea></div>');
+                $('.post_content').html('<div class="post_content_form" type="text" status="new"><div class="post_content_form_info"><input type="text" class="form-control post_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new" value="Let\'s get started"><div class="post_content_form_type">text</div><button class="post_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><textarea id="url_content" name="description"></textarea></div>');
                 if (check_auto) {
                   setTimeout(function () {
+                    $.ajaxSetup({
+                      headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                      }
+                    });
                     $('.post_btn_save').click();
                   }, 2000);
                 }
                 return _context.abrupt("return", true);
-              case 14:
+              case 16:
               case "end":
                 return _context.stop();
             }
