@@ -22,7 +22,7 @@ class Controller extends BaseController
                 if ($size !== false) {
                     $url = file_get_contents($url);
                     $imgFile = Image::make($url);
-                    $imgFile->resize(300, null, function ($constraint) {
+                    $imgFile->resize(500, null, function ($constraint) {
                         $constraint->aspectRatio();
                     });
                     $imageName = 'image/post/' . $name . rand(1000, 9999) . '.jpg';
