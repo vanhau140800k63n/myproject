@@ -125,15 +125,29 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
-
-@media only screen and (min-width: 577px) and (max-width: 767px) {}
-
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .post_content_text {
-        --h1-size: 24px;
+        --h1-size: 22px;
         --h2-size: 20px;
         --h3-size: 18px;
         --h4-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .post_content_text {
+        --h1-size: 21px;
+        --h2-size: 19px;
+        --h3-size: 17px;
+        --h4-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .post_content_text {
+        --h1-size: 20px;
+        --h2-size: 18px;
+        --h3-size: 16px;
+        --h4-size: 14px;
     }
 }
