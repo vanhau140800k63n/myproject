@@ -37,6 +37,10 @@
     margin-top: 20px;
 }
 
+.post_content_text div {
+    margin-top: 15px;
+}
+
 .post_content_text h2 strong {
     font-size: var(--h2-size) !important;
     margin: 35px 0 15px;
