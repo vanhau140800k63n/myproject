@@ -9,6 +9,7 @@
             <p>Giới thiệu</p>
             <p>Liên hệ</p>
             <p>Điều khoản</p>
+            <p>Việc làm</p>
         </div>
         <div>
             <h2>Khóa học</h2>
