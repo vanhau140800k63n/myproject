@@ -44,7 +44,7 @@
                         <p class="home_post_item_title">{{ $post->title }}</p>
                     </a>
                     <a href="{{ route('user_detail', ['id' => $post->author_id]) }}" class="home_post_author">
-                        <img class="home_post_author_img" src="{{ $post->author_avata }}">
+                        <img class="home_post_author_img" src="{{ asset($post->author_avata) }}">
                         <div class="home_post_author_name"> {{ $post->author_name }}</div>
                     </a>
                 </div>
