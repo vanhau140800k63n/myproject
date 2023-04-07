@@ -1334,6 +1334,8 @@ code * {
 
 .footer_info div {
     width: 25%;
+    height: -moz-fit-content;
+    height: fit-content;
 }
 
 .footer_info p {
@@ -1369,7 +1371,6 @@ code * {
     .footer_info {
         padding: 50px;
     }
-
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
