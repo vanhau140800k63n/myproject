@@ -43,10 +43,10 @@
                         <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $post->view }} lượt xem</div>
                         <p class="home_post_item_title">{{ $post->title }}</p>
                     </a>
-                    {{-- <a href="{{ route('user_detail', ['id' => $post->author_id]) }}" class="home_post_author">
+                    <a href="{{ route('user_detail', ['id' => $post->author_id]) }}" class="home_post_author">
                         <img class="home_post_author_img" src="{{ $post->author_avata }}">
                         <div class="home_post_author_name"> {{ $post->author_name }}</div>
-                    </a> --}}
+                    </a>
                 </div>
             @endforeach
         </div>
