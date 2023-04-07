@@ -1299,13 +1299,13 @@ code * {
     }
 }
 .footer_box {
-    height: 300px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     border-top: 1px solid rgb(172, 165, 165);
     margin-top: 50px;
-    background: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    background: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
     position: relative;
     z-index: 1;
 }
@@ -1314,7 +1314,67 @@ code * {
     color: #fff;
     padding: 5px 10px;
     border-top: 1px solid #fff;
-    background: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    background: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+}
+
+.footer_box * {
+    color: #fff;
+}
+
+.footer_box h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer_info {
+    display: flex;
+    padding: 70px 150px;
+    justify-content: space-between;
+}
+
+.footer_info div {
+    width: 20%;
+}
+
+.footer_info p {
+    margin-top: 5px;
+}
+
+.footer_info h2 {
+    margin-bottom: 15px;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer_logo span {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {}
+
+@media only screen and (max-width: 576px) {
+    .footer_info {
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .footer_info div {
+        width: 100%;
+        margin-top: 30px;
+    }
 }
 .img_account_profile {
     height: 10rem;
