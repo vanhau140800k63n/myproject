@@ -1,5 +1,5 @@
 <div class="header-box">
-    <div class="logo"><a href="{{ route('home') }}"><img class="logo_image" src="{{ asset('image/logo1.png') }}"></a>
+    <div class="logo"><a href="{{ route('home') }}"><img class="logo_image" src="{{ asset('image/logo2.png') }}"></a>
     </div>
     <div class="search">
         <div class="search-box">

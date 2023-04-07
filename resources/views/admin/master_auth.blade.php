@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset(mix('css/login/material-design-iconic-font.min.css')) }}">
     <link rel="stylesheet" type="text/css" href="{{ asset(mix('css/login/util.css')) }}">
     <link rel="stylesheet" type="text/css" href="{{ asset(mix('css/login/main.css')) }}">
-    <link rel="shortcut icon" href="{{ asset('image/logo1.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('image/logo2.png') }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
