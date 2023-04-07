@@ -82,4 +82,8 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
     public function getPostById($id) {
         return $this->post->find($id);
     }
+
+    public function checkImage($image) {
+        return $this->post->where('image', $image)->get()->count() <= 1;
+    }
 }

@@ -121,7 +121,8 @@ class PostController extends Controller
             $category_list = explode(',', $data['category']);
             $data['category'] = $this->categoryRepository->updateCategory($category_list);
             if ($data['image'] != $post->image && $data['image'] != 'img/common.jpg') {
-                if ($post->image != 'img/common.jpg') {
+                $checkImage = $this->postRepository->checkImage($post->image);
+                if ($post->image != 'img/common.jpg' && $checkImage) {
                     File::delete($post->image);
                 }
                 $data['image'] = $this->saveImage($data['image'], $data['slug']);
