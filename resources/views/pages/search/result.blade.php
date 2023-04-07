@@ -45,7 +45,7 @@
                     </a>
                     <div class="home_post_author">
                         <a href="{{ route('user_detail', ['id' => $post->author_id]) }}" style="display: flex">
-                            <img class="home_post_author_img" src="{{ $post->author_avata }}">
+                            <img class="home_post_author_img" src="{{ asset($post->author_avata) }}">
                             <div class="home_post_author_name"> {{ $post->author_name }}</div>
                         </a>
                         <div class="home_post_action">
