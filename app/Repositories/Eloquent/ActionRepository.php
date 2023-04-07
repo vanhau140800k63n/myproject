@@ -14,4 +14,12 @@ class ActionRepository extends BaseRepository implements ActionRepositoryInterfa
     {
         $this->action = new Action();
     }
+
+    public function addAction($data) {
+        return $this->action->create($data);
+    }
+
+    public function checkAction($data) {
+        return $this->action->where('user_id', $data['user_id'])->where('type', $data['type'])->where('post_id', $data['post_id'])->first();
+    }
 }

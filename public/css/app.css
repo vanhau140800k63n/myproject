@@ -639,6 +639,14 @@ a {
     font-size: 18px !important;
 }
 
+.fa-bookmark.active {
+    color: rgb(246, 151, 10);
+}
+
+.fa-heart.active {
+    color: #c62828;
+}
+
 @media only screen and (min-width: 1400px) {}
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}

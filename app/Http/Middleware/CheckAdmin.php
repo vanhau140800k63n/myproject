@@ -20,7 +20,7 @@ class CheckAdmin
         if(Auth::check() && intval(Auth::user()->role) === 1 ) {
             return $next($request);
         } else {
-            return redirect()->route('home');
+            return redirect()->route('login');
         }
     }
 }

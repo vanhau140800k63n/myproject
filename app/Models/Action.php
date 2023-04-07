@@ -13,6 +13,7 @@ class Action extends Model
     protected $fillable = [
         'title',
         'type',
-        'user_id'
+        'user_id',
+        'post_id'
     ];
 }

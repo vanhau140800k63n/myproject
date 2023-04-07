@@ -24,6 +24,9 @@
     </div>
     <div class="header-user">
         @if (!\Illuminate\Support\Facades\Auth::check())
+            <?php
+            $user = null;
+            ?>
             <a class="login" href="{{ route('login') }}"> Đăng nhập </a>
         @else
             <div class="user_info_box">

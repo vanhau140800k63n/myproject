@@ -2280,7 +2280,11 @@ $(document).ready(function () {
 /*!******************************!*\
   !*** ./resources/js/home.js ***!
   \******************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _domain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domain */ "./resources/js/domain.js");
 
 $(document).ready(function () {
   $('.home_post_img').height($('.home_post_img').width() * 2 / 3);
@@ -2294,7 +2298,7 @@ $(document).ready(function () {
   }
   var index_lesson_box_category = $('.lesson_box_category_item').index($('.lesson_box_category_item.active'));
   $('.lesson_box_category_fixed').scrollTop($('.lesson_box_category_item').outerHeight() * index_lesson_box_category);
-  width_device = $('html').width();
+  var width_device = $('html').width();
   if (width_device < 576 && $("body").children('.post_box').length > 0) {
     post_img = $('.text_box img');
     width_post_img = post_img.width();
@@ -2328,6 +2332,32 @@ $(document).ready(function () {
     }, 2000);
   });
   $('.game_design .ͼ1.cm-editor').css('height', $('.game_creen').height());
+  $('.home_post_action i').click(function () {
+    var action = $(this);
+    var _token = $('input[name="_token"]').val();
+    $.ajax({
+      url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'action',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      type: "POST",
+      dataType: 'json',
+      data: {
+        type: action.attr('action'),
+        post_id: action.attr('post_id'),
+        _token: _token
+      }
+    }).done(function (data) {
+      if (data == 'add') {
+        action.addClass('active');
+      } else if (data == 'remove') {
+        action.removeClass('active');
+      }
+      return true;
+    }).fail(function (e) {
+      return false;
+    });
+  });
 });
 
 /***/ }),

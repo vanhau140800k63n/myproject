@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Config\AdminConstants;
+use App\Config\CommonConstants;
 use App\Exceptions\PageException;
+use App\Repositories\ActionRepositoryInterface;
 use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\CommentRepositoryInterface;
 use App\Repositories\ContentItemRepositoryInterface;
@@ -25,6 +27,7 @@ class PostController extends Controller
     private $userRepository;
     private $commentReprository;
     private $contentRepository;
+    private $actionRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
@@ -33,7 +36,8 @@ class PostController extends Controller
         ContentItemRepositoryInterface $contentItemRepository,
         CategoryRepositoryInterface $categoryRepository,
         CommentRepositoryInterface $commentReprository,
-        ContentRepositoryInterface $contentRepository
+        ContentRepositoryInterface $contentRepository,
+        ActionRepositoryInterface $actionRepository
     ) {
         $this->categoryRepository = $categoryRepository;
         $this->pLanguageRepository = $pLanguageRepository;
@@ -42,6 +46,7 @@ class PostController extends Controller
         $this->userRepository = $userRepository;
         $this->commentReprository = $commentReprository;
         $this->contentRepository = $contentRepository;
+        $this->actionRepository = $actionRepository;
     }
 
     public function getPostListAdmin()
@@ -149,12 +154,12 @@ class PostController extends Controller
     public function getPostDetail($slug)
     {
         $post = $this->postRepository->getPostBySlug($slug);
-        if($post == null) {
+        if ($post == null) {
             $slug_arr = explode('-', $slug);
             $id = $slug_arr[count($slug_arr) - 1];
             $post = $this->postRepository->getPostById(intval($id));
-            
-            if($post != null) {
+
+            if ($post != null) {
                 return redirect()->route('post.detail', $post->slug);
             }
         }
@@ -342,5 +347,24 @@ class PostController extends Controller
         }
 
         return response()->json(true);
+    }
+
+    public function actionPost(Request $req)
+    {
+        $data = $req->all();
+        if (isset($data['type']) && isset($data['post_id'])) {
+            $data['user_id'] = Auth::id();
+            $check_action = $this->actionRepository->checkAction($data);
+            if ($check_action != null) {
+                $check_action->delete();
+                return response()->json('remove');
+            }
+            $data['title'] = Auth::user()->last_name . ' ' . Auth::user()->first_name . CommonConstants::ACTION[intval($data['type'])];
+            $action = $this->actionRepository->addAction($data);
+
+            return response()->json('add');
+        }
+
+        return response()->json(false);
     }
 }

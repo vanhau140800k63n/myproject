@@ -586,14 +586,41 @@
                         <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $post->view }} lượt xem</div>
                         <p class="home_post_item_title">{{ $post->title }}</p>
                     </a>
-                    <a href="{{ route('user_detail', ['id' => $post->author_id]) }}" class="home_post_author">
-                        <img class="home_post_author_img" src="{{ $post->author_avata }}">
-                        <div class="home_post_author_name"> {{ $post->author_name }}</div>
+                    <div class="home_post_author">
+                        <a href="{{ route('user_detail', ['id' => $post->author_id]) }}" style="display: flex">
+                            <img class="home_post_author_img" src="{{ $post->author_avata }}">
+                            <div class="home_post_author_name"> {{ $post->author_name }}</div>
+                        </a>
                         <div class="home_post_action">
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-heart"></i>
+                            <?php
+                            $save_action = '';
+                            $like_action = '';
+                            if (\Illuminate\Support\Facades\Auth::check()) {
+                                $user = \Illuminate\Support\Facades\Auth::user();
+                                $save_action =
+                                    \App\Models\Action::where('type', 3)
+                                        ->where('user_id', $user->id)
+                                        ->where('post_id', $post->id)
+                                        ->get()
+                                        ->count() >= 1
+                                        ? 'active'
+                                        : '';
+                                $like_action =
+                                    \App\Models\Action::where('type', 4)
+                                        ->where('user_id', $user->id)
+                                        ->where('post_id', $post->id)
+                                        ->get()
+                                        ->count() >= 1
+                                        ? 'active'
+                                        : '';
+                            }
+                            ?>
+                            <i action="3" post_id="{{ $post->id }}"
+                                class="fa-solid fa-bookmark {{ $save_action }}"></i>
+                            <i action="4" post_id="{{ $post->id }}"
+                                class="fa-solid fa-heart {{ $like_action }}"></i>
                         </div>
-                    </a>
+                    </div>
                 </div>
             @endforeach
         </div>
