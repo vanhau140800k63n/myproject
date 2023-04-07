@@ -1359,11 +1359,24 @@ code * {
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .footer_info {
+        padding: 50px 70px;
+    }
+}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer_info {
+        padding: 50px;
+    }
 
-@media only screen and (min-width: 577px) and (max-width: 767px) {}
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .footer_info {
+        padding: 35px;
+    }
+}
 
 @media only screen and (max-width: 576px) {
     .footer_info {
