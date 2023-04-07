@@ -19,6 +19,12 @@
             <p>Java</p>
             <p>C++</p>
         </div>
+        <div>
+            <h2>Framework</h2>
+            <p>Laravel</p>
+            <p>ReactJs</p>
+            <p>VueJs</p>
+        </div>
     </div>
     <div class="footer__copyright__text">
         <p> Copyright &copy;
