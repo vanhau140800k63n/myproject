@@ -1,7 +1,7 @@
 <div class="footer_box">
     <div class="footer_info">
         <div class="footer_logo">
-            <img style="width: 30px" src="{{ asset(mix('image/logo1.png')) }}">
+            <img style="width: 30px" src="{{ asset('image/logo1.png') }}">
             <span style="">Nghề lập trình viên</span>
         </div>
         <div>
