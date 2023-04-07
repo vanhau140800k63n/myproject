@@ -46,6 +46,10 @@
                     <a href="{{ route('user_detail', ['id' => $post->author_id]) }}" class="home_post_author">
                         <img class="home_post_author_img" src="{{ asset($post->author_avata) }}">
                         <div class="home_post_author_name"> {{ $post->author_name }}</div>
+                        <div class="home_post_action">
+                            <i class="fa-solid fa-bookmark"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
                     </a>
                 </div>
             @endforeach

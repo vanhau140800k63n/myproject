@@ -78,11 +78,13 @@
                                         </div>
                                     </div>
 
-                                    <a target="_blank" href="{{ route('game_design') }}" data-w-id="a8616800-07f8-0697-9681-2671b00ca6a7"
+                                    <a target="_blank" href="{{ route('game_design') }}"
+                                        data-w-id="a8616800-07f8-0697-9681-2671b00ca6a7"
                                         style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; margin-left: 30px"
                                         class="hero__btn-wrap">
                                         <div data-remodal-target="form" class="btn mod--hero w-inline-block">
-                                            <div class="btn__bg-wrap" style="background-color: #8BC6EC;
+                                            <div class="btn__bg-wrap"
+                                                style="background-color: #8BC6EC;
                                             background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
                                             ">
                                                 <div class="btn__bg"
@@ -262,7 +264,7 @@
                                         Framework<br>PHP, Javascript</h2>
                                 </div>
                                 <div class="wrap-hide">
-                                   
+
                                 </div>
                             </div>
                             <div class="courses__columns">
@@ -587,6 +589,10 @@
                     <a href="{{ route('user_detail', ['id' => $post->author_id]) }}" class="home_post_author">
                         <img class="home_post_author_img" src="{{ $post->author_avata }}">
                         <div class="home_post_author_name"> {{ $post->author_name }}</div>
+                        <div class="home_post_action">
+                            <i class="fa-solid fa-bookmark"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
                     </a>
                 </div>
             @endforeach

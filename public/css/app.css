@@ -629,6 +629,16 @@ a {
     padding: 0 20px;
 }
 
+.home_post_action {
+    margin-left: auto;
+}
+
+.home_post_action i {
+    margin-right: 10px;
+    color: #a0a0a0;
+    font-size: 18px !important;
+}
+
 @media only screen and (min-width: 1400px) {}
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}
