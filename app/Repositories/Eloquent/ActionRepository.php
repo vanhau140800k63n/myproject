@@ -30,6 +30,17 @@ class ActionRepository extends BaseRepository implements ActionRepositoryInterfa
         return $this->action
             ->selectRaw('action.*, post.title as post_title, post.slug as post_slug')
             ->join('post', 'post.id', '=', 'action.post_id')
-            ->where('user_id', $id)->get();
+            ->where('user_id', $id)->orderBy('created_at', 'desc')->take(20)->get();
+    }
+
+    public function limitAction($id, $limit) {
+        $count_action = $this->action->where('user_id', $id)->get()->count();
+        if($count_action > $limit) {
+            $del_action = $this->action->where('user_id', $id)->orderBy('created_at', 'asc')->take($count_action - $limit)->delete();
+
+            return true;
+        }
+
+        return false;
     }
 }
