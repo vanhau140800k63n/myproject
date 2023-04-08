@@ -79,11 +79,18 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
         return $this->post->whereNotNull('title_update')->get();
     }
 
-    public function getPostById($id) {
+    public function getPostById($id)
+    {
         return $this->post->find($id);
     }
 
-    public function checkImage($image) {
+    public function checkImage($image)
+    {
         return $this->post->where('image', $image)->get()->count() <= 1;
+    }
+
+    public function getPostAction($id)
+    {
+        return $this->post->whereRaw('id in (select distinct post_id from action where user_id = ' .  $id . ' and (type = 3 or type = 4))')->get();
     }
 }

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Config\AuthConstants;
 use App\Mail\RegisterAccount;
 use App\Config\CommonConstants;
+use App\Repositories\PostRepositoryInterface;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Repositories\UserRepositoryInterface;
@@ -16,10 +17,14 @@ use Illuminate\Support\Facades\Session;
 class AuthController extends Controller
 {
     private $userRepository;
+    private $postRepository;
 
-    public function __construct(UserRepositoryInterface $userRepository)
-    {
+    public function __construct(
+        UserRepositoryInterface $userRepository,
+        PostRepositoryInterface $postRepository
+    ) {
         $this->userRepository = $userRepository;
+        $this->postRepository = $postRepository;
     }
 
     public function getLogin()
@@ -220,7 +225,8 @@ class AuthController extends Controller
         if (Auth::id()) {
             $user = $this->userRepository->getUserById(Auth::id());
             if ($user !== null) {
-                return view('pages.user.info', compact('user'));
+                $posts = $this->postRepository->getPostAction(Auth::id());
+                return view('pages.user.info', compact('user', 'posts'));
             }
         }
 

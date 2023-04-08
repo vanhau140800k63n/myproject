@@ -16,4 +16,5 @@ interface PostRepositoryInterface
     public function getPostChangeTitle();
     public function getPostById($id);
     public function checkImage($image);
+    public function getPostAction($id);
 }
