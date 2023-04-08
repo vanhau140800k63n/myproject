@@ -75,12 +75,12 @@
                                 <h6 class="heading-small text-muted mb-4">Hoạt động gần đây</h6>
                                 <div class="pl-lg-4">
                                     @foreach ($actions as $action)
-                                        <div style="display: flex">
+                                        <div class="recent_activity">
                                             <p style="color: rgb(150, 150, 148)">
                                                 {{ $action->created_at != null ? date_format($action->created_at, 'd/m/Y') : '' }}:&nbsp;&nbsp;
                                             </p>
-                                            <p>{{ $action->title }}&nbsp;</p> <a
-                                                href="{{ route('post.detail', ['slug' => $action->post_slug]) }}"
+                                            <p>{{ $action->title }}&nbsp;</p>
+                                            <a href="{{ route('post.detail', ['slug' => $action->post_slug]) }}"
                                                 style="font-weight: 500; line-height: 1.7; color:#2e6eb4">{{ $action->post_title }}</a>
                                         </div>
                                     @endforeach
