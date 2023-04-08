@@ -28,6 +28,7 @@ Route::get('/update_meta', [HomeController::class, 'updateMeta'])->name('update_
 Route::post('/build_code_php', [LessonController::class, 'buildCodePHP'])->name('build_code_php');
 Route::post('/search-key', [HomeController::class, 'searchKey'])->name('search_key');
 Route::get('/search/{key}', [HomeController::class, 'search'])->name('search');
+Route::post('/action', [PostController::class, 'actionPost'])->name('action');
 
 Route::prefix('learn')->name('learn.')->group(function () {
     Route::get('/{course}-{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
@@ -59,7 +60,6 @@ Route::middleware(['check.logged'])->group(function () {
         Route::post('/update', [AuthController::class, 'updateUserInfo'])->name('update');
     });
     Route::post('/add_comment_post', [PostController::class, 'addComment'])->name('add_comment_post');
-    Route::post('/action', [PostController::class, 'actionPost'])->name('action');
 });
 
 Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(function () {
@@ -97,5 +97,5 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::post('/add_url_to_db', [PostController::class, 'autoUrlToDb'])->name('add_url_to_db');
         Route::get('/auto_update_title_post', [PostController::class, 'autoUpdateTitlePost'])->name('auto_update_title_post');
         Route::post('/update_title_post', [PostController::class, 'updateTitlePost'])->name('pdate_title_post');
-    }); 
+    });
 });

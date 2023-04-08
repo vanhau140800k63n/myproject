@@ -2352,6 +2352,8 @@ $(document).ready(function () {
         action.addClass('active');
       } else if (data == 'remove') {
         action.removeClass('active');
+      } else if (data == 'login') {
+        location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'login';
       }
       return true;
     }).fail(function (e) {

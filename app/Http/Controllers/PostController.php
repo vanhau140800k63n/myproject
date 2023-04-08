@@ -351,6 +351,10 @@ class PostController extends Controller
 
     public function actionPost(Request $req)
     {
+        if (!Auth::check()) {
+            return response()->json('login');
+        }
+
         $data = $req->all();
         if (isset($data['type']) && isset($data['post_id'])) {
             $data['user_id'] = Auth::id();

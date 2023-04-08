@@ -637,6 +637,7 @@ a {
     margin-right: 10px;
     color: #a0a0a0;
     font-size: 18px !important;
+    cursor: pointer;
 }
 
 .fa-bookmark.active {

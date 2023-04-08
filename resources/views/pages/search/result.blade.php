@@ -51,7 +51,7 @@
                         <div class="home_post_action">
                             <?php
                             $save_action = '';
-                            $like_action = '';  
+                            $like_action = '';
                             if (\Illuminate\Support\Facades\Auth::check()) {
                                 $user = \Illuminate\Support\Facades\Auth::user();
                                 $save_action =
