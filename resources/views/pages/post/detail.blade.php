@@ -37,7 +37,9 @@
     @if ($theme == 2)
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css">
-        <script>hljs.highlightAll();</script>
+        <script>
+            hljs.highlightAll();
+        </script>
     @endif
 @endsection
 @section('head')
@@ -55,8 +57,34 @@
                     <div class="post_info_attr_date">
                         {{ $post->created_at != null ? date_format($post->created_at, 'H:i d/m/Y') : '' }}</div>
                     <div class="post_info_attr_view"><i class="fa-solid fa-eye"></i>{{ $post->view }}</div>
-                    <div class="post_info_attr_comment"><i class="fa-solid fa-comments"></i> 0</div>
-                    <div class="post_info_attr_bookmark"><i class="fa-solid fa-bookmark"></i> 0</div>
+                    <div class="post_info_attr_comment"><i class="fa-solid fa-comments"></i> {{ $comments->count() }}</div>
+                    <?php
+                    $save_action = '';
+                    $like_action = '';
+                    if (\Illuminate\Support\Facades\Auth::check()) {
+                        $user = \Illuminate\Support\Facades\Auth::user();
+                        $save_action =
+                            \App\Models\Action::where('type', 3)
+                                ->where('user_id', $user->id)
+                                ->where('post_id', $post->id)
+                                ->get()
+                                ->count() >= 1
+                                ? 'active'
+                                : '';
+                        $like_action =
+                            \App\Models\Action::where('type', 4)
+                                ->where('user_id', $user->id)
+                                ->where('post_id', $post->id)
+                                ->get()
+                                ->count() >= 1
+                                ? 'active'
+                                : '';
+                    }
+                    ?>
+                    <div class="post_info_attr_bookmark"><i action="3" post_id="{{ $post->id }}"
+                            class="fa-solid fa-bookmark {{ $save_action }}"></i> 0</div>
+                    <div class="post_info_attr_like"> <i action="4" post_id="{{ $post->id }}"
+                            class="fa-solid fa-heart {{ $like_action }}"></i> 0</div>
                 </div>
                 <div class="post_info_category">
                     <div class="post_info_category_title">Để xuất:</div>
@@ -117,9 +145,6 @@
                 <div class="cmt_title">Bình luận</div>
                 <div class="comment_input">
                     @if (\Illuminate\Support\Facades\Auth::check())
-                        <?php
-                        $user = \Illuminate\Support\Facades\Auth::user();
-                        ?>
                         <img class="cmt_img" src="{{ asset($user->avata) }}">
                         <input class="cmt_input" type="text" uid="{{ $user->id }}" tid="{{ $post->id }}">
                         <button class="cmt_btn">Đăng</button>
