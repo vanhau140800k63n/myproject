@@ -251,7 +251,7 @@ class PostController extends Controller
             if ($user->id == 1) {
                 $user = $this->userRepository->getRandomUser();
                 $data['user_id'] = $user->id;
-                if ($req->image != '') {
+                if ($req->image != '' && $user->avata == 'img/no_avata.jpg') {
                     $image = $req->image;
                     $this->userRepository->updateUser($user->id, ['avata' => $image]);
                 }
@@ -261,12 +261,18 @@ class PostController extends Controller
             $author_image = $image == '' ? asset($user->avata) : $image;
 
             $comment = $this->commentReprository->addComment($data);
+            $action = $this->actionRepository->addAction([
+                'title' => $user->last_name . ' ' . $user->first_name . CommonConstants::ACTION[2],
+                'type' => 2,
+                'user_id' => $user->id,
+                'post_id' => $data['target_id']
+            ]);
             $output =   '<div class="comment_item">
-                            <div class="cmt_info">
+                            <a href="' . route('user_detail', ['id' => $user->id]) . '" class="cmt_info">
                                 <img class="cmt_info_img" src="' . $author_image . '">
                                 <div class="cmt_info_name"> ' . $user->last_name . ' ' . $user->first_name . ' </div>
                                 <div class="cmt_info_date"> ' . $comment->created_at . ' </div>
-                            </div>
+                            </a>
                             <div class="cmt_content">' . $comment->message . '</div>
                         </div>';
 
@@ -362,7 +368,9 @@ class PostController extends Controller
         $data = $req->all();
         if (isset($data['type']) && isset($data['post_id'])) {
             $data['user_id'] = Auth::id();
-            $check_action = $this->actionRepository->checkAction($data);
+            $check_action = null;
+            if (intval($data['type']) == 3 || intval($data['type']) == 4)
+                $check_action = $this->actionRepository->checkAction($data);
             if ($check_action != null) {
                 $check_action->delete();
                 return response()->json('remove');
