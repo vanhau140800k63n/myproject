@@ -72617,8 +72617,12 @@ $('.cmt_btn').click( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRu
               _token: _token
             }
           }).done(function (data) {
-            $('.cmt_input').val('');
-            $('.comment_list').html(data + $('.comment_list').html());
+            if (data == 'login') {
+              location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'login';
+            } else {
+              $('.cmt_input').val('');
+              $('.comment_list').html(data + $('.comment_list').html());
+            }
             return true;
           }).fail(function (e) {
             return false;

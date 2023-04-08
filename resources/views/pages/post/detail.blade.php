@@ -131,11 +131,11 @@
                 <div class="comment_list">
                     @foreach ($comments as $comment)
                         <div class="comment_item">
-                            <div class="cmt_info">
+                            <a href="{{ route('user_detail', ['id' => $comment->author_id]) }}" class="cmt_info">
                                 <img class="cmt_info_img" src="{{ asset($comment->author_avata) }}">
                                 <div class="cmt_info_name"> {{ $comment->author_name }} </div>
                                 <div class="cmt_info_date"> {{ $comment->created_at }} </div>
-                            </div>
+                            </a>
                             <div class="cmt_content">{{ $comment->message }}</div>
                         </div>
                     @endforeach

@@ -239,6 +239,10 @@ class PostController extends Controller
 
     public function addComment(Request $req)
     {
+        if (!Auth::check()) {
+            return response()->json('login');
+        }
+
         try {
             $data = $req->all();
             $user = Auth::user();
