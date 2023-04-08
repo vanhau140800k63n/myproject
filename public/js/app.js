@@ -2332,7 +2332,7 @@ $(document).ready(function () {
     }, 2000);
   });
   $('.game_design .ͼ1.cm-editor').css('height', $('.game_creen').height());
-  $('.home_post_action i').click(function () {
+  $('.home_post_action i, .post_info_attr_action i').click(function () {
     var action = $(this);
     var _token = $('input[name="_token"]').val();
     $.ajax({

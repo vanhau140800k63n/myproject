@@ -81,9 +81,9 @@
                                 : '';
                     }
                     ?>
-                    <div class="post_info_attr_bookmark"><i action="3" post_id="{{ $post->id }}"
+                    <div class="post_info_attr_action"><i action="3" post_id="{{ $post->id }}"
                             class="fa-solid fa-bookmark {{ $save_action }}"></i> 0</div>
-                    <div class="post_info_attr_like"> <i action="4" post_id="{{ $post->id }}"
+                    <div class="post_info_attr_action"> <i action="4" post_id="{{ $post->id }}"
                             class="fa-solid fa-heart {{ $like_action }}"></i> 0</div>
                 </div>
                 <div class="post_info_category">
