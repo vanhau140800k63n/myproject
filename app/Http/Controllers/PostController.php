@@ -371,7 +371,7 @@ class PostController extends Controller
             $check_action = null;
             if (intval($data['type']) == 3 || intval($data['type']) == 4)
                 $check_action = $this->actionRepository->checkAction($data);
-            if ($check_action != null) {
+            if ($check_action->count() > 0) {
                 $check_action->delete();
                 return response()->json('remove');
             }

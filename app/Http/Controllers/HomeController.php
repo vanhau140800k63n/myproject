@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\PLanguage;
 use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;

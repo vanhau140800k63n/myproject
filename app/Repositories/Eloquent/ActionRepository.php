@@ -22,7 +22,7 @@ class ActionRepository extends BaseRepository implements ActionRepositoryInterfa
 
     public function checkAction($data)
     {
-        return $this->action->where('user_id', $data['user_id'])->where('type', $data['type'])->where('post_id', $data['post_id'])->first();
+        return $this->action->where('user_id', $data['user_id'])->where('type', $data['type'])->where('post_id', $data['post_id']);
     }
 
     public function getActionUser($id)
@@ -33,9 +33,10 @@ class ActionRepository extends BaseRepository implements ActionRepositoryInterfa
             ->where('action.user_id', $id)->orderBy('action.created_at', 'desc')->take(20)->get();
     }
 
-    public function limitAction($id, $limit) {
+    public function limitAction($id, $limit)
+    {
         $count_action = $this->action->where('user_id', $id)->get()->count();
-        if($count_action > $limit) {
+        if ($count_action > $limit) {
             $del_action = $this->action->where('user_id', $id)->orderBy('created_at', 'asc')->take($count_action - $limit)->delete();
 
             return true;
