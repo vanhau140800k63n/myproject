@@ -3,15 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Exceptions\PageException;
+use App\Repositories\ActionRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 
 class UserController extends Controller
 {
     private $userRepository;
+    private $actionRepository;
 
-    public function __construct(UserRepositoryInterface $userRepository)
-    {
+    public function __construct(
+        UserRepositoryInterface $userRepository,
+        ActionRepositoryInterface $actionRepository
+    ) {
         $this->userRepository = $userRepository;
+        $this->actionRepository = $actionRepository;
     }
 
     public function getUserInfoDetail($id)
@@ -20,13 +25,14 @@ class UserController extends Controller
         if ($user === false || ($user->first_name == null && $user->last_name == null)) {
             throw new PageException();
         }
-        return view('pages.user.detail', compact('user'));
+        $actions = $this->actionRepository->getActionUser($user->id);
+        return view('pages.user.detail', compact('user', 'actions'));
     }
 
     public function listUser()
     {
         $first_name_list = ['Hoàng', 'Nguyễn', 'Phạm', 'Lê', 'Đặng', 'Phan', 'Đỗ', 'Bùi'];
-        
+
         foreach ($first_name_list as $first_name) {
             $curl = curl_init();
             curl_setopt_array($curl, array(
@@ -38,7 +44,7 @@ class UserController extends Controller
                 CURLOPT_FOLLOWLOCATION => true,
                 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                 CURLOPT_CUSTOMREQUEST => 'POST',
-                CURLOPT_POSTFIELDS => 'action=ten_tieng_viet_random&gender=male&is_fullname=yes&surname_option=select&surname='. $first_name .'&so_luong=16&exclude=&lang=vi',
+                CURLOPT_POSTFIELDS => 'action=ten_tieng_viet_random&gender=male&is_fullname=yes&surname_option=select&surname=' . $first_name . '&so_luong=16&exclude=&lang=vi',
                 CURLOPT_HTTPHEADER => array(
                     'Host: dichthuatphuongdong.com',
                     'Cookie: PHPSESSID=6849cc6dc4de50b8d1f5985bcecf0bc1; _ga=GA1.1.180132158.1678784778; __gads=ID=9b32a5382766635b-2234b6f1fbdb004f:T=1678784778:RT=1678784778:S=ALNI_MbtYAcL5yDneY27kMo2gaNvfQ5beQ; __gpi=UID=00000bd9614b9f63:T=1678784778:RT=1678784778:S=ALNI_Mbzzs20iKiMzdTcmBQzTeckCYt1Dg; _ga_QNF8ZRW013=GS1.1.1678784777.1.1.1678784787.50.0.0; FCNEC=%5B%5B%22AKsRol870Fjy3Qiy66rAWXvxwQ_ir8HHjr2kBPpIAb1ID6H5FQUKXA6DQ78nawcSJGGzr3edGk47BOf5CY2c2SDDmYwS6O3oybYKF7CDjTN-oR46RH6Zol4NM4l8y_Q8Qlpic_ElTl7vEkQARmn_MWtkrq7MfYflwA%3D%3D%22%5D%2Cnull%2C%5B%5D%5D',

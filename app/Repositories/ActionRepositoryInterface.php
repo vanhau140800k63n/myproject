@@ -6,4 +6,5 @@ interface ActionRepositoryInterface
 {
     public function addAction($data);
     public function checkAction($data);
+    public function getActionUser($id);
 }
