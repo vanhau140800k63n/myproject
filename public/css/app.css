@@ -1583,6 +1583,7 @@ code * {
 
     .recent_activity {
         flex-direction: column;
+        margin-bottom: 15px;
     }
 }
 
