@@ -101,6 +101,7 @@ class HomeController extends Controller
                     } else {
                         $pos = $size - 1;
                     }
+                    if($pos > 4) $pos = 4;
                     for ($i = 1; $i < $pos; ++$i) {
                         for ($j = 0; $j <= $size - $i; ++$j) {
                             for ($k = $j; $k < $j + $i; ++$k) {
@@ -145,6 +146,7 @@ class HomeController extends Controller
                     } else {
                         $pos = $size - 1;
                     }
+                    if($pos > 4) $pos = 4;
                     for ($i = 1; $i < $pos; ++$i) {
                         for ($j = 0; $j <= $size - $i; ++$j) {
                             for ($k = $j; $k < $j + $i; ++$k) {
