@@ -61,7 +61,7 @@
                 </div>
             </div>
         </form>
-        <div class="home_post" style="padding: 20px; margin-top: 50px">
+        <div class="home_post default_list">
             @foreach ($posts as $post)
                 <div class="home_post_item">
                     <a class="home_post_content" href="{{ route('post.detail', ['slug' => $post->slug]) }}">
