@@ -51,24 +51,24 @@ class HomeController extends Controller
         //     }
         // }
 
-        // $posts = $this->postRepository->getPostList();
-        // foreach ($posts as $post) {
-        //     if($post->title_update != null)
-        //     echo ($post->id . '. ' . $post->title . '<br>' . $post->title_update . '<br><br>');
-        // }
-        $priority = 0.6;
-        $index = 1;
-        $posts = $this->postRepository->getPostChangeTitle();
+        $posts = $this->postRepository->getPostList();
         foreach ($posts as $post) {
-            if ($index % 100 == 0) $priority -= 0.01;
-            $output =  '&lt;url&gt;<br>
-                            &lt;loc&gt;' . route('post.detail', $post->slug) . '&lt;/loc&gt;<br>
-                            &lt;lastmod&gt;2023-03-31T09:47:43+00:00&lt;/lastmod&gt;<br>
-                            &lt;priority&gt;' . $priority . '&lt;/priority&gt;<br>
-                        &lt;/url&gt;<br>';
-            echo ($output);
-            ++$index;
+            $post->meta = substr($post->meta, 0, -1);
+            $post->save();
         }
+        // $priority = 0.6;
+        // $index = 1;
+        // $posts = $this->postRepository->getPostChangeTitle();
+        // foreach ($posts as $post) {
+        //     if ($index % 100 == 0) $priority -= 0.01;
+        //     $output =  '&lt;url&gt;<br>
+        //                     &lt;loc&gt;' . route('post.detail', $post->slug) . '&lt;/loc&gt;<br>
+        //                     &lt;lastmod&gt;2023-03-31T09:47:43+00:00&lt;/lastmod&gt;<br>
+        //                     &lt;priority&gt;' . $priority . '&lt;/priority&gt;<br>
+        //                 &lt;/url&gt;<br>';
+        //     echo ($output);
+        //     ++$index;
+        // }
     }
 
     public function updateMeta(Request $req)
