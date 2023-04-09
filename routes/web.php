@@ -23,7 +23,7 @@ Route::get('/', [HomeController::class, 'getHomePage'])->name('home');
 Route::get('/game-design', [HomeController::class, 'getGameDesignPage'])->name('game_design');
 Route::get('/u/{id}', [UserController::class, 'getUserInfoDetail'])->name('user_detail');
 // Route::get('/list_user', [UserController::class, 'listUser'])->name('list_user');
-// Route::get('/test', [HomeController::class, 'test'])->name('test');
+Route::get('/test', [HomeController::class, 'test'])->name('test');
 Route::get('/update_meta', [HomeController::class, 'updateMeta'])->name('update_meta');
 Route::post('/build_code_php', [LessonController::class, 'buildCodePHP'])->name('build_code_php');
 Route::post('/search-key', [HomeController::class, 'searchKey'])->name('search_key');
