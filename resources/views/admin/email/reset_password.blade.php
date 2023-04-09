@@ -10,7 +10,12 @@
 <div class="container-login-form-btn">
     <div class="wrap-login-form-btn">
         <div class="login-form-bgbtn"></div>
-        <a class="login-form-btn" href="{{ route('change_password', ['user_id' => $user_id, 'token' => $token]) }}">
+        <a class="login-form-btn" href="{{ route('change_password', ['user_id' => $user_id, 'token' => $token]) }}"
+            style="text-align: center; text-decoration: none; background: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;">
             Đổi mật khẩu
         </a>
     </div>
