@@ -38,7 +38,7 @@
     <title>Trang chủ - Khóa học lập trình miễn phí</title>
 @endsection
 @section('content')
-    <div class="page-wrap">
+    {{-- <div class="page-wrap">
         <div class="w-embed">
         </div>
         <div data-w-id="e3829c7a-29b8-d59d-e2ec-45a0409f0b5f" class="main">
@@ -557,7 +557,7 @@
                 $(section).find('.content').click();
             });
         });
-    </script>
+    </script> --}}
     <div class="box">
         <div class="home_lesson">
             @foreach ($p_languages as $p_language)
