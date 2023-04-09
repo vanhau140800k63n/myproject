@@ -60,11 +60,11 @@ class HomeController extends Controller
         $index = 1;
         $posts = $this->postRepository->getPostChangeTitle();
         foreach ($posts as $post) {
-            if($index % 100 == 0) $priority -= 0.01;
+            if ($index % 100 == 0) $priority -= 0.01;
             $output =  '&lt;url&gt;<br>
                             &lt;loc&gt;' . route('post.detail', $post->slug) . '&lt;/loc&gt;<br>
                             &lt;lastmod&gt;2023-03-31T09:47:43+00:00&lt;/lastmod&gt;<br>
-                            &lt;priority&gt;'. $priority .'&lt;/priority&gt;<br>
+                            &lt;priority&gt;' . $priority . '&lt;/priority&gt;<br>
                         &lt;/url&gt;<br>';
             echo ($output);
             ++$index;
@@ -76,7 +76,7 @@ class HomeController extends Controller
         $lesson_list = $this->lessonRepository->getLessonListAll();
         $post_list = $this->postRepository->getPostList();
         foreach ($lesson_list as $lesson) {
-            if ($lesson->meta == '' || $lesson->meta == null) {
+            if ($lesson->meta == '' || $lesson->meta == null || true) {
                 $str = $lesson->title;
                 $i = 0;
                 $data = [];
@@ -95,13 +95,13 @@ class HomeController extends Controller
                 $size = sizeof($data);
                 if ($size > 2) {
                     if ($size == 3) {
-                        $pos = 2;
+                        $pos = 3;
                     } else if ($size >= 7) {
-                        $pos = $size - 3;
+                        $pos = $size - 4;
                     } else {
-                        $pos = $size - 2;
+                        $pos = $size - 1;
                     }
-                    for ($i = $pos; $i < $size; ++$i) {
+                    for ($i = 1; $i < $pos; ++$i) {
                         for ($j = 0; $j <= $size - $i; ++$j) {
                             for ($k = $j; $k < $j + $i; ++$k) {
                                 if ($k == $j + $i - 1) {
@@ -120,7 +120,7 @@ class HomeController extends Controller
         }
 
         foreach ($post_list as $post) {
-            if ($post->meta == '' || $post->meta == null) {
+            if ($post->meta == '' || $post->meta == null || true) {
                 $str = $post->title;
                 $i = 0;
                 $data = [];
@@ -139,13 +139,13 @@ class HomeController extends Controller
                 $size = sizeof($data);
                 if ($size > 2) {
                     if ($size == 3) {
-                        $pos = 2;
+                        $pos = 3;
                     } else if ($size >= 7) {
-                        $pos = $size - 3;
+                        $pos = $size - 4;
                     } else {
-                        $pos = $size - 2;
+                        $pos = $size - 1;
                     }
-                    for ($i = $pos; $i < $size; ++$i) {
+                    for ($i = 1; $i < $pos; ++$i) {
                         for ($j = 0; $j <= $size - $i; ++$j) {
                             for ($k = $j; $k < $j + $i; ++$k) {
                                 if ($k == $j + $i - 1) {
