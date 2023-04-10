@@ -28,6 +28,15 @@
         }
     </style>
     <link rel="stylesheet" href="{{ asset(mix('lib/tinymce/skins/ui/oxide/content.min.css')) }}">
+    @if ($course->id == 10)
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css">
+        <script>
+            hljs.highlightAll();
+        </script>
+    @else
+        <link rel="stylesheet" href="{{ asset(mix('lib/tinymce/skins/ui/oxide/content.min.css')) }}">
+    @endif
 @endsection
 @section('head')
     <title>{{ $lesson->title }}</title>
