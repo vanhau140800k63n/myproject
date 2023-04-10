@@ -102,6 +102,10 @@
     font-weight: 600;
 }
 
+.lesson_content_text button {
+    display: none;
+}
+
 
 /* .lesson_content_text h3 a {
     font-size: var(--h3-size) !important;
