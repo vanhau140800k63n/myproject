@@ -27,7 +27,6 @@
             overflow: auto;
         }
     </style>
-    <link rel="stylesheet" href="{{ asset(mix('lib/tinymce/skins/ui/oxide/content.min.css')) }}">
     @if ($course->id == 10)
         <link rel="stylesheet" href="{{ asset(mix('css/update.css')) }}">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
@@ -78,7 +77,7 @@
                         @endif
                     </div>
                     @if ($item->type === 'text')
-                        <div class="post_content_text">
+                        <div class="lesson_content_text">
                             {!! $item->content !!}
                         </div>
                     @else
