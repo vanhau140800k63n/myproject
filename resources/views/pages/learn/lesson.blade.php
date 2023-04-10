@@ -78,7 +78,9 @@
                         @endif
                     </div>
                     @if ($item->type === 'text')
-                        {!! $item->content !!}
+                        <div class="post_content_text">
+                            {!! $item->content !!}
+                        </div>
                     @else
                         <div class="lesson_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
                             lang="{{ $item->p_language_id }}">
