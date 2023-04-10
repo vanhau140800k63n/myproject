@@ -1,0 +1,163 @@
+:root {
+    --h1-size: 28px;
+    --h2-size: 24px;
+    --h3-size: 22px;
+    --h4-size: 20px;
+}
+
+.lesson_content_text h3 {
+    font-size: var(--h3-size) !important;
+    margin: 30px 0 15px;
+    font-weight: 500;
+}
+
+.lesson_content_text h4 {
+    font-size: var(--h3-size) !important;
+    margin: 12px 0;
+    font-weight: 500;
+}
+
+.lesson_content_text h3 * {
+    font-size: var(--h3-size) !important;
+    margin: 30px 0 15px;
+    font-weight: 500;
+}
+
+.lesson_content_text h4 * {
+    font-size: var(--h4-size) !important;
+    margin: 12px 0;
+    font-weight: 500;
+}
+
+.lesson_content_text p {
+    margin-top: 10px;
+}
+
+.lesson_content_text pre {
+    margin-top: 20px;
+}
+
+.lesson_content_text div {
+    margin-top: 15px;
+}
+
+.lesson_content_text h2 * {
+    font-size: var(--h2-size) !important;
+    margin: 35px 0 15px;
+    font-weight: 500;
+}
+
+.lesson_content_text h2 {
+    font-size: var(--h2-size) !important;
+    margin: 35px 0 15px;
+    font-weight: 500;
+}
+
+.lesson_content_text h1 {
+    font-size: var(--h1-size) !important;
+    margin: 40px 0 20px;
+    font-weight: 600;
+}
+
+.lesson_content_text h1 * {
+    font-size: var(--h1-size) !important;
+    margin: 40px 0 20px;
+    font-weight: 600;
+}
+
+.lesson_content_text iframe {
+    width: 100%;
+    min-height: 300px;
+}
+
+.lesson_content_text img {
+    width: 100%;
+    max-height: 500px;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+.lesson_content_text .emoji {
+    display: none;
+}
+
+
+.lesson_content_text h3 code {
+    font-size: var(--h3-size) !important;
+    font-weight: 500;
+}
+
+.lesson_content_text h4 code {
+    font-size: var(--h4-size) !important;
+    font-weight: 500;
+}
+
+
+.lesson_content_text h2 code {
+    font-size: var(--h2-size) !important;
+    font-weight: 500;
+}
+
+.lesson_content_text h1 code {
+    font-size: var(--h1-size) !important;
+    font-weight: 600;
+}
+
+
+/* .lesson_content_text h3 a {
+    font-size: var(--h3-size) !important;
+    font-weight: 500;
+}
+
+.lesson_content_text h4 a {
+    font-size: var(--h4-size) !important;
+    font-weight: 500;
+}
+
+
+.lesson_content_text h2 a {
+    font-size: var(--h2-size) !important;
+    font-weight: 500;
+}
+
+.lesson_content_text h1 a {
+    font-size: var(--h1-size) !important;
+    font-weight: 600;
+} */
+
+.lesson_content_text a {
+    color: #ed5829;
+}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .lesson_content_text {
+        --h1-size: 22px;
+        --h2-size: 20px;
+        --h3-size: 18px;
+        --h4-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .lesson_content_text {
+        --h1-size: 21px;
+        --h2-size: 19px;
+        --h3-size: 17px;
+        --h4-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .lesson_content_text {
+        --h1-size: 20px;
+        --h2-size: 18px;
+        --h3-size: 16px;
+        --h4-size: 14px;
+    }
+}
