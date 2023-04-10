@@ -81,7 +81,6 @@
     display: none;
 }
 
-
 .lesson_content_text h3 code {
     font-size: var(--h3-size) !important;
     font-weight: 500;
@@ -125,8 +124,13 @@
     font-weight: 600;
 } */
 
+.lesson_content table {
+    background: #f0f0f0;
+    box-shadow: none !important;
+}
+
 .lesson_content_text a {
-    color: #ed5829;
+    color: #004cbd;
 }
 
 @media only screen and (min-width: 1400px) {}
