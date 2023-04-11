@@ -17,4 +17,5 @@ interface PostRepositoryInterface
     public function getPostById($id);
     public function checkImage($image);
     public function getPostAction($id);
+    public function getPostLikeSlug($slug);
 }

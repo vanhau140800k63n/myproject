@@ -161,6 +161,11 @@ class PostController extends Controller
 
             if ($post != null) {
                 return redirect()->route('post.detail', $post->slug);
+            } else {
+                $post = $this->postRepository->getPostLikeSlug($slug);
+                if ($post != null) {
+                    return redirect()->route('post.detail', $post->slug);
+                }
             }
         }
 

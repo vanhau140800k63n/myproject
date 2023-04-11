@@ -56,6 +56,11 @@ class PostRepository extends BaseRepository implements PostRepositoryInterface
         return $this->post->where('slug', $slug)->first();
     }
 
+    public function getPostLikeSlug($slug)
+    {
+        return $this->post->where('slug', 'like', '%' . $slug . '%')->first();
+    }
+
     public function delPostAdmin($id)
     {
         return $this->post->where('id', $id)->delete();
