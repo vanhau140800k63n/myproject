@@ -184,7 +184,7 @@ class PostController extends Controller
             }
             $category_titles = $this->categoryRepository->getCategoryTitle(explode('-', $post->category));
             $author = $this->userRepository->getUserById($post->created_by);
-            $posts = $this->postRepository->getPostList();
+            // $posts = $this->postRepository->getPostList();
             $categories = explode('-', $post->category);
             $raw = 'post.title like "%' . $post->title . '%"';
             foreach ($categories as $category) {
@@ -194,7 +194,7 @@ class PostController extends Controller
             }
             $posts_related = $this->postRepository->searchPostRaw($raw, 10);
             $comments = $this->commentReprository->getPostComments($post->id);
-            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'posts', 'comments', 'posts_related', 'theme'));
+            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'comments', 'posts_related', 'theme'));
         }
 
         throw new PageException();
