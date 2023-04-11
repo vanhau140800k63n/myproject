@@ -242,7 +242,7 @@ class AuthController extends Controller
             $data_path = $name . '.' . pathinfo($avata->getClientOriginalName(), PATHINFO_EXTENSION);
             $avata->move('img/avata_user/', $data_path);
 
-            if (Auth::user()->avata !== null) {
+            if (Auth::user()->avata !== null && Auth::user()->avata !== 'img/no_avata.jpg') {
                 File::delete(Auth::user()->avata);
             }
         }
