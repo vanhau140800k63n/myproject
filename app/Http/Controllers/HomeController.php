@@ -57,11 +57,11 @@ class HomeController extends Controller
         //     $post->save();
         // }
 
-        $lessons = $this->lessonRepository->getLessonListAll();
-        foreach ($lessons as $lesson) {
-            $lesson->meta = substr($lesson->meta, 0, -1);
-            $lesson->save();
-        }
+        // $lessons = $this->lessonRepository->getLessonListAll();
+        // foreach ($lessons as $lesson) {
+        //     $lesson->meta = substr($lesson->meta, 0, -1);
+        //     $lesson->save();
+        // }
 
         // $priority = 0.6;
         // $index = 1;
