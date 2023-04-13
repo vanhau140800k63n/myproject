@@ -174,6 +174,10 @@ class PostController extends Controller
             $post->save();
             $post_detail = $this->contentItemRepository->getPostDetail($post->id);
             $theme = 1;
+            if ($post->type == 4) {
+                $theme = 2;
+            }
+
             if ($post_detail->count() == 1) {
                 foreach ($post_detail as $item) {
                     if ($item->title == "Let's get started") {
