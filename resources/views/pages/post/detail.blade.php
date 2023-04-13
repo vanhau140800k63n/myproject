@@ -100,7 +100,8 @@
             @foreach ($post_detail as $item)
                 <div class="post_content">
                     <div class="post_content_head">
-                        <div class="post_content_title">{{ $item->title }}</div>
+                        <div class="post_content_title">{{ $item->title == 'Let\'s get started' ? '' : $item->title }}
+                        </div>
                         @if ($item->type !== 'text' && intval($item->compiler) === 1)
                             <button class="run_code"> Run code </button>
                         @endif
