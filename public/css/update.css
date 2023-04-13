@@ -5,46 +5,17 @@
     --h4-size: 20px;
 }
 
-.post_content_text h3 {
-    font-size: var(--h3-size) !important;
-    margin: 30px 0 15px;
-    font-weight: 500;
-}
-
-.post_content_text h4 {
-    font-size: var(--h3-size) !important;
-    margin: 12px 0;
-    font-weight: 500;
-}
-
-.post_content_text h3 strong {
-    font-size: var(--h3-size) !important;
-    margin: 30px 0 15px;
-    font-weight: 500;
-}
-
-.post_content_text h4 strong {
-    font-size: var(--h4-size) !important;
-    margin: 12px 0;
-    font-weight: 500;
-}
-
 .post_content_text p {
     margin-top: 10px;
 }
 
 .post_content_text pre {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .post_content_text div {
     margin-top: 15px;
-}
-
-.post_content_text h2 strong {
-    font-size: var(--h2-size) !important;
-    margin: 35px 0 15px;
-    font-weight: 500;
 }
 
 .post_content_text h2 {
@@ -57,6 +28,38 @@
     font-size: var(--h1-size) !important;
     margin: 40px 0 20px;
     font-weight: 600;
+}
+
+.post_content_text h3 {
+    font-size: var(--h3-size) !important;
+    margin: 30px 0 15px;
+    font-weight: 500;
+}
+
+.post_content_text h4 {
+    font-size: var(--h3-size) !important;
+    margin: 12px 0;
+    font-weight: 500;
+}
+
+.post_content_text h1 * {
+    font-size: var(--h1-size) !important;
+    font-weight: 600;
+}
+
+.post_content_text h2 * {
+    font-size: var(--h2-size) !important;
+    font-weight: 500;
+}
+
+.post_content_text h3 * {
+    font-size: var(--h3-size) !important;
+    font-weight: 500;
+}
+
+.post_content_text h4 * {
+    font-size: var(--h4-size) !important;
+    font-weight: 500;
 }
 
 .post_content_text iframe {
@@ -75,52 +78,8 @@
     display: none;
 }
 
-
-.post_content_text h3 code {
-    font-size: var(--h3-size) !important;
-    font-weight: 500;
-}
-
-.post_content_text h4 code {
-    font-size: var(--h4-size) !important;
-    font-weight: 500;
-}
-
-
-.post_content_text h2 code {
-    font-size: var(--h2-size) !important;
-    font-weight: 500;
-}
-
-.post_content_text h1 code {
-    font-size: var(--h1-size) !important;
-    font-weight: 600;
-}
-
-
-.post_content_text h3 a {
-    font-size: var(--h3-size) !important;
-    font-weight: 500;
-}
-
-.post_content_text h4 a {
-    font-size: var(--h4-size) !important;
-    font-weight: 500;
-}
-
-
-.post_content_text h2 a {
-    font-size: var(--h2-size) !important;
-    font-weight: 500;
-}
-
-.post_content_text h1 a {
-    font-size: var(--h1-size) !important;
-    font-weight: 600;
-}
-
 .post_content_text a {
-    color: #ed5829;
+    color: #004cbd;
 }
 
 @media only screen and (min-width: 1400px) {}

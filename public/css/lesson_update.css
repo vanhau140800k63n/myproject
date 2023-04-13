@@ -5,30 +5,6 @@
     --h4-size: 20px;
 }
 
-.lesson_content_text h3 {
-    font-size: var(--h3-size) !important;
-    margin: 30px 0 15px;
-    font-weight: 500;
-}
-
-.lesson_content_text h4 {
-    font-size: var(--h3-size) !important;
-    margin: 12px 0;
-    font-weight: 500;
-}
-
-.lesson_content_text h3 * {
-    font-size: var(--h3-size) !important;
-    margin: 30px 0 15px;
-    font-weight: 500;
-}
-
-.lesson_content_text h4 * {
-    font-size: var(--h4-size) !important;
-    margin: 12px 0;
-    font-weight: 500;
-}
-
 .lesson_content_text p {
     margin-top: 10px;
 }
@@ -39,12 +15,6 @@
 
 .lesson_content_text div {
     margin-top: 15px;
-}
-
-.lesson_content_text h2 * {
-    font-size: var(--h2-size) !important;
-    margin: 35px 0 15px;
-    font-weight: 500;
 }
 
 .lesson_content_text h2 {
@@ -59,10 +29,36 @@
     font-weight: 600;
 }
 
+.lesson_content_text h3 {
+    font-size: var(--h3-size) !important;
+    margin: 30px 0 15px;
+    font-weight: 500;
+}
+
+.lesson_content_text h4 {
+    font-size: var(--h3-size) !important;
+    margin: 12px 0;
+    font-weight: 500;
+}
+
 .lesson_content_text h1 * {
     font-size: var(--h1-size) !important;
-    margin: 40px 0 20px;
     font-weight: 600;
+}
+
+.lesson_content_text h2 * {
+    font-size: var(--h2-size) !important;
+    font-weight: 500;
+}
+
+.lesson_content_text h3 * {
+    font-size: var(--h3-size) !important;
+    font-weight: 500;
+}
+
+.lesson_content_text h4 * {
+    font-size: var(--h4-size) !important;
+    font-weight: 500;
 }
 
 .lesson_content_text iframe {
@@ -80,49 +76,6 @@
 .lesson_content_text .emoji {
     display: none;
 }
-
-.lesson_content_text h3 code {
-    font-size: var(--h3-size) !important;
-    font-weight: 500;
-}
-
-.lesson_content_text h4 code {
-    font-size: var(--h4-size) !important;
-    font-weight: 500;
-}
-
-
-.lesson_content_text h2 code {
-    font-size: var(--h2-size) !important;
-    font-weight: 500;
-}
-
-.lesson_content_text h1 code {
-    font-size: var(--h1-size) !important;
-    font-weight: 600;
-}
-
-
-/* .lesson_content_text h3 a {
-    font-size: var(--h3-size) !important;
-    font-weight: 500;
-}
-
-.lesson_content_text h4 a {
-    font-size: var(--h4-size) !important;
-    font-weight: 500;
-}
-
-
-.lesson_content_text h2 a {
-    font-size: var(--h2-size) !important;
-    font-weight: 500;
-}
-
-.lesson_content_text h1 a {
-    font-size: var(--h1-size) !important;
-    font-weight: 600;
-} */
 
 .lesson_content table {
     background: #f0f0f0;
