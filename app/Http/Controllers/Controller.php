@@ -54,7 +54,7 @@ class Controller extends BaseController
         $str = preg_replace("/(Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ)/", 'U', $str);
         $str = preg_replace("/(Ỳ|Ý|Ỵ|Ỷ|Ỹ)/", 'Y', $str);
         $str = preg_replace("/(Đ)/", 'D', $str);
-        $str = preg_replace("/(\“|\”|\‘|\’|\,|\!|\&|\;|\@|\#|\%|\?|\~|\`|\=|\_|\'|\]|\[|\}|\{|\)|\(|\+|\^|\/|\:)/", '-', $str);
+        $str = preg_replace("/(\“|\”|\"|\–|\‘|\’|\,|\!|\&|\;|\@|\#|\%|\?|\~|\`|\=|\_|\'|\]|\[|\}|\{|\)|\(|\+|\^|\/|\:)/", '-', $str);
         $str = preg_replace("/( )/", '-', $str);
         $str = preg_replace("/(---)/", '-', $str);
         $str = preg_replace("/(--)/", '-', $str);
