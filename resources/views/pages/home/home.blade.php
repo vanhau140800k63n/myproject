@@ -569,6 +569,7 @@
                         <div class="home_lesson_cover"></div>
                     </a>
                     <a class="home_lesson_info"
+                        style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'), {{ $p_language->color }}"
                         href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}">
                         Học {{ $p_language->full_name }} miễn phí
                     </a>
