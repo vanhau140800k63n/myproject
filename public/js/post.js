@@ -72426,7 +72426,6 @@ $('.home_post_card').each(function () {
       return false;
     });
   });
-  $(this).parent().children('.home_post_info').css('background', $('#input_' + language).attr('color'));
 });
 $('.post_box_content .post_content').each(function () {
   if ($(this).find('.post_card').length > 0) {

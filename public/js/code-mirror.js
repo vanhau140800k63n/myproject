@@ -72422,7 +72422,7 @@ $('.home_lesson_card').each(function () {
       return false;
     });
   });
-  $(this).parent().children('.home_lesson_info').css('background', $('#input_' + language).attr('color'));
+  $(this).parent().children('.home_lesson_info').css('background-image', "url('https://www.transparenttextures.com/patterns/cubes.png') ," + $('#input_' + language).attr('color'));
 });
 $('.lesson_box_content .lesson_content').each(function () {
   if ($(this).find('.lesson_card').length > 0) {
