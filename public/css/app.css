@@ -2301,6 +2301,14 @@ code * {
         margin-left: 5px;
         max-width: 65px;
     }
+
+    .post_box_category {
+        display: none;
+    }
+
+    .post_box_content {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 991px) {
