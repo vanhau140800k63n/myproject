@@ -628,7 +628,7 @@
             @foreach ($p_languages as $p_language)
                 <div class="home_solution_item"
                     style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'), {{ $p_language->color }}">
-                    Một số bài toán {{ $p_language->full_name }}
+                    Một số bài toán <br> {{ $p_language->full_name }}
                 </div>
             @endforeach
         </div>
