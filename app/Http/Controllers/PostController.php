@@ -190,7 +190,11 @@ class PostController extends Controller
             $author = $this->userRepository->getUserById($post->created_by);
             // $posts = $this->postRepository->getPostList();
             $categories = explode('-', $post->category);
-            $raw = 'post.title like "%' . $post->title . '%"';
+            if (str_contains($post->title, '"')) {
+                $raw = "post.title like '%" . $post->title . "%'";
+            } else {
+                $raw = 'post.title like "%' . $post->title . '%"';
+            }
             foreach ($categories as $category) {
                 if ($category != '') {
                     $raw .= ' or post.category like "' . $category . '-%"' .  ' or post.category like "%-' . $category . '-%"' . ' or post.category like "%-' . $category . '"';

@@ -317,8 +317,8 @@ a {
     width: 27px;
     height: 27px;
     border-radius: 25px;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
     border: 1px solid #dadce1;
 }
 
