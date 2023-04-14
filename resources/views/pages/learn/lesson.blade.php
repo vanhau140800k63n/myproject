@@ -145,7 +145,7 @@
                                 <div style="width:10%"> </div>
                             @endif
                             <a href="{{ route('learn.lesson_intro', ['course' => $course_item->name]) }}"
-                                class="other_course_item_text" style="background: {{ $course_item->color }}; width:90%">
+                                class="other_course_item_text" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'), {{ $course_item->color }}; width:90%">
                                 <div>Khóa học
                                     {{ $course_item->full_name }}</div>
                             </a>
