@@ -624,7 +624,7 @@
                 </div>
             @endforeach
         </div>
-        <div class="home_lesson" style="margin-top: 100px">
+        <div class="home_lesson" style="margin-top: 200px">
             @foreach ($p_languages as $p_language)
                 <div class="home_solution_item"
                     style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'), {{ $p_language->color }}">
