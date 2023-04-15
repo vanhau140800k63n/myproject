@@ -2263,15 +2263,15 @@ code * {
 }
 
 .cmt_action_box button:nth-last-child(1) {
-    background: linear-gradient(83.2deg, rgb(188, 91, 76) 10.8%, rgb(215, 58, 58) 94.3%);
+    background-image: radial-gradient( circle 325px at 19.2% 64.8%,  rgba(254,62,101,1) 9.7%, rgba(166,24,146,1) 91.3% );
 }
 
 .cmt_action_box button:nth-last-child(2) {
-    background: linear-gradient(83.2deg, rgb(66, 66, 106) 10.8%, rgb(105, 101, 169) 94.3%);
+    background-image: radial-gradient( circle 897px at 9% 80.3%,  rgba(55,60,245,1) 0%, rgba(234,161,15,0.90) 100.2% );
 }
 
 .cmt_action_box button:nth-last-child(3) {
-    background: linear-gradient(83.2deg, rgb(66, 66, 106) 10.8%, rgb(105, 101, 169) 94.3%);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(38,51,97,1) 0%, rgba(65,143,222,1) 79% );
 }
 
 .post_list_item {
