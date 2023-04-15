@@ -2363,7 +2363,7 @@ $(document).ready(function () {
       return false;
     });
   });
-  $('.cmt_content_action').on('click', function () {
+  $(document).on('click', '.cmt_content_action', function () {
     $('.cmt_action_box').hide();
     $(this).parent().parent().children('.cmt_action_box').show();
   });
