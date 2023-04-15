@@ -162,7 +162,19 @@
                                 <div class="cmt_info_name"> {{ $comment->author_name }} </div>
                                 <div class="cmt_info_date"> {{ $comment->created_at }} </div>
                             </a>
-                            <div class="cmt_content">{{ $comment->message }}</div>
+                            <div class="cmt_content">
+                                <p class="cmt_content_text">
+                                    {{ $comment->message }}
+                                </p>
+                                <i class="fa-solid fa-ellipsis cmt_content_action"></i>
+                            </div>
+                            <div class="cmt_action_box">
+                                @if (\Illuminate\Support\Facades\Auth::check())
+                                    <button>Sửa</button>
+                                    <button>Xóa</button>
+                                @endif
+                                <button>Báo cáo</button>
+                            </div>
                         </div>
                     @endforeach
                 </div>
@@ -252,7 +264,8 @@
                                 <div style="width:10%"> </div>
                             @endif
                             <a href="{{ route('learn.lesson_intro', ['course' => $course_item->name]) }}"
-                                class="other_course_item_text" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'), {{ $course_item->color }}; width:90%">
+                                class="other_course_item_text"
+                                style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'), {{ $course_item->color }}; width:90%">
                                 <div>Khóa học
                                     {{ $course_item->full_name }}</div>
                             </a>

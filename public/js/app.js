@@ -2315,6 +2315,9 @@ $(document).ready(function () {
   $('.start_now').click(function () {
     $(window).scrollTop($('.home_lesson').position().top - 70);
   });
+  $('.post_info_attr_comment').click(function () {
+    $(window).scrollTop($('.comment_box').position().top - 70);
+  });
   $('.copy_code').click(function () {
     var copy_btn = $(this);
     var temp = $("<textarea>");
@@ -2359,6 +2362,10 @@ $(document).ready(function () {
     }).fail(function (e) {
       return false;
     });
+  });
+  $('.cmt_content_action').click(function () {
+    $('.cmt_action_box').hide();
+    $(this).parent().parent().children('.cmt_action_box').show();
   });
 });
 
