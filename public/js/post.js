@@ -72650,9 +72650,9 @@ $('.cmt_action_box button').click(function () {
       type: "POST",
       dataType: 'json',
       data: {
-        user_id: del_action.attr('uid'),
-        target_id: del_action.attr('tid'),
-        comment_id: del_action.attr('cid'),
+        uid: del_action.attr('uid'),
+        tid: del_action.attr('tid'),
+        cid: del_action.attr('cid'),
         _token: _token
       }
     }).done(function (data) {
