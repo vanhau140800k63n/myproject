@@ -80,6 +80,8 @@
                                 ->count() >= 1
                                 ? 'active'
                                 : '';
+                    } else {
+                        $check = false;
                     }
                     ?>
                     <div class="post_info_attr_action"><i action="3" post_id="{{ $post->id }}"
