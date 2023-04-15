@@ -1048,11 +1048,7 @@ button.bg-white:focus {
 }
 
 .bg-gradient-default {
-    background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
-}
-
-.bg-gradient-default {
-    background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png'), linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
 }
 
 @keyframes floating-lg {
