@@ -72638,7 +72638,7 @@ $('.article-img').each(function () {
 });
 $('.article-img').attr('width', '');
 $('.article-img').attr('height', '');
-$('.cmt_action_box button').on('click', function () {
+$(document).on('click', '.cmt_action_box button', function () {
   var del_action = $(this);
   if (del_action.attr('action') == 'del') {
     var _token = $('input[name="_token"]').val();

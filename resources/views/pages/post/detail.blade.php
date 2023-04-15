@@ -172,7 +172,7 @@
                                 <i class="fa-solid fa-ellipsis cmt_content_action"></i>
                             </div>
                             <div class="cmt_action_box">
-                                @if ($check && $user->id == $comment->user_id)
+                                @if ($check && ($user->id == $comment->user_id || $user->id == 1))
                                     <button action="edit" uid="{{ $user->id }}" tid="{{ $post->id }}" cid="{{ $comment->id }}">Sửa</button>
                                     <button action="del" uid="{{ $user->id }}" tid="{{ $post->id }}" cid="{{ $comment->id }}">Xóa</button>
                                 @endif
