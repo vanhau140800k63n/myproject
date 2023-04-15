@@ -72620,7 +72620,7 @@ $('.cmt_btn').click( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRu
               location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'login';
             } else {
               $('.cmt_input').val('');
-              $('.comment_list').html(data + $('.comment_list').html());
+              $('.comment_list').prepend(data);
             }
             return true;
           }).fail(function (e) {
