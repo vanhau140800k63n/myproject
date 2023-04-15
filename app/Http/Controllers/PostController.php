@@ -411,7 +411,7 @@ class PostController extends Controller
         }
 
         $data = $req->all();
-        if (isset($data['uid']) && isset($data['tid']) && isset($data['cid'])) {
+        if (isset($data['uid']) && isset($data['tid']) && isset($data['cid']) && (Auth::id() == intval($data['uid']) || Auth::id() == 1)) {
             $comment = $this->commentReprository->getDelComment($data);
             if($comment != null) {
                 $comment->delete();
