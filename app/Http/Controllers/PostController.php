@@ -292,7 +292,7 @@ class PostController extends Controller
                             </div>
                             <div class="cmt_action_box">
                                 <button action="edit">Sửa</button>
-                                <button action="del">Xóa</button>
+                                <button action="del" uid="'. $user->id .'" tid="'. $data['target_id'] .'" cid="'. $comment->id .'">Xóa</button>
                                 <button action="report">Báo cáo</button>
                             </div>
                         </div>';
