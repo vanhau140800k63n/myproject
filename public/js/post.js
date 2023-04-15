@@ -72638,6 +72638,35 @@ $('.article-img').each(function () {
 });
 $('.article-img').attr('width', '');
 $('.article-img').attr('height', '');
+$('.cmt_action_box button').click(function () {
+  var del_action = $(this);
+  if (del_action.attr('action') == 'del') {
+    var _token = $('input[name="_token"]').val();
+    $.ajax({
+      url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "del_comment_post",
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      type: "POST",
+      dataType: 'json',
+      data: {
+        user_id: del_action.attr('uid'),
+        target_id: del_action.attr('tid'),
+        comment_id: del_action.attr('cid'),
+        _token: _token
+      }
+    }).done(function (data) {
+      if (data == 'login') {
+        location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'login';
+      } else if (data == true) {
+        del_action.parent().parent().remove();
+      }
+      return true;
+    }).fail(function (e) {
+      return false;
+    });
+  }
+});
 })();
 
 /******/ })()

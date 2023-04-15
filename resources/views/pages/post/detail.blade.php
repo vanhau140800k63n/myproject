@@ -173,10 +173,10 @@
                             </div>
                             <div class="cmt_action_box">
                                 @if ($check && $user->id == $comment->user_id)
-                                    <button>Sửa</button>
-                                    <button>Xóa</button>
+                                    <button action="edit" uid="{{ $user->id }}" tid="{{ $post->id }}" cid="{{ $comment->id }}">Sửa</button>
+                                    <button action="del" uid="{{ $user->id }}" tid="{{ $post->id }}" cid="{{ $comment->id }}">Xóa</button>
                                 @endif
-                                <button>Báo cáo</button>
+                                <button action="report">Báo cáo</button>
                             </div>
                         </div>
                     @endforeach

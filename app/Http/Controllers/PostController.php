@@ -286,7 +286,15 @@ class PostController extends Controller
                                 <div class="cmt_info_name"> ' . $user->last_name . ' ' . $user->first_name . ' </div>
                                 <div class="cmt_info_date"> ' . $comment->created_at . ' </div>
                             </a>
-                            <div class="cmt_content">' . $comment->message . '</div>
+                            <div class="cmt_content"> 
+                                <p class="cmt_content_text">' . $comment->message . '</p>
+                                <i class="fa-solid fa-ellipsis cmt_content_action"></i>
+                            </div>
+                            <div class="cmt_action_box">
+                                <button action="edit">Sửa</button>
+                                <button action="del">Xóa</button>
+                                <button action="report">Báo cáo</button>
+                            </div>
                         </div>';
 
             return response()->json($output);
@@ -392,6 +400,23 @@ class PostController extends Controller
             $action = $this->actionRepository->addAction($data);
 
             return response()->json('add');
+        }
+
+        return response()->json(false);
+    }
+
+    public function delComment(Request $req) {
+        if (!Auth::check()) {
+            return response()->json('login');
+        }
+
+        $data = $req->all();
+        if (isset($data['uid']) && isset($data['tid']) && isset($data['cid'])) {
+            $comment = $this->commentReprository->getDelComment($data);
+            if($comment != null) {
+                $comment->delete();
+                return response()->json(true);
+            }
         }
 
         return response()->json(false);

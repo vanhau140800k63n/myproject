@@ -30,4 +30,8 @@ class CommentRepository extends BaseRepository implements CommentRepositoryInter
         $comment = $this->comment->create($data);
         return $comment;
     }
+
+    public function getDelComment($data) {
+        return $this->comment->where('id', $data['cid'])->where('user_id', $data['uid'])->where('target_id', $data['tid'])->first();
+    }
 }

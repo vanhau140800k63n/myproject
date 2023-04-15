@@ -30,6 +30,7 @@ Route::post('/search-key', [HomeController::class, 'searchKey'])->name('search_k
 Route::get('/search/{key}', [HomeController::class, 'search'])->name('search');
 Route::post('/action', [PostController::class, 'actionPost'])->name('action');
 Route::post('/add_comment_post', [PostController::class, 'addComment'])->name('add_comment_post');
+Route::post('/del_comment_post', [PostController::class, 'delComment'])->name('del_comment_post');
 
 Route::prefix('learn')->name('learn.')->group(function () {
     Route::get('/{course}-{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
