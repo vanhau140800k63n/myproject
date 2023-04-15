@@ -62,6 +62,7 @@
                     $save_action = '';
                     $like_action = '';
                     if (\Illuminate\Support\Facades\Auth::check()) {
+                        $check = true;
                         $user = \Illuminate\Support\Facades\Auth::user();
                         $save_action =
                             \App\Models\Action::where('type', 3)
@@ -145,7 +146,7 @@
             <div class="comment_box">
                 <div class="cmt_title">Bình luận</div>
                 <div class="comment_input">
-                    @if (\Illuminate\Support\Facades\Auth::check())
+                    @if ($check)
                         <img class="cmt_img" src="{{ asset($user->avata) }}">
                         <input class="cmt_input" type="text" uid="{{ $user->id }}" tid="{{ $post->id }}">
                         <button class="cmt_btn">Đăng</button>
@@ -169,7 +170,7 @@
                                 <i class="fa-solid fa-ellipsis cmt_content_action"></i>
                             </div>
                             <div class="cmt_action_box">
-                                @if (\Illuminate\Support\Facades\Auth::check())
+                                @if ($check && $user->id == $comment->user_id)
                                     <button>Sửa</button>
                                     <button>Xóa</button>
                                 @endif
