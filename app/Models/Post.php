@@ -18,6 +18,7 @@ class Post extends Model
         'type',
         'view',
         'category',
-        'title_update'
+        'title_update',
+        'auto'
     ];
 }

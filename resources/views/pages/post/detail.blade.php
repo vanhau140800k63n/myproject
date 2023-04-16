@@ -115,7 +115,7 @@
                         </div>
                     @else
                         <div class="post_card" id="{{ $item->p_language_id . $item->id }}" value="{{ $item->content }}"
-                            lang="{{ $item->p_language_id }}">
+                            lang="{{ $item->p_language_id }}" auto="{{ $item->auto }}">
                             @if ($item->type !== 'text')
                                 <button class="copy_code"> Copy </button>
                             @endif

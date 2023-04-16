@@ -72366,78 +72366,47 @@ var language_list = {
   cpp: (0,_codemirror_lang_cpp__WEBPACK_IMPORTED_MODULE_6__.cpp)()
 };
 var view = {};
-$('.home_post_card').each(function () {
-  var language = $(this).attr('id');
-  var text = $('#input_' + language).val();
-  text = text.replaceAll('\\n', '\n');
-  var view = new codemirror__WEBPACK_IMPORTED_MODULE_7__.EditorView({
-    extensions: [codemirror__WEBPACK_IMPORTED_MODULE_8__.basicSetup, _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_9__.oneDark, language_list[language]],
-    parent: document.querySelector(".home_post_card#" + language),
-    doc: ''
-  });
-  var index = 0;
-  setInterval(function () {
-    if (index == text.length) {
-      view.dispatch({
-        changes: {
-          from: 0,
-          to: text.length,
-          insert: ''
-        }
-      });
-      index = -1;
-    } else {
-      var length = view.state.doc.toString().length;
-      view.dispatch({
-        changes: {
-          from: length,
-          insert: text.charAt(index)
-        }
-      });
-    }
-    ++index;
-  }, 30);
-  $(this).parent().children('.submit').click(function () {
-    var content = '';
-    view.state.doc.text.forEach(function (element) {
-      if (element != null) {
-        content += element + '\\n';
-      } else {
-        content += '\\n';
-      }
-    });
-    var _token = $('input[name="_token"]').val();
-    $.ajax({
-      url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "submit",
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      type: "POST",
-      dataType: 'json',
-      data: {
-        text: content,
-        language: language,
-        _token: _token
-      }
-    }).done(function (data) {
-      console.log(data);
-      return true;
-    }).fail(function (e) {
-      return false;
-    });
-  });
-});
 $('.post_box_content .post_content').each(function () {
   if ($(this).find('.post_card').length > 0) {
     $(this).addClass('code_box');
     var post_cart = $(this).find('.post_card');
     var content = post_cart.attr('value').replaceAll('\\n', '\n');
     var val = post_cart.attr('lang');
-    view[post_cart.attr('id')] = new codemirror__WEBPACK_IMPORTED_MODULE_7__.EditorView({
-      extensions: [codemirror__WEBPACK_IMPORTED_MODULE_8__.basicSetup, _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_9__.oneDark, language_list[val]],
-      parent: document.querySelector(".post_card#" + post_cart.attr('id')),
-      doc: content
-    });
+    var code_auto = post_cart.attr('auto');
+    if (code_auto == 0) {
+      view[post_cart.attr('id')] = new codemirror__WEBPACK_IMPORTED_MODULE_7__.EditorView({
+        extensions: [codemirror__WEBPACK_IMPORTED_MODULE_8__.basicSetup, _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_9__.oneDark, language_list[val]],
+        parent: document.querySelector(".post_card#" + post_cart.attr('id')),
+        doc: content
+      });
+    } else {
+      view[post_cart.attr('id')] = new codemirror__WEBPACK_IMPORTED_MODULE_7__.EditorView({
+        extensions: [codemirror__WEBPACK_IMPORTED_MODULE_8__.basicSetup, _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_9__.oneDark, language_list[val]],
+        parent: document.querySelector(".post_card#" + post_cart.attr('id')),
+        doc: '\n\n\n\n\n\n\n'
+      });
+      var index = 0;
+      var text = content;
+      var line = 0;
+      setInterval(function () {
+        if (index == text.length) {
+          clearInterval(this);
+        } else {
+          var length = view[post_cart.attr('id')].state.doc.toString().length;
+          view[post_cart.attr('id')].dispatch({
+            changes: {
+              from: length - 7,
+              insert: text.charAt(index)
+            }
+          });
+          if (text.charAt(index) == '\n') {
+            ++line;
+            $('.cm-scroller').scrollTop(20 * line);
+          }
+        }
+        ++index;
+      }, 5);
+    }
   } else {
     $(this).addClass('text_box');
   }
