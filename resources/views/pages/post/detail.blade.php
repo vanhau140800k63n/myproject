@@ -19,7 +19,7 @@
     <meta property="og:image" content="{{ asset($post->image) }}">
     <style>
         .ͼ1.cm-editor {
-            max-height: 500px !important;
+            height: 700px !important;
         }
 
         .cm-scroller {

@@ -72405,7 +72405,7 @@ $('.post_box_content .post_content').each(function () {
           }
         }
         ++index;
-      }, 5);
+      }, 10);
     }
   } else {
     $(this).addClass('text_box');
