@@ -157,6 +157,7 @@ class LessonController extends Controller
 
     public function getLessonIntro($course)
     {
+        $key = $course;
         $course = $this->pLanguageRepository->getCourseByName($course);
         if ($course !== null) {
             $lesson_list = $this->lessonRepository->getLessonListParent($course->id);
@@ -182,7 +183,7 @@ class LessonController extends Controller
             }
         } 
 
-        return redirect()->route('search', $course);
+        return redirect()->route('search', ['key' => $key]);
     }
 
     public function buildCodePHP(Request $req)
