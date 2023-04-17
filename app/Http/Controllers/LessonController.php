@@ -180,9 +180,9 @@ class LessonController extends Controller
                 }
                 return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list', 'pre_lesson', 'next_lesson'));
             }
-        }
+        } 
 
-        throw new PageException();
+        return redirect()->route('search', $course);
     }
 
     public function buildCodePHP(Request $req)
