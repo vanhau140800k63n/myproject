@@ -170,8 +170,11 @@ class PostController extends Controller
         }
 
         if ($post !== null) {
-            $post->view += 1;
-            $post->save();
+            if (!Auth::check() || Auth::user()->role != 1) {
+                $post->view += 1;
+                $post->save();
+            }
+
             $post_detail = $this->contentItemRepository->getPostDetail($post->id);
             $theme = 1;
             if ($post->type == 4) {
@@ -292,7 +295,7 @@ class PostController extends Controller
                             </div>
                             <div class="cmt_action_box">
                                 <button action="edit">Sửa</button>
-                                <button action="del" uid="'. $user->id .'" tid="'. $data['target_id'] .'" cid="'. $comment->id .'">Xóa</button>
+                                <button action="del" uid="' . $user->id . '" tid="' . $data['target_id'] . '" cid="' . $comment->id . '">Xóa</button>
                                 <button action="report">Báo cáo</button>
                             </div>
                         </div>';
@@ -405,7 +408,8 @@ class PostController extends Controller
         return response()->json(false);
     }
 
-    public function delComment(Request $req) {
+    public function delComment(Request $req)
+    {
         if (!Auth::check()) {
             return response()->json('login');
         }
@@ -413,7 +417,7 @@ class PostController extends Controller
         $data = $req->all();
         if (isset($data['uid']) && isset($data['tid']) && isset($data['cid']) && (Auth::id() == intval($data['uid']) || Auth::id() == 1)) {
             $comment = $this->commentReprository->getDelComment($data);
-            if($comment != null) {
+            if ($comment != null) {
                 $comment->delete();
                 return response()->json(true);
             }
