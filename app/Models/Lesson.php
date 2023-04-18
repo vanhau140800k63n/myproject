@@ -15,6 +15,7 @@ class Lesson extends Model
         'sub_title',
         'course_id',
         'slug',
-        'parent'
+        'parent',
+        'view'
     ];
 }

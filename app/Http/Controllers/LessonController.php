@@ -8,6 +8,7 @@ use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Throwable;
 
 class LessonController extends Controller
@@ -132,6 +133,10 @@ class LessonController extends Controller
             $lesson_list = $this->lessonRepository->getLessonListParent($course->id);
             $lesson = $this->lessonRepository->getLessonBySlug($slug, $course->id);
             if ($lesson !== null) {
+                if (!Auth::check() || Auth::user()->role != 1) {
+                    $lesson->view += 1;
+                    $lesson->save();
+                }
                 $lesson_parent = $this->lessonRepository->getLessonById($lesson->parent);
                 $lesson_child_list = null;
                 if ($lesson_parent != null) {
@@ -163,6 +168,10 @@ class LessonController extends Controller
             $lesson_list = $this->lessonRepository->getLessonListParent($course->id);
             $lesson = $this->lessonRepository->getLessonIntro($course->id);
             if ($lesson !== null) {
+                if (!Auth::check() || Auth::user()->role != 1) {
+                    $lesson->view += 1;
+                    $lesson->save();
+                }
                 $lesson_parent = $this->lessonRepository->getLessonById($lesson->parent);
                 $lesson_child_list = null;
                 if ($lesson_parent != null) {
