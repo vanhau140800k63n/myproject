@@ -23,8 +23,9 @@ class LessonRepository extends BaseRepository implements LessonRepositoryInterfa
         $query = $this->p_language;
         $course_list = $this->retryQuery($query);
 
-        foreach ($course_list as $lesson) {
-            $lesson->lesson_num = $this->lesson->where('course_id', $lesson->id)->get()->count();
+        foreach ($course_list as $course) {
+            $course->lesson_num = $this->lesson->where('course_id', $course->id)->get()->count();
+            $course->view = $this->lesson->where('course_id', $course->id)->sum('view');
         }
 
         return $course_list;

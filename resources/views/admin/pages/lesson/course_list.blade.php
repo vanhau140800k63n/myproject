@@ -25,7 +25,7 @@
                                         <td> {{ $course->id }} </td>
                                         <td> {{ $course->full_name }} </td>
                                         <td> {{ $course->lesson_num }} </td>
-                                        <td> 0 </td>
+                                        <td> {{ $course->view }} </td>
                                         <td> <a href="{{ route('admin.course.lesson_list', $course->name) }}">Chi tiết</a>
                                         </td>
                                     </tr>
