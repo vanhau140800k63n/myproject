@@ -25,7 +25,7 @@
     <style>
     </style>
     <script type="text/javascript">
-        var text = `{{ $text }}`;
+        var text = `{!! $text !!}`;
         text_body = text.substring(text.indexOf('<body>') + 6, text.indexOf('</body>'));
         text_style = text.substring(text.indexOf('<style>') + 7, text.indexOf('</style>'));
 

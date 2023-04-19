@@ -23333,8 +23333,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "domain": () => (/* binding */ domain)
 /* harmony export */ });
-// export const domain = 'http://localhost:8003/';
-var domain = 'https://devsne.vn/';
+var domain = 'http://localhost:8003/';
+// export const domain = 'https://devsne.vn/';
 
 /***/ }),
 
@@ -72639,15 +72639,19 @@ $(document).on('click', '.cmt_action_box button', function () {
 $('.compile_html').click(function (event) {
   event.preventDefault();
   var code_editer = $(this).parent().parent().find('.post_card');
-  var content = view[code_editer.attr('id')].state.doc.toString();
-  var newForm = jQuery('<form>', {
+  var content = code_editer.attr('value');
+  var newForm = $('<form>', {
     'action': _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'compile_html',
-    'target': '_blank'
-  }).append(jQuery('<input>', {
+    'target': '_blank',
+    'method': 'POST'
+  }).append($('<input>', {
     'name': 'text',
     'value': content,
     'type': 'hidden'
   }));
+  var csrfVar = $('meta[name="csrf-token"]').attr('content');
+  newForm.append("<input name='_token' value='" + csrfVar + "' type='hidden'>");
+  $('body').append(newForm);
   newForm.submit();
 });
 })();

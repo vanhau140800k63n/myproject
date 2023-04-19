@@ -12,8 +12,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "domain": () => (/* binding */ domain)
 /* harmony export */ });
-// export const domain = 'http://localhost:8003/';
-var domain = 'https://devsne.vn/';
+var domain = 'http://localhost:8003/';
+// export const domain = 'https://devsne.vn/';
 
 /***/ }),
 
