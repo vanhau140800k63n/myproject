@@ -33,6 +33,10 @@
         .home_post {
             gap: 1rem 1rem !important;
         }
+
+        .post_box_other_fixed iframe {
+            width: 100% !important;
+        }
     </style>
     @if ($theme == 1)
         <link rel="stylesheet" href="{{ asset(mix('lib/tinymce/skins/ui/oxide/content.min.css')) }}">
@@ -290,6 +294,12 @@
                         </div>
                     @endforeach
                 </div>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@devsnevn" data-unique-id="devsnevn"
+                    data-embed-type="creator" style="width: fit-content; max-width: 300px">
+                    <section> <a target="_blank" href="https://www.tiktok.com/@devsnevn?refer=creator_embed">@devsnevn</a>
+                    </section>
+                </blockquote>
+                <script async src="https://www.tiktok.com/embed.js"></script>
             </div>
         </div>
     </div>
