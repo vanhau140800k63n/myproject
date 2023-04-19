@@ -177,6 +177,7 @@ class PostController extends Controller
 
             $post_detail = $this->contentItemRepository->getPostDetail($post->id);
             $theme = 1;
+            $auto = 0;
             if ($post->type == 4) {
                 $theme = 2;
             }
@@ -189,6 +190,14 @@ class PostController extends Controller
                     break;
                 }
             }
+
+            foreach ($post_detail as $item) {
+                if ($item->auto == 1) {
+                    $auto = 1;
+                    break;
+                }
+            }
+
             $category_titles = $this->categoryRepository->getCategoryTitle(explode('-', $post->category));
             $author = $this->userRepository->getUserById($post->created_by);
             // $posts = $this->postRepository->getPostList();
@@ -205,7 +214,7 @@ class PostController extends Controller
             }
             $posts_related = $this->postRepository->searchPostRaw($raw, 10);
             $comments = $this->commentReprository->getPostComments($post->id);
-            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'comments', 'posts_related', 'theme'));
+            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'comments', 'posts_related', 'theme', 'auto'));
         }
 
         throw new PageException();

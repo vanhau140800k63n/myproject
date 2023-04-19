@@ -19,7 +19,11 @@
     <meta property="og:image" content="{{ asset($post->image) }}">
     <style>
         .ͼ1.cm-editor {
-            max-height: 500px !important;
+            @if ($auto == 0)
+                max-height: 500px !important;
+            @else
+                height: 700px !important;
+            @endif
         }
 
         .cm-scroller {
@@ -176,8 +180,10 @@
                             </div>
                             <div class="cmt_action_box">
                                 @if ($check && ($user->id == $comment->user_id || $user->id == 1))
-                                    <button action="edit" uid="{{ $user->id }}" tid="{{ $post->id }}" cid="{{ $comment->id }}">Sửa</button>
-                                    <button action="del" uid="{{ $user->id }}" tid="{{ $post->id }}" cid="{{ $comment->id }}">Xóa</button>
+                                    <button action="edit" uid="{{ $user->id }}" tid="{{ $post->id }}"
+                                        cid="{{ $comment->id }}">Sửa</button>
+                                    <button action="del" uid="{{ $user->id }}" tid="{{ $post->id }}"
+                                        cid="{{ $comment->id }}">Xóa</button>
                                 @endif
                                 <button action="report">Báo cáo</button>
                             </div>
