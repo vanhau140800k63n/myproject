@@ -38,6 +38,11 @@ class HomeController extends Controller
         return view('pages.home.home')->with(['p_languages' => $pLanguages, 'post_list' => $post_list]);
     }
 
+    public function compileHtml()
+    {
+        return view('pages.post.compile_html');
+    }
+
     public function test(Request $req)
     {
         // $posts = $this->postRepository->getPostChangeTitle();
@@ -108,7 +113,7 @@ class HomeController extends Controller
                     } else {
                         $pos = $size - 1;
                     }
-                    if($pos > 4) $pos = 4;
+                    if ($pos > 4) $pos = 4;
                     for ($i = 1; $i < $pos; ++$i) {
                         for ($j = 0; $j <= $size - $i; ++$j) {
                             for ($k = $j; $k < $j + $i; ++$k) {
@@ -153,7 +158,7 @@ class HomeController extends Controller
                     } else {
                         $pos = $size - 1;
                     }
-                    if($pos > 4) $pos = 4;
+                    if ($pos > 4) $pos = 4;
                     for ($i = 1; $i < $pos; ++$i) {
                         for ($j = 0; $j <= $size - $i; ++$j) {
                             for ($k = $j; $k < $j + $i; ++$k) {

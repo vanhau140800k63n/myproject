@@ -13,7 +13,7 @@
                             href="{{ route('admin.course.lesson.add') }}"> Thêm </a>
                     </div>
                     <div class="table-responsive">
-                        <table class="table">   
+                        <table class="table">
                             <thead>
                                 <tr>
                                     <th width="10%"> ID </th>
