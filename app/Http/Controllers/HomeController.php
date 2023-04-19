@@ -38,9 +38,10 @@ class HomeController extends Controller
         return view('pages.home.home')->with(['p_languages' => $pLanguages, 'post_list' => $post_list]);
     }
 
-    public function compileHtml()
+    public function compileHtml(Request $req)
     {
-        return view('pages.post.compile_html');
+        $text = $req->text;
+        return view('pages.post.compile_html', compact('text'));
     }
 
     public function test(Request $req)

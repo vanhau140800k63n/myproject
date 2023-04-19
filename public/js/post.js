@@ -72636,6 +72636,20 @@ $(document).on('click', '.cmt_action_box button', function () {
     });
   }
 });
+$('.compile_html').click(function (event) {
+  event.preventDefault();
+  var code_editer = $(this).parent().parent().find('.post_card');
+  var content = view[code_editer.attr('id')].state.doc.toString();
+  var newForm = jQuery('<form>', {
+    'action': _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'compile_html',
+    'target': '_blank'
+  }).append(jQuery('<input>', {
+    'name': 'text',
+    'value': content,
+    'type': 'hidden'
+  }));
+  newForm.submit();
+});
 })();
 
 /******/ })()
