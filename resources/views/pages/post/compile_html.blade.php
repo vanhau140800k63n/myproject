@@ -28,9 +28,21 @@
     </style>
     <script type="text/javascript">
         var text = `{!! $text !!}`;
-        var text_head = text.substring(text.indexOf('<head>') + 6, text.indexOf('</head>'));
-        var text_body = text.substring(text.indexOf('<body>') + 6, text.indexOf('</body>'));
-        var text_style = text.substring(text.indexOf('<style>') + 7, text.indexOf('</style>'));
+
+        var text_head = '';
+        var text_body = '';
+        var text_style = '';
+
+
+        if (text.indexOf('<head>') != -1) {
+            text_head = text.substring(text.indexOf('<head>') + 6, text.indexOf('</head>'));
+        }
+        if (text.indexOf('<body>') != -1) {
+            text_body = text.substring(text.indexOf('<body>') + 6, text.indexOf('</body>'));
+        }
+        if (text.indexOf('<style>') != -1) {
+            text_style = text.substring(text.indexOf('<style>') + 7, text.indexOf('</style>'));
+        }
 
         $('head').append(text_head);
         $('body').prepend(text_body);
