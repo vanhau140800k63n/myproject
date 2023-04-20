@@ -28,17 +28,28 @@
     </style>
     <script type="text/javascript">
         var text = `{!! $text !!}`;
-        text_body = text.substring(text.indexOf('<body>') + 6, text.indexOf('</body>'));
-        text_style = text.substring(text.indexOf('<style>') + 7, text.indexOf('</style>'));
+        var text_head = text.substring(text.indexOf('<head>') + 6, text.indexOf('</head>'));
+        var text_body = text.substring(text.indexOf('<body>') + 6, text.indexOf('</body>'));
+        var text_style = text.substring(text.indexOf('<style>') + 7, text.indexOf('</style>'));
 
+        $('head').append(text_head);
         $('body').prepend(text_body);
 
         var index = 0;
         setInterval(function() {
-            if (index == text_style.length) {
+            if (index == text_body.length) {
                 clearInterval(this);
+                var index = 0;
+                setInterval(function() {
+                    if (index == text_style.length) {
+                        clearInterval(this);
+                    } else {
+                        $('style').append(text_style.charAt(index));
+                    }
+                    ++index;
+                }, 10);
             } else {
-                $('style').append(text_style.charAt(index));
+                $('body').append(text_body.charAt(index));
             }
             ++index;
         }, 10);
