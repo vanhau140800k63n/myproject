@@ -24,6 +24,10 @@
 </head>
 
 <body>
+    <div class="t_content">
+    </div>
+    <div class="hidden_content" hidden>
+    </div>
     <style>
     </style>
     <script type="text/javascript">
@@ -45,24 +49,42 @@
         }
 
         $('head').append(text_head);
+        $('.hidden_content').append(text_body);
+        // alert($('.hidden_content'))
+        var new_element = $('.content').clone();
 
-        var index = 0;
-        setInterval(function() {
-            if (index == text_body.length) {
-                clearInterval(this);
-                var index = 0;
-                setInterval(function() {
-                    if (index == text_style.length) {
-                        clearInterval(this);
-                    } else {
-                        $('style').append(text_style.charAt(index));
-                    }
-                    ++index;
-                }, 10);
+        getListElement($('.t_content'), $('.hidden_content'));
+
+        function getListElement(t_element, element) {
+            var time = 0;
+            if (element.children().length > 0) {
+                element.children().each(function(index) {
+                    var child_elemennt = $(this);
+                    var child_elemennt_clone = $(this).clone().html('');
+                    var time_out = time + child_elemennt_clone.prop('outerHTML').length * 10;
+                    setTimeout(() => {
+                        t_element.append(child_elemennt_clone);
+                        getListElement(child_elemennt_clone, child_elemennt);
+                    }, time_out);
+                    time += child_elemennt_clone.prop('outerHTML').length * 10 + getTimeElement(child_elemennt);
+                })
             } else {
-                $('body').append(text_body.charAt(index));
+                t_element.html(element.html());
             }
-            ++index;
+        }
+
+        function getTimeElement(element) {
+            return element.prop('outerHTML').length * 10;
+        }
+
+        var index2 = 0;
+        setInterval(function() {
+            if (index2 == text_style.length) {
+                clearInterval(this);
+            } else {
+                $('style').append(text_style.charAt(index2));
+            }
+            ++index2;
         }, 10);
     </script>
 </body>
