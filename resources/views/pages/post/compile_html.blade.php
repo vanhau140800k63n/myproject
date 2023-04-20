@@ -61,12 +61,12 @@
                 element.children().each(function(index) {
                     var child_elemennt = $(this);
                     var child_elemennt_clone = $(this).clone().html('');
-                    var time_out = time + child_elemennt_clone.prop('outerHTML').length * 10;
+                    var time_out = time + child_elemennt_clone.prop('outerHTML').length * 5;
                     setTimeout(() => {
                         t_element.append(child_elemennt_clone);
                         getListElement(child_elemennt_clone, child_elemennt);
                     }, time_out);
-                    time += child_elemennt_clone.prop('outerHTML').length * 10 + getTimeElement(child_elemennt);
+                    time += child_elemennt_clone.prop('outerHTML').length * 5 + getTimeElement(child_elemennt);
                 })
             } else {
                 t_element.html(element.html());
@@ -74,7 +74,7 @@
         }
 
         function getTimeElement(element) {
-            return element.prop('outerHTML').length * 10;
+            return element.prop('outerHTML').length * 5;
         }
 
         var index2 = 0;
@@ -85,7 +85,7 @@
                 $('style').append(text_style.charAt(index2));
             }
             ++index2;
-        }, 10);
+        }, 5);
     </script>
 </body>
 
