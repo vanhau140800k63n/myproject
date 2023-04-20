@@ -45,7 +45,6 @@
         }
 
         $('head').append(text_head);
-        $('body').prepend(text_body);
 
         var index = 0;
         setInterval(function() {
