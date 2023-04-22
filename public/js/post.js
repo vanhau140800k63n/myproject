@@ -72641,7 +72641,7 @@ $('.compile_html').click(function (event) {
   var code_editer = $(this).parent().parent().find('.post_card');
   var content = '';
   if ($(this).attr('value') == 'post') {
-    var _content = view[code_editer.attr('id')].state.doc.toString();
+    content = view[code_editer.attr('id')].state.doc.toString();
   } else {
     content = code_editer.attr('value');
   }

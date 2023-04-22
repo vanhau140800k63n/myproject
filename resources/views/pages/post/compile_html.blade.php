@@ -21,6 +21,7 @@
     <?php
     header('Access-Control-Allow-Origin: *');
     ?>
+    <title>Compile HTML JS CSS</title>
 </head>
 
 <body>
