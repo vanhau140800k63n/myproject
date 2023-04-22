@@ -434,4 +434,15 @@ class PostController extends Controller
 
         return response()->json(false);
     }
+
+    public function compileHtml(Request $req)
+    {
+        $text = $req->text;
+        return view('pages.post.compile_html', compact('text'));
+    }
+
+    public function autoHtml()
+    {
+        return view('pages.post.auto_html');
+    }
 }

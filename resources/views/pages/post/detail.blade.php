@@ -225,7 +225,7 @@
                                 <a>
                                     <img src="{{ asset($related_post->author_avata) }}">
                                     <span>{{ $related_post->author_name }}</span>
-                                    <span style="color: #ed5829">{{ $related_post->view }} lượt xem</span>
+                                    <span style="color: #7d5d53">{{ $related_post->view }} lượt xem</span>
                                 </a>
                                 <a href="{{ route('post.detail', ['slug' => $related_post->slug]) }}">
                                     <h2>{{ $related_post->title }}</h2>

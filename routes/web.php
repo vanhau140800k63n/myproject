@@ -31,7 +31,6 @@ Route::get('/search/{key}', [HomeController::class, 'search'])->name('search');
 Route::post('/action', [PostController::class, 'actionPost'])->name('action');
 Route::post('/add_comment_post', [PostController::class, 'addComment'])->name('add_comment_post');
 Route::post('/del_comment_post', [PostController::class, 'delComment'])->name('del_comment_post');
-Route::post('/compile_html', [HomeController::class, 'compileHtml'])->name('compile_html');
 
 Route::prefix('learn')->name('learn.')->group(function () {
     Route::get('/{course}-{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
@@ -62,6 +61,8 @@ Route::middleware(['check.logged'])->group(function () {
         Route::get('/info', [AuthController::class, 'getUserInfo'])->name('info');
         Route::post('/update', [AuthController::class, 'updateUserInfo'])->name('update');
     });
+    Route::post('/compile_html', [PostController::class, 'compileHtml'])->name('compile_html');
+    Route::get('/auto_html', [PostController::class, 'autoHtml'])->name('auto_html');
 });
 
 Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(function () {

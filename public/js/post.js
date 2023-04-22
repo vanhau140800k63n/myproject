@@ -72639,7 +72639,12 @@ $(document).on('click', '.cmt_action_box button', function () {
 $('.compile_html').click(function (event) {
   event.preventDefault();
   var code_editer = $(this).parent().parent().find('.post_card');
-  var content = code_editer.attr('value');
+  var content = '';
+  if ($(this).attr('value') == 'post') {
+    content = code_editer.attr('value');
+  } else {
+    var _content = view[code_editer.attr('id')].state.doc.toString();
+  }
   var newForm = $('<form>', {
     'action': _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'compile_html',
     'target': '_blank',
