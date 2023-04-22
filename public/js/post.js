@@ -72641,9 +72641,9 @@ $('.compile_html').click(function (event) {
   var code_editer = $(this).parent().parent().find('.post_card');
   var content = '';
   if ($(this).attr('value') == 'post') {
-    content = code_editer.attr('value');
-  } else {
     var _content = view[code_editer.attr('id')].state.doc.toString();
+  } else {
+    content = code_editer.attr('value');
   }
   var newForm = $('<form>', {
     'action': _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'compile_html',
