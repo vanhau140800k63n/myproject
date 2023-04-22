@@ -42,6 +42,7 @@
             <div class="post_content">
                 <div class="post_content_head">
                     <div class="post_content_title">
+                        Điền code theo format dưới
                     </div>
                     <button class="compile_html" value="post"> Compile code </button>
                 </div>
