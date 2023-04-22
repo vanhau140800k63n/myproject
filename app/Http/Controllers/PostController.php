@@ -443,6 +443,18 @@ class PostController extends Controller
 
     public function autoHtml()
     {
-        return view('pages.post.auto_html');
+        $example = '<style>
+    /* Your code here */
+    .example {
+        color: #ed5829;
+        background: #000;
+        padding: 30px;
+    }
+</style>
+<body>
+    /* Your code here */
+    <div class="example">Example</div>
+</body>';
+        return view('pages.post.auto_html', compact('example'));
     }
 }
