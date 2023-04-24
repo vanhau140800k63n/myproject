@@ -2812,5 +2812,46 @@ select {
 .game_creen span {
     margin-left: 10px;
 }
+.template_list {
+    margin-top: 100px;
+}
+
+.template_item {
+    margin-bottom: 50px;
+    padding: 30px 100px;
+}
+
+.template_list h2 {
+    color: rgb(28, 22, 47);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.template_list iframe {
+    margin-top: 30px;
+    border: 15px solid rgb(217, 214, 214);
+}
+
+.template_item_action {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.template_item_action a, button {
+    text-align: center;
+    padding: 10px;
+    width: calc(33% - 25px);
+    margin: 0 25px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-image: url('https://www.transparenttextures.com/patterns/climpek.png'), radial-gradient( circle farthest-corner at 10% 20%,  rgba(38,51,97,1) 0%, rgb(49, 75, 101) 79% );
+}
+
+
 
 

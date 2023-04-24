@@ -3865,7 +3865,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "cssLanguage": () => (/* binding */ cssLanguage)
 /* harmony export */ });
 /* harmony import */ var _lezer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @lezer/css */ "./node_modules/@lezer/css/dist/index.es.js");
-/* harmony import */ var _codemirror_language__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @codemirror/language */ "./node_modules/@codemirror/language/dist/index.js");
+/* harmony import */ var _codemirror_language__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @codemirror/language */ "./node_modules/@codemirror/language/dist/index.js");
+/* harmony import */ var _lezer_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @lezer/common */ "./node_modules/@lezer/common/dist/index.js");
+
 
 
 
@@ -3995,18 +3997,77 @@ const tags = /*@__PURE__*/[
     "p", "pre", "ruby", "section", "select", "small", "source", "span", "strong", "sub", "summary",
     "sup", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "tr", "u", "ul"
 ].map(name => ({ type: "type", label: name }));
-const identifier = /^[\w-]*/;
+const identifier = /^(\w[\w-]*|-\w[\w-]*|)$/, variable = /^-(-[\w-]*)?$/;
+function isVarArg(node, doc) {
+    var _a;
+    if (node.name == "(" || node.type.isError)
+        node = node.parent || node;
+    if (node.name != "ArgList")
+        return false;
+    let callee = (_a = node.parent) === null || _a === void 0 ? void 0 : _a.firstChild;
+    if ((callee === null || callee === void 0 ? void 0 : callee.name) != "Callee")
+        return false;
+    return doc.sliceString(callee.from, callee.to) == "var";
+}
+const VariablesByNode = /*@__PURE__*/new _lezer_common__WEBPACK_IMPORTED_MODULE_1__.NodeWeakMap();
+const declSelector = ["Declaration"];
+function astTop(node) {
+    for (let cur = node;;) {
+        if (cur.type.isTop)
+            return cur;
+        if (!(cur = cur.parent))
+            return node;
+    }
+}
+function variableNames(doc, node) {
+    if (node.to - node.from > 4096) {
+        let known = VariablesByNode.get(node);
+        if (known)
+            return known;
+        let result = [], seen = new Set, cursor = node.cursor(_lezer_common__WEBPACK_IMPORTED_MODULE_1__.IterMode.IncludeAnonymous);
+        if (cursor.firstChild())
+            do {
+                for (let option of variableNames(doc, cursor.node))
+                    if (!seen.has(option.label)) {
+                        seen.add(option.label);
+                        result.push(option);
+                    }
+            } while (cursor.nextSibling());
+        VariablesByNode.set(node, result);
+        return result;
+    }
+    else {
+        let result = [], seen = new Set;
+        node.cursor().iterate(node => {
+            var _a;
+            if (node.name == "VariableName" && node.matchContext(declSelector) && ((_a = node.node.nextSibling) === null || _a === void 0 ? void 0 : _a.name) == ":") {
+                let name = doc.sliceString(node.from, node.to);
+                if (!seen.has(name)) {
+                    seen.add(name);
+                    result.push({ label: name, type: "variable" });
+                }
+            }
+        });
+        return result;
+    }
+}
 /**
-CSS property and value keyword completion source.
+CSS property, variable, and value keyword completion source.
 */
 const cssCompletionSource = context => {
-    let { state, pos } = context, node = (0,_codemirror_language__WEBPACK_IMPORTED_MODULE_1__.syntaxTree)(state).resolveInner(pos, -1);
-    if (node.name == "PropertyName")
+    let { state, pos } = context, node = (0,_codemirror_language__WEBPACK_IMPORTED_MODULE_2__.syntaxTree)(state).resolveInner(pos, -1);
+    let isDash = node.type.isError && node.from == node.to - 1 && state.doc.sliceString(node.from, node.to) == "-";
+    if (node.name == "PropertyName" ||
+        (isDash || node.name == "TagName") && /^(Block|Styles)$/.test(node.resolve(node.to).name))
         return { from: node.from, options: properties(), validFor: identifier };
     if (node.name == "ValueName")
         return { from: node.from, options: values, validFor: identifier };
     if (node.name == "PseudoClassName")
         return { from: node.from, options: pseudoClasses, validFor: identifier };
+    if (node.name == "VariableName" || (context.explicit || isDash) && isVarArg(node, state.doc))
+        return { from: node.name == "VariableName" ? node.from : pos,
+            options: variableNames(state.doc, astTop(node)),
+            validFor: variable };
     if (node.name == "TagName") {
         for (let { parent } = node; parent; parent = parent.parent)
             if (parent.name == "Block")
@@ -4020,7 +4081,7 @@ const cssCompletionSource = context => {
         return { from: pos, options: pseudoClasses, validFor: identifier };
     if (before && before.name == ":" && above.name == "Declaration" || above.name == "ArgList")
         return { from: pos, options: values, validFor: identifier };
-    if (above.name == "Block")
+    if (above.name == "Block" || above.name == "Styles")
         return { from: pos, options: properties(), validFor: identifier };
     return null;
 };
@@ -4030,15 +4091,15 @@ A language provider based on the [Lezer CSS
 parser](https://github.com/lezer-parser/css), extended with
 highlighting and indentation information.
 */
-const cssLanguage = /*@__PURE__*/_codemirror_language__WEBPACK_IMPORTED_MODULE_1__.LRLanguage.define({
+const cssLanguage = /*@__PURE__*/_codemirror_language__WEBPACK_IMPORTED_MODULE_2__.LRLanguage.define({
     name: "css",
     parser: /*@__PURE__*/_lezer_css__WEBPACK_IMPORTED_MODULE_0__.parser.configure({
         props: [
-            /*@__PURE__*/_codemirror_language__WEBPACK_IMPORTED_MODULE_1__.indentNodeProp.add({
-                Declaration: /*@__PURE__*/(0,_codemirror_language__WEBPACK_IMPORTED_MODULE_1__.continuedIndent)()
+            /*@__PURE__*/_codemirror_language__WEBPACK_IMPORTED_MODULE_2__.indentNodeProp.add({
+                Declaration: /*@__PURE__*/(0,_codemirror_language__WEBPACK_IMPORTED_MODULE_2__.continuedIndent)()
             }),
-            /*@__PURE__*/_codemirror_language__WEBPACK_IMPORTED_MODULE_1__.foldNodeProp.add({
-                Block: _codemirror_language__WEBPACK_IMPORTED_MODULE_1__.foldInside
+            /*@__PURE__*/_codemirror_language__WEBPACK_IMPORTED_MODULE_2__.foldNodeProp.add({
+                Block: _codemirror_language__WEBPACK_IMPORTED_MODULE_2__.foldInside
             })
         ]
     }),
@@ -4052,7 +4113,7 @@ const cssLanguage = /*@__PURE__*/_codemirror_language__WEBPACK_IMPORTED_MODULE_1
 Language support for CSS.
 */
 function css() {
-    return new _codemirror_language__WEBPACK_IMPORTED_MODULE_1__.LanguageSupport(cssLanguage, cssLanguage.data.of({ autocomplete: cssCompletionSource }));
+    return new _codemirror_language__WEBPACK_IMPORTED_MODULE_2__.LanguageSupport(cssLanguage, cssLanguage.data.of({ autocomplete: cssCompletionSource }));
 }
 
 

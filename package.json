@@ -35,6 +35,7 @@
   "homepage": "https://github.com/vanhau140800k63n/myproject#readme",
   "dependencies": {
     "@codemirror/lang-cpp": "^6.0.2",
+    "@codemirror/lang-css": "^6.1.1",
     "@codemirror/lang-html": "^6.4.1",
     "@codemirror/lang-java": "^6.0.1",
     "@codemirror/lang-javascript": "^6.1.2",
