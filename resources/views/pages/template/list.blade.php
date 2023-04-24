@@ -25,7 +25,7 @@
                             <a target="_blank" href="{{ $template->iframe }}">Demo</a>
                         @endif
                         @if ($template->source == 1)
-                            <button class="template_item_download" href="https://devsnes.github.io/source_code/test.zip" check="{{ Auth::check() ? 'download' : '' }}">Source Code</button>
+                            <button class="template_item_download" href="{{ $template->download_url }}" check="{{ Auth::check() ? 'download' : '' }}">Source Code</button>
                         @endif
                         @if ($template->auto != null)
                             <button class="template_item_run" value="{{ $template->auto }}">Run code</button>
