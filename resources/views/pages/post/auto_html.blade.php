@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('meta')
     <meta name="description"
-        content="Devsne đã tổng hợp hơn 30 khóa học miễn phí về html, css, javascript, python, java, c++. Khóa học đi kèm luyện tập trực tuyến sẽ giúp bạn nhanh chóng cải thiện được khả năng lập trình">
+        content="Xây dựng và trải nghiệm quá trình hình thành một source code html, css, js tự động">
     <meta name="keywords"
         content="devsne, devsnevn, Miễn phí Lập trình Khóa học, php, java, python, c++, Cpp, HTML, css, javascript">
     <meta name="robots" content="index, follow">
@@ -11,7 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Trình biên dịch tự động HTML JS CSS">
     <meta property="og:description"
-        content="Devsne đã tổng hợp hơn 30 khóa học miễn phí về html, css, javascript, python, java, c++. Khóa học đi kèm luyện tập trực tuyến sẽ giúp bạn nhanh chóng cải thiện được khả năng lập trình">
+        content="Xây dựng và trải nghiệm quá trình hình thành một source code html, css, js tự động">
     <meta property="og:url" content="">
     <meta property="og:site_name" content="Trình biên dịch tự động HTML JS CSS">
     <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
