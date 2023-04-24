@@ -53,10 +53,14 @@ class TemplateController extends Controller
         $this->templateRepository = $templateRepository;
     }
 
-    public function listTemplate($key) {
+    public function listTemplate($key)
+    {
         $type = array_search($key, CommonConstants::TEMPLATE_TYPE);
+        if ($type == false) {
+            throw new PageException();
+        }
         $list_template = $this->templateRepository->getListTemplateByType($type);
 
-        return view('pages.template.list', compact('list_template'));
+        return view('pages.template.list', compact('list_template', 'key'));
     }
 }

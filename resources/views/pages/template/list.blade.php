@@ -9,7 +9,7 @@
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 @endsection
 @section('head')
-    <title> devsnevn</title>
+    <title> Danh sánh template {{ $key }} - devsnevn</title>
 @endsection
 @section('content')
     <div class="template_list_box">
