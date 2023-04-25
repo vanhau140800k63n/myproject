@@ -27,7 +27,7 @@
             overflow: auto;
         }
     </style>
-    @if ($course->id == 10)
+    @if (in_array($course->id, [7, 10]))
         <link rel="stylesheet" href="{{ asset(mix('css/lesson_update.css')) }}">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css">
