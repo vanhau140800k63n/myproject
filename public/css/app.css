@@ -2838,7 +2838,8 @@ select {
     margin-top: 25px;
 }
 
-.template_item_action a, .template_item_action button {
+.template_item_action a,
+.template_item_action button {
     text-align: center;
     padding: 10px;
     width: calc(33% - 25px);
@@ -2849,9 +2850,37 @@ select {
     border-radius: 5px;
     cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    background-image: url('https://www.transparenttextures.com/patterns/climpek.png'), radial-gradient( circle farthest-corner at 10% 20%,  rgba(38,51,97,1) 0%, rgb(49, 75, 101) 79% );
+    background-image: url('https://www.transparenttextures.com/patterns/climpek.png'), radial-gradient(circle farthest-corner at 10% 20%, rgba(38, 51, 97, 1) 0%, rgb(49, 75, 101) 79%);
 }
 
+@media only screen and (min-width: 1400px) {}
 
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .template_item {
+        padding: 30px 60px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {}
+
+@media only screen and (max-width: 767px) {
+    .template_item {
+        padding: 20px 10px;
+    }
+
+    .template_item_action a,
+    .template_item_action button {
+        width: calc(33% - 10px);
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    
+}
 
 
