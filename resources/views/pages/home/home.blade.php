@@ -78,7 +78,7 @@
                                         </div>
                                     </div>
 
-                                    <a href="{{ route('list_template', 'animation') }}"
+                                    <a href="{{ route('template.list', 'animation') }}"
                                         data-w-id="a8616800-07f8-0697-9681-2671b00ca6a7"
                                         style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; margin-left: 30px"
                                         class="hero__btn-wrap">
