@@ -13,6 +13,7 @@ use App\Repositories\ContentRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\TemplateRepositoryInterface;
+use App\Repositories\TemplateTypeRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -30,6 +31,7 @@ class TemplateController extends Controller
     private $contentRepository;
     private $actionRepository;
     private $templateRepository;
+    private $templateTypeRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
@@ -40,7 +42,8 @@ class TemplateController extends Controller
         CommentRepositoryInterface $commentReprository,
         ContentRepositoryInterface $contentRepository,
         ActionRepositoryInterface $actionRepository,
-        TemplateRepositoryInterface $templateRepository
+        TemplateRepositoryInterface $templateRepository,
+        TemplateTypeRepositoryInterface $templateTypeRepository
     ) {
         $this->categoryRepository = $categoryRepository;
         $this->pLanguageRepository = $pLanguageRepository;
@@ -51,16 +54,21 @@ class TemplateController extends Controller
         $this->contentRepository = $contentRepository;
         $this->actionRepository = $actionRepository;
         $this->templateRepository = $templateRepository;
+        $this->templateTypeRepository = $templateTypeRepository;
     }
 
     public function listTemplate($key)
     {
-        $type = array_search($key, CommonConstants::TEMPLATE_TYPE);
-        if ($type == false) {
+        $type = $this->templateTypeRepository->getTypeTemplate($key);
+        if ($type == null) {
             throw new PageException();
         }
-        $list_template = $this->templateRepository->getListTemplateByType($type);
+        $list_template = $this->templateRepository->getListTemplateByType($type->id);
 
         return view('pages.template.list', compact('list_template', 'key'));
+    }
+
+    public function getTemplateDetail($key, $slug)
+    {
     }
 }

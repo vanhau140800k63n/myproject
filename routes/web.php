@@ -37,7 +37,7 @@ Route::post('/compile_html', [PostController::class, 'compileHtml'])->name('comp
 
 Route::prefix('template')->name('template.')->group(function () {
     Route::get('/{key}', [TemplateController::class, 'listTemplate'])->name('list');
-    Route::get('/{key}/{slug}', [TemplateController::class, 'getTemplateDetail'])->name('detail')->middleware(['check.logged']);
+    Route::get('/{key}-{slug}', [TemplateController::class, 'getTemplateDetail'])->name('detail')->middleware(['check.logged']);
 });
 
 Route::prefix('learn')->name('learn.')->group(function () {
