@@ -1823,6 +1823,49 @@ code * {
         height: 150px;
     }
 }
+:root {
+    --color-background: #1f202e;
+    --stroke-width: calc(1em / 16);
+    --font-size: 40px;
+    --font-weight: 700;
+    --letter-spacing: calc(1em / 8);
+}
+
+.banner_box {
+    display: block;
+    margin: 0;
+    padding: 30px;
+    background-color: var(--color-background);
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.banner_text {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    color: var(--color-background);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    letter-spacing: var(--letter-spacing);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: var(--stroke-width);
+    animation: lighing 1s infinite;
+}
+
+@keyframes lighing {
+    0% {
+        background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    }
+
+    100% {
+        background-image: linear-gradient(to right, #fed90f, #ff00d2, #00a2ff, #09f1b8);
+    }
+}
+
 .post_box {
     display: flex;
     min-height: 1000px;
@@ -2320,6 +2363,10 @@ code * {
     .post_box_content {
         padding: 50px;
     }
+
+    .banner_box {
+        --font-size: 35px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -2367,6 +2414,10 @@ code * {
     .post_info_category_item {
         font-size: 13px;
     }
+
+    .banner_box {
+        --font-size: 30px;
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
@@ -2379,9 +2430,18 @@ code * {
     .post_info_category_item {
         font-size: 12px;
     }
+
+    .banner_box {
+        --font-size: 25px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
+    .banner_box {
+        --font-size: 20px;
+        padding: 20px 10px;
+    }
+
     .post_box_content_title {
         padding: 12px 10px;
         font-size: 15px;

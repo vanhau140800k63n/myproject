@@ -105,6 +105,9 @@
                     @endforeach
                 </div>
             </div>
+            <a class="banner_box" href="{{ route('template.list', 'animation') }}">
+                <div class="banner_text">+100 animation template</div>
+            </a>
             @foreach ($post_detail as $item)
                 <div class="post_content">
                     <div class="post_content_head">
