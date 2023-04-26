@@ -1836,7 +1836,7 @@ code * {
     margin: 0;
     padding: 30px;
     background-color: var(--color-background);
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
@@ -1853,17 +1853,17 @@ code * {
     letter-spacing: var(--letter-spacing);
     -webkit-text-stroke-color: transparent;
     -webkit-text-stroke-width: var(--stroke-width);
-    animation: lighing 1s infinite;
+    animation: lighing 1s ease infinite;
 }
 
 @keyframes lighing {
     0% {
-        background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
-    }
-
-    100% {
-        background-image: linear-gradient(to right, #fed90f, #ff00d2, #00a2ff, #09f1b8);
-    }
+		background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+	}
+    
+	100% {
+		background-image: linear-gradient(to right, #fed90f, #ff00d2, #00a2ff, #09f1b8);
+	}
 }
 
 .post_box {
