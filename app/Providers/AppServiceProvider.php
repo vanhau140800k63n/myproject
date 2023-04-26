@@ -14,12 +14,14 @@ use App\Repositories\Eloquent\ContentItemRepository;
 use App\Repositories\Eloquent\ContentRepository;
 use App\Repositories\Eloquent\LessonItemRepository;
 use App\Repositories\Eloquent\LessonRepository;
+use App\Repositories\Eloquent\OrderRepository;
 use App\Repositories\Eloquent\PLanguageRepository;
 use App\Repositories\Eloquent\PostRepository;
 use App\Repositories\Eloquent\TemplateRepository;
 use App\Repositories\Eloquent\UserRepository;
 use App\Repositories\LessonItemRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
+use App\Repositories\OrderRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\TemplateRepositoryInterface;
@@ -67,6 +69,9 @@ class AppServiceProvider extends ServiceProvider
         });
         $this->app->singleton(TemplateRepositoryInterface::class, function () {
             return new TemplateRepository();
+        });
+        $this->app->singleton(OrderRepositoryInterface::class, function () {
+            return new OrderRepository();
         });
     }
 
