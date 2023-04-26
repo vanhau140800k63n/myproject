@@ -55,9 +55,6 @@
 @endsection
 @section('content')
     <div class="post_box">
-        <div class="post_box_category">
-
-        </div>
         <div class="post_box_content">
             <div class="post_box_content_title">{{ $post->title }}</div>
             <div class="post_box_info">

@@ -1833,16 +1833,8 @@ code * {
     box-sizing: border-box;
 }
 
-.post_box_category {
-    width: 15%;
-}
-
-.post_box_category * {
-    font-weight: 500;
-}
-
 .post_box_content {
-    width: 65%;
+    width: 80%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     overflow: hidden;
     padding: 50px 30px;
@@ -1862,20 +1854,6 @@ code * {
     overflow-y: scroll;
     max-height: calc(100vh - 70px);
     background: #fff;
-}
-
-.post_box_category_title {
-    padding: 15px 20px;
-    font-weight: 400;
-    color: #fff;
-    background: linear-gradient(to right, #2b5876 0%, #30709b 51%, #1e4d6c 100%);
-    text-transform: uppercase;
-}
-
-.post_box_category_item {
-    padding: 10px 20px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) -1px 0px 0px 1px;
-    color: #000;
 }
 
 .post_info_attr {
@@ -1925,16 +1903,6 @@ code * {
     border-radius: 5px;
     cursor: pointer;
     margin: 3px 5px;
-}
-
-.post_box_category_item div {
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.post_box_category_list {
-    display: flex;
-    flex-direction: column;
 }
 
 .post_box_content_title {
@@ -1992,11 +1960,6 @@ code * {
 
 .post_content strong {
     font-weight: 500;
-}
-
-.post_box_category_item.active {
-    color: #fff;
-    background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 }
 
 .post_content table {
@@ -2348,10 +2311,6 @@ code * {
     .post_author_info_name {
         margin-left: 5px;
         max-width: 65px;
-    }
-
-    .post_box_category {
-        display: none;
     }
 
     .post_box_content {
