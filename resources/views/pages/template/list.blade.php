@@ -49,6 +49,7 @@
                     </div>
                 </div>
             @endforeach
+            {{ $list_template->links('partial.pagination') }}
         </div>
     </div>
     <script src="{{ asset(mix('js/template.js')) }}"></script>
