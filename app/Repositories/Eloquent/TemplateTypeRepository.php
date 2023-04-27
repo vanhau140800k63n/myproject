@@ -18,4 +18,8 @@ class TemplateTypeRepository extends BaseRepository implements TemplateTypeRepos
     public function getTypeTemplate($key) {
         return $this->template_type->where('slug', $key)->first();
     }
+
+    public function getListType() {
+        return $this->template_type->all();
+    }
 }

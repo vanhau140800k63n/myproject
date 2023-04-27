@@ -13,6 +13,21 @@
 @endsection
 @section('content')
     <div class="template_list_box">
+        <div class="template_list_type">
+            <div class="text text-1">T</div>
+            <div class="text text-2">E</div>
+            <div class="text text-3">M</div>
+            <div class="text text-4">P</div>
+            <div class="text text-1">L</div>
+            <div class="text text-2">A</div>
+            <div class="text text-3">T</div>
+            <div class="text text-4">E</div>
+            <div class="template_type">
+                @foreach ($list_type as $type)
+                    <a class="template_type_item" href="{{ route('template.list', $type->slug) }}">#{{ $type->slug }}</a>
+                @endforeach
+            </div>
+        </div>
         <div class="template_list">
             @foreach ($list_template as $template)
                 <div class="template_item">
@@ -25,7 +40,8 @@
                             <a target="_blank" href="{{ $template->iframe }}">Demo</a>
                         @endif
                         @if ($template->source == 1)
-                            <button class="template_item_download" href="{{ $template->download_url }}" check="{{ Auth::check() ? 'download' : '' }}">Source Code</button>
+                            <button class="template_item_download" href="{{ $template->download_url }}"
+                                check="{{ Auth::check() ? 'download' : '' }}">Source Code</button>
                         @endif
                         @if ($template->auto != null)
                             <button class="template_item_run" value="{{ $template->auto }}">Run code</button>
