@@ -99,38 +99,31 @@
         height: 5rem;
     }
 
-    .page__numbers,
-    .page__btn,
-    .page__dots {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0.8rem;
-        font-size: 1.4rem;
-        cursor: pointer;
-    }
-
     .page__numbers {
         width: 2.6rem;
         height: 2.6rem;
-        border-radius: 0.4rem;
+        border-radius: 5px;
     }
 
     .page-link {
         font-weight: 600;
         width: inherit;
         height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .page__numbers:hover {
         color: var(--primary);
     }
 
-    .page__numbers.active, .page__numbers.active a {
+    .page__numbers.active,
+    .page__numbers.active a {
         color: #ffffff;
         background: var(--primary);
         font-weight: 600;
-        border: 1px solid var(--primary);
+        border-radius: 5px;
     }
 
     .page__btn {
