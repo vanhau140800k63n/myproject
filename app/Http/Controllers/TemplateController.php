@@ -17,8 +17,6 @@ use App\Repositories\TemplateTypeRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\File;
-use Throwable;
 
 class TemplateController extends Controller
 {
@@ -71,5 +69,26 @@ class TemplateController extends Controller
 
     public function getTemplateDetail($key, $slug)
     {
+    }
+
+    public function getTemplateTypeListAdmin()
+    {
+        $type_list = $this->templateTypeRepository->getListType();
+
+        return view('admin.pages.template.type_list', compact('type_list'));
+    }
+
+    public function getTemplateListAdmin($type)
+    {
+        $list_template = $this->templateRepository->getListTemplateByType($type);
+
+        return view('admin.pages.template.list', compact('list_template'));
+    }
+
+    public function getTemplateDetailAdmin($id)
+    {
+        $template = $this->templateRepository->getTemplateById($id);
+
+        return view('admin.pages.template.detail', compact('template'));
     }
 }

@@ -107,4 +107,10 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::get('/auto_update_title_post', [PostController::class, 'autoUpdateTitlePost'])->name('auto_update_title_post');
         Route::post('/update_title_post', [PostController::class, 'updateTitlePost'])->name('pdate_title_post');
     });
+
+    Route::prefix('template')->name('template.')->group(function () {
+        Route::get('/', [TemplateController::class, 'getTemplateTypeListAdmin'])->name('type_list');
+        Route::get('/{type}', [TemplateController::class, 'getTemplateListAdmin'])->name('list');
+        Route::get('detail/{id}', [TemplateController::class, 'getTemplateDetailAdmin'])->name('detail');
+    });
 });

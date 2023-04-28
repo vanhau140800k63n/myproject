@@ -91,7 +91,7 @@
                                                     style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
                                                 </div>
                                             </div>
-                                            <div class="btn__txt">+100 Free Template</div>
+                                            <div class="btn__txt">1000+ Free Template</div>
                                         </div>
                                     </a>
                                 </div>

@@ -15,7 +15,13 @@ class TemplateRepository extends BaseRepository implements TemplateRepositoryInt
         $this->template = new Template();
     }
 
-    public function getListTemplateByType($type) {
+    public function getListTemplateByType($type)
+    {
         return $this->template->where('type', $type)->paginate(3);
+    }
+
+    public function getTemplateById($id)
+    {
+        return $this->template->where('id', $id)->first();
     }
 }
