@@ -24,7 +24,8 @@
             <div class="text text-4">E</div>
             <div class="template_type">
                 @foreach ($list_type as $type)
-                    <a class="template_type_item" href="{{ route('template.list', $type->slug) }}">#{{ $type->slug }}</a>
+                    <a class="template_type_item {{ $key == $type->slug ? 'active' : '' }}"
+                        href="{{ route('template.list', $type->slug) }}">#{{ $type->slug }}</a>
                 @endforeach
             </div>
         </div>
