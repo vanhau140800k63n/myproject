@@ -97,10 +97,6 @@
         justify-content: center;
         align-items: center;
         height: 5rem;
-        margin: 3rem;
-        border-radius: 0.6rem;
-        background: #ffffff;
-        box-shadow: 0 0.8rem 2rem rgba(90, 97, 129, 0.05);
     }
 
     .page__numbers,
@@ -114,13 +110,6 @@
         cursor: pointer;
     }
 
-    .page__dots {
-        width: 2.6rem;
-        height: 2.6rem;
-        color: var(--greyLight);
-        cursor: initial;
-    }
-
     .page__numbers {
         width: 2.6rem;
         height: 2.6rem;
@@ -129,6 +118,8 @@
 
     .page-link {
         font-weight: 600;
+        width: inherit;
+        height: inherit;
     }
 
     .page__numbers:hover {
