@@ -19,9 +19,7 @@
                     <div class="template_info" type="update" template_id="{{ $template->id }}">
                         <select class="course_select">
                             @foreach ($type_list as $type)
-                                @if ($type->id === $template->type)
-                                    <option value="{{ $type->id }}" selected>{{ $type->slug }}</option>
-                                @endif
+                                <option value="{{ $type->id }}" {{ $type->id == $template->type ? 'selected' : '' }}>{{ $type->slug }}</option>
                             @endforeach
                         </select>
                         <div style="display: flex; flex-wrap: wrap;justify-content: space-between">

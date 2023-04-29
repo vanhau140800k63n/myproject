@@ -104,8 +104,8 @@ class TemplateController extends Controller
     {
         $data_add = [
             'title' => $req->title,
-            'iframe' => 'https://devsnes.github.io/' . $req->slug,
-            'download_url' => 'https://devsnes.github.io/' . $req->slug . '/index.zip',
+            'iframe' => 'https://devsnes.github.io/source_code/' . $req->slug,
+            'download_url' => 'https://devsnes.github.io/source_code/' . $req->slug . '/index.zip',
             'slug' => $req->slug,
             'height' => $req->height,
             'auto' => $req->auto,
