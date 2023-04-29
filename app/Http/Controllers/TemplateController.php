@@ -80,7 +80,7 @@ class TemplateController extends Controller
 
     public function getTemplateListAdmin($type)
     {
-        $list_template = $this->templateRepository->getListTemplateByType($type);
+        $list_template = $this->templateRepository->getListTemplateByTypeAdmin($type);
 
         return view('admin.pages.template.list', compact('list_template'));
     }
@@ -88,7 +88,53 @@ class TemplateController extends Controller
     public function getTemplateDetailAdmin($id)
     {
         $template = $this->templateRepository->getTemplateById($id);
+        $type_list = $this->templateTypeRepository->getListType();
 
-        return view('admin.pages.template.detail', compact('template'));
+        return view('admin.pages.template.detail', compact('template', 'type_list'));
+    }
+
+    public function addTemplateAdmin()
+    {
+        $type_list = $this->templateTypeRepository->getListType();
+
+        return view('admin.pages.template.add', compact('type_list'));
+    }
+
+    public function postAddTemplateAdmin(Request $req)
+    {
+        $data_add = [
+            'title' => $req->title,
+            'iframe' => 'https://devsnes.github.io/' . $req->slug,
+            'download_url' => 'https://devsnes.github.io/' . $req->slug . '/index.zip',
+            'slug' => $req->slug,
+            'height' => $req->height,
+            'auto' => $req->auto,
+            'source' => 1,
+            'demo' => 1,
+            'type' => $req->type
+        ];
+
+        $template = $this->templateRepository->addTemplate($data_add);
+
+        return true;
+    }
+
+    public function postUpdateTemplateAdmin(Request $req)
+    {
+        $data_add = [
+            'title' => $req->title,
+            'iframe' => 'https://devsnes.github.io/source_code/' . $req->slug,
+            'download_url' => 'https://devsnes.github.io/source_code/' . $req->slug . '/index.zip',
+            'slug' => $req->slug,
+            'height' => $req->height,
+            'auto' => $req->auto,
+            'source' => 1,
+            'demo' => 1,
+            'type' => $req->type
+        ];
+
+        $template = $this->templateRepository->updateTemplate($data_add, $req->template_id);
+
+        return true;
     }
 }

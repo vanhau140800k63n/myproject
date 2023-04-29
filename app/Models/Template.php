@@ -11,6 +11,16 @@ class Template extends Model
 
     protected $table = 'template';
     protected $fillable = [
-       
+       'title',
+       'iframe',
+       'download_url',
+       'slug',
+       'meta',
+       'width',
+       'height',
+       'auto',
+       'source',
+       'demo',
+       'type'
     ];
 }

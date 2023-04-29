@@ -8,20 +8,15 @@
             <div class="col-12 grid-margin">
                 <div class="lesson_save">
                     <div class="lesson_save_alert"> Vui lòng chọn type template</div>
-                    <a href="{{ route('admin.template.list', $template->type) }}" class="lesson_btn_back btn btn-warning">
-                        Trở lại
-                    </a>
                     <button class="lesson_btn_save btn btn-primary">
                         Lưu
                     </button>
                 </div>
                 <div>
-                    <div class="template_info" type="update" template_id="{{ $template->id }}">
+                    <div class="template_info" type="add">
                         <select class="course_select">
                             @foreach ($type_list as $type)
-                                @if ($type->id === $template->type)
-                                    <option value="{{ $type->id }}" selected>{{ $type->slug }}</option>
-                                @endif
+                                <option value="{{ $type->id }}">{{ $type->slug }}</option>
                             @endforeach
                         </select>
                         <div style="display: flex; flex-wrap: wrap;justify-content: space-between">
@@ -32,15 +27,15 @@
                                 }
                             </style>
                             <input type="text" class="form-control title" style="color: #fff" placeholder="title"
-                                value="{{ $template->title }}">
+                                value="">
                             <input type="text" class="form-control slug" style="color: #fff" placeholder="slug"
-                                value="{{ $template->slug }}">
+                                value="">
                             <input type="text" class="form-control height" style="color: #fff" placeholder="height"
-                                value="{{ $template->height }}">
+                                value="">
                         </div>
                     </div>
                     <div class="lesson_content">
-                        <div class="lesson_card" id="html{{ $template->id }}" value="{{ $template->auto }}"></div>
+                        <div class="lesson_card" id="html_zyyx" value=""></div>
                     </div>
                 </div>
             </div>

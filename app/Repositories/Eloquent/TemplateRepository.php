@@ -20,8 +20,21 @@ class TemplateRepository extends BaseRepository implements TemplateRepositoryInt
         return $this->template->where('type', $type)->paginate(3);
     }
 
+    public function getListTemplateByTypeAdmin($type)
+    {
+        return $this->template->where('type', $type)->get();
+    }
+
     public function getTemplateById($id)
     {
         return $this->template->where('id', $id)->first();
+    }
+
+    public function addTemplate($data) {
+        return $this->template->create($data);
+    }
+
+    public function updateTemplate($data, $id) {
+        return $this->template->where('id', $id)->update($data);
     }
 }

@@ -10,7 +10,7 @@
                     <div style="display: flex; justify-content: space-between;">
                         <h4 class="card-title">Template</h4>
                         <a class="btn btn-primary" style="display: flex; align-items: center; justify-content: center;"
-                            href=""> Thêm </a>
+                            href="{{ route('admin.template.add') }}"> Thêm </a>
                     </div>
                     <div class="table-responsive">
                         <table class="table">
@@ -31,7 +31,7 @@
                                         <td style="text-align: center"> 0 </td>
                                         <td> <a class="btn btn-info"
                                                 style="display: flex; align-items: center; justify-content: center;"
-                                                href="">Chi
+                                                href="{{ route('admin.template.detail', $template->id) }}">Chi
                                                 tiết</a> </td>
                                         <td> <a class="btn btn-danger"
                                                 style="display: flex; align-items: center; justify-content: center;"
