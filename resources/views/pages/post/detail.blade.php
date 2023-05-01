@@ -260,7 +260,7 @@
                         <div class="catalogue_title">Mục lục</div>
                         <div class="catalogue_content">
                             <?php
-                            $catalogue_item_index = 2;
+                            $catalogue_item_index = 3;
                             ?>
                             @foreach ($post_detail as $catalogue_item)
                                 <div class="catalogue_item_title" index="{{ ++$catalogue_item_index }}">
