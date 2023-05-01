@@ -437,7 +437,7 @@ class PostController extends Controller
 
     public function compileHtml(Request $req)
     {
-        $text = $req->text;
+        $text = preg_replace("/(\`)/", '\\`', $req->text);
         return view('pages.post.compile_html', compact('text'));
     }
 
