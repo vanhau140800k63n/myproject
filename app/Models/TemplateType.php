@@ -13,6 +13,7 @@ class TemplateType extends Model
     protected $fillable = [
        'title',
        'slug',
-       'image'
+       'image',
+       'count'
     ];
 }

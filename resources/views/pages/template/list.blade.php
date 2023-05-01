@@ -25,7 +25,7 @@
             <div class="template_type">
                 @foreach ($list_type as $type)
                     <a class="template_type_item {{ $key == $type->slug ? 'active' : '' }}"
-                        href="{{ route('template.list', $type->slug) }}">#{{ $type->slug }}</a>
+                        href="{{ route('template.list', $type->slug) }}">#{{ $type->slug }}({{ $type->count }})</a>
                 @endforeach
             </div>
         </div>
