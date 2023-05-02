@@ -28797,7 +28797,7 @@ $(document).ready(function () {
     var title = $('.title').val();
     var height = $('.height').val();
     var tag = $('.tag').val();
-    var view = $('.view').val();
+    var view_number = $('.view').val();
     var content = tinyMCE.get($('textarea').attr('id')).getContent();
     var _token = $('input[name="_token"]').val();
     $.ajax({
@@ -28814,7 +28814,7 @@ $(document).ready(function () {
         height: height,
         template_id: $('.template_info').attr('template_id'),
         type: $('.course_select').val(),
-        view: view,
+        view: view_number,
         tag: tag,
         content: content,
         _token: _token
