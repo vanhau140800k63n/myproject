@@ -32,9 +32,14 @@
                                 value="">
                             <input type="text" class="form-control height" style="color: #fff" placeholder="height"
                                 value="">
+                            <input type="text" class="form-control view" style="color: #fff" placeholder="view"
+                                value="">
+                            <input type="text" class="form-control tag" style="color: #fff" placeholder="tag"
+                                value="">
                         </div>
                     </div>
                     <div class="lesson_content">
+                        <textarea id="text-zyyx" name="description"></textarea>
                         <div class="lesson_card" id="html_zyyx" value=""></div>
                     </div>
                 </div>

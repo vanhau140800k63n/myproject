@@ -89,8 +89,9 @@ class TemplateController extends Controller
     {
         $template = $this->templateRepository->getTemplateById($id);
         $type_list = $this->templateTypeRepository->getListType();
+        $template_tag = $this->categoryRepository->getCategoryTitle(explode('-', $template->tag));
 
-        return view('admin.pages.template.detail', compact('template', 'type_list'));
+        return view('admin.pages.template.detail', compact('template', 'type_list', 'template_tag'));
     }
 
     public function addTemplateAdmin()
@@ -111,7 +112,10 @@ class TemplateController extends Controller
             'auto' => $req->auto,
             'source' => 1,
             'demo' => 1,
-            'type' => $req->type
+            'view' => $req->view,
+            'content' => $req->content,
+            'type' => $req->type,
+            'tag' => $this->categoryRepository->updateCategory(explode(',', $req->tag))
         ];
 
         $template = $this->templateRepository->addTemplate($data_add);
@@ -130,7 +134,10 @@ class TemplateController extends Controller
             'auto' => $req->auto,
             'source' => 1,
             'demo' => 1,
-            'type' => $req->type
+            'view' => $req->view,
+            'content' => $req->content,
+            'type' => $req->type,
+            'tag' => $this->categoryRepository->updateCategory(explode(',', $req->tag))
         ];
 
         $template = $this->templateRepository->updateTemplate($data_add, $req->template_id);

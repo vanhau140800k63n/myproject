@@ -19,7 +19,8 @@
                     <div class="template_info" type="update" template_id="{{ $template->id }}">
                         <select class="course_select">
                             @foreach ($type_list as $type)
-                                <option value="{{ $type->id }}" {{ $type->id == $template->type ? 'selected' : '' }}>{{ $type->slug }}</option>
+                                <option value="{{ $type->id }}" {{ $type->id == $template->type ? 'selected' : '' }}>
+                                    {{ $type->slug }}</option>
                             @endforeach
                         </select>
                         <div style="display: flex; flex-wrap: wrap;justify-content: space-between">
@@ -35,9 +36,14 @@
                                 value="{{ $template->slug }}">
                             <input type="text" class="form-control height" style="color: #fff" placeholder="height"
                                 value="{{ $template->height }}">
+                            <input type="text" class="form-control view" style="color: #fff" placeholder="view"
+                                value="{{ $template->view }}">
+                            <input type="text" class="form-control tag" style="color: #fff" placeholder="tag"
+                                value="{{ $template_tag }}">
                         </div>
                     </div>
                     <div class="lesson_content">
+                        <textarea id="text-{{ $template->id }}" name="description">{{ $template->content }}</textarea>
                         <div class="lesson_card" id="html{{ $template->id }}" value="{{ $template->auto }}"></div>
                     </div>
                 </div>

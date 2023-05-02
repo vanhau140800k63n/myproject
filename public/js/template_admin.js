@@ -28784,11 +28784,21 @@ $(document).ready(function () {
       doc: content
     });
   }
+  var text_area = $('textarea');
+  tinymce.init({
+    selector: 'textarea#' + text_area.attr('id'),
+    plugins: 'code table lists image',
+    toolbar: 'undo redo | formatselect| bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table | forecolor backcolor | image',
+    images_file_types: 'jpg,svg,webp'
+  });
   $('.lesson_btn_save').click(function () {
     var auto = view.state.doc.toString();
     var slug = $('.slug').val();
     var title = $('.title').val();
     var height = $('.height').val();
+    var tag = $('.tag').val();
+    var view = $('.view').val();
+    var content = tinyMCE.get($('textarea').attr('id')).getContent();
     var _token = $('input[name="_token"]').val();
     $.ajax({
       url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/template/item/" + $('.template_info').attr('type'),
@@ -28804,6 +28814,9 @@ $(document).ready(function () {
         height: height,
         template_id: $('.template_info').attr('template_id'),
         type: $('.course_select').val(),
+        view: view,
+        tag: tag,
+        content: content,
         _token: _token
       }
     }).done(function (data) {
