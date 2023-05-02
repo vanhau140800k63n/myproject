@@ -294,12 +294,12 @@
                         </div>
                     @endforeach
                 </div>
-                {{-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@devsnevn" data-unique-id="devsnevn"
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@devsnevn" data-unique-id="devsnevn"
                     data-embed-type="creator" style="width: fit-content; max-width: 300px">
                     <section> <a target="_blank" href="https://www.tiktok.com/@devsnevn?refer=creator_embed">@devsnevn</a>
                     </section>
                 </blockquote>
-                <script async src="https://www.tiktok.com/embed.js"></script> --}}
+                <script async src="https://www.tiktok.com/embed.js"></script>
             </div>
         </div>
     </div>
