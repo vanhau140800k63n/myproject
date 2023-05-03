@@ -967,7 +967,7 @@ a {
     font-weight: 500;
 }
 
-.lesson_content strong {
+.lesson_content strong, .lesson_content strong * {
     font-weight: 500;
 }
 
