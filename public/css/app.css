@@ -2001,6 +2001,7 @@ code * {
 .post_content.text_box * {
     font-size: 17px;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .post_content strong {
