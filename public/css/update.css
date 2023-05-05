@@ -72,13 +72,6 @@ blockquote strong, .post_content_text .content_title_update * {
     min-height: 300px;
 }
 
-.post_content_text img {
-    width: 100%;
-    max-height: 500px;
-    -o-object-fit: contain;
-       object-fit: contain;
-}
-
 .post_content_text .emoji {
     display: none;
 }

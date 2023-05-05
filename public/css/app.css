@@ -1990,7 +1990,7 @@ code * {
 
 .post_card {
     position: relative;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .post_content {
@@ -2047,8 +2047,11 @@ code * {
 }
 
 .post_content_text img {
-    box-shadow: rgb(0 0 0 / 16%) 0px 1px 1px;
     margin: 30px 0;
+    width: 100%;
+    max-height: 500px;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .btn_format_1 {
