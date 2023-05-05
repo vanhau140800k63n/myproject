@@ -31,7 +31,7 @@
     font-weight: 600;
 }
 
-blockquote strong, .post_content_text .content_title_update {
+blockquote strong, .post_content_text .content_title_update * {
     font-size: var(--h3-size) !important;
 }
 
