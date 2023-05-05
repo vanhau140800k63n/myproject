@@ -1961,7 +1961,7 @@ code * {
 }
 
 .post_content_title {
-    font-size: 19px !important;
+    font-size: 22px !important;
     font-weight: 500;
     width: 70%;
     display: -webkit-box;
@@ -2423,6 +2423,10 @@ code * {
     .banner_box {
         --font-size: 30px;
     }
+
+    .post_content_title {
+        font-size: 20px !important;
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
@@ -2438,6 +2442,10 @@ code * {
 
     .banner_box {
         --font-size: 25px;
+    }
+
+    .post_content_title {
+        font-size: 18px !important;
     }
 }
 
@@ -2458,7 +2466,7 @@ code * {
     }
 
     .post_content_title {
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
 
     .post_content.text_box * {
