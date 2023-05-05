@@ -8,4 +8,5 @@ interface TemplateRepositoryInterface
     public function getListTemplateByTypeAdmin($type);
     public function getTemplateById($id);
     public function addTemplate($data);
+    public function updateTemplate($data, $id);
 }
