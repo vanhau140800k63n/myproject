@@ -5,7 +5,7 @@
     --h4-size: 20px;
 }
 
-.post_content_text p {
+.post_content_text p, .post_content_text li {
     margin-top: 15px;
 }
 
@@ -117,7 +117,7 @@ blockquote strong,
         --h4-size: 14px;
     }
 
-    .post_content_text p {
+    .post_content_text p, .post_content_text li {
         margin-top: 10px;
     }
 
