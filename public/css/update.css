@@ -31,7 +31,8 @@
     font-weight: 600;
 }
 
-blockquote strong, .post_content_text .content_title_update * {
+blockquote strong,
+.post_content_text .content_title_update * {
     font-size: var(--h3-size) !important;
 }
 
@@ -110,5 +111,18 @@ blockquote strong, .post_content_text .content_title_update * {
         --h2-size: 18px;
         --h3-size: 16px;
         --h4-size: 14px;
+    }
+
+    .post_content_text p {
+        margin-top: 10px;
+    }
+
+    .post_content_text pre {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .post_content_text div {
+        margin-top: 10px;
     }
 }
