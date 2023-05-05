@@ -81,6 +81,10 @@ blockquote strong,
     color: #004cbd;
 }
 
+.content_title_update {
+    padding: 0 !important;
+}
+
 @media only screen and (min-width: 1400px) {}
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}
