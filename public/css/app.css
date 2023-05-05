@@ -1990,6 +1990,7 @@ code * {
 
 .post_card {
     position: relative;
+    margin: 20px 0;
 }
 
 .post_content {
