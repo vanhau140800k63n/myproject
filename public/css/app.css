@@ -2552,6 +2552,10 @@ code * {
         -webkit-padding-start: 20px;
                 padding-inline-start: 20px;
     }
+
+    .post_info_attr div, .post_info_attr div * {
+        font-size: 12px;
+    }
 }
 .game_design {
     display: flex;
