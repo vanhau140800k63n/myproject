@@ -2378,7 +2378,15 @@ code * {
     }
 
     .post_box_content {
-        padding: 50px 80px;
+        padding: 50px 60px;
+    }
+
+    .section {
+        padding: 10px 60px;
+    }
+
+    .steps__list-item {
+        margin-bottom: 20px;
     }
 }
 
