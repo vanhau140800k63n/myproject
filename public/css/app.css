@@ -2027,6 +2027,7 @@ code * {
 
 .post_content td * {
     font-size: 14px !important;
+    text-align: left !important;
 }
 
 .post_content td {
