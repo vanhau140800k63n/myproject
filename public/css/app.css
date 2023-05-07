@@ -667,7 +667,16 @@ a {
 
 @media only screen and (min-width: 1400px) {}
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .home_lesson_card * {
+        font-size: 12px;
+    }
+
+    .home_lesson .cm-content,
+    .home_lesson .cm-gutter {
+        min-height: 420px;
+    }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .home_post {
