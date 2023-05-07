@@ -669,21 +669,19 @@ a {
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}
 
-@media only screen and (max-width: 1199px) {
-    .home_lesson_card * {
-        font-size: 13px;
-    }
-
-    .home_lesson .cm-content,
-    .home_lesson .cm-gutter {
-        min-height: 430px;
-    }
-}
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .home_post {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 1rem 1rem;
+    }
+
+    .home_lesson_card * {
+        font-size: 11px;
+    }
+
+    .home_lesson .cm-content,
+    .home_lesson .cm-gutter {
+        min-height: 400px;
     }
 }
 
@@ -697,6 +695,15 @@ a {
     .home_lesson {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1rem 1rem;
+    }
+
+    .home_lesson_card * {
+        font-size: 12px;
+    }
+
+    .home_lesson .cm-content,
+    .home_lesson .cm-gutter {
+        min-height: 430px;
     }
 }
 
