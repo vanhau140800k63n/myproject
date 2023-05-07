@@ -676,6 +676,26 @@ a {
     .home_lesson .cm-gutter {
         min-height: 420px;
     }
+
+    .section {
+        padding: 10px 60px;
+    }
+
+    .steps__list-item {
+        margin-bottom: 20px;
+    }
+
+    .courses__block {
+        min-height: 450px;
+    }
+
+    .courses__heading-wrap {
+        margin-bottom: 30px;
+    }
+
+    .home_lesson_info {
+        height: 45px;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2379,14 +2399,6 @@ code * {
 
     .post_box_content {
         padding: 50px 60px;
-    }
-
-    .section {
-        padding: 10px 60px;
-    }
-
-    .steps__list-item {
-        margin-bottom: 20px;
     }
 }
 
