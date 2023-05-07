@@ -2476,7 +2476,7 @@ code * {
     }
 
     .post_info_category_item {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .text_box img {
@@ -2538,7 +2538,8 @@ code * {
     }
 
     .post_list_item {
-        padding: 10px;
+        padding: 10px 5px;
+        border-radius: 5px;
     }
 
     .post_list_item_info h2 {
@@ -2552,6 +2553,10 @@ code * {
     .post_content ul {
         -webkit-padding-start: 20px;
                 padding-inline-start: 20px;
+    }
+
+    .post_list_item_img img {
+        border-radius: 5px;
     }
 }
 .game_design {
