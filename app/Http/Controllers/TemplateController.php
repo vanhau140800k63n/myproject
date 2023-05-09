@@ -64,7 +64,7 @@ class TemplateController extends Controller
         $list_type = $this->templateTypeRepository->getListType();
         $list_template = $this->templateRepository->getListTemplateByType($type->id);
 
-        return view('pages.template.list', compact('list_template', 'key', 'list_type'));
+        return view('pages.template.list', compact('list_template', 'key', 'list_type', 'type'));
     }
 
     public function getTemplateDetail($key, $slug)
