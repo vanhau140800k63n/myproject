@@ -2,28 +2,28 @@
     <div class="footer_info">
         <div class="footer_logo">
             <img style="width: 30px" src="{{ asset('image/logo2.png') }}">
-            <span style="">DEVSNE</span>
+            <span style="">DEVSNE.VN</span>
         </div>
         <div>
             <h2>Về chúng tôi</h2>
-            <p>Giới thiệu</p>
-            <p>Liên hệ</p>
-            <p>Điều khoản</p>
-            <p>Việc làm</p>
+            <a>Giới thiệu</a>
+            <a>Liên hệ</a>
+            <a>Điều khoản</a>
+            <a>Việc làm</a>
         </div>
         <div>
             <h2>Khóa học</h2>
-            <p>PHP</p>
-            <p>Python</p>
-            <p>JavaScript</p>
-            <p>Java</p>
-            <p>C++</p>
+            <a href="{{ route('learn.lesson_intro', 'php') }}">PHP</a>
+            <a href="{{ route('learn.lesson_intro', 'py') }}">Python</a>
+            <a href="{{ route('learn.lesson_intro', 'js') }}">JavaScript</a>
+            <a href="{{ route('learn.lesson_intro', 'java') }}">Java</a>
+            <a href="{{ route('learn.lesson_intro', 'cpp') }}">C++</a>
         </div>
         <div>
             <h2>Framework</h2>
-            <p>Laravel</p>
-            <p>ReactJs</p>
-            <p>VueJs</p>
+            <a href="{{ route('learn.lesson_intro', 'laravel') }}">Laravel</a>
+            <a href="{{ route('learn.lesson_intro', 'reactjs') }}">ReactJs</a>
+            <a href="{{ route('learn.lesson_intro', 'vuejs') }}">VueJs</a>
         </div>
     </div>
     <div class="footer__copyright__text">

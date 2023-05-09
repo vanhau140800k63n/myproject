@@ -1431,8 +1431,9 @@ code * {
     height: fit-content;
 }
 
-.footer_info p {
+.footer_info a {
     margin-top: 5px;
+    display: block;
 }
 
 .footer_info h2 {
