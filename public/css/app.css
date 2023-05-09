@@ -828,6 +828,24 @@ a {
     .home_post_view {
         font-size: 10px;
     }
+
+    .search_advance_box {
+        padding: 10px;
+    }
+
+    .home_post_author_img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .home_post_author_name {
+        font-size: 10px;
+    }
+
+    .home_post_action i {
+        font-size: 15px !important;
+        margin-right: 5px;
+    }
 }
 .lesson_box {
     display: flex;
