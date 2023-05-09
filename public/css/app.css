@@ -2631,6 +2631,11 @@ code * {
     .post_list_item_img img {
         border-radius: 5px;
     }
+
+    .post_list_item_info img {
+        width: 18px;
+        height: 18px;
+    }
 }
 .game_design {
     display: flex;
