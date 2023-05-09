@@ -2999,6 +2999,10 @@ select {
     margin-left: 5px;
 }
 
+.template_type_item:hover {
+    color: #ffbe68;
+}
+
 a.template_type_item.active {
     color: #ffbe68;
 }
