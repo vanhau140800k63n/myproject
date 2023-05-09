@@ -121,15 +121,18 @@ class AuthController extends Controller
             $req,
             [
                 'email' => 'required|email|unique:users,email',
+                'phone' => 'required'
             ],
             [
                 'email.required' => 'Vui lòng nhập email',
+                'phone.required' => 'Vui lòng nhập số điện thoại',
                 'email.email' => 'Email không hợp lệ',
                 'email.unique' => 'Email đã được đăng ký, bạn có thể bấm quên mật khẩu để lấy lại tài khoản',
             ]
         );
 
         $dataCreate = [
+            'phone' => $req->phone,
             'email' => $req->email,
             'token' => hash('sha256', AuthConstants::SECRET_STR . $req->email . time()),
             'token_expired' => date(CommonConstants::FORMAT_TIME, time() + 1800)

@@ -19,6 +19,12 @@
                         <span class="focus-input" data-symbol="∙"></span>
                     </div>
 
+                    <div class="wrap-input">
+                        <span class="label-input">Mật khẩu</span>
+                        <input class="input" type="number" name="phone" placeholder="Nhập số điện thoại">
+                        <span class="focus-input" data-symbol="∙"></span>
+                    </div>
+
                     @if (count($errors) > 0)
                         <div class="error-text">
                             @foreach ($errors->all() as $err)
