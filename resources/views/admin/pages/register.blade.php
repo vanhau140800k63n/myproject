@@ -21,7 +21,7 @@
 
                     <div class="wrap-input">
                         <span class="label-input">Số điện thoại</span>
-                        <input class="input" type="number" name="phone" placeholder="Nhập số điện thoại">
+                        <input class="input" type="number" name="phone" placeholder="Nhập số điện thoại" min="0">
                         <span class="focus-input" data-symbol="∙"></span>
                     </div>
 
