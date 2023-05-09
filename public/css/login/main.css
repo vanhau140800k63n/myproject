@@ -37,9 +37,9 @@ button:hover {
 }
 
 .txt2 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 600;
     color: #333333;
     text-transform: uppercase;
 }
@@ -220,7 +220,8 @@ input {
     z-index: -1;
     width: 300%;
     height: 100%;
-    background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: #000;
+    /* background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff); */
     top: 0;
     left: -100%;
     transition: all 0.4s;
@@ -327,7 +328,7 @@ a {
 }
 
 .fg-password:hover {
-    color: #a64bf4;
+    font-weight: 500;
 }
 
 .form-noti {
