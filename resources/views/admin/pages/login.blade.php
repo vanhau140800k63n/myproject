@@ -54,7 +54,7 @@
                         </div>
                     </div>
 
-                    <div class="txt1 text-center">
+                    {{-- <div class="txt1 text-center">
                         <span>
                             Đăng nhập với
                         </span>
@@ -68,7 +68,7 @@
                         <a href="#" class="login-social-item bg3">
                             <i class="fa-brands fa-google"></i>
                         </a>
-                    </div>
+                    </div> --}}
 
                     <div class="flex-col-c">
                         <span class="txt1">
