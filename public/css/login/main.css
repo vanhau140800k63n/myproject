@@ -181,11 +181,11 @@ input {
 }
 
 .input:focus+.focus-input::after {
-    color: #a64bf4;
+    color: #000;
 }
 
 .has-val.input+.focus-input::after {
-    color: #a64bf4;
+    color: #000;
 }
 
 
