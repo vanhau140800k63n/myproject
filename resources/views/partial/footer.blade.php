@@ -2,7 +2,7 @@
     <div class="footer_info">
         <div class="footer_logo">
             <img style="width: 30px" src="{{ asset('image/logo2.png') }}">
-            <span style="">Nghề lập trình viên</span>
+            <span style="">DEVSNE</span>
         </div>
         <div>
             <h2>Về chúng tôi</h2>
