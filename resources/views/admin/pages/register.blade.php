@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="wrap-input">
-                        <span class="label-input">Mật khẩu</span>
+                        <span class="label-input">Số điện thoại</span>
                         <input class="input" type="number" name="phone" placeholder="Nhập số điện thoại">
                         <span class="focus-input" data-symbol="∙"></span>
                     </div>
