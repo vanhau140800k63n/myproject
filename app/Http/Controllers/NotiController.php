@@ -63,7 +63,7 @@ class NotiController extends Controller
             $post = $this->postRepository->getPostById($noti->target_id);
 
             $output = '<i class="fa-solid fa-circle-xmark exit_noti"></i>
-            <div class="post_noti_title">Bài viết mới</div>
+            <div class="post_noti_title">'. $noti->title .'</div>
             <div class="post_noti_content">
                 <img class="post_noti_content_img"
                     src="'. asset($post->image) .'">
