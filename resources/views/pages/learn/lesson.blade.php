@@ -43,6 +43,9 @@
 @endsection
 @section('content')
     <div class="lesson_box">
+        <div class="post_noti">
+
+        </div>
         <div class="lesson_box_category">
             <div class="lesson_box_category_fixed">
                 <div class="lesson_box_category_title">Khóa học {{ $course->full_name }}</div>
@@ -145,7 +148,8 @@
                                 <div style="width:10%"> </div>
                             @endif
                             <a href="{{ route('learn.lesson_intro', ['course' => $course_item->name]) }}"
-                                class="other_course_item_text" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'), {{ $course_item->color }}; width:90%">
+                                class="other_course_item_text"
+                                style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'), {{ $course_item->color }}; width:90%">
                                 <div>Khóa học
                                     {{ $course_item->full_name }}</div>
                             </a>

@@ -69,7 +69,7 @@ class NotiController extends Controller
                     src="'. asset($post->image) .'">
                 <div>
                     <div class="post_noti_content_title">'. $post->title .'</div>
-                    <a class="post_noti_content_action" href="'. route('post.detail', ['slug' => $post->slug]) .'"> Truy cập </a>
+                    <a class="post_noti_content_action" href="'. route('post.detail', ['slug' => $post->slug]) .'"> '. $noti->action .' </a>
                 </div>
             </div>';
         }
