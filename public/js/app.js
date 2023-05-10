@@ -2367,6 +2367,25 @@ $(document).ready(function () {
     $('.cmt_action_box').hide();
     $(this).parent().parent().children('.cmt_action_box').show();
   });
+  $(document).on('click', '.exit_noti', function () {
+    clearInterval(reset_noti);
+    $('.post_noti').css('display', 'none');
+  });
+  var reset_noti = setInterval(function () {
+    $.ajax({
+      url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "get_noti",
+      type: "GET"
+    }).done(function (data) {
+      $('.post_noti').html(data);
+      $('.post_noti').css('opacity', 1);
+      setTimeout(function () {
+        $('.post_noti').css('opacity', 0);
+      }, 10000);
+      return true;
+    }).fail(function (e) {
+      return false;
+    });
+  }, 15000);
 });
 
 /***/ }),
