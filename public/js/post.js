@@ -72725,7 +72725,7 @@ setInterval(function () {
     url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "get_noti",
     type: "GET"
   }).done(function (data) {
-    $('.post_noti').append(data);
+    $('.post_noti').html(data);
     $('.post_noti').css('opacity', 1);
     setTimeout(function () {
       $('.post_noti').css('opacity', 0);
