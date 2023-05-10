@@ -78,7 +78,7 @@ class NotiController extends Controller
                 <img class="post_noti_content_img"
                     src="' . asset('image/template.png') . '">
                 <div>
-                    <div class="post_noti_content_title">' . $type_template->title . '</div>
+                    <div class="post_noti_content_title">1000+ Free ' . $type_template->title . ' Template</div>
                     <a class="post_noti_content_action" href="' . route('template.list', $type_template->slug) . '"> ' . $noti->action . ' </a>
                 </div>
             </div>';
