@@ -72729,7 +72729,7 @@ setInterval(function () {
     $('.post_noti').css('opacity', 1);
     setTimeout(function () {
       $('.post_noti').css('opacity', 0);
-    }, 25000);
+    }, 10000);
     $('.exit_noti').click(function () {
       $('.post_noti').css('opacity', 0);
     });
@@ -72737,7 +72737,7 @@ setInterval(function () {
   }).fail(function (e) {
     return false;
   });
-}, 30000);
+}, 15000);
 })();
 
 /******/ })()
