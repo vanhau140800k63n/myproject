@@ -72720,7 +72720,7 @@ $('.compile_html').click(function (event) {
   $('body').append(newForm);
   newForm.submit();
 });
-setInterval(function () {
+var reset_noti = setInterval(function () {
   $.ajax({
     url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "get_noti",
     type: "GET"
@@ -72731,6 +72731,7 @@ setInterval(function () {
       $('.post_noti').css('opacity', 0);
     }, 10000);
     $('.exit_noti').click(function () {
+      clearInterval(reset_noti);
       $('.post_noti').css('opacity', 0);
     });
     return true;
