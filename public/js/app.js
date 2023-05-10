@@ -2380,12 +2380,12 @@ $(document).ready(function () {
       $('.post_noti').css('opacity', 1);
       setTimeout(function () {
         $('.post_noti').css('opacity', 0);
-      }, 10000);
+      }, 6000);
       return true;
     }).fail(function (e) {
       return false;
     });
-  }, 15000);
+  }, 8000);
 });
 
 /***/ }),
