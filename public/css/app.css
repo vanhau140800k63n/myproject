@@ -1930,12 +1930,12 @@ code * {
 
 @keyframes lighing {
     0% {
-		background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
-	}
-    
-	100% {
-		background-image: linear-gradient(to right, #fed90f, #ff00d2, #00a2ff, #09f1b8);
-	}
+        background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    }
+
+    100% {
+        background-image: linear-gradient(to right, #fed90f, #ff00d2, #00a2ff, #09f1b8);
+    }
 }
 
 .post_box {
@@ -1983,7 +1983,7 @@ code * {
     font-weight: 500;
     display: flex;
     align-items: center;
-    color: #8b8b8f;
+    color: #534369;
     cursor: pointer;
 }
 
@@ -2419,6 +2419,62 @@ code * {
     width: -webkit-fill-available;
     border-radius: 15px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.post_noti {
+    position: fixed;
+    background: #fff;
+    z-index: 20;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    padding: 10px;
+}
+
+.exit_noti {
+    float: right;
+    color: #b9bfc3;
+}
+
+.exit_noti:hover {
+    color: #2c2f31;
+}
+
+.post_noti:hover {
+    box-shadow: rgba(60, 64, 67, 0.5) 0px 1px 2px 0px, rgba(60, 64, 67, 0.3) 0px 1px 3px 1px;
+}
+
+.post_noti_content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.post_noti_title {
+    font-weight: 600;
+}
+
+.post_noti_content_img {
+    max-height: 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.post_noti_content_action {
+    color: #fff;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 11px;
+    background: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    float: right;
+    margin-top: 5px;
 }
 
 @media only screen and (min-width: 1400px) {}

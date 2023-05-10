@@ -72720,6 +72720,9 @@ $('.compile_html').click(function (event) {
   $('body').append(newForm);
   newForm.submit();
 });
+$('.exit_noti').click(function () {
+  $('.post_noti').css('opacity', 0);
+});
 })();
 
 /******/ })()

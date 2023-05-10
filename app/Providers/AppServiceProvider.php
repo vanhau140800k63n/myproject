@@ -14,6 +14,7 @@ use App\Repositories\Eloquent\ContentItemRepository;
 use App\Repositories\Eloquent\ContentRepository;
 use App\Repositories\Eloquent\LessonItemRepository;
 use App\Repositories\Eloquent\LessonRepository;
+use App\Repositories\Eloquent\NotiRepository;
 use App\Repositories\Eloquent\OrderRepository;
 use App\Repositories\Eloquent\PLanguageRepository;
 use App\Repositories\Eloquent\PostRepository;
@@ -22,6 +23,7 @@ use App\Repositories\Eloquent\TemplateTypeRepository;
 use App\Repositories\Eloquent\UserRepository;
 use App\Repositories\LessonItemRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
+use App\Repositories\NotiRepositoryInterface;
 use App\Repositories\OrderRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
@@ -77,6 +79,9 @@ class AppServiceProvider extends ServiceProvider
         });
         $this->app->singleton(TemplateTypeRepositoryInterface::class, function () {
             return new TemplateTypeRepository();
+        });
+        $this->app->singleton(NotiRepositoryInterface::class, function () {
+            return new NotiRepository();
         });
     }
 
