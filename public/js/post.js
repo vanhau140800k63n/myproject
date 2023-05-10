@@ -23333,8 +23333,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "domain": () => (/* binding */ domain)
 /* harmony export */ });
-// export const domain = 'http://localhost:8003/';
-var domain = 'https://devsne.vn/';
+var domain = 'http://localhost:8003/';
+// export const domain = 'https://devsne.vn/';
 
 /***/ }),
 
@@ -72720,9 +72720,24 @@ $('.compile_html').click(function (event) {
   $('body').append(newForm);
   newForm.submit();
 });
-$('.exit_noti').click(function () {
-  $('.post_noti').css('opacity', 0);
-});
+setInterval(function () {
+  $.ajax({
+    url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "get_noti",
+    type: "GET"
+  }).done(function (data) {
+    $('.post_noti').append(data);
+    $('.post_noti').css('opacity', 1);
+    setTimeout(function () {
+      $('.post_noti').css('opacity', 0);
+    }, 25000);
+    $('.exit_noti').click(function () {
+      $('.post_noti').css('opacity', 0);
+    });
+    return true;
+  }).fail(function (e) {
+    return false;
+  });
+}, 30000);
 })();
 
 /******/ })()

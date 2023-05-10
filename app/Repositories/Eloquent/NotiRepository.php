@@ -14,4 +14,8 @@ class NotiRepository extends BaseRepository implements NotiRepositoryInterface
     {
         $this->noti = new Noti();
     }
+
+    public function getRandomNoti() {
+        return $this->noti->inRandomOrder()->first();
+    }
 }

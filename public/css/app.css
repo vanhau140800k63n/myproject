@@ -2539,6 +2539,10 @@ code * {
     .post_author_info_name {
         max-width: 200px;
     }
+
+    .post_noti {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

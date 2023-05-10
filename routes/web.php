@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LessonController;
+use App\Http\Controllers\NotiController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\UserController;
@@ -34,6 +35,7 @@ Route::post('/add_comment_post', [PostController::class, 'addComment'])->name('a
 Route::post('/del_comment_post', [PostController::class, 'delComment'])->name('del_comment_post');
 Route::get('/auto_html', [PostController::class, 'autoHtml'])->name('auto_html');
 Route::post('/compile_html', [PostController::class, 'compileHtml'])->name('compile_html');
+Route::get('/get_noti', [NotiController::class, 'getNoti'])->name('get_noti');
 
 Route::prefix('template')->name('template.')->group(function () {
     Route::get('/{key}', [TemplateController::class, 'listTemplate'])->name('list');

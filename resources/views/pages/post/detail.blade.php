@@ -56,17 +56,7 @@
 @section('content')
     <div class="post_box">
         <div class="post_noti">
-            <i class="fa-solid fa-circle-xmark exit_noti"></i>
-            <div class="post_noti_title">Bài viết mới</div>
-            <div class="post_noti_content">
-                <img class="post_noti_content_img"
-                    src="https://devsne.vn/image/post/how-to-integrate-razorpay-payment-gateway-in-laravel-9-53713722.jpg"
-                    class="">
-                <div>
-                    <div class="post_noti_content_title">Laravel 9 Create Zip File And Download</div>
-                    <a class="post_noti_content_action" href=""> Truy cập </a>
-                </div>
-            </div>
+            
         </div>
         <div class="post_box_content">
             <div class="post_box_content_title">{{ $post->title }}</div>
