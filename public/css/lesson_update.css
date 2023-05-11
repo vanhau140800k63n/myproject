@@ -114,7 +114,8 @@
 .info-tab {
     width: 40px;
     height: 40px;
-    display: inline-block;
+    display: -webkit-box;
+    padding: 6px;
     position: relative;
     top: 8px
 }
@@ -170,6 +171,10 @@
 .note-box p,
 .tip-box p {
     margin-bottom: 12px;
+}
+
+.fa-pen-to-square, .fa-rocket {
+    color: #fff;
 }
 
 @media only screen and (min-width: 1400px) {}
