@@ -991,7 +991,7 @@ a {
 
 .lesson_box_content_title {
     padding: 20px 30px;
-    background-image: radial-gradient(circle 1017px at 1.4% 22.8%, rgba(97, 76, 141, 1) 31.9%, rgb(94, 82, 194) 90%);
+    background-image: url('https://www.transparenttextures.com/patterns/climpek.png'), linear-gradient(96.5deg, rgb(60 62 65) 10.4%, rgb(46 52 60) 87.7%);
     color: #fff;
     font-size: 20px;
     font-weight: 600;
@@ -1037,7 +1037,8 @@ a {
     font-weight: 500;
 }
 
-.lesson_content strong, .lesson_content strong * {
+.lesson_content strong,
+.lesson_content strong * {
     font-weight: 500;
 }
 
