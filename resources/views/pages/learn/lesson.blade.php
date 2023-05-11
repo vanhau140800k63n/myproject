@@ -51,7 +51,7 @@
         </div>
         <div class="lesson_box_category">
             <div class="lesson_box_category_fixed">
-                <div class="lesson_box_category_title">Khóa học {{ $course->full_name }}</div>
+                <div class="lesson_box_category_title">Khóa học {{ $course->full_name }} <i class="fa-solid fa-house"></i></div>
                 <div class="lesson_box_category_list">
                     @foreach ($lesson_list as $lesson_item)
                         <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_item->slug]) }}"
