@@ -56,7 +56,7 @@
 @section('content')
     <div class="post_box">
         <div class="post_noti">
-            
+
         </div>
         <div class="post_box_content">
             <div class="post_box_content_title">{{ $post->title }}</div>
@@ -154,7 +154,9 @@
                 </div>
             @endforeach
 
-            <p style="float: right"> Nguồn: {{ $post->source }}</p>
+            @if ($post->source != null)
+                <p style="float: right"> Nguồn: {{ $post->source }}</p>
+            @endif
 
             <?php
             $api_posts = \App\Models\Post::where('type', 3)
