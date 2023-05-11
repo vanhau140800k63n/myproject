@@ -32,7 +32,6 @@ class NotiController extends Controller
     public function __construct(
         PostRepositoryInterface $postRepository,
         ContentItemRepositoryInterface $contentItemRepository,
-        CategoryRepositoryInterface $categoryRepository,
         CommentRepositoryInterface $commentReprository,
         ContentRepositoryInterface $contentRepository,
         ActionRepositoryInterface $actionRepository,

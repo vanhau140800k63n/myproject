@@ -17,6 +17,7 @@
                 </div>
                 <div>
                     <div class="lesson_info" type="add">
+                        <div class="url_content" style="display: none"></div>
                         <select class="course_select">
                             <option value='0'>Chọn khóa học:</option>
                             @foreach ($course_list as $course)

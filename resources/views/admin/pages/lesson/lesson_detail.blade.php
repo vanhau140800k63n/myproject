@@ -18,6 +18,7 @@
                 </div>
                 <div>
                     <div class="lesson_info" type="update" lesson_id="{{ $lesson->id }}">
+                        <div class="url_content" style="display: none"></div>
                         <select class="course_select">
                             @foreach ($course_list as $course)
                                 @if ($course->id === $course_selected->id)

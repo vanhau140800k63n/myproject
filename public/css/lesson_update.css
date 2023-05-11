@@ -9,12 +9,20 @@
     margin-top: 10px;
 }
 
-.lesson_content_text pre {
-    margin-top: 20px;
+.lesson_content_text strong, .lesson_content_text strong * {
+    font-weight: 600 !important;
 }
 
-.lesson_content_text div {
-    margin-top: 15px;
+.lesson_content_text img {
+    margin: 15px 0 30px 0;
+    width: 100%;
+    max-height: 500px;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+.lesson_content_text pre {
+    margin-top: 20px;
 }
 
 .lesson_content_text h2 {
@@ -61,29 +69,107 @@
     font-weight: 500;
 }
 
-.lesson_content_text iframe {
-    width: 100%;
-    min-height: 300px;
+.color-box {
+    margin: 15px 0;
+    padding-left: 20px;
 }
 
-.lesson_content_text img {
-    width: 100%;
-    max-height: 500px;
-    -o-object-fit: contain;
-       object-fit: contain;
+.shadow {
+    background: #f7f8f9;
+    padding: 3px;
+    margin: 10px 0;
 }
 
-.lesson_content_text .emoji {
-    display: none;
+.note-icon {
+    background: #47ADE0
 }
 
-.lesson_content table {
-    background: #f0f0f0;
-    box-shadow: none !important;
+.note-icon i::before {
+    background: #1d7ead
 }
 
-.lesson_content_text a {
-    color: #004cbd;
+.note-box,
+.warning-box,
+.tip-box {
+    padding: 8px 8px 3px 26px
+}
+
+.note-box a {
+    color: #4395c6
+}
+
+.note-box {
+    color: #144261;
+    background: #d5e9f6
+}
+
+.tip-icon {
+    background: #92CD59
+}
+
+.tip-icon i::before {
+    background: #75b436
+}
+
+.info-tab {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    top: 8px
+}
+
+.info-tab::before,
+.info-tab::after {
+    display: inline-block;
+    color: #fff;
+    line-height: normal;
+    font-family: "icomoon";
+    position: absolute
+}
+
+.info-tab i::before,
+.info-tab i::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    transform: rotateX(60deg)
+}
+
+.info-tab i::before {
+    width: 20px;
+    height: 20px;
+    box-shadow: inset 12px 0 13px rgba(0, 0, 0, 0.5)
+}
+
+.info-tab i::after {
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+    bottom: -18px
+}
+
+.info-tab {
+    float: left;
+    margin-left: -23px
+}
+
+.tip-box a {
+    color: #439800
+}
+
+.tip-box {
+    color: #2e5014;
+    background: #d5efc2
+}
+
+.note-box p,
+.tip-box p {
+    margin-bottom: 12px;
 }
 
 @media only screen and (min-width: 1400px) {}

@@ -30186,6 +30186,23 @@ $(document).ready(function () {
         if (type == 'text') {
           var id = $(this).find('textarea').attr('id');
           content = tinyMCE.get(id).getContent();
+          if (title_content_item == 'advance') {
+            title_content_item = '';
+            $('.url_content').html(content);
+            $('.url_content').html($('.content').html());
+            $('.leaderboard').remove();
+            $('.try-btn').remove();
+            $('h1').remove();
+            $('hr').remove();
+            $('.bottom-link').remove();
+            $('.bottom-ad').remove();
+            $('.url_content img').each(function () {
+              $(this).attr('src', 'https://www.tutorialrepublic.com/' + $(this).attr('src').substring(3));
+            });
+            $('.url_content a').removeAttr('href');
+            $('.url_content p').prepend('&nbsp;&nbsp;&nbsp;&nbsp;');
+            content = $('.url_content').html();
+          }
         } else {
           code = $(this).attr('code');
           content = view[$(this).attr('id')].state.doc.toString();
