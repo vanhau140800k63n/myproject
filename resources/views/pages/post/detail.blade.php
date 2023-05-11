@@ -154,6 +154,8 @@
                 </div>
             @endforeach
 
+            <p style="float: right"> Nguồn: {{ $post->source }}</p>
+
             <?php
             $api_posts = \App\Models\Post::where('type', 3)
                 ->orderBy('title')
