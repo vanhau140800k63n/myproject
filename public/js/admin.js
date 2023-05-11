@@ -30196,6 +30196,7 @@ $(document).ready(function () {
             $('hr').remove();
             $('.bottom-link').remove();
             $('.bottom-ad').remove();
+            $('#colorpicker').remove();
             $('.url_content img').each(function () {
               $(this).attr('src', 'https://www.tutorialrepublic.com/' + $(this).attr('src').substring(3));
             });
