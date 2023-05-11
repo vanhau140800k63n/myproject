@@ -84,7 +84,7 @@
     background: #47ADE0
 }
 
-.note-icon i::before {
+.note-icon div::before {
     background: #1d7ead
 }
 
@@ -107,7 +107,7 @@
     background: #92CD59
 }
 
-.tip-icon i::before {
+.tip-icon div::before {
     background: #75b436
 }
 
@@ -128,8 +128,8 @@
     position: absolute
 }
 
-.info-tab i::before,
-.info-tab i::after {
+.info-tab div::before,
+.info-tab div::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -138,13 +138,13 @@
     transform: rotateX(60deg)
 }
 
-.info-tab i::before {
+.info-tab div::before {
     width: 20px;
     height: 20px;
     box-shadow: inset 12px 0 13px rgba(0, 0, 0, 0.5)
 }
 
-.info-tab i::after {
+.info-tab div::after {
     width: 0;
     height: 0;
     border: 12px solid transparent;

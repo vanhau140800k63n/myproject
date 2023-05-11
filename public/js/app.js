@@ -2386,7 +2386,7 @@ $(document).ready(function () {
       return false;
     });
   }, 8000);
-  $('.note-icon').append('<i class="fa-solid fa-house"></i>');
+  $('.note-icon').append('<div></div>');
 });
 
 /***/ }),
