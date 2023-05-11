@@ -2386,6 +2386,7 @@ $(document).ready(function () {
       return false;
     });
   }, 8000);
+  $('.note-icon').append('<i class="fa-regular fa-pen-to-square"></i>');
 });
 
 /***/ }),
