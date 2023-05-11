@@ -2386,7 +2386,7 @@ $(document).ready(function () {
       return false;
     });
   }, 8000);
-  $('.note-icon').append('<div></div>');
+  $('.note-icon').append('<div></div><i class="fa-solid fa-file-pen"></i>');
 });
 
 /***/ }),
