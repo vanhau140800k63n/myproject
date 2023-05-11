@@ -28,7 +28,7 @@
         }
     </style>
 
-    @if (in_array($course->id, [7, 10]))
+    @if (in_array($course->id, [7, 10, 11]))
         <link rel="stylesheet" href="{{ asset(mix('css/lesson_update.css')) }}">
     @endif
     @if (in_array($course->id, [7, 10]))
