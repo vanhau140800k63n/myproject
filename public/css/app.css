@@ -2355,13 +2355,15 @@ code * {
     color: #fff;
     padding: 4px 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: 500;
     font-size: 11px !important;
     cursor: pointer;
+    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.cmt_action_box button:nth-last-child(1) {
+/* .cmt_action_box button:nth-last-child(1) {
     background-image: radial-gradient(circle 860px at 11.8% 33.5%, rgb(233, 87, 87) 0%, rgb(255, 59, 105).5%, rgba(249, 75, 37, 1) 56.1%, rgba(250, 88, 19, 1) 75.6%, rgba(253, 102, 2, 1) 100.2%);
 }
 
@@ -2371,7 +2373,7 @@ code * {
 
 .cmt_action_box button:nth-last-child(3) {
     background: linear-gradient(83.2deg, rgb(66, 66, 106) 10.8%, rgb(105, 101, 169) 94.3%);
-}
+} */
 
 .post_list_item {
     display: flex;
