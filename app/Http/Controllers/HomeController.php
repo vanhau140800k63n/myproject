@@ -83,7 +83,7 @@ class HomeController extends Controller
         $lesson_list = $this->lessonRepository->getLessonListAll();
         $post_list = $this->postRepository->getPostList();
         foreach ($lesson_list as $lesson) {
-            if ($lesson->meta == '' || $lesson->meta == null || true) {
+            if ($lesson->meta == '' || $lesson->meta == null) {
                 $str = $lesson->title;
                 $i = 0;
                 $data = [];
@@ -128,7 +128,7 @@ class HomeController extends Controller
         }
 
         foreach ($post_list as $post) {
-            if ($post->meta == '' || $post->meta == null || true) {
+            if ($post->meta == '' || $post->meta == null) {
                 $str = $post->title;
                 $i = 0;
                 $data = [];
