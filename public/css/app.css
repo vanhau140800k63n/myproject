@@ -2359,7 +2359,7 @@ code * {
     font-weight: 500;
     font-size: 11px !important;
     cursor: pointer;
-    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
