@@ -5,10 +5,6 @@
     --h4-size: 20px;
 }
 
-.lesson_content_text p {
-    margin-top: 10px;
-}
-
 .lesson_content_text strong, .lesson_content_text strong * {
     font-weight: 600 !important;
 }

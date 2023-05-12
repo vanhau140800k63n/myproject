@@ -989,6 +989,10 @@ a {
     border-bottom-left-radius: 5px;
 }
 
+.lesson_content_text p {
+    margin-top: 10px;
+}
+
 .lesson_box_content_title {
     padding: 20px 30px;
     background-image: linear-gradient(96.5deg, rgb(60 62 65) 10.4%, rgb(46 52 60) 87.7%);
