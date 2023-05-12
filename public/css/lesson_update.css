@@ -179,12 +179,10 @@
 
 .tip-box code {
     background: #4e9c85;
-    color: #fff;
 }
 
 .note-box code {
     background: #4687aa;
-    color: #fff;
 }
 
 @media only screen and (min-width: 1400px) {}

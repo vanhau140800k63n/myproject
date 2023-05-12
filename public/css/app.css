@@ -1124,11 +1124,12 @@ a {
 }
 
 code {
-    background: #d5d5dc;
+    background: #5b5b78;
     font-size: 15px !important;
     padding: 0 4px;
     border-radius: 3px;
     font-family: monospace;
+    color: #fff;
 }
 
 code * {
