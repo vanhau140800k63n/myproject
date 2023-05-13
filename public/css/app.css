@@ -571,6 +571,8 @@ a {
 
 .home_post_author_name {
     padding: 2px 8px;
+    height: -moz-fit-content;
+    height: fit-content;
     border-radius: 10px;
     background-image: radial-gradient(circle 300px at 8% 89.3%, rgba(20, 157, 208, 1) 0%, rgba(140, 63, 226, 1) 90%);
     margin-left: 5px;
