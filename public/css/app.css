@@ -1003,7 +1003,7 @@ a {
     padding: 20px 30px;
     background-image: linear-gradient(96.5deg, rgb(60 62 65) 10.4%, rgb(46 52 60) 87.7%);
     color: #fff;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -1259,6 +1259,10 @@ code * {
 
     .lesson_box_other_fixed {
         width: auto;
+    }
+
+    .lesson_box_content_title {
+        font-size: 20px;
     }
 }
 
@@ -1613,29 +1617,30 @@ code * {
 }
 
 .user_info_btn_save {
-    background: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;    
 }
 
 .user_info_btn_logout {
-    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(247, 87, 0, 1) 0%, rgba(249, 0, 0, 1) 90.1%);
+    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), radial-gradient(circle farthest-corner at 10% 20%, rgba(247, 87, 0, 1) 0%, rgba(249, 0, 0, 1) 90.1%);
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-left: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .post_img_btn {
-    background: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
     color: #fff;
     padding: 5px 10px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .user_info_input:disabled {
