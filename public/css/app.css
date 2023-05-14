@@ -855,10 +855,6 @@ a {
     padding-top: 60px;
 }
 
-.lesson_box * {
-    box-sizing: border-box;
-}
-
 .lesson_box_category {
     width: 15%;
     position: relative;
