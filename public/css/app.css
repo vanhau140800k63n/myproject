@@ -2007,7 +2007,7 @@ code * {
     font-weight: 500;
     display: flex;
     align-items: center;
-    color: #534369;
+    color: #76818e;
     cursor: pointer;
 }
 
@@ -2043,6 +2043,11 @@ code * {
     cursor: pointer;
     margin: 3px 5px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition: 0.1s;
+}
+
+.post_info_category_item:hover {
+    transform: translateY(-1px);
 }
 
 .post_box_content_title {
