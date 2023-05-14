@@ -624,14 +624,14 @@
                 </div>
             @endforeach
         </div>
-        <div class="home_lesson" style="margin-top: 150px">
+        {{-- <div class="home_lesson" style="margin-top: 150px">
             @foreach ($p_languages as $p_language)
                 <div class="home_solution_item"
                     style="background-image: url('https://www.transparenttextures.com/patterns/black-thread-light.png'), {{ $p_language->color }}">
                     Một số bài toán <br> {{ $p_language->full_name }}
                 </div>
             @endforeach
-        </div>
+        </div> --}}
     </div>
     <script src="{{ asset(mix('home_lib/webflow.js')) }}" type="text/javascript"></script>
     <script src="{{ asset(mix('js/code-mirror.js')) }}"></script>
