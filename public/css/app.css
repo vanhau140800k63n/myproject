@@ -967,13 +967,12 @@ a {
 }
 
 .run_code {
-    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
+    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), radial-gradient(circle 815px at 23.4% -21.8%, rgba(9, 29, 85, 1) 0.2%, rgba(0, 0, 0, 1) 100.2%);
     color: #fff;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .copy_code {
@@ -1001,13 +1000,13 @@ a {
 
 .lesson_box_content_title {
     padding: 20px 30px;
-    background-image: linear-gradient(96.5deg, rgb(60 62 65) 10.4%, rgb(46 52 60) 87.7%);
+    background-image: linear-gradient(96.5deg, rgb(38 47 61) 10.4%, rgb(40 48 60) 87.7%);
     color: #fff;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     border-radius: 5px;
-    box-shadow: rgb(0 0 0 / 16%) 0px 6px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .code_box {
@@ -1213,14 +1212,13 @@ code * {
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
+    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), radial-gradient(circle 815px at 23.4% -21.8%, rgba(9, 29, 85, 1) 0.2%, rgba(0, 0, 0, 1) 100.2%);
     color: #fff;
     padding: 5px 15px;
     border: none;
     border-radius: 5px;
     font-size: 15px !important;
     font-weight: 500;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .lesson_box_other_fixed {
@@ -1359,6 +1357,7 @@ code * {
         padding: 12px 10px;
         font-size: 15px;
         text-align: center;
+        margin-bottom: 25px;
     }
 
     .lesson_box_content {
@@ -2185,7 +2184,6 @@ code * {
     padding: 12px 10px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin-bottom: 10px;
 }
 
