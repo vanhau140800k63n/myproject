@@ -20,7 +20,7 @@
                             <input type="file" id="post_avata" name="avata" hidden accept="image/*">
                             <button class="post_img_btn" type="button"
                                 onclick="document.getElementById('post_avata').click()">Tải ảnh
-                                <i class="fa-solid fa-upload"></i></button>
+                                <i class="fa-solid fa-upload" style="margin-left: 5px"></i></button>
                         </div>
                     </div>
                 </div>

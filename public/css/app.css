@@ -1425,6 +1425,10 @@ code * {
         -webkit-padding-start: 20px;
                 padding-inline-start: 20px;
     }
+
+    .lesson_content {
+        margin-bottom: 30px;
+    }
 }
 .footer_box {
     min-height: 300px;
