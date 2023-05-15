@@ -56450,7 +56450,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Using https://github.com/one-dark/vscode-one-dark-theme/ as reference for the colors
-const chalky = "#e5c07b", coral = "#e06c75", cyan = "#56b6c2", invalid = "#ffffff", ivory = "#abb2bf", stone = "#7d8799", // Brightened compared to original to increase contrast
+const chalky = "#e5c07b", coral = "#bbccff", cyan = "#56b6c2", invalid = "#ffffff", ivory = "#abb2bf", stone = "#7d8799", // Brightened compared to original to increase contrast
 malibu = "#61afef", sage = "#98c379", whiskey = "#d19a66", violet = "#c678dd", darkBackground = "#21252b", highlightBackground = "#2c313a", background = "#1a1b1d", tooltipBackground = "#353a42", selection = "#3E4451", cursor = "#528bff";
 /**
 The colors used in the theme, as CSS color strings.
