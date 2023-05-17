@@ -88,7 +88,7 @@ $(document).ready(function () {
   function addUrl(p_url_index) {
     var _token = $('input[name="_token"]').val();
     if (p_url_index == '') {
-      p_url_index = 'https://plantillashtmlgratis.com/en/todas-las-plantillas/plantilla/free-html-css-template-zay-shop/';
+      p_url_index = 'https://plantillashtmlgratis.com/en/todas-las-plantillas/plantilla/free-html-css-template-fabtheme/';
     }
     $.ajax({
       url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/get_content_url",
