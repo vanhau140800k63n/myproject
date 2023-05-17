@@ -147,8 +147,7 @@ class TemplateController extends Controller
 
     public function autoAddTemplateAdmin(Request $req)
     {
-        $page = $req->page;
-        return view('admin.pages.template.auto_template', compact('page'));
+        return view('admin.pages.template.auto_template');
     }
 
     public function autoPostAddTemplateAdmin(Request $req)
@@ -164,7 +163,7 @@ class TemplateController extends Controller
             'demo' => 1,
             'view' => $req->view,
             'content' => '',
-            'type' => 2,
+            'type' => 5,
             'tag' => $this->categoryRepository->updateCategory(explode(',', 'animation'))
         ];
 

@@ -83,10 +83,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _domain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domain */ "./resources/js/domain.js");
 
 $(document).ready(function () {
-  var page_url_index = $('.url_content').attr('page');
+  var page_url_index = '';
   var index = 0;
   function addUrl(p_url_index) {
     var _token = $('input[name="_token"]').val();
+    if (p_url_index == '') {
+      p_url_index = 'https://plantillashtmlgratis.com/en/todas-las-plantillas/plantilla/free-html-css-template-zay-shop/';
+    }
     $.ajax({
       url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/get_content_url",
       headers: {
@@ -95,37 +98,33 @@ $(document).ready(function () {
       type: "POST",
       dataType: 'json',
       data: {
-        url: 'https://plantillashtmlgratis.com/en/categoria/css-code/page/' + page_url_index + '/',
+        url: p_url_index,
         _token: _token
       }
     }).done(function (data) {
       $('.url_content').html(data);
-      $('.url_content article').each(function () {
-        var url = $(this).find('iframe').attr('src');
-        var download = $(this).find('.botondescargar').attr('href');
-        var title = $(this).find('h2 a').html();
-        $.ajax({
-          url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/template/auto/post_add",
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          type: "POST",
-          dataType: 'json',
-          data: {
-            url: url,
-            download: download,
-            title: title,
-            _token: _token
-          }
-        }).done(function (data) {
-          index += 1;
-          if (index == 20) {
-            location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/template/auto/add?page=" + ++page_url_index;
-          }
-          return true;
-        }).fail(function (e) {
-          return false;
-        });
+      var url = 'https://plantillashtmlgratis.com' + $('.content-wrap').find('.fancybox-iframe').attr('href');
+      var download = 'https://plantillashtmlgratis.com' + $("input[name='download']").attr('value');
+      var title = $('.content-wrap h2').html();
+      var next_url = $(".content-nav-link a").attr('href');
+      $.ajax({
+        url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/template/auto/post_add",
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        type: "POST",
+        dataType: 'json',
+        data: {
+          url: url,
+          download: download,
+          title: title,
+          _token: _token
+        }
+      }).done(function (data) {
+        addUrl(next_url);
+        return true;
+      }).fail(function (e) {
+        return false;
       });
       return true;
     }).fail(function (e) {
