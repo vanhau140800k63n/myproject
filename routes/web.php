@@ -115,6 +115,12 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::get('/{type}', [TemplateController::class, 'getTemplateListAdmin'])->name('list');
         Route::get('detail/{id}', [TemplateController::class, 'getTemplateDetailAdmin'])->name('detail');
         Route::get('/t/add', [TemplateController::class, 'addTemplateAdmin'])->name('add');
+        
+        Route::prefix('auto')->name('auto.')->group(function () {
+            Route::get('/add', [TemplateController::class, 'autoAddTemplateAdmin'])->name('add');
+            Route::post('/post_add', [TemplateController::class, 'autoPostAddTemplateAdmin'])->name('post_add');
+        });
+
         Route::prefix('item')->name('item.')->group(function () {
             Route::post('/add', [TemplateController::class, 'postAddTemplateAdmin'])->name('add');
             Route::post('/update', [TemplateController::class, 'postUpdateTemplateAdmin'])->name('update');

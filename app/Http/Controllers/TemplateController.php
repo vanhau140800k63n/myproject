@@ -144,4 +144,32 @@ class TemplateController extends Controller
 
         return true;
     }
+
+    public function autoAddTemplateAdmin(Request $req)
+    {
+        $page = $req->page;
+        return view('admin.pages.template.auto_template', compact('page'));
+    }
+
+    public function autoPostAddTemplateAdmin(Request $req)
+    {
+        $data_add = [
+            'title' => $req->title,
+            'iframe' => $req->url,
+            'download_url' => $req->download,
+            'slug' => $this->makeSlug($req->title),
+            'height' => 700,
+            'auto' => null,
+            'source' => 1,
+            'demo' => 1,
+            'view' => $req->view,
+            'content' => '',
+            'type' => 2,
+            'tag' => $this->categoryRepository->updateCategory(explode(',', 'animation'))
+        ];
+
+        $template = $this->templateRepository->addTemplate($data_add);
+
+        return true;
+    }
 }
