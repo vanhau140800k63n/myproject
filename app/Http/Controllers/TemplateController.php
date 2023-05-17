@@ -157,7 +157,7 @@ class TemplateController extends Controller
             'iframe' => $req->url,
             'download_url' => $req->download,
             'slug' => $this->makeSlug($req->title),
-            'height' => 700,
+            'height' => 1500,
             'auto' => null,
             'source' => 1,
             'demo' => 1,
@@ -167,7 +167,10 @@ class TemplateController extends Controller
             'tag' => $this->categoryRepository->updateCategory(explode(',', 'animation'))
         ];
 
-        $template = $this->templateRepository->addTemplate($data_add);
+        $check_slug = $this->templateRepository->check_slug($data_add['slug']);
+
+        if ($check_slug == 0)
+            $template = $this->templateRepository->addTemplate($data_add);
 
         return true;
     }

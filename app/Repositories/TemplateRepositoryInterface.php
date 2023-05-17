@@ -9,4 +9,5 @@ interface TemplateRepositoryInterface
     public function getTemplateById($id);
     public function addTemplate($data);
     public function updateTemplate($data, $id);
+    public function check_slug($slug);
 }
