@@ -50,6 +50,7 @@
                 <div class="post_card" id="auto_compile_html" value="{{ $example }}"
                     lang="html" auto="0">
                     <button class="copy_code"> Copy </button>
+                    
                 </div>
             </div>
         </div>
