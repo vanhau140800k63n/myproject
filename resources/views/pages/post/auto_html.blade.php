@@ -44,6 +44,7 @@
                     <div class="post_content_title">
                         Điền code theo format dưới
                     </div>
+                    <button class="show_code_auto"> Show code </button>
                     <button class="compile_html" value="post"> Compile code </button>
                 </div>
                 <div class="post_card" id="auto_compile_html" value="{{ $example }}"

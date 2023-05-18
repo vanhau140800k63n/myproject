@@ -1208,7 +1208,7 @@ code * {
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), radial-gradient(circle 815px at 23.4% -21.8%, rgba(9, 29, 85, 1) 0.2%, rgba(0, 0, 0, 1) 100.2%);
+    background-image: radial-gradient(circle 815px at 23.4% -21.8%, rgba(9, 29, 85, 1) 0.2%, rgba(0, 0, 0, 1) 100.2%);
     color: #fff;
     padding: 5px 15px;
     border: none;
@@ -2068,6 +2068,16 @@ code * {
 }
 
 .compile_html {
+    background: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.show_code_auto {
     background: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
     color: #fff;
     padding: 5px 10px;

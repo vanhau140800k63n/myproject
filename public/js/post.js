@@ -72720,6 +72720,39 @@ $('.compile_html').click(function (event) {
   $('body').append(newForm);
   newForm.submit();
 });
+$('.show_code_auto').click(function () {
+  var post_cart = $('.post_card');
+  var val = post_cart.attr('lang');
+  var content = view[post_cart.attr('id')].state.doc.toString();
+  var index = 0;
+  var line = 0;
+  view[post_cart.attr('id')].dispatch({
+    changes: {
+      from: 0,
+      to: content.length,
+      insert: '\n\n\n\n\n\n\n'
+    }
+  });
+  var text = content;
+  setInterval(function () {
+    if (index == text.length) {
+      clearInterval(this);
+    } else {
+      var length = view[post_cart.attr('id')].state.doc.toString().length;
+      view[post_cart.attr('id')].dispatch({
+        changes: {
+          from: length - 7,
+          insert: text.charAt(index)
+        }
+      });
+      if (text.charAt(index) == '\n') {
+        ++line;
+        $('.cm-scroller').scrollTop(20 * line);
+      }
+    }
+    ++index;
+  }, 10);
+});
 })();
 
 /******/ })()
