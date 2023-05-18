@@ -1,6 +1,6 @@
 <div>
     <div
-        style="color: #2c2a29; font-family: Google Sans,'Roboto',Arial;font-size: 18px;font-weight: bold;line-height: 44px; text-decoration: none;">
+        style="color: #2c2a29; font-family: Google Sans,'Roboto',Arial;font-size: 18px;line-height: 44px; text-decoration: none;">
         Chào mừng {{ $email }}, đến với cộng đồng devsne. Để hoàn tất đăng ký, vui lòng nhấn vào link bên dưới:
     </div>
 
