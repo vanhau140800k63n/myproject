@@ -43,10 +43,10 @@
                         @endif
                         @if ($template->source == 1)
                             <button class="template_item_download" href="{{ $template->download_url }}"
-                                check="{{ Auth::check() ? 'download' : '' }}">Source Code</button>
+                                check="{{ Auth::check() ? 'download' : '' }}">Download</button>
                         @endif
                         @if ($template->auto != null)
-                            <button class="template_item_run" value="{{ $template->auto }}">Run code</button>
+                            <button class="template_item_run" value="{{ $template->auto }}">Run</button>
                         @endif
                     </div>
                 </div>
