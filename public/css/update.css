@@ -3,6 +3,7 @@
     --h2-size: 24px;
     --h3-size: 22px;
     --h4-size: 20px;
+    --h5-size: 18px;
 }
 
 .post_content_text p,
@@ -46,6 +47,12 @@ blockquote strong,
 .post_content_text h4 {
     font-size: var(--h3-size) !important;
     margin: 12px 0;
+    font-weight: 500;
+}
+
+.post_content_text h5 {
+    font-size: var(--h5-size) !important;
+    margin: 8px 0;
     font-weight: 500;
 }
 
@@ -102,6 +109,7 @@ blockquote strong,
         --h2-size: 20px;
         --h3-size: 18px;
         --h4-size: 16px;
+        --h5-size: 15px;
     }
 }
 
@@ -111,6 +119,7 @@ blockquote strong,
         --h2-size: 19px;
         --h3-size: 17px;
         --h4-size: 15px;
+        --h5-size: 14px;
     }
 }
 
@@ -120,6 +129,7 @@ blockquote strong,
         --h2-size: 18px;
         --h3-size: 16px;
         --h4-size: 14px;
+        --h5-size: 13px;
     }
 
     .post_content_text p,
