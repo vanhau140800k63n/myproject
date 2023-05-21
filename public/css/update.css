@@ -5,7 +5,8 @@
     --h4-size: 20px;
 }
 
-.post_content_text p, .post_content_text li {
+.post_content_text p,
+.post_content_text li {
     margin-top: 15px;
 }
 
@@ -68,6 +69,10 @@ blockquote strong,
     font-weight: 500;
 }
 
+.post_content_text p img {
+    display: block;
+}
+
 .post_content_text iframe {
     width: 100%;
     min-height: 300px;
@@ -117,7 +122,8 @@ blockquote strong,
         --h4-size: 14px;
     }
 
-    .post_content_text p, .post_content_text li {
+    .post_content_text p,
+    .post_content_text li {
         margin-top: 10px;
     }
 
