@@ -76,6 +76,11 @@ blockquote strong,
     font-weight: 500;
 }
 
+.post_content_text h5 * {
+    font-size: var(--h5-size) !important;
+    font-weight: 500;
+}
+
 .post_content_text p img {
     display: block;
 }
