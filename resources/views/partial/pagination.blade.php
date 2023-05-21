@@ -35,7 +35,7 @@
 @endif
 <style>
     :root {
-        --primary: #23adad;
+        --primary: #202025;
         --greyLight: #23adade1;
         --greyLight-2: #cbe0dd;
         --greyDark: #2d4848;
@@ -97,6 +97,8 @@
         justify-content: center;
         align-items: center;
         height: 5rem;
+        padding: 0;
+        flex-wrap: wrap;
     }
 
     .page__numbers {
