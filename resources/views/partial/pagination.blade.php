@@ -35,7 +35,7 @@
 @endif
 <style>
     :root {
-        --primary: #202025;
+        --primary: #5b5b82;
         --greyLight: #23adade1;
         --greyLight-2: #cbe0dd;
         --greyDark: #2d4848;
