@@ -3281,11 +3281,14 @@ a.template_type_item.active {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
 @media only screen and (max-width: 991px) {
+    .template_list_container {
+        flex-direction: column;
+    }
 
     .template_list {
         width: 100%;
     }
-    
+
     .template_list_other {
         width: 100%;
     }
