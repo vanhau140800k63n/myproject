@@ -3081,7 +3081,7 @@ select {
 
 .template_item {
     margin-bottom: 50px;
-    padding: 30px 50px;
+    padding: 30px 40px 30px 50px;
 }
 
 .template_list h2 {
