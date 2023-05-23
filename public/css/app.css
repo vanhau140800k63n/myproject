@@ -3066,9 +3066,16 @@ select {
     font-size: 30px;
 }
 
-.template_list iframe {
+.template_list iframe,
+.template_list img,
+.template_list video {
     margin-top: 30px;
     border: 15px solid rgb(217, 214, 214);
+}
+
+.template_list img,
+.template_list video {
+    width: 100%;
 }
 
 .template_item_action {
