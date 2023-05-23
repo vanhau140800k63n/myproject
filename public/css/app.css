@@ -1181,11 +1181,10 @@ code * {
     color: #fff;
     font-weight: 500;
     font-size: 15px;
-    background: linear-gradient(109.6deg, rgba(45, 116, 213, 1) 11.2%, rgba(121, 137, 212, 1) 91.2%);
+    background: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgb(47 55 71) 87.1%);
     padding: 12px 10px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin-bottom: 10px;
 }
 
