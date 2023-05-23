@@ -2183,7 +2183,7 @@ code * {
     color: #fff;
     font-weight: 500;
     font-size: 15px;
-    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgb(47 55 71) 87.1%);
     padding: 12px 10px;
     border-radius: 5px;
     text-align: center;
