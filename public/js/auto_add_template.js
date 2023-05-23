@@ -88,7 +88,7 @@ $(document).ready(function () {
   function addUrl(p_url_index) {
     var _token = $('input[name="_token"]').val();
     if (p_url_index == '') {
-      p_url_index = 'https://freefrontend.com/css-buttons/';
+      p_url_index = 'https://freefrontend.com/css-checkboxes/';
     }
     $.ajax({
       url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/get_content_url",
@@ -104,6 +104,7 @@ $(document).ready(function () {
     }).done(function (data) {
       $('.url_content').html(data);
       $('.url_content .wrapper-2017').each(function () {
+        console.log(1);
         var title = $(this).find('h3').html();
         var url = $(this).find('.info-link ul li:nth-child(1) a').attr('href');
         var download = $(this).find('.info-link ul li:nth-child(2) a').attr('href');
