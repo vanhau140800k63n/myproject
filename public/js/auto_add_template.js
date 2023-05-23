@@ -107,6 +107,12 @@ $(document).ready(function () {
         var title = $(this).find('h3').html();
         var url = $(this).find('.info-link ul li:nth-child(1) a').attr('href');
         var download = $(this).find('.info-link ul li:nth-child(2) a').attr('href');
+        if (!url.includes('https://')) {
+          url = 'https://freefrontend.com' + url;
+        }
+        if (!download.includes('https://')) {
+          download = 'https://freefrontend.com' + download;
+        }
         var show = $(this).find(">:first-child");
         if (show.prop('tagName') == 'VIDEO') {
           show.removeAttr('preload');
