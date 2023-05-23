@@ -23,6 +23,10 @@ class TemplateTypeRepository extends BaseRepository implements TemplateTypeRepos
         return $this->template_type->all();
     }
 
+    public function getListTypeShow() {
+        return $this->template_type->where('id', '<', 15)->get();
+    }
+
     public function getTypeTemplateById($id) {
         return $this->template_type->find($id);
     }
