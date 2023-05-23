@@ -147,7 +147,8 @@ class TemplateController extends Controller
 
     public function autoAddTemplateAdmin(Request $req)
     {
-        return view('admin.pages.template.auto_template');
+        $page = $req->page;
+        return view('admin.pages.template.auto_template', compact('page'));
     }
 
     public function autoPostAddTemplateAdmin(Request $req)
