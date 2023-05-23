@@ -39,7 +39,9 @@
                             style="width: 100%; {{ $template->height != null ? 'height:' . $template->height . 'px' : '' }}"
                             scrolling="no"></iframe>
                     @else
-                        {!! $template->show !!}
+                        <div style="display:flex; justify-content: center;align-items: center;">
+                            {!! $template->show !!}
+                        </div>
                     @endif
                     <div class="template_item_action">
                         @if ($template->demo == 1)

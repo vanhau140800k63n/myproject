@@ -3075,7 +3075,8 @@ select {
 
 .template_list img,
 .template_list video {
-    width: 100%;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 .template_item_action {
