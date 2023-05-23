@@ -73,6 +73,10 @@
                 {{ $list_template->links('partial.pagination') }}
             </div>
             <div class="template_list_other">
+                @foreach ($list_type_all as $type)
+                    <a class="template_list_other_item"
+                        href="{{ route('template.list', $type->slug) }}">#{{ $type->slug }}({{ $type->count }})</a>
+                @endforeach
             </div>
         </div>
     </div>

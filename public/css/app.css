@@ -3062,6 +3062,21 @@ select {
 
 .template_list_other {
     width: 25%;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.template_list_other_item {
+    padding: 5px 10px;
+    font-weight: 500;
+    margin-top: 10px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 12px;
 }
 
 .template_item {
