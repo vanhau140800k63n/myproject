@@ -157,14 +157,15 @@ class TemplateController extends Controller
             'iframe' => $req->url,
             'download_url' => $req->download,
             'slug' => $this->makeSlug($req->title),
-            'height' => 1500,
+            'height' => 500,
             'auto' => null,
             'source' => 1,
             'demo' => 1,
             'view' => $req->view,
             'content' => '',
-            'type' => 5,
-            'tag' => $this->categoryRepository->updateCategory(explode(',', 'animation'))
+            'type' => 6,
+            'show' => $req->show,
+            'tag' => $this->categoryRepository->updateCategory(explode(',', 'button'))
         ];
 
         $check_slug = $this->templateRepository->check_slug($data_add['slug']);

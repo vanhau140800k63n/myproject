@@ -24,6 +24,7 @@ class Template extends Model
         'type',
         'content',
         'view',
-        'tag'
+        'tag',
+        'show'
     ];
 }

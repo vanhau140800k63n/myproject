@@ -34,9 +34,14 @@
             @foreach ($list_template as $template)
                 <div class="template_item">
                     <h2># {{ $template->title }}</h2>
-                    <iframe src="{{ $template->iframe }}"
-                        style="width: 100%; {{ $template->height != null ? 'height:' . $template->height . 'px' : '' }}"
-                        scrolling="no"></iframe>
+                    @if ($template->show == 1)
+                        <iframe src="{{ $template->iframe }}"
+                            style="width: 100%; {{ $template->height != null ? 'height:' . $template->height . 'px' : '' }}"
+                            scrolling="no"></iframe>
+                    @elseif($template->show == 2)
+
+                    @elseif($template->show == 3)
+                    @endif
                     <div class="template_item_action">
                         @if ($template->demo == 1)
                             <a target="_blank" href="{{ $template->iframe }}" class="button">

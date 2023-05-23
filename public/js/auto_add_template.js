@@ -88,7 +88,7 @@ $(document).ready(function () {
   function addUrl(p_url_index) {
     var _token = $('input[name="_token"]').val();
     if (p_url_index == '') {
-      p_url_index = 'https://plantillashtmlgratis.com/en/todas-las-plantillas/plantilla/free-html-css-template-fabtheme/';
+      p_url_index = 'https://freefrontend.com/css-buttons/';
     }
     $.ajax({
       url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/get_content_url",
@@ -103,28 +103,39 @@ $(document).ready(function () {
       }
     }).done(function (data) {
       $('.url_content').html(data);
-      var url = 'https://plantillashtmlgratis.com' + $('.content-wrap').find('.fancybox-iframe').attr('href');
-      var download = 'https://plantillashtmlgratis.com' + $("input[name='download']").attr('value');
-      var title = $('.content-wrap h2').html();
-      var next_url = $(".content-nav-link a").attr('href');
-      $.ajax({
-        url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/template/auto/post_add",
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        type: "POST",
-        dataType: 'json',
-        data: {
-          url: url,
-          download: download,
-          title: title,
-          _token: _token
+      $('.url_content .wrapper-2017').each(function () {
+        var title = $(this).find('h3').html();
+        var url = $(this).find('.info-link ul li a:nth-child(1)').attr('href');
+        var download = $(this).find('.info-link ul li:nth-child(2)').attr('href');
+        var show = $(this).find(">:first-child");
+        if (show.prop('tagName') == 'VIDEO') {
+          show.removeAttr('preload');
+          show.attr('src', 'https://freefrontend.com' + show.attr('src'));
+          show = show.prop('outerHTML');
+        } else {
+          show = show.find('img');
+          show.attr('src', 'https://freefrontend.com' + show.attr('src'));
+          show = show.prop('outerHTML');
         }
-      }).done(function (data) {
-        addUrl(next_url);
-        return true;
-      }).fail(function (e) {
-        return false;
+        $.ajax({
+          url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/template/auto/post_add",
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          type: "POST",
+          dataType: 'json',
+          data: {
+            url: url,
+            download: download,
+            title: title,
+            show: show,
+            _token: _token
+          }
+        }).done(function (data) {
+          return true;
+        }).fail(function (e) {
+          return false;
+        });
       });
       return true;
     }).fail(function (e) {
