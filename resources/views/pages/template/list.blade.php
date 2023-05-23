@@ -39,14 +39,26 @@
                         scrolling="no"></iframe>
                     <div class="template_item_action">
                         @if ($template->demo == 1)
-                            <a target="_blank" href="{{ $template->iframe }}">Demo</a>
+                            <a target="_blank" href="{{ $template->iframe }}" class="button">
+                                <div class="button__line"></div>
+                                <div class="button__line"></div>
+                                <span class="button__text">Demo</span>
+                            </a>
                         @endif
                         @if ($template->source == 1)
-                            <button class="template_item_download" href="{{ $template->download_url }}"
-                                check="{{ Auth::check() ? 'download' : '' }}">Download</button>
+                            <button class="button template_item_download" href="{{ $template->download_url }}"
+                                check="{{ Auth::check() ? 'download' : '' }}">
+                                <div class="button__line"></div>
+                                <div class="button__line"></div>
+                                <span class="button__text">Download</span>
+                            </button>
                         @endif
                         @if ($template->auto != null)
-                            <button class="template_item_run" value="{{ $template->auto }}">Run</button>
+                            <button class="button template_item_run" value="{{ $template->auto }}">
+                                <div class="button__line"></div>
+                                <div class="button__line"></div>
+                                <span class="button__text">Run</span>
+                            </button>
                         @endif
                     </div>
                 </div>
