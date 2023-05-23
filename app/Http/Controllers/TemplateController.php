@@ -163,7 +163,7 @@ class TemplateController extends Controller
             'demo' => 1,
             'view' => $req->view,
             'content' => '',
-            'type' => 2,
+            'type' => 6,
             'show' => $req->show,
             'tag' => $this->categoryRepository->updateCategory(explode(',', 'button'))
         ];

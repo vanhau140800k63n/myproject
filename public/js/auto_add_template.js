@@ -88,7 +88,7 @@ $(document).ready(function () {
   function addUrl(p_url_index) {
     var _token = $('input[name="_token"]').val();
     if (p_url_index == '') {
-      p_url_index = 'https://freefrontend.com/css-checkboxes/';
+      p_url_index = 'https://freefrontend.com/css-buttons/';
     }
     $.ajax({
       url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/get_content_url",
