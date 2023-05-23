@@ -3051,7 +3051,7 @@ select {
 .game_creen span {
     margin-left: 10px;
 }
-.template_list_box {
+.template_list_container {
     margin-top: 100px;
     display: flex;
 }

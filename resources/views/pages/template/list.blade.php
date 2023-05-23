@@ -30,7 +30,7 @@
                 @endforeach
             </div>
         </div>
-        <div class="template_list_box">
+        <div class="template_list_container">
             <div class="template_list">
                 @foreach ($list_template as $template)
                     <div class="template_item">
