@@ -289,7 +289,6 @@ a {
     justify-content: center;
     border-radius: 25px;
     cursor: pointer;
-    border: 2px solid #626365;
     -o-object-fit: cover;
        object-fit: cover;
 }
