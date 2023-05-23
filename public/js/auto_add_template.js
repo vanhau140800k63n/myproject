@@ -105,8 +105,8 @@ $(document).ready(function () {
       $('.url_content').html(data);
       $('.url_content .wrapper-2017').each(function () {
         var title = $(this).find('h3').html();
-        var url = $(this).find('.info-link ul li a:nth-child(1)').attr('href');
-        var download = $(this).find('.info-link ul li a:nth-child(2)').attr('href');
+        var url = $(this).find('.info-link ul li:nth-child(1) a').attr('href');
+        var download = $(this).find('.info-link ul li:nth-child(2) a').attr('href');
         var show = $(this).find(">:first-child");
         if (show.prop('tagName') == 'VIDEO') {
           show.removeAttr('preload');
