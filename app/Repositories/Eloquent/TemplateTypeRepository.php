@@ -26,4 +26,8 @@ class TemplateTypeRepository extends BaseRepository implements TemplateTypeRepos
     public function getTypeTemplateById($id) {
         return $this->template_type->find($id);
     }
+
+    public function addType($data) {
+        return $this->template_type->create($data);
+    }
 }

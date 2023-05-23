@@ -12,6 +12,7 @@ use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\ContentRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
+use App\Repositories\TemplateTypeRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -28,6 +29,7 @@ class PostController extends Controller
     private $commentReprository;
     private $contentRepository;
     private $actionRepository;
+    private $templateTypeRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
@@ -37,7 +39,8 @@ class PostController extends Controller
         CategoryRepositoryInterface $categoryRepository,
         CommentRepositoryInterface $commentReprository,
         ContentRepositoryInterface $contentRepository,
-        ActionRepositoryInterface $actionRepository
+        ActionRepositoryInterface $actionRepository,
+        TemplateTypeRepositoryInterface $templateTypeRepository
     ) {
         $this->categoryRepository = $categoryRepository;
         $this->pLanguageRepository = $pLanguageRepository;
@@ -47,6 +50,7 @@ class PostController extends Controller
         $this->commentReprository = $commentReprository;
         $this->contentRepository = $contentRepository;
         $this->actionRepository = $actionRepository;
+        $this->templateTypeRepository = $templateTypeRepository;
     }
 
     public function getPostListAdmin()
@@ -318,7 +322,17 @@ class PostController extends Controller
     public function getContentUrl(Request $req)
     {
         $content = file_get_contents($req->url);
-        return response()->json($content);
+        if(isset($req->template_type)) {
+            $slug = explode('/', $req->url)[3];
+            $data = [
+                'slug' => $slug,
+                'title' => ucwords(str_replace('-', ' ', $slug)),
+                'count' => rand(100,200)
+            ];
+
+            $template_type = $this->templateTypeRepository->addType($data);
+        }
+        return response()->json([$content, $template_type->id]);
     }
 
     public function autoAddUrl(Request $req)
