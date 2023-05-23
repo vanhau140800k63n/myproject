@@ -3051,8 +3051,17 @@ select {
 .game_creen span {
     margin-left: 10px;
 }
-.template_list {
+.template_list_box {
     margin-top: 100px;
+    display: flex;
+}
+
+.template_list {
+    width: 70%;
+}
+
+.template_list_other {
+    width: 30px;
 }
 
 .template_item {

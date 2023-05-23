@@ -62,9 +62,10 @@ class TemplateController extends Controller
             throw new PageException();
         }
         $list_type = $this->templateTypeRepository->getListTypeShow();
+        $list_type_all = $this->templateTypeRepository->getListType();
         $list_template = $this->templateRepository->getListTemplateByType($type->id);
 
-        return view('pages.template.list', compact('list_template', 'key', 'list_type', 'type'));
+        return view('pages.template.list', compact('list_template', 'key', 'list_type', 'type', 'list_type_all'));
     }
 
     public function getTemplateDetail($key, $slug)

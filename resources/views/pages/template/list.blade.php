@@ -30,46 +30,50 @@
                 @endforeach
             </div>
         </div>
-        <div class="template_list">
-            @foreach ($list_template as $template)
-                <div class="template_item">
-                    <h2># {{ $template->title }}</h2>
-                    @if ($template->show == null)
-                        <iframe src="{{ $template->iframe }}"
-                            style="width: 100%; {{ $template->height != null ? 'height:' . $template->height . 'px' : '' }}"
-                            scrolling="no"></iframe>
-                    @else
-                        <div style="display:flex; justify-content: center;align-items: center;">
-                            {!! $template->show !!}
+        <div class="template_list_box">
+            <div class="template_list">
+                @foreach ($list_template as $template)
+                    <div class="template_item">
+                        <h2># {{ $template->title }}</h2>
+                        @if ($template->show == null)
+                            <iframe src="{{ $template->iframe }}"
+                                style="width: 100%; {{ $template->height != null ? 'height:' . $template->height . 'px' : '' }}"
+                                scrolling="no"></iframe>
+                        @else
+                            <div style="display:flex; justify-content: center;align-items: center;">
+                                {!! $template->show !!}
+                            </div>
+                        @endif
+                        <div class="template_item_action">
+                            @if ($template->demo == 1)
+                                <a target="_blank" href="{{ $template->iframe }}" class="button">
+                                    <div class="button__line"></div>
+                                    <div class="button__line"></div>
+                                    <span class="button__text">Demo</span>
+                                </a>
+                            @endif
+                            @if ($template->source == 1)
+                                <button class="button template_item_download" href="{{ $template->download_url }}"
+                                    check="{{ Auth::check() ? 'download' : '' }}">
+                                    <div class="button__line"></div>
+                                    <div class="button__line"></div>
+                                    <span class="button__text">Download</span>
+                                </button>
+                            @endif
+                            @if ($template->auto != null)
+                                <button class="button template_item_run" value="{{ $template->auto }}">
+                                    <div class="button__line"></div>
+                                    <div class="button__line"></div>
+                                    <span class="button__text">Run</span>
+                                </button>
+                            @endif
                         </div>
-                    @endif
-                    <div class="template_item_action">
-                        @if ($template->demo == 1)
-                            <a target="_blank" href="{{ $template->iframe }}" class="button">
-                                <div class="button__line"></div>
-                                <div class="button__line"></div>
-                                <span class="button__text">Demo</span>
-                            </a>
-                        @endif
-                        @if ($template->source == 1)
-                            <button class="button template_item_download" href="{{ $template->download_url }}"
-                                check="{{ Auth::check() ? 'download' : '' }}">
-                                <div class="button__line"></div>
-                                <div class="button__line"></div>
-                                <span class="button__text">Download</span>
-                            </button>
-                        @endif
-                        @if ($template->auto != null)
-                            <button class="button template_item_run" value="{{ $template->auto }}">
-                                <div class="button__line"></div>
-                                <div class="button__line"></div>
-                                <span class="button__text">Run</span>
-                            </button>
-                        @endif
                     </div>
-                </div>
-            @endforeach
-            {{ $list_template->links('partial.pagination') }}
+                @endforeach
+                {{ $list_template->links('partial.pagination') }}
+            </div>
+            <div class="template_list_other">
+            </div>
         </div>
     </div>
     <script src="{{ asset(mix('js/template.js')) }}"></script>
