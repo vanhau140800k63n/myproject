@@ -159,7 +159,7 @@ class TemplateController extends Controller
             'slug' => $this->makeSlug($req->title),
             'height' => 500,
             'auto' => null,
-            'source' => 1,
+            'source' => $req->download != null ? 1 : 0,
             'demo' => 1,
             'view' => $req->view,
             'content' => '',
