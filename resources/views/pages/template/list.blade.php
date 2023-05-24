@@ -1,10 +1,8 @@
 @extends('layouts.master')
 @section('meta')
-    <meta name="description" content="{{ $type->description }}">
+    <meta name="description" content="{{ $type->description }} Xem ngay">
     <meta name="keywords"
         content="devsne, devsnevn, website templates, templates, java, python, c++, cpp, html, css, javascript, free, free templates">
-    <meta name="keywords"
-        content="devsne, devsnevn, Miễn phí Lập trình Khóa học, php, java, python, c++, Cpp, HTML, css, javascript">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
