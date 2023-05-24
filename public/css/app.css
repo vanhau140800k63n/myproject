@@ -3073,10 +3073,16 @@ select {
     padding: 4px 8px;
     font-weight: 500;
     margin-top: 5px;
-    border: 1px solid #555555;
+    border: 1px solid #767286;
+    color: #767286;
     border-radius: 5px;
     margin-left: 10px;
     font-size: 11px;
+}
+
+.template_list_other_item:hover {
+    background: #767286;
+    color: #fff;
 }
 
 .template_item {
