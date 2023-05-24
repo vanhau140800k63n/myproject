@@ -74,7 +74,7 @@
             </div>
             <div class="template_list_other">
                 @foreach ($list_type_all as $type)
-                    <a class="template_list_other_item"
+                    <a class="template_list_other_item {{ $key == $type->slug ? 'active' : '' }}"
                         href="{{ route('template.list', $type->slug) }}">#{{ $type->slug }}({{ $type->count }})</a>
                 @endforeach
             </div>

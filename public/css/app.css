@@ -3085,6 +3085,11 @@ select {
     color: #fff;
 }
 
+.template_list_other_item.active {
+    background: #767286;
+    color: #fff;
+}
+
 .template_item {
     margin-bottom: 50px;
     padding: 30px 40px 30px 50px;

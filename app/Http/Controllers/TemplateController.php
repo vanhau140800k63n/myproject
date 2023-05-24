@@ -61,7 +61,8 @@ class TemplateController extends Controller
         if ($type == null) {
             throw new PageException();
         }
-        $list_type = $this->templateTypeRepository->getListTypeShow();
+
+        $list_type = $this->templateTypeRepository->getListTypeShow($type->id);
         $list_type_all = $this->templateTypeRepository->getListType();
         $list_template = $this->templateRepository->getListTemplateByType($type->id);
 

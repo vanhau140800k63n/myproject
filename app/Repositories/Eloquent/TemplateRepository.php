@@ -30,15 +30,18 @@ class TemplateRepository extends BaseRepository implements TemplateRepositoryInt
         return $this->template->where('id', $id)->first();
     }
 
-    public function addTemplate($data) {
+    public function addTemplate($data)
+    {
         return $this->template->create($data);
     }
 
-    public function updateTemplate($data, $id) {
+    public function updateTemplate($data, $id)
+    {
         return $this->template->where('id', $id)->update($data);
     }
 
-    public function check_slug($slug) {
+    public function check_slug($slug)
+    {
         return $this->template->where('slug', $slug)->get()->count();
     }
 }

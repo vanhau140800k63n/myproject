@@ -7,6 +7,6 @@ interface TemplateTypeRepositoryInterface
     public function getTypeTemplate($key);
     public function getTypeTemplateById($id);
     public function getListType();
-    public function getListTypeShow();
+    public function getListTypeShow($id);
     public function addType($data);
 }
