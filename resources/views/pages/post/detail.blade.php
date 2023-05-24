@@ -207,7 +207,7 @@
                 <div class="api_list_title">Một số API khác</div>
                 <div class="home_post">
                     @foreach ($api_posts as $api_post)
-                        <div class="home_post_item">
+                        <article class="home_post_item">
                             <a class="home_post_content" href="{{ route('post.detail', ['slug' => $api_post->slug]) }}">
                                 <img class="home_post_img" src="{{ asset($api_post->image) }}">
                                 <div class="home_post_img_cover">
@@ -218,7 +218,7 @@
                                 </div>
                                 <p class="home_post_item_title">{{ $api_post->title }}</p>
                             </a>
-                        </div>
+                        </article>
                     @endforeach
                 </div>
             @endif

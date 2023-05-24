@@ -31,9 +31,9 @@
             </div>
         </div>
         <div class="template_list_container">
-            <div class="template_list">
+            <main class="template_list">
                 @foreach ($list_template as $template)
-                    <div class="template_item">
+                    <article class="template_item">
                         <h2># {{ $template->title }}</h2>
                         @if ($template->show == null)
                             <iframe src="{{ $template->iframe }}"
@@ -68,16 +68,16 @@
                                 </button>
                             @endif
                         </div>
-                    </div>
+                    </article>
                 @endforeach
                 {{ $list_template->links('partial.pagination') }}
-            </div>
-            <div class="template_list_other">
+            </main>
+            <aside class="template_list_other">
                 @foreach ($list_type_all as $type)
                     <a class="template_list_other_item {{ $key == $type->slug ? 'active' : '' }}"
                         href="{{ route('template.list', $type->slug) }}">#{{ $type->slug }}({{ $type->count }})</a>
                 @endforeach
-            </div>
+            </aside>
         </div>
     </div>
     <script src="{{ asset(mix('js/template.js')) }}"></script>
