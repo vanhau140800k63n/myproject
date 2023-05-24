@@ -3309,11 +3309,19 @@ a.template_type_item.active {
     .template_item {
         padding: 30px 60px;
     }
+
+    .template_type_item {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
     .template_list_type .text {
         font-size: 80px;
+    }
+
+    .template_type_item {
+        font-size: 14px;
     }
 }
 
@@ -3333,6 +3341,10 @@ a.template_type_item.active {
     .template_list_type .text {
         font-size: 50px;
         padding-left: 2px;
+    }
+
+    .template_type_item {
+        font-size: 12px;
     }
 }
 
