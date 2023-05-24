@@ -3062,7 +3062,7 @@ select {
 
 .template_list_other {
     width: 30%;
-    padding: 50px 20px;
+    padding: 50px 10px;
     display: flex;
     flex-wrap: wrap;
     height: -moz-fit-content;
@@ -3284,7 +3284,12 @@ a.template_type_item.active {
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .template_item {
+        margin-bottom: 50px;
+        padding: 30px 20px 30px 30px;
+    }
+}
 
 @media only screen and (max-width: 991px) {
     .template_list_container {
