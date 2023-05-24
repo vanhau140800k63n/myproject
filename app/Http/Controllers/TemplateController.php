@@ -185,19 +185,19 @@ class TemplateController extends Controller
 
     public function addDescriptionAdmin()
     {
-        $list_description = explode(PHP_EOL, CommonConstants::DESCRIPTION);
-        $list_type = $this->templateTypeRepository->getListType();
+        // $list_description = explode(PHP_EOL, CommonConstants::DESCRIPTION);
+        // $list_type = $this->templateTypeRepository->getListType();
 
-        foreach ($list_type as $type) {
-            $random_index = array_rand($list_description, 3);
-            $str = '';
-            foreach ($random_index as $index) {
-                $str .= str_replace('...', $type->title, $list_description[$index]). ' ';
-            }
+        // foreach ($list_type as $type) {
+        //     $random_index = array_rand($list_description, 3);
+        //     $str = '';
+        //     foreach ($random_index as $index) {
+        //         $str .= str_replace('...', $type->title, $list_description[$index]). ' ';
+        //     }
 
-            $str = substr($str, 0, -1);
+        //     $str = substr($str, 0, -1);
             
-            $type->update(['description' => $str]);
-        }
+        //     $type->update(['description' => $str]);
+        // }
     }
 }
