@@ -3313,6 +3313,10 @@ a.template_type_item.active {
     .template_type_item {
         font-size: 16px;
     }
+
+    .template_list_type {
+        padding: 50px 30px;
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
@@ -3322,6 +3326,10 @@ a.template_type_item.active {
 
     .template_type_item {
         font-size: 14px;
+    }
+
+    .template_list_type {
+        padding: 50px 20px;
     }
 }
 
@@ -3345,6 +3353,10 @@ a.template_type_item.active {
 
     .template_type_item {
         font-size: 12px;
+    }
+
+    .template_list_type {
+        padding: 50px 10px;
     }
 }
 
