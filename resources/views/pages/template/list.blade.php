@@ -10,7 +10,7 @@
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 @endsection
 @section('head')
-    <title> 1000+ Free {{ $type->title }} Template For Android, Ios, Website - devsnevn</title>
+    <title>{{ $type->count }}+ Free {{ $type->title }} Template For Android, Ios, Website</title>
 @endsection
 @section('content')
     <div class="template_list_box">
