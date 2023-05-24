@@ -103,10 +103,10 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::get('/del', [PostController::class, 'delPostAdmin'])->name('del');
         Route::get('/duplicate/{id}', [PostController::class, 'duplicatePost'])->name('duplicate');
         Route::post('/get_content_url', [PostController::class, 'getContentUrl'])->name('get_content_url');
-        Route::get('/auto_add_url', [PostController::class, 'autoAddUrl'])->name('auto_add_url');
-        Route::get('/auto_add_post', [PostController::class, 'autoAddPost'])->name('auto_add_post');
-        Route::post('/add_url_to_db', [PostController::class, 'autoUrlToDb'])->name('add_url_to_db');
-        Route::get('/auto_update_title_post', [PostController::class, 'autoUpdateTitlePost'])->name('auto_update_title_post');
+        // Route::get('/auto_add_url', [PostController::class, 'autoAddUrl'])->name('auto_add_url');
+        // Route::get('/auto_add_post', [PostController::class, 'autoAddPost'])->name('auto_add_post');
+        // Route::post('/add_url_to_db', [PostController::class, 'autoUrlToDb'])->name('add_url_to_db');
+        // Route::get('/auto_update_title_post', [PostController::class, 'autoUpdateTitlePost'])->name('auto_update_title_post');
         Route::post('/update_title_post', [PostController::class, 'updateTitlePost'])->name('pdate_title_post');
     });
 
@@ -115,11 +115,12 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::get('/{type}', [TemplateController::class, 'getTemplateListAdmin'])->name('list');
         Route::get('detail/{id}', [TemplateController::class, 'getTemplateDetailAdmin'])->name('detail');
         Route::get('/t/add', [TemplateController::class, 'addTemplateAdmin'])->name('add');
+        Route::get('/a/add_description', [TemplateController::class, 'addDescriptionAdmin'])->name('add_description');
         
-        Route::prefix('auto')->name('auto.')->group(function () {
-            Route::get('/add', [TemplateController::class, 'autoAddTemplateAdmin'])->name('add');
-            Route::post('/post_add', [TemplateController::class, 'autoPostAddTemplateAdmin'])->name('post_add');
-        });
+        // Route::prefix('auto')->name('auto.')->group(function () {
+        //     Route::get('/add', [TemplateController::class, 'autoAddTemplateAdmin'])->name('add');
+        //     Route::post('/post_add', [TemplateController::class, 'autoPostAddTemplateAdmin'])->name('post_add');
+        // });
 
         Route::prefix('item')->name('item.')->group(function () {
             Route::post('/add', [TemplateController::class, 'postAddTemplateAdmin'])->name('add');

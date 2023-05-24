@@ -11,9 +11,10 @@ class TemplateType extends Model
 
     protected $table = 'template_type';
     protected $fillable = [
-       'title',
-       'slug',
-       'image',
-       'count'
+        'title',
+        'slug',
+        'image',
+        'count',
+        'description'
     ];
 }

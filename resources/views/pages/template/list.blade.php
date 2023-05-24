@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('meta')
-    <meta name="description" content="Tổng hợp hơn 1000 template miễn phí sử dụng cho app, website">
+    <meta name="description" content="Cung cấp hơn 1000 mẫu hiệu ứng động đẹp mắt cho các thiết bị Android, iOS và website. Đây là một tài nguyên tuyệt vời cho những người muốn tạo ra các hiệu ứng động trên trang web hoặc ứng dụng của mình. Tất cả các mẫu đều được cung cấp hoàn toàn miễn phí cho người dùng">
     <meta name="keywords"
         content="devsne, devsnevn, website templates, templates, java, python, c++, cpp, html, css, javascript, free, free templates">
     <meta name="keywords"
