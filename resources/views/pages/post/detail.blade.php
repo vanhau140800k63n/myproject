@@ -58,9 +58,9 @@
         <div class="post_noti">
 
         </div>
-        <div class="post_box_content">
+        <main class="post_box_content">
             <div class="post_box_content_title">{{ $post->title }}</div>
-            <div class="post_box_info">
+            <aside class="post_box_info">
                 <div class="post_info_attr">
                     <div class="post_info_attr_date">
                         {{ $post->created_at != null ? date_format($post->created_at, 'H:i d/m/Y') : '' }}</div>
@@ -107,7 +107,7 @@
                         @endif
                     @endforeach
                 </div>
-            </div>
+            </aside>
             <a class="banner_box" href="{{ route('template.list', 'animation') }}">
                 <div class="banner_text">1000+ free template</div>
             </a>
@@ -227,7 +227,7 @@
                 <div class="api_list_title">Một số bài viết liên quan</div>
                 <div class="post_list">
                     @foreach ($posts_related as $related_post)
-                        <div class="post_list_item">
+                        <article class="post_list_item">
                             <div class="post_list_item_info">
                                 <a>
                                     <img src="{{ asset($related_post->author_avata) }}">
@@ -249,12 +249,12 @@
                             <a class="post_list_item_img"
                                 href="{{ route('post.detail', ['slug' => $related_post->slug]) }}"><img
                                     src="{{ asset($related_post->image) }}"></a>
-                        </div>
+                        </article>
                     @endforeach
                 </div>
             @endif
-        </div>
-        <div class="post_box_other">
+        </main>
+        <article class="post_box_other">
             <div class="post_box_other_fixed">
                 <div class="post_info_author">
                     <img class="post_author_info_img" src="{{ asset($author->avata) }}">
@@ -282,7 +282,7 @@
                 ?>
                 <div class="other_course_list">
                     @foreach ($course_list as $course_item)
-                        <div class="other_course_item">
+                        <article class="other_course_item">
                             @if ($i % 2 == 0)
                                 <div style="width:10%"> </div>
                             @endif
@@ -298,7 +298,7 @@
                             <?php
                             ++$i;
                             ?>
-                        </div>
+                        </article>
                     @endforeach
                 </div>
                 {{-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@devsnevn" data-unique-id="devsnevn"
@@ -308,7 +308,7 @@
                 </blockquote>
                 <script async src="https://www.tiktok.com/embed.js"></script> --}}
             </div>
-        </div>
+        </article>
     </div>
     <script src="{{ asset(mix('js/post.js')) }}"></script>
 @endsection
