@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('head')
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
     <link rel="shortcut icon" href="{{ asset('image/logo2.png') }}" />
     <link rel="stylesheet" href="{{ asset('lib/assets/vendors/mdi/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('lib/assets/vendors/css/vendor.bundle.base.css') }}">
@@ -18,6 +20,7 @@
         .tox-tinymce {
             height: 400px !important;
         }
+
         .ͼ1.cm-editor {
             min-height: 50px;
             max-height: 500px !important;

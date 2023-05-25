@@ -1,6 +1,6 @@
 @extends('admin.master_auth')
 @section('head')
-    <title>Đăng nhập - Devsne</title>
+    <title>Đăng nhập | DEVSNE</title>
 @endsection
 
 @section('content')
