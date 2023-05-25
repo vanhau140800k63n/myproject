@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('head')
-<title> Không tìm thấy trang </title>
+<title> Không tìm thấy trang | DEVSNE </title>
 @endsection
 @section('content')
     <div class="box">

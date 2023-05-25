@@ -1,7 +1,7 @@
 @extends('admin.master_auth')
 @section('head')
-    <title>Đăng ký thành công</title>
-@endsection  
+    <title>Đăng ký thành công | DEVSNE</title>
+@endsection
 @section('content')
     <div class="limiter">
         <div class="container-login" style="">

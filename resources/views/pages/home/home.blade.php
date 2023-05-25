@@ -35,7 +35,7 @@
     <link href="{{ asset(mix('home_lib/main.css')) }}" rel="stylesheet" type="text/css">
 @endsection
 @section('head')
-    <title>Trang chủ - Khóa học lập trình miễn phí</title>
+    <title>Trang chủ | Khóa học lập trình miễn phí</title>
 @endsection
 @section('content')
     <div class="page-wrap">

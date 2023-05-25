@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('head')
-    <title> Trang không đúng | Devsne </title>
+    <title> Trang không đúng | DEVSNE </title>
 @endsection
 @section('content')
     <div class="content-wrapper">

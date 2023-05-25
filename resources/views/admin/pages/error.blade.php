@@ -1,6 +1,6 @@
 @extends('admin.master_auth')
 @section('head')
-    <title>Hoàn tất đăng ký</title>
+    <title>Trang không đúng | DEVSNE</title>
 @endsection
 @section('content')
     <div class="limiter">
