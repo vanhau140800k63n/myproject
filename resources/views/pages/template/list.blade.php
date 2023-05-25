@@ -6,6 +6,16 @@
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="{{ route('template.list', $type->slug) }}">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ $type->count }}+ Free {{ $type->title }} Template For Android, Ios, Website">
+    <meta property="og:description" content="{{ $type->description }} Xem ngay">
+    <meta property="og:url" content="">
+    <meta property="og:site_name"
+        content="{{ $type->count }}+ Free {{ $type->title }} Template For Android, Ios, Website">
+    <meta property="article:publisher" content="https://www.facebook.com/devsne.official">
+    <meta property="og:image" content="{{ asset('image/template.png') }}">
 @endsection
 @section('head')
     <title>{{ $type->count }}+ Free {{ $type->title }} Template For Android, Ios, Website</title>
@@ -22,9 +32,9 @@
             <div class="text text-3">T</div>
             <div class="text text-4">E</div>
             <div class="template_type">
-                @foreach ($list_type as $type)
-                    <a class="template_type_item {{ $key == $type->slug ? 'active' : '' }}"
-                        href="{{ route('template.list', $type->slug) }}">#{{ $type->slug }}({{ $type->count }})</a>
+                @foreach ($list_type as $type_detail)
+                    <a class="template_type_item {{ $key == $type_detail->slug ? 'active' : '' }}"
+                        href="{{ route('template.list', $type_detail->slug) }}">#{{ $type_detail->slug }}({{ $type_detail->count }})</a>
                 @endforeach
             </div>
         </div>
@@ -71,9 +81,9 @@
                 {{ $list_template->links('partial.pagination') }}
             </main>
             <aside class="template_list_other">
-                @foreach ($list_type_all as $type)
-                    <a class="template_list_other_item {{ $key == $type->slug ? 'active' : '' }}"
-                        href="{{ route('template.list', $type->slug) }}">#{{ $type->slug }}({{ $type->count }})</a>
+                @foreach ($list_type_all as $type_detail)
+                    <a class="template_list_other_item {{ $key == $type_detail->slug ? 'active' : '' }}"
+                        href="{{ route('template.list', $type_detail->slug) }}">#{{ $type_detail->slug }}({{ $type_detail->count }})</a>
                 @endforeach
             </aside>
         </div>
