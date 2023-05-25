@@ -2,7 +2,9 @@
 @section('meta')
 @endsection
 @section('head')
-    <title>Thông tin người dùng</title>
+    <title>Thông tin người dùng | DEVSNE</title>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
 @endsection
 @section('content')
     <div class="box">

@@ -42,7 +42,7 @@
     @endif
 @endsection
 @section('head')
-    <title>{{ $lesson->title }}</title>
+    <title>{{ $lesson->title }} | DEVSNE</title>
 @endsection
 @section('content')
     <div class="lesson_box">

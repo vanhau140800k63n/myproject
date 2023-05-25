@@ -21,7 +21,7 @@
     <?php
     header('Access-Control-Allow-Origin: *');
     ?>
-    <title>Compile HTML JS CSS</title>
+    <title>Compile HTML JS CSS | DEVSNE</title>
 </head>
 
 <body>

@@ -12,11 +12,11 @@
     <title>Tìm hiểu về {{ $key }} | 30 Khóa Học Lập Trình Miễn Phí</title>
 @endsection
 @section('content')
-    <div class="search_advance_box">
+    <main class="search_advance_box">
         <div class="search_advance_title"> Tìm kiếm: {{ $key }} </div>
         <div class="home_post">
             @foreach ($lessons as $lesson)
-                <div class="home_post_item">
+                <article class="home_post_item">
                     <a class="home_post_content"
                         href="{{ route('learn.lesson_detail', ['course' => $lesson->course_name, 'slug' => $lesson->slug]) }}">
                         <img class="home_post_img" src="{{ asset($lesson->image) }}">
@@ -31,10 +31,10 @@
                     <img class="home_post_author_img" src="{{ $post->author_avata }}">
                     <div class="home_post_author_name"> {{ $post->author_name }}</div>
                 </a> --}}
-                </div>
+                </article>
             @endforeach
             @foreach ($posts as $post)
-                <div class="home_post_item">
+                <article class="home_post_item">
                     <a class="home_post_content" href="{{ route('post.detail', ['slug' => $post->slug]) }}">
                         <img class="home_post_img" src="{{ asset($post->image) }}">
                         <div class="home_post_img_cover">
@@ -78,8 +78,8 @@
                                 class="fa-solid fa-heart {{ $like_action }}"></i>
                         </div>
                     </div>
-                </div>
+                </article>
             @endforeach
         </div>
-    </div>
+    </main>
 @endsection

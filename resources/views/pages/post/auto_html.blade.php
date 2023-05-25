@@ -31,7 +31,7 @@
     </style>
 @endsection
 @section('head')
-    <title>Trình biên dịch tự động HTML JS CSS</title>
+    <title>Trình biên dịch tự động HTML JS CSS | DEVSNE</title>
 @endsection
 @section('content')
     <div class="post_box">

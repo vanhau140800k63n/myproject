@@ -18,7 +18,7 @@
     <meta property="og:image" content="{{ asset('image/template.png') }}">
 @endsection
 @section('head')
-    <title>{{ $type->count }}+ Free {{ $type->title }} Template For Android, Ios, Website</title>
+    <title>{{ $type->count }}+ Free {{ $type->title }} Template For Android, Ios, Website | DEVSNE</title>
 @endsection
 @section('content')
     <div class="template_list_box">

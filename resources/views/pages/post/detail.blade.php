@@ -51,7 +51,7 @@
     @endif
 @endsection
 @section('head')
-    <title>{{ $post->title }}</title>
+    <title>{{ $post->title }} | DEVSNE</title>
 @endsection
 @section('content')
     <div class="post_box">
