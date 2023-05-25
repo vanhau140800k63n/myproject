@@ -25,7 +25,7 @@
                                         <td> {{ $type->id }} </td>
                                         <td> {{ $type->slug }} </td>
                                         <td> </td>
-                                        <td> </td>
+                                        <td> {{ $type->view }} </td>
                                         <td> <a href="{{ route('admin.template.list', $type->id) }}">Chi tiết</a>
                                         </td>
                                     </tr>

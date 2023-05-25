@@ -62,6 +62,11 @@ class TemplateController extends Controller
             throw new PageException();
         }
 
+        if (!Auth::check() || Auth::user()->role != 1) {
+            $type->view += 1;
+            $type->save();
+        }
+
         $list_type = $this->templateTypeRepository->getListTypeShow($type->id);
         $list_type_all = $this->templateTypeRepository->getListType();
         $list_template = $this->templateRepository->getListTemplateByType($type->id);
@@ -75,7 +80,7 @@ class TemplateController extends Controller
 
     public function getTemplateTypeListAdmin()
     {
-        $type_list = $this->templateTypeRepository->getListType();
+        $type_list = $this->templateTypeRepository->getListTypeAdmin();
 
         return view('admin.pages.template.type_list', compact('type_list'));
     }
@@ -196,7 +201,7 @@ class TemplateController extends Controller
         //     }
 
         //     $str = substr($str, 0, -1);
-            
+
         //     $type->update(['description' => $str]);
         // }
     }

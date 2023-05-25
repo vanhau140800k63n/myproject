@@ -15,6 +15,7 @@ class TemplateType extends Model
         'slug',
         'image',
         'count',
-        'description'
+        'description',
+        'view'
     ];
 }

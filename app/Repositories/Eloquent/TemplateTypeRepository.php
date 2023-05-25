@@ -25,6 +25,11 @@ class TemplateTypeRepository extends BaseRepository implements TemplateTypeRepos
         return $this->template_type->all();
     }
 
+    public function getListTypeAdmin()
+    {
+        return $this->template_type->orderBy('view', 'desc')->get();
+    }
+
     public function getListTypeShow($id)
     {
         return $this->template_type->where('id', '<', 15)->orWhere('id', $id)->get();
