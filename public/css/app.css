@@ -565,6 +565,12 @@ a {
     border-radius: 25px;
     -o-object-fit: cover;
        object-fit: cover;
+
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #a0a0a0;
 }
 
 .home_post_author_name {
@@ -572,7 +578,7 @@ a {
     height: -moz-fit-content;
     height: fit-content;
     border-radius: 10px;
-    background-image: radial-gradient(circle 300px at 8% 89.3%, rgba(20, 157, 208, 1) 0%, rgba(140, 63, 226, 1) 90%);
+    background-image: radial-gradient(circle 300px at 8% 89.3%, rgb(78 60 114) 0%, rgba(140, 63, 226, 1) 90%);
     margin-left: 5px;
     color: #fff;
     font-size: 12px;
@@ -1429,7 +1435,7 @@ code * {
     justify-content: space-between;
     border-top: 1px solid rgb(172, 165, 165);
     margin-top: 50px;
-    background: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+    background: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgb(45 47 71) 87.1%);
     position: relative;
     z-index: 1;
 }
@@ -1438,15 +1444,11 @@ code * {
     color: #fff;
     padding: 5px 10px;
     border-top: 1px solid #fff;
-    background: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+    background: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgb(45 47 71) 87.1%);
 }
 
 .footer_box * {
     color: #fff;
-}
-
-.footer_box a {
-    margin-top: 10px;
 }
 
 .footer_box h2 {
@@ -1467,7 +1469,7 @@ code * {
 }
 
 .footer_info a {
-    margin-top: 5px;
+    margin-top: 15px;
     display: block;
 }
 
@@ -3162,6 +3164,7 @@ select {
 
 a.template_type_item.active {
     color: #ffbe68;
+    border-color: #ffbe68;
 }
 
 :root {
