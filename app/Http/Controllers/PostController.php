@@ -12,6 +12,7 @@ use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\ContentRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
+use App\Repositories\TemplateRepositoryInterface;
 use App\Repositories\TemplateTypeRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
@@ -30,6 +31,7 @@ class PostController extends Controller
     private $contentRepository;
     private $actionRepository;
     private $templateTypeRepository;
+    private $templateRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
@@ -40,7 +42,8 @@ class PostController extends Controller
         CommentRepositoryInterface $commentReprository,
         ContentRepositoryInterface $contentRepository,
         ActionRepositoryInterface $actionRepository,
-        TemplateTypeRepositoryInterface $templateTypeRepository
+        TemplateTypeRepositoryInterface $templateTypeRepository,
+        TemplateRepositoryInterface $templateRepository
     ) {
         $this->categoryRepository = $categoryRepository;
         $this->pLanguageRepository = $pLanguageRepository;
@@ -51,6 +54,7 @@ class PostController extends Controller
         $this->contentRepository = $contentRepository;
         $this->actionRepository = $actionRepository;
         $this->templateTypeRepository = $templateTypeRepository;
+        $this->templateRepository = $templateRepository;
     }
 
     public function getPostListAdmin()
@@ -218,7 +222,8 @@ class PostController extends Controller
             }
             $posts_related = $this->postRepository->searchPostRaw($raw, 10);
             $comments = $this->commentReprository->getPostComments($post->id);
-            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'comments', 'posts_related', 'theme', 'auto'));
+            $template_banner = $this->templateRepository->getRandomBanner();
+            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'comments', 'posts_related', 'theme', 'auto', 'template_banner'));
         }
 
         throw new PageException();
@@ -322,12 +327,12 @@ class PostController extends Controller
     public function getContentUrl(Request $req)
     {
         $content = file_get_contents($req->url);
-        if(isset($req->template_type)) {
+        if (isset($req->template_type)) {
             $slug = explode('/', $req->url)[3];
             $data = [
                 'slug' => $slug,
                 'title' => ucwords(str_replace('-', ' ', $slug)),
-                'count' => rand(100,200)
+                'count' => rand(100, 200)
             ];
 
             $template_type = $this->templateTypeRepository->addType($data);

@@ -110,9 +110,17 @@
             </aside>
             <a class="banner_box" href="{{ route('template.list', 'website') }}">
                 <div class="banner_text">1000+ free template</div>
+                <div class="banner_text_item_list">
+                    @foreach ($template_banner as $template_banner_item)
+                        <article class="banner_text_item">
+                            {!! $template_banner_item->show !!}
+                            <h4 class="banner_text_item_title"> {{ $template_banner_item->title }} </h5>
+                        </article>
+                    @endforeach
+                </div>
             </a>
             @foreach ($post_detail as $item)
-                <div class="post_content">
+                <article class="post_content">
                     <div class="post_content_head">
                         <div class="post_content_title">{{ $item->title == 'Let\'s get started' ? '' : $item->title }}
                         </div>
@@ -151,7 +159,7 @@
                             @endif
                         @endif
                     @endif
-                </div>
+                </article>
             @endforeach
 
             @if ($post->source != null)
@@ -177,7 +185,7 @@
                 </div>
                 <div class="comment_list">
                     @foreach ($comments as $comment)
-                        <div class="comment_item">
+                        <article class="comment_item">
                             <a href="{{ route('user_detail', ['id' => $comment->author_id]) }}" class="cmt_info">
                                 <img class="cmt_info_img" src="{{ asset($comment->author_avata) }}">
                                 <div class="cmt_info_name"> {{ $comment->author_name }} </div>
@@ -198,7 +206,7 @@
                                 @endif
                                 <button action="report">Báo cáo</button>
                             </div>
-                        </div>
+                        </article>
                     @endforeach
                 </div>
             </div>
