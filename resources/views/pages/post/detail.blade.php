@@ -115,7 +115,7 @@
                         <article class="banner_text_item">
                             <a href="{{ route('template.list', $template_banner_item->url) }}">
                                 {!! $template_banner_item->show !!}
-                                <h4 class="banner_text_item_title"> {{ $template_banner_item->title }} </h5>
+                                <h4 class="banner_text_item_title"> {{ $template_banner_item->title }} HTML CSS Template</h5>
                             </a>
                         </article>
                     @endforeach
