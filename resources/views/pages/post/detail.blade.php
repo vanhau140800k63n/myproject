@@ -261,7 +261,7 @@
                     @endforeach
                 </div>
             @endif
-            <a class="banner_box" href="{{ route('template.list', 'website') }}">
+            <a class="banner_box" href="{{ route('template.list', 'website') }}" style="margin-top: 30px">
                 <div class="banner_text">1000+ free template</div>
                 <div class="banner_text_item_list">
                     @foreach ($template_banner as $template_banner_item)
