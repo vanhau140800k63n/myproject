@@ -2553,6 +2553,7 @@ code a {
     font-weight: 500;
     color: #fff;
     margin-top: 10px;
+    text-align: center;
 }
 
 @media only screen and (min-width: 1400px) {}
