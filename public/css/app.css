@@ -2570,6 +2570,10 @@ code a {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .banner_text_item_title {
+        font-size: 13px;
+    }
+
     .post_author_info_name {
         margin-left: 5px;
         max-width: 65px;
@@ -2633,6 +2637,10 @@ code a {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .banner_text_item_title {
+        font-size: 12px;
+    }
+
     .post_box_content_title {
         padding: 15px 30px;
         font-size: 18px;
@@ -2652,6 +2660,10 @@ code a {
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
+    .banner_text_item_title {
+        font-size: 11px;
+    }
+
     .post_box_content_title {
         padding: 10px 15px;
         font-size: 15px;
@@ -2672,6 +2684,10 @@ code a {
 }
 
 @media only screen and (max-width: 576px) {
+    .banner_text_item_title {
+        font-size: 10px;
+    }
+
     .banner_box {
         --font-size: 20px;
         padding: 20px 10px;
