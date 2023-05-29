@@ -261,6 +261,17 @@
                     @endforeach
                 </div>
             @endif
+            <a class="banner_box" href="{{ route('template.list', 'website') }}">
+                <div class="banner_text">1000+ free template</div>
+                <div class="banner_text_item_list">
+                    @foreach ($template_banner as $template_banner_item)
+                        <article class="banner_text_item">
+                            {!! $template_banner_item->show !!}
+                            <h4 class="banner_text_item_title"> {{ $template_banner_item->title }} </h5>
+                        </article>
+                    @endforeach
+                </div>
+            </a>
         </main>
         <article class="post_box_other">
             <div class="post_box_other_fixed">
