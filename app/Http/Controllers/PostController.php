@@ -223,6 +223,10 @@ class PostController extends Controller
             $posts_related = $this->postRepository->searchPostRaw($raw, 10);
             $comments = $this->commentReprository->getPostComments($post->id);
             $template_banner = $this->templateRepository->getRandomBanner();
+            foreach ($template_banner as $banner) {
+                $template_type = $this->templateTypeRepository->getTypeTemplateById($banner->type);
+                $banner->url = $template_type->slug;
+            }
             return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'comments', 'posts_related', 'theme', 'auto', 'template_banner'));
         }
 

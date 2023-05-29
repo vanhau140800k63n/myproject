@@ -108,17 +108,19 @@
                     @endforeach
                 </div>
             </aside>
-            <a class="banner_box" href="{{ route('template.list', 'website') }}">
+            <aside class="banner_box">
                 <div class="banner_text">1000+ free template</div>
                 <div class="banner_text_item_list">
                     @foreach ($template_banner as $template_banner_item)
                         <article class="banner_text_item">
-                            {!! $template_banner_item->show !!}
-                            <h4 class="banner_text_item_title"> {{ $template_banner_item->title }} </h5>
+                            <a href="{{ route('template.list', $template_banner_item->url) }}">
+                                {!! $template_banner_item->show !!}
+                                <h4 class="banner_text_item_title"> {{ $template_banner_item->title }} </h5>
+                            </a>
                         </article>
                     @endforeach
                 </div>
-            </a>
+            </aside>
             @foreach ($post_detail as $item)
                 <article class="post_content">
                     <div class="post_content_head">
@@ -261,17 +263,19 @@
                     @endforeach
                 </div>
             @endif
-            <a class="banner_box" href="{{ route('template.list', 'website') }}" style="margin-top: 30px">
+            <aside class="banner_box" style="margin-top: 30px">
                 <div class="banner_text">1000+ free template</div>
                 <div class="banner_text_item_list">
                     @foreach ($template_banner as $template_banner_item)
                         <article class="banner_text_item">
-                            {!! $template_banner_item->show !!}
-                            <h4 class="banner_text_item_title"> {{ $template_banner_item->title }} </h5>
+                            <a href="{{ route('template.list', $template_banner_item->url) }}">
+                                {!! $template_banner_item->show !!}
+                                <h4 class="banner_text_item_title"> {{ $template_banner_item->title }} </h5>
+                            </a>
                         </article>
                     @endforeach
                 </div>
-            </a>
+            </aside>
         </main>
         <article class="post_box_other">
             <div class="post_box_other_fixed">
