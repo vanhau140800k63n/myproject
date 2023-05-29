@@ -1938,25 +1938,31 @@ code * {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
-    color: transparent;
+
     font-size: var(--font-size);
     font-weight: var(--font-weight);
     letter-spacing: var(--letter-spacing);
-    -webkit-text-stroke-color: transparent;
-    -webkit-text-stroke-width: var(--stroke-width);
-    animation: lighing 1s ease infinite;
+    background: linear-gradient(to right,
+            #ee8a47 20%,
+            #e8b23e 30%,
+            #53d1e5 50%,
+            #0190cd 70%,
+            #b14ada 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 4s ease-in-out infinite alternate;
 }
 
-@keyframes lighing {
+@keyframes textShine {
     0% {
-        background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+        background-position: 0% 50%;
     }
 
     100% {
-        background-image: linear-gradient(to right, #fed90f, #ff00d2, #00a2ff, #09f1b8);
+        background-position: 100% 50%;
     }
 }
 
