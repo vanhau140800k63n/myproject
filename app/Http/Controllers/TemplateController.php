@@ -21,36 +21,18 @@ use Illuminate\Support\Facades\Auth;
 class TemplateController extends Controller
 {
     private $categoryRepository;
-    private $pLanguageRepository;
-    private $postRepository;
-    private $contentItemRepository;
-    private $userRepository;
-    private $commentReprository;
     private $contentRepository;
-    private $actionRepository;
     private $templateRepository;
     private $templateTypeRepository;
 
     public function __construct(
-        UserRepositoryInterface $userRepository,
-        PLanguageRepositoryInterface $pLanguageRepository,
-        PostRepositoryInterface $postRepository,
-        ContentItemRepositoryInterface $contentItemRepository,
         CategoryRepositoryInterface $categoryRepository,
-        CommentRepositoryInterface $commentReprository,
         ContentRepositoryInterface $contentRepository,
-        ActionRepositoryInterface $actionRepository,
         TemplateRepositoryInterface $templateRepository,
         TemplateTypeRepositoryInterface $templateTypeRepository
     ) {
         $this->categoryRepository = $categoryRepository;
-        $this->pLanguageRepository = $pLanguageRepository;
-        $this->postRepository = $postRepository;
-        $this->contentItemRepository = $contentItemRepository;
-        $this->userRepository = $userRepository;
-        $this->commentReprository = $commentReprository;
         $this->contentRepository = $contentRepository;
-        $this->actionRepository = $actionRepository;
         $this->templateRepository = $templateRepository;
         $this->templateTypeRepository = $templateTypeRepository;
     }
