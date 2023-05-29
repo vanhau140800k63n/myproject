@@ -1920,7 +1920,7 @@ code * {
     --color-background: #1f202e;
     --stroke-width: calc(1em / 16);
     --font-size: 40px;
-    --font-weight: 700;
+    --font-weight: 800;
     --letter-spacing: calc(1em / 8);
 }
 
@@ -1952,8 +1952,8 @@ code * {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 4s ease-in-out infinite alternate;
+    background-size: 200% auto;
+    animation: textShine 2s ease-in-out infinite alternate;
 }
 
 @keyframes textShine {
