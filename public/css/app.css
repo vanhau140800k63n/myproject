@@ -1941,7 +1941,7 @@ code * {
     -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
-    color: var(--color-background);
+    color: transparent;
     font-size: var(--font-size);
     font-weight: var(--font-weight);
     letter-spacing: var(--letter-spacing);
