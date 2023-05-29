@@ -109,13 +109,14 @@
                 </div>
             </aside>
             <aside class="banner_box">
-                <div class="banner_text">1000+ free template</div>
+                <a class="banner_text" href="{{ route('template.list', 'website') }}">1000+ free template</a>
                 <div class="banner_text_item_list">
                     @foreach ($template_banner as $template_banner_item)
                         <article class="banner_text_item">
                             <a href="{{ route('template.list', $template_banner_item->url) }}">
                                 {!! $template_banner_item->show !!}
-                                <h4 class="banner_text_item_title"> {{ $template_banner_item->title }} HTML CSS Template</h5>
+                                <h4 class="banner_text_item_title"> {{ $template_banner_item->title }} HTML CSS Template
+                                </h4>
                             </a>
                         </article>
                     @endforeach
