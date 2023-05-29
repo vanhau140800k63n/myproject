@@ -57,7 +57,8 @@
                                 <a target="_blank" href="{{ $template->iframe }}" class="button">
                                     <div class="button__line"></div>
                                     <div class="button__line"></div>
-                                    <span class="button__text">Demo</span>
+                                    <span
+                                        class="button__text">{{ $template->download_url != null ? 'Demo' : 'Demo And Code' }}</span>
                                 </a>
                             @endif
                             @if ($template->source == 1)
