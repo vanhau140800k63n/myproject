@@ -2337,6 +2337,7 @@ $(document).ready(function () {
   $('.game_design .ͼ1.cm-editor').css('height', $('.game_creen').height());
   $('.home_post_action i, .post_info_attr_action i').click(function () {
     var action = $(this);
+    action.addClass('fa-animate');
     var _token = $('input[name="_token"]').val();
     $.ajax({
       url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'action',
@@ -2358,6 +2359,7 @@ $(document).ready(function () {
       } else if (data == 'login') {
         location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'login';
       }
+      action.removeClass('fa-animate');
       return true;
     }).fail(function (e) {
       return false;
