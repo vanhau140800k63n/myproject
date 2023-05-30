@@ -2568,8 +2568,8 @@ code a {
 }
 
 .banner_text_item img:hover {
-    border-color: #e1c521;
-    box-shadow: rgba(228, 232, 14, 0.3) 0px 1px 2px 0px, rgba(160, 183, 5, 0.15) 0px 1px 3px 1px;
+    border-color: rgb(180, 178, 175);
+    box-shadow: rgb(180, 178, 175, 0.5) 0px 3px 6px, rgb(180, 178, 175, 0.5) 0px 3px 6px;
 }
 
 .banner_text_item_title {
