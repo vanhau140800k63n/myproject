@@ -1183,11 +1183,12 @@ code * {
     overflow: hidden;
     white-space: nowrap;
     font-size: 12px;
+    font-weight: 600;
 }
 
 .other_course_item_text:hover div {
     color: #fff;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 12px;
 }
 
