@@ -45,8 +45,8 @@ class TemplateRepository extends BaseRepository implements TemplateRepositoryInt
         return $this->template->where('slug', $slug)->get()->count();
     }
 
-    public function getRandomBanner()
+    public function getRandomBanner($num)
     {
-        return $this->template->where('show', 'like', '%.gif%')->inRandomOrder()->take(3)->get();
+        return $this->template->where('show', 'like', '%.gif%')->inRandomOrder()->take($num)->get();
     }
 }

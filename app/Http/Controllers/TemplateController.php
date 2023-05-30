@@ -170,6 +170,25 @@ class TemplateController extends Controller
         return true;
     }
 
+    public function randomTemplateBanner()
+    {
+        $template_banner = $this->templateRepository->getRandomBanner(1);
+        $output = '';
+
+        foreach ($template_banner as $banner) {
+            $template_type = $this->templateTypeRepository->getTypeTemplateById($banner->type);
+            $banner->url = $template_type->slug;
+
+            return '<a href="' . route('template.list', $banner->url) . '">
+                ' . $banner->show . '
+                <h4 class="banner_text_item_title">' . $banner->title . ' HTML CSS Template
+                </h4>
+            </a>';
+        }
+
+        return response()->json($output);
+    }
+
     public function addDescriptionAdmin()
     {
         // $list_description = explode(PHP_EOL, CommonConstants::DESCRIPTION);

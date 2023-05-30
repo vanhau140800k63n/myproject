@@ -222,7 +222,7 @@ class PostController extends Controller
             }
             $posts_related = $this->postRepository->searchPostRaw($raw, 10);
             $comments = $this->commentReprository->getPostComments($post->id);
-            $template_banner = $this->templateRepository->getRandomBanner();
+            $template_banner = $this->templateRepository->getRandomBanner(3);
             foreach ($template_banner as $banner) {
                 $template_type = $this->templateTypeRepository->getTypeTemplateById($banner->type);
                 $banner->url = $template_type->slug;

@@ -36,6 +36,7 @@ Route::post('/del_comment_post', [PostController::class, 'delComment'])->name('d
 Route::get('/auto_html', [PostController::class, 'autoHtml'])->name('auto_html');
 Route::post('/compile_html', [PostController::class, 'compileHtml'])->name('compile_html');
 Route::get('/get_noti', [NotiController::class, 'getNoti'])->name('get_noti');
+Route::get('/random_template_banner', [TemplateController::class, 'randomTemplateBanner'])->name('random_template_banner');
 
 Route::prefix('template')->name('template.')->group(function () {
     Route::get('/{key}', [TemplateController::class, 'listTemplate'])->name('list');
@@ -116,7 +117,7 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::get('detail/{id}', [TemplateController::class, 'getTemplateDetailAdmin'])->name('detail');
         Route::get('/t/add', [TemplateController::class, 'addTemplateAdmin'])->name('add');
         Route::get('/a/add_description', [TemplateController::class, 'addDescriptionAdmin'])->name('add_description');
-        
+
         // Route::prefix('auto')->name('auto.')->group(function () {
         //     Route::get('/add', [TemplateController::class, 'autoAddTemplateAdmin'])->name('add');
         //     Route::post('/post_add', [TemplateController::class, 'autoPostAddTemplateAdmin'])->name('post_add');

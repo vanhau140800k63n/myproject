@@ -10,5 +10,5 @@ interface TemplateRepositoryInterface
     public function addTemplate($data);
     public function updateTemplate($data, $id);
     public function check_slug($slug);
-    public function getRandomBanner();
+    public function getRandomBanner($num);
 }

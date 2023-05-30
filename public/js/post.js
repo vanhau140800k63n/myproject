@@ -72753,6 +72753,23 @@ $('.show_code_auto').click(function () {
     ++index;
   }, 10);
 });
+setInterval(function () {
+  var random = Math.floor(Math.random() * $('.banner_text_item').length);
+  $.ajax({
+    url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "random_template_banner",
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    type: "GET",
+    dataType: 'json'
+  }).done(function (data) {
+    $('.banner_text_item').eq(random).html(data);
+    return true;
+  }).fail(function (e) {
+    $('.banner_text_item').eq(random).html(e.responseText);
+    return false;
+  });
+}, 2000);
 })();
 
 /******/ })()
