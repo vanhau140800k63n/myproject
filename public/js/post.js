@@ -72769,7 +72769,7 @@ setInterval(function () {
     $('.banner_text_item').eq(random).html(e.responseText);
     return false;
   });
-}, 3000);
+}, 10000);
 })();
 
 /******/ })()
