@@ -11,18 +11,18 @@
                 <div class="container">
                     <div class="wrap-main-user-profile row">
                         <div class="wrap-main-user-profile-box">
+                            @if($user != null)
                             <div class="main-user-info">
                                 <div class="header-main-user-info">
                                     <div class="user-avatar">
                                         <img alt="User Avata" class="level-avatar"
-                                            src="{{ asset('img/no_avata.jpg') }}">
+                                            src="{{ asset($user->avata) }}">
                                     </div>
                                     <div class="content-main-user-info">
                                         <h3 class="user-name">vhtest140800@gmail.com</h3>
                                         <p class="main-user-des">
                                         </p>
                                     </div>
-
                                 </div>
                                 <div class="row">
                                     <div class="detail-progress-item">
@@ -45,6 +45,7 @@
                                     </div>
                                 </div>
                             </div>
+                            @endif
                         </div>
                         <div class="wrap-main-user-profile-other">
                             <div class="wrap-exam-banner">

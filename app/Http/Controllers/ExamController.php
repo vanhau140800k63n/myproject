@@ -8,6 +8,7 @@ use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ExamController extends Controller
 {
@@ -33,6 +34,12 @@ class ExamController extends Controller
 
     public function getExamHome()
     {
-        return view('pages.exam.home');
+        $user = null;
+
+        if(Auth::check()) {
+            $user = Auth::user();
+        }
+
+        return view('pages.exam.home', compact('user'));
     }
 }
