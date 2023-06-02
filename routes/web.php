@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ExamController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LessonController;
 use App\Http\Controllers\NotiController;
@@ -50,6 +51,10 @@ Route::prefix('learn')->name('learn.')->group(function () {
 
 Route::prefix('post')->name('post.')->group(function () {
     Route::get('/{slug}', [PostController::class, 'getPostDetail'])->name('detail');
+});
+
+Route::prefix('exam')->name('exam.')->group(function () {
+    Route::get('/', [ExamController::class, 'getExamHome'])->name('home');
 });
 
 Route::middleware(['check.logged_out'])->group(function () {
