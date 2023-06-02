@@ -4042,12 +4042,15 @@ a.template_type_item.active {
     font-weight: 600;
     text-overflow: ellipsis;
     overflow: hidden;
+    color: #fff;
 }
 
 .content-main-user-info .main-user-des {
-    font-size: 16px;
-    margin: 0;
+    font-size: 14px;
+    margin-top: 10px;
     line-height: 1.37;
+    font-weight: 500;
+    color: #079cd0;
 }
 
 .user-progress-block,
