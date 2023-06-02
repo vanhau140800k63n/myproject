@@ -4125,6 +4125,7 @@ a.template_type_item.active {
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 .detail-progress-item .detail-progress-content {
@@ -4139,7 +4140,7 @@ a.template_type_item.active {
 }
 
 .detail-progress-item .result {
-    color: #f6ff00;
+    color: #00d1ff;
     font-weight: 700;
     font-size: 32px;
     margin: 5px 0;

@@ -25,7 +25,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="detail-progress-item">
-                                            <h4>Khoá học</h4>
+                                            <h4>Thử thách</h4>
                                             <div class="detail-progress-content">
                                                 <span class="result">0/19</span>
                                             </div>
@@ -34,7 +34,7 @@
                                             </div>
                                         </div>
                                         <div class="detail-progress-item">
-                                            <h4>Luyện tập</h4>
+                                            <h4>Tích lũy</h4>
                                             <div class="detail-progress-content">
                                                 <span class="result">0/1625</span>
                                             </div>
@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="detail-progress-item">
-                                            <h4>Khoá học</h4>
+                                            <h4>Thử thách</h4>
                                             <div class="detail-progress-content">
                                                 <span class="result">0/19</span>
                                             </div>
@@ -68,7 +68,7 @@
                                             </div>
                                         </div>
                                         <div class="detail-progress-item">
-                                            <h4>Luyện tập</h4>
+                                            <h4>Tích lũy</h4>
                                             <div class="detail-progress-content">
                                                 <span class="result">0/1625</span>
                                             </div>
