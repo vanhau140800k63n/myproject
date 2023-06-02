@@ -88,7 +88,7 @@
                                                 src="https://st2.depositphotos.com/47577860/46970/v/600/depositphotos_469705934-stock-illustration-coding-computer-language-icon.jpg">
                                         </div>
                                         <div class="description">
-                                            <h3>Daily Challenge</h3>
+                                            <h3>Weekly Challenge</h3>
                                             <p>Cùng 1 bài toán lập trình nhưng có thể có nhiều lời giải. Độ phức tạp của
                                                 thuật toán trong các lời giải có thể khác nhau và tùy vào dữ liệu. Bạn hãy
                                                 tìm ra lời giải tối ưu nhất.<br><a href="">Tham Gia</a>
@@ -100,7 +100,7 @@
                                                 src="https://st2.depositphotos.com/47577860/46970/v/600/depositphotos_469705934-stock-illustration-coding-computer-language-icon.jpg">
                                         </div>
                                         <div class="description">
-                                            <h3>Weekly Challenge</h3>
+                                            <h3>Monthly Challenge</h3>
                                             <p>Cùng 1 bài toán lập trình nhưng có thể có nhiều lời giải. Độ phức tạp của
                                                 thuật toán trong các lời giải có thể khác nhau và tùy vào dữ liệu. Bạn hãy
                                                 tìm ra lời giải tối ưu nhất.<br><a href="">Tham Gia</a></p>
