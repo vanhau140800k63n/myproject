@@ -48,7 +48,8 @@
                                 <div class="main-user-info">
                                     <div class="header-main-user-info">
                                         <div class="user-avatar">
-                                            <img alt="User Avata" class="level-avatar" src="{{ asset('img/no_avata.jpg') }}">
+                                            <img alt="User Avata" class="level-avatar"
+                                                src="{{ asset('img/no_avata.jpg') }}">
                                         </div>
                                         <div class="content-main-user-info">
                                             <a class="user-name" href="{{ route('login') }}">Đăng nhập ?</a>
@@ -89,9 +90,9 @@
                                         </div>
                                         <div class="description">
                                             <h3>Weekly Challenge</h3>
-                                            <p>Cùng 1 bài toán lập trình nhưng có thể có nhiều lời giải. Độ phức tạp của
-                                                thuật toán trong các lời giải có thể khác nhau và tùy vào dữ liệu. Bạn hãy
-                                                tìm ra lời giải tối ưu nhất.<br><a href="">Tham Gia</a>
+                                            <p>Cùng tham gia cuộc thi lập trình mỗi tuần, hãy đưa ra thuật toán tối ưu
+                                                nhất để giải quyết những bài toán của ban tổ chức đưa ra và giành những phần
+                                                quà giá trị.<br><a href="{{ route('exam.challenge_weekly') }}">Tham Gia</a>
                                             </p>
                                         </div>
                                     </li>
@@ -101,9 +102,9 @@
                                         </div>
                                         <div class="description">
                                             <h3>Monthly Challenge</h3>
-                                            <p>Cùng 1 bài toán lập trình nhưng có thể có nhiều lời giải. Độ phức tạp của
-                                                thuật toán trong các lời giải có thể khác nhau và tùy vào dữ liệu. Bạn hãy
-                                                tìm ra lời giải tối ưu nhất.<br><a href="">Tham Gia</a></p>
+                                            <p>Cùng tham gia cuộc thi lập trình mỗi tháng, hãy đưa ra thuật toán tối ưu
+                                                nhất để giải quyết những bài toán của ban tổ chức đưa ra và giành những phần
+                                                quà giá trị.<br><a href="{{ route('exam.challenge_weekly') }}">Tham Gia</a></p>
                                         </div>
                                     </li>
                                 </ul>

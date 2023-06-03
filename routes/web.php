@@ -55,6 +55,7 @@ Route::prefix('post')->name('post.')->group(function () {
 
 Route::prefix('exam')->name('exam.')->group(function () {
     Route::get('/', [ExamController::class, 'getExamHome'])->name('home');
+    Route::get('/challenge-weekly', [ExamController::class, 'getChallengeInfo'])->name('challenge_weekly');
 });
 
 Route::middleware(['check.logged_out'])->group(function () {

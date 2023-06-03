@@ -42,4 +42,8 @@ class ExamController extends Controller
 
         return view('pages.exam.home', compact('user'));
     }
+
+    public function getChallengeInfo() {
+        return view('pages.exam.challenge_info');
+    }
 }
