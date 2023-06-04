@@ -72569,6 +72569,7 @@ $('.run_code').click(function () {
     myHeaders.append("Accept-Language", "en-US,en;q=0.9,vi;q=0.8,ja;q=0.7");
     myHeaders.append("Cookie", "_ga=GA1.2.726974715.1671703357; _gid=GA1.2.957726084.1676083267");
     var formdata = new FormData();
+    content = content.replaceAll('System.out.println()', 'System.out.println("")');
     content = content.replaceAll('System.out.println(', 'System.out.println("<br>" + ');
     formdata.append("javaCode", content);
     var requestOptions = {

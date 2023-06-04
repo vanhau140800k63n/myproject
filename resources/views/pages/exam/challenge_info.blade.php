@@ -7,10 +7,19 @@
 @section('content')
     <main class="challenge_info_box">
         <div class="challenge_info_banner">
-            <h3>Thử thách tuần</h3>
+            <div class="c_i_b_countdown">
+                <h3>Thử thách tuần</h3>
+                <div id="timer">
+                    <div id="days"></div>
+                    <div id="hours"></div>
+                    <div id="minutes"></div>
+                    <div id="seconds"></div>
+                    <div id="log"></div>
+                </div>
+            </div>
             <div class="c_i_b_reward">
                 <img width="40px" src="https://devsne.vn/image/challenge/cup.png">
-                <p>Chuột không dây</p>
+                <p><span style="font-weight: 700; margin-bottom: 5px">Giải nhất</span><br>Chuột không dây</p>
             </div>
             <div class="c_i_b_clock">
                 <img width="40px" src="https://devsne.vn/image/challenge/clock.png">
@@ -107,4 +116,40 @@
             <img class="c_i_c_img" src="https://devsne.vn/image/challenge/rule.png">
         </div>
     </main>
+    <script>
+        function countDown() {
+            var currDate = new Date()
+            var endTime = new Date(currDate.getFullYear(), currDate.getMonth(), currDate.getDate(), 17, 0, 0);;
+            endTime = (Date.parse(endTime) / 1000);
+            var now = new Date();
+            now = (Date.parse(now) / 1000);
+            var timeLeft = endTime - now;
+
+            var days = Math.floor(timeLeft / 86400);
+            var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+            var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+            var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+            if (hours > 8) {
+                hours = 0;
+                minutes = 0;
+                seconds = 0;
+            }
+            if (hours < "17") {
+                hours = "0" + hours;
+            }
+            if (minutes < "10") {
+                minutes = "0" + minutes;
+            }
+            if (seconds < "10") {
+                seconds = "0" + seconds;
+            }
+
+            $("#hours").html(hours + ":" + minutes + ":" + seconds);
+
+        }
+
+        setInterval(function() {
+            countDown();
+        }, 1000);
+    </script>
 @endsection
