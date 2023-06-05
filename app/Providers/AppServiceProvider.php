@@ -4,11 +4,13 @@ namespace App\Providers;
 
 use App\Repositories\ActionRepositoryInterface;
 use App\Repositories\CategoryRepositoryInterface;
+use App\Repositories\ChallengeRepositoryInterface;
 use App\Repositories\CommentRepositoryInterface;
 use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\ContentRepositoryInterface;
 use App\Repositories\Eloquent\ActionRepository;
 use App\Repositories\Eloquent\CategoryRepository;
+use App\Repositories\Eloquent\ChallengeRepository;
 use App\Repositories\Eloquent\CommentRepository;
 use App\Repositories\Eloquent\ContentItemRepository;
 use App\Repositories\Eloquent\ContentRepository;
@@ -18,6 +20,7 @@ use App\Repositories\Eloquent\NotiRepository;
 use App\Repositories\Eloquent\OrderRepository;
 use App\Repositories\Eloquent\PLanguageRepository;
 use App\Repositories\Eloquent\PostRepository;
+use App\Repositories\Eloquent\RankingRepository;
 use App\Repositories\Eloquent\TemplateRepository;
 use App\Repositories\Eloquent\TemplateTypeRepository;
 use App\Repositories\Eloquent\UserRepository;
@@ -27,6 +30,7 @@ use App\Repositories\NotiRepositoryInterface;
 use App\Repositories\OrderRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
+use App\Repositories\RankingRepositoryInterface;
 use App\Repositories\TemplateRepositoryInterface;
 use App\Repositories\TemplateTypeRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
@@ -82,6 +86,12 @@ class AppServiceProvider extends ServiceProvider
         });
         $this->app->singleton(NotiRepositoryInterface::class, function () {
             return new NotiRepository();
+        });
+        $this->app->singleton(RankingRepositoryInterface::class, function () {
+            return new RankingRepository();
+        });
+        $this->app->singleton(ChallengeRepositoryInterface::class, function () {
+            return new ChallengeRepository();
         });
     }
 

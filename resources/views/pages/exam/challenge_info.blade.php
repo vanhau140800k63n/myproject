@@ -2,13 +2,13 @@
 @section('meta')
 @endsection
 @section('head')
-    <title> Thử Thách Tuần | DEVSNE</title>
+    <title> Weekly Challenge | DEVSNE</title>
 @endsection
 @section('content')
     <main class="challenge_info_box">
         <div class="challenge_info_banner">
             <div class="c_i_b_countdown">
-                <h3>Thử thách tuần</h3>
+                <h3>Weekly Challenge</h3>
                 <div id="timer">
                     <div id="days"></div>
                     <div id="hours"></div>
@@ -19,7 +19,8 @@
             </div>
             <div class="c_i_b_reward">
                 <img width="40px" src="https://devsne.vn/image/challenge/cup.png">
-                <p><span style="font-weight: 700; margin-bottom: 5px">Giải nhất</span><br>Chuột không dây</p>
+                <p><span style="font-weight: 700; margin-bottom: 5px; color: #f6b866">Giải nhất</span><br>Chuột không dây
+                </p>
             </div>
             <div class="c_i_b_clock">
                 <img width="40px" src="https://devsne.vn/image/challenge/clock.png">
