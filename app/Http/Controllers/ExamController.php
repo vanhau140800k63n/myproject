@@ -44,6 +44,6 @@ class ExamController extends Controller
     }
 
     public function getChallengeInfo() {
-        return view('pages.exam.challenge_info');
+        return view('pages.exam.contest_detail');
     }
 }

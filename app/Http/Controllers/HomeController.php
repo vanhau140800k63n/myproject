@@ -40,6 +40,79 @@ class HomeController extends Controller
 
     public function test(Request $req)
     {
+        // $fileContent = 'import java.util.Stack;  
+        // public class Main  
+        // {  
+        // public static void main(String[] args)   
+        // {  
+        // //creating an instance of Stack class  
+        // Stack<Integer> stk= new Stack<>();  
+        // // checking stack is empty or not  
+        // boolean result = stk.empty();  
+        // System.out.println("Is the stack empty? " + result);  
+        // // pushing elements into stack  
+        // stk.push(78);  
+        // stk.push(113);  
+        // stk.push(90);  
+        // stk.push(120);  
+        // //prints elements of the stack  
+        // System.out.println("Elements in Stack: " + stk);  
+        // result = stk.empty();  
+        // System.out.println("Is the stack empty? " + result);  
+        // }  
+        // }';
+        // $fileOp = fopen('Main.java', 'w');
+        // fwrite($fileOp, $fileContent);
+
+        // $JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk';
+        // $PATH = "$JAVA_HOME/bin";
+        // putenv("JAVA_HOME=$JAVA_HOME");
+        // putenv("PATH=$PATH");
+        // shell_exec("javac Main.java");
+        // $cmd = "java Main stdbuf -o0 2>&1";
+        // $inputlist = array();
+        // $outlist = array();
+        //  $descriptors = array(
+        //     0 => array("pipe", "r"),
+        //     1 => array("pipe", "w")
+        // );
+
+        // $output = '';
+        // $process = proc_open($cmd, $descriptors, $pipes);
+
+
+        $descriptorspec = array(
+            0 => array("pipe", "r"),  // stdin is a pipe that the child will read from
+            1 => array("pipe", "w"),  // stdout is a pipe that the child will write to
+            2 => array("file", "/tmp/error-output.txt", "a") // stderr is a file to write to
+        );
+
+        $cwd = '/tmp';
+        $env = array('some_option' => 'aeiou');
+
+        $process = proc_open('php', $descriptorspec, $pipes, $cwd, $env);
+
+        if (is_resource($process)) {
+            // $pipes now looks like this:
+            // 0 => writeable handle connected to child stdin
+            // 1 => readable handle connected to child stdout
+            // Any error output will be appended to /tmp/error-output.txt
+
+            fwrite($pipes[0], '<?php print_r($_ENV); ?>');
+            fclose($pipes[0]);
+
+            echo stream_get_contents($pipes[1]);
+            fclose($pipes[1]);
+
+            // It is important that you close any pipes before calling
+            // proc_close in order to avoid a deadlock
+            $return_value = proc_close($process);
+
+            echo "command returned $return_value\n";
+        }
+
+
+
         // $posts = $this->postRepository->getPostChangeTitle();
         // foreach ($posts as $post) {
         //     if($post->title_update != null && $post->title_update != "") {
