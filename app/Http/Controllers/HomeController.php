@@ -40,7 +40,8 @@ class HomeController extends Controller
 
     public function test(Request $req)
     {
-
+        dd(shell_exec('jdk1.8.0_202.jdk/Contents/Home/bin/java'));
+        dd(shell_exec('/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/java'));
         $fileContent = 'import java.util.Stack;
 
         public class Main {
@@ -69,7 +70,9 @@ class HomeController extends Controller
         $PATH = "$JAVA_HOME/bin";
         putenv("JAVA_HOME=$JAVA_HOME");
         putenv("PATH=$PATH");
-        $output = shell_exec('javac Main.java');
+        $result = shell_exec('java -version');
+        var_dump($result);
+        $output = shell_exec('/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/javac /Users/trungthanh/Documents/Main');
         dd($output);
         // shell_exec("javac /Users/trungthanh/vhau/main_project/myproject/public/Main.java");
 
