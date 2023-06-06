@@ -40,7 +40,7 @@ class HomeController extends Controller
 
     public function test(Request $req)
     {
-        dd(shell_exec('jdk1.8.0_202.jdk/Contents/Home/bin/java'));
+        dd(shell_exec('jdk/jdk1.8.0_202.jdk/Contents/Home/bin/java'));
         dd(shell_exec('/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/java'));
         $fileContent = 'import java.util.Stack;
 
