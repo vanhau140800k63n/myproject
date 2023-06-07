@@ -43,7 +43,7 @@ class HomeController extends Controller
         $PATH = "$JAVA_HOME/bin";
         putenv("JAVA_HOME=$JAVA_HOME");
         putenv("PATH=$PATH");
-        echo(shell_exec('java Main'));
+        echo(shell_exec('javac Main.java && java Main'));
     }
 
     public function test1(Request $req)
