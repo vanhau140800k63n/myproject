@@ -38,7 +38,15 @@ class HomeController extends Controller
         return view('pages.home.home')->with(['p_languages' => $pLanguages, 'post_list' => $post_list]);
     }
 
-    public function test(Request $req)
+    public function test(Request $req) {
+        $JAVA_HOME = 'C:\xampp\htdocs\myproject\public\jdk\corretto-1.8.0_332';
+        $PATH = "$JAVA_HOME/bin";
+        putenv("JAVA_HOME=$JAVA_HOME");
+        putenv("PATH=$PATH");
+        echo(shell_exec('javac Main.java && java Main'));
+    }
+
+    public function test1(Request $req)
     {
         dd(shell_exec('jdk/jdk1.8.0_202.jdk/Contents/Home/bin/java'));
         dd(shell_exec('/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/java'));
