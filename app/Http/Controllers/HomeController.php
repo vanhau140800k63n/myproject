@@ -39,7 +39,7 @@ class HomeController extends Controller
     }
 
     public function test(Request $req) {
-        $JAVA_HOME = 'C:\xampp\htdocs\myproject\public\jdk\corretto-1.8.0_332';
+        $JAVA_HOME = 'jdk\corretto-1.8.0_332';
         $PATH = "$JAVA_HOME/bin";
         putenv("JAVA_HOME=$JAVA_HOME");
         putenv("PATH=$PATH");
