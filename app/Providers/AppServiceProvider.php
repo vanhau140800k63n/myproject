@@ -3,12 +3,14 @@
 namespace App\Providers;
 
 use App\Repositories\ActionRepositoryInterface;
+use App\Repositories\AnswerRepositoryInterface;
 use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\ChallengeRepositoryInterface;
 use App\Repositories\CommentRepositoryInterface;
 use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\ContentRepositoryInterface;
 use App\Repositories\Eloquent\ActionRepository;
+use App\Repositories\Eloquent\AnswerRepository;
 use App\Repositories\Eloquent\CategoryRepository;
 use App\Repositories\Eloquent\ChallengeRepository;
 use App\Repositories\Eloquent\CommentRepository;
@@ -92,6 +94,9 @@ class AppServiceProvider extends ServiceProvider
         });
         $this->app->singleton(ChallengeRepositoryInterface::class, function () {
             return new ChallengeRepository();
+        });
+        $this->app->singleton(AnswerRepositoryInterface::class, function () {
+            return new AnswerRepository();
         });
     }
 
