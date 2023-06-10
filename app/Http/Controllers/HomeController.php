@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Repositories\CategoryRepositoryInterface;
+use App\Repositories\ChallengeRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
@@ -16,19 +17,22 @@ class HomeController extends Controller
     private $postRepository;
     private $lessonRepository;
     private $categoryRepository;
+    private $challengeRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
         PLanguageRepositoryInterface $pLanguageRepository,
         PostRepositoryInterface $postRepository,
         LessonRepositoryInterface $lessonRepository,
-        CategoryRepositoryInterface $categoryRepository
+        CategoryRepositoryInterface $categoryRepository,
+        ChallengeRepositoryInterface $challengeRepository
     ) {
         $this->userRepository = $userRepository;
         $this->pLanguageRepository = $pLanguageRepository;
         $this->postRepository = $postRepository;
         $this->lessonRepository = $lessonRepository;
         $this->categoryRepository = $categoryRepository;
+        $this->challengeRepository = $challengeRepository;
     }
 
     public function getHomePage()
@@ -38,12 +42,35 @@ class HomeController extends Controller
         return view('pages.home.home')->with(['p_languages' => $pLanguages, 'post_list' => $post_list]);
     }
 
-    public function test(Request $req) {
-        $JAVA_HOME = 'jdk\corretto-1.8.0_332';
-        $PATH = "$JAVA_HOME/bin";
-        putenv("JAVA_HOME=$JAVA_HOME");
-        putenv("PATH=$PATH");
-        echo(shell_exec('javac Main.java && java Main'));
+    public function test(Request $req)
+    {
+        $challenge = $this->challengeRepository->getChallengeWeek();
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => 'https://eace-2405-4803-fbab-1660-397a-b23a-58ec-729f.ngrok-free.app/test/test.php',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            // CURLOPT_SSL_VERIFYPEER => false,
+            // CURLOPT_POST => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => http_build_query([
+                'code' => $challenge->default_code,
+                'test_case' => $challenge->test_case,
+                'test_case_result' => $challenge->test_case_result
+            ]),
+            CURLOPT_HTTPHEADER => array(),
+        ));
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+
+        echo $response;
     }
 
     public function test1(Request $req)
