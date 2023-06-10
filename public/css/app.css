@@ -3515,6 +3515,7 @@ a.template_type_item.active {
     border: none;
     padding: 8px 15px;
     color: #4a4a6b;
+    background: #fff;
 }
 
 .leaderboard {
@@ -4981,7 +4982,7 @@ a.template_type_item.active {
     justify-content: space-between;
     padding: 10px;
     margin-bottom: 50px;
-    height: 100vh;
+    min-height: 100vh;
     background: #1d2022;
     flex-wrap: wrap;
 }
@@ -4994,15 +4995,12 @@ a.template_type_item.active {
     font-size: 13px !important;
 }
 
-.contest_editer .ͼ1.cm-editor {
-    height: calc(100vh - 150px) !important;
-}
-
 .contest_creen {
     width: calc(40% - 20px);
     background: #fff;
     border-radius: 10px;
     padding: 30px;
+    overflow: scroll;
 }
 
 .contest_tutorial {
@@ -5041,7 +5039,7 @@ select {
     border-radius: 5px;
 }
 
-.contest_run {
+.contest_run, .contest_submit {
     padding: 5px 10px;
     background: #526194;
     color: #fff;
@@ -5060,19 +5058,19 @@ select {
 
 .test_case {
     display: flex;
+    flex-wrap: wrap;
     padding: 10px 0;
 }
 
 .test_case_item {
-    padding: 8px 15px;
-    background: #22b857;
+    padding: 5px 10px;
+    background: #aab4b3;
     color: #fff;
     border: none;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: 500;
     border-radius: 5px;
-    font-size: 18px;
     cursor: pointer;
 }
 
@@ -5081,8 +5079,130 @@ select {
     margin-left: 10px;
 }
 
+.test_case_item.pass {
+    background: #22b857;
+}
+
 .test_case_item.error {
     background: #b83c3c;
 }
 
+
+:root {
+    --h1-size: 24px;
+    --h2-size: 20px;
+    --h3-size: 16px;
+}
+
+.contest_creen * {
+    color: #23262a;
+}
+
+.contest_creen p,
+.contest_creen li {
+    margin-top: 10px;
+}
+
+.contest_creen pre {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contest_creen h2 {
+    font-size: var(--h2-size) !important;
+    margin: 25px 0 15px;
+    font-weight: 500;
+}
+
+.contest_creen h1 {
+    font-size: var(--h1-size) !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contest_creen h3 {
+    font-size: var(--h3-size) !important;
+    margin: 30px 0 15px;
+    font-weight: 500;
+}
+
+.contest_creen h1 * {
+    font-size: var(--h1-size) !important;
+    font-weight: 600;
+}
+
+.contest_creen h2 * {
+    font-size: var(--h2-size) !important;
+    font-weight: 500;
+}
+
+.contest_creen h3 * {
+    font-size: var(--h3-size) !important;
+    font-weight: 500;
+}
+
+
+.contest_creen a {
+    color: #004cbd;
+}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contest_creen {
+        --h1-size: 22px;
+        --h2-size: 20px;
+        --h3-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .contest_creen {
+        --h1-size: 21px;
+        --h2-size: 19px;
+        --h3-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .contest_creen {
+        --h1-size: 20px;
+        --h2-size: 18px;
+        --h3-size: 16px;
+    }
+}
+
+.time_countdown {
+    border: 1px solid rgb(193, 192, 194);
+    margin-bottom: 20px;
+}
+
+.time_countdown_bg {
+    background: rgb(61, 59, 63);
+    width: 0;
+}
+
+.contest_creen_info {
+    display: flex;
+    justify-content: center;
+}
+
+.time_countdown_el {
+    mix-blend-mode: difference;
+    color: #fff;
+    text-align: center;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.contest_creen_info p {
+    font-weight: 500;
+    margin: 0 5px;
+    color: #616467;
+}
 

@@ -30,7 +30,7 @@
                 <img width="40px" src="https://devsne.vn/image/challenge/skill.png">
                 <p>Giải thuật</p>
             </div>
-            <button class="c_i_b_btn">Vào Thi</button>
+            <a href="{{ route('exam.challenge.week') }}" class="c_i_b_btn">Vào Thi</a>
         </div>
         <div class="challenge_info_ranking">
             <div class="leaderboard">

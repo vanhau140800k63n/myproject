@@ -14,4 +14,8 @@ class ChallengeRepository extends BaseRepository implements ChallengeRepositoryI
     {
         $this->challenge = new Challenge();
     }
+
+    public function getChallengeWeek() {
+        return $this->challenge->first();
+    }
 }

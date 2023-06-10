@@ -2373,21 +2373,23 @@ $(document).ready(function () {
     clearInterval(reset_noti);
     $('.post_noti').css('display', 'none');
   });
-  var reset_noti = setInterval(function () {
-    $.ajax({
-      url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "get_noti",
-      type: "GET"
-    }).done(function (data) {
-      $('.post_noti').html(data);
-      $('.post_noti').css('opacity', 1);
-      setTimeout(function () {
-        $('.post_noti').css('opacity', 0);
-      }, 6000);
-      return true;
-    }).fail(function (e) {
-      return false;
-    });
-  }, 8000);
+  if ($('.post_noti').length) {
+    var _reset_noti = setInterval(function () {
+      $.ajax({
+        url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "get_noti",
+        type: "GET"
+      }).done(function (data) {
+        $('.post_noti').html(data);
+        $('.post_noti').css('opacity', 1);
+        setTimeout(function () {
+          $('.post_noti').css('opacity', 0);
+        }, 6000);
+        return true;
+      }).fail(function (e) {
+        return false;
+      });
+    }, 8000);
+  }
   $('.note-icon').append('<div></div><i class="fa-solid fa-pen-to-square"></i>');
   $('.tip-icon').append('<div></div><i class="fa-solid fa-rocket"></i>');
 });
