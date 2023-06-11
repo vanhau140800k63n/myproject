@@ -107,7 +107,21 @@
             <img class="c_i_c_img" src="https://devsne.vn/image/challenge/rule.png">
         </div>
     </main>
+    @if ($message != null)
+        <div class="contest_modal_bg">
+            <div class="contest_modal">
+                <div class="cm_title"> {{ $message }} </div>
+                <div class="cm_action">
+                    <button class="cm_action_cancel">Quay Lại</button>
+                </div>
+            </div>
+        </div>
+    @endif
     <script>
+        $('.contest_modal_bg').css('display', 'flex');
+        $('.cm_action_cancel').click(function() {
+            $('.contest_modal_bg').hide();
+        })
         function countDown() {
             var currDate = new Date()
             var endTime = new Date(currDate.getFullYear(), currDate.getMonth(), currDate.getDate(), 17, 0, 0);;

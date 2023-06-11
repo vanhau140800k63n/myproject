@@ -52,9 +52,11 @@ class ExamController extends Controller
         return view('pages.exam.home', compact('user'));
     }
 
-    public function getChallengeInfo()
+    public function getChallengeInfo(Request $req)
     {
+        $message = $req->session()->get('message');
         $challenge = $this->challengeRepository->getChallengeWeek();
+        // strtotime($challenge->time_start);
         $top_answer = $this->challengeAnswerRepository->getTopAnswer($challenge->id);
 
         $index = 1;
@@ -64,7 +66,7 @@ class ExamController extends Controller
             $answer->user_name = ($user->first_name == null || $user->first_name == '') && ($user->last_name == null || $user->last_name == '') ? $user->email : $user->last_name . ' ' . $user->first_name;
         }
 
-        return view('pages.exam.challenge_info', compact('challenge', 'top_answer'));
+        return view('pages.exam.challenge_info', compact('challenge', 'top_answer', 'message'));
     }
 
     public function getChallengeWeek()
@@ -73,16 +75,16 @@ class ExamController extends Controller
         $user = Auth::user();
 
         $check_answer_exist = $this->challengeAnswerRepository->getAnswer($user->id, $challenge->id);
-        // if ($check_answer_exist != null) {
-        //     throw new PageException();
-        // }
+        if ($check_answer_exist != null) {
+            return redirect()->route('exam.challenge_weekly')->with('message', 'Hết Lượt Làm Bài');
+        }
 
-        // $data = [
-        //     'user_id' => $user->id,
-        //     'challenge_id' => $challenge->id
-        // ];
+        $data = [
+            'user_id' => $user->id,
+            'challenge_id' => $challenge->id
+        ];
 
-        // $answer = $this->challengeAnswerRepository->createAnswer($data);
+        $answer = $this->challengeAnswerRepository->createAnswer($data);
 
         return view('pages.exam.contest_detail', compact('challenge'));
     }
