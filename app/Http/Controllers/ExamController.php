@@ -56,7 +56,7 @@ class ExamController extends Controller
     {
         $message = $req->session()->get('message');
         $challenge = $this->challengeRepository->getChallengeWeek();
-        // strtotime($challenge->time_start);
+        $time_start = strtotime($challenge->time_start);
         $top_answer = $this->challengeAnswerRepository->getTopAnswer($challenge->id);
 
         $index = 1;
@@ -66,13 +66,18 @@ class ExamController extends Controller
             $answer->user_name = ($user->first_name == null || $user->first_name == '') && ($user->last_name == null || $user->last_name == '') ? $user->email : $user->last_name . ' ' . $user->first_name;
         }
 
-        return view('pages.exam.challenge_info', compact('challenge', 'top_answer', 'message'));
+        return view('pages.exam.challenge_info', compact('challenge', 'top_answer', 'message', 'time_start'));
     }
 
     public function getChallengeWeek()
     {
         $challenge = $this->challengeRepository->getChallengeWeek();
         $user = Auth::user();
+
+        $time_start = strtotime($challenge->time_start);
+        if($time_start > time()) {
+            return redirect()->back()->with('message', 'Bài Thi Chưa Bắt Đầu<br><span style="font-size: 16px; color:#ed5829">'. date('Y-m-d H:i:s', $time_start) . '</span>') ;
+        }
 
         $check_answer_exist = $this->challengeAnswerRepository->getAnswer($user->id, $challenge->id);
         if ($check_answer_exist != null) {

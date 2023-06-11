@@ -10,11 +10,7 @@
             <div class="c_i_b_countdown">
                 <h3>Weekly Challenge</h3>
                 <div id="timer">
-                    <div id="days"></div>
                     <div id="hours"></div>
-                    <div id="minutes"></div>
-                    <div id="seconds"></div>
-                    <div id="log"></div>
                 </div>
             </div>
             <div class="c_i_b_reward">
@@ -110,7 +106,7 @@
     @if ($message != null)
         <div class="contest_modal_bg">
             <div class="contest_modal">
-                <div class="cm_title"> {{ $message }} </div>
+                <div class="cm_title"> {!! $message !!} </div>
                 <div class="cm_action">
                     <button class="cm_action_cancel">Quay Lại</button>
                 </div>
@@ -122,34 +118,41 @@
         $('.cm_action_cancel').click(function() {
             $('.contest_modal_bg').hide();
         })
+
         function countDown() {
             var currDate = new Date()
-            var endTime = new Date(currDate.getFullYear(), currDate.getMonth(), currDate.getDate(), 17, 0, 0);;
+            var endTime = new Date({{ date('Y', $time_start) }}, {{ date('m', $time_start) - 1 }},
+                {{ date('d', $time_start) }}, {{ date('H', $time_start) }}, {{ date('i', $time_start) }},
+                {{ date('s', $time_start) }});
+            // var endTime = new Date({{ date('Y', $time_start) }}, {{ date('m', $time_start) - 1 }},
+            //     {{ date('d', $time_start) }}, 1, 0,
+            //     0);
             endTime = (Date.parse(endTime) / 1000);
             var now = new Date();
             now = (Date.parse(now) / 1000);
             var timeLeft = endTime - now;
 
+            if (timeLeft <= 0) {
+                $("#hours").html('Bắt Đầu Thi');
+                return true;
+            }
+
             var days = Math.floor(timeLeft / 86400);
             var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
             var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
             var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-            if (hours > 8) {
-                hours = 0;
-                minutes = 0;
-                seconds = 0;
-            }
-            if (hours < "17") {
+
+            if (hours < 10) {
                 hours = "0" + hours;
             }
-            if (minutes < "10") {
+            if (minutes < 10) {
                 minutes = "0" + minutes;
             }
-            if (seconds < "10") {
+            if (seconds < 10) {
                 seconds = "0" + seconds;
             }
 
-            $("#hours").html(hours + ":" + minutes + ":" + seconds);
+            $("#hours").html(days + "Ngày " + hours + ":" + minutes + ":" + seconds);
 
         }
 
