@@ -149,7 +149,7 @@ class ExamController extends Controller
         $res = explode(',', $response);
         $answer = $this->challengeAnswerRepository->getAnswer(Auth::id(), $challenge->id);
         $correct_test_case_num = 0;
-        foreach ($req as $test_case) {
+        foreach ($res as $test_case) {
             if ($test_case == 1) {
                 $correct_test_case_num += 1;
             }
