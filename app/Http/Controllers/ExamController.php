@@ -158,7 +158,7 @@ class ExamController extends Controller
         $data = [
             'code' => $req->code,
             'time' => $req->time,
-            'correct_test_case_num' => $req
+            'correct_test_case_num' => $correct_test_case_num
         ];
 
         $update_answer = $this->challengeAnswerRepository->updateAnswer($answer->id, $data);
