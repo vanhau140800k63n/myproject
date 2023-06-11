@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\PageException;
 use App\Repositories\CategoryRepositoryInterface;
+use App\Repositories\ChallengeAnswerRepositoryInterface;
 use App\Repositories\ChallengeRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
@@ -19,6 +21,7 @@ class ExamController extends Controller
     private $lessonRepository;
     private $categoryRepository;
     private $challengeRepository;
+    private $challengeAnswerRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
@@ -26,7 +29,8 @@ class ExamController extends Controller
         PostRepositoryInterface $postRepository,
         LessonRepositoryInterface $lessonRepository,
         CategoryRepositoryInterface $categoryRepository,
-        ChallengeRepositoryInterface $challengeRepository
+        ChallengeRepositoryInterface $challengeRepository,
+        ChallengeAnswerRepositoryInterface $challengeAnswerRepository
     ) {
         $this->userRepository = $userRepository;
         $this->pLanguageRepository = $pLanguageRepository;
@@ -34,6 +38,7 @@ class ExamController extends Controller
         $this->lessonRepository = $lessonRepository;
         $this->categoryRepository = $categoryRepository;
         $this->challengeRepository = $challengeRepository;
+        $this->challengeAnswerRepository = $challengeAnswerRepository;
     }
 
     public function getExamHome()
@@ -55,6 +60,20 @@ class ExamController extends Controller
     public function getChallengeWeek()
     {
         $challenge = $this->challengeRepository->getChallengeWeek();
+        $user = Auth::user();
+
+        $check_answer_exist = $this->challengeAnswerRepository->getAnswer($user->id, $challenge->id);
+        // if ($check_answer_exist != null) {
+        //     throw new PageException();
+        // }
+
+        // $data = [
+        //     'user_id' => $user->id,
+        //     'challenge_id' => $challenge->id
+        // ];
+
+        // $answer = $this->challengeAnswerRepository->createAnswer($data);
+
         return view('pages.exam.contest_detail', compact('challenge'));
     }
 
@@ -64,7 +83,7 @@ class ExamController extends Controller
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://eace-2405-4803-fbab-1660-397a-b23a-58ec-729f.ngrok-free.app/test/test.php',
+            CURLOPT_URL => 'https://0e2f-2405-4803-fbab-1660-4833-562a-d293-591.ngrok-free.app/test/test.php',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
@@ -75,7 +94,9 @@ class ExamController extends Controller
             CURLOPT_POSTFIELDS => http_build_query([
                 'code' => $req->code,
                 'test_case' => $challenge->test_case,
-                'test_case_result' => $challenge->test_case_result
+                'test_case_result' => $challenge->test_case_result,
+                'challenge_id' => $challenge->id,
+                'user_id' => Auth::id()
             ]),
             CURLOPT_HTTPHEADER => array(),
         ));
@@ -96,5 +117,50 @@ class ExamController extends Controller
         }
 
         return response()->json($output);
+    }
+
+    public function submitCode(Request $req)
+    {
+        $challenge = $this->challengeRepository->getChallengeWeek();
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => 'https://eace-2405-4803-fbab-1660-397a-b23a-58ec-729f.ngrok-free.app/test/test.php',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => http_build_query([
+                'code' => $req->code,
+                'test_case' => $challenge->test_case,
+                'test_case_result' => $challenge->test_case_result,
+                'challenge_id' => $challenge->id,
+                'user_id' => Auth::id()
+            ]),
+            CURLOPT_HTTPHEADER => array(),
+        ));
+
+        $response = curl_exec($curl);
+        curl_close($curl);
+
+        $res = explode(',', $response);
+        $answer = $this->challengeAnswerRepository->getAnswer(Auth::id(), $challenge->id);
+        $correct_test_case_num = 0;
+        foreach ($req as $test_case) {
+            if ($test_case == 1) {
+                $correct_test_case_num += 1;
+            }
+        }
+
+        $data = [
+            'code' => $req->code,
+            'time' => $req->time,
+            'correct_test_case_num' => $req
+        ];
+
+        $update_answer = $this->challengeAnswerRepository->updateAnswer($answer->id, $data);
     }
 }

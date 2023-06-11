@@ -5039,7 +5039,8 @@ select {
     border-radius: 5px;
 }
 
-.contest_run, .contest_submit {
+.contest_run,
+.contest_submit {
     padding: 5px 10px;
     background: #526194;
     color: #fff;
@@ -5204,5 +5205,132 @@ select {
     font-weight: 500;
     margin: 0 5px;
     color: #616467;
+}
+
+details {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    margin-top: 2rem;
+    color: #6b7280;
+    display: flex;
+    flex-direction: column;
+}
+
+details p {
+    line-height: 1.3;
+}
+
+details p span {
+    font-size: 10px;
+    padding: 1px 5px;
+    color: #000;
+    font-weight: 600;
+    background: #fff;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+
+details button {
+    padding: 3px 8px;
+    background: #526194;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+details div {
+    background-color: #1e1e27;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 1.25rem;
+    border-radius: 8px;
+    position: absolute;
+    max-height: calc(100vh - 100px);
+    width: 400px;
+    max-width: calc(100vw - 2rem);
+    bottom: calc(100% + 1rem);
+    right: 0;
+    overflow: auto;
+    transform-origin: 100% 100%;
+    color: #95a3b9;
+}
+
+details div::-webkit-scrollbar {
+    width: 15px;
+    background-color: #1e1e27;
+}
+
+details div::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 99em;
+    background-color: #95a3b9;
+    border: 5px solid #1e1e27;
+}
+
+details div>*+* {
+    margin-top: 0.75em;
+}
+
+details div p>code {
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+details div pre {
+    white-space: pre-line;
+    border: 1px solid #95a3b9;
+    border-radius: 6px;
+    font-family: monospace;
+    padding: 0.75em;
+    font-size: 0.875rem;
+    color: #fff;
+}
+
+details[open] div {
+    animation: scale 0.25s ease;
+}
+
+summary {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 0.75em 3em 0.75em 1.25em;
+    border-radius: 99em;
+    color: #fff;
+    background-color: #1e1e27;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.15s ease;
+    position: relative;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary svg {
+    position: absolute;
+    right: 1.25em;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5em;
+    height: 1.5em;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 

@@ -52,9 +52,39 @@
             <h1> {{ $challenge->title }} </h1>
             <div class="contest_creen_info" time="{{ $challenge->time }}">
                 <p>Thời gian: {{ $challenge->time }}p</p>
-                <p>Ngôn ngữ: Java</p>
+                <p>Ngôn ngữ: {{ $challenge->language }}</p>
             </div>
         </main>
     </div>
+    <details>
+        <summary>Hướng dẫn<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
+                viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-lin editer
+                    bên tráiecap="round" stroke-linejoin="round" stroke-width="16"></circle>
+                <circle cx="128" cy="180" r="12"></circle>
+                <path d="M127.9995,144.0045v-8a28,28,0,1,0-28-28" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+            </svg></summary>
+        <div>
+            <p><span>1</span>Hoàn thành thử thách với đề bài bên phải. Mỗi người tham gia sẽ sử dụng
+                        kiến thức để viết đoạn code của mình vào ô bên trái
+            </p>
+            <pre>
+                <code>public class Main { 
+                        &nbsp;&nbsp;public static void main(String[] args) {
+                        &nbsp;&nbsp;&nbsp;&nbsp;// your code here
+                        &nbsp;&nbsp;}
+                        }               
+                </code>
+            </pre>
+            <p><span>2</span>Thời gian sẽ được tính từ lúc bạn vào thử thách
+            </p>
+            <p><span>3</span>Sử dụng nút <button>Chạy Thử</button> để kiểm tra, nút <button>Nộp Bài</button> nộp
+                kết quả
+                và kết thúc bài thi
+            </p>
+        </div>
+    </details>
     <script src="{{ asset(mix('js/contest.js')) }}"></script>
 @endsection

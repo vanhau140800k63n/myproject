@@ -30143,16 +30143,36 @@ $(document).ready(function () {
       return false;
     });
   });
-  var cd_time = $('.contest_creen_info').attr('time') * 60;
-  var cr_time = 0;
+  var cd_time_contest = $('.contest_creen_info').attr('time') * 60;
+  var cr_time_contest = 0;
   setInterval(function () {
-    cr_time += 1;
-    var s_text = String("0" + cr_time % 60).slice(-2);
-    var m_text = Math.floor(cr_time / 60);
-    var w_percent = cr_time / cd_time * 100;
+    cr_time_contest += 1;
+    var s_text = String("0" + cr_time_contest % 60).slice(-2);
+    var m_text = Math.floor(cr_time_contest / 60);
+    var w_percent = cr_time_contest / cd_time_contest * 100;
     $('.time_countdown_bg').css('width', w_percent + '%');
     $('.time_countdown_el').html(m_text + 'p:' + s_text + 's');
   }, 1000);
+  $('.contest_submit').click(function () {
+    var _token = $('input[name="_token"]').val();
+    $.ajax({
+      url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "exam/challenge/submit",
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      type: "POST",
+      dataType: 'json',
+      data: {
+        code: editer.state.doc.toString(),
+        time: cr_time_contest,
+        _token: _token
+      }
+    }).done(function (data) {
+      return true;
+    }).fail(function (e) {
+      return false;
+    });
+  });
 });
 })();
 
