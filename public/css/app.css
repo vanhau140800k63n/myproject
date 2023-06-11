@@ -5334,3 +5334,44 @@ summary svg {
     }
 }
 
+.contest_modal_bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #00000030;
+    z-index: 10;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.contest_modal {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.cm_title {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cm_action {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.cm_action button {
+    padding: 5px 10px;
+    background: #526194;
+    color: #fff;
+    border: none;
+    margin: 0 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

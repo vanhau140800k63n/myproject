@@ -28,4 +28,8 @@ class ChallengeAnswerRepository extends BaseRepository implements ChallengeAnswe
     public function updateAnswer($id, $data) {
         return $this->challenge_answer->where('id', $id)->update($data);
     }
+
+    public function getTopAnswer($challenge_id) {
+        return $this->challenge_answer->where('challenge_id', $challenge_id)->orderBy('correct_test_case_num', 'desc')->orderBy('time', 'asc')->take(5)->get();
+    }
 }

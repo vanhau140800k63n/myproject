@@ -30124,6 +30124,7 @@ $(document).ready(function () {
   });
   $('.contest_design .ͼ1.cm-editor').height($('.contest_editer_box').height() - $('.contest_lg_mode').height());
   $('.contest_run').click(function () {
+    $('.fa-loader').show();
     var _token = $('input[name="_token"]').val();
     $.ajax({
       url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "exam/challenge/run",
@@ -30138,8 +30139,10 @@ $(document).ready(function () {
       }
     }).done(function (data) {
       $('.test_case').html(data);
+      $('.fa-loader').hide();
       return true;
     }).fail(function (e) {
+      $('.fa-loader').hide();
       return false;
     });
   });
@@ -30154,6 +30157,9 @@ $(document).ready(function () {
     $('.time_countdown_el').html(m_text + 'p:' + s_text + 's');
   }, 1000);
   $('.contest_submit').click(function () {
+    $('.contest_modal_bg').css('display', 'flex');
+  });
+  $('.cm_action_submit').click(function () {
     var _token = $('input[name="_token"]').val();
     $.ajax({
       url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "exam/challenge/submit",
@@ -30172,6 +30178,9 @@ $(document).ready(function () {
     }).fail(function (e) {
       return false;
     });
+  });
+  $('.cm_action_cancel').click(function () {
+    $('.contest_modal_bg').hide();
   });
 });
 })();

@@ -34,7 +34,7 @@
         <div class="contest_editer_box">
             <div class="contest_editer" value="{{ $challenge->default_code }}" lang="{{ $challenge->language }}"></div>
             <div class="contest_lg_mode">
-                <button class="contest_run"> Chạy Thử </button>
+                <button class="contest_run"> Chạy Thử <i class="fa-solid fa-loader fa-spin" style="display: none"></i></button>
                 <button class="contest_submit"> Nộp Bài </button>
             </div>
             <div class="test_case">
@@ -68,7 +68,7 @@
             </svg></summary>
         <div>
             <p><span>1</span>Hoàn thành thử thách với đề bài bên phải. Mỗi người tham gia sẽ sử dụng
-                        kiến thức để viết đoạn code của mình vào ô bên trái
+                kiến thức để viết đoạn code của mình vào ô bên trái
             </p>
             <pre>
                 <code>public class Main { 
@@ -86,5 +86,14 @@
             </p>
         </div>
     </details>
+    <div class="contest_modal_bg">
+        <div class="contest_modal">
+            <div class="cm_title"> Xác Nhận Nộp Bài </div>
+            <div class="cm_action">
+                <button class="cm_action_cancel">Quay Lại</button>
+                <button class="cm_action_submit">Nộp Bài</button>
+            </div>
+        </div>
+    </div>
     <script src="{{ asset(mix('js/contest.js')) }}"></script>
 @endsection

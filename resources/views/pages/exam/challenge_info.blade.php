@@ -24,7 +24,7 @@
             </div>
             <div class="c_i_b_clock">
                 <img width="40px" src="https://devsne.vn/image/challenge/clock.png">
-                <p>Thời gian: 30 phút</p>
+                <p>Thời gian: {{ $challenge->time }} phút</p>
             </div>
             <div class="c_i_b_skill">
                 <img width="40px" src="https://devsne.vn/image/challenge/skill.png">
@@ -36,35 +36,25 @@
             <div class="leaderboard">
                 <div class="ribbon"></div>
                 <table>
-                    <tr>
-                        <td class="number">1</td>
-                        <td class="name">Lee Taeyong</td>
-                        <td class="points">
-                            258.244 <img class="gold-medal"
-                                src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true"
-                                alt="gold medal" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="number">2</td>
-                        <td class="name">Mark Lee</td>
-                        <td class="points">258.242</td>
-                    </tr>
-                    <tr>
-                        <td class="number">3</td>
-                        <td class="name">Xiao Dejun</td>
-                        <td class="points">258.223</td>
-                    </tr>
-                    <tr>
-                        <td class="number">4</td>
-                        <td class="name">Qian Kun</td>
-                        <td class="points">258.212</td>
-                    </tr>
-                    <tr>
-                        <td class="number">5</td>
-                        <td class="name">Johnny Suh</td>
-                        <td class="points">258.208</td>
-                    </tr>
+                    @foreach ($top_answer as $answer)
+                        @if ($answer->index == 1)
+                            <tr>
+                                <td class="number">{{ $answer->index }}</td>
+                                <td class="name">{{ $answer->user_name }}</td>
+                                <td class="points">
+                                    {{ $answer->correct_test_case_num * 100 }} <img class="gold-medal"
+                                        src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true"
+                                        alt="gold medal" />
+                                </td>
+                            </tr>
+                        @else
+                            <tr>
+                                <td class="number">{{ $answer->index }}</td>
+                                <td class="name">{{ $answer->user_name }}</td>
+                                <td class="points">{{ $answer->correct_test_case_num * 100 }}</td>
+                            </tr>
+                        @endif
+                    @endforeach
                 </table>
             </div>
             <img class="c_i_g_img" src="https://devsne.vn/image/challenge/ranking.png">

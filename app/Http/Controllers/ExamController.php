@@ -54,7 +54,17 @@ class ExamController extends Controller
 
     public function getChallengeInfo()
     {
-        return view('pages.exam.challenge_info');
+        $challenge = $this->challengeRepository->getChallengeWeek();
+        $top_answer = $this->challengeAnswerRepository->getTopAnswer($challenge->id);
+
+        $index = 1;
+        foreach ($top_answer as $answer) {
+            $user = $this->userRepository->getUserById($answer->user_id);
+            $answer->index = $index++;
+            $answer->user_name = ($user->first_name == null || $user->first_name == '') && ($user->last_name == null || $user->last_name == '') ? $user->email : $user->last_name . ' ' . $user->first_name;
+        }
+
+        return view('pages.exam.challenge_info', compact('challenge', 'top_answer'));
     }
 
     public function getChallengeWeek()
