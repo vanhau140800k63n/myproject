@@ -70,7 +70,17 @@ class HomeController extends Controller
 
         curl_close($curl);
 
-        echo $response;
+        $res = explode(',', $response);
+
+        $correct_test_case_num = 0;
+
+        foreach ($res as $test_case) {
+            echo($test_case);
+            if (intval($test_case) == 1) {
+                ++$correct_test_case_num;
+            }
+        }
+
     }
 
     public function test1(Request $req)

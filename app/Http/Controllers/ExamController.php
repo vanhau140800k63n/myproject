@@ -125,7 +125,7 @@ class ExamController extends Controller
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://eace-2405-4803-fbab-1660-397a-b23a-58ec-729f.ngrok-free.app/test/test.php',
+            CURLOPT_URL => 'https://0e2f-2405-4803-fbab-1660-4833-562a-d293-591.ngrok-free.app/test/test.php',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
@@ -149,9 +149,10 @@ class ExamController extends Controller
         $res = explode(',', $response);
         $answer = $this->challengeAnswerRepository->getAnswer(Auth::id(), $challenge->id);
         $correct_test_case_num = 0;
+
         foreach ($res as $test_case) {
             if ($test_case == 1) {
-                $correct_test_case_num += 1;
+                ++$correct_test_case_num;
             }
         }
 
