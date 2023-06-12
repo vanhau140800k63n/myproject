@@ -15,8 +15,8 @@
             </div>
             <div class="c_i_b_reward">
                 <img width="40px" src="https://devsne.vn/image/challenge/cup.png">
-                <p><span style="font-weight: 700; margin-bottom: 5px; color: #f6b866">Giải nhất</span><br>Chuột không dây
-                </p>
+                <p>Giải nhất</p><a target="_blank" style="font-weight: 700; color: #f6b866;"
+                    href="https://cellphones.com.vn/ban-phim-co-rapoo-v500-pro-blue-switch.html">Bàn Phím Cơ</a>
             </div>
             <div class="c_i_b_clock">
                 <img width="40px" src="https://devsne.vn/image/challenge/clock.png">
@@ -65,7 +65,7 @@
                         <tr>
                             <th>
                                 Thời gian:</th>
-                            <td style="padding:16px;">30 phút</td>
+                            <td style="padding:16px;">{{ $challenge->time }} phút</td>
                         </tr>
                         <tr>
                             <th>
@@ -124,9 +124,6 @@
             var endTime = new Date({{ date('Y', $time_start) }}, {{ date('m', $time_start) - 1 }},
                 {{ date('d', $time_start) }}, {{ date('H', $time_start) }}, {{ date('i', $time_start) }},
                 {{ date('s', $time_start) }});
-            // var endTime = new Date({{ date('Y', $time_start) }}, {{ date('m', $time_start) - 1 }},
-            //     {{ date('d', $time_start) }}, 1, 0,
-            //     0);
             endTime = (Date.parse(endTime) / 1000);
             var now = new Date();
             now = (Date.parse(now) / 1000);
@@ -153,7 +150,6 @@
             }
 
             $("#hours").html(days + "Ngày " + hours + ":" + minutes + ":" + seconds);
-
         }
 
         setInterval(function() {

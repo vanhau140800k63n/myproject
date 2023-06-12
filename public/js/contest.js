@@ -30117,12 +30117,11 @@ $(document).ready(function () {
     parent: document.querySelector(".contest_editer"),
     doc: $('.contest_editer').attr('value')
   });
-  $('.contest_lg_select').change(function () {
-    editer.dispatch({
-      effects: langHolder.reconfigure(language_list[$(this).val()])
-    });
-  });
-  $('.contest_design .ͼ1.cm-editor').height($('.contest_editer_box').height() - $('.contest_lg_mode').height());
+
+  // $('.contest_lg_select').change(function () {
+  //     editer.dispatch({ effects: langHolder.reconfigure(language_list[$(this).val()]) })
+  // })
+
   $('.contest_run').click(function () {
     $('.fa-loader').show();
     var _token = $('input[name="_token"]').val();
@@ -30142,6 +30141,7 @@ $(document).ready(function () {
       $('.fa-loader').hide();
       return true;
     }).fail(function (e) {
+      $('.test_case').html('');
       $('.fa-loader').hide();
       return false;
     });
@@ -30149,11 +30149,11 @@ $(document).ready(function () {
   var cd_time_contest = $('.contest_creen_info').attr('time') * 60;
   var cr_time_contest = 0;
   var count_down = setInterval(function () {
+    cr_time_contest += 1;
     if (cr_time_contest == cd_time_contest) {
       $('.cm_action_submit').click();
       clearInterval(count_down);
     }
-    cr_time_contest += 1;
     var s_text = String("0" + cr_time_contest % 60).slice(-2);
     var m_text = Math.floor(cr_time_contest / 60);
     var w_percent = cr_time_contest / cd_time_contest * 100;

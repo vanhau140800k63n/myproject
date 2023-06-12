@@ -18,26 +18,17 @@ class ExamController extends Controller
 {
     private $userRepository;
     private $pLanguageRepository;
-    private $postRepository;
-    private $lessonRepository;
-    private $categoryRepository;
     private $challengeRepository;
     private $challengeAnswerRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
         PLanguageRepositoryInterface $pLanguageRepository,
-        PostRepositoryInterface $postRepository,
-        LessonRepositoryInterface $lessonRepository,
-        CategoryRepositoryInterface $categoryRepository,
         ChallengeRepositoryInterface $challengeRepository,
         ChallengeAnswerRepositoryInterface $challengeAnswerRepository
     ) {
         $this->userRepository = $userRepository;
         $this->pLanguageRepository = $pLanguageRepository;
-        $this->postRepository = $postRepository;
-        $this->lessonRepository = $lessonRepository;
-        $this->categoryRepository = $categoryRepository;
         $this->challengeRepository = $challengeRepository;
         $this->challengeAnswerRepository = $challengeAnswerRepository;
     }
@@ -79,18 +70,18 @@ class ExamController extends Controller
         $time_start = strtotime($challenge->time_start);
         $time_end = strtotime($challenge->time_start . ' +15 minutes');
 
-        // if ($time_start > time()) {
-        //     return redirect()->back()->with('message', 'Bài Thi Chưa Bắt Đầu<br><span style="font-size: 16px; color:#ed5829; font-weight: 600">' . date('Y-m-d H:i:s', $time_start) . '</span>');
-        // }
+        if ($time_start > time()) {
+            return redirect()->back()->with('message', 'Bài Thi Chưa Bắt Đầu<br><span style="font-size: 16px; color:#ed5829; font-weight: 600">' . date('Y-m-d H:i:s', $time_start) . '</span>');
+        }
 
-        // $check_answer_exist = $this->challengeAnswerRepository->getAnswer($user->id, $challenge->id);
-        // if ($check_answer_exist != null) {
-        //     return redirect()->route('exam.challenge_weekly')->with('message', 'Hết Lượt Làm Bài');
-        // }
+        $check_answer_exist = $this->challengeAnswerRepository->getAnswer($user->id, $challenge->id);
+        if ($check_answer_exist != null) {
+            return redirect()->route('exam.challenge_weekly')->with('message', 'Hết Lượt Làm Bài');
+        }
 
-        // if (time() > $time_end) {
-        //     return redirect()->back()->with('message', 'Quá Thời Gian Làm Bài');
-        // }
+        if (time() > $time_end) {
+            return redirect()->back()->with('message', 'Quá Thời Gian Làm Bài');
+        }
 
         $data = [
             'user_id' => $user->id,
@@ -130,9 +121,7 @@ class ExamController extends Controller
         curl_close($curl);
 
         $res = explode(',', $response);
-
         $output = '';
-
         for ($i = 0; $i < count($res); ++$i) {
             if ($res[$i] == 1) {
                 $output .= '<div class="test_case_item pass">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-check"></i></div>';
@@ -198,7 +187,6 @@ class ExamController extends Controller
         ];
 
         $update_answer = $this->challengeAnswerRepository->updateAnswer($answer->id, $data);
-
         return redirect()->route('exam.challenge_weekly')->with('message', 'Bạn Đã Hoàn Thành<br>' . '<span style="font-size: 16px; color:#ed5829; font-weight: 500">' . 'Kết quả: ' . $score . ' Điểm</span>');
     }
 }

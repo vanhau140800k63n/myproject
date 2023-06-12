@@ -16,11 +16,13 @@ class ChallengeRepository extends BaseRepository implements ChallengeRepositoryI
         $this->challenge = new Challenge();
     }
 
-    public function getChallengeWeek() {
+    public function getChallengeWeek()
+    {
         return $this->challenge->where('type', ExamConstants::WEEKLY_C_TYPE)->where('status', ExamConstants::C_CURRENT)->first();
     }
 
-    public function getChallengeRanking() {
+    public function getChallengeRanking()
+    {
         return $this->challenge->where('type', ExamConstants::WEEKLY_C_TYPE)->where('status', ExamConstants::C_RANKING)->first();
     }
 }

@@ -59,7 +59,8 @@ class CategoryRepository extends BaseRepository implements CategoryRepositoryInt
         return $output;
     }
 
-    public function getCategorySearch($key) {
+    public function getCategorySearch($key)
+    {
         return $this->category->where('title', 'like', '%' . $key . '%')->get();
     }
 }
