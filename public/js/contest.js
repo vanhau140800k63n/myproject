@@ -30149,6 +30149,9 @@ $(document).ready(function () {
   var cd_time_contest = $('.contest_creen_info').attr('time') * 60;
   var cr_time_contest = 0;
   setInterval(function () {
+    if (cr_time_contest == cd_time_contest) {
+      $('.cm_action_submit').click();
+    }
     cr_time_contest += 1;
     var s_text = String("0" + cr_time_contest % 60).slice(-2);
     var m_text = Math.floor(cr_time_contest / 60);
