@@ -16,6 +16,7 @@ class ChallengeAnswer extends Model
         'challenge_id',
         'code',
         'correct_test_case_num',
-        'score'
+        'score',
+        'exec_time'
     ];
 }

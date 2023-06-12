@@ -120,10 +120,16 @@ class ExamController extends Controller
         $response = curl_exec($curl);
         curl_close($curl);
 
-        $res = explode(',', $response);
+        $res_test_case = [];
+
+        if ($response != 'error') {
+            $res = explode('|', $response);
+            $res_test_case = explode(',', $res[0]);
+        }
+
         $output = '';
-        for ($i = 0; $i < count($res); ++$i) {
-            if ($res[$i] == 1) {
+        for ($i = 0; $i < count($res_test_case); ++$i) {
+            if ($res_test_case[$i] == 1) {
                 $output .= '<div class="test_case_item pass">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-check"></i></div>';
             } else {
                 $output .= '<div class="test_case_item error">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-xmark"></i></div>';
@@ -160,20 +166,21 @@ class ExamController extends Controller
         $response = curl_exec($curl);
         curl_close($curl);
 
-        $res = explode(',', $response);
+        $exec_time = 0;
+        $res_test_case = [];
+        if ($response != 'error') {
+            $res = explode('|', $response);
+            $res_test_case = explode(',', $res[0]);
+            $exec_time = $res[1];
+        }
+
         $answer = $this->challengeAnswerRepository->getAnswer(Auth::id(), $challenge->id);
         $correct_test_case_num = 0;
         $test_case_score = explode('|', $challenge->test_case_score);
         $score = 0;
 
-        foreach ($res as $test_case) {
-            if ($test_case == 1) {
-                ++$correct_test_case_num;
-            }
-        }
-
-        for ($i = 0; $i < count($res); ++$i) {
-            if ($res[$i] == 1) {
+        for ($i = 0; $i < count($res_test_case); ++$i) {
+            if ($res_test_case[$i] == 1) {
                 ++$correct_test_case_num;
                 $score += $test_case_score[$i];
             }
@@ -183,7 +190,8 @@ class ExamController extends Controller
             'code' => $req->code,
             'time' => $req->time,
             'correct_test_case_num' => $correct_test_case_num,
-            'score' => $score
+            'score' => $score,
+            'exec_time' => $exec_time
         ];
 
         $update_answer = $this->challengeAnswerRepository->updateAnswer($answer->id, $data);
