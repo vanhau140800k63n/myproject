@@ -193,11 +193,12 @@ class ExamController extends Controller
         $data = [
             'code' => $req->code,
             'time' => $req->time,
-            'correct_test_case_num' => $correct_test_case_num
+            'correct_test_case_num' => $correct_test_case_num,
+            'score' => $score
         ];
 
         $update_answer = $this->challengeAnswerRepository->updateAnswer($answer->id, $data);
 
-        return redirect()->route('exam.challenge_weekly')->with('message', 'Bạn Đã Hoàn Thành<br>' . '<span style="font-size: 16px; color:#ed5829; font-weight: 500">' . 'Kết quả: ' . $correct_test_case_num * 100 . ' Điểm</span>');
+        return redirect()->route('exam.challenge_weekly')->with('message', 'Bạn Đã Hoàn Thành<br>' . '<span style="font-size: 16px; color:#ed5829; font-weight: 500">' . 'Kết quả: ' . $score . ' Điểm</span>');
     }
 }
