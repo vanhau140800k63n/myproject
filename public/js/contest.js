@@ -30148,9 +30148,10 @@ $(document).ready(function () {
   });
   var cd_time_contest = $('.contest_creen_info').attr('time') * 60;
   var cr_time_contest = 0;
-  setInterval(function () {
+  var count_down = setInterval(function () {
     if (cr_time_contest == cd_time_contest) {
       $('.cm_action_submit').click();
+      clearInterval(count_down);
     }
     cr_time_contest += 1;
     var s_text = String("0" + cr_time_contest % 60).slice(-2);
