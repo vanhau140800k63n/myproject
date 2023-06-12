@@ -55,6 +55,7 @@
                 <p>Thời gian: {{ $challenge->time }}p</p>
                 <p>Ngôn ngữ: <span style="text-transform: uppercase; font-weight: 600">{{ $challenge->language }}</span></p>
             </div>
+            {!! $challenge->content !!}
         </main>
     </div>
     <details>
