@@ -38,7 +38,7 @@
                                 <td class="number">{{ $answer->index }}</td>
                                 <td class="name">{{ $answer->user_name }}</td>
                                 <td class="points">
-                                    {{ $answer->correct_test_case_num * 100 }} <img class="gold-medal"
+                                    {{ $answer->score }} <img class="gold-medal"
                                         src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true"
                                         alt="gold medal" />
                                 </td>
@@ -47,7 +47,7 @@
                             <tr>
                                 <td class="number">{{ $answer->index }}</td>
                                 <td class="name">{{ $answer->user_name }}</td>
-                                <td class="points">{{ $answer->correct_test_case_num * 100 }}</td>
+                                <td class="points">{{ $answer->score }}</td>
                             </tr>
                         @endif
                     @endforeach
