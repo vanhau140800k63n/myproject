@@ -20,7 +20,7 @@
         }
 
         .contest_editer .ͼ1.cm-editor {
-            height: calc(100vh - 250px) !important;
+            height: calc(100vh - 150px) !important;
         }
     </style>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
