@@ -70,14 +70,14 @@ class ExamController extends Controller
         $time_start = strtotime($challenge->time_start);
         $time_end = strtotime($challenge->time_start . ' +30 minutes');
 
-        // if ($time_start > time()) {
-        //     return redirect()->back()->with('message', 'Bài Thi Chưa Bắt Đầu<br><span style="font-size: 16px; color:#ed5829; font-weight: 600">' . date('Y-m-d H:i:s', $time_start) . '</span>');
-        // }
+        if ($time_start > time()) {
+            return redirect()->back()->with('message', 'Bài Thi Chưa Bắt Đầu<br><span style="font-size: 16px; color:#ed5829; font-weight: 600">' . date('Y-m-d H:i:s', $time_start) . '</span>');
+        }
 
-        // $check_answer_exist = $this->challengeAnswerRepository->getAnswer($user->id, $challenge->id);
-        // if ($check_answer_exist != null) {
-        //     return redirect()->route('exam.challenge_weekly')->with('message', 'Hết Lượt Làm Bài');
-        // }
+        $check_answer_exist = $this->challengeAnswerRepository->getAnswer($user->id, $challenge->id);
+        if ($check_answer_exist != null) {
+            return redirect()->route('exam.challenge_weekly')->with('message', 'Hết Lượt Làm Bài');
+        }
 
         // if (time() > $time_end) {
         //     return redirect()->back()->with('message', 'Quá Thời Gian Làm Bài');
