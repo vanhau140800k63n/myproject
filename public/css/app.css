@@ -5020,7 +5020,7 @@ a.template_type_item.active {
     margin-top: 20px;
     background: #282c34;
     height: auto;
-    border-radius: 5px;
+    border-radius: 15px;
     min-height: 150px;
 }
 
@@ -5048,7 +5048,7 @@ select {
     margin-left: 10px;
     margin-top: 10px;
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -5071,7 +5071,7 @@ select {
     margin-right: 20px;
     margin-top: 20px;
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -5371,7 +5371,7 @@ summary svg {
     border: none;
     margin: 0 20px;
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
