@@ -30160,24 +30160,16 @@ $(document).ready(function () {
     $('.contest_modal_bg').css('display', 'flex');
   });
   $('.cm_action_submit').click(function () {
-    var _token = $('input[name="_token"]').val();
-    $.ajax({
-      url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "exam/challenge/submit",
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      type: "POST",
-      dataType: 'json',
-      data: {
-        code: editer.state.doc.toString(),
-        time: cr_time_contest,
-        _token: _token
-      }
-    }).done(function (data) {
-      return true;
-    }).fail(function (e) {
-      return false;
+    var newForm = $('<form>', {
+      'action': _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'exam/challenge/submit',
+      'method': 'POST'
     });
+    var csrfVar = $('meta[name="csrf-token"]').attr('content');
+    newForm.append("<input name='code' value='" + editer.state.doc.toString() + "' type='hidden'>");
+    newForm.append("<input name='time' value='" + cr_time_contest + "' type='hidden'>");
+    newForm.append("<input name='_token' value='" + csrfVar + "' type='hidden'>");
+    $('body').append(newForm);
+    newForm.submit();
   });
   $('.cm_action_cancel').click(function () {
     $('.contest_modal_bg').hide();

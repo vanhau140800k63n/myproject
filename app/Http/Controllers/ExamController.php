@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Config\ExamConstants;
 use App\Exceptions\PageException;
 use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\ChallengeAnswerRepositoryInterface;
@@ -101,7 +102,7 @@ class ExamController extends Controller
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://0e2f-2405-4803-fbab-1660-4833-562a-d293-591.ngrok-free.app/test/test.php',
+            CURLOPT_URL => ExamConstants::SUBMIT_URL,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
@@ -143,7 +144,7 @@ class ExamController extends Controller
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://0e2f-2405-4803-fbab-1660-4833-562a-d293-591.ngrok-free.app/test/test.php',
+            CURLOPT_URL => ExamConstants::SUBMIT_URL,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
@@ -181,5 +182,7 @@ class ExamController extends Controller
         ];
 
         $update_answer = $this->challengeAnswerRepository->updateAnswer($answer->id, $data);
+
+        return redirect()->route('exam.challenge_weekly')->with('message', 'Bạn Đã Hoàn Thành<br>' . '<span style="font-size: 16px; color:#ed5829; font-weight: 500">' . 'Kết quả: ' . $correct_test_case_num * 100 . ' Điểm</span>');
     }
 }

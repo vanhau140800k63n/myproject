@@ -34,7 +34,8 @@
         <div class="contest_editer_box">
             <div class="contest_editer" value="{{ $challenge->default_code }}" lang="{{ $challenge->language }}"></div>
             <div class="contest_lg_mode">
-                <button class="contest_run"> Chạy Thử <i class="fa-solid fa-loader fa-spin" style="display: none"></i></button>
+                <button class="contest_run"> Chạy Thử <i class="fa-solid fa-loader fa-spin"
+                        style="display: none"></i></button>
                 <button class="contest_submit"> Nộp Bài </button>
             </div>
             <div class="test_case">
@@ -52,7 +53,7 @@
             <h1> {{ $challenge->title }} </h1>
             <div class="contest_creen_info" time="{{ $challenge->time }}">
                 <p>Thời gian: {{ $challenge->time }}p</p>
-                <p>Ngôn ngữ: {{ $challenge->language }}</p>
+                <p>Ngôn ngữ: <span style="text-transform: uppercase; font-weight: 600">{{ $challenge->language }}</span></p>
             </div>
         </main>
     </div>
