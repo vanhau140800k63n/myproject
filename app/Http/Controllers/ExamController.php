@@ -174,10 +174,19 @@ class ExamController extends Controller
         $res = explode(',', $response);
         $answer = $this->challengeAnswerRepository->getAnswer(Auth::id(), $challenge->id);
         $correct_test_case_num = 0;
+        $test_case_score = explode('|', $challenge->test_case_score);
+        $score = 0;
 
         foreach ($res as $test_case) {
             if ($test_case == 1) {
                 ++$correct_test_case_num;
+            }
+        }
+
+        for ($i = 0; $i < count($res); ++$i) {
+            if ($res[$i] == 1) {
+                ++$correct_test_case_num;
+                $score += $test_case_score[$i];
             }
         }
 

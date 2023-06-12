@@ -15,6 +15,7 @@ class ChallengeAnswer extends Model
         'time',
         'challenge_id',
         'code',
-        'correct_test_case_num'
+        'correct_test_case_num',
+        'score'
     ];
 }
