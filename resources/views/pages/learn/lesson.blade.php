@@ -74,6 +74,42 @@
         </div>
         <div class="lesson_box_content">
             <div class="lesson_box_content_title">{{ $lesson->title }}</div>
+            <a href="{{ route('exam.home') }}">
+                <div class="contest_banner">
+                    <div class="playful">
+                        <span aria-hidden="true">C</span>
+                        <span aria-hidden="true">o</span>
+                        <span aria-hidden="true">d</span>
+                        <span aria-hidden="true">i</span>
+                        <span aria-hidden="true">n</span>
+                        <span aria-hidden="true">g</span>
+                        <span aria-hidden="true">&nbsp;</span>
+                        <span aria-hidden="true">C</span>
+                        <span aria-hidden="true">h</span>
+                        <span aria-hidden="true">a</span>
+                        <span aria-hidden="true">l</span>
+                        <span aria-hidden="true">l</span>
+                        <span aria-hidden="true">e</span>
+                        <span aria-hidden="true">n</span>
+                        <span aria-hidden="true">g</span>
+                        <span aria-hidden="true">e</span>
+                    </div>
+                    <div class="banner_info">
+                        <div class="banner_info_item">
+                            <img class="b_i_t_img_title" src="{{ asset('image/giftbox.png') }}">
+                            <div class="b_i_t_text">Bàn phím cơ Rapoo V500 Pro Yellow Blue</div>
+                        </div>
+                        <div class="banner_info_item">
+                            <img class="b_i_t_img_title" src="{{ asset('image/coding.png') }}">
+                            <div class="b_i_t_text">Java, C++, Python, PHP, JavaScript</div>
+                        </div>
+                        <div class="banner_info_item">
+                            <img class="b_i_t_img_title" src="{{ asset('image/algorithm.png') }}">
+                            <div class="b_i_t_text">Kiến thức, cấu trúc dữ liệu & giải thuật</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
             @foreach ($lesson_detail as $item)
                 <div class="lesson_content">
                     <div class="lesson_content_head">

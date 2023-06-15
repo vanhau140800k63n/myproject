@@ -5160,36 +5160,6 @@ select {
     color: #004cbd;
 }
 
-@media only screen and (min-width: 1400px) {}
-
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .contest_creen {
-        --h1-size: 22px;
-        --h2-size: 20px;
-        --h3-size: 18px;
-    }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 767px) {
-    .contest_creen {
-        --h1-size: 21px;
-        --h2-size: 19px;
-        --h3-size: 17px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .contest_creen {
-        --h1-size: 20px;
-        --h2-size: 18px;
-        --h3-size: 16px;
-    }
-}
-
 .time_countdown {
     border: 1px solid rgb(193, 192, 194);
     margin-bottom: 20px;
@@ -5385,5 +5355,152 @@ summary svg {
     font-weight: 500;
     border-radius: 15px;
     cursor: pointer;
+}
+
+.contest_banner {
+    height: 200px;
+    background-image: url('/image/contest_banner_bg.jpg');
+    background-size: contain;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.playful span {
+    font-size: 40px;
+    position: relative;
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 0.25px 0.25px #85bbf8, 0.5px 0.5px #85bbf8, 0.75px 0.75px #85bbf8, 1px 1px #85bbf8, 1.25px 1.25px #85bbf8, 1.5px 1.5px #85bbf8, 1.75px 1.75px #85bbf8, 2px 2px #85bbf8, 2.25px 2.25px #85bbf8, 2.5px 2.5px #85bbf8, 2.75px 2.75px #85bbf8, 3px 3px #85bbf8, 3.25px 3.25px #85bbf8, 3.5px 3.5px #85bbf8, 3.75px 3.75px #85bbf8, 4px 4px #85bbf8, 4.25px 4.25px #85bbf8, 4.5px 4.5px #85bbf8, 4.75px 4.75px #85bbf8, 5px 5px #85bbf8, 5.25px 5.25px #85bbf8, 5.5px 5.5px #85bbf8, 5.75px 5.75px #85bbf8, 6px 6px #85bbf8;
+    animation: scatter 1.75s infinite;
+}
+
+.playful span:nth-child(2n) {
+    /* color: #ED625C; */
+    text-shadow: 0.25px 0.25px #F2A063, 0.5px 0.5px #F2A063, 0.75px 0.75px #F2A063, 1px 1px #F2A063, 1.25px 1.25px #F2A063, 1.5px 1.5px #F2A063, 1.75px 1.75px #F2A063, 2px 2px #F2A063, 2.25px 2.25px #F2A063, 2.5px 2.5px #F2A063, 2.75px 2.75px #F2A063, 3px 3px #F2A063, 3.25px 3.25px #F2A063, 3.5px 3.5px #F2A063, 3.75px 3.75px #F2A063, 4px 4px #F2A063, 4.25px 4.25px #F2A063, 4.5px 4.5px #F2A063, 4.75px 4.75px #F2A063, 5px 5px #F2A063, 5.25px 5.25px #F2A063, 5.5px 5.5px #F2A063, 5.75px 5.75px #F2A063, 6px 6px #F2A063;
+    animation-delay: 0.3s;
+}
+
+.playful span:nth-child(3n) {
+    /* color: #FFD913; */
+    text-shadow: 0.25px 0.25px #6EC0A9, 0.5px 0.5px #6EC0A9, 0.75px 0.75px #6EC0A9, 1px 1px #6EC0A9, 1.25px 1.25px #6EC0A9, 1.5px 1.5px #6EC0A9, 1.75px 1.75px #6EC0A9, 2px 2px #6EC0A9, 2.25px 2.25px #6EC0A9, 2.5px 2.5px #6EC0A9, 2.75px 2.75px #6EC0A9, 3px 3px #6EC0A9, 3.25px 3.25px #6EC0A9, 3.5px 3.5px #6EC0A9, 3.75px 3.75px #6EC0A9, 4px 4px #6EC0A9, 4.25px 4.25px #6EC0A9, 4.5px 4.5px #6EC0A9, 4.75px 4.75px #6EC0A9, 5px 5px #6EC0A9, 5.25px 5.25px #6EC0A9, 5.5px 5.5px #6EC0A9, 5.75px 5.75px #6EC0A9, 6px 6px #6EC0A9;
+    animation-delay: 0.15s;
+}
+
+.playful span:nth-child(5n) {
+    /* color: #555BFF; */
+    text-shadow: 0.25px 0.25px #85bbf8, 0.5px 0.5px #85bbf8, 0.75px 0.75px #85bbf8, 1px 1px #85bbf8, 1.25px 1.25px #85bbf8, 1.5px 1.5px #85bbf8, 1.75px 1.75px #85bbf8, 2px 2px #85bbf8, 2.25px 2.25px #85bbf8, 2.5px 2.5px #85bbf8, 2.75px 2.75px #85bbf8, 3px 3px #85bbf8, 3.25px 3.25px #85bbf8, 3.5px 3.5px #85bbf8, 3.75px 3.75px #85bbf8, 4px 4px #85bbf8, 4.25px 4.25px #85bbf8, 4.5px 4.5px #85bbf8, 4.75px 4.75px #85bbf8, 5px 5px #85bbf8, 5.25px 5.25px #85bbf8, 5.5px 5.5px #85bbf8, 5.75px 5.75px #85bbf8, 6px 6px #85bbf8;
+    animation-delay: 0.4s;
+}
+
+.playful span:nth-child(7n),
+.playful span:nth-child(11n) {
+    /* color: #FF9C55; */
+    text-shadow: 0.25px 0.25px #8855ff, 0.5px 0.5px #8855ff, 0.75px 0.75px #8855ff, 1px 1px #8855ff, 1.25px 1.25px #8855ff, 1.5px 1.5px #8855ff, 1.75px 1.75px #8855ff, 2px 2px #8855ff, 2.25px 2.25px #8855ff, 2.5px 2.5px #8855ff, 2.75px 2.75px #8855ff, 3px 3px #8855ff, 3.25px 3.25px #8855ff, 3.5px 3.5px #8855ff, 3.75px 3.75px #8855ff, 4px 4px #8855ff, 4.25px 4.25px #8855ff, 4.5px 4.5px #8855ff, 4.75px 4.75px #8855ff, 5px 5px #8855ff, 5.25px 5.25px #8855ff, 5.5px 5.5px #8855ff, 5.75px 5.75px #8855ff, 6px 6px #8855ff;
+    animation-delay: 0.25s;
+}
+
+@keyframes scatter {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -10px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.playful {
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
+.banner_info {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.banner_info_item {
+    width: 27%;
+    height: 80px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255);
+    position: relative;
+    transition: 0.5s;
+}
+
+.banner_info_item:hover {
+    transform: scale(1.05);
+}
+
+.b_i_t_img_title {
+    width: 40px;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 20px);
+}
+
+.b_i_t_text {
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    font-weight: 800;
+    color: #432e50;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 58px;
+}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .banner_info_item {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contest_creen {
+        --h1-size: 22px;
+        --h2-size: 20px;
+        --h3-size: 18px;
+    }
+
+    .banner_info_item {
+        width: 31%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contest_banner {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .contest_creen {
+        --h1-size: 21px;
+        --h2-size: 19px;
+        --h3-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .contest_creen {
+        --h1-size: 20px;
+        --h2-size: 18px;
+        --h3-size: 16px;
+    }
 }
 

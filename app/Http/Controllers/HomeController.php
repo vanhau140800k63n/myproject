@@ -44,117 +44,15 @@ class HomeController extends Controller
 
     public function test(Request $req)
     {
-        $challenge = $this->challengeRepository->getChallengeWeek();
-        $curl = curl_init();
-
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://eace-2405-4803-fbab-1660-397a-b23a-58ec-729f.ngrok-free.app/test/test.php',
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
-            CURLOPT_FOLLOWLOCATION => true,
-            // CURLOPT_SSL_VERIFYPEER => false,
-            // CURLOPT_POST => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => http_build_query([
-                'code' => $challenge->default_code,
-                'test_case' => $challenge->test_case,
-                'test_case_result' => $challenge->test_case_result
-            ]),
-            CURLOPT_HTTPHEADER => array(),
-        ));
-
-        $response = curl_exec($curl);
-
-        curl_close($curl);
-
-        $res = explode(',', $response);
-
-        $correct_test_case_num = 0;
-
-        foreach ($res as $test_case) {
-            echo($test_case);
-            if (intval($test_case) == 1) {
-                ++$correct_test_case_num;
-            }
-        }
-
+        return view('test');
+        dd(file_get_contents('https://tracnghiem.net/thptqg/de-thi-thu-thpt-qg-nam-2022-mon-toan-5051.html'));
     }
 
-    public function test1(Request $req)
+    public function postChangeTitle()
     {
-        dd(shell_exec('jdk/jdk1.8.0_202.jdk/Contents/Home/bin/java'));
-        dd(shell_exec('/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/java'));
-        $fileContent = 'import java.util.Stack;
-
-        public class Main {
-            public static void main(String[] args) {
-                // creating an instance of Stack class
-                Stack<Integer> stk = new Stack<>();
-                // checking stack is empty or not
-                boolean result = stk.empty();
-                System.out.println("Is the stack empty? " + result);
-                // pushing elements into stack
-                stk.push(78);
-                stk.push(113);
-                stk.push(90);
-                stk.push(120);
-                // prints elements of the stack
-                System.out.println("Elements in Stack: " + stk);
-                result = stk.empty();
-                System.out.println("Is the stack empty? " + result);
-            }
-        }';
-        $fileOp = fopen('Main.java', 'w');
-        fwrite($fileOp, $fileContent);
-
-        $JAVA_HOME = '/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home';
-        $JAVA_HOME = 'jdk/jdk1.8.0_202.jdk/Contents/Home';
-        $PATH = "$JAVA_HOME/bin";
-        putenv("JAVA_HOME=$JAVA_HOME");
-        putenv("PATH=$PATH");
-        $result = shell_exec('java -version');
-        var_dump($result);
-        $output = shell_exec('/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/javac /Users/trungthanh/Documents/Main');
-        dd($output);
-        // shell_exec("javac /Users/trungthanh/vhau/main_project/myproject/public/Main.java");
-
-        // $cmd = "java Main stdbuf -o0 2>&1";
-        // $inputlist = array();
-        // $outlist = array();
-        // $descriptors = array(
-        //     0 => array("pipe", "r"),
-        //     1 => array("pipe", "w")
-        // );
-
-        // $output = '';
-        // $process = proc_open($cmd, $descriptors, $pipes);
-        // dd($process);
-        // $out = "";
-        // if (is_resource($process)) {
-        //     if (isset($req->stdin)) {
-        //         $in = explode(",", trim($req->stdin));
-        //         array_push($inputlist, $in);
-        //         foreach ($inputlist[0] as $x) {
-        //             array_push($outlist, $x);
-        //         }
-        //         for ($i = 0; $i < count($outlist); ++$i) {
-        //             fwrite($pipes[0], $outlist[$i], "\n\r");
-        //         }
-        //         echo (stream_get_contents($pipes[1], 9072));
-        //     }
-        //     fclose($pipes[0]);
-        //     fclose($pipes[1]);
-        // }
-        // proc_close($process);
-
-
-
         // $posts = $this->postRepository->getPostChangeTitle();
         // foreach ($posts as $post) {
-        //     if($post->title_update != null && $post->title_update != "") {
+        //     if ($post->title_update != null && $post->title_update != "") {
         //         $title = substr($post->title_update, strpos($post->title_update, '. ') + 2);
         //         $data['title'] = $title;
         //         $data['slug'] = $this->makeSlug($title) . '-' . $post->id;
@@ -162,19 +60,10 @@ class HomeController extends Controller
         //         $update = $this->postRepository->updatePost($data);
         //     }
         // }
+    }
 
-        // $posts = $this->postRepository->getPostList();
-        // foreach ($posts as $post) {
-        //     $post->meta = substr($post->meta, 0, -1);
-        //     $post->save();
-        // }
-
-        // $lessons = $this->lessonRepository->getLessonListAll();
-        // foreach ($lessons as $lesson) {
-        //     $lesson->meta = substr($lesson->meta, 0, -1);
-        //     $lesson->save();
-        // }
-
+    public function createSiteMap()
+    {
         // $priority = 0.6;
         // $index = 1;
         // $posts = $this->postRepository->getPostChangeTitle();
