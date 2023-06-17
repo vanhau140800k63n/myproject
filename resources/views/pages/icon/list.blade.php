@@ -160,7 +160,7 @@
 
         $('.icon_download_btn').click(function() {
             var image_path = $(this).parent().children('img').attr('src');
-            var image_name = getFileName(image_path);
+            var image_name = word + getFileName(image_path);
 
             saveAs(image_path, image_name);
         })
