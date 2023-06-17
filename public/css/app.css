@@ -5602,7 +5602,8 @@ summary svg {
     border: 1px solid rgb(205, 205, 211);
     border-radius: 5px;
     background: rgb(237, 237, 242);
-    width: 80%;
+    width: -webkit-fill-available;
+    margin-right: 10px;
     color: #2e2f48;
 }
 
@@ -5621,8 +5622,12 @@ summary svg {
     color: #fff;
     border-radius: 5px;
     background: #2e2f48;
-    width: 15%;
     cursor: pointer;
+    white-space: nowrap;
+}
+
+.icon_download_btn:hover {
+    background: rgb(232, 228, 228);
 }
 
 .i_f_t_selected {
@@ -5662,15 +5667,7 @@ summary svg {
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}
 
-@media only screen and (max-width: 1199px) {
-    .icon_search_input {
-        width: 70%;
-    }
-
-    .icon_search_btn {
-        width: 25%;
-    }
-}
+@media only screen and (max-width: 1199px) {}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {}
 
@@ -5692,13 +5689,6 @@ summary svg {
 }
 
 @media only screen and (max-width: 577px) {
-    .icon_search_input {
-        width: 60%;
-    }
-
-    .icon_search_btn {
-        width: 35%;
-    }
 
     .icon_search_input,
     .icon_search_btn {

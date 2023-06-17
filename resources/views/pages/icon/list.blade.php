@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('head')
-    <title>Free 1000+ Icon For Design | DEVSNE</title>
+    <title>Free 1000+ {{ $word }} Icons For Design | DEVSNE</title>
 @endsection
 @section('content')
     <div class="icon_container">
@@ -14,20 +14,31 @@
                 <h2>Bộ lọc</h2>
             </div>
 
-            <div class="icon_filters_item">
-                <div class="i_f_i_title">
-                    <i class="fa-solid fa-square-check"></i>
-                    <h3>Đã chọn</h3>
+            <?php
+            $show_filters = false;
+            foreach ($filter_selected as $type => $item) {
+                if ($item != '') {
+                    $show_filters = true;
+                }
+            }
+            ?>
+
+            @if ($show_filters)
+                <div class="icon_filters_item">
+                    <div class="i_f_i_title">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <h3>Đã chọn</h3>
+                    </div>
+                    <div class="i_f_t_selected">
+                        @foreach ($filter_selected as $type => $item)
+                            @if ($item != '')
+                                <div class="i_f_t_selected_item">{{ $item }}<i class="fa-solid fa-xmark"
+                                        type="{{ $type }}"></i></div>
+                            @endif
+                        @endforeach
+                    </div>
                 </div>
-                <div class="i_f_t_selected">
-                    @foreach ($filter_selected as $type => $item)
-                        @if ($item != '')
-                            <div class="i_f_t_selected_item">{{ $item }}<i class="fa-solid fa-xmark"
-                                    type="{{ $type }}"></i></div>
-                        @endif
-                    @endforeach
-                </div>
-            </div>
+            @endif
 
             <div class="icon_filters_item">
                 <div class="i_f_i_title">
@@ -84,7 +95,7 @@
                 @foreach ($arr as $item)
                     <article class="icon_list_item">
                         {!! $item !!}
-                        <button class="icon_download_btn"><i class="fa-regular fa-download"></i></button>
+                        <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button>
                     </article>
                 @endforeach
             </div>
