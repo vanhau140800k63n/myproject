@@ -5528,10 +5528,15 @@ summary svg {
     padding: 20px 0;
     border-radius: 10px;
     text-align: center;
+    position: relative;
 }
 
 .icon_list_item:hover {
     background: rgb(208, 222, 229);
+}
+
+.icon_list_item:hover .icon_download_btn {
+    display: block;
 }
 
 .i_f_title h2 {
@@ -5639,6 +5644,18 @@ summary svg {
 .i_f_t_selected_item i {
     margin-left: 10px;
     cursor: pointer;
+}
+
+.icon_download_btn {
+    padding: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 0;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
 }
 
 @media only screen and (min-width: 1400px) {}

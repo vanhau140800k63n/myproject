@@ -84,6 +84,7 @@
                 @foreach ($arr as $item)
                     <article class="icon_list_item">
                         {!! $item !!}
+                        <button class="icon_download_btn"><i class="fa-regular fa-download"></i></button>
                     </article>
                 @endforeach
             </div>
@@ -145,5 +146,26 @@
 
             location.href = window.location.origin + '/icon/search?word=' + word;
         })
+
+        $('.icon_download_btn').click(function() {
+            var image_url_dl = $(this).parent().children('img').attr('src');
+            downloadImage(image_url_dl);
+        })
+
+        function downloadImage(url) {
+            fetch(url, {
+                    mode: 'no-cors',
+                })
+                .then(response => response.blob())
+                .then(blob => {
+                    let blobUrl = window.URL.createObjectURL(blob);
+                    let a = document.createElement('a');
+                    a.download = url.replace(/^.*[\\\/]/, '');
+                    a.href = blobUrl;
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                })
+        }
     </script>
 @endsection
