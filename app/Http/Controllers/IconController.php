@@ -63,9 +63,10 @@ class IconController extends Controller
         $form_index = '<form id="form_filters"';
         $filter_selected = ['color' => '', 'shape' => ''];
         $word = 'code';
-        $content = file_get_contents('https://www.flaticon.com/search/2?word=code&order_by=4');
-        $form = substr($content, strpos($content, $form_index), strpos($content, '</form>', strpos($content, $form_index)) - strpos($content, $form_index) + 7);
+
+        $content = file_get_contents('https://www.flaticon.com/search?word=code');
         $content = substr($content, strpos($content, $index), strpos($content, '</section>', strpos($content, $index)) - strpos($content, $index) + 10);
+
         $arr = [];
         while (strpos($content, '<img') != false) {
             $img = substr($content, strpos($content, '<img'),  strpos($content, '>', strpos($content, '<img'))  + 1 - strpos($content, '<img'));
@@ -109,8 +110,8 @@ class IconController extends Controller
         }
 
         $content = file_get_contents($url);
-        $form = substr($content, strpos($content, $form_index), strpos($content, '</form>', strpos($content, $form_index)) - strpos($content, $form_index) + 7);
         $content = substr($content, strpos($content, $index), strpos($content, '</section>', strpos($content, $index)) - strpos($content, $index) + 10);
+
         $arr = [];
         while (strpos($content, '<img') != false) {
             $img = substr($content, strpos($content, '<img'),  strpos($content, '>', strpos($content, '<img'))  + 1 - strpos($content, '<img'));

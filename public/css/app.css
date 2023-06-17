@@ -5605,7 +5605,7 @@ summary svg {
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .icon_search_btn {
@@ -5681,6 +5681,12 @@ summary svg {
 
     .icon_search_btn {
         width: 35%;
+    }
+
+    .icon_search_input,
+    .icon_search_btn {
+        padding: 8px 15px;
+        font-size: 14px;
     }
 
     .icon_list {
