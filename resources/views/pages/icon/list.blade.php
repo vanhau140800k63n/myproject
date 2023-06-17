@@ -128,7 +128,7 @@
                 shape = $(this).attr('value');
             }
 
-            $url = 'http://localhost:8003/icon/search?word=' + word;
+            $url = window.location.origin + '/icon/search?word=' + word;
 
             if (color != '') {
                 $url += '&color=' + color;
