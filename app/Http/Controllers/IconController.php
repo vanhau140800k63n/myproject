@@ -76,7 +76,7 @@ class IconController extends Controller
 
         $color_filters = CommonConstants::COLER_FILTERS;
         $shape_filters =  CommonConstants::SHAPE_FILTERS;
-        return view('pages.icon.list', compact('arr', 'form', 'color_filters', 'shape_filters', 'word', 'filter_selected'));
+        return view('pages.icon.list', compact('arr', 'color_filters', 'shape_filters', 'word', 'filter_selected'));
     }
 
     public function searchIcon(Request $req)
@@ -122,6 +122,6 @@ class IconController extends Controller
         $color_filters = CommonConstants::COLER_FILTERS;
         $shape_filters =  CommonConstants::SHAPE_FILTERS;
 
-        return view('pages.icon.list', compact('arr', 'form', 'color_filters', 'shape_filters', 'word', 'filter_selected'));
+        return view('pages.icon.list', compact('arr', 'color_filters', 'shape_filters', 'word', 'filter_selected'));
     }
 }
