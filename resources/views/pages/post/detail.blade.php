@@ -300,6 +300,16 @@
                         </div>
                     </div>
                 @endif
+                <div class="icon_filters_item" style="margin-bottom: 30px">
+                    <a href="{{ route('icon.search', ['word' => 'contest']) }}">
+                        <div style="font-weight: 600; margin-bottom: 10px"> Kho Icons Miễn Phí</div>
+                        <img class="icon_search_example" src="{{ asset('image/contest_icons.png') }}">
+                    </a>
+                    <a href="{{ route('icon.search', ['word' => 'game']) }}">
+                        <div style="font-weight: 600; margin-bottom: 10px; margin-top: 30px"> Free Game Icons </div>
+                        <img class="icon_search_example" src="{{ asset('image/game_icons.png') }}">
+                    </a>
+                </div>
                 <?php
                 $course_list = \App\Models\PLanguage::all();
                 $i = 0;
