@@ -5676,7 +5676,7 @@ summary svg {
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
     .icon_list {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -5707,7 +5707,7 @@ summary svg {
     }
 
     .icon_list {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 

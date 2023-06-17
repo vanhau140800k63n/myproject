@@ -148,24 +148,17 @@
         })
 
         $('.icon_download_btn').click(function() {
-            var image_url_dl = $(this).parent().children('img').attr('src');
-            downloadImage(image_url_dl);
+            var image_path = $(this).parent().children('img').attr('src');
+            var image_name = getFileName(image_path);
+
+            saveAs(image_path, image_name);
         })
 
-        function downloadImage(url) {
-            fetch(url, {
-                    mode: 'no-cors',
-                })
-                .then(response => response.blob())
-                .then(blob => {
-                    let blobUrl = window.URL.createObjectURL(blob);
-                    let a = document.createElement('a');
-                    a.download = url.replace(/^.*[\\\/]/, '');
-                    a.href = blobUrl;
-                    document.body.appendChild(a);
-                    a.click();
-                    a.remove();
-                })
+        function getFileName(str) {
+            return str.substring(str.lastIndexOf('/') + 1);
         }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+        integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 @endsection
