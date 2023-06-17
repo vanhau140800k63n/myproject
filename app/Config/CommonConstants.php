@@ -67,4 +67,16 @@ Cập nhật thường xuyên với các Template mới nhất và phù hợp v�
 Hỗ trợ tối đa cho các dự án phát triển web và ứng dụng.
 Cung cấp các Template cho nhiều ngôn ngữ lập trình khác nhau.
 Tạo ra trải nghiệm người dùng độc đáo và tăng cường tính tương tác.';
+    public const COLER_FILTERS = [
+        'black' => 'https://media.flaticon.com/dist/min/img/filters/black.svg',
+        'colors' => 'https://media.flaticon.com/dist/min/img/filters/color.svg',
+        'gradient' => 'https://media.flaticon.com/dist/min/img/filters/gradient.svg'
+    ];
+
+    public const SHAPE_FILTERS = [
+        'outline' => 'https://media.flaticon.com/dist/min/img/filters/outline.svg',
+        'fill' => 'https://media.flaticon.com/dist/min/img/filters/filled.svg',
+        'lineal-color' => 'https://media.flaticon.com/dist/min/img/filters/lineal-color.svg',
+        'hand-drawn' => 'https://media.flaticon.com/dist/min/img/filters/handrawn.svg'
+    ];
 }

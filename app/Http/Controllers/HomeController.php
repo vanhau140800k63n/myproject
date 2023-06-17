@@ -44,8 +44,16 @@ class HomeController extends Controller
 
     public function test(Request $req)
     {
-        return view('test');
-        dd(file_get_contents('https://tracnghiem.net/thptqg/de-thi-thu-thpt-qg-nam-2022-mon-toan-5051.html'));
+        $index = '<section class="search-result icons-search-result';
+        $content = file_get_contents('https://www.flaticon.com/search/2?word=code&order_by=4');
+        $content = substr($content, strpos($content, $index), strpos($content, '</section>', strpos($content, $index)) - strpos($content, $index) + 10);
+        $arr = [];
+        while (strpos($content, '<img') != false) {
+            $img = substr($content, strpos($content, '<img'),  strpos($content, '>', strpos($content, '<img'))  + 1 - strpos($content, '<img'));
+            $content = substr($content, 0,  strpos($content, '<img ')) . substr($content, strpos($content, '>', strpos($content, '<img ')) + 1);
+            array_push($arr, $img);
+        }
+        return view('test', compact('arr'));
     }
 
     public function postChangeTitle()

@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ExamController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\IconController;
 use App\Http\Controllers\LessonController;
 use App\Http\Controllers\NotiController;
 use App\Http\Controllers\PostController;
@@ -61,6 +62,11 @@ Route::prefix('exam')->name('exam.')->group(function () {
         Route::post('/run', [ExamController::class, 'runTestCase'])->name('run');
         Route::post('/submit', [ExamController::class, 'submitCode'])->name('submit');
     });
+});
+
+Route::prefix('icon')->name('icon.')->group(function () {
+    Route::get('/', [IconController::class, 'getIconHome'])->name('home');
+    Route::get('/search', [IconController::class, 'searchIcon'])->name('search');
 });
 
 Route::middleware(['check.logged_out'])->group(function () {
