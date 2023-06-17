@@ -84,6 +84,17 @@
                     @endforeach
                 </div>
             </div>
+
+            <div class="icon_filters_item">
+                <a href="{{ route('icon.search', ['word' => 'contest']) }}">
+                    <div style="font-weight: 600; margin-bottom: 10px"> Free Contest Icons </div>
+                    <img class="icon_search_example" src="{{ asset('image/contest_icons.png') }}">
+                </a>
+                <a href="{{ route('icon.search', ['word' => 'game']) }}">
+                    <div style="font-weight: 600; margin-bottom: 10px; margin-top: 30px"> Free Game Icons </div>
+                    <img class="icon_search_example" src="{{ asset('image/game_icons.png') }}">
+                </a>
+            </div>
         </aside>
         <main class="icon_list_box">
             <div class="icon_search">
