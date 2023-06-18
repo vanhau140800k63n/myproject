@@ -110,12 +110,24 @@
                     </article>
                 @endforeach
             </div>
+            <div class="icon_pagination">
+                @if ($crr_page > 1)
+                    <button class="icon_pagination_btn" id="page-less"><i class="fa-solid fa-arrow-left"
+                            style="margin-right: 10px"></i> Trang trước </button>
+                @endif
+                @if ($crr_page < $page_total)
+                    <button class="icon_pagination_btn" id="page-more">Trang sau <i class="fa-solid fa-arrow-right"
+                            style="margin-left: 10px"></i></button>
+                @endif
+            </div>
         </main>
     </div>
     <script>
         var color = '{{ isset($filter_selected['color']) ? $filter_selected['color'] : '' }}';
         var shape = '{{ isset($filter_selected['shape']) ? $filter_selected['shape'] : '' }}';
         var word = '{{ $word }}';
+        var page = '{{ $crr_page }}';
+
         $('.icon_list img').each(function() {
             $(this).attr('src', $(this).attr('data-src'));
         })
@@ -174,6 +186,38 @@
             var image_name = word + getFileName(image_path);
 
             saveAs(image_path, image_name);
+        })
+
+        $('.icon_pagination #page-less').click(function() {
+            $url = window.location.origin + '/icon/search?word=' + word;
+
+            if (color != '') {
+                $url += '&color=' + color;
+            }
+
+            if (shape != '') {
+                $url += '&shape=' + shape;
+            }
+
+            $url += '&page=' + --page;
+
+            location.href = $url;
+        })
+
+        $('.icon_pagination #page-more').click(function() {
+            $url = window.location.origin + '/icon/search?word=' + word;
+
+            if (color != '') {
+                $url += '&color=' + color;
+            }
+
+            if (shape != '') {
+                $url += '&shape=' + shape;
+            }
+
+            $url += '&page=' + ++page;
+
+            location.href = $url;
         })
 
         function getFileName(str) {
