@@ -1546,6 +1546,10 @@ code * {
         width: 100%;
         margin-top: 30px;
     }
+
+    .footer_info h2 {
+        margin-top: 35px;
+    }
 }
 .img_account_profile {
     height: 10rem;
@@ -5593,18 +5597,43 @@ summary svg {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    position: relative;
 }
+
+.icon_search_result {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    height: 200px;
+    top: 100px;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: none;
+}
+
+/* .icon_search_input:focus~.icon_search_result {
+    display: block;
+} */
+
+/* .icon_search_input:not(:focus)~.icon_search_result {
+    display: none;
+} */
 
 .icon_search_input {
     padding: 10px 20px;
     font-weight: 500;
     font-size: 16px;
-    border: 1px solid rgb(205, 205, 211);
+    border: 1px solid rgb(219, 219, 226);
     border-radius: 5px;
     background: rgb(237, 237, 242);
     width: -webkit-fill-available;
     margin-right: 10px;
     color: #2e2f48;
+}
+
+.icon_search_input:focus {
+    background: rgb(243, 243, 247);
 }
 
 .icon_list_box h1 {
@@ -5677,6 +5706,7 @@ summary svg {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    align-items: center;
 }
 
 .icon_pagination_btn {

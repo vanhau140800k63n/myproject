@@ -100,6 +100,7 @@
             <div class="icon_search">
                 <input class="icon_search_input" value="{{ $word }}">
                 <button class="icon_search_btn">Tìm kiếm</button>
+                <div class="icon_search_result"></div>
             </div>
             <h1> Tìm kiếm: Free {{ $word }} Icons </h1>
             <div class="icon_list">
@@ -119,6 +120,8 @@
                     <button class="icon_pagination_btn" id="page-more">Trang sau <i class="fa-solid fa-arrow-right"
                             style="margin-left: 10px"></i></button>
                 @endif
+
+                <p style="font-weight:500"> Trang {{ $crr_page }} / {{ $page_total }} </p>
             </div>
         </main>
     </div>
@@ -132,6 +135,7 @@
             $(this).attr('src', $(this).attr('data-src'));
         })
 
+        // $('.icon_search_result').css('display', 'bl')
         $('.i_f_i_c_item').click(function() {
             if ($(this).attr('type') == 'color') {
                 color = $(this).attr('value');
@@ -223,6 +227,10 @@
         function getFileName(str) {
             return str.substring(str.lastIndexOf('/') + 1);
         }
+        
+        $('.icon_search_input').focus(function() {
+            
+        })
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
         integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
