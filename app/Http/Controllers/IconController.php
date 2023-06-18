@@ -119,7 +119,7 @@ class IconController extends Controller
             $url = 'https://www.flaticon.com/search' . $url_add;
         } else {
             $word = 'code';
-            $url = 'https://www.flaticon.com/search/2?word=code&order_by=4';
+            $url = 'https://www.flaticon.com/search?word=code';
         }
 
         $content = file_get_contents($url);

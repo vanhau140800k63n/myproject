@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('head')
-    <title>Free 1000+ {{ $word }} Icons For Design | DEVSNE</title>
+    <title>Free 1000+ {{ ucwords($word) }} Icons For Design | DEVSNE</title>
 @endsection
 @section('content')
     <div class="icon_container">
@@ -32,7 +32,7 @@
                     <div class="i_f_t_selected">
                         @foreach ($filter_selected as $type => $item)
                             @if ($item != '')
-                                <div class="i_f_t_selected_item">{{ $item }}<i class="fa-solid fa-xmark"
+                                <div class="i_f_t_selected_item">{{ ucwords($item) }}<i class="fa-solid fa-xmark"
                                         type="{{ $type }}"></i></div>
                             @endif
                         @endforeach
@@ -55,7 +55,7 @@
                         <button class="i_f_i_c_item" type="color" value="{{ $title }}"
                             {{ $title == 'gradient' && $filter_selected['shape'] == 'hand-drawn' ? 'disabled' : '' }}>
                             <img src="{{ $img }}" alt="black" width="16" height="16">
-                            {{ $title }}
+                            {{ ucwords($title) }}
                         </button>
                     @endforeach
                 </div>
@@ -79,7 +79,7 @@
                         <button class="i_f_i_c_item" type="shape" value="{{ $title }}"
                             {{ $title == 'hand-drawn' && $filter_selected['color'] == 'gradient' ? 'disabled' : '' }}>
                             <img src="{{ $img }}" alt="black" width="16" height="16">
-                            {{ $title }}
+                            {{ ucwords($title) }}
                         </button>
                     @endforeach
                 </div>
