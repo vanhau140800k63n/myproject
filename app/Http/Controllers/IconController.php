@@ -98,7 +98,7 @@ class IconController extends Controller
         $page_total = 1;
         $crr_page = 1;
 
-        if (isset($req->page) && $req->page != 1) {
+        if (isset($req->page) && $req->page != 1 && intval($req->page) != 0) {
             $url_add .= '/' . $req->page . '/';
             $crr_page = $req->page;
         }

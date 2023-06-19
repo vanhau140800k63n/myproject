@@ -227,10 +227,44 @@
         function getFileName(str) {
             return str.substring(str.lastIndexOf('/') + 1);
         }
-        
-        $('.icon_search_input').focus(function() {
-            
-        })
+
+        // $('.icon_search_input').focus(function() {
+        //     var input = $(this);
+        //     getIconSuggest(input);
+        // }).keyup(function() {
+        //     var input = $(this);
+        //     console.log(input.val());
+        //     getIconSuggest(input);
+        // })
+
+        // $('.icon_search_input').focusout(function() {
+        //     $('.icon_search_result').hide();
+        // })
+
+        // function getIconSuggest(input) {
+        //     var value = input.val();
+        //     if (value.length >= 2) {
+        //         $('.icon_search_result').show();
+        //     } else {
+        //         $('.icon_search_result').hide();
+        //         return false;
+        //     }
+
+        //     jQuery.support.cors = true;
+        //     $.ajax({
+        //         url: 'https://www.flaticon.com/ajax/autocomplete/' + value + '?type=icon',
+        //         headers: {
+        //             'Content-Type': 'application/x-www-form-urlencoded'
+        //         },
+        //         type: "GET",
+        //         dataType: 'json',
+        //     }).done(function(data) {
+
+        //         return true;
+        //     }).fail(function(e) {
+        //         return false;
+        //     });
+        // }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
         integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
