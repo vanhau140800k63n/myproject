@@ -47,7 +47,7 @@ class Controller extends BaseController
                 if ($size !== false) {
                     $url = file_get_contents($url);
                     $imgFile = Image::make($url);
-                    $imageName = 'image/project/' . $name . rand(1000, 9999) . '.jpg';
+                    $imageName = 'image/icon/' . $name . rand(1000, 9999) . '.png';
                     $imgFile->save($imageName);
 
                     return $imageName;
