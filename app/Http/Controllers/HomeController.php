@@ -44,6 +44,7 @@ class HomeController extends Controller
 
     public function test(Request $req)
     {
+        dd($this->saveIconImage('https://cdn-icons-png.flaticon.com/128/711/711284.png', 'test'));
         $index = '<section class="search-result icons-search-result';
         $content = file_get_contents('https://www.flaticon.com/search/2?word=code&order_by=4');
         $content = substr($content, strpos($content, $index), strpos($content, '</section>', strpos($content, $index)) - strpos($content, $index) + 10);

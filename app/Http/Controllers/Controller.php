@@ -38,6 +38,28 @@ class Controller extends BaseController
         return '';
     }
 
+    protected function saveIconImage($url, $name)
+    {
+        if ($url != "") {
+            $url = str_replace(' ', '%20', $url);
+            try {
+                $size = getimagesize($url);
+                if ($size !== false) {
+                    $url = file_get_contents($url);
+                    $imgFile = Image::make($url);
+                    $imageName = 'image/project/' . $name . rand(1000, 9999) . '.jpg';
+                    $imgFile->save($imageName);
+
+                    return $imageName;
+                }
+            } catch (Throwable $ex) {
+                return $ex->getMessage();
+            }
+        }
+
+        return '';
+    }
+
     protected function makeSlug($str)
     {
         $str = preg_replace("/(à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ)/", 'a', $str);
