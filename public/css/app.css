@@ -1063,8 +1063,7 @@ a {
 
 .lesson_content.text_box * {
     font-size: 17px;
-    line-height: 1.6;
-    text-align: justify;
+    line-height: 1.8;
     font-style: normal;
 }
 
@@ -2146,7 +2145,8 @@ code * {
 
 .post_content.text_box * {
     font-size: 17px;
-    line-height: 1.7;
+    line-height: 2;
+    text-align: justify;
     font-style: normal;
 }
 
