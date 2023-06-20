@@ -82,6 +82,8 @@ class IconController extends Controller
 
         $color_filters = CommonConstants::COLER_FILTERS;
         $shape_filters =  CommonConstants::SHAPE_FILTERS;
+        
+        shuffle($arr);
         return view('pages.icon.list', compact('arr', 'color_filters', 'shape_filters', 'word', 'filter_selected', 'crr_page', 'page_total'));
     }
 
