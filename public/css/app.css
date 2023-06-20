@@ -1951,7 +1951,7 @@ code * {
         height: 150px;
     }
 }
-:root {
+.post_box {
     --color-background: #1f202e;
     --stroke-width: calc(1em / 16);
     --font-size: 40px;
@@ -2926,7 +2926,7 @@ select {
     justify-content: flex-end;
 }
 
-:root {
+.game_design {
     --accent: #333;
     --secondary: #fff;
 }
@@ -3442,7 +3442,7 @@ a.template_type_item.active {
         padding-right: 10px;
     }
 }
-:root {
+.wrap-home-content {
     --accent-color: #2c31cf;
     --accent-bg-hover: #1e266d;
     --main-color: #3b3c54;
