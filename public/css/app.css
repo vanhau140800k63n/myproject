@@ -2204,6 +2204,7 @@ code * {
     max-height: 500px;
     -o-object-fit: contain;
        object-fit: contain;
+    display: block;
 }
 
 .btn_format_1 {
