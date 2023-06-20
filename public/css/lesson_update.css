@@ -5,7 +5,8 @@
     --h4-size: 20px;
 }
 
-.lesson_content_text strong, .lesson_content_text strong * {
+.lesson_content_text strong,
+.lesson_content_text strong * {
     font-weight: 600 !important;
 }
 
@@ -169,16 +170,21 @@
     margin-bottom: 12px;
 }
 
-.fa-pen-to-square, .fa-rocket {
+.fa-pen-to-square,
+.fa-rocket {
     color: #fff;
 }
 
 .tip-box code {
     background: #4e9c85;
+    color: #fff;
+    border: none;
 }
 
 .note-box code {
     background: #4687aa;
+    color: #fff;
+    border: none;
 }
 
 @media only screen and (min-width: 1400px) {}

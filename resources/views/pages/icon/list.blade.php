@@ -108,6 +108,7 @@
                     <article class="icon_list_item">
                         {!! $item !!}
                         <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button>
+                        {{-- <div class="icon_ribbon left">Rotated Ribbon</div> --}}
                     </article>
                 @endforeach
             </div>

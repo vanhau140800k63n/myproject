@@ -1159,12 +1159,16 @@ a {
 }
 
 code {
-    background: #8c8888;
+    background: #f6f8f9;
     font-size: 15px !important;
-    padding: 0 5px;
+    padding: 1px 5px;
     border-radius: 3px;
     font-family: monospace;
-    color: #fff;
+    border: 1px solid #ece6e6;
+}
+
+pre code {
+    border: none;
 }
 
 code * {
@@ -5720,6 +5724,20 @@ summary svg {
     background: #2e2f48;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.icon_ribbon {
+    position: absolute;
+    background: #08769b;
+    box-shadow: 0 0 0 999px #08769b;
+    -webkit-clip-path: inset(0 -100%);
+            clip-path: inset(0 -100%);
+}
+
+.left {
+    inset: 0 auto auto 0;
+    transform-origin: 100% 0;
+    transform: translate(-29.3%) rotate(-45deg);
 }
 
 @media only screen and (min-width: 1400px) {}
