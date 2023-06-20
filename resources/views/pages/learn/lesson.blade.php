@@ -94,7 +94,25 @@
                         <span aria-hidden="true">g</span>
                         <span aria-hidden="true">e</span>
                     </div>
-                    <div class="banner_info">
+
+                    {{-- <div class="playful small">
+                        <span aria-hidden="true">J</span>
+                        <span aria-hidden="true">a</span>
+                        <span aria-hidden="true">v</span>
+                        <span aria-hidden="true">a</span>
+                        <span aria-hidden="true">&nbsp;</span>
+                        <span aria-hidden="true">C</span>
+                        <span aria-hidden="true">+</span>
+                        <span aria-hidden="true">+</span>
+                        <span aria-hidden="true">&nbsp;</span>
+                        <span aria-hidden="true">P</span>
+                        <span aria-hidden="true">y</span>
+                        <span aria-hidden="true">t</span>
+                        <span aria-hidden="true">h</span>
+                        <span aria-hidden="true">o</span>
+                        <span aria-hidden="true">n</span>
+                    </div> --}}
+                    {{-- <div class="banner_info">
                         <div class="banner_info_item">
                             <img class="b_i_t_img_title" src="{{ asset('image/giftbox.png') }}">
                             <div class="b_i_t_text">Bàn phím cơ Rapoo V500 Pro Yellow Blue</div>
@@ -107,7 +125,7 @@
                             <img class="b_i_t_img_title" src="{{ asset('image/algorithm.png') }}">
                             <div class="b_i_t_text">Kiến thức, cấu trúc dữ liệu & giải thuật</div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </a>
             @foreach ($lesson_detail as $item)
@@ -159,7 +177,7 @@
                     <div class="catalogue_title">Mục lục</div>
                     <div class="catalogue_content">
                         <?php
-                        $catalogue_item_index = 1;
+                        $catalogue_item_index = 2;
                         ?>
                         @foreach ($lesson_detail as $catalogue_item)
                             <div class="catalogue_item_title" index="{{ ++$catalogue_item_index }}">
