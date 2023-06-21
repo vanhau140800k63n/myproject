@@ -67,11 +67,17 @@ class IconController extends Controller
         $page_total = 1;
         $crr_page = 1;
 
-        $content = file_get_contents('https://www.flaticon.com/search?word=code');
+        $content = '';
+
+        try {
+            $content = file_get_contents('https://www.flaticon.com/search?word=code');
+        } catch (\Throwable $ex) {
+        }
         if (strpos($content, $page_total_str) != false)
             $page_total = intval(substr($content, strpos($content, $page_total_str) + strlen($page_total_str),  strpos($content, '</span>', strpos($content, $page_total_str)) - strpos($content, $page_total_str) - strlen($page_total_str)));
 
-        $content = substr($content, strpos($content, $index), strpos($content, '</section>', strpos($content, $index)) - strpos($content, $index) + 10);
+        if (strpos($content, $index) != false)
+            $content = substr($content, strpos($content, $index), strpos($content, '</section>', strpos($content, $index)) - strpos($content, $index) + 10);
 
         $arr = [];
         while (strpos($content, '<img') != false) {
@@ -82,7 +88,7 @@ class IconController extends Controller
 
         $color_filters = CommonConstants::COLER_FILTERS;
         $shape_filters =  CommonConstants::SHAPE_FILTERS;
-        
+
         shuffle($arr);
         return view('pages.icon.list', compact('arr', 'color_filters', 'shape_filters', 'word', 'filter_selected', 'crr_page', 'page_total'));
     }
@@ -124,11 +130,16 @@ class IconController extends Controller
             $url = 'https://www.flaticon.com/search?word=code';
         }
 
-        $content = file_get_contents($url);
+        $content = '';
+        try {
+            $content = file_get_contents($url);
+        } catch (\Throwable $ex) {
+        }
         if (strpos($content, $page_total_str) != false)
             $page_total = intval(substr($content, strpos($content, $page_total_str) + strlen($page_total_str),  strpos($content, '</span>', strpos($content, $page_total_str)) - strpos($content, $page_total_str) - strlen($page_total_str)));
 
-        $content = substr($content, strpos($content, $index), strpos($content, '</section>', strpos($content, $index)) - strpos($content, $index) + 10);
+        if (strpos($content, $index) != false)
+            $content = substr($content, strpos($content, $index), strpos($content, '</section>', strpos($content, $index)) - strpos($content, $index) + 10);
 
         $arr = [];
         while (strpos($content, '<img') != false) {
