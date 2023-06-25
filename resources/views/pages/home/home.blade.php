@@ -172,33 +172,12 @@
                     <section id="program" class="section mod--steps">
                         <div data-w-id="ed551191-b1ef-9624-abde-e6e2dd90bea2" class="content">
                             <div class="steps__columns">
-                                <div class="steps__col">
-                                    <div class="steps__illustr-wrap"><img
-                                            src="{{ asset(mix('home_lib/61e945a0392884655da8bf78_step_illustr.svg')) }}"
-                                            loading="lazy" alt="" class="steps__illustr">
-                                        <div class="steps__illustr-graph-wrap">
-                                            <div class="steps__illustr-graph-dot mod--1">
-                                                <div data-w-id="b4d502a7-124e-939d-5dd4-2b4bdb8a48a4"
-                                                    class="steps__illustr-graph-line"
-                                                    style="will-change: width, height; height: 50px;"></div>
-                                            </div>
-                                            <div class="steps__illustr-graph-dot mod--2">
-                                                <div data-w-id="917b7fbc-0027-301a-958b-83c08657ca66"
-                                                    class="steps__illustr-graph-line mod--2"
-                                                    style="will-change: width, height; height: 40px;"></div>
-                                            </div>
-                                            <div class="steps__illustr-graph-dot mod--3">
-                                                <div data-w-id="05fa4d3f-3078-ad2c-4504-5f24ec65670e"
-                                                    class="steps__illustr-graph-line"
-                                                    style="will-change: width, height; height: 50px;"></div>
-                                            </div>
-                                            <div class="steps__illustr-graph-dot mod--4"></div>
-                                        </div>
-                                    </div>
+                                <div class="steps__col" style="padding-right: 25px">
+                                    <img src="{{ asset('image/collections-slide.png') }}">
                                 </div>
                                 <div class="steps__col mod--2"
                                     style="will-change: transform; transform: translate3d(0px, -10%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                    <h2 style="font-weight: 700">Lập trình Game</h2>
+                                    <h2 style="font-weight: 800">Free Icons</h2>
                                     <ul role="list" class="steps__list">
                                         <li class="steps__list-item">
                                             <div class="steps__numb"><img
@@ -208,11 +187,10 @@
                                                     alt="" class="steps__numb-img">
                                                 <div class="steps__numb-txt">01</div>
                                             </div>
-                                            <h3 class="steps__list-title">Đồ họa và thiết kế</h3>
-                                            <p class="steps__list-p">Đồ họa và thiết kế tạo ra trải nghiệm hấp dẫn cho
-                                                người chơi. Không
-                                                chỉ cần có đồ họa đẹp mắt, mà còn phải có sự phối hợp hài hòa giữa màu sắc,
-                                                âm thanh và các hiệu ứng để tạo ra một thế giới sống động.</p>
+                                            {{-- <h3 class="steps__list-title">&nbsp;</h3> --}}
+                                            <a href="{{ route('icon.search', ['word' => 'code']) }}"><img
+                                                    class="steps__list-item_img"
+                                                    src="{{ asset('image/icon_list1.png') }}"></a>
                                             <div style="width: 74px;" class="steps__list-arrow-wrap"><img
                                                     src="{{ asset(mix('home_lib/61e5adc40ddc66aafb697c3d_steps_arrow.svg')) }}"
                                                     loading="lazy" alt="" class="steps__list-arrow"></div>
@@ -225,9 +203,10 @@
                                                     alt="" class="steps__numb-img">
                                                 <div class="steps__numb-txt">02</div>
                                             </div>
-                                            <h3 class="steps__list-title">Lập trình đa nền tảng</h3>
-                                            <p class="steps__list-p">Game có thể chạy được trên nhiều hệ điều hành
-                                                khác nhau như iOS, Android, Windows, Xbox hoặc PlayStation.</p>
+                                            {{-- <h3 class="steps__list-title">&nbsp;</h3> --}}
+                                            <a href="{{ route('icon.search', ['word' => 'game']) }}"><img
+                                                    class="steps__list-item_img"
+                                                    src="{{ asset('image/icon_list2.png') }}"></a>
                                             <div class="steps__list-arrow-wrap mod--2" style="width: 74px;"><img
                                                     src="{{ asset(mix('home_lib/61e5adc40ddc66aafb697c3d_steps_arrow.svg')) }}"
                                                     loading="lazy" alt="" class="steps__list-arrow"></div>
@@ -240,9 +219,11 @@
                                                     alt="" class="steps__numb-img">
                                                 <div class="steps__numb-txt">03</div>
                                             </div>
-                                            <h3 class="steps__list-title">Tối ưu hóa và kiểm thử</h3>
-                                            <p class="steps__list-p">Tối ưu hóa bao gồm
-                                                tối ưu hóa nguồn tài nguyên, độ trễ và tốc độ khung hình</p>
+                                            {{-- <h3 class="steps__list-title">&nbsp;</h3> --}}
+                                            <a href="{{ route('icon.search', ['word' => 'contest']) }}"><img
+                                                    class="steps__list-item_img"
+                                                    src="{{ asset('image/icon_list3.png') }}">
+                                            </a>
                                             <div class="steps__list-arrow-wrap mod--3" style="width: 148px;"><img
                                                     src="{{ asset(mix('home_lib/61e5adc4fe559a406b5d0195_steps_arrow-plane.svg')) }}"
                                                     loading="lazy" alt="" class="steps__list-arrow"></div>

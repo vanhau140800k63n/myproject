@@ -2341,7 +2341,7 @@ ul {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
-    align-items: flex-start;
+    align-items: center;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     background-color: #fff

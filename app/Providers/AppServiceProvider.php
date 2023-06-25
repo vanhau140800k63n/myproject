@@ -18,6 +18,7 @@ use App\Repositories\Eloquent\ChallengeRepository;
 use App\Repositories\Eloquent\CommentRepository;
 use App\Repositories\Eloquent\ContentItemRepository;
 use App\Repositories\Eloquent\ContentRepository;
+use App\Repositories\Eloquent\IconRepository;
 use App\Repositories\Eloquent\LessonItemRepository;
 use App\Repositories\Eloquent\LessonRepository;
 use App\Repositories\Eloquent\NotiRepository;
@@ -28,6 +29,7 @@ use App\Repositories\Eloquent\RankingRepository;
 use App\Repositories\Eloquent\TemplateRepository;
 use App\Repositories\Eloquent\TemplateTypeRepository;
 use App\Repositories\Eloquent\UserRepository;
+use App\Repositories\IconRepositoryInterface;
 use App\Repositories\LessonItemRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\NotiRepositoryInterface;
@@ -102,6 +104,9 @@ class AppServiceProvider extends ServiceProvider
         });
         $this->app->singleton(ChallengeAnswerRepositoryInterface::class, function () {
             return new ChallengeAnswerRepository();
+        });
+        $this->app->singleton(IconRepositoryInterface::class, function () {
+            return new IconRepository();
         });
     }
 

@@ -10,6 +10,7 @@ use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\CommentRepositoryInterface;
 use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\ContentRepositoryInterface;
+use App\Repositories\IconRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\TemplateRepositoryInterface;
@@ -32,6 +33,7 @@ class IconController extends Controller
     private $actionRepository;
     private $templateTypeRepository;
     private $templateRepository;
+    private $iconRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
@@ -43,7 +45,8 @@ class IconController extends Controller
         ContentRepositoryInterface $contentRepository,
         ActionRepositoryInterface $actionRepository,
         TemplateTypeRepositoryInterface $templateTypeRepository,
-        TemplateRepositoryInterface $templateRepository
+        TemplateRepositoryInterface $templateRepository,
+        IconRepositoryInterface $iconRepository
     ) {
         $this->categoryRepository = $categoryRepository;
         $this->pLanguageRepository = $pLanguageRepository;
@@ -55,6 +58,7 @@ class IconController extends Controller
         $this->actionRepository = $actionRepository;
         $this->templateTypeRepository = $templateTypeRepository;
         $this->templateRepository = $templateRepository;
+        $this->iconRepository = $iconRepository;
     }
 
     public function getIconHome()
@@ -111,7 +115,7 @@ class IconController extends Controller
             $crr_page = $req->page;
         }
         if (isset($req->word)) {
-            $url_add .= '?word=' . $req->word;
+            $url_add .= '?word=' . str_replace(' ', '%20', $req->word);
             $word = $req->word;
         }
         if (isset($req->color)) {
@@ -152,5 +156,35 @@ class IconController extends Controller
         $shape_filters =  CommonConstants::SHAPE_FILTERS;
 
         return view('pages.icon.list', compact('arr', 'color_filters', 'shape_filters', 'word', 'filter_selected', 'page_total', 'crr_page'));
+    }
+
+    public function addIconPath()
+    {
+        $last_icon = $this->iconRepository->getLastIcon();
+
+        $path = 1;
+        $index = 0;
+
+        if ($last_icon != null) {
+            $path = intval($last_icon->path);
+            $index = intval($last_icon->index) + 1;
+        }
+
+        while ($path <= 11120) {
+            if ($index == 1000) {
+                $index = 0;
+                ++$path;
+                continue;
+            }
+
+            $data = [
+                'path' => $path,
+                'index' => $index
+            ];
+
+            $icon = $this->iconRepository->create($data);
+
+            ++$index;
+        }
     }
 }
