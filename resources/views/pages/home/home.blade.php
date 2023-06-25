@@ -192,7 +192,7 @@
                                             {{-- <h3 class="steps__list-title">&nbsp;</h3> --}}
                                             <a href="{{ route('icon.search', ['word' => 'code']) }}"><img
                                                     class="steps__list-item_img"
-                                                    src="{{ asset('image/icon_list1.png') }}"></a>
+                                                    src="{{ asset('image/icon_list11.png') }}"></a>
                                             <div style="width: 74px;" class="steps__list-arrow-wrap"><img
                                                     src="{{ asset(mix('home_lib/61e5adc40ddc66aafb697c3d_steps_arrow.svg')) }}"
                                                     loading="lazy" alt="" class="steps__list-arrow"></div>
@@ -208,7 +208,7 @@
                                             {{-- <h3 class="steps__list-title">&nbsp;</h3> --}}
                                             <a href="{{ route('icon.search', ['word' => 'game']) }}"><img
                                                     class="steps__list-item_img"
-                                                    src="{{ asset('image/icon_list2.png') }}"></a>
+                                                    src="{{ asset('image/icon_list22.png') }}"></a>
                                             <div class="steps__list-arrow-wrap mod--2" style="width: 74px;"><img
                                                     src="{{ asset(mix('home_lib/61e5adc40ddc66aafb697c3d_steps_arrow.svg')) }}"
                                                     loading="lazy" alt="" class="steps__list-arrow"></div>
@@ -224,7 +224,7 @@
                                             {{-- <h3 class="steps__list-title">&nbsp;</h3> --}}
                                             <a href="{{ route('icon.search', ['word' => 'contest']) }}"><img
                                                     class="steps__list-item_img"
-                                                    src="{{ asset('image/icon_list3.png') }}">
+                                                    src="{{ asset('image/icon_list33.png') }}">
                                             </a>
                                             <div class="steps__list-arrow-wrap mod--3" style="width: 148px;"><img
                                                     src="{{ asset(mix('home_lib/61e5adc4fe559a406b5d0195_steps_arrow-plane.svg')) }}"

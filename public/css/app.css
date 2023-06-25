@@ -700,7 +700,6 @@ a {
 .steps__list-item_img {
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     border-radius: 10px;
-    margin: 10px 0;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -714,6 +713,10 @@ a {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .home_lesson_card * {
         font-size: 12px;
+    }
+
+    .steps__list-item_img {
+        margin: 10px 0;
     }
 
     .home_lesson .cm-content,
