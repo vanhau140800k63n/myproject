@@ -200,7 +200,6 @@ class IconController extends Controller
             $check_icon = $this->iconRepository->checkAddIcon($icon_path);
             if ($check_icon == null) {
                 $save_image = $this->saveIconImage($icon);
-
                 if ($save_image != false) {
                     $data = [
                         'path' => intval($icon_path[4]),
@@ -227,7 +226,6 @@ class IconController extends Controller
                         ];
 
                         $update_icon = $this->iconRepository->updateIcon($data);
-
                         $res_icons[$icon] = $save_image;
                     } else {
                         $res_icons[$icon] = $icon;

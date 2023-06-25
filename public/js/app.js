@@ -2369,12 +2369,8 @@ $(document).ready(function () {
     $('.cmt_action_box').hide();
     $(this).parent().parent().children('.cmt_action_box').show();
   });
-  $(document).on('click', '.exit_noti', function () {
-    clearInterval(reset_noti);
-    $('.post_noti').css('display', 'none');
-  });
   if ($('.post_noti').length) {
-    var _reset_noti = setInterval(function () {
+    var reset_noti = setInterval(function () {
       $.ajax({
         url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "get_noti",
         type: "GET"
@@ -2389,6 +2385,10 @@ $(document).ready(function () {
         return false;
       });
     }, 8000);
+    $(document).on('click', '.exit_noti', function () {
+      clearInterval(reset_noti);
+      $('.post_noti').css('display', 'none');
+    });
   }
   $('.note-icon').append('<div></div><i class="fa-solid fa-pen-to-square"></i>');
   $('.tip-icon').append('<div></div><i class="fa-solid fa-rocket"></i>');
