@@ -68,6 +68,7 @@ Route::prefix('icon')->name('icon.')->group(function () {
     Route::get('/', [IconController::class, 'getIconHome'])->name('home');
     Route::get('/search', [IconController::class, 'searchIcon'])->name('search');
     Route::get('/add_path', [IconController::class, 'addIconPath'])->name('add_path');
+    Route::post('/save_icon', [IconController::class, 'saveIcon'])->name('save_icon');
 });
 
 Route::middleware(['check.logged_out'])->group(function () {

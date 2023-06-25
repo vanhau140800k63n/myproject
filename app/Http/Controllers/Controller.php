@@ -38,7 +38,7 @@ class Controller extends BaseController
         return '';
     }
 
-    protected function saveIconImage($url, $name)
+    protected function saveIconImage($url)
     {
         if ($url != "") {
             $url = str_replace(' ', '%20', $url);
@@ -47,17 +47,25 @@ class Controller extends BaseController
                 if ($size !== false) {
                     $url = file_get_contents($url);
                     $imgFile = Image::make($url);
-                    $imageName = 'image/icon/' . $name . rand(1000, 9999) . '.png';
+                    $imageName = 'image/icon/' . $this->generateRandomString(10) . '.png';
+                    while (file_exists($imageName)) {
+                        $imageName = 'image/icon/' . $this->generateRandomString(10) . '.png';
+                    }
                     $imgFile->save($imageName);
 
                     return $imageName;
                 }
             } catch (Throwable $ex) {
-                return $ex->getMessage();
+                return false;
             }
         }
 
-        return '';
+        return false;
+    }
+
+    private function generateRandomString($length = 10)
+    {
+        return substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);
     }
 
     protected function makeSlug($str)

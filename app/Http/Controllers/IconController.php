@@ -187,4 +187,57 @@ class IconController extends Controller
             ++$index;
         }
     }
+
+    public function saveIcon(Request $req)
+    {
+        $icons = $req->icons;
+        $icon_tags = $req->icon_tags;
+        $res_icons = [];
+
+        foreach ($icons as $index => $icon) {
+            $icon_path = explode('/', $icon);
+            $icon_path[5] = substr($icon_path[5], strlen($icon_path[4]), 3);
+            $check_icon = $this->iconRepository->checkAddIcon($icon_path);
+            if ($check_icon == null) {
+                $save_image = $this->saveIconImage($icon);
+
+                if ($save_image != false) {
+                    $data = [
+                        'path' => intval($icon_path[4]),
+                        'index' => intval($icon_path[5]),
+                        'image' => $save_image,
+                        'tag' => $icon_tags[$index],
+                        'status' => 1
+                    ];
+
+                    $create_icon = $this->iconRepository->create($data);
+                    $res_icons[$icon] = $save_image;
+                } else {
+                    $res_icons[$icon] = $icon;
+                }
+            } else {
+                if ($check_icon->status == 0) {
+                    $save_image = $this->saveIconImage($icon);
+
+                    if ($save_image != false) {
+                        $data = [
+                            'image' => $save_image,
+                            'tag' => $icon_tags[$index],
+                            'status' => 1
+                        ];
+
+                        $update_icon = $this->iconRepository->updateIcon($data);
+
+                        $res_icons[$icon] = $save_image;
+                    } else {
+                        $res_icons[$icon] = $icon;
+                    }
+                } else {
+                    $res_icons[$icon] = $check_icon->image;
+                }
+            }
+        }
+
+        return response()->json($res_icons);
+    }
 }

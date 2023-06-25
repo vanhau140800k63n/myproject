@@ -14,6 +14,7 @@ class Icon extends Model
         'image',
         'path',
         'index',
-        'status'
+        'status',
+        'tag'
     ];
 }

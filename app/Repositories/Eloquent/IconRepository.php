@@ -24,4 +24,14 @@ class IconRepository extends BaseRepository implements IconRepositoryInterface
     {
         return $this->icon->create($data);
     }
+
+    public function checkAddIcon($icon_path)
+    {
+        return $this->icon->where('path', intval($icon_path[4]))->where('index', intval($icon_path[5]))->first();
+    }
+
+    public function updateIcon($data)
+    {
+        return $this->icon->update($data);
+    }
 }

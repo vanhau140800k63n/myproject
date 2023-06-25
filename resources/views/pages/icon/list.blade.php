@@ -131,9 +131,13 @@
         var shape = '{{ isset($filter_selected['shape']) ? $filter_selected['shape'] : '' }}';
         var word = '{{ $word }}';
         var page = '{{ $crr_page }}';
+        var icons = [];
+        var icon_tags = [];
 
         $('.icon_list img').each(function() {
             $(this).attr('src', $(this).attr('data-src'));
+            icons.push($(this).attr('data-src'));
+            icon_tags.push($(this).attr('title'));
         })
 
         // $('.icon_search_result').css('display', 'bl')
@@ -228,6 +232,28 @@
         function getFileName(str) {
             return str.substring(str.lastIndexOf('/') + 1);
         }
+
+        var _token = $('meta[name="csrf-token"]').attr('content');
+        $.ajax({
+            url: window.location.origin + "/icon/save_icon",
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            type: "POST",
+            dataType: 'json',
+            data: {
+                icons: icons,
+                icon_tags: icon_tags,
+                _token: _token
+            }
+        }).done(function(data) {
+            $('.icon_list img').each(function() {
+                $(this).attr('src', window.location.origin + '/' + data[$(this).attr('src')]);
+            })
+            return true;
+        }).fail(function(e) {
+            return false;
+        });
 
         // $('.icon_search_input').focus(function() {
         //     var input = $(this);
