@@ -2803,7 +2803,7 @@ ul {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-    border-radius: 40px;
+    border-radius: 20px;
     background-color: #fff;
     cursor: pointer
 }

@@ -173,7 +173,9 @@
                         <div data-w-id="ed551191-b1ef-9624-abde-e6e2dd90bea2" class="content">
                             <div class="steps__columns">
                                 <div class="steps__col" style="padding-right: 25px">
-                                    <img src="{{ asset('image/collections-slide.png') }}">
+                                    <a href="{{ route('icon.home') }}">
+                                        <img src="{{ asset('image/collections-slide.png') }}">
+                                    </a>
                                 </div>
                                 <div class="steps__col mod--2"
                                     style="will-change: transform; transform: translate3d(0px, -10%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
