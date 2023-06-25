@@ -72771,6 +72771,9 @@ setInterval(function () {
     return false;
   });
 }, 10000);
+var n_elements = $(".post_content_text p").length;
+var random = Math.floor(Math.random() * n_elements);
+// $(".post_content_text p").eq(random).append('<div class="color-box"> <div class="shadow"><div class="info-tab tip-icon"><div></div><i class="fa-solid fa-rocket"></i></div><div class="tip-box"><img src="https://devsne.vn/image/icon/4pMZqV8N70.png"><img src="https://devsne.vn/image/icon/4pMZqV8N70.png"><img src="https://devsne.vn/image/icon/4pMZqV8N70.png"><img src="https://devsne.vn/image/icon/4pMZqV8N70.png"></div></div></div>');
 })();
 
 /******/ })()

@@ -2390,8 +2390,8 @@ $(document).ready(function () {
       $('.post_noti').css('display', 'none');
     });
   }
-  $('.note-icon').append('<div></div><i class="fa-solid fa-pen-to-square"></i>');
-  $('.tip-icon').append('<div></div><i class="fa-solid fa-rocket"></i>');
+  $('.lesson_content_text .note-icon').append('<div></div><i class="fa-solid fa-pen-to-square"></i>');
+  $('.lesson_content_text .tip-icon').append('<div></div><i class="fa-solid fa-rocket"></i>');
 });
 
 /***/ }),
