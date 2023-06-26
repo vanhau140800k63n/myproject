@@ -138,7 +138,7 @@
             var data_src = $(this).attr('data-src');
             $(this).attr('src', data_src);
             if (data_src.includes("https://cdn-icons-png.flaticon.com")) {
-                icons.push($(this).attr(data_src));
+                icons.push(data_src);
                 icon_tags.push($(this).attr('title'));
             }
         })
