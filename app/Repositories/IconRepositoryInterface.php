@@ -8,4 +8,5 @@ interface IconRepositoryInterface
     public function create($data);
     public function updateIcon($data);
     public function checkAddIcon($icon_path);
+    public function getIconByPath($data);
 }

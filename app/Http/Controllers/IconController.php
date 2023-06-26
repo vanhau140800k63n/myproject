@@ -86,6 +86,11 @@ class IconController extends Controller
         $arr = [];
         while (strpos($content, '<img') != false) {
             $img = substr($content, strpos($content, '<img'),  strpos($content, '>', strpos($content, '<img'))  + 1 - strpos($content, '<img'));
+            $img_src = substr($img, strpos($img, 'data-src="') + 10,  strpos($img, '"', strpos($img, 'data-src="') + 10)  - 10 - strpos($img, 'data-src="'));
+            $icon = $this->iconRepository->getIconByPath(explode('/', $img_src));
+            if ($icon != null) {
+                $img = str_replace($img_src, $icon->image, $img);
+            }
             $content = substr($content, 0,  strpos($content, '<img ')) . substr($content, strpos($content, '>', strpos($content, '<img ')) + 1);
             array_push($arr, $img);
         }
@@ -148,6 +153,11 @@ class IconController extends Controller
         $arr = [];
         while (strpos($content, '<img') != false) {
             $img = substr($content, strpos($content, '<img'),  strpos($content, '>', strpos($content, '<img'))  + 1 - strpos($content, '<img'));
+            $img_src = substr($img, strpos($img, 'data-src="') + 10,  strpos($img, '"', strpos($img, 'data-src="') + 10)  - 10 - strpos($img, 'data-src="'));
+            $icon = $this->iconRepository->getIconByPath(explode('/', $img_src));
+            if ($icon != null) {
+                $img = str_replace($img_src, $icon->image, $img);
+            }
             $content = substr($content, 0,  strpos($content, '<img ')) . substr($content, strpos($content, '>', strpos($content, '<img ')) + 1);
             array_push($arr, $img);
         }

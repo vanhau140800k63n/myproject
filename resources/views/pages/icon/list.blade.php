@@ -135,9 +135,12 @@
         var icon_tags = [];
 
         $('.icon_list img').each(function() {
-            $(this).attr('src', $(this).attr('data-src'));
-            icons.push($(this).attr('data-src'));
-            icon_tags.push($(this).attr('title'));
+            var data_src = $(this).attr('data-src');
+            $(this).attr('src', data_src);
+            if (data_src.includes("https://cdn-icons-png.flaticon.com")) {
+                icons.push($(this).attr(data_src));
+                icon_tags.push($(this).attr('title'));
+            }
         })
 
         // $('.icon_search_result').css('display', 'bl')

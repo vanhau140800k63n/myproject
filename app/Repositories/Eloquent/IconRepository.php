@@ -34,4 +34,9 @@ class IconRepository extends BaseRepository implements IconRepositoryInterface
     {
         return $this->icon->update($data);
     }
+
+    public function getIconByPath($data)
+    {
+        return $this->icon->where('path', intval($data[4]))->where('index', intval($data[5]))->where('status', 1)->first();
+    }
 }
