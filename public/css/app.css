@@ -3200,15 +3200,15 @@ select {
     font-size: 30px;
 }
 
-.template_list iframe,
-.template_list img,
-.template_list video {
+.template_item_show iframe,
+.template_item_show img,
+.template_item_show video {
     margin-top: 30px;
     border: 15px solid rgb(217, 214, 214);
 }
 
-.template_list img,
-.template_list video {
+.template_item_show img,
+.template_item_show video {
     width: -webkit-fill-available;
 }
 
@@ -3509,7 +3509,9 @@ a.template_type_item.active {
         font-size: 12px;
     }
 
-    .template_list iframe, .template_list img, .template_list video {
+    .template_item_show iframe,
+    .template_item_show img,
+    .template_item_show video {
         border: 5px solid rgb(217, 214, 214);
     }
 }
