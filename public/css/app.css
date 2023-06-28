@@ -3374,6 +3374,41 @@ a.template_type_item.active {
     width: calc(100% - 56px * 2 - 16px);
 }
 
+.icon_ads {
+    display: flex;
+    border: 2px solid #e3e8f0;
+}
+
+.icon_ads_title {
+    background: #767286;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.icon_ads_lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.icon_ads_lists img {
+    width: 50px;
+    height: 50px;
+    margin: 5px 15px;
+    border: 0;
+}
+
+.icon_ads_item {
+    position: relative;
+}
+
+
+
 @media only screen and (min-width: 1400px) {}
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}

@@ -63,6 +63,13 @@ class Controller extends BaseController
         return false;
     }
 
+    protected function saveVideo($url) {
+        // retur $path = $request->file('video')->storeAs(
+        //     'videos_directory',
+        //     $request->file('video')->getClientOriginalName() . '.' . $request->file('video')->getClientOriginalExtension()
+        // );
+    }
+
     private function generateRandomString($length = 10)
     {
         return substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);

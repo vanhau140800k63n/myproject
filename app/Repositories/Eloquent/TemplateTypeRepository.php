@@ -22,7 +22,7 @@ class TemplateTypeRepository extends BaseRepository implements TemplateTypeRepos
 
     public function getListType()
     {
-        return $this->template_type->all();
+        return $this->template_type->inRandomOrder()->get();
     }
 
     public function getListTypeAdmin()
