@@ -80,7 +80,7 @@
                         <?php
                         $icon_lists = \App\Models\Icon::whereNotNull('image')
                             ->inRandomOrder()
-                            ->take(10)
+                            ->take(8)
                             ->get();
                         ?>
                         <div class="icon_ads">
