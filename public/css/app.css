@@ -3508,6 +3508,10 @@ a.template_type_item.active {
     .button__text {
         font-size: 12px;
     }
+
+    .template_list iframe, .template_list img, .template_list video {
+        border: 5px solid rgb(217, 214, 214);
+    }
 }
 .wrap-home-content {
     --accent-color: #2c31cf;
