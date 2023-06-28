@@ -77,7 +77,23 @@
                                 </button>
                             @endif
                         </div>
-                       
+                        <?php
+                        $icon_lists = \App\Models\Icon::whereNotNull('image')
+                            ->inRandomOrder()
+                            ->take(10)
+                            ->get();
+                        ?>
+                        <div class="icon_ads">
+                            <div class="icon_ads_lists">
+                                @foreach ($icon_lists as $icon)
+                                    <div class="icon_ads_item">
+                                        <i class="fa-regular fa-download fa-bounce"></i>
+                                        <img src="{{ asset($icon->image) }}">
+                                    </div>
+                                @endforeach
+                            </div>
+                            <a class="icon_ads_title">Xem Thêm</a>
+                        </div>
                     </article>
                 @endforeach
                 {{ $list_template->links('partial.pagination') }}
