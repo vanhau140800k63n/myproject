@@ -3401,7 +3401,7 @@ a.template_type_item.active {
 .icon_ads_lists img {
     width: 50px;
     height: 50px;
-    margin: 5px 15px;
+    /* margin: 5px 15px; */
     border: 0;
 }
 

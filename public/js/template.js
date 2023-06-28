@@ -113,6 +113,11 @@ $(document).ready(function () {
   }, function () {
     this.pause();
   });
+  var icon_ads_lists_width = $('.icon_ads_lists').width();
+  var icon_ads_item_width = $('.icon_ads_item').width();
+  var icon_ads_item_num = Math.floor(icon_ads_lists_width / (icon_ads_item_width + 20));
+  var icon_ads_item_margin = (icon_ads_lists_width / icon_ads_item_num - icon_ads_item_width) / 2;
+  $('.icon_ads_lists img').css('margin', '5px ' + icon_ads_item_margin + 'px');
 });
 })();
 
