@@ -83,7 +83,7 @@
                             ->take(10)
                             ->get();
                         ?>
-                        <div class="icon_ads">
+                        <a href="{{ route('icon.home') }}" class="icon_ads">
                             <div class="icon_ads_lists">
                                 @foreach ($icon_lists as $icon)
                                     <div class="icon_ads_item">
@@ -94,8 +94,8 @@
                                     </div>
                                 @endforeach
                             </div>
-                            <a class="icon_ads_title" href="{{ route('icon.home') }}">Free Icon</a>
-                        </div>
+                            <div class="icon_ads_title">Free Icon</div>
+                        </a>
                     </article>
                 @endforeach
                 {{ $list_template->links('partial.pagination') }}
