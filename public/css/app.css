@@ -3377,7 +3377,7 @@ a.template_type_item.active {
 .icon_ads {
     display: flex;
     border: 2px solid #e3e8f0;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .icon_ads_title {
@@ -3392,9 +3392,9 @@ a.template_type_item.active {
 
 .icon_ads_lists {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .icon_ads_lists img {
@@ -3408,7 +3408,14 @@ a.template_type_item.active {
     position: relative;
 }
 
-
+.i_a_i_download {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
 
 @media only screen and (min-width: 1400px) {}
 
