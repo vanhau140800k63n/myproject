@@ -94,7 +94,7 @@
                                     </div>
                                 @endforeach
                             </div>
-                            <a class="icon_ads_title">Xem Thêm</a>
+                            <a class="icon_ads_title" href="{{ route('icon.home') }}">Xem Thêm</a>
                         </div>
                     </article>
                 @endforeach
