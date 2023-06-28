@@ -88,7 +88,7 @@
                                 @foreach ($icon_lists as $icon)
                                     <div class="icon_ads_item">
                                         <button class="i_a_i_download">
-                                            <i class="fa-regular fa-download fa-bounce"></i>
+                                            <i class="fa-regular fa-download"></i>
                                         </button>
                                         <img src="{{ asset($icon->image) }}">
                                     </div>

@@ -3409,6 +3409,10 @@ a.template_type_item.active {
     position: relative;
 }
 
+.icon_ads_item:hover {
+    background: #d0ddf0;
+}
+
 .i_a_i_download {
     position: absolute;
     top: 0;
