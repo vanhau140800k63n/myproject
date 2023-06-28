@@ -3293,6 +3293,7 @@ a.template_type_item.active {
     height: 100%;
     color: var(--line_color);
     font-weight: 600;
+    text-align: center;
 }
 
 .button::before,
@@ -3497,6 +3498,15 @@ a.template_type_item.active {
     .template_list_type {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .icon_ads_lists img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .button__text {
+        font-size: 12px;
     }
 }
 .wrap-home-content {
