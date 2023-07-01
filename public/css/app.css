@@ -5817,6 +5817,23 @@ summary svg {
     transform: translate(-29.3%) rotate(-45deg);
 }
 
+.i_f_i_banner_a {
+    position: relative;
+}
+
+.i_f_i_banner_title {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: #2e2f4820;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.i_f_i_banner_a:hover .i_f_i_banner_title {
+    background: #2e2f4890;
+}
+
 @media only screen and (min-width: 1400px) {}
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}

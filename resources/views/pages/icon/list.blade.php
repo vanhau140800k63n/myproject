@@ -87,12 +87,19 @@
 
             <div class="icon_filters_item">
                 <a href="{{ route('icon.search', ['word' => 'contest']) }}">
-                    <div style="font-weight: 600; margin-bottom: 10px"> Free Contest Icons </div>
-                    <img class="icon_search_example" src="{{ asset('image/contest_icons.png') }}">
+                    <div class="i_f_i_banner_a">
+                        <div class="i_f_i_banner_title" style="font-weight: 600;"> Free Contest Icons
+                        </div>
+                        <img class="icon_search_example" src="{{ asset('image/contest_icons.png') }}">
+                    </div>
                 </a>
                 <a href="{{ route('icon.search', ['word' => 'game']) }}">
-                    <div style="font-weight: 600; margin-bottom: 10px; margin-top: 30px"> Free Game Icons </div>
-                    <img class="icon_search_example" src="{{ asset('image/game_icons.png') }}">
+                    <div class="i_f_i_banner_a" style="margin-top: 30px">
+                        <div class="i_f_i_banner_title" style="font-weight: 600;">
+                            Free
+                            Game Icons </div>
+                        <img class="icon_search_example" src="{{ asset('image/game_icons.png') }}">
+                    </div>
                 </a>
             </div>
         </aside>
