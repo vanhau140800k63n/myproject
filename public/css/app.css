@@ -1275,6 +1275,10 @@ code * {
     background: #fff;
 }
 
+.other_course_list {
+    padding-bottom: 50px;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .lesson_box {
         flex-wrap: wrap;
