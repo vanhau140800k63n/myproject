@@ -2267,21 +2267,13 @@ code * {
     margin-bottom: 10px;
     cursor: pointer;
     font-weight: 500;
+    transition: 0.2s;
+    color: #7b7b9a;
 }
 
 .catalogue_item_title:hover {
-    text-decoration: underline;
-}
-
-.catalogue_item_title::before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 25px;
-    background: #000;
-    left: -20px;
-    top: 5px;
+    transform: translateX(2px);
+    color: #282831;
 }
 
 .api_list_title {
