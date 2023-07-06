@@ -105,6 +105,7 @@
                     <a class="template_list_other_item {{ $key == $type_detail->slug ? 'active' : '' }}"
                         href="{{ route('template.list', $type_detail->slug) }}">#{{ $type_detail->slug }}({{ $type_detail->count }})</a>
                 @endforeach
+                <div style="height: -webkit-fill-available"></div>
             </aside>
         </div>
     </div>
