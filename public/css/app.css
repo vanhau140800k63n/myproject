@@ -3174,6 +3174,8 @@ select {
     border-radius: 5px;
     margin-left: 10px;
     font-size: 11px;
+    height: -moz-fit-content;
+    height: fit-content;
 }
 
 .template_list_other_item:hover {
