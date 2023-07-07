@@ -265,6 +265,12 @@
             return false;
         });
 
+        $('.icon_search_input').keydown(function(e) {
+            if(e.which == 13) {
+                $('.icon_search_btn').click();
+            }
+        })
+
         // $('.icon_search_input').focus(function() {
         //     var input = $(this);
         //     getIconSuggest(input);
