@@ -94,6 +94,21 @@
                                             <div class="btn__txt">1000+ Free Template</div>
                                         </div>
                                     </a>
+
+
+                                    <a href="{{ route('icon.home') }}" data-w-id="a8616800-07f8-0697-9681-2671b00ca6a7"
+                                        style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; margin-left: 30px"
+                                        class="hero__btn-wrap">
+                                        <div data-remodal-target="form" class="btn mod--hero w-inline-block">
+                                            <div class="btn__bg-wrap"
+                                                style=" background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);">
+                                                <div class="btn__bg"
+                                                    style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                                </div>
+                                            </div>
+                                            <div class="btn__txt">1000+ Free Icon</div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div data-w-id="b9bc89e3-fe08-d373-2233-6ff7b6612753" class="hero_illustr-wrap"
