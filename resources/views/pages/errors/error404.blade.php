@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('head')
-<title> Không tìm thấy trang | DEVSNE </title>
+<title> Không tìm thấy trang | {{ $_SERVER['REQUEST_URI'] }} | DEVSNE </title>
 @endsection
 @section('content')
     <div class="box">
