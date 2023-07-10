@@ -72722,6 +72722,8 @@ $('.compile_html').click(function (event) {
   newForm.submit();
 });
 $('.show_code_auto').click(function () {
+  $('.show_code_auto').prop('disabled', true);
+  $('.compile_html').prop('disabled', true);
   var post_cart = $('.post_card');
   var val = post_cart.attr('lang');
   var content = view[post_cart.attr('id')].state.doc.toString();
@@ -72737,6 +72739,8 @@ $('.show_code_auto').click(function () {
   var text = content;
   setInterval(function () {
     if (index == text.length) {
+      $('.show_code_auto').prop('disabled', false);
+      $('.compile_html').prop('disabled', false);
       clearInterval(this);
     } else {
       var length = view[post_cart.attr('id')].state.doc.toString().length;
