@@ -5669,6 +5669,7 @@ summary svg {
     margin-right: 10px;
     margin-bottom: 10px;
     cursor: pointer;
+    background: #fff;
 }
 
 .i_f_i_c_item img {
@@ -5831,6 +5832,10 @@ summary svg {
 
 .i_f_i_banner_a:hover .i_f_i_banner_title {
     background: #2e2f4890;
+}
+
+.slick-slide {
+    margin: 0 20px;
 }
 
 @media only screen and (min-width: 1400px) {}

@@ -1,4 +1,8 @@
 @extends('layouts.master')
+@section('meta')
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+@endsection
 @section('head')
     <title>Free 1000+ {{ ucwords($word) }} Icons For Design | DEVSNE</title>
 @endsection
@@ -104,10 +108,25 @@
             </div>
         </aside>
         <main class="icon_list_box">
+            <?php
+            $icon_tags = \App\Models\Icon::select('tag')
+                ->distinct()
+                ->inRandomOrder()
+                ->take(20)
+                ->get()
+                ->pluck('tag');
+            ?>
             <div class="icon_search">
                 <input class="icon_search_input" value="{{ $word }}">
                 <button class="icon_search_btn">Tìm kiếm</button>
                 <div class="icon_search_result"></div>
+            </div>
+            <div class="icon_slider">
+                @foreach ($icon_tags as $icon_tag_item)
+                    <a href="{{ route('icon.search', ['word' => $icon_tag_item]) }}" class="icon_slider_item">
+                        {{ $icon_tag_item }}
+                    </a>
+                @endforeach
             </div>
             <h1> Tìm kiếm: Free {{ $word }} Icons </h1>
             <div class="icon_list">
@@ -133,6 +152,7 @@
             </div>
         </main>
     </div>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script>
         var color = '{{ isset($filter_selected['color']) ? $filter_selected['color'] : '' }}';
         var shape = '{{ isset($filter_selected['shape']) ? $filter_selected['shape'] : '' }}';
@@ -266,10 +286,20 @@
         });
 
         $('.icon_search_input').keydown(function(e) {
-            if(e.which == 13) {
+            if (e.which == 13) {
                 $('.icon_search_btn').click();
             }
         })
+
+        $(".icon_slider").slick({
+            infinite: true,
+            arrows: false,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            variableWidth: true,
+            slidesToScroll: 1,
+        });
 
         // $('.icon_search_input').focus(function() {
         //     var input = $(this);
