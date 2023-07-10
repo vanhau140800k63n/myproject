@@ -5843,7 +5843,7 @@ summary svg {
 }
 
 .icon_slider_item {
-    font-weight: 600;
+    font-weight: 500;
     color: rgb(52, 43, 54);
     transition: 0.2s;
 }
