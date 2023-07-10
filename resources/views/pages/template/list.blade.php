@@ -80,7 +80,7 @@
                         <?php
                         $icon_lists = \App\Models\Icon::whereNotNull('image')
                             ->inRandomOrder()
-                            ->take(10)
+                            ->take(20)
                             ->get();
                         ?>
                         <div href="{{ route('icon.home') }}" class="icon_ads">
