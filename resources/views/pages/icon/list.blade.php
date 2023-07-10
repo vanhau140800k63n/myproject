@@ -291,15 +291,18 @@
             }
         })
 
-        // $(".icon_slider").slick({
-        //     infinite: true,
-        //     arrows: false,
-        //     dots: false,
-        //     autoplay: true,
-        //     autoplaySpeed: 2000,
-        //     variableWidth: true,
-        //     slidesToScroll: 1,
-        // });
+        setTimeout(() => {
+            $(".icon_slider").show();
+            $(".icon_slider").slick({
+                infinite: true,
+                arrows: false,
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                variableWidth: true,
+                slidesToScroll: 1,
+            });
+        }, 2000);
 
         // $('.icon_search_input').focus(function() {
         //     var input = $(this);
