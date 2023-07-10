@@ -5723,7 +5723,7 @@ summary svg {
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .icon_search_btn {
@@ -5840,6 +5840,16 @@ summary svg {
 
 .icon_slider {
     display: none;
+}
+
+.icon_slider_item {
+    font-weight: 600;
+    color: rgb(52, 43, 54);
+    transition: 0.2s;
+}
+
+.icon_slider_item:hover {
+    transform: translateY(-2px);
 }
 
 @media only screen and (min-width: 1400px) {}
