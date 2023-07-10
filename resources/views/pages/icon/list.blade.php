@@ -291,15 +291,15 @@
             }
         })
 
-        $(".icon_slider").slick({
-            infinite: true,
-            arrows: false,
-            dots: false,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            variableWidth: true,
-            slidesToScroll: 1,
-        });
+        // $(".icon_slider").slick({
+        //     infinite: true,
+        //     arrows: false,
+        //     dots: false,
+        //     autoplay: true,
+        //     autoplaySpeed: 2000,
+        //     variableWidth: true,
+        //     slidesToScroll: 1,
+        // });
 
         // $('.icon_search_input').focus(function() {
         //     var input = $(this);
