@@ -180,7 +180,7 @@
             @if ($posts_related->count() > 0)
                 <div class="api_list_title">Một số bài viết liên quan</div>
                 <div class="post_list">
-                    @foreach ($posts_related as $related_post)
+                    @foreach ($posts_related as $related_post_index => $related_post)
                         <div class="post_list_item">
                             <div class="post_list_item_info">
                                 <a>
@@ -203,6 +203,16 @@
                                 href="{{ route('post.detail', ['slug' => $related_post->slug]) }}"><img
                                     src="{{ asset($related_post->image) }}"></a>
                         </div>
+                        @if ($related_post_index == 2)
+                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
+                                crossorigin="anonymous"></script>
+                            <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed"
+                                data-ad-client="ca-pub-6922352342278341" data-ad-slot="1443114304"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || [])
+                                .push({});
+                            </script>
+                        @endif
                     @endforeach
                 </div>
             @endif
