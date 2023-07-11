@@ -148,7 +148,7 @@
                         @if (intval($item->compiler) === 1)
                             <div class="compiler_code_title">
                                 {{ $item->p_language_id != 'html' ? 'Compiler' : 'HTML Iframe' }}
-                                <div class="lds-ring">
+                                <div class="lds-ring" style="float: right">
                                     <div></div>
                                     <div></div>
                                     <div></div>

@@ -72482,7 +72482,7 @@ console.log = function () {
 };
 $('.run_code').click(function () {
   var compiler_code_loading = $(this).parent().parent().find('.lds-ring');
-  compiler_code_loading.show();
+  compiler_code_loading.css('display', 'inline-block');
   var code_editer = $(this).parent().parent().find('.post_card');
   var lang = code_editer.attr('lang');
   var content = view[code_editer.attr('id')].state.doc.toString();
