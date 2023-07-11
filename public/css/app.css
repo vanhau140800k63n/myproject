@@ -1303,9 +1303,6 @@ code * {
 
     .lesson_box_other_fixed {
         position: relative;
-    }
-
-    .lesson_box_other_fixed {
         width: auto;
     }
 
@@ -1342,9 +1339,6 @@ code * {
 
     .lesson_box_other_fixed {
         position: relative;
-    }
-
-    .lesson_box_other_fixed {
         width: auto;
     }
 }
@@ -1370,6 +1364,7 @@ code * {
 
     .lesson_box_other_fixed {
         position: relative;
+        max-height: none;
     }
 }
 
@@ -2151,7 +2146,8 @@ code * {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.show_code_auto:disabled, .compile_html:disabled {
+.show_code_auto:disabled,
+.compile_html:disabled {
     background: rgb(166 161 186);
 }
 
@@ -2675,6 +2671,7 @@ code a {
 
     .post_box_other_fixed {
         position: relative;
+        max-height: none;
     }
 
     .other_course_list {
