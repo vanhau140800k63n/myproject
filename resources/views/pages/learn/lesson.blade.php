@@ -72,7 +72,7 @@
             <div class="lesson_box_category_toggle"></div>
             <div class="lesson_box_category_toggle_show"><i class="fa-solid fa-list"></i></div>
         </div>
-        <div class="lesson_box_content">
+        <main class="lesson_box_content">
             <div class="lesson_box_content_title">{{ $lesson->title }}</div>
             {{-- <a href="{{ route('exam.home') }}">
                 <div class="contest_banner">
@@ -129,7 +129,7 @@
                 </div>
             </a> --}}
             @foreach ($lesson_detail as $item)
-                <div class="lesson_content">
+                <article class="lesson_content">
                     <div class="lesson_content_head">
                         <div class="lesson_content_title">{{ $item->title }}</div>
                         @if ($item->type !== 'text' && intval($item->compiler) === 1)
@@ -164,7 +164,7 @@
                             @endif
                         @endif
                     @endif
-                </div>
+                </article>
             @endforeach
             <div class="lesson_pre_next">
                 <a class="lesson_pre_btn" href="{{ $pre_lesson }}"> Bài trước </a>
@@ -199,7 +199,7 @@
                     @endforeach
                 </div>
             @endif
-        </div>
+        </main>
         <div class="lesson_box_other">
             <div class="lesson_box_other_fixed">
                 <div class="catalogue">
