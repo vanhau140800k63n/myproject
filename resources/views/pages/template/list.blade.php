@@ -83,18 +83,18 @@
                             ->take(20)
                             ->get();
                         ?>
-                        <div href="{{ route('icon.home') }}" class="icon_ads">
+                        <div class="icon_ads">
                             <div class="icon_ads_lists">
                                 @foreach ($icon_lists as $icon)
                                     <a href="{{ route('icon.search', ['word' => explode(' ', $icon->tag)[0]]) }}" class="icon_ads_item">
                                         <button class="i_a_i_download">
-                                            <i class="fa-regular fa-download"></i>
+                                            <i class="fa-regular fa-circle-info"></i>
                                         </button>
                                         <img src="{{ asset($icon->image) }}">
                                     </a>
                                 @endforeach
                             </div>
-                            <div class="icon_ads_title">Free Icon</div>
+                            <a href="{{ route('icon.home') }}" class="icon_ads_title">Xem Thêm</a>
                         </div>
                     </article>
                 @endforeach
