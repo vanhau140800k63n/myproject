@@ -321,27 +321,25 @@
                 $course_list = \App\Models\PLanguage::all();
                 $i = 0;
                 ?>
-                <div class="other_course_list">
-                    @foreach ($course_list as $course_item)
-                        <article class="other_course_item">
-                            @if ($i % 2 == 0)
-                                <div style="width:10%"> </div>
-                            @endif
-                            <a href="{{ route('learn.lesson_intro', ['course' => $course_item->name]) }}"
-                                class="other_course_item_text"
-                                style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'), {{ $course_item->color }}; width:90%">
-                                <div>Khóa học
-                                    {{ $course_item->full_name }}</div>
-                            </a>
-                            @if ($i % 2 == 1)
-                                <div style="width:10%"> </div>
-                            @endif
-                            <?php
-                            ++$i;
-                            ?>
-                        </article>
-                    @endforeach
-                </div>
+                @foreach ($course_list as $course_item)
+                    <article class="other_course_item">
+                        @if ($i % 2 == 0)
+                            <div style="width:10%"> </div>
+                        @endif
+                        <a href="{{ route('learn.lesson_intro', ['course' => $course_item->name]) }}"
+                            class="other_course_item_text"
+                            style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png'), {{ $course_item->color }}; width:90%">
+                            <div>Khóa học
+                                {{ $course_item->full_name }}</div>
+                        </a>
+                        @if ($i % 2 == 1)
+                            <div style="width:10%"> </div>
+                        @endif
+                        <?php
+                        ++$i;
+                        ?>
+                    </article>
+                @endforeach
                 {{-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@devsnevn" data-unique-id="devsnevn"
                     data-embed-type="creator" style="width: fit-content; max-width: 300px">
                     <section> <a target="_blank" href="https://www.tiktok.com/@devsnevn?refer=creator_embed">@devsnevn</a>

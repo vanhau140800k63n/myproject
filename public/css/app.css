@@ -1366,7 +1366,7 @@ code * {
     .lesson_box_other_fixed {
         position: relative;
         max-height: none;
-        max-width: 400px;
+        max-width: 500px;
         overflow: hidden;
     }
 }
@@ -2050,6 +2050,7 @@ code * {
     overflow-y: scroll;
     max-height: calc(100vh - 70px);
     background: #fff;
+    padding-bottom: 150px;
 }
 
 .post_info_attr {
@@ -2673,11 +2674,8 @@ code a {
     .post_box_other_fixed {
         position: relative;
         max-height: none;
-        max-width: 400px;
-    }
-
-    .other_course_list {
-        padding: 0 30px;
+        max-width: 500px;
+        overflow: hidden;
     }
 
     .post_author_btn_follow {
