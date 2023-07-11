@@ -1330,7 +1330,7 @@ code * {
     }
 
     .lesson_box_other {
-        width: 40% !important;
+        width: 50% !important;
     }
 
     .lesson_box {
@@ -1340,6 +1340,7 @@ code * {
     .lesson_box_other_fixed {
         position: relative;
         width: auto;
+        max-height: none;
     }
 }
 
@@ -1352,6 +1353,7 @@ code * {
 
     .lesson_box_content {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .lesson_box_other {
@@ -2663,10 +2665,10 @@ code a {
     }
 
     .post_box_other {
-        display: flex;
+        /* display: flex; */
         width: 100%;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center;
+        align-items: center; */
     }
 
     .post_box_other_fixed {
