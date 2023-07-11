@@ -1328,6 +1328,7 @@ code * {
 
     .lesson_box_content {
         width: 80% !important;
+        margin-bottom: 50px;
     }
 
     .lesson_box_other {
@@ -1357,12 +1358,8 @@ code * {
         margin-bottom: 20px;
     }
 
-    .lesson_box_other {
-        display: flex;
+    .lesson_box_other { 
         width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
 
     .lesson_box_other_fixed {
