@@ -48,7 +48,8 @@
                                 style="width: 100%; {{ $template->height != null ? 'height:' . $template->height . 'px' : '' }}"
                                 scrolling="no"></iframe>
                         @else
-                            <div class="template_item_show" style="display:flex; justify-content: center;align-items: center;">
+                            <div class="template_item_show"
+                                style="display:flex; justify-content: center;align-items: center;">
                                 {!! $template->show !!}
                             </div>
                         @endif
@@ -86,7 +87,8 @@
                         <div class="icon_ads">
                             <div class="icon_ads_lists">
                                 @foreach ($icon_lists as $icon)
-                                    <a href="{{ route('icon.search', ['word' => explode(' ', $icon->tag)[0]]) }}" class="icon_ads_item">
+                                    <a href="{{ route('icon.search', ['word' => explode(' ', $icon->tag)[0]]) }}"
+                                        class="icon_ads_item">
                                         <button class="i_a_i_download">
                                             <i class="fa-regular fa-circle-info"></i>
                                         </button>
@@ -104,6 +106,15 @@
                 @foreach ($list_type_all as $type_detail)
                     <a class="template_list_other_item {{ $key == $type_detail->slug ? 'active' : '' }}"
                         href="{{ route('template.list', $type_detail->slug) }}">#{{ $type_detail->slug }}({{ $type_detail->count }})</a>
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
+                        crossorigin="anonymous"></script>
+                    <!-- Thích ứng -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6922352342278341"
+                        data-ad-slot="8726707957" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || [])
+                        .push({});
+                    </script>
                 @endforeach
                 <div style="height: -webkit-fill-available"></div>
             </aside>
