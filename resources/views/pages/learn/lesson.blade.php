@@ -206,8 +206,9 @@
                         @if ($related_post_index == 2)
                             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
                                 crossorigin="anonymous"></script>
-                            <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed"
-                                data-ad-client="ca-pub-6922352342278341" data-ad-slot="1443114304"></ins>
+                            <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
+                                data-ad-format="fluid" data-ad-client="ca-pub-6922352342278341"
+                                data-ad-slot="4359770305"></ins>
                             <script>
                                 (adsbygoogle = window.adsbygoogle || [])
                                 .push({});
