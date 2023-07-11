@@ -1307,6 +1307,8 @@ code * {
     .lesson_box_other_fixed {
         position: relative;
         width: auto;
+        max-height: none;
+        overflow: hidden;
     }
 
     .lesson_box_content_title {
@@ -2315,7 +2317,6 @@ code * {
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-word;
-    max-width: 140px;
     font-size: 12px;
 }
 
@@ -2621,7 +2622,6 @@ code a {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .post_author_info_name {
         margin-left: 8px;
-        max-width: 100px;
     }
 
     .post_box_content {
@@ -2636,7 +2636,6 @@ code a {
 
     .post_author_info_name {
         margin-left: 5px;
-        max-width: 65px;
     }
 
     .post_box_content {
@@ -2649,6 +2648,14 @@ code a {
 
     .post_box_content_title {
         font-size: 22px;
+    }
+
+    .post_box_other {
+        width: 25%;
+    }
+
+    .post_box_content {
+        width: 75%;
     }
 }
 
@@ -2682,10 +2689,6 @@ code a {
 
     .post_author_btn_follow {
         margin-left: 20px;
-    }
-
-    .post_author_info_name {
-        max-width: 200px;
     }
 
     .post_noti {
@@ -2809,10 +2812,6 @@ code a {
 
     .post_info_category * {
         font-size: 12px;
-    }
-
-    .post_author_info_name {
-        max-width: 180px;
     }
 
     .comment_box {
