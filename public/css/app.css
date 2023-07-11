@@ -1343,6 +1343,7 @@ code * {
         position: relative;
         width: auto;
         max-height: none;
+        overflow: hidden;
     }
 }
 
@@ -1365,6 +1366,8 @@ code * {
     .lesson_box_other_fixed {
         position: relative;
         max-height: none;
+        max-width: 400px;
+        overflow: hidden;
     }
 }
 
@@ -2670,6 +2673,7 @@ code a {
     .post_box_other_fixed {
         position: relative;
         max-height: none;
+        max-width: 400px;
     }
 
     .other_course_list {
