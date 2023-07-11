@@ -244,23 +244,6 @@
                         (adsbygoogle = window.adsbygoogle || [])
                         .push({});
                     </script>
-                    <div class="icon_filters_item" style="margin-bottom: 30px">
-                        <a href="{{ route('icon.search', ['word' => 'contest']) }}">
-                            <div class="i_f_i_banner_a">
-                                <div class="i_f_i_banner_title" style="font-weight: 600;"> Free Contest Icons
-                                </div>
-                                <img class="icon_search_example" src="{{ asset('image/contest_icons.png') }}">
-                            </div>
-                        </a>
-                        <a href="{{ route('icon.search', ['word' => 'game']) }}">
-                            <div class="i_f_i_banner_a" style="margin-top: 30px">
-                                <div class="i_f_i_banner_title" style="font-weight: 600;">
-                                    Free
-                                    Game Icons </div>
-                                <img class="icon_search_example" src="{{ asset('image/game_icons.png') }}">
-                            </div>
-                        </a>
-                    </div>
                     @foreach ($course_list as $course_item)
                         <div class="other_course_item">
                             @if ($i % 2 == 0)
