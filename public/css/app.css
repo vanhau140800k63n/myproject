@@ -1291,6 +1291,7 @@ code * {
 
     .lesson_box_content {
         width: 80% !important;
+        margin-bottom: 100px;
     }
 
     .lesson_box_other {
@@ -2662,13 +2663,11 @@ code a {
     .post_box_content {
         width: 100%;
         padding: 50px 30px;
+        margin-bottom: 100px;
     }
 
     .post_box_other {
-        /* display: flex; */
         width: 100%;
-        /* justify-content: center;
-        align-items: center; */
     }
 
     .post_box_other_fixed {
@@ -2758,6 +2757,7 @@ code a {
 
     .post_box_content {
         padding: 30px 5px;
+        margin-bottom: 50px;
     }
 
     .post_content_title {
