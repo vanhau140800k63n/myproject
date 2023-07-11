@@ -235,15 +235,6 @@
                     </div>
                 @endif
                 <div class="other_course_list">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
-                        crossorigin="anonymous"></script>
-                    <!-- Thích ứng -->
-                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6922352342278341"
-                        data-ad-slot="8726707957" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || [])
-                        .push({});
-                    </script>
                     @foreach ($course_list as $course_item)
                         <div class="other_course_item">
                             @if ($i % 2 == 0)
