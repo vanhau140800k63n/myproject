@@ -236,8 +236,9 @@
 
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
                 crossorigin="anonymous"></script>
-            <ins class="adsbygoogle" style="display:block; text-align:center; margin-top: 20px" data-ad-layout="in-article"
-                data-ad-format="fluid" data-ad-client="ca-pub-6922352342278341" data-ad-slot="4359770305"></ins>
+            <ins class="adsbygoogle" style="display:block; text-align:center; margin-top: 20px"
+                data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6922352342278341"
+                data-ad-slot="4359770305"></ins>
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
@@ -348,6 +349,15 @@
                         ?>
                     </article>
                 @endforeach
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
+                    crossorigin="anonymous"></script>
+                <!-- Thích ứng -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6922352342278341"
+                    data-ad-slot="8726707957" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || [])
+                    .push({});
+                </script>
                 {{-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@devsnevn" data-unique-id="devsnevn"
                     data-embed-type="creator" style="width: fit-content; max-width: 300px">
                     <section> <a target="_blank" href="https://www.tiktok.com/@devsnevn?refer=creator_embed">@devsnevn</a>
