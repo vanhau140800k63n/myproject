@@ -40,7 +40,7 @@
         </div>
         <div class="template_list_container">
             <main class="template_list">
-                @foreach ($list_template as $template)
+                @foreach ($list_template as $template_index => $template)
                     <article class="template_item">
                         <h2># {{ $template->title }}</h2>
                         @if ($template->show == null)
@@ -99,6 +99,16 @@
                             <a href="{{ route('icon.home') }}" class="icon_ads_title">Xem Thêm</a>
                         </div>
                     </article>
+                    @if ($template_index == 1)
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
+                            crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed"
+                            data-ad-client="ca-pub-6922352342278341" data-ad-slot="1443114304"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || [])
+                            .push({});
+                        </script>
+                    @endif
                 @endforeach
                 {{ $list_template->links('partial.pagination') }}
             </main>
