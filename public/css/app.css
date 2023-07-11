@@ -1104,7 +1104,7 @@ a {
     justify-content: space-between;
 }
 
-.compiler_code_title .google-auto-placed {
+.compiler_code_title .google-auto-placed, .lesson_card .google-auto-placed {
     display: none;
 }
 

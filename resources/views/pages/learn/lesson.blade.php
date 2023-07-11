@@ -174,7 +174,7 @@
                 <div class="api_list_title">Một số bài viết liên quan</div>
                 <div class="post_list">
                     @foreach ($posts_related as $related_post)
-                        <article class="post_list_item">
+                        <div class="post_list_item">
                             <div class="post_list_item_info">
                                 <a>
                                     <img src="{{ asset($related_post->author_avata) }}">
@@ -195,7 +195,7 @@
                             <a class="post_list_item_img"
                                 href="{{ route('post.detail', ['slug' => $related_post->slug]) }}"><img
                                     src="{{ asset($related_post->image) }}"></a>
-                        </article>
+                        </div>
                     @endforeach
                 </div>
             @endif
