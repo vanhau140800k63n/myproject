@@ -128,6 +128,13 @@
                     </div>
                 </div>
             </a> --}}
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
+            crossorigin="anonymous"></script>
+        <ins class="adsbygoogle" style="display:block; text-align:center; margin-bottom: 50px" data-ad-layout="in-article"
+            data-ad-format="fluid" data-ad-client="ca-pub-6922352342278341" data-ad-slot="4359770305"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
             @foreach ($lesson_detail as $item)
                 <article class="lesson_content">
                     <div class="lesson_content_head">
