@@ -6,6 +6,7 @@ use App\Exceptions\PageException;
 use App\Repositories\LessonItemRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
+use App\Repositories\PostRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -17,14 +18,16 @@ class LessonController extends Controller
     private $pLanguageRepository;
     private $lessonRepository;
     private $lessonItemRepository;
+    private $postRepository;
     private $file_methods = ['fopen', 'fclose', 'fread', 'fwrite', 'file_exists', 'filesize', 'unlink', 'copy', 'rename', 'mkdir', 'opendir', 'readdir', 'closedir', 'is_readable', 'is_writable', 'exec', 'shell_exec'];
 
-    public function __construct(UserRepositoryInterface $userRepository, PLanguageRepositoryInterface $pLanguageRepository, LessonRepositoryInterface $lessonRepository, LessonItemRepositoryInterface $lessonItemRepository)
+    public function __construct(UserRepositoryInterface $userRepository, PLanguageRepositoryInterface $pLanguageRepository, LessonRepositoryInterface $lessonRepository, LessonItemRepositoryInterface $lessonItemRepository, PostRepositoryInterface $postRepository)
     {
         $this->userRepository = $userRepository;
         $this->pLanguageRepository = $pLanguageRepository;
         $this->lessonRepository = $lessonRepository;
         $this->lessonItemRepository = $lessonItemRepository;
+        $this->postRepository = $postRepository;
     }
 
     public function getCourseListAdmin()
@@ -128,6 +131,7 @@ class LessonController extends Controller
 
     public function getLessonDetail($course, $slug)
     {
+        $key = $course;
         $course = $this->pLanguageRepository->getCourseByName($course);
         if ($course !== null) {
             $lesson_list = $this->lessonRepository->getLessonListParent($course->id);
@@ -153,7 +157,12 @@ class LessonController extends Controller
                 if ($next_lesson !== '') {
                     $next_lesson = route('learn.lesson_detail', ['course' => $course->name, 'slug' => $next_lesson->slug]);
                 }
-                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list', 'pre_lesson', 'next_lesson'));
+
+                $raw = 'post.title like "%' . $key . '%"';
+                $raw .= ' or post.category like "' . $key . '-%"' .  ' or post.category like "%-' . $key . '-%"' . ' or post.category like "%-' . $key . '"';
+                $posts_related = $this->postRepository->searchPostRaw($raw, 10);
+
+                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list', 'pre_lesson', 'next_lesson', 'posts_related'));
             }
         }
 
@@ -188,9 +197,14 @@ class LessonController extends Controller
                 if ($next_lesson !== '') {
                     $next_lesson = route('learn.lesson_detail', ['course' => $course->name, 'slug' => $next_lesson->slug]);
                 }
-                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list', 'pre_lesson', 'next_lesson'));
+
+                $raw = 'post.title like "%' . $key . '%"';
+                $raw .= ' or post.category like "' . $key . '-%"' .  ' or post.category like "%-' . $key . '-%"' . ' or post.category like "%-' . $key . '"';
+                $posts_related = $this->postRepository->searchPostRaw($raw, 10);
+
+                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list', 'pre_lesson', 'next_lesson', 'posts_related'));
             }
-        } 
+        }
 
         return redirect()->route('search', ['key' => $key]);
     }

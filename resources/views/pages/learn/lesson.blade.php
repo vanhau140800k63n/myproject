@@ -170,6 +170,36 @@
                 <a class="lesson_pre_btn" href="{{ $pre_lesson }}"> Bài trước </a>
                 <a class="lesson_next_btn" href="{{ $next_lesson }}"> Bài sau </a>
             </div>
+            @if ($posts_related->count() > 0)
+                <div class="api_list_title">Một số bài viết liên quan</div>
+                <div class="post_list">
+                    @foreach ($posts_related as $related_post)
+                        <article class="post_list_item">
+                            <div class="post_list_item_info">
+                                <a>
+                                    <img src="{{ asset($related_post->author_avata) }}">
+                                    <span>{{ $related_post->author_name }}</span>
+                                    <span style="color: #7d5d53">{{ $related_post->view }} lượt xem</span>
+                                </a>
+                                <a href="{{ route('post.detail', ['slug' => $related_post->slug]) }}">
+                                    <h2>{{ $related_post->title }}</h2>
+                                </a>
+                                <?php $categories = App\Models\Category::whereIn('id', explode('-', $related_post->category))->get(); ?>
+                                <div style="display: flex; flex-wrap: wrap; margin-top: 10px">
+                                    @foreach ($categories as $category)
+                                        <a href="{{ route('search', $category->title) }}"
+                                            class="post_info_category_item">
+                                            {{ $category->title }}</a>
+                                    @endforeach
+                                </div>
+                            </div>
+                            <a class="post_list_item_img"
+                                href="{{ route('post.detail', ['slug' => $related_post->slug]) }}"><img
+                                    src="{{ asset($related_post->image) }}"></a>
+                        </article>
+                    @endforeach
+                </div>
+            @endif
         </div>
         <div class="lesson_box_other">
             <div class="lesson_box_other_fixed">

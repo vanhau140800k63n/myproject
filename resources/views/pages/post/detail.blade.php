@@ -278,7 +278,7 @@
                 </div>
             </aside>
         </main>
-        <article class="post_box_other">
+        <div class="post_box_other">
             <div class="post_box_other_fixed">
                 <div class="post_info_author">
                     <img class="post_author_info_img" src="{{ asset($author->avata) }}">
@@ -349,7 +349,7 @@
                 </blockquote>
                 <script async src="https://www.tiktok.com/embed.js"></script> --}}
             </div>
-        </article>
+        </div>
     </div>
     <script src="{{ asset(mix('js/post.js')) }}"></script>
 @endsection
