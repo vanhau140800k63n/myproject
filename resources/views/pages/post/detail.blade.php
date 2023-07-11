@@ -300,6 +300,13 @@
                         </div>
                     </div>
                 @endif
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
+                    crossorigin="anonymous"></script>
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
+                    data-ad-format="fluid" data-ad-client="ca-pub-6922352342278341" data-ad-slot="4359770305"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
                 <div class="icon_filters_item" style="margin-bottom: 30px">
                     <a href="{{ route('icon.search', ['word' => 'contest']) }}">
                         <div class="i_f_i_banner_a">
