@@ -44,6 +44,8 @@
     "@codemirror/theme-one-dark": "^6.1.0",
     "codemirror": "^6.0.1",
     "JSCPP": "^2.0.9",
-    "stream": "^0.0.2"
+    "stream": "^0.0.2",
+    "tiktok-live-connector": "^1.0.3",
+    "zlib": "^1.0.5"
   }
 }
