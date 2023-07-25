@@ -76,7 +76,7 @@ class ExamController extends Controller
 
         $check_answer_exist = $this->challengeAnswerRepository->getAnswer($user->id, $challenge->id);
         if ($check_answer_exist != null) {
-            return redirect()->route('exam.challenge_weekly')->with('message', 'Hết Lượt Làm Bài');
+            // return redirect()->route('exam.challenge_weekly')->with('message', 'Hết Lượt Làm Bài');
         } else {
             $data = [
                 'user_id' => $user->id,
