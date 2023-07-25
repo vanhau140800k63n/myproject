@@ -77,18 +77,18 @@ class ExamController extends Controller
         $check_answer_exist = $this->challengeAnswerRepository->getAnswer($user->id, $challenge->id);
         if ($check_answer_exist != null) {
             return redirect()->route('exam.challenge_weekly')->with('message', 'Hết Lượt Làm Bài');
+        } else {
+            $data = [
+                'user_id' => $user->id,
+                'challenge_id' => $challenge->id
+            ];
+
+            $answer = $this->challengeAnswerRepository->createAnswer($data);
         }
 
         // if (time() > $time_end) {
         //     return redirect()->back()->with('message', 'Quá Thời Gian Làm Bài');
         // }
-
-        $data = [
-            'user_id' => $user->id,
-            'challenge_id' => $challenge->id
-        ];
-
-        $answer = $this->challengeAnswerRepository->createAnswer($data);
 
         return view('pages.exam.contest_detail', compact('challenge'));
     }
