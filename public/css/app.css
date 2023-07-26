@@ -5211,7 +5211,7 @@ select {
 
 .contest_creen h1 {
     font-size: var(--h1-size) !important;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
 }

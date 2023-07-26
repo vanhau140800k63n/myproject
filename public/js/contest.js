@@ -30146,14 +30146,16 @@ $(document).ready(function () {
       return false;
     });
   });
+  var time_contest_start = Math.floor(new Date().getTime() / 1000);
   var cd_time_contest = $('.contest_creen_info').attr('time') * 60;
-  var cr_time_contest = 0;
+  var time_contest_end = time_contest_start + $('.contest_creen_info').attr('time') * 60;
   var count_down = setInterval(function () {
-    cr_time_contest += 1;
-    if (cr_time_contest == cd_time_contest) {
+    var cr_time_contest = Math.floor(new Date().getTime() / 1000);
+    if (cr_time_contest >= time_contest_end) {
       $('.cm_action_submit').click();
       clearInterval(count_down);
     }
+    cr_time_contest -= time_contest_start;
     var s_text = String("0" + cr_time_contest % 60).slice(-2);
     var m_text = Math.floor(cr_time_contest / 60);
     var w_percent = cr_time_contest / cd_time_contest * 100;
