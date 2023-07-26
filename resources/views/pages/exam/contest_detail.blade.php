@@ -77,9 +77,7 @@
                         &nbsp;&nbsp;public static void main(String[] args) {
                         &nbsp;&nbsp;&nbsp;&nbsp;// your code here
                         &nbsp;&nbsp;}
-                        }               
-                </code>
-            </pre>
+                        }</code></pre>
             <p><span>2</span>Thời gian sẽ được tính từ lúc bạn vào thử thách
             </p>
             <p><span>3</span>Sử dụng nút <button>Chạy Thử</button> để kiểm tra, nút <button>Nộp Bài</button> nộp
