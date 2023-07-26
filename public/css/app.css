@@ -5063,7 +5063,6 @@ a.template_type_item.active {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin-bottom: 50px;
     min-height: 100vh;
     background: #1d2022;
     flex-wrap: wrap;
