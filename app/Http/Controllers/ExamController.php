@@ -42,7 +42,7 @@ class ExamController extends Controller
             $user = Auth::user();
         }
 
-        return view('pages.exam.home', compact('user'));
+        return view('pages.exam.list', compact('user'));
     }
 
     public function getChallengeInfo(Request $req)
@@ -199,5 +199,11 @@ class ExamController extends Controller
 
         $update_answer = $this->challengeAnswerRepository->updateAnswer($answer->id, $data);
         return redirect()->route('exam.challenge_weekly')->with('message', 'Bạn Đã Hoàn Thành<br>' . '<span style="font-size: 16px; color:#ed5829; font-weight: 500">' . 'Kết quả: ' . $score . ' Điểm</span>');
+    }
+
+    public function updateExamList()
+    {
+        $exam_list_file = file_get_contents('exam_list.json');
+        $exam_list = json_decode($exam_list_file, true);
     }
 }

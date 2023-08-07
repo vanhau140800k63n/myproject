@@ -5883,4 +5883,34 @@ summary svg {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+@media only screen and (min-width: 1400px) {
+    
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+   
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+   
+}
+
+@media only screen and (max-width: 576px) {
+    .lesson_box .cm-scroller, .post_box .cm-scroller{
+        overflow-x: scroll !important;
+    }
+
+    .box {
+        margin: 50px auto 0 auto;
+        padding: 10px;
+    }
+}
 
