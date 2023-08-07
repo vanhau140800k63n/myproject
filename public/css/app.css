@@ -1130,7 +1130,6 @@ a {
 .lesson_content table {
     border-collapse: collapse;
     margin: 10px 0 25px 0;
-    box-shadow: rgb(0 0 0 / 16%) 0px 1px 1px;
     border: 1px solid #dddddd;
     overflow: hidden;
     table-layout: fixed;
@@ -2384,7 +2383,7 @@ code a {
 
 .cmt_btn {
     width: 15%;
-    background-image: url("https://transparenttextures.com/patterns/maze-white.png"), linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+    background-color: rgb(57, 46, 60);
     color: #fff;
     padding: 5px 15px;
     border: none;
@@ -2514,7 +2513,7 @@ code a {
 
 .post_list_item_img img {
     width: -webkit-fill-available;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
