@@ -289,12 +289,12 @@
         </main>
         <div class="post_box_other">
             <div class="post_box_other_fixed" style="">
-                <div class="post_info_author">
+                {{-- <div class="post_info_author">
                     <img class="post_author_info_img" src="{{ asset($author->avata) }}">
                     <a href="{{ route('user_detail', ['id' => $author->id]) }}" class="post_author_info_name">
                         {{ $author->last_name . ' ' . $author->first_name }} </a>
                     <button class="post_author_btn_follow">Theo dõi</button>
-                </div>
+                </div> --}}
                 @if ($post_detail->count() > 1)
                     <div class="catalogue">
                         <div class="catalogue_title">Mục lục</div>
