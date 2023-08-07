@@ -948,7 +948,7 @@ a {
 }
 
 .lesson_box_category * {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .lesson_box_content {
@@ -2269,7 +2269,7 @@ code * {
     margin-left: 20px;
     margin-bottom: 10px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
     transition: 0.2s;
     color: #7b7b9a;
 }
