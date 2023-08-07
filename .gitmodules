@@ -1,0 +1,3 @@
+[submodule "public/java"]
+	path = public/java
+	url = https://github.com/exercism/java.git

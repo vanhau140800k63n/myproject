@@ -8,6 +8,7 @@ use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -128,8 +129,7 @@ class HomeController extends Controller
 
     public function test()
     {
-        $data = file_get_contents('https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array');
-        dd($data);
+        dd(shell_exec('composer'));
     }
 
     public function postChangeTitle()

@@ -166,7 +166,7 @@
             @endforeach
 
             @if ($post->source != null)
-                <p style="float: right"> Nguồn: {{ $post->source }}</p>
+                <p style="float: right; color: #4d4569"> Nguồn: {{ $post->source }}</p>
             @endif
 
             <?php

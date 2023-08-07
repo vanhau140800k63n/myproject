@@ -13,6 +13,7 @@ use App\Repositories\PostRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class ExamController extends Controller
 {
@@ -90,7 +91,9 @@ class ExamController extends Controller
         //     return redirect()->back()->with('message', 'Quá Thời Gian Làm Bài');
         // }
 
-        return view('pages.exam.contest_detail', compact('challenge'));
+        $html = Str::markdown(file_get_contents('test.md'));
+
+        return view('pages.exam.contest_detail', compact('challenge', 'html'));
     }
 
     public function runTestCase(Request $req)
