@@ -45,14 +45,14 @@ class HomeController extends Controller
 
     public function test()
     {
-        $json = file_get_contents('exam_list.json');
-  
-        // Decode the JSON file
-        $json_data = json_decode($json,true);
-        $html = Str::markdown(file_get_contents(asset('te.md')));
-        dd($html);
-        $data = file_get_contents('https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array');
-        dd($data);
+        // $json = file_get_contents('exam_list.json');
+
+        // // Decode the JSON file
+        // $json_data = json_decode($json,true);
+        // $html = Str::markdown(file_get_contents(asset('te.md')));
+        // dd($html);
+        // $data = file_get_contents('https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array');
+        // dd($data);
     }
 
     public function postChangeTitle()
@@ -256,7 +256,7 @@ class HomeController extends Controller
         return view('pages.search.result', compact('lessons', 'posts', 'key'));
     }
 
-     // public function test(Request $req)
+    // public function test(Request $req)
     // {
     //     return view('test');
     //     $curl = curl_init();

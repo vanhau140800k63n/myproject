@@ -37,12 +37,14 @@ class ExamController extends Controller
     public function getExamHome()
     {
         $user = null;
-
         if (Auth::check()) {
             $user = Auth::user();
         }
 
-        return view('pages.exam.list', compact('user'));
+        $exam_list_json = file_get_contents('exam_list.json');
+        $exam_list = json_decode($exam_list_json, true);
+
+        return view('pages.exam.exercise_list', compact('user', 'exam_list'));
     }
 
     public function getChallengeInfo(Request $req)
@@ -203,7 +205,98 @@ class ExamController extends Controller
 
     public function updateExamList()
     {
-        $exam_list_file = file_get_contents('exam_list.json');
-        $exam_list = json_decode($exam_list_file, true);
+        $directory = 'exam_list/';
+        $files = array_diff(scandir($directory), array('..', '.'));
+
+        $json = file_get_contents('exam_list.json');
+        $json_data = json_decode($json, true);
+
+        foreach ($files as $file) {
+            $concepts = array_diff(scandir($directory . $file . "/concepts/"), array('..', '.'));
+            $practices = array_diff(scandir($directory . $file . "/exercises/practice/"), array('..', '.'));
+            if(file_exists($directory . $file . "/exercises/concept/")) {
+                $practices = array_merge($practices, array_diff(scandir($directory . $file . "/exercises/concept/"), array('..', '.')));
+            }
+            $json_data[$file]['concepts_num'] = count($concepts);
+            $json_data[$file]['practices_num'] = count($practices);
+            if (!isset($json_data[$file]['image'])) {
+                $json_data[$file]['image'] = '';
+            }
+            if (!isset($json_data[$file]['name'])) {
+                $json_data[$file]['name'] = $file;
+            }
+            if (!isset($json_data[$file]['language'])) {
+                $json_data[$file]['language'] = $file;
+            }
+            if (!isset($json_data[$file]['type'])) {
+                $json_data[$file]['type'] = $file;
+            }
+            if (!isset($json_data[$file]['path_to_exercise'])) {
+                $json_data[$file]['path_to_exercise'] = '';
+            }
+
+            // $json_data[$file]['concepts'] = $concepts;
+            $json_data[$file]['concepts'] = [];
+            // $json_data[$file]['practices'] = [];
+            foreach ($practices as $practice) {
+                if (!isset($json_data[$file]['practices'][$practice]['path'])) {
+                    if ($file == 'c') {
+                        $json_data[$file]['practices'][$practice]['path'] = '/' . str_replace('-', '_', $practice)  . '.c';
+                    } else if ($file == 'java') {
+                        $json_data[$file]['practices'][$practice]['path'] = '/src/main/java/' . str_replace('-', '_', $practice) . '.java';
+                    } else if ($file == 'cpp') {
+                        $json_data[$file]['practices'][$practice]['path'] = '/' . str_replace('-', '_', $practice) . '.cpp';
+                    } else if ($file == 'python') {
+                        $json_data[$file]['practices'][$practice]['path'] = '/' . str_replace('-', '_', $practice) . '.py';
+                    }
+                }
+                if (!isset($json_data[$file]['practices'][$practice]['rank'])) {
+                    $json_data[$file]['practices'][$practice]['rank'] = 1;
+                }
+                if (!isset($json_data[$file]['practices'][$practice]['difficulty'])) {
+                    $json_data[$file]['practices'][$practice]['difficulty'] = 'easy';
+                }
+                if (!isset($json_data[$file]['practices'][$practice]['description'])) {
+                    $json_data[$file]['practices'][$practice]['description'] = '';
+                }
+                if (!isset($json_data[$file]['practices'][$practice]['image'])) {
+                    $json_data[$file]['practices'][$practice]['image'] = '';
+                }
+                if (!isset($json_data[$file]['practices'][$practice]['name'])) {
+                    $json_data[$file]['practices'][$practice]['name'] = '';
+                }
+                if (!isset($json_data[$file]['practices'][$practice]['status'])) {
+                    $json_data[$file]['practices'][$practice]['status'] = 0;
+                }
+            }
+        }
+
+        $myfile = fopen("exam_list.json", "w") or die("Unable to open file!");
+        fwrite($myfile, json_encode($json_data, JSON_PRETTY_PRINT));
+        fclose($myfile);
+    }
+
+    public function getExerciseInfo($language)
+    {
+        $directory = 'exam_list/';
+        $json = file_get_contents('exam_list.json');
+        $exercise = json_decode($json, true)[$language];
+
+        uasort($exercise['practices'], function ($a, $b) {
+            return $a['rank'] > $b['rank'];
+        });
+
+        return view('pages.exam.exercise', compact('exercise'));
+    }
+
+    public function getPracticeDetail($language, $practice)
+    {
+        $directory = 'exam_list/';
+        $json = file_get_contents('exam_list.json');
+        $exercise = json_decode($json, true)[$language];
+        $practice_code = file_get_contents($directory . $language . '/exercises/practice/' . $practice . $exercise['practices'][$practice]['path']);
+        $practice_html = Str::markdown(file_get_contents($directory . $language . '/exercises/practice/' . $practice . '/.docs/instructions.md'));
+
+        return view('pages.exam.practice_detail', compact('exercise', 'practice_code', 'practice_html'));
     }
 }
