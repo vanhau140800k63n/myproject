@@ -1026,7 +1026,7 @@
                 "status": 0
             },
             "grains": {
-                "path": "\/src\/main\/java\/grains.java",
+                "path": "\/src\/main\/java\/Grains.java",
                 "rank": 17,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "Tính số hạt lúa mì trên bàn cờ biết rằng số hạt trên mỗi ô vuông tăng gấp đôi.",
