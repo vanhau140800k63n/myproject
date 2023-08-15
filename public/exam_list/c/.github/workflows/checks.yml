@@ -1,0 +1,49 @@
+name: Run Checks
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9
+
+      - name: Shell script static analysis
+        run: shellcheck bin/fetch-configlet bin/verify-unity-version bin/check-unitybegin bin/run-tests format.sh
+
+      - name: Check concept exercises formatting
+        run: |
+          find exercises/concept/ -path '*/test-framework' -prune -o \
+            \( -iname '*.h' -o -iname '*.c' \) -print0 |\
+            xargs --null clang-format --dry-run --Werror
+
+      - name: Check practice exercises formatting
+        run: |
+          find exercises/practice/ -path '*/test-framework' -prune -o \
+            \( -iname '*.h' -o -iname '*.c' \) -print0 |\
+            xargs --null clang-format --dry-run --Werror
+
+      - name: Check Unity version
+        run: ./bin/verify-unity-version ./exercises/concept ./exercises/practice
+
+      - name: Check unitybegin()
+        run: ./bin/check-unitybegin ./exercises/concept ./exercises/practice
+
+      - name: Check include guards
+        run: ./bin/check-include-guards ./exercises/concept ./exercises/practice
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@ec3ed119d4f44ad2673a7232460dc7dff59d2421
+        id: lychee
+        with:
+          args: --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" --no-progress **/*.md **/*.html
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Fail if there were link errors
+        run: exit ${{ steps.lychee.outputs.exit_code }}

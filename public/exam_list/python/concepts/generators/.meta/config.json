@@ -1,0 +1,5 @@
+{
+  "blurb": "Generator are functions that returns a lazy iterator, lazy iterator is an iterator like: list, tuple, etc. But doesn't need store its content in memory",
+  "authors": ["J08K"],
+  "contributors": []
+}
