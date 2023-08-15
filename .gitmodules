@@ -1,7 +1,6 @@
 [submodule "public/exam_list/java"]
 	path = public/exam_list/java
 	url = https://github.com/exercism/java.git
-	ignore = dirty
 [submodule "public/exam_list/cpp"]
 	path = public/exam_list/cpp
 	url = https://github.com/exercism/cpp.git
