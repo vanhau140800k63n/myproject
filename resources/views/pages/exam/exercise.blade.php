@@ -2,7 +2,7 @@
 @section('meta')
 @endsection
 @section('head')
-    <title>Code Exam | DEVSNE</title>
+    <title>Luyện Tập {{ ucwords($exercise['name']) }} | DEVSNE</title>
 @endsection
 @section('content')
     <main class="ex_main">
@@ -10,7 +10,7 @@
             <div class="exercise_info_mid">
                 <img class="exercise_info_mid_img" src="{{ $exercise['image'] }}">
                 <div class="exercise_info_mid_text">
-                    Explore the {{ $exercise['name'] }} exercises on Exercism
+                    Explore the {{ ucwords($exercise['name']) }} exercises on Exercism
                 </div>
             </div>
             <div class="c-react-component c-react-wrapper-student-exercise-list --hydrated"

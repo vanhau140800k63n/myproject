@@ -300,6 +300,6 @@ class ExamController extends Controller
         $practice_code = file_get_contents($directory . $language . '/exercises/' . $path . '/' . $practice . $exercise['practices'][$practice]['path']);
         $practice_html = Str::markdown(file_get_contents($directory . $language . '/exercises/' . $path . '/' . $practice . '/.docs/instructions.md'));
 
-        return view('pages.exam.practice_detail', compact('exercise', 'practice_code', 'practice_html'));
+        return view('pages.exam.practice_detail', compact('exercise', 'practice_code', 'practice_html', 'practice'));
     }
 }

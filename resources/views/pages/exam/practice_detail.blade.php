@@ -9,7 +9,7 @@
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 @endsection
 @section('head')
-    <title> Online Contest | DEVSNE</title>
+    <title> {{ ucwords((str_replace('-', ' ', $exercise['practices'][$practice]['name'] == '' ? $practice : $exercise['practices'][$practice]['name'])) . ' in ' . $exercise['name'] )}} | DEVSNE</title>
     <style>
         .footer_box {
             display: none;
