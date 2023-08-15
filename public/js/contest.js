@@ -30180,6 +30180,9 @@ $(document).ready(function () {
   $('.cm_action_cancel').click(function () {
     $('.contest_modal_bg').hide();
   });
+  $('.contest_screen_content table').each(function () {
+    $(this).addClass('notranslate');
+  });
 });
 })();
 
