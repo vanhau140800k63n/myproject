@@ -30,7 +30,7 @@
     </script>
 @endsection
 @section('content')
-    <div class="contest_design">
+    <div class="contest_design editer_font">
         <div class="contest_editer_box">
             <div class="contest_editer" value="{{ $practice_code }}" lang="{{ $exercise['language'] }}"></div>
             <div class="contest_lg_mode">
@@ -39,17 +39,16 @@
                 <button class="contest_submit"> Nộp Bài </button>
             </div>
         </div>
-        <main class="contest_creen">
+        <main class="contest_screen">
             <aside class="time_countdown">
                 <div class="time_countdown_bg">
                     <div class="time_countdown_el"></div>
                 </div>
             </aside>
-           
             {!! $practice_html !!}
         </main>
     </div>
-    <details>
+    <details class="editer_font">
         <summary>Hướng dẫn<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
                 viewBox="0 0 256 256">
                 <rect width="256" height="256" fill="none"></rect>
@@ -77,7 +76,7 @@
             </p>
         </div>
     </details>
-    <div class="contest_modal_bg">
+    <div class="contest_modal_bg editer_font">
         <div class="contest_modal">
             <div class="cm_title"> Xác Nhận Nộp Bài </div>
             <div class="cm_action">

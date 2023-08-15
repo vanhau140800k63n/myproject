@@ -5072,10 +5072,14 @@ a.template_type_item.active {
 }
 
 .contest_editer * {
-    font-size: 13px !important;
+    font-size: 15px !important;
 }
 
-.contest_creen {
+.editer_font * {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.contest_screen {
     width: calc(40% - 20px);
     background: #fff;
     border-radius: 10px;
@@ -5172,72 +5176,85 @@ select {
 }
 
 
-.contest_creen {
+.contest_screen {
     --h1-size: 24px;
     --h2-size: 20px;
     --h3-size: 16px;
 }
 
-.contest_creen * {
+.contest_screen * {
     color: #23262a;
-}
-
-.contest_creen code {
+    font-size: 16px;
     font-weight: 500;
 }
 
-.contest_creen p,
-.contest_creen li {
+.contest_screen code {
+    font-weight: 500;
+}
+
+.contest_screen p,
+.contest_screen li,
+.contest_screen td {
     line-height: 1.6;
     margin-top: 10px;
 }
 
-.contest_creen strong {
+.contest_screen .contest_screen strong {
     font-weight: 600;
     font-size: 15px;
 }
 
-/* .contest_creen pre {
-    margin-top: 10px;
-    margin-bottom: 30px;
-} */
+.contest_screen pre {
+    margin-top: 20px;
+}
 
-.contest_creen h2 {
+.contest_screen table {
+    box-shadow: 0 0 #0000, 0 0 #0000, 0px 4px 24px 0px rgba(79, 114, 205, 0.15);
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.contest_screen table td,
+.contest_screen table th {
+    padding: 12px 24px;
+    text-align: left;
+    border-bottom: 1px solid rgb(226, 221, 221);
+}
+
+.contest_screen h2 {
     font-size: var(--h2-size) !important;
     margin: 25px 0 15px;
     font-weight: 500;
 }
 
-.contest_creen h1 {
+.contest_screen h1 {
     font-size: var(--h1-size) !important;
     font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
 }
 
-.contest_creen h3 {
+.contest_screen h3 {
     font-size: var(--h3-size) !important;
     margin: 30px 0 15px;
     font-weight: 500;
 }
 
-.contest_creen h1 * {
+.contest_screen h1 * {
     font-size: var(--h1-size) !important;
     font-weight: 600;
 }
 
-.contest_creen h2 * {
+.contest_screen h2 * {
     font-size: var(--h2-size) !important;
     font-weight: 500;
 }
 
-.contest_creen h3 * {
+.contest_screen h3 * {
     font-size: var(--h3-size) !important;
     font-weight: 500;
 }
 
 
-.contest_creen a {
+.contest_screen a {
     color: #004cbd;
 }
 
@@ -5251,7 +5268,7 @@ select {
     width: 0;
 }
 
-.contest_creen_info {
+.contest_screen_info {
     display: flex;
     justify-content: center;
 }
@@ -5264,7 +5281,7 @@ select {
     font-weight: 500;
 }
 
-.contest_creen_info p {
+.contest_screen_info p {
     font-weight: 500;
     margin: 0 5px;
     color: #616467;
@@ -5554,7 +5571,7 @@ summary svg {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .contest_creen {
+    .contest_screen {
         --h1-size: 22px;
         --h2-size: 20px;
         --h3-size: 18px;
@@ -5572,7 +5589,7 @@ summary svg {
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
-    .contest_creen {
+    .contest_screen {
         --h1-size: 21px;
         --h2-size: 19px;
         --h3-size: 17px;
@@ -5580,7 +5597,7 @@ summary svg {
 }
 
 @media only screen and (max-width: 576px) {
-    .contest_creen {
+    .contest_screen {
         --h1-size: 20px;
         --h2-size: 18px;
         --h3-size: 16px;
@@ -5915,9 +5932,15 @@ summary svg {
 }
 
 .text-h1 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
-    margin: 15px 0;
+    margin: 30px 0;
+    text-transform: capitalize;
+}
+
+.text-p-large {
+    font-size: 18px;
+    padding: 0 50px;
 }
 
 .joined-tracks {
@@ -6030,9 +6053,9 @@ section.exercises .exercises {
 }
 
 .c-exercise-widget:hover {
-   transform: scale(1.03);
+    transform: scale(1.03);
 }
- 
+
 .c-icon.--action-icon {
     height: 24px;
     margin-left: 20px;

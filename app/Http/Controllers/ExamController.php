@@ -207,14 +207,13 @@ class ExamController extends Controller
     {
         $directory = 'exam_list/';
         $files = array_diff(scandir($directory), array('..', '.'));
-
         $json = file_get_contents('exam_list.json');
         $json_data = json_decode($json, true);
 
         foreach ($files as $file) {
             $concepts = array_diff(scandir($directory . $file . "/concepts/"), array('..', '.'));
             $practices = array_diff(scandir($directory . $file . "/exercises/practice/"), array('..', '.'));
-            if(file_exists($directory . $file . "/exercises/concept/")) {
+            if (file_exists($directory . $file . "/exercises/concept/")) {
                 $practices = array_merge($practices, array_diff(scandir($directory . $file . "/exercises/concept/"), array('..', '.')));
             }
             $json_data[$file]['concepts_num'] = count($concepts);
@@ -294,8 +293,12 @@ class ExamController extends Controller
         $directory = 'exam_list/';
         $json = file_get_contents('exam_list.json');
         $exercise = json_decode($json, true)[$language];
-        $practice_code = file_get_contents($directory . $language . '/exercises/practice/' . $practice . $exercise['practices'][$practice]['path']);
-        $practice_html = Str::markdown(file_get_contents($directory . $language . '/exercises/practice/' . $practice . '/.docs/instructions.md'));
+        $path = 'concept';
+        if (file_exists($directory . $language . '/exercises/practice/' . $practice . $exercise['practices'][$practice]['path'])) {
+            $path = 'practice';
+        }
+        $practice_code = file_get_contents($directory . $language . '/exercises/' . $path . '/' . $practice . $exercise['practices'][$practice]['path']);
+        $practice_html = Str::markdown(file_get_contents($directory . $language . '/exercises/' . $path . '/' . $practice . '/.docs/instructions.md'));
 
         return view('pages.exam.practice_detail', compact('exercise', 'practice_code', 'practice_html'));
     }

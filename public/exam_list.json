@@ -3878,9 +3878,9 @@
             "ellens-alien-game": {
                 "path": "\/ellens_alien_game.py",
                 "rank": 10,
-                "difficulty": "easy",
+                "difficulty": "Độ khó: Easy",
                 "description": "Tìm hiểu về các lớp học bằng cách tạo trò chơi Người ngoài hành tinh cho Ellen.",
-                "image": "",
+                "image": "character-study",
                 "name": "",
                 "status": 1
             },
