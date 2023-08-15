@@ -9,7 +9,9 @@
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 @endsection
 @section('head')
-    <title> {{ ucwords((str_replace('-', ' ', $exercise['practices'][$practice]['name'] == '' ? $practice : $exercise['practices'][$practice]['name'])) . ' in ' . $exercise['name'] )}} | DEVSNE</title>
+    <title>
+        {{ ucwords(str_replace('-', ' ', $exercise['practices'][$practice]['name'] == '' ? $practice : $exercise['practices'][$practice]['name']) . ' in ' . $exercise['name']) }}
+        | DEVSNE</title>
     <style>
         .footer_box {
             display: none;
@@ -22,6 +24,14 @@
         .contest_editer .ͼ1.cm-editor {
             height: calc(100vh - 150px) !important;
         }
+
+        .skiptranslate {
+            display: none !important;
+        }
+
+        body {
+            top: 0 !important;
+        }
     </style>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css">
@@ -30,9 +40,9 @@
     </script>
 @endsection
 @section('content')
-    <div class="contest_design editer_font">
-        <div class="contest_editer_box">
-            <div class="contest_editer" value="{{ $practice_code }}" lang="{{ $exercise['language'] }}"></div>
+    <div class="contest_design">
+        <div class="contest_editer_box notranslate">
+            <div class="contest_editer editer_font" value="{{ $practice_code }}" lang="{{ $exercise['language'] }}"></div>
             <div class="contest_lg_mode">
                 <button class="contest_run"> Chạy Thử <i class="fa-solid fa-loader fa-spin"
                         style="display: none"></i></button>
@@ -40,15 +50,51 @@
             </div>
         </div>
         <main class="contest_screen">
-            <aside class="time_countdown">
+            <div class="switch_language notranslate">
+                <div class="switch_language_title">Đổi ngôn ngữ: </div>
+                <div class="switch">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <label for="language-toggle"></label>
+                    <span class="on">EN</span>
+                    <span class="off">VI</span>
+                </div>
+            </div>
+            {{-- <aside class="time_countdown">
                 <div class="time_countdown_bg">
                     <div class="time_countdown_el"></div>
                 </div>
-            </aside>
-            {!! $practice_html !!}
+            </aside> --}}
+            <div class="contest_screen_content">
+                {!! $practice_html !!}
+                <div id="google_translate_element"></div>
+
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({
+                            pageLanguage: 'en'
+                        }, 'google_translate_element');
+                    }
+                    $('#language-toggle').change(function() {
+                        if (this.checked) {
+                            var selectElement = document.querySelector('#google_translate_element select');
+                            selectElement.value = 'vi';
+                            selectElement.dispatchEvent(new Event('change'));
+                            selectElement.value = 'vi';
+                            selectElement.dispatchEvent(new Event('change'));
+                        } else {
+                            var selectElement = document.querySelector('#google_translate_element select');
+                            selectElement.value = 'en';
+                            selectElement.dispatchEvent(new Event('change'));
+                        }
+                    });
+                </script>
+
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                </script>
+            </div>
         </main>
     </div>
-    <details class="editer_font">
+    <details class="notranslate">
         <summary>Hướng dẫn<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
                 viewBox="0 0 256 256">
                 <rect width="256" height="256" fill="none"></rect>
@@ -76,7 +122,7 @@
             </p>
         </div>
     </details>
-    <div class="contest_modal_bg editer_font">
+    <div class="contest_modal_bg notranslate">
         <div class="contest_modal">
             <div class="cm_title"> Xác Nhận Nộp Bài </div>
             <div class="cm_action">
