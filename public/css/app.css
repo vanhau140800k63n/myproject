@@ -16,7 +16,7 @@
     font-size: 14px;
 }
 
-.cm-scroller {
+.cm-scroller:not(.contest_editer .cm-scroller) {
     overflow-x: hidden !important;
 }
 
