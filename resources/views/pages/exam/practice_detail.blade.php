@@ -9,7 +9,7 @@
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 @endsection
 @section('head')
-    <title>
+    <title class="notranslate">
         {{ ucwords(str_replace('-', ' ', $exercise['practices'][$practice]['name'] == '' ? $practice : $exercise['practices'][$practice]['name']) . ' in ' . $exercise['name']) }}
         | DEVSNE</title>
     <style>
@@ -59,39 +59,40 @@
                     <span class="off">VI</span>
                 </div>
             </div>
+
             {{-- <aside class="time_countdown">
                 <div class="time_countdown_bg">
                     <div class="time_countdown_el"></div>
                 </div>
             </aside> --}}
+
             <div class="contest_screen_content">
                 {!! $practice_html !!}
-                <div id="google_translate_element"></div>
-
-                <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                        new google.translate.TranslateElement({
-                            pageLanguage: 'en'
-                        }, 'google_translate_element');
-                    }
-                    $('#language-toggle').change(function() {
-                        if (this.checked) {
-                            var selectElement = document.querySelector('#google_translate_element select');
-                            selectElement.value = 'vi';
-                            selectElement.dispatchEvent(new Event('change'));
-                            selectElement.value = 'vi';
-                            selectElement.dispatchEvent(new Event('change'));
-                        } else {
-                            var selectElement = document.querySelector('#google_translate_element select');
-                            selectElement.value = 'en';
-                            selectElement.dispatchEvent(new Event('change'));
-                        }
-                    });
-                </script>
-
-                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-                </script>
             </div>
+
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'en'
+                    }, 'google_translate_element');
+                }
+                $('#language-toggle').change(function() {
+                    if (this.checked) {
+                        var selectElement = document.querySelector('#google_translate_element select');
+                        selectElement.value = 'vi';
+                        selectElement.dispatchEvent(new Event('change'));
+                        selectElement.value = 'vi';
+                        selectElement.dispatchEvent(new Event('change'));
+                    } else {
+                        var selectElement = document.querySelector('#google_translate_element select');
+                        selectElement.value = 'en';
+                        selectElement.dispatchEvent(new Event('change'));
+                    }
+                });
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+            </script>
         </main>
     </div>
     <details class="notranslate">

@@ -4,12 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Config\ExamConstants;
 use App\Exceptions\PageException;
-use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\ChallengeAnswerRepositoryInterface;
 use App\Repositories\ChallengeRepositoryInterface;
-use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
-use App\Repositories\PostRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
