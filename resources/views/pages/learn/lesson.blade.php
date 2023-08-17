@@ -77,7 +77,7 @@
             <div class="exercise_banner">
                 <img class="exercise_banner_img" src="https://devsne.vn/image/icon/q3cU6YvsyK.png">
                 <div class="exercise_banner_info">
-                    <div class="exercise_banner_title">Bắt đầu học {{ $course->full_name }} bằng cách hoàn thành "Hello, World!"</div>
+                    <div class="exercise_banner_title">Bắt đầu học {{ strtoupper($course->full_name) }} bằng cách hoàn thành "Hello, World!"</div>
                     <div class="exercise_banner_content">Tự làm quen với các bài tập và gửi đoạn code đầu tiên của bạn bằng cách hoàn thành bài đầu tiên "Hello, World!".</div>
                     <a class="exercise_banner_btn" href="{{ route('exam.home') }}">Luyện tập</a>
                 </div>

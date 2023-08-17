@@ -2531,6 +2531,7 @@ code a {
     margin-top: 20px;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0px 4px 25px 0px rgba(79, 114, 205, 0.2);
 }
 
 .post_list_item_info {
@@ -2577,7 +2578,7 @@ code a {
     position: fixed;
     background: #fff;
     z-index: 20;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0px 4px 25px 0px rgba(79, 114, 205, 0.2);
     bottom: 20px;
     right: 20px;
     border-radius: 10px;
