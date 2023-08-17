@@ -79,4 +79,14 @@ Tạo ra trải nghiệm người dùng độc đáo và tăng cường tính t�
         'lineal-color' => 'https://media.flaticon.com/dist/min/img/filters/lineal-color.svg',
         'hand-drawn' => 'https://media.flaticon.com/dist/min/img/filters/handrawn.svg'
     ];
+    public const LANG_LOGO = [
+        'py' => 'https://devsne.vn/image/icon/L8FvAJxfUQ.png',
+        'php' => 'https://devsne.vn/image/icon/WF3tNdmDoZ.png',
+        'js' => 'https://devsne.vn/image/icon/xv609cCwb1.png',
+        'java' => 'https://devsne.vn/image/icon/UbSeQEPhuY.png',
+        'html' => 'https://devsne.vn/image/icon/g3orkMxtKd.png',
+        'cpp' => 'https://devsne.vn/image/icon/r0zF74j52c.png',
+        'css' => 'https://devsne.vn/image/icon/Fe2psDrjN8.png',
+        'spring' => 'https://devsne.vn/image/icon/mjhOvDXViF.png'
+    ];
 }
