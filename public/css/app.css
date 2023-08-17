@@ -2094,12 +2094,12 @@ code * {
 
 .post_info_category_item {
     padding: 2px 7px;
-    background-image: radial-gradient(circle 674px at 18.3% 77%, rgb(161 185 215) 3.4%, rgb(118 126 135) 56.6%);
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
     margin: 3px 5px;
     transition: 0.1s;
+    background: #383f69;
 }
 
 .post_info_category_item:hover {
