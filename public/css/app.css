@@ -409,6 +409,7 @@ a {
 
 .home_lesson_item {
     position: relative;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0px 4px 25px 0px rgba(106, 79, 205, 0.45);
 }
 
 .home_lesson_cover {
@@ -458,7 +459,7 @@ a {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0px 4px 25px 0px rgba(79, 114, 205, 0.35);
     border-radius: 5px;
 }
 
@@ -1001,10 +1002,6 @@ a {
 .lesson_box_category_list {
     display: flex;
     flex-direction: column;
-}
-
-.home_lesson_item {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .run_code {
