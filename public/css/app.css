@@ -1105,7 +1105,8 @@ a {
     justify-content: space-between;
 }
 
-.compiler_code_title .google-auto-placed, .lesson_card .google-auto-placed {
+.compiler_code_title .google-auto-placed,
+.lesson_card .google-auto-placed {
     display: none;
 }
 
@@ -1276,6 +1277,49 @@ code * {
     overflow-y: scroll;
     max-height: calc(100vh - 70px);
     background: #fff;
+}
+
+.exercise_banner {
+    display: flex;
+    padding: 20px 30px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0px 4px 24px 0px rgba(79, 114, 205, 0.3);
+    border-radius: 5px;
+    margin-bottom: 40px;
+    border: 2px solid rgb(167, 146, 186);
+}
+
+.exercise_banner_img {
+    width: 60px;
+    height: 60px;
+}
+
+.exercise_banner_info {
+    margin-left: 30px;
+}
+
+.exercise_banner_title {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.exercise_banner_content {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.exercise_banner_btn {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 20px;
+    background: #383f69;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0px 4px 24px 0px rgba(79, 114, 205, 0.3);
+    display: inline-block;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1475,6 +1519,18 @@ code * {
 
     .lesson_content {
         margin-bottom: 30px;
+    }
+
+    .exercise_banner {
+        padding: 15px;
+    }
+
+    .exercise_banner_title {
+        font-size: 17px;
+    }
+
+    .exercise_banner_content {
+        font-size: 12px;
     }
 }
 .footer_box {
