@@ -51,7 +51,7 @@
         </div>
         <div class="lesson_box_category">
             <div class="lesson_box_category_fixed">
-                <div class="lesson_box_category_title">Khóa học {{ $course->full_name }}</div>
+                <div class="lesson_box_category_title">{{ $course->full_name }}</div>
                 <div class="lesson_box_category_list">
                     @foreach ($lesson_list as $lesson_item)
                         <a href="{{ route('learn.lesson_detail', ['course' => $course->name, 'slug' => $lesson_item->slug]) }}"
@@ -74,67 +74,13 @@
         </div>
         <main class="lesson_box_content">
             <div class="lesson_box_content_title">{{ $lesson->title }}</div>
-            {{-- <a href="{{ route('exam.home') }}">
-                <div class="contest_banner">
-                    <div class="playful">
-                        <span aria-hidden="true">C</span>
-                        <span aria-hidden="true">o</span>
-                        <span aria-hidden="true">d</span>
-                        <span aria-hidden="true">i</span>
-                        <span aria-hidden="true">n</span>
-                        <span aria-hidden="true">g</span>
-                        <span aria-hidden="true">&nbsp;</span>
-                        <span aria-hidden="true">C</span>
-                        <span aria-hidden="true">h</span>
-                        <span aria-hidden="true">a</span>
-                        <span aria-hidden="true">l</span>
-                        <span aria-hidden="true">l</span>
-                        <span aria-hidden="true">e</span>
-                        <span aria-hidden="true">n</span>
-                        <span aria-hidden="true">g</span>
-                        <span aria-hidden="true">e</span>
-                    </div>
-
-                    <div class="playful small">
-                        <span aria-hidden="true">J</span>
-                        <span aria-hidden="true">a</span>
-                        <span aria-hidden="true">v</span>
-                        <span aria-hidden="true">a</span>
-                        <span aria-hidden="true">&nbsp;</span>
-                        <span aria-hidden="true">C</span>
-                        <span aria-hidden="true">+</span>
-                        <span aria-hidden="true">+</span>
-                        <span aria-hidden="true">&nbsp;</span>
-                        <span aria-hidden="true">P</span>
-                        <span aria-hidden="true">y</span>
-                        <span aria-hidden="true">t</span>
-                        <span aria-hidden="true">h</span>
-                        <span aria-hidden="true">o</span>
-                        <span aria-hidden="true">n</span>
-                    </div>
-                    <div class="banner_info">
-                        <div class="banner_info_item">
-                            <img class="b_i_t_img_title" src="{{ asset('image/giftbox.png') }}">
-                            <div class="b_i_t_text">Bàn phím cơ Rapoo V500 Pro Yellow Blue</div>
-                        </div>
-                        <div class="banner_info_item">
-                            <img class="b_i_t_img_title" src="{{ asset('image/coding.png') }}">
-                            <div class="b_i_t_text">Java, C++, Python, PHP, JavaScript</div>
-                        </div>
-                        <div class="banner_info_item">
-                            <img class="b_i_t_img_title" src="{{ asset('image/algorithm.png') }}">
-                            <div class="b_i_t_text">Kiến thức, cấu trúc dữ liệu & giải thuật</div>
-                        </div>
-                    </div>
-                </div>
-            </a> --}}
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
+            {{-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
                 crossorigin="anonymous"></script>
             <ins class="adsbygoogle" style="display:block; text-align:center; margin-bottom: 20px" data-ad-layout="in-article"
                 data-ad-format="fluid" data-ad-client="ca-pub-6922352342278341" data-ad-slot="4359770305"></ins>
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+            </script> --}}
             @foreach ($lesson_detail as $item)
                 <article class="lesson_content">
                     <div class="lesson_content_head">
@@ -186,7 +132,7 @@
                                 <a>
                                     <img src="{{ asset($related_post->author_avata) }}">
                                     <span>{{ $related_post->author_name }}</span>
-                                    <span style="color: #7d5d53">{{ $related_post->view }} lượt xem</span>
+                                    <span style="color: #757575">{{ $related_post->view }} lượt xem</span>
                                 </a>
                                 <a href="{{ route('post.detail', ['slug' => $related_post->slug]) }}">
                                     <h2>{{ $related_post->title }}</h2>
@@ -203,7 +149,7 @@
                                 href="{{ route('post.detail', ['slug' => $related_post->slug]) }}"><img
                                     src="{{ asset($related_post->image) }}"></a>
                         </div>
-                        @if ($related_post_index == 2)
+                        {{-- @if ($related_post_index == 2)
                             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
                                 crossorigin="anonymous"></script>
                             <ins class="adsbygoogle" style="display:block; text-align:center; margin-top: 20px"
@@ -213,7 +159,7 @@
                                 (adsbygoogle = window.adsbygoogle || [])
                                 .push({});
                             </script>
-                        @endif
+                        @endif --}}
                     @endforeach
                 </div>
             @endif
@@ -266,7 +212,7 @@
                         </div>
                     @endforeach
                 </div>
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
+                {{-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
                     crossorigin="anonymous"></script>
                 <!-- Thích ứng -->
                 <ins class="adsbygoogle" style="display:block; margin-top: 20px" data-ad-client="ca-pub-6922352342278341"
@@ -274,7 +220,7 @@
                 <script>
                     (adsbygoogle = window.adsbygoogle || [])
                     .push({});
-                </script>
+                </script> --}}
             </div>
         </div>
     </div>
