@@ -64,6 +64,7 @@ Route::prefix('exam')->name('exam.')->group(function () {
     Route::prefix('challenge')->middleware(['check.logged'])->name('challenge.')->group(function () {
         Route::get('/week', [ExamController::class, 'getChallengeWeek'])->name('week');
         Route::post('/run', [ExamController::class, 'runTestCase'])->name('run');
+        Route::post('/create_folder_test', [ExamController::class, 'createFolderTest'])->name('creat_folder_test');
         Route::post('/submit', [ExamController::class, 'submitCode'])->name('submit');
     });
 });

@@ -30117,6 +30117,23 @@ $(document).ready(function () {
     parent: document.querySelector(".contest_editer"),
     doc: $('.contest_editer').attr('value')
   });
+  var _token = $('input[name="_token"]').val();
+  $.ajax({
+    url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "exam/challenge/create_folder_test",
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    type: "POST",
+    dataType: 'json',
+    data: {
+      lang: $('.contest_editer').attr('type'),
+      _token: _token
+    }
+  }).done(function (data) {
+    return true;
+  }).fail(function (e) {
+    return false;
+  });
 
   // $('.contest_lg_select').change(function () {
   //     editer.dispatch({ effects: langHolder.reconfigure(language_list[$(this).val()]) })

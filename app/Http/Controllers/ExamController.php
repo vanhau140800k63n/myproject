@@ -106,7 +106,7 @@ class ExamController extends Controller
 
         $curl = curl_init();
         curl_setopt_array($curl, array(
-            CURLOPT_URL => ExamConstants::SUBMIT_URL . 'compile/' . $lang . '/index.php',
+            CURLOPT_URL => ExamConstants::SUBMIT_URL . 'compile/' . $lang . '/' . Auth::id() . '/index.php',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
@@ -147,9 +147,37 @@ class ExamController extends Controller
             $error = true;
             $output = substr($response, 7);
         }
-    
+
 
         return response()->json([$error, $output]);
+    }
+
+    public function createFolderTest(Request $req)
+    {
+        $lang = $req->lang;
+
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => ExamConstants::SUBMIT_URL . 'compile/' . $lang . '/create_folder.php',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => http_build_query([
+                'user_id' => Auth::id()
+            ]),
+            CURLOPT_HTTPHEADER => array(
+                'ngrok-skip-browser-warning' => '1231'
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        curl_close($curl);
+
+        return $response;
     }
 
     public function submitCode(Request $req)
