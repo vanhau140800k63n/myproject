@@ -4019,7 +4019,7 @@
     "php": {
         "concepts_num": 32,
         "practices_num": 87,
-        "image": "https://devsne.vn/image/icon/EZdBlVF2zI.png",
+        "image": "https:\/\/devsne.vn\/image\/icon\/EZdBlVF2zI.png",
         "name": "php",
         "language": "php",
         "type": "php",
@@ -4808,6 +4808,1359 @@
                 "name": "",
                 "status": 0,
                 "path": "\/windowing_system.php"
+            }
+        }
+    },
+    "javascript": {
+        "concepts_num": 34,
+        "practices_num": 149,
+        "image": "https://devsne.vn/image/icon/nF8yjsqeIB.png",
+        "name": "javascript",
+        "language": "js",
+        "type": "javascript",
+        "path_to_exercise": "",
+        "concepts": [],
+        "practices": {
+            "accumulate": {
+                "path": "\/accumulate.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "acronym": {
+                "path": "\/acronym.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "affine-cipher": {
+                "path": "\/affine_cipher.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "all-your-base": {
+                "path": "\/all_your_base.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "allergies": {
+                "path": "\/allergies.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "alphametics": {
+                "path": "\/alphametics.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "anagram": {
+                "path": "\/anagram.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "armstrong-numbers": {
+                "path": "\/armstrong_numbers.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "atbash-cipher": {
+                "path": "\/atbash_cipher.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "bank-account": {
+                "path": "\/bank_account.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "beer-song": {
+                "path": "\/beer_song.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "binary": {
+                "path": "\/binary.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "binary-search": {
+                "path": "\/binary_search.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "binary-search-tree": {
+                "path": "\/binary_search_tree.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "bob": {
+                "path": "\/bob.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "book-store": {
+                "path": "\/book_store.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "bowling": {
+                "path": "\/bowling.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "change": {
+                "path": "\/change.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "circular-buffer": {
+                "path": "\/circular_buffer.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "clock": {
+                "path": "\/clock.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "collatz-conjecture": {
+                "path": "\/collatz_conjecture.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "complex-numbers": {
+                "path": "\/complex_numbers.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "connect": {
+                "path": "\/connect.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "crypto-square": {
+                "path": "\/crypto_square.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "custom-set": {
+                "path": "\/custom_set.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "darts": {
+                "path": "\/darts.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "diamond": {
+                "path": "\/diamond.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "difference-of-squares": {
+                "path": "\/difference_of_squares.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "diffie-hellman": {
+                "path": "\/diffie_hellman.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "dnd-character": {
+                "path": "\/dnd_character.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "dominoes": {
+                "path": "\/dominoes.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "etl": {
+                "path": "\/etl.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "flatten-array": {
+                "path": "\/flatten_array.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "food-chain": {
+                "path": "\/food_chain.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "forth": {
+                "path": "\/forth.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "gigasecond": {
+                "path": "\/gigasecond.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "go-counting": {
+                "path": "\/go_counting.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "grade-school": {
+                "path": "\/grade_school.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "grains": {
+                "path": "\/grains.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "grep": {
+                "path": "\/grep.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "hamming": {
+                "path": "\/hamming.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "hello-world": {
+                "path": "\/hello_world.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "hexadecimal": {
+                "path": "\/hexadecimal.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "high-scores": {
+                "path": "\/high_scores.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "house": {
+                "path": "\/house.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "isbn-verifier": {
+                "path": "\/isbn_verifier.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "isogram": {
+                "path": "\/isogram.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "kindergarten-garden": {
+                "path": "\/kindergarten_garden.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "knapsack": {
+                "path": "\/knapsack.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "largest-series-product": {
+                "path": "\/largest_series_product.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "leap": {
+                "path": "\/leap.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "linked-list": {
+                "path": "\/linked_list.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "list-ops": {
+                "path": "\/list_ops.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "luhn": {
+                "path": "\/luhn.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "matching-brackets": {
+                "path": "\/matching_brackets.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "matrix": {
+                "path": "\/matrix.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "meetup": {
+                "path": "\/meetup.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "minesweeper": {
+                "path": "\/minesweeper.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "nth-prime": {
+                "path": "\/nth_prime.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "nucleotide-count": {
+                "path": "\/nucleotide_count.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "ocr-numbers": {
+                "path": "\/ocr_numbers.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "octal": {
+                "path": "\/octal.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "palindrome-products": {
+                "path": "\/palindrome_products.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "pangram": {
+                "path": "\/pangram.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "pascals-triangle": {
+                "path": "\/pascals_triangle.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "perfect-numbers": {
+                "path": "\/perfect_numbers.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "phone-number": {
+                "path": "\/phone_number.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "pig-latin": {
+                "path": "\/pig_latin.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "point-mutations": {
+                "path": "\/point_mutations.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "poker": {
+                "path": "\/poker.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "prime-factors": {
+                "path": "\/prime_factors.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "promises": {
+                "path": "\/promises.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "protein-translation": {
+                "path": "\/protein_translation.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "proverb": {
+                "path": "\/proverb.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "pythagorean-triplet": {
+                "path": "\/pythagorean_triplet.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "queen-attack": {
+                "path": "\/queen_attack.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "rail-fence-cipher": {
+                "path": "\/rail_fence_cipher.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "raindrops": {
+                "path": "\/raindrops.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "rational-numbers": {
+                "path": "\/rational_numbers.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "react": {
+                "path": "\/react.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "rectangles": {
+                "path": "\/rectangles.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "resistor-color": {
+                "path": "\/resistor_color.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "resistor-color-duo": {
+                "path": "\/resistor_color_duo.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "resistor-color-trio": {
+                "path": "\/resistor_color_trio.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "rest-api": {
+                "path": "\/rest_api.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "reverse-string": {
+                "path": "\/reverse_string.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "rna-transcription": {
+                "path": "\/rna_transcription.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "robot-name": {
+                "path": "\/robot_name.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "robot-simulator": {
+                "path": "\/robot_simulator.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "roman-numerals": {
+                "path": "\/roman_numerals.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "rotational-cipher": {
+                "path": "\/rotational_cipher.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "run-length-encoding": {
+                "path": "\/run_length_encoding.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "saddle-points": {
+                "path": "\/saddle_points.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "satellite": {
+                "path": "\/satellite.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "say": {
+                "path": "\/say.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "scale-generator": {
+                "path": "\/scale_generator.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "scrabble-score": {
+                "path": "\/scrabble_score.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "secret-handshake": {
+                "path": "\/secret_handshake.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "series": {
+                "path": "\/series.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "sieve": {
+                "path": "\/sieve.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "simple-cipher": {
+                "path": "\/simple_cipher.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "simple-linked-list": {
+                "path": "\/simple_linked_list.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "space-age": {
+                "path": "\/space_age.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "spiral-matrix": {
+                "path": "\/spiral_matrix.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "square-root": {
+                "path": "\/square_root.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "strain": {
+                "path": "\/strain.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "sublist": {
+                "path": "\/sublist.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "sum-of-multiples": {
+                "path": "\/sum_of_multiples.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "tournament": {
+                "path": "\/tournament.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "transpose": {
+                "path": "\/transpose.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "triangle": {
+                "path": "\/triangle.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "trinary": {
+                "path": "\/trinary.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "twelve-days": {
+                "path": "\/twelve_days.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "two-bucket": {
+                "path": "\/two_bucket.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "two-fer": {
+                "path": "\/two_fer.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "variable-length-quantity": {
+                "path": "\/variable_length_quantity.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "word-count": {
+                "path": "\/word_count.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "word-search": {
+                "path": "\/word_search.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "wordy": {
+                "path": "\/wordy.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "yacht": {
+                "path": "\/yacht.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "zebra-puzzle": {
+                "path": "\/zebra_puzzle.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "zipper": {
+                "path": "\/zipper.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            ".gitignore": {
+                "path": "\/.gitignore.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "amusement-park": {
+                "path": "\/amusement_park.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "annalyns-infiltration": {
+                "path": "\/annalyns_infiltration.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "bird-watcher": {
+                "path": "\/bird_watcher.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "coordinate-transformation": {
+                "path": "\/coordinate_transformation.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "custom-signs": {
+                "path": "\/custom_signs.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "elyses-analytic-enchantments": {
+                "path": "\/elyses_analytic_enchantments.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "elyses-destructured-enchantments": {
+                "path": "\/elyses_destructured_enchantments.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "elyses-enchantments": {
+                "path": "\/elyses_enchantments.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "elyses-looping-enchantments": {
+                "path": "\/elyses_looping_enchantments.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "elyses-transformative-enchantments": {
+                "path": "\/elyses_transformative_enchantments.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "factory-sensors": {
+                "path": "\/factory_sensors.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "freelancer-rates": {
+                "path": "\/freelancer_rates.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "fruit-picker": {
+                "path": "\/fruit_picker.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "high-score-board": {
+                "path": "\/high_score_board.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "lasagna": {
+                "path": "\/lasagna.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "lasagna-master": {
+                "path": "\/lasagna_master.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "lucky-numbers": {
+                "path": "\/lucky_numbers.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "mixed-juices": {
+                "path": "\/mixed_juices.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "nullability": {
+                "path": "\/nullability.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "ozans-playlist": {
+                "path": "\/ozans_playlist.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "pizza-order": {
+                "path": "\/pizza_order.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "poetry-club-door-policy": {
+                "path": "\/poetry_club_door_policy.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "regular-chatbot": {
+                "path": "\/regular_chatbot.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "translation-service": {
+                "path": "\/translation_service.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "vehicle-purchase": {
+                "path": "\/vehicle_purchase.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
+            },
+            "windowing-system": {
+                "path": "\/windowing_system.js",
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0
             }
         }
     }

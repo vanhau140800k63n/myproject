@@ -82,7 +82,7 @@ Tạo ra trải nghiệm người dùng độc đáo và tăng cường tính t�
     public const LANG_LOGO = [
         'py' => 'https://devsne.vn/image/icon/L8FvAJxfUQ.png',
         'php' => 'https://devsne.vn/image/icon/WF3tNdmDoZ.png',
-        'js' => 'https://devsne.vn/image/icon/xv609cCwb1.png',
+        'js' => 'https://devsne.vn/image/icon/nF8yjsqeIB.png',
         'java' => 'https://devsne.vn/image/icon/UbSeQEPhuY.png',
         'html' => 'https://devsne.vn/image/icon/g3orkMxtKd.png',
         'cpp' => 'https://devsne.vn/image/icon/r0zF74j52c.png',

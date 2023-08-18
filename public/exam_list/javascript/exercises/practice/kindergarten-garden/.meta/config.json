@@ -1,0 +1,33 @@
+{
+  "authors": [
+    "rchavarria"
+  ],
+  "contributors": [
+    "brendanmckeown",
+    "matthewmorgan",
+    "ryanplusplus",
+    "SleeplessByte",
+    "tejasbubane",
+    "xarxziux"
+  ],
+  "files": {
+    "solution": [
+      "kindergarten-garden.js"
+    ],
+    "test": [
+      "kindergarten-garden.spec.js"
+    ],
+    "example": [
+      ".meta/proof.ci.js"
+    ]
+  },
+  "blurb": "Given a diagram, determine which plants each child in the kindergarten class is responsible for.",
+  "source": "Random musings during airplane trip.",
+  "source_url": "http://jumpstartlab.com",
+  "custom": {
+    "version.tests.compatibility": "jest-27",
+    "flag.tests.task-per-describe": false,
+    "flag.tests.may-run-long": false,
+    "flag.tests.includes-optional": false
+  }
+}

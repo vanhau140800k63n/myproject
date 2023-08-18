@@ -246,10 +246,12 @@ class ExamController extends Controller
                         $json_data[$file]['practices'][$practice]['path'] = '/' . str_replace('-', '_', $practice) . '.py';
                     } else if ($file == 'php') {
                         $json_data[$file]['practices'][$practice]['path'] = '/' . str_replace('-', '_', $practice) . '.php';
+                    } else if ($file == 'javascript') {
+                        $json_data[$file]['practices'][$practice]['path'] = '/' . str_replace('-', '_', $practice) . '.js';
                     }
                 }
                 if (!isset($json_data[$file]['practices'][$practice]['rank'])) {
-                    $json_data[$file]['practices'][$practice]['rank'] = 1;
+                    $json_data[$file]['practices'][$practice]['rank'] = 99;
                 }
                 if (!isset($json_data[$file]['practices'][$practice]['difficulty'])) {
                     $json_data[$file]['practices'][$practice]['difficulty'] = 'easy';

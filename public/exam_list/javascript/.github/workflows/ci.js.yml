@@ -1,0 +1,45 @@
+# This workflow will do a clean install of node dependencies and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: javascript / main
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  precheck:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9
+      - name: Use Node.js LTS (18.x)
+        uses: actions/setup-node@bea5baf987ba7aa777a8a0b4ace377a21c45c381
+        with:
+          node-version: '18'
+
+      - name: Install project dependencies
+        run: npm ci
+
+      - name: Run exercism/javascript ci precheck (checks config, lint code, and runs tests) for all exercises
+        run: npx babel-node scripts/ci-check
+
+  ci:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: ['18', '20']
+
+    steps:
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@bea5baf987ba7aa777a8a0b4ace377a21c45c381
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install project dependencies
+        run: npm ci
+
+      - name: Run exercism/javascript ci (checks config, lint code, and runs tests) for all exercises
+        run: npx babel-node scripts/ci
