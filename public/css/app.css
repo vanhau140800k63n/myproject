@@ -5206,6 +5206,7 @@ select {
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0;
+    display: none;
 }
 
 .test_case_item {
@@ -5463,6 +5464,14 @@ summary svg {
     transform: translateY(-50%);
     width: 1.5em;
     height: 1.5em;
+}
+
+.compiler_terminal {
+    padding: 20px;
+    background: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    display: none;
 }
 
 @keyframes scale {

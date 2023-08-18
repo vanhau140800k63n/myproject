@@ -130,21 +130,26 @@ class ExamController extends Controller
 
         $res_test_case = [];
 
-        if ($response != 'error') {
+        $error = false;
+        if (!str_contains($response, '|false|')) {
             $res = explode('|', $response);
             $res_test_case = explode(',', $res[0]);
-        }
 
-        $output = '';
-        for ($i = 0; $i < count($res_test_case); ++$i) {
-            if ($res_test_case[$i] == 1) {
-                $output .= '<div class="test_case_item pass">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-check"></i></div>';
-            } else {
-                $output .= '<div class="test_case_item error">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-xmark"></i></div>';
+            $output = '';
+            for ($i = 0; $i < count($res_test_case); ++$i) {
+                if ($res_test_case[$i] == 1) {
+                    $output .= '<div class="test_case_item pass">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-check"></i></div>';
+                } else {
+                    $output .= '<div class="test_case_item error">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-xmark"></i></div>';
+                }
             }
+        } else {
+            $error = true;
+            $output = substr($response, 7);
         }
+    
 
-        return response()->json($output);
+        return response()->json([$error, $output]);
     }
 
     public function submitCode(Request $req)

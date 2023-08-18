@@ -30139,11 +30139,22 @@ $(document).ready(function () {
         _token: _token
       }
     }).done(function (data) {
-      $('.test_case').html(data);
+      if (data[0] == false) {
+        $('.test_case').html(data[1]);
+        $('.test_case').show();
+        $('.compiler_terminal').html('');
+        $('.compiler_terminal').hide();
+      } else {
+        $('.test_case').html('');
+        $('.test_case').hide();
+        $('.compiler_terminal').html(data[1]);
+        $('.compiler_terminal').show();
+      }
       $('.fa-loader').hide();
       return true;
     }).fail(function (e) {
       $('.test_case').html('');
+      $('.compiler_terminal').html('COMPILER ERROR');
       $('.fa-loader').hide();
       return false;
     });

@@ -51,6 +51,8 @@
             </div>
             <div class="test_case">
             </div>
+            <div class="compiler_terminal">
+            </div>
         </div>
         <main class="contest_screen">
             <div class="switch_language notranslate">
