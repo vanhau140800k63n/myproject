@@ -12,29 +12,14 @@
             top: 0px !important;
         }
     </style> --}}
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 @endsection
 @section('content')
-    <h1 style="margin-top: 100px">My Web Page</h1>
-
-    <p>Hello everybody!</p>
-
-    <p>Translate this page:</p>
-
-    <div id="google_translate_element"></div>
-
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'vi',
-                includedLanguages: 'vi',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
-
-
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-    </script>
-
-    <p>You can translate the content of this page by selecting a language in the select box.</p>
+    <div style="margin-top: 100px"></div>
+    <py-script>
+        def hello():
+            return 'Goodbye, Mars!'
+        print(hello())
+    </py-script>
 @endsection

@@ -244,6 +244,8 @@ class ExamController extends Controller
                         $json_data[$file]['practices'][$practice]['path'] = '/' . str_replace('-', '_', $practice) . '.cpp';
                     } else if ($file == 'python') {
                         $json_data[$file]['practices'][$practice]['path'] = '/' . str_replace('-', '_', $practice) . '.py';
+                    } else if ($file == 'php') {
+                        $json_data[$file]['practices'][$practice]['path'] = '/' . str_replace('-', '_', $practice) . '.php';
                     }
                 }
                 if (!isset($json_data[$file]['practices'][$practice]['rank'])) {

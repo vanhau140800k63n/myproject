@@ -45,6 +45,8 @@ class HomeController extends Controller
 
     public function test()
     {
+        return view('test');
+        dd(exec('/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 --version'));
         // $json = file_get_contents('exam_list.json');
 
         // // Decode the JSON file

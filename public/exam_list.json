@@ -216,9 +216,9 @@
                 "path": "\/grains.cpp",
                 "rank": 17,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "Tính số hạt lúa mì trên bàn cờ biết rằng số hạt trên mỗi ô vuông tăng gấp đôi.",
+                "description": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa m\u00ec tr\u00ean b\u00e0n c\u1edd bi\u1ebft r\u1eb1ng s\u1ed1 h\u1ea1t tr\u00ean m\u1ed7i \u00f4 vu\u00f4ng t\u0103ng g\u1ea5p \u0111\u00f4i.",
                 "image": "",
-                "name": "Tính số hạt lúa",
+                "name": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa",
                 "status": 1
             },
             "hamming": {
@@ -288,9 +288,9 @@
                 "path": "\/leap.cpp",
                 "rank": 13,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "Cho một năm, báo cáo nếu đó là một năm nhuận.",
+                "description": "Cho m\u1ed9t n\u0103m, b\u00e1o c\u00e1o n\u1ebfu \u0111\u00f3 l\u00e0 m\u1ed9t n\u0103m nhu\u1eadn.",
                 "image": "",
-                "name": "Năm nhuận",
+                "name": "N\u0103m nhu\u1eadn",
                 "status": 1
             },
             "luhn": {
@@ -342,7 +342,7 @@
                 "path": "\/pangram.cpp",
                 "rank": 19,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "Xác định xem một câu có phải là một pangram hay không.",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t c\u00e2u c\u00f3 ph\u1ea3i l\u00e0 m\u1ed9t pangram hay kh\u00f4ng.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -405,7 +405,7 @@
                 "path": "\/raindrops.cpp",
                 "rank": 18,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "Chuyển đổi một số thành một chuỗi, nội dung của nó phụ thuộc vào các yếu tố của số đó.",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t s\u1ed1 th\u00e0nh m\u1ed9t chu\u1ed7i, n\u1ed9i dung c\u1ee7a n\u00f3 ph\u1ee5 thu\u1ed9c v\u00e0o c\u00e1c y\u1ebfu t\u1ed1 c\u1ee7a s\u1ed1 \u0111\u00f3.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -414,9 +414,9 @@
                 "path": "\/reverse_string.cpp",
                 "rank": 14,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "Đảo ngược một chuỗi",
+                "description": "\u0110\u1ea3o ng\u01b0\u1ee3c m\u1ed9t chu\u1ed7i",
                 "image": "",
-                "name": "Đảo chuỗi",
+                "name": "\u0110\u1ea3o chu\u1ed7i",
                 "status": 1
             },
             "rna-transcription": {
@@ -513,9 +513,9 @@
                 "path": "\/space_age.cpp",
                 "rank": 15,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "Đưa ra một độ tuổi tính bằng giây, hãy tính xem một người bao nhiêu tuổi theo số năm mặt trời của một hành tinh nhất định.",
+                "description": "\u0110\u01b0a ra m\u1ed9t \u0111\u1ed9 tu\u1ed5i t\u00ednh b\u1eb1ng gi\u00e2y, h\u00e3y t\u00ednh xem m\u1ed9t ng\u01b0\u1eddi bao nhi\u00eau tu\u1ed5i theo s\u1ed1 n\u0103m m\u1eb7t tr\u1eddi c\u1ee7a m\u1ed9t h\u00e0nh tinh nh\u1ea5t \u0111\u1ecbnh.",
                 "image": "",
-                "name": "Tính tuổi",
+                "name": "T\u00ednh tu\u1ed5i",
                 "status": 1
             },
             "sum-of-multiples": {
@@ -531,9 +531,9 @@
                 "path": "\/triangle.cpp",
                 "rank": 16,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "Xác định xem một tam giác là tam giác đều, cân hay cân.",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t tam gi\u00e1c l\u00e0 tam gi\u00e1c \u0111\u1ec1u, c\u00e2n hay c\u00e2n.",
                 "image": "",
-                "name": "Tam giác đều",
+                "name": "Tam gi\u00e1c \u0111\u1ec1u",
                 "status": 1
             },
             "trinary": {
@@ -549,7 +549,7 @@
                 "path": "\/two_fer.cpp",
                 "rank": 20,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "Tạo một câu có dạng 'One for X, one for me'.",
+                "description": "T\u1ea1o m\u1ed9t c\u00e2u c\u00f3 d\u1ea1ng 'One for X, one for me'.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -566,8 +566,8 @@
             "election-day": {
                 "path": "\/election_day.cpp",
                 "rank": 11,
-                "difficulty": "Độ khó: Medium",
-                "description": "Tìm hiểu về References bằng cách tạo một hệ thống bỏ phiếu đơn giản.",
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Medium",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 References b\u1eb1ng c\u00e1ch t\u1ea1o m\u1ed9t h\u1ec7 th\u1ed1ng b\u1ecf phi\u1ebfu \u0111\u01a1n gi\u1ea3n.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -576,7 +576,7 @@
                 "path": "\/ellens_alien_game.cpp",
                 "rank": 10,
                 "difficulty": "easy",
-                "description": "Tìm hiểu về các lớp học bằng cách tạo trò chơi Người ngoài hành tinh cho Ellen.",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c l\u1edbp h\u1ecdc b\u1eb1ng c\u00e1ch t\u1ea1o tr\u00f2 ch\u01a1i Ng\u01b0\u1eddi ngo\u00e0i h\u00e0nh tinh cho Ellen.",
                 "image": "character-study",
                 "name": "Ellen's Alien Game",
                 "status": 1
@@ -584,8 +584,8 @@
             "freelancer-rates": {
                 "path": "\/freelancer_rates.cpp",
                 "rank": 4,
-                "difficulty": "Luyện tập",
-                "description": "Tìm hiểu về số nguyên và số dấu phẩy động bằng cách giúp một người làm nghề tự do giao tiếp với người quản lý dự án về việc thanh toán.",
+                "difficulty": "Luy\u1ec7n t\u1eadp",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 s\u1ed1 nguy\u00ean v\u00e0 s\u1ed1 d\u1ea5u ph\u1ea9y \u0111\u1ed9ng b\u1eb1ng c\u00e1ch gi\u00fap m\u1ed9t ng\u01b0\u1eddi l\u00e0m ngh\u1ec1 t\u1ef1 do giao ti\u1ebfp v\u1edbi ng\u01b0\u1eddi qu\u1ea3n l\u00fd d\u1ef1 \u00e1n v\u1ec1 vi\u1ec7c thanh to\u00e1n.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -593,8 +593,8 @@
             "interest-is-interesting": {
                 "path": "\/interest_is_interesting.cpp",
                 "rank": 9,
-                "difficulty": "Độ khó: Medium",
-                "description": "Tìm hiểu về các vòng lặp bằng cách thêm tiền lãi vào tài khoản tiết kiệm.",
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Medium",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c v\u00f2ng l\u1eb7p b\u1eb1ng c\u00e1ch th\u00eam ti\u1ec1n l\u00e3i v\u00e0o t\u00e0i kho\u1ea3n ti\u1ebft ki\u1ec7m.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -602,8 +602,8 @@
             "lasagna": {
                 "path": "\/lasagna.cpp",
                 "rank": 3,
-                "difficulty": "Luyện tập",
-                "description": "Tìm hiểu kiến thức cơ bản về C++ bằng Lasagna",
+                "difficulty": "Luy\u1ec7n t\u1eadp",
+                "description": "T\u00ecm hi\u1ec3u ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n v\u1ec1 C++ b\u1eb1ng Lasagna",
                 "image": "",
                 "name": "lasagna",
                 "status": 1
@@ -611,8 +611,8 @@
             "last-will": {
                 "path": "\/last_will.cpp",
                 "rank": 5,
-                "difficulty": "Luyện tập",
-                "description": "Tìm hiểu về không gian tên bằng cách thực hiện một bất động sản.",
+                "difficulty": "Luy\u1ec7n t\u1eadp",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 kh\u00f4ng gian t\u00ean b\u1eb1ng c\u00e1ch th\u1ef1c hi\u1ec7n m\u1ed9t b\u1ea5t \u0111\u1ed9ng s\u1ea3n.",
                 "image": "lasagna",
                 "name": "",
                 "status": 1
@@ -620,8 +620,8 @@
             "log-levels": {
                 "path": "\/log_levels.cpp",
                 "rank": 2,
-                "difficulty": "Độ khó: Easy",
-                "description": "Tìm hiểu về chuỗi bằng cách phân tích Log.",
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 chu\u1ed7i b\u1eb1ng c\u00e1ch ph\u00e2n t\u00edch Log.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -629,26 +629,26 @@
             "making-the-grade": {
                 "path": "\/making_the_grade.cpp",
                 "rank": 8,
-                "difficulty": "Độ khó: Easy",
-                "description": "Tìm hiểu về mảng và vector trong C++ bằng cách chấm điểm và sắp xếp điểm thi của học sinh.",
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 m\u1ea3ng v\u00e0 vector trong C++ b\u1eb1ng c\u00e1ch ch\u1ea5m \u0111i\u1ec3m v\u00e0 s\u1eafp x\u1ebfp \u0111i\u1ec3m thi c\u1ee7a h\u1ecdc sinh.",
                 "image": "grep",
-                "name": "Chấm điểm",
+                "name": "Ch\u1ea5m \u0111i\u1ec3m",
                 "status": 1
             },
             "pacman-rules": {
                 "path": "\/pacman_rules.cpp",
                 "rank": 6,
-                "difficulty": "Độ khó: Medium",
-                "description": "Tìm hiểu về booleans bằng cách thực hiện các quy tắc của trò chơi Pac-Man.",
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Medium",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 booleans b\u1eb1ng c\u00e1ch th\u1ef1c hi\u1ec7n c\u00e1c quy t\u1eafc c\u1ee7a tr\u00f2 ch\u01a1i Pac-Man.",
                 "image": "",
-                "name": "Trò chơi PacMan",
+                "name": "Tr\u00f2 ch\u01a1i PacMan",
                 "status": 1
             },
             "troll-the-trolls": {
                 "path": "\/troll_the_trolls.cpp",
                 "rank": 12,
-                "difficulty": "Độ khó: Medium",
-                "description": "Tìm hiểu về kiểu liệt kê và câu lệnh chuyển đổi bằng cách kiểm tra quyền của tài khoản người dùng.",
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Medium",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 ki\u1ec3u li\u1ec7t k\u00ea v\u00e0 c\u00e2u l\u1ec7nh chuy\u1ec3n \u0111\u1ed5i b\u1eb1ng c\u00e1ch ki\u1ec3m tra quy\u1ec1n c\u1ee7a t\u00e0i kho\u1ea3n ng\u01b0\u1eddi d\u00f9ng.",
                 "image": "attack-of-the-trolls",
                 "name": "",
                 "status": 1
@@ -656,8 +656,8 @@
             "vehicle-purchase": {
                 "path": "\/vehicle_purchase.cpp",
                 "rank": 7,
-                "difficulty": "Độ khó: Easy",
-                "description": "Tìm hiểu về phép so sánh và câu lệnh if trong khi chuẩn bị cho lần mua xe tiếp theo của bạn",
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 ph\u00e9p so s\u00e1nh v\u00e0 c\u00e2u l\u1ec7nh if trong khi chu\u1ea9n b\u1ecb cho l\u1ea7n mua xe ti\u1ebfp theo c\u1ee7a b\u1ea1n",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -1029,9 +1029,9 @@
                 "path": "\/src\/main\/java\/Grains.java",
                 "rank": 17,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "Tính số hạt lúa mì trên bàn cờ biết rằng số hạt trên mỗi ô vuông tăng gấp đôi.",
+                "description": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa m\u00ec tr\u00ean b\u00e0n c\u1edd bi\u1ebft r\u1eb1ng s\u1ed1 h\u1ea1t tr\u00ean m\u1ed7i \u00f4 vu\u00f4ng t\u0103ng g\u1ea5p \u0111\u00f4i.",
                 "image": "",
-                "name": "Tính số hạt lúa",
+                "name": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa",
                 "status": 1
             },
             "grep": {
@@ -3022,12 +3022,12 @@
             },
             "hello-world": {
                 "path": "\/hello_world.py",
-                "rank": 99,
+                "rank": 1,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hexadecimal": {
                 "path": "\/hexadecimal.py",
@@ -3878,8 +3878,8 @@
             "ellens-alien-game": {
                 "path": "\/ellens_alien_game.py",
                 "rank": 10,
-                "difficulty": "Độ khó: Easy",
-                "description": "Tìm hiểu về các lớp học bằng cách tạo trò chơi Người ngoài hành tinh cho Ellen.",
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c l\u1edbp h\u1ecdc b\u1eb1ng c\u00e1ch t\u1ea1o tr\u00f2 ch\u01a1i Ng\u01b0\u1eddi ngo\u00e0i h\u00e0nh tinh cho Ellen.",
                 "image": "character-study",
                 "name": "",
                 "status": 1
@@ -4015,5 +4015,800 @@
         "language": "py",
         "path_to_exercise": "",
         "type": "python"
+    },
+    "php": {
+        "concepts_num": 32,
+        "practices_num": 87,
+        "image": "https://devsne.vn/image/icon/EZdBlVF2zI.png",
+        "name": "php",
+        "language": "php",
+        "type": "php",
+        "path_to_exercise": "",
+        "concepts": [],
+        "practices": {
+            "accumulate": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/accumulate.php"
+            },
+            "acronym": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/acronym.php"
+            },
+            "affine-cipher": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/affine_cipher.php"
+            },
+            "all-your-base": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/all_your_base.php"
+            },
+            "allergies": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/allergies.php"
+            },
+            "anagram": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/anagram.php"
+            },
+            "armstrong-numbers": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/armstrong_numbers.php"
+            },
+            "atbash-cipher": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/atbash_cipher.php"
+            },
+            "beer-song": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/beer_song.php"
+            },
+            "binary": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/binary.php"
+            },
+            "binary-search": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/binary_search.php"
+            },
+            "bob": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/bob.php"
+            },
+            "book-store": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/book_store.php"
+            },
+            "bowling": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/bowling.php"
+            },
+            "change": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/change.php"
+            },
+            "clock": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/clock.php"
+            },
+            "collatz-conjecture": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/collatz_conjecture.php"
+            },
+            "connect": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/connect.php"
+            },
+            "crypto-square": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/crypto_square.php"
+            },
+            "darts": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/darts.php"
+            },
+            "diamond": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/diamond.php"
+            },
+            "difference-of-squares": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/difference_of_squares.php"
+            },
+            "dnd-character": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/dnd_character.php"
+            },
+            "etl": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/etl.php"
+            },
+            "flatten-array": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/flatten_array.php"
+            },
+            "gigasecond": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/gigasecond.php"
+            },
+            "grade-school": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/grade_school.php"
+            },
+            "grains": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/grains.php"
+            },
+            "hamming": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/hamming.php"
+            },
+            "hello-world": {
+                "rank": 1,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/HelloWorld.php"
+            },
+            "high-scores": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/high_scores.php"
+            },
+            "isogram": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/isogram.php"
+            },
+            "largest-series-product": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/largest_series_product.php"
+            },
+            "leap": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/leap.php"
+            },
+            "linked-list": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/linked_list.php"
+            },
+            "luhn": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/luhn.php"
+            },
+            "markdown": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/markdown.php"
+            },
+            "mask-credit-card": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/mask_credit_card.php"
+            },
+            "matching-brackets": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/matching_brackets.php"
+            },
+            "matrix": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/matrix.php"
+            },
+            "meetup": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/meetup.php"
+            },
+            "minesweeper": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/minesweeper.php"
+            },
+            "nth-prime": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/nth_prime.php"
+            },
+            "nucleotide-count": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/nucleotide_count.php"
+            },
+            "ocr-numbers": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/ocr_numbers.php"
+            },
+            "ordinal-number": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/ordinal_number.php"
+            },
+            "palindrome-products": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/palindrome_products.php"
+            },
+            "pangram": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/pangram.php"
+            },
+            "pascals-triangle": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/pascals_triangle.php"
+            },
+            "perfect-numbers": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/perfect_numbers.php"
+            },
+            "phone-number": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/phone_number.php"
+            },
+            "pig-latin": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/pig_latin.php"
+            },
+            "poker": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/poker.php"
+            },
+            "prime-factors": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/prime_factors.php"
+            },
+            "queen-attack": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/queen_attack.php"
+            },
+            "rail-fence-cipher": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/rail_fence_cipher.php"
+            },
+            "raindrops": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/raindrops.php"
+            },
+            "resistor-color": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/resistor_color.php"
+            },
+            "reverse-string": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/reverse_string.php"
+            },
+            "rna-transcription": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/rna_transcription.php"
+            },
+            "robot-name": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/robot_name.php"
+            },
+            "robot-simulator": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/robot_simulator.php"
+            },
+            "roman-numerals": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/roman_numerals.php"
+            },
+            "run-length-encoding": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/run_length_encoding.php"
+            },
+            "scale-generator": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/scale_generator.php"
+            },
+            "scrabble-score": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/scrabble_score.php"
+            },
+            "series": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/series.php"
+            },
+            "sieve": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/sieve.php"
+            },
+            "simple-cipher": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/simple_cipher.php"
+            },
+            "space-age": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/space_age.php"
+            },
+            "sum-of-multiples": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/sum_of_multiples.php"
+            },
+            "tournament": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/tournament.php"
+            },
+            "transpose": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/transpose.php"
+            },
+            "triangle": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/triangle.php"
+            },
+            "trinary": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/trinary.php"
+            },
+            "two-fer": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/two_fer.php"
+            },
+            "variable-length-quantity": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/variable_length_quantity.php"
+            },
+            "word-count": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/word_count.php"
+            },
+            "wordy": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/wordy.php"
+            },
+            "annalyns-infiltration": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/annalyns_infiltration.php"
+            },
+            "bootstrap.sh": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/bootstrap.sh.php"
+            },
+            "city-office": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/city_office.php"
+            },
+            "language-list": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/language_list.php"
+            },
+            "lasagna": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/lasagna.php"
+            },
+            "pizza-pi": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/pizza_pi.php"
+            },
+            "sweethearts": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/sweethearts.php"
+            },
+            "windowing-system": {
+                "rank": 99,
+                "difficulty": "easy",
+                "description": "",
+                "image": "",
+                "name": "",
+                "status": 0,
+                "path": "\/windowing_system.php"
+            }
+        }
     }
 }
