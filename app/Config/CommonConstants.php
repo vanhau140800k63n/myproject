@@ -8,6 +8,30 @@ final class CommonConstants
     public const LESSON_TYPE = 1;
     public const POST_TYPE = 2;
     public const ACTION = [1 => ' đã tạo bài viết ', 2 => ' đã bình luận vào bài viết ', 3 => ' đã lưu bài viết ', 4 => ' đã thích bài viết '];
+    public const COLER_FILTERS = [
+        'black' => 'https://media.flaticon.com/dist/min/img/filters/black.svg',
+        'colors' => 'https://media.flaticon.com/dist/min/img/filters/color.svg',
+        'gradient' => 'https://media.flaticon.com/dist/min/img/filters/gradient.svg'
+    ];
+
+    public const SHAPE_FILTERS = [
+        'outline' => 'https://media.flaticon.com/dist/min/img/filters/outline.svg',
+        'fill' => 'https://media.flaticon.com/dist/min/img/filters/filled.svg',
+        'lineal-color' => 'https://media.flaticon.com/dist/min/img/filters/lineal-color.svg',
+        'hand-drawn' => 'https://media.flaticon.com/dist/min/img/filters/handrawn.svg'
+    ];
+    
+    public const LANG_LOGO = [
+        'py' => 'https://devsne.vn/image/icon/L8FvAJxfUQ.png',
+        'php' => 'https://devsne.vn/image/icon/WF3tNdmDoZ.png',
+        'js' => 'https://devsne.vn/image/icon/nF8yjsqeIB.png',
+        'java' => 'https://devsne.vn/image/icon/UbSeQEPhuY.png',
+        'html' => 'https://devsne.vn/image/icon/g3orkMxtKd.png',
+        'cpp' => 'https://devsne.vn/image/icon/r0zF74j52c.png',
+        'css' => 'https://devsne.vn/image/icon/Fe2psDrjN8.png',
+        'spring' => 'https://devsne.vn/image/icon/mjhOvDXViF.png'
+    ];
+
     public const DESCRIPTION = 'Hơn 1000 ... Template miễn phí cho các ứng dụng Android, iOS và website.
 Tất cả các ... đều được cung cấp hoàn toàn miễn phí cho người dùng.
 Tổng hợp các ... Template đẹp mắt trên trang web hoặc ứng dụng của bạn.
@@ -67,26 +91,4 @@ Cập nhật thường xuyên với các Template mới nhất và phù hợp v�
 Hỗ trợ tối đa cho các dự án phát triển web và ứng dụng.
 Cung cấp các Template cho nhiều ngôn ngữ lập trình khác nhau.
 Tạo ra trải nghiệm người dùng độc đáo và tăng cường tính tương tác.';
-    public const COLER_FILTERS = [
-        'black' => 'https://media.flaticon.com/dist/min/img/filters/black.svg',
-        'colors' => 'https://media.flaticon.com/dist/min/img/filters/color.svg',
-        'gradient' => 'https://media.flaticon.com/dist/min/img/filters/gradient.svg'
-    ];
-
-    public const SHAPE_FILTERS = [
-        'outline' => 'https://media.flaticon.com/dist/min/img/filters/outline.svg',
-        'fill' => 'https://media.flaticon.com/dist/min/img/filters/filled.svg',
-        'lineal-color' => 'https://media.flaticon.com/dist/min/img/filters/lineal-color.svg',
-        'hand-drawn' => 'https://media.flaticon.com/dist/min/img/filters/handrawn.svg'
-    ];
-    public const LANG_LOGO = [
-        'py' => 'https://devsne.vn/image/icon/L8FvAJxfUQ.png',
-        'php' => 'https://devsne.vn/image/icon/WF3tNdmDoZ.png',
-        'js' => 'https://devsne.vn/image/icon/nF8yjsqeIB.png',
-        'java' => 'https://devsne.vn/image/icon/UbSeQEPhuY.png',
-        'html' => 'https://devsne.vn/image/icon/g3orkMxtKd.png',
-        'cpp' => 'https://devsne.vn/image/icon/r0zF74j52c.png',
-        'css' => 'https://devsne.vn/image/icon/Fe2psDrjN8.png',
-        'spring' => 'https://devsne.vn/image/icon/mjhOvDXViF.png'
-    ];
 }
