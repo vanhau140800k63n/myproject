@@ -6090,7 +6090,6 @@ input.check-toggle-round-flat:checked+label:after {
 }
 
 .c-track-icon {
-    width: 64px;
     height: 64px;
     margin-left: 5px;
 }
@@ -6098,7 +6097,6 @@ input.check-toggle-round-flat:checked+label:after {
 .--track>.c-track-icon {
     height: 80px;
     margin-right: 20px;
-    width: 80px;
 }
 
 .text-h1 {

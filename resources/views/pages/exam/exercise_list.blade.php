@@ -21,7 +21,7 @@
         <div class="joined-tracks">
             @foreach ($exam_list as $key => $exam)
                 <a class="--track e-hover-grow" href="{{ route('exam.get_exercise_info', ['language' => $key]) }}">
-                    <img class="c-icon c-track-icon hidden lg:block" src="{{ $exam['image'] }}" alt="icon for Java track">
+                    <img class="c-icon c-track-icon" src="{{ $exam['image'] }}" alt="icon for Java track">
                     <div class="--info">
                         <div class="--heading">
                             <h3 class="--title">{{ str_replace('-', ' ', $exam['name']) }}</h3>

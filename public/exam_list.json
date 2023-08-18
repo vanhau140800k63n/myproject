@@ -1941,7 +1941,7 @@
         "type": "java"
     },
     "c": {
-        "image": "https:\/\/devsne.vn\/image\/icon\/mD5QLvoft3.png",
+        "image": "https://devsne.vn/image/courses/c.png",
         "name": "c",
         "concepts_num": 14,
         "practices_num": 73,
@@ -4814,7 +4814,7 @@
     "javascript": {
         "concepts_num": 34,
         "practices_num": 149,
-        "image": "https://devsne.vn/image/courses/c.png",
+        "image": "https://devsne.vn/image/icon/nF8yjsqeIB.png",
         "name": "javascript",
         "language": "js",
         "type": "javascript",
