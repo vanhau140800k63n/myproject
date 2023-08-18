@@ -30141,7 +30141,7 @@ $(document).ready(function () {
     }).done(function (data) {
       if (data[0] == false) {
         $('.test_case').html(data[1]);
-        $('.test_case').show();
+        $('.test_case').css('display', 'flex');
         $('.compiler_terminal').html('');
         $('.compiler_terminal').hide();
       } else {

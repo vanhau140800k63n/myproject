@@ -5469,11 +5469,14 @@ summary svg {
 .compiler_terminal {
     padding: 20px;
     background: #fff;
-    font-weight: 600;
     border-radius: 5px;
     display: none;
     margin-top: 10px;
-    color: rgb(156, 47, 47);
+    color: rgb(228 69 69);
+}
+
+.compiler_terminal pre {
+    font-weight: 500;
 }
 
 @keyframes scale {
