@@ -42,12 +42,14 @@
 @section('content')
     <div class="contest_design">
         <div class="contest_editer_box notranslate">
-            <div class="contest_editer editer_font" value="{{ $practice_code }}" lang="{{ $exercise['language'] }}" practice="{{ $practice }}"
-                type="{{ $exercise['type'] }}"></div>
+            <div class="contest_editer editer_font" value="{{ $practice_code }}" lang="{{ $exercise['language'] }}"
+                practice="{{ $practice }}" type="{{ $exercise['type'] }}"></div>
             <div class="contest_lg_mode">
                 <button class="contest_run"> Chạy Thử <i class="fa-solid fa-loader fa-spin"
                         style="display: none"></i></button>
                 <button class="contest_submit"> Nộp Bài </button>
+            </div>
+            <div class="test_case">
             </div>
         </div>
         <main class="contest_screen">

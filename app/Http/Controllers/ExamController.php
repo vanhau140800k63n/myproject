@@ -101,12 +101,12 @@ class ExamController extends Controller
         $practice = $req->practice;
         $code = $req->code;
 
-        $json = file_get_contents('exam_list/$lang/exercises/practice/$practice/test.json');
+        $json = file_get_contents('exam_list/' . $lang . '/exercises/practice/' . $practice . '/test.json');
         $test_case = json_decode($json, true);
 
         $curl = curl_init();
         curl_setopt_array($curl, array(
-            CURLOPT_URL => ExamConstants::SUBMIT_URL,
+            CURLOPT_URL => ExamConstants::SUBMIT_URL . 'compile/' . $lang . '/index.php',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
@@ -115,12 +115,14 @@ class ExamController extends Controller
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_POSTFIELDS => http_build_query([
-                'code' => $req->code,
+                'code' => $code,
                 'test_case' => $test_case,
                 'practice' => $practice,
                 'user_id' => Auth::id()
             ]),
-            CURLOPT_HTTPHEADER => array(),
+            CURLOPT_HTTPHEADER => array(
+                'ngrok-skip-browser-warning' => '1231'
+            ),
         ));
 
         $response = curl_exec($curl);
@@ -305,11 +307,11 @@ class ExamController extends Controller
         $practice_code = file_get_contents($directory . $language . '/exercises/' . $path . '/' . $practice . $exercise['practices'][$practice]['path']);
         $is_translate = false;
         $practice_html['en'] = Str::markdown(file_get_contents($directory . $language . '/exercises/' . $path . '/' . $practice . '/.docs/instructions.md'));
-        if(file_exists($directory . $language . '/exercises/' . $path . '/' . $practice . '/.docs/instructions_tran.html')) {
+        if (file_exists($directory . $language . '/exercises/' . $path . '/' . $practice . '/.docs/instructions_tran.html')) {
             $is_translate = true;
             $practice_html['vi'] = Str::markdown(file_get_contents($directory . $language . '/exercises/' . $path . '/' . $practice . '/.docs/instructions_tran.html'));
         }
-        
+
 
         return view('pages.exam.practice_detail', compact('exercise', 'practice_code', 'practice_html', 'practice', 'is_translate'));
     }

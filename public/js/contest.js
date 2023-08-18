@@ -30133,6 +30133,8 @@ $(document).ready(function () {
       type: "POST",
       dataType: 'json',
       data: {
+        lang: $('.contest_editer').attr('type'),
+        practice: $('.contest_editer').attr('practice'),
         code: editer.state.doc.toString(),
         _token: _token
       }
@@ -30146,22 +30148,25 @@ $(document).ready(function () {
       return false;
     });
   });
-  var time_contest_start = Math.floor(new Date().getTime() / 1000);
-  var cd_time_contest = $('.contest_creen_info').attr('time') * 60;
-  var time_contest_end = time_contest_start + $('.contest_creen_info').attr('time') * 60;
-  var count_down = setInterval(function () {
-    var cr_time_contest = Math.floor(new Date().getTime() / 1000);
-    if (cr_time_contest >= time_contest_end) {
-      $('.cm_action_submit').click();
-      clearInterval(count_down);
-    }
-    cr_time_contest -= time_contest_start;
-    var s_text = String("0" + cr_time_contest % 60).slice(-2);
-    var m_text = Math.floor(cr_time_contest / 60);
-    var w_percent = cr_time_contest / cd_time_contest * 100;
-    $('.time_countdown_bg').css('width', w_percent + '%');
-    $('.time_countdown_el').html(m_text + 'p:' + s_text + 's');
-  }, 1000);
+
+  // var time_contest_start = Math.floor((new Date()).getTime() / 1000);
+  // var cd_time_contest = $('.contest_creen_info').attr('time') * 60;
+  // var time_contest_end = time_contest_start + $('.contest_creen_info').attr('time') * 60;
+
+  // var count_down = setInterval(function () {
+  //     var cr_time_contest = Math.floor((new Date()).getTime() / 1000);
+  //     if(cr_time_contest >= time_contest_end) {
+  //         $('.cm_action_submit').click();
+  //         clearInterval(count_down);
+  //     }
+  //     cr_time_contest -= time_contest_start;
+  //     var s_text = String("0" + cr_time_contest % 60).slice(-2);
+  //     var m_text = Math.floor(cr_time_contest / 60);
+  //     var w_percent = cr_time_contest / cd_time_contest * 100;
+  //     $('.time_countdown_bg').css('width', w_percent + '%');
+  //     $('.time_countdown_el').html(m_text + 'p:' + s_text + 's');
+  // }, 1000)
+
   $('.contest_submit').click(function () {
     $('.contest_modal_bg').css('display', 'flex');
   });
