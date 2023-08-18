@@ -127,7 +127,6 @@ class ExamController extends Controller
 
         $response = curl_exec($curl);
         curl_close($curl);
-        return $response;
 
         $res_test_case = [];
 
