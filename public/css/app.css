@@ -5197,6 +5197,10 @@ select {
     cursor: pointer;
 }
 
+.contest_run:disabled {
+    background: rgb(184, 181, 181);
+}
+
 .contest_lg_mode {
     display: flex;
     justify-content: flex-end;

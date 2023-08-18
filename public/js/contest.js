@@ -30140,6 +30140,8 @@ $(document).ready(function () {
   // })
 
   $('.contest_run').click(function () {
+    var contest_run_btn = $(this);
+    contest_run_btn.prop('disabled', true);
     $('.fa-loader').show();
     var _token = $('input[name="_token"]').val();
     $.ajax({
@@ -30168,11 +30170,13 @@ $(document).ready(function () {
         $('.compiler_terminal').show();
       }
       $('.fa-loader').hide();
+      contest_run_btn.removeAttr('disabled');
       return true;
     }).fail(function (e) {
       $('.test_case').html('');
       $('.compiler_terminal').html('COMPILER ERROR');
       $('.fa-loader').hide();
+      contest_run_btn.removeAttr('disabled');
       return false;
     });
   });
