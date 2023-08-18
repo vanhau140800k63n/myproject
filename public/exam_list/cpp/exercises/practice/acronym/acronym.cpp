@@ -1,5 +1,15 @@
-#include "acronym.h"
+#include <iostream>
+#include <string>
+using namespace std;
 
-namespace acronym {
+int main() {
+    string str;
+    cin >> str;
+    cout << acronym(str);
+    return 0;
+}
 
-}  // namespace acronym
+string acronym(string str) {
+    // write your code
+    return str;
+}

@@ -219,7 +219,7 @@
                 "description": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa m\u00ec tr\u00ean b\u00e0n c\u1edd bi\u1ebft r\u1eb1ng s\u1ed1 h\u1ea1t tr\u00ean m\u1ed7i \u00f4 vu\u00f4ng t\u0103ng g\u1ea5p \u0111\u00f4i.",
                 "image": "",
                 "name": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa",
-                "status": 1
+                "status": 0
             },
             "hamming": {
                 "path": "\/hamming.cpp",
@@ -291,7 +291,7 @@
                 "description": "Cho m\u1ed9t n\u0103m, b\u00e1o c\u00e1o n\u1ebfu \u0111\u00f3 l\u00e0 m\u1ed9t n\u0103m nhu\u1eadn.",
                 "image": "",
                 "name": "N\u0103m nhu\u1eadn",
-                "status": 1
+                "status": 0
             },
             "luhn": {
                 "path": "\/luhn.cpp",
@@ -345,7 +345,7 @@
                 "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t c\u00e2u c\u00f3 ph\u1ea3i l\u00e0 m\u1ed9t pangram hay kh\u00f4ng.",
                 "image": "",
                 "name": "",
-                "status": 1
+                "status": 0
             },
             "pascals-triangle": {
                 "path": "\/pascals_triangle.cpp",
@@ -408,7 +408,7 @@
                 "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t s\u1ed1 th\u00e0nh m\u1ed9t chu\u1ed7i, n\u1ed9i dung c\u1ee7a n\u00f3 ph\u1ee5 thu\u1ed9c v\u00e0o c\u00e1c y\u1ebfu t\u1ed1 c\u1ee7a s\u1ed1 \u0111\u00f3.",
                 "image": "",
                 "name": "",
-                "status": 1
+                "status": 0
             },
             "reverse-string": {
                 "path": "\/reverse_string.cpp",
@@ -417,7 +417,7 @@
                 "description": "\u0110\u1ea3o ng\u01b0\u1ee3c m\u1ed9t chu\u1ed7i",
                 "image": "",
                 "name": "\u0110\u1ea3o chu\u1ed7i",
-                "status": 1
+                "status": 0
             },
             "rna-transcription": {
                 "path": "\/rna_transcription.cpp",
@@ -516,7 +516,7 @@
                 "description": "\u0110\u01b0a ra m\u1ed9t \u0111\u1ed9 tu\u1ed5i t\u00ednh b\u1eb1ng gi\u00e2y, h\u00e3y t\u00ednh xem m\u1ed9t ng\u01b0\u1eddi bao nhi\u00eau tu\u1ed5i theo s\u1ed1 n\u0103m m\u1eb7t tr\u1eddi c\u1ee7a m\u1ed9t h\u00e0nh tinh nh\u1ea5t \u0111\u1ecbnh.",
                 "image": "",
                 "name": "T\u00ednh tu\u1ed5i",
-                "status": 1
+                "status": 0
             },
             "sum-of-multiples": {
                 "path": "\/sum_of_multiples.cpp",
@@ -534,7 +534,7 @@
                 "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t tam gi\u00e1c l\u00e0 tam gi\u00e1c \u0111\u1ec1u, c\u00e2n hay c\u00e2n.",
                 "image": "",
                 "name": "Tam gi\u00e1c \u0111\u1ec1u",
-                "status": 1
+                "status": 0
             },
             "trinary": {
                 "path": "\/trinary.cpp",
@@ -552,7 +552,7 @@
                 "description": "T\u1ea1o m\u1ed9t c\u00e2u c\u00f3 d\u1ea1ng 'One for X, one for me'.",
                 "image": "",
                 "name": "",
-                "status": 1
+                "status": 0
             },
             "word-count": {
                 "path": "\/word_count.cpp",
@@ -570,7 +570,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 References b\u1eb1ng c\u00e1ch t\u1ea1o m\u1ed9t h\u1ec7 th\u1ed1ng b\u1ecf phi\u1ebfu \u0111\u01a1n gi\u1ea3n.",
                 "image": "",
                 "name": "",
-                "status": 1
+                "status": 0
             },
             "ellens-alien-game": {
                 "path": "\/ellens_alien_game.cpp",
@@ -579,7 +579,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c l\u1edbp h\u1ecdc b\u1eb1ng c\u00e1ch t\u1ea1o tr\u00f2 ch\u01a1i Ng\u01b0\u1eddi ngo\u00e0i h\u00e0nh tinh cho Ellen.",
                 "image": "character-study",
                 "name": "Ellen's Alien Game",
-                "status": 1
+                "status": 0
             },
             "freelancer-rates": {
                 "path": "\/freelancer_rates.cpp",
@@ -588,7 +588,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 s\u1ed1 nguy\u00ean v\u00e0 s\u1ed1 d\u1ea5u ph\u1ea9y \u0111\u1ed9ng b\u1eb1ng c\u00e1ch gi\u00fap m\u1ed9t ng\u01b0\u1eddi l\u00e0m ngh\u1ec1 t\u1ef1 do giao ti\u1ebfp v\u1edbi ng\u01b0\u1eddi qu\u1ea3n l\u00fd d\u1ef1 \u00e1n v\u1ec1 vi\u1ec7c thanh to\u00e1n.",
                 "image": "",
                 "name": "",
-                "status": 1
+                "status": 0
             },
             "interest-is-interesting": {
                 "path": "\/interest_is_interesting.cpp",
@@ -597,7 +597,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c v\u00f2ng l\u1eb7p b\u1eb1ng c\u00e1ch th\u00eam ti\u1ec1n l\u00e3i v\u00e0o t\u00e0i kho\u1ea3n ti\u1ebft ki\u1ec7m.",
                 "image": "",
                 "name": "",
-                "status": 1
+                "status": 0
             },
             "lasagna": {
                 "path": "\/lasagna.cpp",
@@ -606,7 +606,7 @@
                 "description": "T\u00ecm hi\u1ec3u ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n v\u1ec1 C++ b\u1eb1ng Lasagna",
                 "image": "",
                 "name": "lasagna",
-                "status": 1
+                "status": 0
             },
             "last-will": {
                 "path": "\/last_will.cpp",
@@ -615,7 +615,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 kh\u00f4ng gian t\u00ean b\u1eb1ng c\u00e1ch th\u1ef1c hi\u1ec7n m\u1ed9t b\u1ea5t \u0111\u1ed9ng s\u1ea3n.",
                 "image": "lasagna",
                 "name": "",
-                "status": 1
+                "status": 0
             },
             "log-levels": {
                 "path": "\/log_levels.cpp",
@@ -624,7 +624,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 chu\u1ed7i b\u1eb1ng c\u00e1ch ph\u00e2n t\u00edch Log.",
                 "image": "",
                 "name": "",
-                "status": 1
+                "status": 0
             },
             "making-the-grade": {
                 "path": "\/making_the_grade.cpp",
@@ -633,7 +633,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 m\u1ea3ng v\u00e0 vector trong C++ b\u1eb1ng c\u00e1ch ch\u1ea5m \u0111i\u1ec3m v\u00e0 s\u1eafp x\u1ebfp \u0111i\u1ec3m thi c\u1ee7a h\u1ecdc sinh.",
                 "image": "grep",
                 "name": "Ch\u1ea5m \u0111i\u1ec3m",
-                "status": 1
+                "status": 0
             },
             "pacman-rules": {
                 "path": "\/pacman_rules.cpp",
@@ -642,7 +642,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 booleans b\u1eb1ng c\u00e1ch th\u1ef1c hi\u1ec7n c\u00e1c quy t\u1eafc c\u1ee7a tr\u00f2 ch\u01a1i Pac-Man.",
                 "image": "",
                 "name": "Tr\u00f2 ch\u01a1i PacMan",
-                "status": 1
+                "status": 0
             },
             "troll-the-trolls": {
                 "path": "\/troll_the_trolls.cpp",
@@ -651,7 +651,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 ki\u1ec3u li\u1ec7t k\u00ea v\u00e0 c\u00e2u l\u1ec7nh chuy\u1ec3n \u0111\u1ed5i b\u1eb1ng c\u00e1ch ki\u1ec3m tra quy\u1ec1n c\u1ee7a t\u00e0i kho\u1ea3n ng\u01b0\u1eddi d\u00f9ng.",
                 "image": "attack-of-the-trolls",
                 "name": "",
-                "status": 1
+                "status": 0
             },
             "vehicle-purchase": {
                 "path": "\/vehicle_purchase.cpp",
@@ -660,7 +660,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 ph\u00e9p so s\u00e1nh v\u00e0 c\u00e2u l\u1ec7nh if trong khi chu\u1ea9n b\u1ecb cho l\u1ea7n mua xe ti\u1ebfp theo c\u1ee7a b\u1ea1n",
                 "image": "",
                 "name": "",
-                "status": 1
+                "status": 0
             }
         },
         "concepts": [],
@@ -1032,7 +1032,7 @@
                 "description": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa m\u00ec tr\u00ean b\u00e0n c\u1edd bi\u1ebft r\u1eb1ng s\u1ed1 h\u1ea1t tr\u00ean m\u1ed7i \u00f4 vu\u00f4ng t\u0103ng g\u1ea5p \u0111\u00f4i.",
                 "image": "",
                 "name": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa",
-                "status": 1
+                "status": 0
             },
             "grep": {
                 "path": "\/src\/main\/java\/grep.java",
@@ -3027,7 +3027,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 1
+                "status": 0
             },
             "hexadecimal": {
                 "path": "\/hexadecimal.py",
@@ -3882,7 +3882,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c l\u1edbp h\u1ecdc b\u1eb1ng c\u00e1ch t\u1ea1o tr\u00f2 ch\u01a1i Ng\u01b0\u1eddi ngo\u00e0i h\u00e0nh tinh cho Ellen.",
                 "image": "character-study",
                 "name": "",
-                "status": 1
+                "status": 0
             },
             "ghost-gobble-arcade-game": {
                 "path": "\/ghost_gobble_arcade_game.py",
@@ -4293,7 +4293,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 1,
+                "status": 0,
                 "path": "\/HelloWorld.php"
             },
             "high-scores": {

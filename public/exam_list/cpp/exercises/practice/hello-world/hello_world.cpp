@@ -1,13 +1,7 @@
-#include "hello_world.h"
-
+#include <iostream>
 using namespace std;
 
-namespace hello_world
-{
-
-string hello()
-{
-    return "Goodbye, Mars!";
-}
-
+int main() {
+    cout << "devsne";
+    return 0;
 }
