@@ -128,7 +128,7 @@ class ExamController extends Controller
         $response = json_decode(curl_exec($curl), true);
         curl_close($curl);
 
-      
+        $error = false;
         if ($response['error'] == false) {
             $output = '';
             foreach ($response['result'] as $key => $result) {
