@@ -125,17 +125,19 @@ class ExamController extends Controller
             ),
         ));
 
-        $response = json_decode(curl_exec($curl), true);
+        $response = curl_exec($curl);
         curl_close($curl);
+
+        $response = json_decode($response, true);
 
         $error = false;
         if ($response['error'] == false) {
             $output = '';
-            foreach ($response['result'] as $key => $result) {
-                if ($result == true) {
-                    $output .= '<div class="test_case_item pass">Test Case ' . ($key + 1) . ' <i class="fa-solid fa-circle-check"></i></div>';
+            for ($i = 0; $i < count($response['result']); ++ $i) {
+                if ($response['result'][$i] == true) {
+                    $output .= '<div class="test_case_item pass">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-check"></i></div>';
                 } else {
-                    $output .= '<div class="test_case_item error">Test Case ' . ($key + 1) . ' <i class="fa-solid fa-circle-xmark"></i></div>';
+                    $output .= '<div class="test_case_item error">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-xmark"></i></div>';
                 }
             }
         } else {
