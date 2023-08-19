@@ -4042,7 +4042,7 @@
                 "image": "",
                 "name": "T\u1eeb vi\u1ebft t\u1eaft",
                 "status": 1,
-                "path": "\/acronym.php"
+                "path": "\/Acronym.php"
             },
             "accumulate": {
                 "rank": 99,
@@ -4822,7 +4822,7 @@
         "concepts": [],
         "practices": {
             "hello-world": {
-                "path": "\/hello_world.js",
+                "path": "\/hello-world.js",
                 "rank": 1,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "B\u00e0i t\u1eadp gi\u1edbi thi\u1ec7u m\u1edf \u0111\u1ea7u. Ch\u1ec9 c\u1ea7n in ra 'Hello, World!!'",

@@ -3,6 +3,6 @@
 // convenience to get you started writing code faster.
 //
 
-export const parse = () => {
-  throw new Error('Remove this statement and implement this function');
-};
+function acronym(str) {
+    return str;
+}
