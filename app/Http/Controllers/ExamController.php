@@ -125,27 +125,22 @@ class ExamController extends Controller
             ),
         ));
 
-        $response = curl_exec($curl);
+        $response = json_decode(curl_exec($curl), true);
         curl_close($curl);
 
-        $res_test_case = [];
-
-        $error = false;
-        if (!str_contains($response, '|false|')) {
-            $res = explode('|', $response);
-            $res_test_case = explode(',', $res[0]);
-
+      
+        if ($response['error'] == false) {
             $output = '';
-            for ($i = 0; $i < count($res_test_case); ++$i) {
-                if ($res_test_case[$i] == 1) {
-                    $output .= '<div class="test_case_item pass">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-check"></i></div>';
+            foreach ($response['result'] as $key => $result) {
+                if ($result == true) {
+                    $output .= '<div class="test_case_item pass">Test Case ' . ($key + 1) . ' <i class="fa-solid fa-circle-check"></i></div>';
                 } else {
-                    $output .= '<div class="test_case_item error">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-xmark"></i></div>';
+                    $output .= '<div class="test_case_item error">Test Case ' . ($key + 1) . ' <i class="fa-solid fa-circle-xmark"></i></div>';
                 }
             }
         } else {
             $error = true;
-            $output = substr($response, 7);
+            $output = $response['error'];
         }
 
 
@@ -158,16 +153,17 @@ class ExamController extends Controller
 
         $curl = curl_init();
         curl_setopt_array($curl, array(
-            CURLOPT_URL => ExamConstants::SUBMIT_URL . 'compile/' . $lang . '/create_folder.php',
+            CURLOPT_URL => ExamConstants::SUBMIT_URL . 'compile/create_folder.php',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
+            CURLOPT_TIMEOUT => 20,
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_POSTFIELDS => http_build_query([
-                'user_id' => Auth::id()
+                'user_id' => Auth::id(),
+                'lang' => $lang
             ]),
             CURLOPT_HTTPHEADER => array(
                 'ngrok-skip-browser-warning' => '1231'
