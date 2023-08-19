@@ -1,7 +1,5 @@
-class Greeter {
-
-    String getGreeting() {
-        return "Goodbye, Mars!";
+class Main {
+    public static void main(String args[]) {
+        System.out.print(1);
     }
-
 }

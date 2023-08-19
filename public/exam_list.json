@@ -1062,13 +1062,13 @@
                 "status": 0
             },
             "hello-world": {
-                "path": "\/src\/main\/java\/hello_world.java",
-                "rank": 99,
+                "path": "\/src\/main\/java\/Greeter.java",
+                "rank": 1,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hexadecimal": {
                 "path": "\/src\/main\/java\/hexadecimal.java",
