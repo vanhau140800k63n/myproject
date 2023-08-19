@@ -685,12 +685,12 @@
             },
             "acronym": {
                 "path": "\/src\/main\/java\/acronym.java",
-                "rank": 99,
+                "rank": 2,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t c\u1ee5m t\u1eeb d\u00e0i th\u00e0nh t\u1eeb vi\u1ebft t\u1eaft c\u1ee7a n\u00f3.",
                 "image": "",
-                "name": "",
-                "status": 0
+                "name": "T\u1eeb vi\u1ebft t\u1eaft",
+                "status": 1
             },
             "affine-cipher": {
                 "path": "\/src\/main\/java\/affine_cipher.java",
@@ -1065,9 +1065,9 @@
                 "path": "\/src\/main\/java\/Greeter.java",
                 "rank": 1,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "B\u00e0i t\u1eadp gi\u1edbi thi\u1ec7u m\u1edf \u0111\u1ea7u. Ch\u1ec9 c\u1ea7n in ra 'Hello, World!!'",
                 "image": "",
-                "name": "",
+                "name": "Hello World",
                 "status": 1
             },
             "hexadecimal": {
@@ -1941,19 +1941,19 @@
         "type": "java"
     },
     "c": {
-        "image": "https://devsne.vn/image/courses/c.png",
+        "image": "https:\/\/devsne.vn\/image\/courses\/c.png",
         "name": "c",
         "concepts_num": 14,
         "practices_num": 73,
         "practices": {
             "acronym": {
                 "path": "\/acronym.c",
-                "rank": 99,
+                "rank": 2,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t c\u1ee5m t\u1eeb d\u00e0i th\u00e0nh t\u1eeb vi\u1ebft t\u1eaft c\u1ee7a n\u00f3.",
                 "image": "",
-                "name": "",
-                "status": 0
+                "name": "T\u1eeb vi\u1ebft t\u1eaft",
+                "status": 1
             },
             "all-your-base": {
                 "path": "\/all_your_base.c",
@@ -2164,12 +2164,12 @@
             },
             "hello-world": {
                 "path": "\/hello_world.c",
-                "rank": 99,
+                "rank": 1,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "B\u00e0i t\u1eadp gi\u1edbi thi\u1ec7u m\u1edf \u0111\u1ea7u. Ch\u1ec9 c\u1ea7n in ra 'Hello, World!!'",
                 "image": "",
-                "name": "",
-                "status": 0
+                "name": "Hello World",
+                "status": 1
             },
             "high-scores": {
                 "path": "\/high_scores.c",
@@ -2626,12 +2626,12 @@
             },
             "acronym": {
                 "path": "\/acronym.py",
-                "rank": 99,
+                "rank": 2,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t c\u1ee5m t\u1eeb d\u00e0i th\u00e0nh t\u1eeb vi\u1ebft t\u1eaft c\u1ee7a n\u00f3.",
                 "image": "",
-                "name": "",
-                "status": 0
+                "name": "T\u1eeb vi\u1ebft t\u1eaft",
+                "status": 1
             },
             "affine-cipher": {
                 "path": "\/affine_cipher.py",
@@ -3024,10 +3024,10 @@
                 "path": "\/hello_world.py",
                 "rank": 1,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "B\u00e0i t\u1eadp gi\u1edbi thi\u1ec7u m\u1edf \u0111\u1ea7u. Ch\u1ec9 c\u1ea7n in ra 'Hello, World!!'",
                 "image": "",
-                "name": "",
-                "status": 0
+                "name": "Hello World",
+                "status": 1
             },
             "hexadecimal": {
                 "path": "\/hexadecimal.py",
@@ -4036,12 +4036,12 @@
                 "path": "\/accumulate.php"
             },
             "acronym": {
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
+                "rank": 2,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t c\u1ee5m t\u1eeb d\u00e0i th\u00e0nh t\u1eeb vi\u1ebft t\u1eaft c\u1ee7a n\u00f3.",
                 "image": "",
-                "name": "",
-                "status": 0,
+                "name": "T\u1eeb vi\u1ebft t\u1eaft",
+                "status": 1,
                 "path": "\/acronym.php"
             },
             "affine-cipher": {
@@ -4289,11 +4289,11 @@
             },
             "hello-world": {
                 "rank": 1,
-                "difficulty": "easy",
-                "description": "",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "B\u00e0i t\u1eadp gi\u1edbi thi\u1ec7u m\u1edf \u0111\u1ea7u. Ch\u1ec9 c\u1ea7n in ra 'Hello, World!!'",
                 "image": "",
-                "name": "",
-                "status": 0,
+                "name": "Hello World",
+                "status": 1,
                 "path": "\/HelloWorld.php"
             },
             "high-scores": {
@@ -4814,7 +4814,7 @@
     "javascript": {
         "concepts_num": 34,
         "practices_num": 149,
-        "image": "https://devsne.vn/image/icon/nF8yjsqeIB.png",
+        "image": "https:\/\/devsne.vn\/image\/icon\/nF8yjsqeIB.png",
         "name": "javascript",
         "language": "js",
         "type": "javascript",
@@ -4832,12 +4832,12 @@
             },
             "acronym": {
                 "path": "\/acronym.js",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
+                "rank": 2,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t c\u1ee5m t\u1eeb d\u00e0i th\u00e0nh t\u1eeb vi\u1ebft t\u1eaft c\u1ee7a n\u00f3.",
                 "image": "",
-                "name": "",
-                "status": 0
+                "name": "T\u1eeb vi\u1ebft t\u1eaft",
+                "status": 1
             },
             "affine-cipher": {
                 "path": "\/affine_cipher.js",
@@ -5192,12 +5192,12 @@
             },
             "hello-world": {
                 "path": "\/hello_world.js",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
+                "rank": 1,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "B\u00e0i t\u1eadp gi\u1edbi thi\u1ec7u m\u1edf \u0111\u1ea7u. Ch\u1ec9 c\u1ea7n in ra 'Hello, World!!'",
                 "image": "",
-                "name": "",
-                "status": 0
+                "name": "Hello World",
+                "status": 1
             },
             "hexadecimal": {
                 "path": "\/hexadecimal.js",

@@ -133,7 +133,7 @@ class ExamController extends Controller
         $error = false;
         if ($response['error'] == false) {
             $output = '';
-            for ($i = 0; $i < count($response['result']); ++ $i) {
+            for ($i = 0; $i < count($response['result']); ++$i) {
                 if ($response['result'][$i] == true) {
                     $output .= '<div class="test_case_item pass">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-check"></i></div>';
                 } else {
@@ -345,5 +345,37 @@ class ExamController extends Controller
 
 
         return view('pages.exam.practice_detail', compact('exercise', 'practice_code', 'practice_html', 'practice', 'is_translate'));
+    }
+
+    public function updatePracticeList()
+    {
+        $lang_selected = 'cpp';
+        $directory = 'exam_list/';
+        $json = file_get_contents('exam_list.json');
+        $exercises = json_decode($json, true);
+        $practices = $exercises[$lang_selected]['practices'];
+        $lang_list = array_keys($exercises);
+
+        foreach ($practices as $key_practice => $practice) {
+            if ($practice['status'] != 1) continue;
+
+            foreach ($lang_list as $lang) {
+                if ($lang == $lang_selected) continue;
+                if (isset($exercises[$lang]['practices'][$key_practice])) {
+                    $exercises[$lang]['practices'][$key_practice]['rank'] = $practice['rank'];
+                    $exercises[$lang]['practices'][$key_practice]['difficulty'] = $practice['difficulty'];
+                    $exercises[$lang]['practices'][$key_practice]['description'] = $practice['description'];
+                    $exercises[$lang]['practices'][$key_practice]['name'] = $practice['name'];
+                    $exercises[$lang]['practices'][$key_practice]['status'] = $practice['status'];
+
+                    copy("exam_list/$lang_selected/exercises/practice/$key_practice/test.json", "exam_list/$lang/exercises/practice/$key_practice/test.json");
+                    copy("exam_list/$lang_selected/exercises/practice/$key_practice/.docs/instructions_tran.html", "exam_list/$lang/exercises/practice/$key_practice/.docs/instructions_tran.html");
+                }
+            }
+        }
+
+        $myfile = fopen("exam_list.json", "w") or die("Unable to open file!");
+        fwrite($myfile, json_encode($exercises, JSON_PRETTY_PRINT));
+        fclose($myfile);
     }
 }
