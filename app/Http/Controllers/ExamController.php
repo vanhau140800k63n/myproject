@@ -104,78 +104,84 @@ class ExamController extends Controller
         $json = file_get_contents('exam_list/' . $lang . '/exercises/practice/' . $practice . '/test.json');
         $test_case = json_decode($json, true);
 
-        $curl = curl_init();
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => ExamConstants::SUBMIT_URL . 'compile/' . $lang . '/' . Auth::id() . '/index.php',
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => http_build_query([
-                'code' => $code,
-                'test_case' => $test_case,
-                'practice' => $practice,
-                'user_id' => Auth::id()
-            ]),
-            CURLOPT_HTTPHEADER => array(
-                'ngrok-skip-browser-warning' => '1231'
-            ),
-        ));
+        if (in_array($lang, ['cpp', 'c', 'java', 'python'])) {
+            $curl = curl_init();
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => ExamConstants::SUBMIT_URL . 'compile/' . $lang . '/' . Auth::id() . '/index.php',
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => '',
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 0,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => 'POST',
+                CURLOPT_POSTFIELDS => http_build_query([
+                    'code' => $code,
+                    'test_case' => $test_case,
+                    'practice' => $practice,
+                    'user_id' => Auth::id()
+                ]),
+                CURLOPT_HTTPHEADER => array(
+                    'ngrok-skip-browser-warning' => '1231'
+                ),
+            ));
 
-        $response = curl_exec($curl);
-        curl_close($curl);
+            $response = curl_exec($curl);
+            curl_close($curl);
 
-        $response = json_decode($response, true);
+            $response = json_decode($response, true);
 
-        $error = false;
-        if ($response['error'] == false) {
-            $output = '';
-            for ($i = 0; $i < count($response['result']); ++$i) {
-                if ($response['result'][$i] == true) {
-                    $output .= '<div class="test_case_item pass">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-check"></i></div>';
-                } else {
-                    $output .= '<div class="test_case_item error">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-xmark"></i></div>';
+            $error = false;
+            if ($response['error'] == false) {
+                $output = '';
+                for ($i = 0; $i < count($response['result']); ++$i) {
+                    if ($response['result'][$i] == true) {
+                        $output .= '<div class="test_case_item pass">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-check"></i></div>';
+                    } else {
+                        $output .= '<div class="test_case_item error">Test Case ' . ($i + 1) . ' <i class="fa-solid fa-circle-xmark"></i></div>';
+                    }
                 }
+            } else {
+                $error = true;
+                $output = $response['error'];
             }
+            return response()->json([$error, $output]);
         } else {
-            $error = true;
-            $output = $response['error'];
+            return response()->json([false, '']);
         }
-
-
-        return response()->json([$error, $output]);
     }
 
     public function createFolderTest(Request $req)
     {
         $lang = $req->lang;
+        if (in_array($lang, ['cpp', 'c', 'java', 'python'])) {
 
-        $curl = curl_init();
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => ExamConstants::SUBMIT_URL . 'compile/create_folder.php',
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 20,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => http_build_query([
-                'user_id' => Auth::id(),
-                'lang' => $lang
-            ]),
-            CURLOPT_HTTPHEADER => array(
-                'ngrok-skip-browser-warning' => '1231'
-            ),
-        ));
+            $curl = curl_init();
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => ExamConstants::SUBMIT_URL . 'compile/create_folder.php',
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => '',
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 20,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => 'POST',
+                CURLOPT_POSTFIELDS => http_build_query([
+                    'user_id' => Auth::id(),
+                    'lang' => $lang
+                ]),
+                CURLOPT_HTTPHEADER => array(
+                    'ngrok-skip-browser-warning' => '1231'
+                ),
+            ));
 
-        $response = curl_exec($curl);
-        curl_close($curl);
+            $response = curl_exec($curl);
+            curl_close($curl);
 
-        return $response;
+            return $response;
+        } else {
+            return true;
+        }
     }
 
     public function submitCode(Request $req)
