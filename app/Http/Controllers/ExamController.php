@@ -374,6 +374,12 @@ class ExamController extends Controller
             }
         }
 
+        foreach ($lang_list as $lang) {
+            uasort($exercises[$lang]['practices'], function ($a, $b) {
+                return $a['rank'] > $b['rank'];
+            });
+        }
+
         $myfile = fopen("exam_list.json", "w") or die("Unable to open file!");
         fwrite($myfile, json_encode($exercises, JSON_PRETTY_PRINT));
         fclose($myfile);

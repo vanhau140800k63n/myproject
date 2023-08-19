@@ -1,11 +1,12 @@
-class Acronym {
+import java.util.Scanner;
 
-    Acronym(String phrase) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+class Main {
+    public static void main(String args[]) {
+        Scanner reader = new Scanner(System.in);
+        String str = reader.nextLine();
+        System.out.print(1);
     }
-
-    String get() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+    public static String acronym(String str) {
+        return acronym(str);
     }
-
 }
