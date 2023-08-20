@@ -128,9 +128,10 @@ class ExamController extends Controller
 
             $response = curl_exec($curl);
             curl_close($curl);
-
             $response = json_decode($response, true);
 
+            if (!isset($response['error'])) return response()->json([false, '']);
+            
             $error = false;
             if ($response['error'] == false) {
                 $output = '';
@@ -178,9 +179,13 @@ class ExamController extends Controller
             $response = curl_exec($curl);
             curl_close($curl);
 
-            return $response;
+            if ($response == true) {
+                return response()->json(true);
+            }
+
+            return response()->json(false);
         } else {
-            return true;
+            return response()->json(true);
         }
     }
 
