@@ -30,7 +30,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 chu\u1ed7i b\u1eb1ng c\u00e1ch ph\u00e2n t\u00edch Log.",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "lasagna": {
                 "path": "\/lasagna.cpp",
