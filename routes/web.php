@@ -62,7 +62,8 @@ Route::prefix('exam')->name('exam.')->group(function () {
     Route::get('/{language}', [ExamController::class, 'getExerciseInfo'])->name('get_exercise_info');
     Route::get('/{language}/{practice}', [ExamController::class, 'getPracticeDetail'])->name('get_practice_detail');
 
-    Route::prefix('challenge')->middleware(['check.logged'])->name('challenge.')->group(function () {
+    // Route::prefix('challenge')->middleware(['check.logged'])->name('challenge.')->group(function () {
+    Route::prefix('challenge')->name('challenge.')->group(function () {
         Route::get('/week', [ExamController::class, 'getChallengeWeek'])->name('week');
         Route::post('/run', [ExamController::class, 'runTestCase'])->name('run');
         Route::post('/create_folder_test', [ExamController::class, 'createFolderTest'])->name('creat_folder_test');
