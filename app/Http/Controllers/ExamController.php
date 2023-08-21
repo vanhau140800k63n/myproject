@@ -342,10 +342,19 @@ class ExamController extends Controller
         $directory = 'exam_list/';
         $json = file_get_contents('exam_list.json');
         $exercise = json_decode($json, true)[$language];
-        $path = 'concept';
-        if (file_exists($directory . $language . '/exercises/practice/' . $practice . $exercise['practices'][$practice]['path'])) {
-            $path = 'practice';
+        $path_list = ['concept', 'practice'];
+        $path = null;
+
+        foreach($path_list as $path_item) {
+            if (file_exists($directory . $language . "/exercises/$path_item/" . $practice . $exercise['practices'][$practice]['path'])) {
+                $path = $path_item;
+            }
         }
+
+        if($path == null) {
+            throw new PageException();
+        }
+
         $practice_code = file_get_contents($directory . $language . '/exercises/' . $path . '/' . $practice . $exercise['practices'][$practice]['path']);
         $is_translate = false;
         $practice_html['en'] = Str::markdown(file_get_contents($directory . $language . '/exercises/' . $path . '/' . $practice . '/.docs/instructions.md'));

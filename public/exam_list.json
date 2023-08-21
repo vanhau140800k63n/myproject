@@ -48,16 +48,16 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 s\u1ed1 nguy\u00ean v\u00e0 s\u1ed1 d\u1ea5u ph\u1ea9y \u0111\u1ed9ng b\u1eb1ng c\u00e1ch gi\u00fap m\u1ed9t ng\u01b0\u1eddi l\u00e0m ngh\u1ec1 t\u1ef1 do giao ti\u1ebfp v\u1edbi ng\u01b0\u1eddi qu\u1ea3n l\u00fd d\u1ef1 \u00e1n v\u1ec1 vi\u1ec7c thanh to\u00e1n.",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "last-will": {
                 "path": "\/last_will.cpp",
                 "rank": 5,
                 "difficulty": "Luy\u1ec7n t\u1eadp",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 kh\u00f4ng gian t\u00ean b\u1eb1ng c\u00e1ch th\u1ef1c hi\u1ec7n m\u1ed9t b\u1ea5t \u0111\u1ed9ng s\u1ea3n.",
-                "image": "lasagna",
+                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pacman-rules": {
                 "path": "\/pacman_rules.cpp",
@@ -66,7 +66,7 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 booleans b\u1eb1ng c\u00e1ch th\u1ef1c hi\u1ec7n c\u00e1c quy t\u1eafc c\u1ee7a tr\u00f2 ch\u01a1i Pac-Man.",
                 "image": "",
                 "name": "Tr\u00f2 ch\u01a1i PacMan",
-                "status": 0
+                "status": 1
             },
             "vehicle-purchase": {
                 "path": "\/vehicle_purchase.cpp",
@@ -75,16 +75,16 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 ph\u00e9p so s\u00e1nh v\u00e0 c\u00e2u l\u1ec7nh if trong khi chu\u1ea9n b\u1ecb cho l\u1ea7n mua xe ti\u1ebfp theo c\u1ee7a b\u1ea1n",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "making-the-grade": {
                 "path": "\/making_the_grade.cpp",
                 "rank": 8,
                 "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 m\u1ea3ng v\u00e0 vector trong C++ b\u1eb1ng c\u00e1ch ch\u1ea5m \u0111i\u1ec3m v\u00e0 s\u1eafp x\u1ebfp \u0111i\u1ec3m thi c\u1ee7a h\u1ecdc sinh.",
-                "image": "grep",
+                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
                 "name": "Ch\u1ea5m \u0111i\u1ec3m",
-                "status": 0
+                "status": 1
             },
             "interest-is-interesting": {
                 "path": "\/interest_is_interesting.cpp",
@@ -93,16 +93,16 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c v\u00f2ng l\u1eb7p b\u1eb1ng c\u00e1ch th\u00eam ti\u1ec1n l\u00e3i v\u00e0o t\u00e0i kho\u1ea3n ti\u1ebft ki\u1ec7m.",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "ellens-alien-game": {
                 "path": "\/ellens_alien_game.cpp",
                 "rank": 10,
                 "difficulty": "easy",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c l\u1edbp h\u1ecdc b\u1eb1ng c\u00e1ch t\u1ea1o tr\u00f2 ch\u01a1i Ng\u01b0\u1eddi ngo\u00e0i h\u00e0nh tinh cho Ellen.",
-                "image": "character-study",
+                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
                 "name": "Ellen's Alien Game",
-                "status": 0
+                "status": 1
             },
             "election-day": {
                 "path": "\/election_day.cpp",
@@ -111,16 +111,16 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 References b\u1eb1ng c\u00e1ch t\u1ea1o m\u1ed9t h\u1ec7 th\u1ed1ng b\u1ecf phi\u1ebfu \u0111\u01a1n gi\u1ea3n.",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "troll-the-trolls": {
                 "path": "\/troll_the_trolls.cpp",
                 "rank": 12,
                 "difficulty": "\u0110\u1ed9 kh\u00f3: Medium",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 ki\u1ec3u li\u1ec7t k\u00ea v\u00e0 c\u00e2u l\u1ec7nh chuy\u1ec3n \u0111\u1ed5i b\u1eb1ng c\u00e1ch ki\u1ec3m tra quy\u1ec1n c\u1ee7a t\u00e0i kho\u1ea3n ng\u01b0\u1eddi d\u00f9ng.",
-                "image": "attack-of-the-trolls",
+                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "leap": {
                 "path": "\/leap.cpp",
@@ -129,7 +129,7 @@
                 "description": "Cho m\u1ed9t n\u0103m, b\u00e1o c\u00e1o n\u1ebfu \u0111\u00f3 l\u00e0 m\u1ed9t n\u0103m nhu\u1eadn.",
                 "image": "",
                 "name": "N\u0103m nhu\u1eadn",
-                "status": 0
+                "status": 1
             },
             "reverse-string": {
                 "path": "\/reverse_string.cpp",
@@ -138,7 +138,7 @@
                 "description": "\u0110\u1ea3o ng\u01b0\u1ee3c m\u1ed9t chu\u1ed7i",
                 "image": "",
                 "name": "\u0110\u1ea3o chu\u1ed7i",
-                "status": 0
+                "status": 1
             },
             "space-age": {
                 "path": "\/space_age.cpp",
@@ -147,7 +147,7 @@
                 "description": "\u0110\u01b0a ra m\u1ed9t \u0111\u1ed9 tu\u1ed5i t\u00ednh b\u1eb1ng gi\u00e2y, h\u00e3y t\u00ednh xem m\u1ed9t ng\u01b0\u1eddi bao nhi\u00eau tu\u1ed5i theo s\u1ed1 n\u0103m m\u1eb7t tr\u1eddi c\u1ee7a m\u1ed9t h\u00e0nh tinh nh\u1ea5t \u0111\u1ecbnh.",
                 "image": "",
                 "name": "T\u00ednh tu\u1ed5i",
-                "status": 0
+                "status": 1
             },
             "triangle": {
                 "path": "\/triangle.cpp",
@@ -156,7 +156,7 @@
                 "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t tam gi\u00e1c l\u00e0 tam gi\u00e1c \u0111\u1ec1u, c\u00e2n hay c\u00e2n.",
                 "image": "",
                 "name": "Tam gi\u00e1c \u0111\u1ec1u",
-                "status": 0
+                "status": 1
             },
             "grains": {
                 "path": "\/grains.cpp",
@@ -165,7 +165,7 @@
                 "description": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa m\u00ec tr\u00ean b\u00e0n c\u1edd bi\u1ebft r\u1eb1ng s\u1ed1 h\u1ea1t tr\u00ean m\u1ed7i \u00f4 vu\u00f4ng t\u0103ng g\u1ea5p \u0111\u00f4i.",
                 "image": "",
                 "name": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa",
-                "status": 0
+                "status": 1
             },
             "raindrops": {
                 "path": "\/raindrops.cpp",
@@ -174,7 +174,7 @@
                 "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t s\u1ed1 th\u00e0nh m\u1ed9t chu\u1ed7i, n\u1ed9i dung c\u1ee7a n\u00f3 ph\u1ee5 thu\u1ed9c v\u00e0o c\u00e1c y\u1ebfu t\u1ed1 c\u1ee7a s\u1ed1 \u0111\u00f3.",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pangram": {
                 "path": "\/pangram.cpp",
@@ -183,7 +183,7 @@
                 "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t c\u00e2u c\u00f3 ph\u1ea3i l\u00e0 m\u1ed9t pangram hay kh\u00f4ng.",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "two-fer": {
                 "path": "\/two_fer.cpp",
@@ -192,7 +192,7 @@
                 "description": "T\u1ea1o m\u1ed9t c\u00e2u c\u00f3 d\u1ea1ng 'One for X, one for me'.",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "all-your-base": {
                 "path": "\/all_your_base.cpp",
@@ -201,7 +201,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "allergies": {
                 "path": "\/allergies.cpp",
@@ -210,7 +210,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "anagram": {
                 "path": "\/anagram.cpp",
@@ -219,7 +219,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "armstrong-numbers": {
                 "path": "\/armstrong_numbers.cpp",
@@ -228,7 +228,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "atbash-cipher": {
                 "path": "\/atbash_cipher.cpp",
@@ -237,7 +237,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bank-account": {
                 "path": "\/bank_account.cpp",
@@ -246,7 +246,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "beer-song": {
                 "path": "\/beer_song.cpp",
@@ -255,7 +255,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary": {
                 "path": "\/binary.cpp",
@@ -264,7 +264,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary-search": {
                 "path": "\/binary_search.cpp",
@@ -273,7 +273,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary-search-tree": {
                 "path": "\/binary_search_tree.cpp",
@@ -282,7 +282,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bob": {
                 "path": "\/bob.cpp",
@@ -291,7 +291,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "circular-buffer": {
                 "path": "\/circular_buffer.cpp",
@@ -300,7 +300,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "clock": {
                 "path": "\/clock.cpp",
@@ -309,7 +309,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "collatz-conjecture": {
                 "path": "\/collatz_conjecture.cpp",
@@ -318,7 +318,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "complex-numbers": {
                 "path": "\/complex_numbers.cpp",
@@ -327,7 +327,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "crypto-square": {
                 "path": "\/crypto_square.cpp",
@@ -336,7 +336,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "darts": {
                 "path": "\/darts.cpp",
@@ -345,7 +345,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "difference-of-squares": {
                 "path": "\/difference_of_squares.cpp",
@@ -354,7 +354,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "etl": {
                 "path": "\/etl.cpp",
@@ -363,7 +363,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "food-chain": {
                 "path": "\/food_chain.cpp",
@@ -372,7 +372,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "gigasecond": {
                 "path": "\/gigasecond.cpp",
@@ -381,7 +381,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "grade-school": {
                 "path": "\/grade_school.cpp",
@@ -390,7 +390,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hamming": {
                 "path": "\/hamming.cpp",
@@ -399,7 +399,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hexadecimal": {
                 "path": "\/hexadecimal.cpp",
@@ -408,7 +408,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "high-scores": {
                 "path": "\/high_scores.cpp",
@@ -417,7 +417,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "isbn-verifier": {
                 "path": "\/isbn_verifier.cpp",
@@ -426,7 +426,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "isogram": {
                 "path": "\/isogram.cpp",
@@ -435,7 +435,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "largest-series-product": {
                 "path": "\/largest_series_product.cpp",
@@ -444,7 +444,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "luhn": {
                 "path": "\/luhn.cpp",
@@ -453,7 +453,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "matching-brackets": {
                 "path": "\/matching_brackets.cpp",
@@ -462,7 +462,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "meetup": {
                 "path": "\/meetup.cpp",
@@ -471,7 +471,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "nth-prime": {
                 "path": "\/nth_prime.cpp",
@@ -480,7 +480,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "nucleotide-count": {
                 "path": "\/nucleotide_count.cpp",
@@ -489,7 +489,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pascals-triangle": {
                 "path": "\/pascals_triangle.cpp",
@@ -498,7 +498,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "perfect-numbers": {
                 "path": "\/perfect_numbers.cpp",
@@ -507,7 +507,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "phone-number": {
                 "path": "\/phone_number.cpp",
@@ -516,7 +516,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "prime-factors": {
                 "path": "\/prime_factors.cpp",
@@ -525,7 +525,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "protein-translation": {
                 "path": "\/protein_translation.cpp",
@@ -534,7 +534,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "queen-attack": {
                 "path": "\/queen_attack.cpp",
@@ -543,7 +543,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rna-transcription": {
                 "path": "\/rna_transcription.cpp",
@@ -552,7 +552,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "robot-name": {
                 "path": "\/robot_name.cpp",
@@ -561,7 +561,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "robot-simulator": {
                 "path": "\/robot_simulator.cpp",
@@ -570,7 +570,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "roman-numerals": {
                 "path": "\/roman_numerals.cpp",
@@ -579,7 +579,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "say": {
                 "path": "\/say.cpp",
@@ -588,7 +588,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "scrabble-score": {
                 "path": "\/scrabble_score.cpp",
@@ -597,7 +597,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "secret-handshake": {
                 "path": "\/secret_handshake.cpp",
@@ -606,7 +606,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "series": {
                 "path": "\/series.cpp",
@@ -615,7 +615,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sieve": {
                 "path": "\/sieve.cpp",
@@ -624,7 +624,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "simple-linked-list": {
                 "path": "\/simple_linked_list.cpp",
@@ -633,7 +633,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sum-of-multiples": {
                 "path": "\/sum_of_multiples.cpp",
@@ -642,7 +642,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "trinary": {
                 "path": "\/trinary.cpp",
@@ -651,7 +651,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "word-count": {
                 "path": "\/word_count.cpp",
@@ -660,7 +660,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             }
         },
         "concepts": [],
@@ -717,7 +717,7 @@
                 "description": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa m\u00ec tr\u00ean b\u00e0n c\u1edd bi\u1ebft r\u1eb1ng s\u1ed1 h\u1ea1t tr\u00ean m\u1ed7i \u00f4 vu\u00f4ng t\u0103ng g\u1ea5p \u0111\u00f4i.",
                 "image": "",
                 "name": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa",
-                "status": 0
+                "status": 1
             },
             "accumulate": {
                 "path": "\/src\/main\/java\/accumulate.java",
@@ -726,7 +726,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "affine-cipher": {
                 "path": "\/src\/main\/java\/affine_cipher.java",
@@ -735,7 +735,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "all-your-base": {
                 "path": "\/src\/main\/java\/all_your_base.java",
@@ -744,7 +744,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "allergies": {
                 "path": "\/src\/main\/java\/allergies.java",
@@ -753,7 +753,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "alphametics": {
                 "path": "\/src\/main\/java\/alphametics.java",
@@ -762,7 +762,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "anagram": {
                 "path": "\/src\/main\/java\/anagram.java",
@@ -771,7 +771,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "armstrong-numbers": {
                 "path": "\/src\/main\/java\/armstrong_numbers.java",
@@ -780,7 +780,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "atbash-cipher": {
                 "path": "\/src\/main\/java\/atbash_cipher.java",
@@ -789,7 +789,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bank-account": {
                 "path": "\/src\/main\/java\/bank_account.java",
@@ -798,7 +798,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "beer-song": {
                 "path": "\/src\/main\/java\/beer_song.java",
@@ -807,7 +807,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary": {
                 "path": "\/src\/main\/java\/binary.java",
@@ -816,7 +816,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary-search": {
                 "path": "\/src\/main\/java\/binary_search.java",
@@ -825,7 +825,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary-search-tree": {
                 "path": "\/src\/main\/java\/binary_search_tree.java",
@@ -834,7 +834,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bob": {
                 "path": "\/src\/main\/java\/bob.java",
@@ -843,7 +843,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "book-store": {
                 "path": "\/src\/main\/java\/book_store.java",
@@ -852,7 +852,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bowling": {
                 "path": "\/src\/main\/java\/bowling.java",
@@ -861,7 +861,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "change": {
                 "path": "\/src\/main\/java\/change.java",
@@ -870,7 +870,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "circular-buffer": {
                 "path": "\/src\/main\/java\/circular_buffer.java",
@@ -879,7 +879,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "clock": {
                 "path": "\/src\/main\/java\/clock.java",
@@ -888,7 +888,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "collatz-conjecture": {
                 "path": "\/src\/main\/java\/collatz_conjecture.java",
@@ -897,7 +897,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "complex-numbers": {
                 "path": "\/src\/main\/java\/complex_numbers.java",
@@ -906,7 +906,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "connect": {
                 "path": "\/src\/main\/java\/connect.java",
@@ -915,7 +915,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "crypto-square": {
                 "path": "\/src\/main\/java\/crypto_square.java",
@@ -924,7 +924,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "custom-set": {
                 "path": "\/src\/main\/java\/custom_set.java",
@@ -933,7 +933,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "darts": {
                 "path": "\/src\/main\/java\/darts.java",
@@ -942,7 +942,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "diamond": {
                 "path": "\/src\/main\/java\/diamond.java",
@@ -951,7 +951,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "difference-of-squares": {
                 "path": "\/src\/main\/java\/difference_of_squares.java",
@@ -960,7 +960,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "diffie-hellman": {
                 "path": "\/src\/main\/java\/diffie_hellman.java",
@@ -969,7 +969,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "dnd-character": {
                 "path": "\/src\/main\/java\/dnd_character.java",
@@ -978,7 +978,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "dominoes": {
                 "path": "\/src\/main\/java\/dominoes.java",
@@ -987,7 +987,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "error-handling": {
                 "path": "\/src\/main\/java\/error_handling.java",
@@ -996,7 +996,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "etl": {
                 "path": "\/src\/main\/java\/etl.java",
@@ -1005,7 +1005,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "flatten-array": {
                 "path": "\/src\/main\/java\/flatten_array.java",
@@ -1014,7 +1014,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "food-chain": {
                 "path": "\/src\/main\/java\/food_chain.java",
@@ -1023,7 +1023,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "forth": {
                 "path": "\/src\/main\/java\/forth.java",
@@ -1032,7 +1032,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "gigasecond": {
                 "path": "\/src\/main\/java\/gigasecond.java",
@@ -1041,7 +1041,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "go-counting": {
                 "path": "\/src\/main\/java\/go_counting.java",
@@ -1050,7 +1050,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "grade-school": {
                 "path": "\/src\/main\/java\/grade_school.java",
@@ -1059,7 +1059,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "grep": {
                 "path": "\/src\/main\/java\/grep.java",
@@ -1068,7 +1068,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hamming": {
                 "path": "\/src\/main\/java\/hamming.java",
@@ -1077,7 +1077,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hangman": {
                 "path": "\/src\/main\/java\/hangman.java",
@@ -1086,7 +1086,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hexadecimal": {
                 "path": "\/src\/main\/java\/hexadecimal.java",
@@ -1095,7 +1095,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "high-scores": {
                 "path": "\/src\/main\/java\/high_scores.java",
@@ -1104,7 +1104,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "house": {
                 "path": "\/src\/main\/java\/house.java",
@@ -1113,7 +1113,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "isbn-verifier": {
                 "path": "\/src\/main\/java\/isbn_verifier.java",
@@ -1122,7 +1122,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "isogram": {
                 "path": "\/src\/main\/java\/isogram.java",
@@ -1131,7 +1131,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "kindergarten-garden": {
                 "path": "\/src\/main\/java\/kindergarten_garden.java",
@@ -1140,7 +1140,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "knapsack": {
                 "path": "\/src\/main\/java\/knapsack.java",
@@ -1149,7 +1149,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "largest-series-product": {
                 "path": "\/src\/main\/java\/largest_series_product.java",
@@ -1158,7 +1158,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "leap": {
                 "path": "\/src\/main\/java\/leap.java",
@@ -1167,7 +1167,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "ledger": {
                 "path": "\/src\/main\/java\/ledger.java",
@@ -1176,7 +1176,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "linked-list": {
                 "path": "\/src\/main\/java\/linked_list.java",
@@ -1185,7 +1185,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "list-ops": {
                 "path": "\/src\/main\/java\/list_ops.java",
@@ -1194,7 +1194,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "luhn": {
                 "path": "\/src\/main\/java\/luhn.java",
@@ -1203,7 +1203,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "markdown": {
                 "path": "\/src\/main\/java\/markdown.java",
@@ -1212,7 +1212,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "matching-brackets": {
                 "path": "\/src\/main\/java\/matching_brackets.java",
@@ -1221,7 +1221,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "matrix": {
                 "path": "\/src\/main\/java\/matrix.java",
@@ -1230,7 +1230,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "meetup": {
                 "path": "\/src\/main\/java\/meetup.java",
@@ -1239,7 +1239,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "micro-blog": {
                 "path": "\/src\/main\/java\/micro_blog.java",
@@ -1248,7 +1248,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "minesweeper": {
                 "path": "\/src\/main\/java\/minesweeper.java",
@@ -1257,7 +1257,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "nth-prime": {
                 "path": "\/src\/main\/java\/nth_prime.java",
@@ -1266,7 +1266,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "nucleotide-count": {
                 "path": "\/src\/main\/java\/nucleotide_count.java",
@@ -1275,7 +1275,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "ocr-numbers": {
                 "path": "\/src\/main\/java\/ocr_numbers.java",
@@ -1284,7 +1284,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "octal": {
                 "path": "\/src\/main\/java\/octal.java",
@@ -1293,7 +1293,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "palindrome-products": {
                 "path": "\/src\/main\/java\/palindrome_products.java",
@@ -1302,7 +1302,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pangram": {
                 "path": "\/src\/main\/java\/pangram.java",
@@ -1311,7 +1311,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "parallel-letter-frequency": {
                 "path": "\/src\/main\/java\/parallel_letter_frequency.java",
@@ -1320,7 +1320,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pascals-triangle": {
                 "path": "\/src\/main\/java\/pascals_triangle.java",
@@ -1329,7 +1329,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "perfect-numbers": {
                 "path": "\/src\/main\/java\/perfect_numbers.java",
@@ -1338,7 +1338,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "phone-number": {
                 "path": "\/src\/main\/java\/phone_number.java",
@@ -1347,7 +1347,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pig-latin": {
                 "path": "\/src\/main\/java\/pig_latin.java",
@@ -1356,7 +1356,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "poker": {
                 "path": "\/src\/main\/java\/poker.java",
@@ -1365,7 +1365,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pov": {
                 "path": "\/src\/main\/java\/pov.java",
@@ -1374,7 +1374,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "prime-factors": {
                 "path": "\/src\/main\/java\/prime_factors.java",
@@ -1383,7 +1383,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "protein-translation": {
                 "path": "\/src\/main\/java\/protein_translation.java",
@@ -1392,7 +1392,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "proverb": {
                 "path": "\/src\/main\/java\/proverb.java",
@@ -1401,7 +1401,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pythagorean-triplet": {
                 "path": "\/src\/main\/java\/pythagorean_triplet.java",
@@ -1410,7 +1410,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "queen-attack": {
                 "path": "\/src\/main\/java\/queen_attack.java",
@@ -1419,7 +1419,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rail-fence-cipher": {
                 "path": "\/src\/main\/java\/rail_fence_cipher.java",
@@ -1428,7 +1428,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "raindrops": {
                 "path": "\/src\/main\/java\/raindrops.java",
@@ -1437,7 +1437,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rational-numbers": {
                 "path": "\/src\/main\/java\/rational_numbers.java",
@@ -1446,7 +1446,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rectangles": {
                 "path": "\/src\/main\/java\/rectangles.java",
@@ -1455,7 +1455,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color": {
                 "path": "\/src\/main\/java\/resistor_color.java",
@@ -1464,7 +1464,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color-duo": {
                 "path": "\/src\/main\/java\/resistor_color_duo.java",
@@ -1473,7 +1473,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rest-api": {
                 "path": "\/src\/main\/java\/rest_api.java",
@@ -1482,7 +1482,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "reverse-string": {
                 "path": "\/src\/main\/java\/reverse_string.java",
@@ -1491,7 +1491,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rna-transcription": {
                 "path": "\/src\/main\/java\/rna_transcription.java",
@@ -1500,7 +1500,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "robot-name": {
                 "path": "\/src\/main\/java\/robot_name.java",
@@ -1509,7 +1509,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "robot-simulator": {
                 "path": "\/src\/main\/java\/robot_simulator.java",
@@ -1518,7 +1518,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "roman-numerals": {
                 "path": "\/src\/main\/java\/roman_numerals.java",
@@ -1527,7 +1527,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rotational-cipher": {
                 "path": "\/src\/main\/java\/rotational_cipher.java",
@@ -1536,7 +1536,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "run-length-encoding": {
                 "path": "\/src\/main\/java\/run_length_encoding.java",
@@ -1545,7 +1545,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "saddle-points": {
                 "path": "\/src\/main\/java\/saddle_points.java",
@@ -1554,7 +1554,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "satellite": {
                 "path": "\/src\/main\/java\/satellite.java",
@@ -1563,7 +1563,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "say": {
                 "path": "\/src\/main\/java\/say.java",
@@ -1572,7 +1572,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "scrabble-score": {
                 "path": "\/src\/main\/java\/scrabble_score.java",
@@ -1581,7 +1581,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "secret-handshake": {
                 "path": "\/src\/main\/java\/secret_handshake.java",
@@ -1590,7 +1590,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "series": {
                 "path": "\/src\/main\/java\/series.java",
@@ -1599,7 +1599,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sgf-parsing": {
                 "path": "\/src\/main\/java\/sgf_parsing.java",
@@ -1608,7 +1608,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sieve": {
                 "path": "\/src\/main\/java\/sieve.java",
@@ -1617,7 +1617,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "simple-cipher": {
                 "path": "\/src\/main\/java\/simple_cipher.java",
@@ -1626,7 +1626,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "simple-linked-list": {
                 "path": "\/src\/main\/java\/simple_linked_list.java",
@@ -1635,7 +1635,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "space-age": {
                 "path": "\/src\/main\/java\/space_age.java",
@@ -1644,7 +1644,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "spiral-matrix": {
                 "path": "\/src\/main\/java\/spiral_matrix.java",
@@ -1653,7 +1653,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "strain": {
                 "path": "\/src\/main\/java\/strain.java",
@@ -1662,7 +1662,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sublist": {
                 "path": "\/src\/main\/java\/sublist.java",
@@ -1671,7 +1671,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sum-of-multiples": {
                 "path": "\/src\/main\/java\/sum_of_multiples.java",
@@ -1680,7 +1680,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "tournament": {
                 "path": "\/src\/main\/java\/tournament.java",
@@ -1689,7 +1689,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "transpose": {
                 "path": "\/src\/main\/java\/transpose.java",
@@ -1698,7 +1698,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "tree-building": {
                 "path": "\/src\/main\/java\/tree_building.java",
@@ -1707,7 +1707,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "triangle": {
                 "path": "\/src\/main\/java\/triangle.java",
@@ -1716,7 +1716,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "trinary": {
                 "path": "\/src\/main\/java\/trinary.java",
@@ -1725,7 +1725,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "twelve-days": {
                 "path": "\/src\/main\/java\/twelve_days.java",
@@ -1734,7 +1734,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "two-bucket": {
                 "path": "\/src\/main\/java\/two_bucket.java",
@@ -1743,7 +1743,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "two-fer": {
                 "path": "\/src\/main\/java\/two_fer.java",
@@ -1752,7 +1752,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "variable-length-quantity": {
                 "path": "\/src\/main\/java\/variable_length_quantity.java",
@@ -1761,7 +1761,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "word-count": {
                 "path": "\/src\/main\/java\/word_count.java",
@@ -1770,7 +1770,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "word-search": {
                 "path": "\/src\/main\/java\/word_search.java",
@@ -1779,7 +1779,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "wordy": {
                 "path": "\/src\/main\/java\/wordy.java",
@@ -1788,7 +1788,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "yacht": {
                 "path": "\/src\/main\/java\/yacht.java",
@@ -1797,7 +1797,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "zebra-puzzle": {
                 "path": "\/src\/main\/java\/zebra_puzzle.java",
@@ -1806,7 +1806,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "zipper": {
                 "path": "\/src\/main\/java\/zipper.java",
@@ -1815,7 +1815,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "annalyns-infiltration": {
                 "path": "\/src\/main\/java\/annalyns_infiltration.java",
@@ -1824,7 +1824,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bird-watcher": {
                 "path": "\/src\/main\/java\/bird_watcher.java",
@@ -1833,16 +1833,16 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "blackjack": {
                 "path": "\/src\/main\/java\/blackjack.java",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "calculator-conundrum": {
                 "path": "\/src\/main\/java\/calculator_conundrum.java",
@@ -1851,7 +1851,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "cars-assemble": {
                 "path": "\/src\/main\/java\/cars_assemble.java",
@@ -1860,16 +1860,16 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "elons-toy-car": {
                 "path": "\/src\/main\/java\/elons_toy_car.java",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "football-match-reports": {
                 "path": "\/src\/main\/java\/football_match_reports.java",
@@ -1878,16 +1878,16 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "karls-languages": {
                 "path": "\/src\/main\/java\/karls_languages.java",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/Xofs2eR9cP.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "need-for-speed": {
                 "path": "\/src\/main\/java\/need_for_speed.java",
@@ -1896,7 +1896,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "remote-control-competition": {
                 "path": "\/src\/main\/java\/remote_control_competition.java",
@@ -1905,7 +1905,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "salary-calculator": {
                 "path": "\/src\/main\/java\/salary_calculator.java",
@@ -1914,7 +1914,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "squeaky-clean": {
                 "path": "\/src\/main\/java\/squeaky_clean.java",
@@ -1923,7 +1923,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "wizards-and-warriors": {
                 "path": "\/src\/main\/java\/wizards_and_warriors.java",
@@ -1932,7 +1932,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             }
         },
         "concepts": [],
@@ -1971,7 +1971,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "allergies": {
                 "path": "\/allergies.c",
@@ -1980,7 +1980,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "anagram": {
                 "path": "\/anagram.c",
@@ -1989,7 +1989,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "armstrong-numbers": {
                 "path": "\/armstrong_numbers.c",
@@ -1998,7 +1998,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "atbash-cipher": {
                 "path": "\/atbash_cipher.c",
@@ -2007,7 +2007,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "beer-song": {
                 "path": "\/beer_song.c",
@@ -2016,7 +2016,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary": {
                 "path": "\/binary.c",
@@ -2025,7 +2025,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary-search": {
                 "path": "\/binary_search.c",
@@ -2034,7 +2034,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary-search-tree": {
                 "path": "\/binary_search_tree.c",
@@ -2043,7 +2043,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bob": {
                 "path": "\/bob.c",
@@ -2052,7 +2052,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "circular-buffer": {
                 "path": "\/circular_buffer.c",
@@ -2061,7 +2061,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "clock": {
                 "path": "\/clock.c",
@@ -2070,7 +2070,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "collatz-conjecture": {
                 "path": "\/collatz_conjecture.c",
@@ -2079,7 +2079,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "complex-numbers": {
                 "path": "\/complex_numbers.c",
@@ -2088,7 +2088,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "crypto-square": {
                 "path": "\/crypto_square.c",
@@ -2097,7 +2097,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "darts": {
                 "path": "\/darts.c",
@@ -2106,7 +2106,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "diamond": {
                 "path": "\/diamond.c",
@@ -2115,7 +2115,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "difference-of-squares": {
                 "path": "\/difference_of_squares.c",
@@ -2124,7 +2124,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "etl": {
                 "path": "\/etl.c",
@@ -2133,7 +2133,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "gigasecond": {
                 "path": "\/gigasecond.c",
@@ -2142,7 +2142,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "grade-school": {
                 "path": "\/grade_school.c",
@@ -2151,7 +2151,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "grains": {
                 "path": "\/grains.c",
@@ -2160,7 +2160,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hamming": {
                 "path": "\/hamming.c",
@@ -2169,7 +2169,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "high-scores": {
                 "path": "\/high_scores.c",
@@ -2178,7 +2178,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "isogram": {
                 "path": "\/isogram.c",
@@ -2187,7 +2187,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "largest-series-product": {
                 "path": "\/largest_series_product.c",
@@ -2196,7 +2196,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "leap": {
                 "path": "\/leap.c",
@@ -2205,7 +2205,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "linked-list": {
                 "path": "\/linked_list.c",
@@ -2214,7 +2214,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "list-ops": {
                 "path": "\/list_ops.c",
@@ -2223,7 +2223,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "luhn": {
                 "path": "\/luhn.c",
@@ -2232,7 +2232,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "matching-brackets": {
                 "path": "\/matching_brackets.c",
@@ -2241,7 +2241,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "meetup": {
                 "path": "\/meetup.c",
@@ -2250,7 +2250,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "minesweeper": {
                 "path": "\/minesweeper.c",
@@ -2259,7 +2259,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "nth-prime": {
                 "path": "\/nth_prime.c",
@@ -2268,7 +2268,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "nucleotide-count": {
                 "path": "\/nucleotide_count.c",
@@ -2277,7 +2277,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "palindrome-products": {
                 "path": "\/palindrome_products.c",
@@ -2286,7 +2286,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pangram": {
                 "path": "\/pangram.c",
@@ -2295,7 +2295,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pascals-triangle": {
                 "path": "\/pascals_triangle.c",
@@ -2304,7 +2304,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "perfect-numbers": {
                 "path": "\/perfect_numbers.c",
@@ -2313,7 +2313,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "phone-number": {
                 "path": "\/phone_number.c",
@@ -2322,7 +2322,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pig-latin": {
                 "path": "\/pig_latin.c",
@@ -2331,7 +2331,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "prime-factors": {
                 "path": "\/prime_factors.c",
@@ -2340,7 +2340,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pythagorean-triplet": {
                 "path": "\/pythagorean_triplet.c",
@@ -2349,7 +2349,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "queen-attack": {
                 "path": "\/queen_attack.c",
@@ -2358,7 +2358,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rail-fence-cipher": {
                 "path": "\/rail_fence_cipher.c",
@@ -2367,7 +2367,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "raindrops": {
                 "path": "\/raindrops.c",
@@ -2376,7 +2376,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rational-numbers": {
                 "path": "\/rational_numbers.c",
@@ -2385,7 +2385,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "react": {
                 "path": "\/react.c",
@@ -2394,7 +2394,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color": {
                 "path": "\/resistor_color.c",
@@ -2403,7 +2403,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color-duo": {
                 "path": "\/resistor_color_duo.c",
@@ -2412,7 +2412,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color-trio": {
                 "path": "\/resistor_color_trio.c",
@@ -2421,7 +2421,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "reverse-string": {
                 "path": "\/reverse_string.c",
@@ -2430,7 +2430,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rna-transcription": {
                 "path": "\/rna_transcription.c",
@@ -2439,7 +2439,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "robot-simulator": {
                 "path": "\/robot_simulator.c",
@@ -2448,7 +2448,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "roman-numerals": {
                 "path": "\/roman_numerals.c",
@@ -2457,7 +2457,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "run-length-encoding": {
                 "path": "\/run_length_encoding.c",
@@ -2466,7 +2466,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "saddle-points": {
                 "path": "\/saddle_points.c",
@@ -2475,7 +2475,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "say": {
                 "path": "\/say.c",
@@ -2484,7 +2484,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "scrabble-score": {
                 "path": "\/scrabble_score.c",
@@ -2493,7 +2493,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "secret-handshake": {
                 "path": "\/secret_handshake.c",
@@ -2502,7 +2502,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "series": {
                 "path": "\/series.c",
@@ -2511,7 +2511,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sieve": {
                 "path": "\/sieve.c",
@@ -2520,7 +2520,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "space-age": {
                 "path": "\/space_age.c",
@@ -2529,7 +2529,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "square-root": {
                 "path": "\/square_root.c",
@@ -2538,7 +2538,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sublist": {
                 "path": "\/sublist.c",
@@ -2547,7 +2547,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sum-of-multiples": {
                 "path": "\/sum_of_multiples.c",
@@ -2556,7 +2556,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "triangle": {
                 "path": "\/triangle.c",
@@ -2565,7 +2565,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "two-bucket": {
                 "path": "\/two_bucket.c",
@@ -2574,7 +2574,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "two-fer": {
                 "path": "\/two_fer.c",
@@ -2583,7 +2583,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "word-count": {
                 "path": "\/word_count.c",
@@ -2592,7 +2592,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "wordy": {
                 "path": "\/wordy.c",
@@ -2601,7 +2601,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             }
         },
         "concepts": [],
@@ -2647,9 +2647,9 @@
                 "rank": 10,
                 "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c l\u1edbp h\u1ecdc b\u1eb1ng c\u00e1ch t\u1ea1o tr\u00f2 ch\u01a1i Ng\u01b0\u1eddi ngo\u00e0i h\u00e0nh tinh cho Ellen.",
-                "image": "character-study",
+                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "accumulate": {
                 "path": "\/accumulate.py",
@@ -2658,7 +2658,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "affine-cipher": {
                 "path": "\/affine_cipher.py",
@@ -2667,7 +2667,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "all-your-base": {
                 "path": "\/all_your_base.py",
@@ -2676,7 +2676,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "allergies": {
                 "path": "\/allergies.py",
@@ -2685,7 +2685,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "alphametics": {
                 "path": "\/alphametics.py",
@@ -2694,7 +2694,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "anagram": {
                 "path": "\/anagram.py",
@@ -2703,7 +2703,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "armstrong-numbers": {
                 "path": "\/armstrong_numbers.py",
@@ -2712,7 +2712,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "atbash-cipher": {
                 "path": "\/atbash_cipher.py",
@@ -2721,7 +2721,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bank-account": {
                 "path": "\/bank_account.py",
@@ -2730,7 +2730,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "beer-song": {
                 "path": "\/beer_song.py",
@@ -2739,7 +2739,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary": {
                 "path": "\/binary.py",
@@ -2748,7 +2748,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary-search": {
                 "path": "\/binary_search.py",
@@ -2757,7 +2757,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary-search-tree": {
                 "path": "\/binary_search_tree.py",
@@ -2766,7 +2766,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bob": {
                 "path": "\/bob.py",
@@ -2775,7 +2775,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "book-store": {
                 "path": "\/book_store.py",
@@ -2784,7 +2784,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bottle-song": {
                 "path": "\/bottle_song.py",
@@ -2793,7 +2793,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bowling": {
                 "path": "\/bowling.py",
@@ -2802,7 +2802,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "change": {
                 "path": "\/change.py",
@@ -2811,7 +2811,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "circular-buffer": {
                 "path": "\/circular_buffer.py",
@@ -2820,7 +2820,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "clock": {
                 "path": "\/clock.py",
@@ -2829,7 +2829,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "collatz-conjecture": {
                 "path": "\/collatz_conjecture.py",
@@ -2838,7 +2838,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "complex-numbers": {
                 "path": "\/complex_numbers.py",
@@ -2847,7 +2847,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "connect": {
                 "path": "\/connect.py",
@@ -2856,7 +2856,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "crypto-square": {
                 "path": "\/crypto_square.py",
@@ -2865,7 +2865,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "custom-set": {
                 "path": "\/custom_set.py",
@@ -2874,7 +2874,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "darts": {
                 "path": "\/darts.py",
@@ -2883,7 +2883,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "diamond": {
                 "path": "\/diamond.py",
@@ -2892,7 +2892,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "difference-of-squares": {
                 "path": "\/difference_of_squares.py",
@@ -2901,7 +2901,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "diffie-hellman": {
                 "path": "\/diffie_hellman.py",
@@ -2910,7 +2910,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "dnd-character": {
                 "path": "\/dnd_character.py",
@@ -2919,7 +2919,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "dominoes": {
                 "path": "\/dominoes.py",
@@ -2928,7 +2928,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "dot-dsl": {
                 "path": "\/dot_dsl.py",
@@ -2937,7 +2937,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "error-handling": {
                 "path": "\/error_handling.py",
@@ -2946,7 +2946,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "etl": {
                 "path": "\/etl.py",
@@ -2955,7 +2955,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "flatten-array": {
                 "path": "\/flatten_array.py",
@@ -2964,7 +2964,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "food-chain": {
                 "path": "\/food_chain.py",
@@ -2973,7 +2973,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "forth": {
                 "path": "\/forth.py",
@@ -2982,7 +2982,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "gigasecond": {
                 "path": "\/gigasecond.py",
@@ -2991,7 +2991,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "go-counting": {
                 "path": "\/go_counting.py",
@@ -3000,7 +3000,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "grade-school": {
                 "path": "\/grade_school.py",
@@ -3009,7 +3009,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "grains": {
                 "path": "\/grains.py",
@@ -3018,7 +3018,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "grep": {
                 "path": "\/grep.py",
@@ -3027,7 +3027,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hamming": {
                 "path": "\/hamming.py",
@@ -3036,7 +3036,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hangman": {
                 "path": "\/hangman.py",
@@ -3045,7 +3045,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hexadecimal": {
                 "path": "\/hexadecimal.py",
@@ -3054,7 +3054,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "high-scores": {
                 "path": "\/high_scores.py",
@@ -3063,7 +3063,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "house": {
                 "path": "\/house.py",
@@ -3072,7 +3072,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "isbn-verifier": {
                 "path": "\/isbn_verifier.py",
@@ -3081,7 +3081,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "isogram": {
                 "path": "\/isogram.py",
@@ -3090,16 +3090,16 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "killer-sudoku-helper": {
                 "path": "\/killer_sudoku_helper.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "kindergarten-garden": {
                 "path": "\/kindergarten_garden.py",
@@ -3108,7 +3108,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "knapsack": {
                 "path": "\/knapsack.py",
@@ -3117,7 +3117,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "largest-series-product": {
                 "path": "\/largest_series_product.py",
@@ -3126,7 +3126,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "leap": {
                 "path": "\/leap.py",
@@ -3135,7 +3135,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "ledger": {
                 "path": "\/ledger.py",
@@ -3144,7 +3144,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "linked-list": {
                 "path": "\/linked_list.py",
@@ -3153,7 +3153,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "list-ops": {
                 "path": "\/list_ops.py",
@@ -3162,7 +3162,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "luhn": {
                 "path": "\/luhn.py",
@@ -3171,7 +3171,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "markdown": {
                 "path": "\/markdown.py",
@@ -3180,7 +3180,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "matching-brackets": {
                 "path": "\/matching_brackets.py",
@@ -3189,7 +3189,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "matrix": {
                 "path": "\/matrix.py",
@@ -3198,7 +3198,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "meetup": {
                 "path": "\/meetup.py",
@@ -3207,7 +3207,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "minesweeper": {
                 "path": "\/minesweeper.py",
@@ -3216,7 +3216,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "nth-prime": {
                 "path": "\/nth_prime.py",
@@ -3225,7 +3225,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "nucleotide-count": {
                 "path": "\/nucleotide_count.py",
@@ -3234,7 +3234,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "ocr-numbers": {
                 "path": "\/ocr_numbers.py",
@@ -3243,7 +3243,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "octal": {
                 "path": "\/octal.py",
@@ -3252,7 +3252,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "paasio": {
                 "path": "\/paasio.py",
@@ -3261,7 +3261,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "palindrome-products": {
                 "path": "\/palindrome_products.py",
@@ -3270,7 +3270,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pangram": {
                 "path": "\/pangram.py",
@@ -3279,7 +3279,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "parallel-letter-frequency": {
                 "path": "\/parallel_letter_frequency.py",
@@ -3288,7 +3288,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pascals-triangle": {
                 "path": "\/pascals_triangle.py",
@@ -3297,7 +3297,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "perfect-numbers": {
                 "path": "\/perfect_numbers.py",
@@ -3306,7 +3306,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "phone-number": {
                 "path": "\/phone_number.py",
@@ -3315,7 +3315,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pig-latin": {
                 "path": "\/pig_latin.py",
@@ -3324,7 +3324,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "point-mutations": {
                 "path": "\/point_mutations.py",
@@ -3333,7 +3333,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "poker": {
                 "path": "\/poker.py",
@@ -3342,7 +3342,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pov": {
                 "path": "\/pov.py",
@@ -3351,7 +3351,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "prime-factors": {
                 "path": "\/prime_factors.py",
@@ -3360,7 +3360,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "protein-translation": {
                 "path": "\/protein_translation.py",
@@ -3369,7 +3369,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "proverb": {
                 "path": "\/proverb.py",
@@ -3378,7 +3378,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pythagorean-triplet": {
                 "path": "\/pythagorean_triplet.py",
@@ -3387,7 +3387,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "queen-attack": {
                 "path": "\/queen_attack.py",
@@ -3396,7 +3396,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rail-fence-cipher": {
                 "path": "\/rail_fence_cipher.py",
@@ -3405,7 +3405,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "raindrops": {
                 "path": "\/raindrops.py",
@@ -3414,7 +3414,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rational-numbers": {
                 "path": "\/rational_numbers.py",
@@ -3423,7 +3423,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "react": {
                 "path": "\/react.py",
@@ -3432,7 +3432,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rectangles": {
                 "path": "\/rectangles.py",
@@ -3441,7 +3441,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color": {
                 "path": "\/resistor_color.py",
@@ -3450,7 +3450,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color-duo": {
                 "path": "\/resistor_color_duo.py",
@@ -3459,7 +3459,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color-expert": {
                 "path": "\/resistor_color_expert.py",
@@ -3468,7 +3468,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color-trio": {
                 "path": "\/resistor_color_trio.py",
@@ -3477,7 +3477,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rest-api": {
                 "path": "\/rest_api.py",
@@ -3486,7 +3486,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "reverse-string": {
                 "path": "\/reverse_string.py",
@@ -3495,7 +3495,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rna-transcription": {
                 "path": "\/rna_transcription.py",
@@ -3504,7 +3504,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "robot-name": {
                 "path": "\/robot_name.py",
@@ -3513,7 +3513,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "robot-simulator": {
                 "path": "\/robot_simulator.py",
@@ -3522,7 +3522,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "roman-numerals": {
                 "path": "\/roman_numerals.py",
@@ -3531,7 +3531,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rotational-cipher": {
                 "path": "\/rotational_cipher.py",
@@ -3540,7 +3540,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "run-length-encoding": {
                 "path": "\/run_length_encoding.py",
@@ -3549,7 +3549,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "saddle-points": {
                 "path": "\/saddle_points.py",
@@ -3558,7 +3558,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "satellite": {
                 "path": "\/satellite.py",
@@ -3567,7 +3567,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "say": {
                 "path": "\/say.py",
@@ -3576,7 +3576,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "scale-generator": {
                 "path": "\/scale_generator.py",
@@ -3585,7 +3585,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "scrabble-score": {
                 "path": "\/scrabble_score.py",
@@ -3594,7 +3594,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "secret-handshake": {
                 "path": "\/secret_handshake.py",
@@ -3603,7 +3603,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "series": {
                 "path": "\/series.py",
@@ -3612,7 +3612,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sgf-parsing": {
                 "path": "\/sgf_parsing.py",
@@ -3621,7 +3621,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sieve": {
                 "path": "\/sieve.py",
@@ -3630,7 +3630,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "simple-cipher": {
                 "path": "\/simple_cipher.py",
@@ -3639,7 +3639,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "simple-linked-list": {
                 "path": "\/simple_linked_list.py",
@@ -3648,7 +3648,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "space-age": {
                 "path": "\/space_age.py",
@@ -3657,7 +3657,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "spiral-matrix": {
                 "path": "\/spiral_matrix.py",
@@ -3666,7 +3666,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "square-root": {
                 "path": "\/square_root.py",
@@ -3675,7 +3675,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "strain": {
                 "path": "\/strain.py",
@@ -3684,7 +3684,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sublist": {
                 "path": "\/sublist.py",
@@ -3693,7 +3693,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sum-of-multiples": {
                 "path": "\/sum_of_multiples.py",
@@ -3702,7 +3702,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "tournament": {
                 "path": "\/tournament.py",
@@ -3711,7 +3711,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "transpose": {
                 "path": "\/transpose.py",
@@ -3720,7 +3720,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "tree-building": {
                 "path": "\/tree_building.py",
@@ -3729,7 +3729,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "triangle": {
                 "path": "\/triangle.py",
@@ -3738,7 +3738,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "trinary": {
                 "path": "\/trinary.py",
@@ -3747,7 +3747,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "twelve-days": {
                 "path": "\/twelve_days.py",
@@ -3756,7 +3756,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "two-bucket": {
                 "path": "\/two_bucket.py",
@@ -3765,7 +3765,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "two-fer": {
                 "path": "\/two_fer.py",
@@ -3774,7 +3774,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "variable-length-quantity": {
                 "path": "\/variable_length_quantity.py",
@@ -3783,7 +3783,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "word-count": {
                 "path": "\/word_count.py",
@@ -3792,7 +3792,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "word-search": {
                 "path": "\/word_search.py",
@@ -3801,7 +3801,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "wordy": {
                 "path": "\/wordy.py",
@@ -3810,7 +3810,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "yacht": {
                 "path": "\/yacht.py",
@@ -3819,7 +3819,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "zebra-puzzle": {
                 "path": "\/zebra_puzzle.py",
@@ -3828,7 +3828,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "zipper": {
                 "path": "\/zipper.py",
@@ -3837,106 +3837,106 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "black-jack": {
                 "path": "\/black_jack.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "card-games": {
                 "path": "\/card_games.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "cater-waiter": {
                 "path": "\/cater_waiter.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "chaitanas-colossal-coaster": {
                 "path": "\/chaitanas_colossal_coaster.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "currency-exchange": {
                 "path": "\/currency_exchange.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "electric-bill": {
                 "path": "\/electric_bill.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "ghost-gobble-arcade-game": {
                 "path": "\/ghost_gobble_arcade_game.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "guidos-gorgeous-lasagna": {
                 "path": "\/guidos_gorgeous_lasagna.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "inventory-management": {
                 "path": "\/inventory_management.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "little-sisters-essay": {
                 "path": "\/little_sisters_essay.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "little-sisters-vocab": {
                 "path": "\/little_sisters_vocab.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "locomotive-engineer": {
                 "path": "\/locomotive_engineer.py",
@@ -3945,61 +3945,61 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "making-the-grade": {
                 "path": "\/making_the_grade.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "mecha-munch-management": {
                 "path": "\/mecha_munch_management.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "meltdown-mitigation": {
                 "path": "\/meltdown_mitigation.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "plane-tickets": {
                 "path": "\/plane_tickets.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pretty-leaflet": {
                 "path": "\/pretty_leaflet.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "restaurant-rozalynn": {
                 "path": "\/restaurant_rozalynn.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "tisbury-treasure-hunt": {
                 "path": "\/tisbury_treasure_hunt.py",
@@ -4008,7 +4008,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             }
         },
         "concepts": [],
@@ -4059,7 +4059,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/accumulate.php"
             },
             "affine-cipher": {
@@ -4068,7 +4068,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/affine_cipher.php"
             },
             "all-your-base": {
@@ -4077,7 +4077,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/all_your_base.php"
             },
             "allergies": {
@@ -4086,7 +4086,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/allergies.php"
             },
             "anagram": {
@@ -4095,7 +4095,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/anagram.php"
             },
             "armstrong-numbers": {
@@ -4104,7 +4104,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/armstrong_numbers.php"
             },
             "atbash-cipher": {
@@ -4113,7 +4113,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/atbash_cipher.php"
             },
             "beer-song": {
@@ -4122,7 +4122,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/beer_song.php"
             },
             "binary": {
@@ -4131,7 +4131,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/binary.php"
             },
             "binary-search": {
@@ -4140,7 +4140,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/binary_search.php"
             },
             "bob": {
@@ -4149,7 +4149,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/bob.php"
             },
             "book-store": {
@@ -4158,7 +4158,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/book_store.php"
             },
             "bowling": {
@@ -4167,7 +4167,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/bowling.php"
             },
             "change": {
@@ -4176,7 +4176,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/change.php"
             },
             "clock": {
@@ -4185,7 +4185,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/clock.php"
             },
             "collatz-conjecture": {
@@ -4194,7 +4194,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/collatz_conjecture.php"
             },
             "connect": {
@@ -4203,7 +4203,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/connect.php"
             },
             "crypto-square": {
@@ -4212,7 +4212,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/crypto_square.php"
             },
             "darts": {
@@ -4221,7 +4221,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/darts.php"
             },
             "diamond": {
@@ -4230,7 +4230,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/diamond.php"
             },
             "difference-of-squares": {
@@ -4239,7 +4239,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/difference_of_squares.php"
             },
             "dnd-character": {
@@ -4248,7 +4248,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/dnd_character.php"
             },
             "etl": {
@@ -4257,7 +4257,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/etl.php"
             },
             "flatten-array": {
@@ -4266,7 +4266,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/flatten_array.php"
             },
             "gigasecond": {
@@ -4275,7 +4275,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/gigasecond.php"
             },
             "grade-school": {
@@ -4284,7 +4284,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/grade_school.php"
             },
             "grains": {
@@ -4293,7 +4293,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/grains.php"
             },
             "hamming": {
@@ -4302,7 +4302,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/hamming.php"
             },
             "high-scores": {
@@ -4311,7 +4311,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/high_scores.php"
             },
             "isogram": {
@@ -4320,7 +4320,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/isogram.php"
             },
             "largest-series-product": {
@@ -4329,7 +4329,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/largest_series_product.php"
             },
             "leap": {
@@ -4338,7 +4338,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/leap.php"
             },
             "linked-list": {
@@ -4347,7 +4347,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/linked_list.php"
             },
             "luhn": {
@@ -4356,7 +4356,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/luhn.php"
             },
             "markdown": {
@@ -4365,7 +4365,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/markdown.php"
             },
             "mask-credit-card": {
@@ -4374,7 +4374,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/mask_credit_card.php"
             },
             "matching-brackets": {
@@ -4383,7 +4383,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/matching_brackets.php"
             },
             "matrix": {
@@ -4392,7 +4392,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/matrix.php"
             },
             "meetup": {
@@ -4401,7 +4401,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/meetup.php"
             },
             "minesweeper": {
@@ -4410,7 +4410,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/minesweeper.php"
             },
             "nth-prime": {
@@ -4419,7 +4419,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/nth_prime.php"
             },
             "nucleotide-count": {
@@ -4428,7 +4428,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/nucleotide_count.php"
             },
             "ocr-numbers": {
@@ -4437,16 +4437,16 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/ocr_numbers.php"
             },
             "ordinal-number": {
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/15KHFcYSig.png",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/ordinal_number.php"
             },
             "palindrome-products": {
@@ -4455,7 +4455,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/palindrome_products.php"
             },
             "pangram": {
@@ -4464,7 +4464,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/pangram.php"
             },
             "pascals-triangle": {
@@ -4473,7 +4473,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/pascals_triangle.php"
             },
             "perfect-numbers": {
@@ -4482,7 +4482,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/perfect_numbers.php"
             },
             "phone-number": {
@@ -4491,7 +4491,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/phone_number.php"
             },
             "pig-latin": {
@@ -4500,7 +4500,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/pig_latin.php"
             },
             "poker": {
@@ -4509,7 +4509,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/poker.php"
             },
             "prime-factors": {
@@ -4518,7 +4518,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/prime_factors.php"
             },
             "queen-attack": {
@@ -4527,7 +4527,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/queen_attack.php"
             },
             "rail-fence-cipher": {
@@ -4536,7 +4536,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/rail_fence_cipher.php"
             },
             "raindrops": {
@@ -4545,7 +4545,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/raindrops.php"
             },
             "resistor-color": {
@@ -4554,7 +4554,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/resistor_color.php"
             },
             "reverse-string": {
@@ -4563,7 +4563,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/reverse_string.php"
             },
             "rna-transcription": {
@@ -4572,7 +4572,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/rna_transcription.php"
             },
             "robot-name": {
@@ -4581,7 +4581,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/robot_name.php"
             },
             "robot-simulator": {
@@ -4590,7 +4590,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/robot_simulator.php"
             },
             "roman-numerals": {
@@ -4599,7 +4599,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/roman_numerals.php"
             },
             "run-length-encoding": {
@@ -4608,7 +4608,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/run_length_encoding.php"
             },
             "scale-generator": {
@@ -4617,7 +4617,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/scale_generator.php"
             },
             "scrabble-score": {
@@ -4626,7 +4626,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/scrabble_score.php"
             },
             "series": {
@@ -4635,7 +4635,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/series.php"
             },
             "sieve": {
@@ -4644,7 +4644,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/sieve.php"
             },
             "simple-cipher": {
@@ -4653,7 +4653,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/simple_cipher.php"
             },
             "space-age": {
@@ -4662,7 +4662,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/space_age.php"
             },
             "sum-of-multiples": {
@@ -4671,7 +4671,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/sum_of_multiples.php"
             },
             "tournament": {
@@ -4680,7 +4680,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/tournament.php"
             },
             "transpose": {
@@ -4689,7 +4689,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/transpose.php"
             },
             "triangle": {
@@ -4698,7 +4698,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/triangle.php"
             },
             "trinary": {
@@ -4707,7 +4707,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/trinary.php"
             },
             "two-fer": {
@@ -4716,7 +4716,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/two_fer.php"
             },
             "variable-length-quantity": {
@@ -4725,7 +4725,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/variable_length_quantity.php"
             },
             "word-count": {
@@ -4734,7 +4734,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/word_count.php"
             },
             "wordy": {
@@ -4743,7 +4743,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/wordy.php"
             },
             "annalyns-infiltration": {
@@ -4752,16 +4752,16 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/annalyns_infiltration.php"
             },
             "bootstrap.sh": {
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/dczlPZqm2R.png",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/bootstrap.sh.php"
             },
             "city-office": {
@@ -4770,7 +4770,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/city_office.php"
             },
             "language-list": {
@@ -4779,25 +4779,25 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/language_list.php"
             },
             "pizza-pi": {
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/VaDw5xLRSm.png",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/pizza_pi.php"
             },
             "sweethearts": {
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/EsmOKdAoLN.png",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/sweethearts.php"
             },
             "windowing-system": {
@@ -4806,7 +4806,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0,
+                "status": 1,
                 "path": "\/windowing_system.php"
             }
         }
@@ -4855,7 +4855,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "affine-cipher": {
                 "path": "\/affine_cipher.js",
@@ -4864,7 +4864,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "all-your-base": {
                 "path": "\/all_your_base.js",
@@ -4873,7 +4873,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "allergies": {
                 "path": "\/allergies.js",
@@ -4882,7 +4882,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "alphametics": {
                 "path": "\/alphametics.js",
@@ -4891,7 +4891,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "anagram": {
                 "path": "\/anagram.js",
@@ -4900,7 +4900,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "armstrong-numbers": {
                 "path": "\/armstrong_numbers.js",
@@ -4909,7 +4909,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "atbash-cipher": {
                 "path": "\/atbash_cipher.js",
@@ -4918,7 +4918,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bank-account": {
                 "path": "\/bank_account.js",
@@ -4927,7 +4927,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "beer-song": {
                 "path": "\/beer_song.js",
@@ -4936,7 +4936,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary": {
                 "path": "\/binary.js",
@@ -4945,7 +4945,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary-search": {
                 "path": "\/binary_search.js",
@@ -4954,7 +4954,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "binary-search-tree": {
                 "path": "\/binary_search_tree.js",
@@ -4963,7 +4963,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bob": {
                 "path": "\/bob.js",
@@ -4972,7 +4972,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "book-store": {
                 "path": "\/book_store.js",
@@ -4981,7 +4981,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bowling": {
                 "path": "\/bowling.js",
@@ -4990,7 +4990,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "change": {
                 "path": "\/change.js",
@@ -4999,7 +4999,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "circular-buffer": {
                 "path": "\/circular_buffer.js",
@@ -5008,7 +5008,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "clock": {
                 "path": "\/clock.js",
@@ -5017,7 +5017,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "collatz-conjecture": {
                 "path": "\/collatz_conjecture.js",
@@ -5026,7 +5026,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "complex-numbers": {
                 "path": "\/complex_numbers.js",
@@ -5035,7 +5035,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "connect": {
                 "path": "\/connect.js",
@@ -5044,7 +5044,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "crypto-square": {
                 "path": "\/crypto_square.js",
@@ -5053,7 +5053,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "custom-set": {
                 "path": "\/custom_set.js",
@@ -5062,7 +5062,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "darts": {
                 "path": "\/darts.js",
@@ -5071,7 +5071,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "diamond": {
                 "path": "\/diamond.js",
@@ -5080,7 +5080,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "difference-of-squares": {
                 "path": "\/difference_of_squares.js",
@@ -5089,7 +5089,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "diffie-hellman": {
                 "path": "\/diffie_hellman.js",
@@ -5098,7 +5098,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "dnd-character": {
                 "path": "\/dnd_character.js",
@@ -5107,7 +5107,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "dominoes": {
                 "path": "\/dominoes.js",
@@ -5116,7 +5116,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "etl": {
                 "path": "\/etl.js",
@@ -5125,7 +5125,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "flatten-array": {
                 "path": "\/flatten_array.js",
@@ -5134,7 +5134,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "food-chain": {
                 "path": "\/food_chain.js",
@@ -5143,7 +5143,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "forth": {
                 "path": "\/forth.js",
@@ -5152,7 +5152,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "gigasecond": {
                 "path": "\/gigasecond.js",
@@ -5161,7 +5161,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "go-counting": {
                 "path": "\/go_counting.js",
@@ -5170,7 +5170,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "grade-school": {
                 "path": "\/grade_school.js",
@@ -5179,7 +5179,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "grains": {
                 "path": "\/grains.js",
@@ -5188,7 +5188,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "grep": {
                 "path": "\/grep.js",
@@ -5197,7 +5197,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hamming": {
                 "path": "\/hamming.js",
@@ -5206,7 +5206,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "hexadecimal": {
                 "path": "\/hexadecimal.js",
@@ -5215,7 +5215,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "high-scores": {
                 "path": "\/high_scores.js",
@@ -5224,7 +5224,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "house": {
                 "path": "\/house.js",
@@ -5233,7 +5233,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "isbn-verifier": {
                 "path": "\/isbn_verifier.js",
@@ -5242,7 +5242,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "isogram": {
                 "path": "\/isogram.js",
@@ -5251,7 +5251,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "kindergarten-garden": {
                 "path": "\/kindergarten_garden.js",
@@ -5260,7 +5260,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "knapsack": {
                 "path": "\/knapsack.js",
@@ -5269,7 +5269,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "largest-series-product": {
                 "path": "\/largest_series_product.js",
@@ -5278,7 +5278,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "leap": {
                 "path": "\/leap.js",
@@ -5287,7 +5287,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "linked-list": {
                 "path": "\/linked_list.js",
@@ -5296,7 +5296,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "list-ops": {
                 "path": "\/list_ops.js",
@@ -5305,7 +5305,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "luhn": {
                 "path": "\/luhn.js",
@@ -5314,7 +5314,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "matching-brackets": {
                 "path": "\/matching_brackets.js",
@@ -5323,7 +5323,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "matrix": {
                 "path": "\/matrix.js",
@@ -5332,7 +5332,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "meetup": {
                 "path": "\/meetup.js",
@@ -5341,7 +5341,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "minesweeper": {
                 "path": "\/minesweeper.js",
@@ -5350,7 +5350,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "nth-prime": {
                 "path": "\/nth_prime.js",
@@ -5359,7 +5359,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "nucleotide-count": {
                 "path": "\/nucleotide_count.js",
@@ -5368,7 +5368,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "ocr-numbers": {
                 "path": "\/ocr_numbers.js",
@@ -5377,7 +5377,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "octal": {
                 "path": "\/octal.js",
@@ -5386,7 +5386,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "palindrome-products": {
                 "path": "\/palindrome_products.js",
@@ -5395,7 +5395,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pangram": {
                 "path": "\/pangram.js",
@@ -5404,7 +5404,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pascals-triangle": {
                 "path": "\/pascals_triangle.js",
@@ -5413,7 +5413,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "perfect-numbers": {
                 "path": "\/perfect_numbers.js",
@@ -5422,7 +5422,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "phone-number": {
                 "path": "\/phone_number.js",
@@ -5431,7 +5431,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pig-latin": {
                 "path": "\/pig_latin.js",
@@ -5440,7 +5440,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "point-mutations": {
                 "path": "\/point_mutations.js",
@@ -5449,7 +5449,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "poker": {
                 "path": "\/poker.js",
@@ -5458,7 +5458,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "prime-factors": {
                 "path": "\/prime_factors.js",
@@ -5467,7 +5467,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "promises": {
                 "path": "\/promises.js",
@@ -5476,7 +5476,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "protein-translation": {
                 "path": "\/protein_translation.js",
@@ -5485,7 +5485,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "proverb": {
                 "path": "\/proverb.js",
@@ -5494,7 +5494,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pythagorean-triplet": {
                 "path": "\/pythagorean_triplet.js",
@@ -5503,7 +5503,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "queen-attack": {
                 "path": "\/queen_attack.js",
@@ -5512,7 +5512,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rail-fence-cipher": {
                 "path": "\/rail_fence_cipher.js",
@@ -5521,7 +5521,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "raindrops": {
                 "path": "\/raindrops.js",
@@ -5530,7 +5530,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rational-numbers": {
                 "path": "\/rational_numbers.js",
@@ -5539,7 +5539,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "react": {
                 "path": "\/react.js",
@@ -5548,7 +5548,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rectangles": {
                 "path": "\/rectangles.js",
@@ -5557,7 +5557,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color": {
                 "path": "\/resistor_color.js",
@@ -5566,7 +5566,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color-duo": {
                 "path": "\/resistor_color_duo.js",
@@ -5575,7 +5575,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "resistor-color-trio": {
                 "path": "\/resistor_color_trio.js",
@@ -5584,7 +5584,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rest-api": {
                 "path": "\/rest_api.js",
@@ -5593,7 +5593,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "reverse-string": {
                 "path": "\/reverse_string.js",
@@ -5602,7 +5602,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rna-transcription": {
                 "path": "\/rna_transcription.js",
@@ -5611,7 +5611,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "robot-name": {
                 "path": "\/robot_name.js",
@@ -5620,7 +5620,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "robot-simulator": {
                 "path": "\/robot_simulator.js",
@@ -5629,7 +5629,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "roman-numerals": {
                 "path": "\/roman_numerals.js",
@@ -5638,7 +5638,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "rotational-cipher": {
                 "path": "\/rotational_cipher.js",
@@ -5647,7 +5647,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "run-length-encoding": {
                 "path": "\/run_length_encoding.js",
@@ -5656,7 +5656,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "saddle-points": {
                 "path": "\/saddle_points.js",
@@ -5665,7 +5665,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "satellite": {
                 "path": "\/satellite.js",
@@ -5674,7 +5674,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "say": {
                 "path": "\/say.js",
@@ -5683,7 +5683,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "scale-generator": {
                 "path": "\/scale_generator.js",
@@ -5692,7 +5692,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "scrabble-score": {
                 "path": "\/scrabble_score.js",
@@ -5701,7 +5701,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "secret-handshake": {
                 "path": "\/secret_handshake.js",
@@ -5710,7 +5710,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "series": {
                 "path": "\/series.js",
@@ -5719,7 +5719,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sieve": {
                 "path": "\/sieve.js",
@@ -5728,7 +5728,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "simple-cipher": {
                 "path": "\/simple_cipher.js",
@@ -5737,7 +5737,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "simple-linked-list": {
                 "path": "\/simple_linked_list.js",
@@ -5746,7 +5746,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "space-age": {
                 "path": "\/space_age.js",
@@ -5755,7 +5755,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "spiral-matrix": {
                 "path": "\/spiral_matrix.js",
@@ -5764,7 +5764,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "square-root": {
                 "path": "\/square_root.js",
@@ -5773,7 +5773,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "strain": {
                 "path": "\/strain.js",
@@ -5782,7 +5782,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sublist": {
                 "path": "\/sublist.js",
@@ -5791,7 +5791,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "sum-of-multiples": {
                 "path": "\/sum_of_multiples.js",
@@ -5800,7 +5800,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "tournament": {
                 "path": "\/tournament.js",
@@ -5809,7 +5809,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "transpose": {
                 "path": "\/transpose.js",
@@ -5818,7 +5818,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "triangle": {
                 "path": "\/triangle.js",
@@ -5827,7 +5827,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "trinary": {
                 "path": "\/trinary.js",
@@ -5836,7 +5836,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "twelve-days": {
                 "path": "\/twelve_days.js",
@@ -5845,7 +5845,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "two-bucket": {
                 "path": "\/two_bucket.js",
@@ -5854,7 +5854,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "two-fer": {
                 "path": "\/two_fer.js",
@@ -5863,7 +5863,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "variable-length-quantity": {
                 "path": "\/variable_length_quantity.js",
@@ -5872,7 +5872,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "word-count": {
                 "path": "\/word_count.js",
@@ -5881,7 +5881,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "word-search": {
                 "path": "\/word_search.js",
@@ -5890,7 +5890,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "wordy": {
                 "path": "\/wordy.js",
@@ -5899,7 +5899,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "yacht": {
                 "path": "\/yacht.js",
@@ -5908,7 +5908,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "zebra-puzzle": {
                 "path": "\/zebra_puzzle.js",
@@ -5917,7 +5917,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "zipper": {
                 "path": "\/zipper.js",
@@ -5926,16 +5926,16 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             ".gitignore": {
                 "path": "\/.gitignore.js",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "amusement-park": {
                 "path": "\/amusement_park.js",
@@ -5944,7 +5944,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "annalyns-infiltration": {
                 "path": "\/annalyns_infiltration.js",
@@ -5953,7 +5953,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "bird-watcher": {
                 "path": "\/bird_watcher.js",
@@ -5962,7 +5962,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "coordinate-transformation": {
                 "path": "\/coordinate_transformation.js",
@@ -5971,7 +5971,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "custom-signs": {
                 "path": "\/custom_signs.js",
@@ -5980,25 +5980,25 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "elyses-analytic-enchantments": {
                 "path": "\/elyses_analytic_enchantments.js",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "elyses-destructured-enchantments": {
                 "path": "\/elyses_destructured_enchantments.js",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "elyses-enchantments": {
                 "path": "\/elyses_enchantments.js",
@@ -6007,16 +6007,16 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "elyses-looping-enchantments": {
                 "path": "\/elyses_looping_enchantments.js",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "elyses-transformative-enchantments": {
                 "path": "\/elyses_transformative_enchantments.js",
@@ -6025,7 +6025,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "factory-sensors": {
                 "path": "\/factory_sensors.js",
@@ -6034,7 +6034,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "freelancer-rates": {
                 "path": "\/freelancer_rates.js",
@@ -6043,7 +6043,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "fruit-picker": {
                 "path": "\/fruit_picker.js",
@@ -6052,7 +6052,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "high-score-board": {
                 "path": "\/high_score_board.js",
@@ -6061,7 +6061,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "lasagna-master": {
                 "path": "\/lasagna_master.js",
@@ -6070,7 +6070,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "lucky-numbers": {
                 "path": "\/lucky_numbers.js",
@@ -6079,7 +6079,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "mixed-juices": {
                 "path": "\/mixed_juices.js",
@@ -6088,7 +6088,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "nullability": {
                 "path": "\/nullability.js",
@@ -6097,7 +6097,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "ozans-playlist": {
                 "path": "\/ozans_playlist.js",
@@ -6106,7 +6106,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "pizza-order": {
                 "path": "\/pizza_order.js",
@@ -6115,7 +6115,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "poetry-club-door-policy": {
                 "path": "\/poetry_club_door_policy.js",
@@ -6124,16 +6124,16 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "regular-chatbot": {
                 "path": "\/regular_chatbot.js",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "",
+                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "translation-service": {
                 "path": "\/translation_service.js",
@@ -6142,7 +6142,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "vehicle-purchase": {
                 "path": "\/vehicle_purchase.js",
@@ -6151,7 +6151,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             },
             "windowing-system": {
                 "path": "\/windowing_system.js",
@@ -6160,7 +6160,7 @@
                 "description": "",
                 "image": "",
                 "name": "",
-                "status": 0
+                "status": 1
             }
         }
     }

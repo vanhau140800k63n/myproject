@@ -22,7 +22,7 @@
                                 <a href="{{ route('exam.get_practice_detail', ['language' => $exercise['type'], 'practice' => $practice]) }}"
                                     class="c-exercise-widget {{ $practice_info['status'] == 0 ? '--lock' : '' }}">
                                     <img class="c-icon c-exercise-icon"
-                                        src="https://dg8krxphbh767.cloudfront.net/exercises/{{ $practice_info['image'] == '' ? $practice : $practice_info['image'] }}.svg"
+                                        src="{{ $practice_info['image'] == '' ? "https://dg8krxphbh767.cloudfront.net/exercises/$practice.svg" : $practice_info['image'] }}"
                                         alt="Icon for exercise called Hello World">
                                     <div class="--info">
                                         <div class="--title">
