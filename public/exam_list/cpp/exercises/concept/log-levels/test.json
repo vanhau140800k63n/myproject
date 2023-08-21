@@ -1,0 +1,6 @@
+[
+    {
+        "input": "[ERROR]: Stack overflow",
+        "expect": "Stack overflow\nERROR\nStack overflow (ERROR)"
+    }
+]

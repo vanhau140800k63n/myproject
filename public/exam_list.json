@@ -692,6 +692,15 @@
                 "name": "T\u1eeb vi\u1ebft t\u1eaft",
                 "status": 1
             },
+            "log-levels": {
+                "path": "\/src\/main\/java\/LogLevels.java",
+                "rank": 2,
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 chu\u1ed7i b\u1eb1ng c\u00e1ch ph\u00e2n t\u00edch Log.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
             "grains": {
                 "path": "\/src\/main\/java\/Grains.java",
                 "rank": 17,
@@ -1880,15 +1889,6 @@
                 "name": "",
                 "status": 0
             },
-            "log-levels": {
-                "path": "\/src\/main\/java\/log_levels.java",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 0
-            },
             "need-for-speed": {
                 "path": "\/src\/main\/java\/need_for_speed.java",
                 "rank": 99,
@@ -2631,6 +2631,15 @@
                 "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t c\u1ee5m t\u1eeb d\u00e0i th\u00e0nh t\u1eeb vi\u1ebft t\u1eaft c\u1ee7a n\u00f3.",
                 "image": "",
                 "name": "T\u1eeb vi\u1ebft t\u1eaft",
+                "status": 1
+            },
+            "log-levels": {
+                "path": "\/log_levels.py",
+                "rank": 2,
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 chu\u1ed7i b\u1eb1ng c\u00e1ch ph\u00e2n t\u00edch Log.",
+                "image": "",
+                "name": "",
                 "status": 1
             },
             "ellens-alien-game": {
@@ -3931,15 +3940,6 @@
             },
             "locomotive-engineer": {
                 "path": "\/locomotive_engineer.py",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 0
-            },
-            "log-levels": {
-                "path": "\/log_levels.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",

@@ -379,8 +379,12 @@ class ExamController extends Controller
                     $exercises[$lang]['practices'][$key_practice]['name'] = $practice['name'];
                     $exercises[$lang]['practices'][$key_practice]['status'] = $practice['status'];
 
-                    copy("exam_list/$lang_selected/exercises/practice/$key_practice/test.json", "exam_list/$lang/exercises/practice/$key_practice/test.json");
-                    copy("exam_list/$lang_selected/exercises/practice/$key_practice/.docs/instructions_tran.html", "exam_list/$lang/exercises/practice/$key_practice/.docs/instructions_tran.html");
+                    $path = 'practice';
+                    if(!file_exists("exam_list/$lang_selected/exercises/$path/$key_practice/test.json")) {
+                        $path = 'concept';
+                    }
+                    copy("exam_list/$lang_selected/exercises/$path/$key_practice/test.json", "exam_list/$lang/exercises/$path/$key_practice/test.json");
+                    copy("exam_list/$lang_selected/exercises/$path/$key_practice/.docs/instructions_tran.html", "exam_list/$lang/exercises/$path/$key_practice/.docs/instructions_tran.html");
                 }
             }
         }
