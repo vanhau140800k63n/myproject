@@ -1,3 +1,4 @@
+#include <iostream>
 // ovenTime returns the amount in minutes that the lasagna should stay in the
 // oven.
 int ovenTime() {
@@ -28,4 +29,16 @@ int preparationTime(int numberOfLayers) {
 int elapsedTime(int numberOfLayers, int actualMinutesInOven) {
     // TODO: Calculate and return the total time so far.
     return 0;
+}
+
+int main() {
+    int actualMinutesInOven, numberOfLayers;
+
+    cin >>  actualMinutesInOven;
+    cin >> numberOfLayers;
+
+    cout << ovenTime() << endl;
+    cout << remainingOvenTime(actualMinutesInOven) << endl;
+    cout << preparationTime(numberOfLayers) << endl;
+    cout << elapsedTime(numberOfLayers, actualMinutesInOven) << endl;
 }

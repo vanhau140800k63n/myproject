@@ -10,7 +10,7 @@
 @endsection
 @section('head')
     <title class="notranslate">
-        {{ ucwords(str_replace('-', ' ', $exercise['practices'][$practice]['name'] == '' ? $practice : $exercise['practices'][$practice]['name']) . ' in ' . $exercise['name']) }}
+        {{ ucwords(str_replace('-', ' ', $exercise['practices'][$practice]['name'] == '' ? $practice : $exercise['practices'][$practice]['name']) . ' | ' . $exercise['name']) }}
         | DEVSNE</title>
     <style>
         .footer_box {

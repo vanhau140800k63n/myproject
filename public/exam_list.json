@@ -39,7 +39,7 @@
                 "description": "T\u00ecm hi\u1ec3u ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n v\u1ec1 C++ b\u1eb1ng Lasagna",
                 "image": "",
                 "name": "lasagna",
-                "status": 0
+                "status": 1
             },
             "freelancer-rates": {
                 "path": "\/freelancer_rates.cpp",
@@ -699,6 +699,15 @@
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 chu\u1ed7i b\u1eb1ng c\u00e1ch ph\u00e2n t\u00edch Log.",
                 "image": "",
                 "name": "",
+                "status": 1
+            },
+            "lasagna": {
+                "path": "\/src\/main\/java\/Lasagna.java",
+                "rank": 3,
+                "difficulty": "Luy\u1ec7n t\u1eadp",
+                "description": "T\u00ecm hi\u1ec3u ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n v\u1ec1 C++ b\u1eb1ng Lasagna",
+                "image": "",
+                "name": "lasagna",
                 "status": 1
             },
             "grains": {
@@ -1873,15 +1882,6 @@
             },
             "karls-languages": {
                 "path": "\/src\/main\/java\/karls_languages.java",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 0
-            },
-            "lasagna": {
-                "path": "\/src\/main\/java\/lasagna.java",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
@@ -4044,6 +4044,15 @@
                 "status": 1,
                 "path": "\/Acronym.php"
             },
+            "lasagna": {
+                "rank": 3,
+                "difficulty": "Luy\u1ec7n t\u1eadp",
+                "description": "T\u00ecm hi\u1ec3u ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n v\u1ec1 C++ b\u1eb1ng Lasagna",
+                "image": "",
+                "name": "lasagna",
+                "status": 1,
+                "path": "\/lasagna.php"
+            },
             "accumulate": {
                 "rank": 99,
                 "difficulty": "easy",
@@ -4773,15 +4782,6 @@
                 "status": 0,
                 "path": "\/language_list.php"
             },
-            "lasagna": {
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 0,
-                "path": "\/lasagna.php"
-            },
             "pizza-pi": {
                 "rank": 99,
                 "difficulty": "easy",
@@ -4837,6 +4837,15 @@
                 "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t c\u1ee5m t\u1eeb d\u00e0i th\u00e0nh t\u1eeb vi\u1ebft t\u1eaft c\u1ee7a n\u00f3.",
                 "image": "",
                 "name": "T\u1eeb vi\u1ebft t\u1eaft",
+                "status": 1
+            },
+            "lasagna": {
+                "path": "\/lasagna.js",
+                "rank": 3,
+                "difficulty": "Luy\u1ec7n t\u1eadp",
+                "description": "T\u00ecm hi\u1ec3u ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n v\u1ec1 C++ b\u1eb1ng Lasagna",
+                "image": "",
+                "name": "lasagna",
                 "status": 1
             },
             "accumulate": {
@@ -6047,15 +6056,6 @@
             },
             "high-score-board": {
                 "path": "\/high_score_board.js",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 0
-            },
-            "lasagna": {
-                "path": "\/lasagna.js",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",

@@ -384,7 +384,7 @@ class ExamController extends Controller
                         $path = 'concept';
                     }
                     copy("exam_list/$lang_selected/exercises/$path/$key_practice/test.json", "exam_list/$lang/exercises/$path/$key_practice/test.json");
-                    copy("exam_list/$lang_selected/exercises/$path/$key_practice/.docs/instructions_tran.html", "exam_list/$lang/exercises/$path/$key_practice/.docs/instructions_tran.html");
+                    // copy("exam_list/$lang_selected/exercises/$path/$key_practice/.docs/instructions_tran.html", "exam_list/$lang/exercises/$path/$key_practice/.docs/instructions_tran.html");
                 }
             }
         }
