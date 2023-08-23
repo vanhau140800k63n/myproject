@@ -6441,7 +6441,7 @@ section.exercises .exercises {
     }
 
     .exercise_info_mid_text {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .track-icons .c-track-icon {
@@ -6457,7 +6457,20 @@ section.exercises .exercises {
     }
 
     .exercise_info_mid {
-        padding: 20px;
+        padding-top: 10px;
+    }
+
+    .c-exercise-widget {
+        padding: 12px;
+    }
+
+    .c-exercise-widget>.--info>.--blurb {
+        font-size: 13px;
+    }
+
+    .c-exercise-type-tag {
+        font-size: 12px;
+        padding: 3px 12px;
     }
 }
 
