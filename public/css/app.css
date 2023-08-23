@@ -6411,11 +6411,11 @@ section.exercises .exercises {
 
 @media only screen and (max-width: 576px) {
     .text-h1 {
-        font-size: 30px;
+        font-size: 22px;
     }
 
     .ex_main {
-        padding: 50px 10px;
+        padding: 20px 10px;
     }
 
     .--track {
@@ -6437,10 +6437,19 @@ section.exercises .exercises {
 
     .text-p-large {
         padding: 0 20px;
+        font-size: 14px;
     }
 
     .exercise_info_mid_text {
         font-size: 22px;
+    }
+
+    .c-track-icon {
+        margin-left: -20px;
+    }
+
+    .ex_container {
+        padding-top: 10px;
     }
 }
 
