@@ -5793,6 +5793,22 @@ input.check-toggle-round-flat:checked+label:after {
         --h2-size: 18px;
         --h3-size: 16px;
     }
+
+    .contest_design {
+        display: block;
+    }
+
+    .contest_editer_box {
+        width: 100%;
+    }
+
+    .contest_screen {
+        width: 100%;
+        margin-top: 30px;
+        padding: 20px;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
 }
 .icon_container {
     margin-top: 70px;
