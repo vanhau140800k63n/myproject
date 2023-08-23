@@ -6444,12 +6444,20 @@ section.exercises .exercises {
         font-size: 22px;
     }
 
-    .c-track-icon {
+    .track-icons .c-track-icon {
         margin-left: -20px;
     }
 
     .ex_container {
         padding-top: 10px;
+    }
+
+    .--track .--info .--heading {
+        margin-bottom: 12px;
+    }
+
+    .exercise_info_mid {
+        padding: 20px;
     }
 }
 
