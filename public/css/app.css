@@ -5777,22 +5777,6 @@ input.check-toggle-round-flat:checked+label:after {
     .contest_banner {
         display: none;
     }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 767px) {
-    .contest_screen_content {
-        --h1-size: 21px;
-        --h2-size: 19px;
-        --h3-size: 17px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .contest_screen_content {
-        --h1-size: 20px;
-        --h2-size: 18px;
-        --h3-size: 16px;
-    }
 
     .contest_design {
         display: block;
@@ -5808,6 +5792,22 @@ input.check-toggle-round-flat:checked+label:after {
         padding: 20px;
         height: -moz-fit-content;
         height: fit-content;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .contest_screen_content {
+        --h1-size: 21px;
+        --h2-size: 19px;
+        --h3-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .contest_screen_content {
+        --h1-size: 20px;
+        --h2-size: 18px;
+        --h3-size: 16px;
     }
 }
 .icon_container {
