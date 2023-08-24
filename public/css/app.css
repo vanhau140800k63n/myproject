@@ -6244,7 +6244,7 @@ section.exercises .exercises {
     display: grid;
     gap: 20px 25px;
     padding-bottom: 40px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .c-exercise-widget {
@@ -6361,7 +6361,11 @@ section.exercises .exercises {
 }
 
 
-@media only screen and (min-width: 1400px) {}
+@media only screen and (max-width: 1300px) {
+    section.exercises .exercises {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}
 

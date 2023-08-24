@@ -10,7 +10,7 @@
             <div class="exercise_info_mid">
                 <img class="exercise_info_mid_img" src="{{ $exercise['image'] }}">
                 <div class="exercise_info_mid_text">
-                    Explore the {{ ucwords($exercise['name']) }} exercises on Exercism
+                    Explore the {{ ucwords($exercise['name']) }} exercises on DEVSNE
                 </div>
             </div>
             <div class="c-react-component c-react-wrapper-student-exercise-list --hydrated"

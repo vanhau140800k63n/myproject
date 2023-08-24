@@ -131,7 +131,7 @@ class ExamController extends Controller
             $response = json_decode($response, true);
 
             if (!isset($response['error'])) return response()->json([false, '']);
-            
+
             $error = false;
             if ($response['error'] == false) {
                 $output = '';
@@ -345,13 +345,13 @@ class ExamController extends Controller
         $path_list = ['concept', 'practice'];
         $path = null;
 
-        foreach($path_list as $path_item) {
+        foreach ($path_list as $path_item) {
             if (file_exists($directory . $language . "/exercises/$path_item/" . $practice . $exercise['practices'][$practice]['path'])) {
                 $path = $path_item;
             }
         }
 
-        if($path == null) {
+        if ($path == null) {
             throw new PageException();
         }
 
@@ -388,11 +388,12 @@ class ExamController extends Controller
                     $exercises[$lang]['practices'][$key_practice]['name'] = $practice['name'];
                     $exercises[$lang]['practices'][$key_practice]['status'] = $practice['status'];
 
-                    $path = 'practice';
-                    if(!file_exists("exam_list/$lang_selected/exercises/$path/$key_practice/test.json")) {
-                        $path = 'concept';
+                    $path_list = ['practice', 'concept'];
+                    foreach ($path_list as $path) {
+                        if (file_exists("exam_list/$lang_selected/exercises/$path/$key_practice/test.json")) {
+                            copy("exam_list/$lang_selected/exercises/$path/$key_practice/test.json", "exam_list/$lang/exercises/$path/$key_practice/test.json");
+                        }
                     }
-                    copy("exam_list/$lang_selected/exercises/$path/$key_practice/test.json", "exam_list/$lang/exercises/$path/$key_practice/test.json");
                     // copy("exam_list/$lang_selected/exercises/$path/$key_practice/.docs/instructions_tran.html", "exam_list/$lang/exercises/$path/$key_practice/.docs/instructions_tran.html");
                 }
             }

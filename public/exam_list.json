@@ -55,7 +55,7 @@
                 "rank": 5,
                 "difficulty": "Luy\u1ec7n t\u1eadp",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 kh\u00f4ng gian t\u00ean b\u1eb1ng c\u00e1ch th\u1ef1c hi\u1ec7n m\u1ed9t b\u1ea5t \u0111\u1ed9ng s\u1ea3n.",
-                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
                 "name": "",
                 "status": 1
             },
@@ -82,7 +82,7 @@
                 "rank": 8,
                 "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 m\u1ea3ng v\u00e0 vector trong C++ b\u1eb1ng c\u00e1ch ch\u1ea5m \u0111i\u1ec3m v\u00e0 s\u1eafp x\u1ebfp \u0111i\u1ec3m thi c\u1ee7a h\u1ecdc sinh.",
-                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
                 "name": "Ch\u1ea5m \u0111i\u1ec3m",
                 "status": 1
             },
@@ -100,7 +100,7 @@
                 "rank": 10,
                 "difficulty": "easy",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c l\u1edbp h\u1ecdc b\u1eb1ng c\u00e1ch t\u1ea1o tr\u00f2 ch\u01a1i Ng\u01b0\u1eddi ngo\u00e0i h\u00e0nh tinh cho Ellen.",
-                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
                 "name": "Ellen's Alien Game",
                 "status": 1
             },
@@ -118,7 +118,7 @@
                 "rank": 12,
                 "difficulty": "\u0110\u1ed9 kh\u00f3: Medium",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 ki\u1ec3u li\u1ec7t k\u00ea v\u00e0 c\u00e2u l\u1ec7nh chuy\u1ec3n \u0111\u1ed5i b\u1eb1ng c\u00e1ch ki\u1ec3m tra quy\u1ec1n c\u1ee7a t\u00e0i kho\u1ea3n ng\u01b0\u1eddi d\u00f9ng.",
-                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
                 "name": "",
                 "status": 1
             },
@@ -710,6 +710,42 @@
                 "name": "lasagna",
                 "status": 1
             },
+            "leap": {
+                "path": "\/src\/main\/java\/leap.java",
+                "rank": 13,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t n\u0103m, b\u00e1o c\u00e1o n\u1ebfu \u0111\u00f3 l\u00e0 m\u1ed9t n\u0103m nhu\u1eadn.",
+                "image": "",
+                "name": "N\u0103m nhu\u1eadn",
+                "status": 1
+            },
+            "reverse-string": {
+                "path": "\/src\/main\/java\/reverse_string.java",
+                "rank": 14,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "\u0110\u1ea3o ng\u01b0\u1ee3c m\u1ed9t chu\u1ed7i",
+                "image": "",
+                "name": "\u0110\u1ea3o chu\u1ed7i",
+                "status": 1
+            },
+            "space-age": {
+                "path": "\/src\/main\/java\/space_age.java",
+                "rank": 15,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "\u0110\u01b0a ra m\u1ed9t \u0111\u1ed9 tu\u1ed5i t\u00ednh b\u1eb1ng gi\u00e2y, h\u00e3y t\u00ednh xem m\u1ed9t ng\u01b0\u1eddi bao nhi\u00eau tu\u1ed5i theo s\u1ed1 n\u0103m m\u1eb7t tr\u1eddi c\u1ee7a m\u1ed9t h\u00e0nh tinh nh\u1ea5t \u0111\u1ecbnh.",
+                "image": "",
+                "name": "T\u00ednh tu\u1ed5i",
+                "status": 1
+            },
+            "triangle": {
+                "path": "\/src\/main\/java\/triangle.java",
+                "rank": 16,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t tam gi\u00e1c l\u00e0 tam gi\u00e1c \u0111\u1ec1u, c\u00e2n hay c\u00e2n.",
+                "image": "",
+                "name": "Tam gi\u00e1c \u0111\u1ec1u",
+                "status": 1
+            },
             "grains": {
                 "path": "\/src\/main\/java\/Grains.java",
                 "rank": 17,
@@ -717,6 +753,33 @@
                 "description": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa m\u00ec tr\u00ean b\u00e0n c\u1edd bi\u1ebft r\u1eb1ng s\u1ed1 h\u1ea1t tr\u00ean m\u1ed7i \u00f4 vu\u00f4ng t\u0103ng g\u1ea5p \u0111\u00f4i.",
                 "image": "",
                 "name": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa",
+                "status": 1
+            },
+            "raindrops": {
+                "path": "\/src\/main\/java\/raindrops.java",
+                "rank": 18,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t s\u1ed1 th\u00e0nh m\u1ed9t chu\u1ed7i, n\u1ed9i dung c\u1ee7a n\u00f3 ph\u1ee5 thu\u1ed9c v\u00e0o c\u00e1c y\u1ebfu t\u1ed1 c\u1ee7a s\u1ed1 \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "pangram": {
+                "path": "\/src\/main\/java\/pangram.java",
+                "rank": 19,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t c\u00e2u c\u00f3 ph\u1ea3i l\u00e0 m\u1ed9t pangram hay kh\u00f4ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "two-fer": {
+                "path": "\/src\/main\/java\/two_fer.java",
+                "rank": 20,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u1ea1o m\u1ed9t c\u00e2u c\u00f3 d\u1ea1ng 'One for X, one for me'.",
+                "image": "",
+                "name": "",
                 "status": 1
             },
             "accumulate": {
@@ -1160,15 +1223,6 @@
                 "name": "",
                 "status": 1
             },
-            "leap": {
-                "path": "\/src\/main\/java\/leap.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "ledger": {
                 "path": "\/src\/main\/java\/ledger.java",
                 "rank": 99,
@@ -1304,15 +1358,6 @@
                 "name": "",
                 "status": 1
             },
-            "pangram": {
-                "path": "\/src\/main\/java\/pangram.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "parallel-letter-frequency": {
                 "path": "\/src\/main\/java\/parallel_letter_frequency.java",
                 "rank": 99,
@@ -1430,15 +1475,6 @@
                 "name": "",
                 "status": 1
             },
-            "raindrops": {
-                "path": "\/src\/main\/java\/raindrops.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "rational-numbers": {
                 "path": "\/src\/main\/java\/rational_numbers.java",
                 "rank": 99,
@@ -1477,15 +1513,6 @@
             },
             "rest-api": {
                 "path": "\/src\/main\/java\/rest_api.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "reverse-string": {
-                "path": "\/src\/main\/java\/reverse_string.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -1637,15 +1664,6 @@
                 "name": "",
                 "status": 1
             },
-            "space-age": {
-                "path": "\/src\/main\/java\/space_age.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "spiral-matrix": {
                 "path": "\/src\/main\/java\/spiral_matrix.java",
                 "rank": 99,
@@ -1709,15 +1727,6 @@
                 "name": "",
                 "status": 1
             },
-            "triangle": {
-                "path": "\/src\/main\/java\/triangle.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "trinary": {
                 "path": "\/src\/main\/java\/trinary.java",
                 "rank": 99,
@@ -1738,15 +1747,6 @@
             },
             "two-bucket": {
                 "path": "\/src\/main\/java\/two_bucket.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "two-fer": {
-                "path": "\/src\/main\/java\/two_fer.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -1840,7 +1840,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -1867,7 +1867,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
                 "name": "",
                 "status": 1
             },
@@ -1885,7 +1885,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/Xofs2eR9cP.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/Xofs2eR9cP.png",
                 "name": "",
                 "status": 1
             },
@@ -1962,6 +1962,78 @@
                 "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t c\u1ee5m t\u1eeb d\u00e0i th\u00e0nh t\u1eeb vi\u1ebft t\u1eaft c\u1ee7a n\u00f3.",
                 "image": "",
                 "name": "T\u1eeb vi\u1ebft t\u1eaft",
+                "status": 1
+            },
+            "leap": {
+                "path": "\/leap.c",
+                "rank": 13,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t n\u0103m, b\u00e1o c\u00e1o n\u1ebfu \u0111\u00f3 l\u00e0 m\u1ed9t n\u0103m nhu\u1eadn.",
+                "image": "",
+                "name": "N\u0103m nhu\u1eadn",
+                "status": 1
+            },
+            "reverse-string": {
+                "path": "\/reverse_string.c",
+                "rank": 14,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "\u0110\u1ea3o ng\u01b0\u1ee3c m\u1ed9t chu\u1ed7i",
+                "image": "",
+                "name": "\u0110\u1ea3o chu\u1ed7i",
+                "status": 1
+            },
+            "space-age": {
+                "path": "\/space_age.c",
+                "rank": 15,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "\u0110\u01b0a ra m\u1ed9t \u0111\u1ed9 tu\u1ed5i t\u00ednh b\u1eb1ng gi\u00e2y, h\u00e3y t\u00ednh xem m\u1ed9t ng\u01b0\u1eddi bao nhi\u00eau tu\u1ed5i theo s\u1ed1 n\u0103m m\u1eb7t tr\u1eddi c\u1ee7a m\u1ed9t h\u00e0nh tinh nh\u1ea5t \u0111\u1ecbnh.",
+                "image": "",
+                "name": "T\u00ednh tu\u1ed5i",
+                "status": 1
+            },
+            "triangle": {
+                "path": "\/triangle.c",
+                "rank": 16,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t tam gi\u00e1c l\u00e0 tam gi\u00e1c \u0111\u1ec1u, c\u00e2n hay c\u00e2n.",
+                "image": "",
+                "name": "Tam gi\u00e1c \u0111\u1ec1u",
+                "status": 1
+            },
+            "grains": {
+                "path": "\/grains.c",
+                "rank": 17,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa m\u00ec tr\u00ean b\u00e0n c\u1edd bi\u1ebft r\u1eb1ng s\u1ed1 h\u1ea1t tr\u00ean m\u1ed7i \u00f4 vu\u00f4ng t\u0103ng g\u1ea5p \u0111\u00f4i.",
+                "image": "",
+                "name": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa",
+                "status": 1
+            },
+            "raindrops": {
+                "path": "\/raindrops.c",
+                "rank": 18,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t s\u1ed1 th\u00e0nh m\u1ed9t chu\u1ed7i, n\u1ed9i dung c\u1ee7a n\u00f3 ph\u1ee5 thu\u1ed9c v\u00e0o c\u00e1c y\u1ebfu t\u1ed1 c\u1ee7a s\u1ed1 \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "pangram": {
+                "path": "\/pangram.c",
+                "rank": 19,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t c\u00e2u c\u00f3 ph\u1ea3i l\u00e0 m\u1ed9t pangram hay kh\u00f4ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "two-fer": {
+                "path": "\/two_fer.c",
+                "rank": 20,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u1ea1o m\u1ed9t c\u00e2u c\u00f3 d\u1ea1ng 'One for X, one for me'.",
+                "image": "",
+                "name": "",
                 "status": 1
             },
             "all-your-base": {
@@ -2153,15 +2225,6 @@
                 "name": "",
                 "status": 1
             },
-            "grains": {
-                "path": "\/grains.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "hamming": {
                 "path": "\/hamming.c",
                 "rank": 99,
@@ -2191,15 +2254,6 @@
             },
             "largest-series-product": {
                 "path": "\/largest_series_product.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "leap": {
-                "path": "\/leap.c",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2288,15 +2342,6 @@
                 "name": "",
                 "status": 1
             },
-            "pangram": {
-                "path": "\/pangram.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "pascals-triangle": {
                 "path": "\/pascals_triangle.c",
                 "rank": 99,
@@ -2369,15 +2414,6 @@
                 "name": "",
                 "status": 1
             },
-            "raindrops": {
-                "path": "\/raindrops.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "rational-numbers": {
                 "path": "\/rational_numbers.c",
                 "rank": 99,
@@ -2416,15 +2452,6 @@
             },
             "resistor-color-trio": {
                 "path": "\/resistor_color_trio.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "reverse-string": {
-                "path": "\/reverse_string.c",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2522,15 +2549,6 @@
                 "name": "",
                 "status": 1
             },
-            "space-age": {
-                "path": "\/space_age.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "square-root": {
                 "path": "\/square_root.c",
                 "rank": 99,
@@ -2558,26 +2576,8 @@
                 "name": "",
                 "status": 1
             },
-            "triangle": {
-                "path": "\/triangle.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "two-bucket": {
                 "path": "\/two_bucket.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "two-fer": {
-                "path": "\/two_fer.c",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2642,12 +2642,93 @@
                 "name": "",
                 "status": 1
             },
+            "making-the-grade": {
+                "path": "\/making_the_grade.py",
+                "rank": 8,
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 m\u1ea3ng v\u00e0 vector trong C++ b\u1eb1ng c\u00e1ch ch\u1ea5m \u0111i\u1ec3m v\u00e0 s\u1eafp x\u1ebfp \u0111i\u1ec3m thi c\u1ee7a h\u1ecdc sinh.",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "name": "Ch\u1ea5m \u0111i\u1ec3m",
+                "status": 1
+            },
             "ellens-alien-game": {
                 "path": "\/ellens_alien_game.py",
                 "rank": 10,
-                "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
+                "difficulty": "easy",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c l\u1edbp h\u1ecdc b\u1eb1ng c\u00e1ch t\u1ea1o tr\u00f2 ch\u01a1i Ng\u01b0\u1eddi ngo\u00e0i h\u00e0nh tinh cho Ellen.",
-                "image": "https://devsne.vn/image/icon/fHAF9zTl48.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
+                "name": "Ellen's Alien Game",
+                "status": 1
+            },
+            "leap": {
+                "path": "\/leap.py",
+                "rank": 13,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t n\u0103m, b\u00e1o c\u00e1o n\u1ebfu \u0111\u00f3 l\u00e0 m\u1ed9t n\u0103m nhu\u1eadn.",
+                "image": "",
+                "name": "N\u0103m nhu\u1eadn",
+                "status": 1
+            },
+            "reverse-string": {
+                "path": "\/reverse_string.py",
+                "rank": 14,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "\u0110\u1ea3o ng\u01b0\u1ee3c m\u1ed9t chu\u1ed7i",
+                "image": "",
+                "name": "\u0110\u1ea3o chu\u1ed7i",
+                "status": 1
+            },
+            "space-age": {
+                "path": "\/space_age.py",
+                "rank": 15,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "\u0110\u01b0a ra m\u1ed9t \u0111\u1ed9 tu\u1ed5i t\u00ednh b\u1eb1ng gi\u00e2y, h\u00e3y t\u00ednh xem m\u1ed9t ng\u01b0\u1eddi bao nhi\u00eau tu\u1ed5i theo s\u1ed1 n\u0103m m\u1eb7t tr\u1eddi c\u1ee7a m\u1ed9t h\u00e0nh tinh nh\u1ea5t \u0111\u1ecbnh.",
+                "image": "",
+                "name": "T\u00ednh tu\u1ed5i",
+                "status": 1
+            },
+            "triangle": {
+                "path": "\/triangle.py",
+                "rank": 16,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t tam gi\u00e1c l\u00e0 tam gi\u00e1c \u0111\u1ec1u, c\u00e2n hay c\u00e2n.",
+                "image": "",
+                "name": "Tam gi\u00e1c \u0111\u1ec1u",
+                "status": 1
+            },
+            "grains": {
+                "path": "\/grains.py",
+                "rank": 17,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa m\u00ec tr\u00ean b\u00e0n c\u1edd bi\u1ebft r\u1eb1ng s\u1ed1 h\u1ea1t tr\u00ean m\u1ed7i \u00f4 vu\u00f4ng t\u0103ng g\u1ea5p \u0111\u00f4i.",
+                "image": "",
+                "name": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa",
+                "status": 1
+            },
+            "raindrops": {
+                "path": "\/raindrops.py",
+                "rank": 18,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t s\u1ed1 th\u00e0nh m\u1ed9t chu\u1ed7i, n\u1ed9i dung c\u1ee7a n\u00f3 ph\u1ee5 thu\u1ed9c v\u00e0o c\u00e1c y\u1ebfu t\u1ed1 c\u1ee7a s\u1ed1 \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "pangram": {
+                "path": "\/pangram.py",
+                "rank": 19,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t c\u00e2u c\u00f3 ph\u1ea3i l\u00e0 m\u1ed9t pangram hay kh\u00f4ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "two-fer": {
+                "path": "\/two_fer.py",
+                "rank": 20,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u1ea1o m\u1ed9t c\u00e2u c\u00f3 d\u1ea1ng 'One for X, one for me'.",
+                "image": "",
                 "name": "",
                 "status": 1
             },
@@ -3011,15 +3092,6 @@
                 "name": "",
                 "status": 1
             },
-            "grains": {
-                "path": "\/grains.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "grep": {
                 "path": "\/grep.py",
                 "rank": 99,
@@ -3097,7 +3169,7 @@
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3121,15 +3193,6 @@
             },
             "largest-series-product": {
                 "path": "\/largest_series_product.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "leap": {
-                "path": "\/leap.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -3272,15 +3335,6 @@
                 "name": "",
                 "status": 1
             },
-            "pangram": {
-                "path": "\/pangram.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "parallel-letter-frequency": {
                 "path": "\/parallel_letter_frequency.py",
                 "rank": 99,
@@ -3407,15 +3461,6 @@
                 "name": "",
                 "status": 1
             },
-            "raindrops": {
-                "path": "\/raindrops.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "rational-numbers": {
                 "path": "\/rational_numbers.py",
                 "rank": 99,
@@ -3481,15 +3526,6 @@
             },
             "rest-api": {
                 "path": "\/rest_api.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "reverse-string": {
-                "path": "\/reverse_string.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -3650,15 +3686,6 @@
                 "name": "",
                 "status": 1
             },
-            "space-age": {
-                "path": "\/space_age.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "spiral-matrix": {
                 "path": "\/spiral_matrix.py",
                 "rank": 99,
@@ -3731,15 +3758,6 @@
                 "name": "",
                 "status": 1
             },
-            "triangle": {
-                "path": "\/triangle.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "trinary": {
                 "path": "\/trinary.py",
                 "rank": 99,
@@ -3760,15 +3778,6 @@
             },
             "two-bucket": {
                 "path": "\/two_bucket.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "two-fer": {
-                "path": "\/two_fer.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -3844,7 +3853,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3853,7 +3862,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3862,7 +3871,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3871,7 +3880,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3880,7 +3889,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3889,7 +3898,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3898,7 +3907,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3907,7 +3916,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3916,7 +3925,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3925,7 +3934,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3934,7 +3943,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3947,21 +3956,12 @@
                 "name": "",
                 "status": 1
             },
-            "making-the-grade": {
-                "path": "\/making_the_grade.py",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
-                "name": "",
-                "status": 1
-            },
             "mecha-munch-management": {
                 "path": "\/mecha_munch_management.py",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3970,7 +3970,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3979,7 +3979,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3988,7 +3988,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -3997,7 +3997,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -4053,6 +4053,78 @@
                 "status": 1,
                 "path": "\/Lasagna.php"
             },
+            "leap": {
+                "rank": 13,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t n\u0103m, b\u00e1o c\u00e1o n\u1ebfu \u0111\u00f3 l\u00e0 m\u1ed9t n\u0103m nhu\u1eadn.",
+                "image": "",
+                "name": "N\u0103m nhu\u1eadn",
+                "status": 1,
+                "path": "\/leap.php"
+            },
+            "reverse-string": {
+                "rank": 14,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "\u0110\u1ea3o ng\u01b0\u1ee3c m\u1ed9t chu\u1ed7i",
+                "image": "",
+                "name": "\u0110\u1ea3o chu\u1ed7i",
+                "status": 1,
+                "path": "\/reverse_string.php"
+            },
+            "space-age": {
+                "rank": 15,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "\u0110\u01b0a ra m\u1ed9t \u0111\u1ed9 tu\u1ed5i t\u00ednh b\u1eb1ng gi\u00e2y, h\u00e3y t\u00ednh xem m\u1ed9t ng\u01b0\u1eddi bao nhi\u00eau tu\u1ed5i theo s\u1ed1 n\u0103m m\u1eb7t tr\u1eddi c\u1ee7a m\u1ed9t h\u00e0nh tinh nh\u1ea5t \u0111\u1ecbnh.",
+                "image": "",
+                "name": "T\u00ednh tu\u1ed5i",
+                "status": 1,
+                "path": "\/space_age.php"
+            },
+            "triangle": {
+                "rank": 16,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t tam gi\u00e1c l\u00e0 tam gi\u00e1c \u0111\u1ec1u, c\u00e2n hay c\u00e2n.",
+                "image": "",
+                "name": "Tam gi\u00e1c \u0111\u1ec1u",
+                "status": 1,
+                "path": "\/triangle.php"
+            },
+            "grains": {
+                "rank": 17,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa m\u00ec tr\u00ean b\u00e0n c\u1edd bi\u1ebft r\u1eb1ng s\u1ed1 h\u1ea1t tr\u00ean m\u1ed7i \u00f4 vu\u00f4ng t\u0103ng g\u1ea5p \u0111\u00f4i.",
+                "image": "",
+                "name": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa",
+                "status": 1,
+                "path": "\/grains.php"
+            },
+            "raindrops": {
+                "rank": 18,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t s\u1ed1 th\u00e0nh m\u1ed9t chu\u1ed7i, n\u1ed9i dung c\u1ee7a n\u00f3 ph\u1ee5 thu\u1ed9c v\u00e0o c\u00e1c y\u1ebfu t\u1ed1 c\u1ee7a s\u1ed1 \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/raindrops.php"
+            },
+            "pangram": {
+                "rank": 19,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t c\u00e2u c\u00f3 ph\u1ea3i l\u00e0 m\u1ed9t pangram hay kh\u00f4ng.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/pangram.php"
+            },
+            "two-fer": {
+                "rank": 20,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u1ea1o m\u1ed9t c\u00e2u c\u00f3 d\u1ea1ng 'One for X, one for me'.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/two_fer.php"
+            },
             "accumulate": {
                 "rank": 99,
                 "difficulty": "easy",
@@ -4073,7 +4145,7 @@
             },
             "all-your-base": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4082,7 +4154,7 @@
             },
             "allergies": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4091,7 +4163,7 @@
             },
             "anagram": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4100,7 +4172,7 @@
             },
             "armstrong-numbers": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4109,7 +4181,7 @@
             },
             "atbash-cipher": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4118,7 +4190,7 @@
             },
             "beer-song": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4127,7 +4199,7 @@
             },
             "binary": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4136,7 +4208,7 @@
             },
             "binary-search": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4145,7 +4217,7 @@
             },
             "bob": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4181,7 +4253,7 @@
             },
             "clock": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4190,7 +4262,7 @@
             },
             "collatz-conjecture": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4208,7 +4280,7 @@
             },
             "crypto-square": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4217,7 +4289,7 @@
             },
             "darts": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4235,7 +4307,7 @@
             },
             "difference-of-squares": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4253,7 +4325,7 @@
             },
             "etl": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4271,7 +4343,7 @@
             },
             "gigasecond": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4280,25 +4352,16 @@
             },
             "grade-school": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
                 "status": 1,
                 "path": "\/grade_school.php"
             },
-            "grains": {
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/grains.php"
-            },
             "hamming": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4307,7 +4370,7 @@
             },
             "high-scores": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4316,7 +4379,7 @@
             },
             "isogram": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4325,21 +4388,12 @@
             },
             "largest-series-product": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
                 "status": 1,
                 "path": "\/largest_series_product.php"
-            },
-            "leap": {
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/leap.php"
             },
             "linked-list": {
                 "rank": 99,
@@ -4352,7 +4406,7 @@
             },
             "luhn": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4379,7 +4433,7 @@
             },
             "matching-brackets": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4397,7 +4451,7 @@
             },
             "meetup": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4415,7 +4469,7 @@
             },
             "nth-prime": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4424,7 +4478,7 @@
             },
             "nucleotide-count": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4444,7 +4498,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/15KHFcYSig.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/15KHFcYSig.png",
                 "name": "",
                 "status": 1,
                 "path": "\/ordinal_number.php"
@@ -4458,18 +4512,9 @@
                 "status": 1,
                 "path": "\/palindrome_products.php"
             },
-            "pangram": {
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/pangram.php"
-            },
             "pascals-triangle": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4478,7 +4523,7 @@
             },
             "perfect-numbers": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4487,7 +4532,7 @@
             },
             "phone-number": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4514,7 +4559,7 @@
             },
             "prime-factors": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4523,7 +4568,7 @@
             },
             "queen-attack": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4539,15 +4584,6 @@
                 "status": 1,
                 "path": "\/rail_fence_cipher.php"
             },
-            "raindrops": {
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/raindrops.php"
-            },
             "resistor-color": {
                 "rank": 99,
                 "difficulty": "easy",
@@ -4557,18 +4593,9 @@
                 "status": 1,
                 "path": "\/resistor_color.php"
             },
-            "reverse-string": {
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/reverse_string.php"
-            },
             "rna-transcription": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4577,7 +4604,7 @@
             },
             "robot-name": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4586,7 +4613,7 @@
             },
             "robot-simulator": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4595,7 +4622,7 @@
             },
             "roman-numerals": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4622,7 +4649,7 @@
             },
             "scrabble-score": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4631,7 +4658,7 @@
             },
             "series": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4640,7 +4667,7 @@
             },
             "sieve": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4656,18 +4683,9 @@
                 "status": 1,
                 "path": "\/simple_cipher.php"
             },
-            "space-age": {
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/space_age.php"
-            },
             "sum-of-multiples": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4692,32 +4710,14 @@
                 "status": 1,
                 "path": "\/transpose.php"
             },
-            "triangle": {
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/triangle.php"
-            },
             "trinary": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
                 "status": 1,
                 "path": "\/trinary.php"
-            },
-            "two-fer": {
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/two_fer.php"
             },
             "variable-length-quantity": {
                 "rank": 99,
@@ -4730,7 +4730,7 @@
             },
             "word-count": {
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4759,7 +4759,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/dczlPZqm2R.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/dczlPZqm2R.png",
                 "name": "",
                 "status": 1,
                 "path": "\/bootstrap.sh.php"
@@ -4786,7 +4786,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/VaDw5xLRSm.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/VaDw5xLRSm.png",
                 "name": "",
                 "status": 1,
                 "path": "\/pizza_pi.php"
@@ -4795,7 +4795,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/EsmOKdAoLN.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/EsmOKdAoLN.png",
                 "name": "",
                 "status": 1,
                 "path": "\/sweethearts.php"
@@ -4848,6 +4848,96 @@
                 "name": "lasagna",
                 "status": 1
             },
+            "freelancer-rates": {
+                "path": "\/freelancer_rates.js",
+                "rank": 4,
+                "difficulty": "Luy\u1ec7n t\u1eadp",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 s\u1ed1 nguy\u00ean v\u00e0 s\u1ed1 d\u1ea5u ph\u1ea9y \u0111\u1ed9ng b\u1eb1ng c\u00e1ch gi\u00fap m\u1ed9t ng\u01b0\u1eddi l\u00e0m ngh\u1ec1 t\u1ef1 do giao ti\u1ebfp v\u1edbi ng\u01b0\u1eddi qu\u1ea3n l\u00fd d\u1ef1 \u00e1n v\u1ec1 vi\u1ec7c thanh to\u00e1n.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "vehicle-purchase": {
+                "path": "\/vehicle_purchase.js",
+                "rank": 7,
+                "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 ph\u00e9p so s\u00e1nh v\u00e0 c\u00e2u l\u1ec7nh if trong khi chu\u1ea9n b\u1ecb cho l\u1ea7n mua xe ti\u1ebfp theo c\u1ee7a b\u1ea1n",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "leap": {
+                "path": "\/leap.js",
+                "rank": 13,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t n\u0103m, b\u00e1o c\u00e1o n\u1ebfu \u0111\u00f3 l\u00e0 m\u1ed9t n\u0103m nhu\u1eadn.",
+                "image": "",
+                "name": "N\u0103m nhu\u1eadn",
+                "status": 1
+            },
+            "reverse-string": {
+                "path": "\/reverse_string.js",
+                "rank": 14,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "\u0110\u1ea3o ng\u01b0\u1ee3c m\u1ed9t chu\u1ed7i",
+                "image": "",
+                "name": "\u0110\u1ea3o chu\u1ed7i",
+                "status": 1
+            },
+            "space-age": {
+                "path": "\/space_age.js",
+                "rank": 15,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "\u0110\u01b0a ra m\u1ed9t \u0111\u1ed9 tu\u1ed5i t\u00ednh b\u1eb1ng gi\u00e2y, h\u00e3y t\u00ednh xem m\u1ed9t ng\u01b0\u1eddi bao nhi\u00eau tu\u1ed5i theo s\u1ed1 n\u0103m m\u1eb7t tr\u1eddi c\u1ee7a m\u1ed9t h\u00e0nh tinh nh\u1ea5t \u0111\u1ecbnh.",
+                "image": "",
+                "name": "T\u00ednh tu\u1ed5i",
+                "status": 1
+            },
+            "triangle": {
+                "path": "\/triangle.js",
+                "rank": 16,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t tam gi\u00e1c l\u00e0 tam gi\u00e1c \u0111\u1ec1u, c\u00e2n hay c\u00e2n.",
+                "image": "",
+                "name": "Tam gi\u00e1c \u0111\u1ec1u",
+                "status": 1
+            },
+            "grains": {
+                "path": "\/grains.js",
+                "rank": 17,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa m\u00ec tr\u00ean b\u00e0n c\u1edd bi\u1ebft r\u1eb1ng s\u1ed1 h\u1ea1t tr\u00ean m\u1ed7i \u00f4 vu\u00f4ng t\u0103ng g\u1ea5p \u0111\u00f4i.",
+                "image": "",
+                "name": "T\u00ednh s\u1ed1 h\u1ea1t l\u00faa",
+                "status": 1
+            },
+            "raindrops": {
+                "path": "\/raindrops.js",
+                "rank": 18,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i m\u1ed9t s\u1ed1 th\u00e0nh m\u1ed9t chu\u1ed7i, n\u1ed9i dung c\u1ee7a n\u00f3 ph\u1ee5 thu\u1ed9c v\u00e0o c\u00e1c y\u1ebfu t\u1ed1 c\u1ee7a s\u1ed1 \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "pangram": {
+                "path": "\/pangram.js",
+                "rank": 19,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "X\u00e1c \u0111\u1ecbnh xem m\u1ed9t c\u00e2u c\u00f3 ph\u1ea3i l\u00e0 m\u1ed9t pangram hay kh\u00f4ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "two-fer": {
+                "path": "\/two_fer.js",
+                "rank": 20,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u1ea1o m\u1ed9t c\u00e2u c\u00f3 d\u1ea1ng 'One for X, one for me'.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
             "accumulate": {
                 "path": "\/accumulate.js",
                 "rank": 99,
@@ -4869,7 +4959,7 @@
             "all-your-base": {
                 "path": "\/all_your_base.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4878,7 +4968,7 @@
             "allergies": {
                 "path": "\/allergies.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4896,7 +4986,7 @@
             "anagram": {
                 "path": "\/anagram.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4905,7 +4995,7 @@
             "armstrong-numbers": {
                 "path": "\/armstrong_numbers.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4914,7 +5004,7 @@
             "atbash-cipher": {
                 "path": "\/atbash_cipher.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4923,7 +5013,7 @@
             "bank-account": {
                 "path": "\/bank_account.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4932,7 +5022,7 @@
             "beer-song": {
                 "path": "\/beer_song.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4941,7 +5031,7 @@
             "binary": {
                 "path": "\/binary.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4950,7 +5040,7 @@
             "binary-search": {
                 "path": "\/binary_search.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4959,7 +5049,7 @@
             "binary-search-tree": {
                 "path": "\/binary_search_tree.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4968,7 +5058,7 @@
             "bob": {
                 "path": "\/bob.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5004,7 +5094,7 @@
             "circular-buffer": {
                 "path": "\/circular_buffer.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5013,7 +5103,7 @@
             "clock": {
                 "path": "\/clock.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5022,7 +5112,7 @@
             "collatz-conjecture": {
                 "path": "\/collatz_conjecture.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5031,7 +5121,7 @@
             "complex-numbers": {
                 "path": "\/complex_numbers.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5049,7 +5139,7 @@
             "crypto-square": {
                 "path": "\/crypto_square.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5067,7 +5157,7 @@
             "darts": {
                 "path": "\/darts.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5085,7 +5175,7 @@
             "difference-of-squares": {
                 "path": "\/difference_of_squares.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5121,7 +5211,7 @@
             "etl": {
                 "path": "\/etl.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5139,7 +5229,7 @@
             "food-chain": {
                 "path": "\/food_chain.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5157,7 +5247,7 @@
             "gigasecond": {
                 "path": "\/gigasecond.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5175,16 +5265,7 @@
             "grade-school": {
                 "path": "\/grade_school.js",
                 "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "grains": {
-                "path": "\/grains.js",
-                "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5202,7 +5283,7 @@
             "hamming": {
                 "path": "\/hamming.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5211,7 +5292,7 @@
             "hexadecimal": {
                 "path": "\/hexadecimal.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5220,7 +5301,7 @@
             "high-scores": {
                 "path": "\/high_scores.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5238,7 +5319,7 @@
             "isbn-verifier": {
                 "path": "\/isbn_verifier.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5247,7 +5328,7 @@
             "isogram": {
                 "path": "\/isogram.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5274,16 +5355,7 @@
             "largest-series-product": {
                 "path": "\/largest_series_product.js",
                 "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "leap": {
-                "path": "\/leap.js",
-                "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5310,7 +5382,7 @@
             "luhn": {
                 "path": "\/luhn.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5319,7 +5391,7 @@
             "matching-brackets": {
                 "path": "\/matching_brackets.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5337,7 +5409,7 @@
             "meetup": {
                 "path": "\/meetup.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5355,7 +5427,7 @@
             "nth-prime": {
                 "path": "\/nth_prime.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5364,7 +5436,7 @@
             "nucleotide-count": {
                 "path": "\/nucleotide_count.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5397,19 +5469,10 @@
                 "name": "",
                 "status": 1
             },
-            "pangram": {
-                "path": "\/pangram.js",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "pascals-triangle": {
                 "path": "\/pascals_triangle.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5418,7 +5481,7 @@
             "perfect-numbers": {
                 "path": "\/perfect_numbers.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5427,7 +5490,7 @@
             "phone-number": {
                 "path": "\/phone_number.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5463,7 +5526,7 @@
             "prime-factors": {
                 "path": "\/prime_factors.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5481,7 +5544,7 @@
             "protein-translation": {
                 "path": "\/protein_translation.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5508,7 +5571,7 @@
             "queen-attack": {
                 "path": "\/queen_attack.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5516,15 +5579,6 @@
             },
             "rail-fence-cipher": {
                 "path": "\/rail_fence_cipher.js",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "raindrops": {
-                "path": "\/raindrops.js",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
@@ -5595,19 +5649,10 @@
                 "name": "",
                 "status": 1
             },
-            "reverse-string": {
-                "path": "\/reverse_string.js",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "rna-transcription": {
                 "path": "\/rna_transcription.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5616,7 +5661,7 @@
             "robot-name": {
                 "path": "\/robot_name.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5625,7 +5670,7 @@
             "robot-simulator": {
                 "path": "\/robot_simulator.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5634,7 +5679,7 @@
             "roman-numerals": {
                 "path": "\/roman_numerals.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5679,7 +5724,7 @@
             "say": {
                 "path": "\/say.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5697,7 +5742,7 @@
             "scrabble-score": {
                 "path": "\/scrabble_score.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5706,7 +5751,7 @@
             "secret-handshake": {
                 "path": "\/secret_handshake.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5715,7 +5760,7 @@
             "series": {
                 "path": "\/series.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5724,7 +5769,7 @@
             "sieve": {
                 "path": "\/sieve.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5742,16 +5787,7 @@
             "simple-linked-list": {
                 "path": "\/simple_linked_list.js",
                 "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "space-age": {
-                "path": "\/space_age.js",
-                "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5796,7 +5832,7 @@
             "sum-of-multiples": {
                 "path": "\/sum_of_multiples.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5820,19 +5856,10 @@
                 "name": "",
                 "status": 1
             },
-            "triangle": {
-                "path": "\/triangle.js",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "trinary": {
                 "path": "\/trinary.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5856,15 +5883,6 @@
                 "name": "",
                 "status": 1
             },
-            "two-fer": {
-                "path": "\/two_fer.js",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "variable-length-quantity": {
                 "path": "\/variable_length_quantity.js",
                 "rank": 99,
@@ -5877,7 +5895,7 @@
             "word-count": {
                 "path": "\/word_count.js",
                 "rank": 99,
-                "difficulty": "easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5933,7 +5951,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -5987,7 +6005,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -5996,7 +6014,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -6014,7 +6032,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
@@ -6029,15 +6047,6 @@
             },
             "factory-sensors": {
                 "path": "\/factory_sensors.js",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "freelancer-rates": {
-                "path": "\/freelancer_rates.js",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
@@ -6131,21 +6140,12 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https://devsne.vn/image/icon/mjhOvDXViF.png",
+                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
                 "name": "",
                 "status": 1
             },
             "translation-service": {
                 "path": "\/translation_service.js",
-                "rank": 99,
-                "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "vehicle-purchase": {
-                "path": "\/vehicle_purchase.js",
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
