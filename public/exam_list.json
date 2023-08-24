@@ -194,6 +194,69 @@
                 "name": "",
                 "status": 1
             },
+            "grade-school": {
+                "path": "\/grade_school.cpp",
+                "rank": 21,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho bi\u1ebft t\u00ean c\u1ee7a h\u1ecdc sinh c\u00f9ng v\u1edbi l\u1edbp \u0111ang theo h\u1ecdc, t\u1ea1o danh s\u00e1ch cho tr\u01b0\u1eddng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "hamming": {
+                "path": "\/hamming.cpp",
+                "rank": 22,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ednh s\u1ef1 kh\u00e1c bi\u1ec7t Hamming gi\u1eefa hai chu\u1ed7i DNA.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "rna-transcription": {
+                "path": "\/rna_transcription.cpp",
+                "rank": 23,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, tr\u1ea3 v\u1ec1 m\u00e3 b\u1ed5 sung RNA c\u1ee7a n\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "nth-prime": {
+                "path": "\/nth_prime.cpp",
+                "rank": 26,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t s\u1ed1 n, h\u00e3y x\u00e1c \u0111\u1ecbnh s\u1ed1 nguy\u00ean t\u1ed1 th\u1ee9 n l\u00e0 bao nhi\u00eau.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "nucleotide-count": {
+                "path": "\/nucleotide_count.cpp",
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, h\u00e3y t\u00ednh s\u1ed1 l\u1ea7n m\u1ed7i Nucleotide xu\u1ea5t hi\u1ec7n trong chu\u1ed7i.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "sieve": {
+                "path": "\/sieve.cpp",
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "S\u1eed d\u1ee5ng s\u00e0ng Eratosthenes \u0111\u1ec3 t\u00ecm t\u1ea5t c\u1ea3 c\u00e1c s\u1ed1 nguy\u00ean t\u1ed1 t\u1eeb 2 \u0111\u1ebfn m\u1ed9t s\u1ed1 cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "say": {
+                "path": "\/say.cpp",
+                "rank": 30,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: hard",
+                "description": "Cho m\u1ed9t s\u1ed1 t\u1eeb 0 \u0111\u1ebfn 999.999.999.999, h\u00e3y \u0111\u00e1nh v\u1ea7n s\u1ed1 \u0111\u00f3 b\u1eb1ng ti\u1ebfng Anh.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
             "all-your-base": {
                 "path": "\/all_your_base.cpp",
                 "rank": 99,
@@ -315,7 +378,7 @@
                 "path": "\/collatz_conjecture.cpp",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "T\u00ednh s\u1ed1 b\u01b0\u1edbc \u0111\u1ec3 \u0111\u1ea1t t\u1edbi 1 b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng ph\u1ecfng \u0111o\u00e1n Collatz.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -378,25 +441,7 @@
                 "path": "\/gigasecond.cpp",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "grade-school": {
-                "path": "\/grade_school.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "hamming": {
-                "path": "\/hamming.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "Cho m\u1ed9t th\u1eddi \u0111i\u1ec3m, h\u00e3y x\u00e1c \u0111\u1ecbnh th\u1eddi \u0111i\u1ec3m \u0111\u00f3 sau khi m\u1ed9t giga gi\u00e2y tr\u00f4i qua.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -473,24 +518,6 @@
                 "name": "",
                 "status": 1
             },
-            "nth-prime": {
-                "path": "\/nth_prime.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "nucleotide-count": {
-                "path": "\/nucleotide_count.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "pascals-triangle": {
                 "path": "\/pascals_triangle.cpp",
                 "rank": 99,
@@ -539,16 +566,7 @@
             "queen-attack": {
                 "path": "\/queen_attack.cpp",
                 "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "rna-transcription": {
-                "path": "\/rna_transcription.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -581,15 +599,6 @@
                 "name": "",
                 "status": 1
             },
-            "say": {
-                "path": "\/say.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "scrabble-score": {
                 "path": "\/scrabble_score.cpp",
                 "rank": 99,
@@ -610,15 +619,6 @@
             },
             "series": {
                 "path": "\/series.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "sieve": {
-                "path": "\/sieve.cpp",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -778,6 +778,69 @@
                 "rank": 20,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "T\u1ea1o m\u1ed9t c\u00e2u c\u00f3 d\u1ea1ng 'One for X, one for me'.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "grade-school": {
+                "path": "\/src\/main\/java\/grade_school.java",
+                "rank": 21,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho bi\u1ebft t\u00ean c\u1ee7a h\u1ecdc sinh c\u00f9ng v\u1edbi l\u1edbp \u0111ang theo h\u1ecdc, t\u1ea1o danh s\u00e1ch cho tr\u01b0\u1eddng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "hamming": {
+                "path": "\/src\/main\/java\/hamming.java",
+                "rank": 22,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ednh s\u1ef1 kh\u00e1c bi\u1ec7t Hamming gi\u1eefa hai chu\u1ed7i DNA.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "rna-transcription": {
+                "path": "\/src\/main\/java\/rna_transcription.java",
+                "rank": 23,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, tr\u1ea3 v\u1ec1 m\u00e3 b\u1ed5 sung RNA c\u1ee7a n\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "nth-prime": {
+                "path": "\/src\/main\/java\/nth_prime.java",
+                "rank": 26,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t s\u1ed1 n, h\u00e3y x\u00e1c \u0111\u1ecbnh s\u1ed1 nguy\u00ean t\u1ed1 th\u1ee9 n l\u00e0 bao nhi\u00eau.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "nucleotide-count": {
+                "path": "\/src\/main\/java\/nucleotide_count.java",
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, h\u00e3y t\u00ednh s\u1ed1 l\u1ea7n m\u1ed7i Nucleotide xu\u1ea5t hi\u1ec7n trong chu\u1ed7i.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "sieve": {
+                "path": "\/src\/main\/java\/sieve.java",
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "S\u1eed d\u1ee5ng s\u00e0ng Eratosthenes \u0111\u1ec3 t\u00ecm t\u1ea5t c\u1ea3 c\u00e1c s\u1ed1 nguy\u00ean t\u1ed1 t\u1eeb 2 \u0111\u1ebfn m\u1ed9t s\u1ed1 cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "say": {
+                "path": "\/src\/main\/java\/say.java",
+                "rank": 30,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: hard",
+                "description": "Cho m\u1ed9t s\u1ed1 t\u1eeb 0 \u0111\u1ebfn 999.999.999.999, h\u00e3y \u0111\u00e1nh v\u1ea7n s\u1ed1 \u0111\u00f3 b\u1eb1ng ti\u1ebfng Anh.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -957,7 +1020,7 @@
                 "path": "\/src\/main\/java\/collatz_conjecture.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "T\u00ednh s\u1ed1 b\u01b0\u1edbc \u0111\u1ec3 \u0111\u1ea1t t\u1edbi 1 b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng ph\u1ecfng \u0111o\u00e1n Collatz.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -1101,7 +1164,7 @@
                 "path": "\/src\/main\/java\/gigasecond.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "Cho m\u1ed9t th\u1eddi \u0111i\u1ec3m, h\u00e3y x\u00e1c \u0111\u1ecbnh th\u1eddi \u0111i\u1ec3m \u0111\u00f3 sau khi m\u1ed9t giga gi\u00e2y tr\u00f4i qua.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -1115,26 +1178,8 @@
                 "name": "",
                 "status": 1
             },
-            "grade-school": {
-                "path": "\/src\/main\/java\/grade_school.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "grep": {
                 "path": "\/src\/main\/java\/grep.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "hamming": {
-                "path": "\/src\/main\/java\/hamming.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -1313,24 +1358,6 @@
                 "name": "",
                 "status": 1
             },
-            "nth-prime": {
-                "path": "\/src\/main\/java\/nth_prime.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "nucleotide-count": {
-                "path": "\/src\/main\/java\/nucleotide_count.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "ocr-numbers": {
                 "path": "\/src\/main\/java\/ocr_numbers.java",
                 "rank": 99,
@@ -1460,7 +1487,7 @@
             "queen-attack": {
                 "path": "\/src\/main\/java\/queen_attack.java",
                 "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -1513,15 +1540,6 @@
             },
             "rest-api": {
                 "path": "\/src\/main\/java\/rest_api.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "rna-transcription": {
-                "path": "\/src\/main\/java\/rna_transcription.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -1592,15 +1610,6 @@
                 "name": "",
                 "status": 1
             },
-            "say": {
-                "path": "\/src\/main\/java\/say.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "scrabble-score": {
                 "path": "\/src\/main\/java\/scrabble_score.java",
                 "rank": 99,
@@ -1630,15 +1639,6 @@
             },
             "sgf-parsing": {
                 "path": "\/src\/main\/java\/sgf_parsing.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "sieve": {
-                "path": "\/src\/main\/java\/sieve.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2036,6 +2036,69 @@
                 "name": "",
                 "status": 1
             },
+            "grade-school": {
+                "path": "\/grade_school.c",
+                "rank": 21,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho bi\u1ebft t\u00ean c\u1ee7a h\u1ecdc sinh c\u00f9ng v\u1edbi l\u1edbp \u0111ang theo h\u1ecdc, t\u1ea1o danh s\u00e1ch cho tr\u01b0\u1eddng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "hamming": {
+                "path": "\/hamming.c",
+                "rank": 22,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ednh s\u1ef1 kh\u00e1c bi\u1ec7t Hamming gi\u1eefa hai chu\u1ed7i DNA.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "rna-transcription": {
+                "path": "\/rna_transcription.c",
+                "rank": 23,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, tr\u1ea3 v\u1ec1 m\u00e3 b\u1ed5 sung RNA c\u1ee7a n\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "nth-prime": {
+                "path": "\/nth_prime.c",
+                "rank": 26,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t s\u1ed1 n, h\u00e3y x\u00e1c \u0111\u1ecbnh s\u1ed1 nguy\u00ean t\u1ed1 th\u1ee9 n l\u00e0 bao nhi\u00eau.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "nucleotide-count": {
+                "path": "\/nucleotide_count.c",
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, h\u00e3y t\u00ednh s\u1ed1 l\u1ea7n m\u1ed7i Nucleotide xu\u1ea5t hi\u1ec7n trong chu\u1ed7i.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "sieve": {
+                "path": "\/sieve.c",
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "S\u1eed d\u1ee5ng s\u00e0ng Eratosthenes \u0111\u1ec3 t\u00ecm t\u1ea5t c\u1ea3 c\u00e1c s\u1ed1 nguy\u00ean t\u1ed1 t\u1eeb 2 \u0111\u1ebfn m\u1ed9t s\u1ed1 cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "say": {
+                "path": "\/say.c",
+                "rank": 30,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: hard",
+                "description": "Cho m\u1ed9t s\u1ed1 t\u1eeb 0 \u0111\u1ebfn 999.999.999.999, h\u00e3y \u0111\u00e1nh v\u1ea7n s\u1ed1 \u0111\u00f3 b\u1eb1ng ti\u1ebfng Anh.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
             "all-your-base": {
                 "path": "\/all_your_base.c",
                 "rank": 99,
@@ -2148,7 +2211,7 @@
                 "path": "\/collatz_conjecture.c",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "T\u00ednh s\u1ed1 b\u01b0\u1edbc \u0111\u1ec3 \u0111\u1ea1t t\u1edbi 1 b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng ph\u1ecfng \u0111o\u00e1n Collatz.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -2211,25 +2274,7 @@
                 "path": "\/gigasecond.c",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "grade-school": {
-                "path": "\/grade_school.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "hamming": {
-                "path": "\/hamming.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "Cho m\u1ed9t th\u1eddi \u0111i\u1ec3m, h\u00e3y x\u00e1c \u0111\u1ecbnh th\u1eddi \u0111i\u1ec3m \u0111\u00f3 sau khi m\u1ed9t giga gi\u00e2y tr\u00f4i qua.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -2315,24 +2360,6 @@
                 "name": "",
                 "status": 1
             },
-            "nth-prime": {
-                "path": "\/nth_prime.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "nucleotide-count": {
-                "path": "\/nucleotide_count.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "palindrome-products": {
                 "path": "\/palindrome_products.c",
                 "rank": 99,
@@ -2399,7 +2426,7 @@
             "queen-attack": {
                 "path": "\/queen_attack.c",
                 "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -2459,15 +2486,6 @@
                 "name": "",
                 "status": 1
             },
-            "rna-transcription": {
-                "path": "\/rna_transcription.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "robot-simulator": {
                 "path": "\/robot_simulator.c",
                 "rank": 99,
@@ -2504,15 +2522,6 @@
                 "name": "",
                 "status": 1
             },
-            "say": {
-                "path": "\/say.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "scrabble-score": {
                 "path": "\/scrabble_score.c",
                 "rank": 99,
@@ -2533,15 +2542,6 @@
             },
             "series": {
                 "path": "\/series.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "sieve": {
-                "path": "\/sieve.c",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2732,6 +2732,69 @@
                 "name": "",
                 "status": 1
             },
+            "grade-school": {
+                "path": "\/grade_school.py",
+                "rank": 21,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho bi\u1ebft t\u00ean c\u1ee7a h\u1ecdc sinh c\u00f9ng v\u1edbi l\u1edbp \u0111ang theo h\u1ecdc, t\u1ea1o danh s\u00e1ch cho tr\u01b0\u1eddng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "hamming": {
+                "path": "\/hamming.py",
+                "rank": 22,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ednh s\u1ef1 kh\u00e1c bi\u1ec7t Hamming gi\u1eefa hai chu\u1ed7i DNA.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "rna-transcription": {
+                "path": "\/rna_transcription.py",
+                "rank": 23,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, tr\u1ea3 v\u1ec1 m\u00e3 b\u1ed5 sung RNA c\u1ee7a n\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "nth-prime": {
+                "path": "\/nth_prime.py",
+                "rank": 26,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t s\u1ed1 n, h\u00e3y x\u00e1c \u0111\u1ecbnh s\u1ed1 nguy\u00ean t\u1ed1 th\u1ee9 n l\u00e0 bao nhi\u00eau.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "nucleotide-count": {
+                "path": "\/nucleotide_count.py",
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, h\u00e3y t\u00ednh s\u1ed1 l\u1ea7n m\u1ed7i Nucleotide xu\u1ea5t hi\u1ec7n trong chu\u1ed7i.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "sieve": {
+                "path": "\/sieve.py",
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "S\u1eed d\u1ee5ng s\u00e0ng Eratosthenes \u0111\u1ec3 t\u00ecm t\u1ea5t c\u1ea3 c\u00e1c s\u1ed1 nguy\u00ean t\u1ed1 t\u1eeb 2 \u0111\u1ebfn m\u1ed9t s\u1ed1 cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "say": {
+                "path": "\/say.py",
+                "rank": 30,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: hard",
+                "description": "Cho m\u1ed9t s\u1ed1 t\u1eeb 0 \u0111\u1ebfn 999.999.999.999, h\u00e3y \u0111\u00e1nh v\u1ea7n s\u1ed1 \u0111\u00f3 b\u1eb1ng ti\u1ebfng Anh.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
             "accumulate": {
                 "path": "\/accumulate.py",
                 "rank": 99,
@@ -2916,7 +2979,7 @@
                 "path": "\/collatz_conjecture.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "T\u00ednh s\u1ed1 b\u01b0\u1edbc \u0111\u1ec3 \u0111\u1ea1t t\u1edbi 1 b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng ph\u1ecfng \u0111o\u00e1n Collatz.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -3069,7 +3132,7 @@
                 "path": "\/gigasecond.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "Cho m\u1ed9t th\u1eddi \u0111i\u1ec3m, h\u00e3y x\u00e1c \u0111\u1ecbnh th\u1eddi \u0111i\u1ec3m \u0111\u00f3 sau khi m\u1ed9t giga gi\u00e2y tr\u00f4i qua.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -3083,26 +3146,8 @@
                 "name": "",
                 "status": 1
             },
-            "grade-school": {
-                "path": "\/grade_school.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "grep": {
                 "path": "\/grep.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "hamming": {
-                "path": "\/hamming.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -3281,24 +3326,6 @@
                 "name": "",
                 "status": 1
             },
-            "nth-prime": {
-                "path": "\/nth_prime.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "nucleotide-count": {
-                "path": "\/nucleotide_count.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "ocr-numbers": {
                 "path": "\/ocr_numbers.py",
                 "rank": 99,
@@ -3446,7 +3473,7 @@
             "queen-attack": {
                 "path": "\/queen_attack.py",
                 "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -3533,15 +3560,6 @@
                 "name": "",
                 "status": 1
             },
-            "rna-transcription": {
-                "path": "\/rna_transcription.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "robot-name": {
                 "path": "\/robot_name.py",
                 "rank": 99,
@@ -3605,15 +3623,6 @@
                 "name": "",
                 "status": 1
             },
-            "say": {
-                "path": "\/say.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "scale-generator": {
                 "path": "\/scale_generator.py",
                 "rank": 99,
@@ -3652,15 +3661,6 @@
             },
             "sgf-parsing": {
                 "path": "\/sgf_parsing.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "sieve": {
-                "path": "\/sieve.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -4125,6 +4125,60 @@
                 "status": 1,
                 "path": "\/two_fer.php"
             },
+            "grade-school": {
+                "rank": 21,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho bi\u1ebft t\u00ean c\u1ee7a h\u1ecdc sinh c\u00f9ng v\u1edbi l\u1edbp \u0111ang theo h\u1ecdc, t\u1ea1o danh s\u00e1ch cho tr\u01b0\u1eddng.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/grade_school.php"
+            },
+            "hamming": {
+                "rank": 22,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ednh s\u1ef1 kh\u00e1c bi\u1ec7t Hamming gi\u1eefa hai chu\u1ed7i DNA.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/hamming.php"
+            },
+            "rna-transcription": {
+                "rank": 23,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, tr\u1ea3 v\u1ec1 m\u00e3 b\u1ed5 sung RNA c\u1ee7a n\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/rna_transcription.php"
+            },
+            "nth-prime": {
+                "rank": 26,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t s\u1ed1 n, h\u00e3y x\u00e1c \u0111\u1ecbnh s\u1ed1 nguy\u00ean t\u1ed1 th\u1ee9 n l\u00e0 bao nhi\u00eau.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/nth_prime.php"
+            },
+            "nucleotide-count": {
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, h\u00e3y t\u00ednh s\u1ed1 l\u1ea7n m\u1ed7i Nucleotide xu\u1ea5t hi\u1ec7n trong chu\u1ed7i.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/nucleotide_count.php"
+            },
+            "sieve": {
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "S\u1eed d\u1ee5ng s\u00e0ng Eratosthenes \u0111\u1ec3 t\u00ecm t\u1ea5t c\u1ea3 c\u00e1c s\u1ed1 nguy\u00ean t\u1ed1 t\u1eeb 2 \u0111\u1ebfn m\u1ed9t s\u1ed1 cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/sieve.php"
+            },
             "accumulate": {
                 "rank": 99,
                 "difficulty": "easy",
@@ -4263,7 +4317,7 @@
             "collatz-conjecture": {
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "T\u00ednh s\u1ed1 b\u01b0\u1edbc \u0111\u1ec3 \u0111\u1ea1t t\u1edbi 1 b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng ph\u1ecfng \u0111o\u00e1n Collatz.",
                 "image": "",
                 "name": "",
                 "status": 1,
@@ -4344,29 +4398,11 @@
             "gigasecond": {
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "Cho m\u1ed9t th\u1eddi \u0111i\u1ec3m, h\u00e3y x\u00e1c \u0111\u1ecbnh th\u1eddi \u0111i\u1ec3m \u0111\u00f3 sau khi m\u1ed9t giga gi\u00e2y tr\u00f4i qua.",
                 "image": "",
                 "name": "",
                 "status": 1,
                 "path": "\/gigasecond.php"
-            },
-            "grade-school": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/grade_school.php"
-            },
-            "hamming": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/hamming.php"
             },
             "high-scores": {
                 "rank": 99,
@@ -4467,24 +4503,6 @@
                 "status": 1,
                 "path": "\/minesweeper.php"
             },
-            "nth-prime": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/nth_prime.php"
-            },
-            "nucleotide-count": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/nucleotide_count.php"
-            },
             "ocr-numbers": {
                 "rank": 99,
                 "difficulty": "easy",
@@ -4568,7 +4586,7 @@
             },
             "queen-attack": {
                 "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -4592,15 +4610,6 @@
                 "name": "",
                 "status": 1,
                 "path": "\/resistor_color.php"
-            },
-            "rna-transcription": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/rna_transcription.php"
             },
             "robot-name": {
                 "rank": 99,
@@ -4664,15 +4673,6 @@
                 "name": "",
                 "status": 1,
                 "path": "\/series.php"
-            },
-            "sieve": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/sieve.php"
             },
             "simple-cipher": {
                 "rank": 99,
@@ -4938,6 +4938,69 @@
                 "name": "",
                 "status": 1
             },
+            "grade-school": {
+                "path": "\/grade_school.js",
+                "rank": 21,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho bi\u1ebft t\u00ean c\u1ee7a h\u1ecdc sinh c\u00f9ng v\u1edbi l\u1edbp \u0111ang theo h\u1ecdc, t\u1ea1o danh s\u00e1ch cho tr\u01b0\u1eddng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "hamming": {
+                "path": "\/hamming.js",
+                "rank": 22,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ednh s\u1ef1 kh\u00e1c bi\u1ec7t Hamming gi\u1eefa hai chu\u1ed7i DNA.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "rna-transcription": {
+                "path": "\/rna_transcription.js",
+                "rank": 23,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, tr\u1ea3 v\u1ec1 m\u00e3 b\u1ed5 sung RNA c\u1ee7a n\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "nth-prime": {
+                "path": "\/nth_prime.js",
+                "rank": 26,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t s\u1ed1 n, h\u00e3y x\u00e1c \u0111\u1ecbnh s\u1ed1 nguy\u00ean t\u1ed1 th\u1ee9 n l\u00e0 bao nhi\u00eau.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "nucleotide-count": {
+                "path": "\/nucleotide_count.js",
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t chu\u1ed7i DNA, h\u00e3y t\u00ednh s\u1ed1 l\u1ea7n m\u1ed7i Nucleotide xu\u1ea5t hi\u1ec7n trong chu\u1ed7i.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "sieve": {
+                "path": "\/sieve.js",
+                "rank": 28,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "S\u1eed d\u1ee5ng s\u00e0ng Eratosthenes \u0111\u1ec3 t\u00ecm t\u1ea5t c\u1ea3 c\u00e1c s\u1ed1 nguy\u00ean t\u1ed1 t\u1eeb 2 \u0111\u1ebfn m\u1ed9t s\u1ed1 cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "say": {
+                "path": "\/say.js",
+                "rank": 30,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: hard",
+                "description": "Cho m\u1ed9t s\u1ed1 t\u1eeb 0 \u0111\u1ebfn 999.999.999.999, h\u00e3y \u0111\u00e1nh v\u1ea7n s\u1ed1 \u0111\u00f3 b\u1eb1ng ti\u1ebfng Anh.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
             "accumulate": {
                 "path": "\/accumulate.js",
                 "rank": 99,
@@ -5113,7 +5176,7 @@
                 "path": "\/collatz_conjecture.js",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "T\u00ednh s\u1ed1 b\u01b0\u1edbc \u0111\u1ec3 \u0111\u1ea1t t\u1edbi 1 b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng ph\u1ecfng \u0111o\u00e1n Collatz.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -5248,7 +5311,7 @@
                 "path": "\/gigasecond.js",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "Cho m\u1ed9t th\u1eddi \u0111i\u1ec3m, h\u00e3y x\u00e1c \u0111\u1ecbnh th\u1eddi \u0111i\u1ec3m \u0111\u00f3 sau khi m\u1ed9t giga gi\u00e2y tr\u00f4i qua.",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -5262,28 +5325,10 @@
                 "name": "",
                 "status": 1
             },
-            "grade-school": {
-                "path": "\/grade_school.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "grep": {
                 "path": "\/grep.js",
                 "rank": 99,
                 "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "hamming": {
-                "path": "\/hamming.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5424,24 +5469,6 @@
                 "name": "",
                 "status": 1
             },
-            "nth-prime": {
-                "path": "\/nth_prime.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "nucleotide-count": {
-                "path": "\/nucleotide_count.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "ocr-numbers": {
                 "path": "\/ocr_numbers.js",
                 "rank": 99,
@@ -5571,7 +5598,7 @@
             "queen-attack": {
                 "path": "\/queen_attack.js",
                 "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5649,15 +5676,6 @@
                 "name": "",
                 "status": 1
             },
-            "rna-transcription": {
-                "path": "\/rna_transcription.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "robot-name": {
                 "path": "\/robot_name.js",
                 "rank": 99,
@@ -5721,15 +5739,6 @@
                 "name": "",
                 "status": 1
             },
-            "say": {
-                "path": "\/say.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "scale-generator": {
                 "path": "\/scale_generator.js",
                 "rank": 99,
@@ -5759,15 +5768,6 @@
             },
             "series": {
                 "path": "\/series.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "sieve": {
-                "path": "\/sieve.js",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
