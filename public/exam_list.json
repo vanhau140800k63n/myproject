@@ -257,17 +257,152 @@
                 "name": "",
                 "status": 1
             },
-            "all-your-base": {
-                "path": "\/all_your_base.cpp",
-                "rank": 99,
+            "secret-handshake": {
+                "path": "\/secret_handshake.cpp",
+                "rank": 31,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "Cho m\u1ed9t s\u1ed1 th\u1eadp ph\u00e2n, h\u00e3y chuy\u1ec3n n\u00f3 th\u00e0nh chu\u1ed7i s\u1ef1 ki\u1ec7n th\u00edch h\u1ee3p cho m\u1ed9t c\u00e1i b\u1eaft tay b\u00ed m\u1eadt.",
                 "image": "",
                 "name": "",
                 "status": 1
             },
             "allergies": {
                 "path": "\/allergies.cpp",
+                "rank": 32,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "D\u1ef1a v\u00e0o \u0111i\u1ec3m d\u1ecb \u1ee9ng c\u1ee7a m\u1ed9t ng\u01b0\u1eddi, h\u00e3y x\u00e1c \u0111\u1ecbnh xem h\u1ecd c\u00f3 b\u1ecb d\u1ecb \u1ee9ng v\u1edbi m\u1ed9t v\u1eadt ph\u1ea9m nh\u1ea5t \u0111\u1ecbnh hay kh\u00f4ng v\u00e0 danh s\u00e1ch \u0111\u1ea7y \u0111\u1ee7 c\u00e1c ch\u1ea5t d\u1ecb \u1ee9ng c\u1ee7a h\u1ecd.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "protein-translation": {
+                "path": "\/protein_translation.cpp",
+                "rank": 33,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "D\u1ecbch tr\u00ecnh t\u1ef1 RNA th\u00e0nh protein.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "sum-of-multiples": {
+                "path": "\/sum_of_multiples.cpp",
+                "rank": 34,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t s\u1ed1, t\u00ecm t\u1ed5ng c\u1ee7a t\u1ea5t c\u1ea3 c\u00e1c b\u1ed9i s\u1ed1 c\u1ee7a c\u00e1c s\u1ed1 c\u1ee5 th\u1ec3 nh\u01b0ng kh\u00f4ng bao g\u1ed3m s\u1ed1 \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "prime-factors": {
+                "path": "\/prime_factors.cpp",
+                "rank": 35,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh c\u00e1c th\u1eeba s\u1ed1 nguy\u00ean t\u1ed1 c\u1ee7a m\u1ed9t s\u1ed1 t\u1ef1 nhi\u00ean cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "robot-name": {
+                "path": "\/robot_name.cpp",
+                "rank": 36,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Qu\u1ea3n l\u00fd c\u00e0i \u0111\u1eb7t nh\u00e0 m\u00e1y robot.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "clock": {
+                "path": "\/clock.cpp",
+                "rank": 37,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Tri\u1ec3n khai \u0111\u1ed3ng h\u1ed3 x\u1eed l\u00fd th\u1eddi gian kh\u00f4ng c\u00f3 ng\u00e0y th\u00e1ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "meetup": {
+                "path": "\/meetup.cpp",
+                "rank": 38,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh ng\u00e0y g\u1eb7p m\u1eb7t.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "beer-song": {
+                "path": "\/beer_song.cpp",
+                "rank": 39,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "S\u1ea3n xu\u1ea5t l\u1eddi b\u00e0i h\u00e1t cho t\u00e1c ph\u1ea9m kinh \u0111i\u1ec3n \u0111\u01b0\u1ee3c y\u00eau th\u00edch, t\u00e1c ph\u1ea9m y\u00eau th\u00edch trong chuy\u1ebfn \u0111i th\u1ef1c t\u1ebf: 99 Bottles of Beer on the Wall.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "atbash-cipher": {
+                "path": "\/atbash_cipher.cpp",
+                "rank": 40,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Tri\u1ec3n khai m\u1eadt m\u00e3 atbash, m\u1ed9t h\u1ec7 th\u1ed1ng m\u00e3 h\u00f3a c\u1ed5 x\u01b0a \u0111\u01b0\u1ee3c t\u1ea1o ra \u1edf Trung \u0110\u00f4ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "trinary": {
+                "path": "\/trinary.cpp",
+                "rank": 41,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i s\u1ed1 ba, \u0111\u01b0\u1ee3c bi\u1ec3u th\u1ecb d\u01b0\u1edbi d\u1ea1ng chu\u1ed7i (v\u00ed d\u1ee5: '102012'), th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n t\u01b0\u01a1ng \u0111\u01b0\u01a1ng b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng c\u00e1c nguy\u00ean t\u1eafc \u0111\u1ea7u ti\u00ean.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "binary-search": {
+                "path": "\/binary_search.cpp",
+                "rank": 42,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Th\u1ef1c hi\u1ec7n thu\u1eadt to\u00e1n t\u00ecm ki\u1ebfm nh\u1ecb ph\u00e2n.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "phone-number": {
+                "path": "\/phone_number.cpp",
+                "rank": 43,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "D\u1ecdn d\u1eb9p c\u00e1c s\u1ed1 \u0111i\u1ec7n tho\u1ea1i do ng\u01b0\u1eddi d\u00f9ng nh\u1eadp \u0111\u1ec3 c\u00f3 th\u1ec3 g\u1eedi tin nh\u1eafn SMS.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "series": {
+                "path": "\/series.cpp",
+                "rank": 44,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t chu\u1ed7i ch\u1eef s\u1ed1, xu\u1ea5t ra t\u1ea5t c\u1ea3 c\u00e1c chu\u1ed7i con li\u1ec1n k\u1ec1 c\u00f3 \u0111\u1ed9 d\u00e0i `n` trong chu\u1ed7i \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "complex-numbers": {
+                "path": "\/complex_numbers.cpp",
+                "rank": 45,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Th\u1ef1c hi\u1ec7n s\u1ed1 ph\u1ee9c.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "food-chain": {
+                "path": "\/food_chain.cpp",
+                "rank": 46,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 chu\u1ed7i th\u1ee9c \u0103n",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "all-your-base": {
+                "path": "\/all_your_base.cpp",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -293,15 +428,6 @@
                 "name": "",
                 "status": 1
             },
-            "atbash-cipher": {
-                "path": "\/atbash_cipher.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "bank-account": {
                 "path": "\/bank_account.cpp",
                 "rank": 99,
@@ -311,26 +437,8 @@
                 "name": "",
                 "status": 1
             },
-            "beer-song": {
-                "path": "\/beer_song.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "binary": {
                 "path": "\/binary.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "binary-search": {
-                "path": "\/binary_search.cpp",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -365,29 +473,11 @@
                 "name": "",
                 "status": 1
             },
-            "clock": {
-                "path": "\/clock.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "collatz-conjecture": {
                 "path": "\/collatz_conjecture.cpp",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "T\u00ednh s\u1ed1 b\u01b0\u1edbc \u0111\u1ec3 \u0111\u1ea1t t\u1edbi 1 b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng ph\u1ecfng \u0111o\u00e1n Collatz.",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "complex-numbers": {
-                "path": "\/complex_numbers.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -421,15 +511,6 @@
             },
             "etl": {
                 "path": "\/etl.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "food-chain": {
-                "path": "\/food_chain.cpp",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -509,15 +590,6 @@
                 "name": "",
                 "status": 1
             },
-            "meetup": {
-                "path": "\/meetup.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "pascals-triangle": {
                 "path": "\/pascals_triangle.cpp",
                 "rank": 99,
@@ -536,46 +608,10 @@
                 "name": "",
                 "status": 1
             },
-            "phone-number": {
-                "path": "\/phone_number.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "prime-factors": {
-                "path": "\/prime_factors.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "protein-translation": {
-                "path": "\/protein_translation.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "queen-attack": {
                 "path": "\/queen_attack.cpp",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "robot-name": {
-                "path": "\/robot_name.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -608,44 +644,8 @@
                 "name": "",
                 "status": 1
             },
-            "secret-handshake": {
-                "path": "\/secret_handshake.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "series": {
-                "path": "\/series.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "simple-linked-list": {
                 "path": "\/simple_linked_list.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "sum-of-multiples": {
-                "path": "\/sum_of_multiples.cpp",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "trinary": {
-                "path": "\/trinary.cpp",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -845,6 +845,150 @@
                 "name": "",
                 "status": 1
             },
+            "secret-handshake": {
+                "path": "\/src\/main\/java\/secret_handshake.java",
+                "rank": 31,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t s\u1ed1 th\u1eadp ph\u00e2n, h\u00e3y chuy\u1ec3n n\u00f3 th\u00e0nh chu\u1ed7i s\u1ef1 ki\u1ec7n th\u00edch h\u1ee3p cho m\u1ed9t c\u00e1i b\u1eaft tay b\u00ed m\u1eadt.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "allergies": {
+                "path": "\/src\/main\/java\/allergies.java",
+                "rank": 32,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "D\u1ef1a v\u00e0o \u0111i\u1ec3m d\u1ecb \u1ee9ng c\u1ee7a m\u1ed9t ng\u01b0\u1eddi, h\u00e3y x\u00e1c \u0111\u1ecbnh xem h\u1ecd c\u00f3 b\u1ecb d\u1ecb \u1ee9ng v\u1edbi m\u1ed9t v\u1eadt ph\u1ea9m nh\u1ea5t \u0111\u1ecbnh hay kh\u00f4ng v\u00e0 danh s\u00e1ch \u0111\u1ea7y \u0111\u1ee7 c\u00e1c ch\u1ea5t d\u1ecb \u1ee9ng c\u1ee7a h\u1ecd.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "protein-translation": {
+                "path": "\/src\/main\/java\/protein_translation.java",
+                "rank": 33,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "D\u1ecbch tr\u00ecnh t\u1ef1 RNA th\u00e0nh protein.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "sum-of-multiples": {
+                "path": "\/src\/main\/java\/sum_of_multiples.java",
+                "rank": 34,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t s\u1ed1, t\u00ecm t\u1ed5ng c\u1ee7a t\u1ea5t c\u1ea3 c\u00e1c b\u1ed9i s\u1ed1 c\u1ee7a c\u00e1c s\u1ed1 c\u1ee5 th\u1ec3 nh\u01b0ng kh\u00f4ng bao g\u1ed3m s\u1ed1 \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "prime-factors": {
+                "path": "\/src\/main\/java\/prime_factors.java",
+                "rank": 35,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh c\u00e1c th\u1eeba s\u1ed1 nguy\u00ean t\u1ed1 c\u1ee7a m\u1ed9t s\u1ed1 t\u1ef1 nhi\u00ean cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "robot-name": {
+                "path": "\/src\/main\/java\/robot_name.java",
+                "rank": 36,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Qu\u1ea3n l\u00fd c\u00e0i \u0111\u1eb7t nh\u00e0 m\u00e1y robot.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "clock": {
+                "path": "\/src\/main\/java\/clock.java",
+                "rank": 37,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Tri\u1ec3n khai \u0111\u1ed3ng h\u1ed3 x\u1eed l\u00fd th\u1eddi gian kh\u00f4ng c\u00f3 ng\u00e0y th\u00e1ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "meetup": {
+                "path": "\/src\/main\/java\/meetup.java",
+                "rank": 38,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh ng\u00e0y g\u1eb7p m\u1eb7t.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "beer-song": {
+                "path": "\/src\/main\/java\/beer_song.java",
+                "rank": 39,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "S\u1ea3n xu\u1ea5t l\u1eddi b\u00e0i h\u00e1t cho t\u00e1c ph\u1ea9m kinh \u0111i\u1ec3n \u0111\u01b0\u1ee3c y\u00eau th\u00edch, t\u00e1c ph\u1ea9m y\u00eau th\u00edch trong chuy\u1ebfn \u0111i th\u1ef1c t\u1ebf: 99 Bottles of Beer on the Wall.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "atbash-cipher": {
+                "path": "\/src\/main\/java\/atbash_cipher.java",
+                "rank": 40,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Tri\u1ec3n khai m\u1eadt m\u00e3 atbash, m\u1ed9t h\u1ec7 th\u1ed1ng m\u00e3 h\u00f3a c\u1ed5 x\u01b0a \u0111\u01b0\u1ee3c t\u1ea1o ra \u1edf Trung \u0110\u00f4ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "trinary": {
+                "path": "\/src\/main\/java\/trinary.java",
+                "rank": 41,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i s\u1ed1 ba, \u0111\u01b0\u1ee3c bi\u1ec3u th\u1ecb d\u01b0\u1edbi d\u1ea1ng chu\u1ed7i (v\u00ed d\u1ee5: '102012'), th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n t\u01b0\u01a1ng \u0111\u01b0\u01a1ng b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng c\u00e1c nguy\u00ean t\u1eafc \u0111\u1ea7u ti\u00ean.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "binary-search": {
+                "path": "\/src\/main\/java\/binary_search.java",
+                "rank": 42,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Th\u1ef1c hi\u1ec7n thu\u1eadt to\u00e1n t\u00ecm ki\u1ebfm nh\u1ecb ph\u00e2n.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "phone-number": {
+                "path": "\/src\/main\/java\/phone_number.java",
+                "rank": 43,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "D\u1ecdn d\u1eb9p c\u00e1c s\u1ed1 \u0111i\u1ec7n tho\u1ea1i do ng\u01b0\u1eddi d\u00f9ng nh\u1eadp \u0111\u1ec3 c\u00f3 th\u1ec3 g\u1eedi tin nh\u1eafn SMS.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "series": {
+                "path": "\/src\/main\/java\/series.java",
+                "rank": 44,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t chu\u1ed7i ch\u1eef s\u1ed1, xu\u1ea5t ra t\u1ea5t c\u1ea3 c\u00e1c chu\u1ed7i con li\u1ec1n k\u1ec1 c\u00f3 \u0111\u1ed9 d\u00e0i `n` trong chu\u1ed7i \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "complex-numbers": {
+                "path": "\/src\/main\/java\/complex_numbers.java",
+                "rank": 45,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Th\u1ef1c hi\u1ec7n s\u1ed1 ph\u1ee9c.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "food-chain": {
+                "path": "\/src\/main\/java\/food_chain.java",
+                "rank": 46,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 chu\u1ed7i th\u1ee9c \u0103n",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
             "accumulate": {
                 "path": "\/src\/main\/java\/accumulate.java",
                 "rank": 99,
@@ -865,15 +1009,6 @@
             },
             "all-your-base": {
                 "path": "\/src\/main\/java\/all_your_base.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "allergies": {
-                "path": "\/src\/main\/java\/allergies.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -908,15 +1043,6 @@
                 "name": "",
                 "status": 1
             },
-            "atbash-cipher": {
-                "path": "\/src\/main\/java\/atbash_cipher.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "bank-account": {
                 "path": "\/src\/main\/java\/bank_account.java",
                 "rank": 99,
@@ -926,26 +1052,8 @@
                 "name": "",
                 "status": 1
             },
-            "beer-song": {
-                "path": "\/src\/main\/java\/beer_song.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "binary": {
                 "path": "\/src\/main\/java\/binary.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "binary-search": {
-                "path": "\/src\/main\/java\/binary_search.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -1007,29 +1115,11 @@
                 "name": "",
                 "status": 1
             },
-            "clock": {
-                "path": "\/src\/main\/java\/clock.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "collatz-conjecture": {
                 "path": "\/src\/main\/java\/collatz_conjecture.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "T\u00ednh s\u1ed1 b\u01b0\u1edbc \u0111\u1ec3 \u0111\u1ea1t t\u1edbi 1 b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng ph\u1ecfng \u0111o\u00e1n Collatz.",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "complex-numbers": {
-                "path": "\/src\/main\/java\/complex_numbers.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -1135,15 +1225,6 @@
             },
             "flatten-array": {
                 "path": "\/src\/main\/java\/flatten_array.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "food-chain": {
-                "path": "\/src\/main\/java\/food_chain.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -1331,15 +1412,6 @@
                 "name": "",
                 "status": 1
             },
-            "meetup": {
-                "path": "\/src\/main\/java\/meetup.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "micro-blog": {
                 "path": "\/src\/main\/java\/micro_blog.java",
                 "rank": 99,
@@ -1412,15 +1484,6 @@
                 "name": "",
                 "status": 1
             },
-            "phone-number": {
-                "path": "\/src\/main\/java\/phone_number.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "pig-latin": {
                 "path": "\/src\/main\/java\/pig_latin.java",
                 "rank": 99,
@@ -1441,24 +1504,6 @@
             },
             "pov": {
                 "path": "\/src\/main\/java\/pov.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "prime-factors": {
-                "path": "\/src\/main\/java\/prime_factors.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "protein-translation": {
-                "path": "\/src\/main\/java\/protein_translation.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -1547,15 +1592,6 @@
                 "name": "",
                 "status": 1
             },
-            "robot-name": {
-                "path": "\/src\/main\/java\/robot_name.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "robot-simulator": {
                 "path": "\/src\/main\/java\/robot_simulator.java",
                 "rank": 99,
@@ -1619,24 +1655,6 @@
                 "name": "",
                 "status": 1
             },
-            "secret-handshake": {
-                "path": "\/src\/main\/java\/secret_handshake.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "series": {
-                "path": "\/src\/main\/java\/series.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "sgf-parsing": {
                 "path": "\/src\/main\/java\/sgf_parsing.java",
                 "rank": 99,
@@ -1691,15 +1709,6 @@
                 "name": "",
                 "status": 1
             },
-            "sum-of-multiples": {
-                "path": "\/src\/main\/java\/sum_of_multiples.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "tournament": {
                 "path": "\/src\/main\/java\/tournament.java",
                 "rank": 99,
@@ -1720,15 +1729,6 @@
             },
             "tree-building": {
                 "path": "\/src\/main\/java\/tree_building.java",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "trinary": {
-                "path": "\/src\/main\/java\/trinary.java",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2099,17 +2099,116 @@
                 "name": "",
                 "status": 1
             },
-            "all-your-base": {
-                "path": "\/all_your_base.c",
-                "rank": 99,
+            "secret-handshake": {
+                "path": "\/secret_handshake.c",
+                "rank": 31,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
+                "description": "Cho m\u1ed9t s\u1ed1 th\u1eadp ph\u00e2n, h\u00e3y chuy\u1ec3n n\u00f3 th\u00e0nh chu\u1ed7i s\u1ef1 ki\u1ec7n th\u00edch h\u1ee3p cho m\u1ed9t c\u00e1i b\u1eaft tay b\u00ed m\u1eadt.",
                 "image": "",
                 "name": "",
                 "status": 1
             },
             "allergies": {
                 "path": "\/allergies.c",
+                "rank": 32,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "D\u1ef1a v\u00e0o \u0111i\u1ec3m d\u1ecb \u1ee9ng c\u1ee7a m\u1ed9t ng\u01b0\u1eddi, h\u00e3y x\u00e1c \u0111\u1ecbnh xem h\u1ecd c\u00f3 b\u1ecb d\u1ecb \u1ee9ng v\u1edbi m\u1ed9t v\u1eadt ph\u1ea9m nh\u1ea5t \u0111\u1ecbnh hay kh\u00f4ng v\u00e0 danh s\u00e1ch \u0111\u1ea7y \u0111\u1ee7 c\u00e1c ch\u1ea5t d\u1ecb \u1ee9ng c\u1ee7a h\u1ecd.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "sum-of-multiples": {
+                "path": "\/sum_of_multiples.c",
+                "rank": 34,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t s\u1ed1, t\u00ecm t\u1ed5ng c\u1ee7a t\u1ea5t c\u1ea3 c\u00e1c b\u1ed9i s\u1ed1 c\u1ee7a c\u00e1c s\u1ed1 c\u1ee5 th\u1ec3 nh\u01b0ng kh\u00f4ng bao g\u1ed3m s\u1ed1 \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "prime-factors": {
+                "path": "\/prime_factors.c",
+                "rank": 35,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh c\u00e1c th\u1eeba s\u1ed1 nguy\u00ean t\u1ed1 c\u1ee7a m\u1ed9t s\u1ed1 t\u1ef1 nhi\u00ean cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "clock": {
+                "path": "\/clock.c",
+                "rank": 37,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Tri\u1ec3n khai \u0111\u1ed3ng h\u1ed3 x\u1eed l\u00fd th\u1eddi gian kh\u00f4ng c\u00f3 ng\u00e0y th\u00e1ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "meetup": {
+                "path": "\/meetup.c",
+                "rank": 38,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh ng\u00e0y g\u1eb7p m\u1eb7t.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "beer-song": {
+                "path": "\/beer_song.c",
+                "rank": 39,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "S\u1ea3n xu\u1ea5t l\u1eddi b\u00e0i h\u00e1t cho t\u00e1c ph\u1ea9m kinh \u0111i\u1ec3n \u0111\u01b0\u1ee3c y\u00eau th\u00edch, t\u00e1c ph\u1ea9m y\u00eau th\u00edch trong chuy\u1ebfn \u0111i th\u1ef1c t\u1ebf: 99 Bottles of Beer on the Wall.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "atbash-cipher": {
+                "path": "\/atbash_cipher.c",
+                "rank": 40,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Tri\u1ec3n khai m\u1eadt m\u00e3 atbash, m\u1ed9t h\u1ec7 th\u1ed1ng m\u00e3 h\u00f3a c\u1ed5 x\u01b0a \u0111\u01b0\u1ee3c t\u1ea1o ra \u1edf Trung \u0110\u00f4ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "binary-search": {
+                "path": "\/binary_search.c",
+                "rank": 42,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Th\u1ef1c hi\u1ec7n thu\u1eadt to\u00e1n t\u00ecm ki\u1ebfm nh\u1ecb ph\u00e2n.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "phone-number": {
+                "path": "\/phone_number.c",
+                "rank": 43,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "D\u1ecdn d\u1eb9p c\u00e1c s\u1ed1 \u0111i\u1ec7n tho\u1ea1i do ng\u01b0\u1eddi d\u00f9ng nh\u1eadp \u0111\u1ec3 c\u00f3 th\u1ec3 g\u1eedi tin nh\u1eafn SMS.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "series": {
+                "path": "\/series.c",
+                "rank": 44,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t chu\u1ed7i ch\u1eef s\u1ed1, xu\u1ea5t ra t\u1ea5t c\u1ea3 c\u00e1c chu\u1ed7i con li\u1ec1n k\u1ec1 c\u00f3 \u0111\u1ed9 d\u00e0i `n` trong chu\u1ed7i \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "complex-numbers": {
+                "path": "\/complex_numbers.c",
+                "rank": 45,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Th\u1ef1c hi\u1ec7n s\u1ed1 ph\u1ee9c.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "all-your-base": {
+                "path": "\/all_your_base.c",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2135,35 +2234,8 @@
                 "name": "",
                 "status": 1
             },
-            "atbash-cipher": {
-                "path": "\/atbash_cipher.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "beer-song": {
-                "path": "\/beer_song.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "binary": {
                 "path": "\/binary.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "binary-search": {
-                "path": "\/binary_search.c",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2198,29 +2270,11 @@
                 "name": "",
                 "status": 1
             },
-            "clock": {
-                "path": "\/clock.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "collatz-conjecture": {
                 "path": "\/collatz_conjecture.c",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "T\u00ednh s\u1ed1 b\u01b0\u1edbc \u0111\u1ec3 \u0111\u1ea1t t\u1edbi 1 b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng ph\u1ecfng \u0111o\u00e1n Collatz.",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "complex-numbers": {
-                "path": "\/complex_numbers.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -2342,15 +2396,6 @@
                 "name": "",
                 "status": 1
             },
-            "meetup": {
-                "path": "\/meetup.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "minesweeper": {
                 "path": "\/minesweeper.c",
                 "rank": 99,
@@ -2387,26 +2432,8 @@
                 "name": "",
                 "status": 1
             },
-            "phone-number": {
-                "path": "\/phone_number.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "pig-latin": {
                 "path": "\/pig_latin.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "prime-factors": {
-                "path": "\/prime_factors.c",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2531,24 +2558,6 @@
                 "name": "",
                 "status": 1
             },
-            "secret-handshake": {
-                "path": "\/secret_handshake.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "series": {
-                "path": "\/series.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "square-root": {
                 "path": "\/square_root.c",
                 "rank": 99,
@@ -2560,15 +2569,6 @@
             },
             "sublist": {
                 "path": "\/sublist.c",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "sum-of-multiples": {
-                "path": "\/sum_of_multiples.c",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2795,6 +2795,150 @@
                 "name": "",
                 "status": 1
             },
+            "secret-handshake": {
+                "path": "\/secret_handshake.py",
+                "rank": 31,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t s\u1ed1 th\u1eadp ph\u00e2n, h\u00e3y chuy\u1ec3n n\u00f3 th\u00e0nh chu\u1ed7i s\u1ef1 ki\u1ec7n th\u00edch h\u1ee3p cho m\u1ed9t c\u00e1i b\u1eaft tay b\u00ed m\u1eadt.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "allergies": {
+                "path": "\/allergies.py",
+                "rank": 32,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "D\u1ef1a v\u00e0o \u0111i\u1ec3m d\u1ecb \u1ee9ng c\u1ee7a m\u1ed9t ng\u01b0\u1eddi, h\u00e3y x\u00e1c \u0111\u1ecbnh xem h\u1ecd c\u00f3 b\u1ecb d\u1ecb \u1ee9ng v\u1edbi m\u1ed9t v\u1eadt ph\u1ea9m nh\u1ea5t \u0111\u1ecbnh hay kh\u00f4ng v\u00e0 danh s\u00e1ch \u0111\u1ea7y \u0111\u1ee7 c\u00e1c ch\u1ea5t d\u1ecb \u1ee9ng c\u1ee7a h\u1ecd.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "protein-translation": {
+                "path": "\/protein_translation.py",
+                "rank": 33,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "D\u1ecbch tr\u00ecnh t\u1ef1 RNA th\u00e0nh protein.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "sum-of-multiples": {
+                "path": "\/sum_of_multiples.py",
+                "rank": 34,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t s\u1ed1, t\u00ecm t\u1ed5ng c\u1ee7a t\u1ea5t c\u1ea3 c\u00e1c b\u1ed9i s\u1ed1 c\u1ee7a c\u00e1c s\u1ed1 c\u1ee5 th\u1ec3 nh\u01b0ng kh\u00f4ng bao g\u1ed3m s\u1ed1 \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "prime-factors": {
+                "path": "\/prime_factors.py",
+                "rank": 35,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh c\u00e1c th\u1eeba s\u1ed1 nguy\u00ean t\u1ed1 c\u1ee7a m\u1ed9t s\u1ed1 t\u1ef1 nhi\u00ean cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "robot-name": {
+                "path": "\/robot_name.py",
+                "rank": 36,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Qu\u1ea3n l\u00fd c\u00e0i \u0111\u1eb7t nh\u00e0 m\u00e1y robot.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "clock": {
+                "path": "\/clock.py",
+                "rank": 37,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Tri\u1ec3n khai \u0111\u1ed3ng h\u1ed3 x\u1eed l\u00fd th\u1eddi gian kh\u00f4ng c\u00f3 ng\u00e0y th\u00e1ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "meetup": {
+                "path": "\/meetup.py",
+                "rank": 38,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh ng\u00e0y g\u1eb7p m\u1eb7t.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "beer-song": {
+                "path": "\/beer_song.py",
+                "rank": 39,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "S\u1ea3n xu\u1ea5t l\u1eddi b\u00e0i h\u00e1t cho t\u00e1c ph\u1ea9m kinh \u0111i\u1ec3n \u0111\u01b0\u1ee3c y\u00eau th\u00edch, t\u00e1c ph\u1ea9m y\u00eau th\u00edch trong chuy\u1ebfn \u0111i th\u1ef1c t\u1ebf: 99 Bottles of Beer on the Wall.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "atbash-cipher": {
+                "path": "\/atbash_cipher.py",
+                "rank": 40,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Tri\u1ec3n khai m\u1eadt m\u00e3 atbash, m\u1ed9t h\u1ec7 th\u1ed1ng m\u00e3 h\u00f3a c\u1ed5 x\u01b0a \u0111\u01b0\u1ee3c t\u1ea1o ra \u1edf Trung \u0110\u00f4ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "trinary": {
+                "path": "\/trinary.py",
+                "rank": 41,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i s\u1ed1 ba, \u0111\u01b0\u1ee3c bi\u1ec3u th\u1ecb d\u01b0\u1edbi d\u1ea1ng chu\u1ed7i (v\u00ed d\u1ee5: '102012'), th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n t\u01b0\u01a1ng \u0111\u01b0\u01a1ng b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng c\u00e1c nguy\u00ean t\u1eafc \u0111\u1ea7u ti\u00ean.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "binary-search": {
+                "path": "\/binary_search.py",
+                "rank": 42,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Th\u1ef1c hi\u1ec7n thu\u1eadt to\u00e1n t\u00ecm ki\u1ebfm nh\u1ecb ph\u00e2n.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "phone-number": {
+                "path": "\/phone_number.py",
+                "rank": 43,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "D\u1ecdn d\u1eb9p c\u00e1c s\u1ed1 \u0111i\u1ec7n tho\u1ea1i do ng\u01b0\u1eddi d\u00f9ng nh\u1eadp \u0111\u1ec3 c\u00f3 th\u1ec3 g\u1eedi tin nh\u1eafn SMS.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "series": {
+                "path": "\/series.py",
+                "rank": 44,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t chu\u1ed7i ch\u1eef s\u1ed1, xu\u1ea5t ra t\u1ea5t c\u1ea3 c\u00e1c chu\u1ed7i con li\u1ec1n k\u1ec1 c\u00f3 \u0111\u1ed9 d\u00e0i `n` trong chu\u1ed7i \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "complex-numbers": {
+                "path": "\/complex_numbers.py",
+                "rank": 45,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Th\u1ef1c hi\u1ec7n s\u1ed1 ph\u1ee9c.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "food-chain": {
+                "path": "\/food_chain.py",
+                "rank": 46,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 chu\u1ed7i th\u1ee9c \u0103n",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
             "accumulate": {
                 "path": "\/accumulate.py",
                 "rank": 99,
@@ -2815,15 +2959,6 @@
             },
             "all-your-base": {
                 "path": "\/all_your_base.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "allergies": {
-                "path": "\/allergies.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2858,15 +2993,6 @@
                 "name": "",
                 "status": 1
             },
-            "atbash-cipher": {
-                "path": "\/atbash_cipher.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "bank-account": {
                 "path": "\/bank_account.py",
                 "rank": 99,
@@ -2876,26 +3002,8 @@
                 "name": "",
                 "status": 1
             },
-            "beer-song": {
-                "path": "\/beer_song.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "binary": {
                 "path": "\/binary.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "binary-search": {
-                "path": "\/binary_search.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -2966,29 +3074,11 @@
                 "name": "",
                 "status": 1
             },
-            "clock": {
-                "path": "\/clock.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "collatz-conjecture": {
                 "path": "\/collatz_conjecture.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "T\u00ednh s\u1ed1 b\u01b0\u1edbc \u0111\u1ec3 \u0111\u1ea1t t\u1edbi 1 b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng ph\u1ecfng \u0111o\u00e1n Collatz.",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "complex-numbers": {
-                "path": "\/complex_numbers.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -3103,15 +3193,6 @@
             },
             "flatten-array": {
                 "path": "\/flatten_array.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "food-chain": {
-                "path": "\/food_chain.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -3308,15 +3389,6 @@
                 "name": "",
                 "status": 1
             },
-            "meetup": {
-                "path": "\/meetup.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "minesweeper": {
                 "path": "\/minesweeper.py",
                 "rank": 99,
@@ -3389,15 +3461,6 @@
                 "name": "",
                 "status": 1
             },
-            "phone-number": {
-                "path": "\/phone_number.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "pig-latin": {
                 "path": "\/pig_latin.py",
                 "rank": 99,
@@ -3427,24 +3490,6 @@
             },
             "pov": {
                 "path": "\/pov.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "prime-factors": {
-                "path": "\/prime_factors.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "protein-translation": {
-                "path": "\/protein_translation.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -3560,15 +3605,6 @@
                 "name": "",
                 "status": 1
             },
-            "robot-name": {
-                "path": "\/robot_name.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "robot-simulator": {
                 "path": "\/robot_simulator.py",
                 "rank": 99,
@@ -3641,24 +3677,6 @@
                 "name": "",
                 "status": 1
             },
-            "secret-handshake": {
-                "path": "\/secret_handshake.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "series": {
-                "path": "\/series.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "sgf-parsing": {
                 "path": "\/sgf_parsing.py",
                 "rank": 99,
@@ -3722,15 +3740,6 @@
                 "name": "",
                 "status": 1
             },
-            "sum-of-multiples": {
-                "path": "\/sum_of_multiples.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "tournament": {
                 "path": "\/tournament.py",
                 "rank": 99,
@@ -3751,15 +3760,6 @@
             },
             "tree-building": {
                 "path": "\/tree_building.py",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "trinary": {
-                "path": "\/trinary.py",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -4179,6 +4179,114 @@
                 "status": 1,
                 "path": "\/sieve.php"
             },
+            "allergies": {
+                "rank": 32,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "D\u1ef1a v\u00e0o \u0111i\u1ec3m d\u1ecb \u1ee9ng c\u1ee7a m\u1ed9t ng\u01b0\u1eddi, h\u00e3y x\u00e1c \u0111\u1ecbnh xem h\u1ecd c\u00f3 b\u1ecb d\u1ecb \u1ee9ng v\u1edbi m\u1ed9t v\u1eadt ph\u1ea9m nh\u1ea5t \u0111\u1ecbnh hay kh\u00f4ng v\u00e0 danh s\u00e1ch \u0111\u1ea7y \u0111\u1ee7 c\u00e1c ch\u1ea5t d\u1ecb \u1ee9ng c\u1ee7a h\u1ecd.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/allergies.php"
+            },
+            "sum-of-multiples": {
+                "rank": 34,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t s\u1ed1, t\u00ecm t\u1ed5ng c\u1ee7a t\u1ea5t c\u1ea3 c\u00e1c b\u1ed9i s\u1ed1 c\u1ee7a c\u00e1c s\u1ed1 c\u1ee5 th\u1ec3 nh\u01b0ng kh\u00f4ng bao g\u1ed3m s\u1ed1 \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/sum_of_multiples.php"
+            },
+            "prime-factors": {
+                "rank": 35,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh c\u00e1c th\u1eeba s\u1ed1 nguy\u00ean t\u1ed1 c\u1ee7a m\u1ed9t s\u1ed1 t\u1ef1 nhi\u00ean cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/prime_factors.php"
+            },
+            "robot-name": {
+                "rank": 36,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Qu\u1ea3n l\u00fd c\u00e0i \u0111\u1eb7t nh\u00e0 m\u00e1y robot.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/robot_name.php"
+            },
+            "clock": {
+                "rank": 37,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Tri\u1ec3n khai \u0111\u1ed3ng h\u1ed3 x\u1eed l\u00fd th\u1eddi gian kh\u00f4ng c\u00f3 ng\u00e0y th\u00e1ng.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/clock.php"
+            },
+            "meetup": {
+                "rank": 38,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh ng\u00e0y g\u1eb7p m\u1eb7t.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/meetup.php"
+            },
+            "beer-song": {
+                "rank": 39,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "S\u1ea3n xu\u1ea5t l\u1eddi b\u00e0i h\u00e1t cho t\u00e1c ph\u1ea9m kinh \u0111i\u1ec3n \u0111\u01b0\u1ee3c y\u00eau th\u00edch, t\u00e1c ph\u1ea9m y\u00eau th\u00edch trong chuy\u1ebfn \u0111i th\u1ef1c t\u1ebf: 99 Bottles of Beer on the Wall.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/beer_song.php"
+            },
+            "atbash-cipher": {
+                "rank": 40,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Tri\u1ec3n khai m\u1eadt m\u00e3 atbash, m\u1ed9t h\u1ec7 th\u1ed1ng m\u00e3 h\u00f3a c\u1ed5 x\u01b0a \u0111\u01b0\u1ee3c t\u1ea1o ra \u1edf Trung \u0110\u00f4ng.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/atbash_cipher.php"
+            },
+            "trinary": {
+                "rank": 41,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i s\u1ed1 ba, \u0111\u01b0\u1ee3c bi\u1ec3u th\u1ecb d\u01b0\u1edbi d\u1ea1ng chu\u1ed7i (v\u00ed d\u1ee5: '102012'), th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n t\u01b0\u01a1ng \u0111\u01b0\u01a1ng b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng c\u00e1c nguy\u00ean t\u1eafc \u0111\u1ea7u ti\u00ean.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/trinary.php"
+            },
+            "binary-search": {
+                "rank": 42,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Th\u1ef1c hi\u1ec7n thu\u1eadt to\u00e1n t\u00ecm ki\u1ebfm nh\u1ecb ph\u00e2n.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/binary_search.php"
+            },
+            "phone-number": {
+                "rank": 43,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "D\u1ecdn d\u1eb9p c\u00e1c s\u1ed1 \u0111i\u1ec7n tho\u1ea1i do ng\u01b0\u1eddi d\u00f9ng nh\u1eadp \u0111\u1ec3 c\u00f3 th\u1ec3 g\u1eedi tin nh\u1eafn SMS.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/phone_number.php"
+            },
+            "series": {
+                "rank": 44,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t chu\u1ed7i ch\u1eef s\u1ed1, xu\u1ea5t ra t\u1ea5t c\u1ea3 c\u00e1c chu\u1ed7i con li\u1ec1n k\u1ec1 c\u00f3 \u0111\u1ed9 d\u00e0i `n` trong chu\u1ed7i \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1,
+                "path": "\/series.php"
+            },
             "accumulate": {
                 "rank": 99,
                 "difficulty": "easy",
@@ -4206,15 +4314,6 @@
                 "status": 1,
                 "path": "\/all_your_base.php"
             },
-            "allergies": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/allergies.php"
-            },
             "anagram": {
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
@@ -4233,24 +4332,6 @@
                 "status": 1,
                 "path": "\/armstrong_numbers.php"
             },
-            "atbash-cipher": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/atbash_cipher.php"
-            },
-            "beer-song": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/beer_song.php"
-            },
             "binary": {
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
@@ -4259,15 +4340,6 @@
                 "name": "",
                 "status": 1,
                 "path": "\/binary.php"
-            },
-            "binary-search": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/binary_search.php"
             },
             "bob": {
                 "rank": 99,
@@ -4304,15 +4376,6 @@
                 "name": "",
                 "status": 1,
                 "path": "\/change.php"
-            },
-            "clock": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/clock.php"
             },
             "collatz-conjecture": {
                 "rank": 99,
@@ -4485,15 +4548,6 @@
                 "status": 1,
                 "path": "\/matrix.php"
             },
-            "meetup": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/meetup.php"
-            },
             "minesweeper": {
                 "rank": 99,
                 "difficulty": "easy",
@@ -4548,15 +4602,6 @@
                 "status": 1,
                 "path": "\/perfect_numbers.php"
             },
-            "phone-number": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/phone_number.php"
-            },
             "pig-latin": {
                 "rank": 99,
                 "difficulty": "easy",
@@ -4574,15 +4619,6 @@
                 "name": "",
                 "status": 1,
                 "path": "\/poker.php"
-            },
-            "prime-factors": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/prime_factors.php"
             },
             "queen-attack": {
                 "rank": 99,
@@ -4610,15 +4646,6 @@
                 "name": "",
                 "status": 1,
                 "path": "\/resistor_color.php"
-            },
-            "robot-name": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/robot_name.php"
             },
             "robot-simulator": {
                 "rank": 99,
@@ -4665,15 +4692,6 @@
                 "status": 1,
                 "path": "\/scrabble_score.php"
             },
-            "series": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/series.php"
-            },
             "simple-cipher": {
                 "rank": 99,
                 "difficulty": "easy",
@@ -4682,15 +4700,6 @@
                 "name": "",
                 "status": 1,
                 "path": "\/simple_cipher.php"
-            },
-            "sum-of-multiples": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/sum_of_multiples.php"
             },
             "tournament": {
                 "rank": 99,
@@ -4709,15 +4718,6 @@
                 "name": "",
                 "status": 1,
                 "path": "\/transpose.php"
-            },
-            "trinary": {
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1,
-                "path": "\/trinary.php"
             },
             "variable-length-quantity": {
                 "rank": 99,
@@ -5001,6 +5001,150 @@
                 "name": "",
                 "status": 1
             },
+            "secret-handshake": {
+                "path": "\/secret_handshake.js",
+                "rank": 31,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t s\u1ed1 th\u1eadp ph\u00e2n, h\u00e3y chuy\u1ec3n n\u00f3 th\u00e0nh chu\u1ed7i s\u1ef1 ki\u1ec7n th\u00edch h\u1ee3p cho m\u1ed9t c\u00e1i b\u1eaft tay b\u00ed m\u1eadt.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "allergies": {
+                "path": "\/allergies.js",
+                "rank": 32,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "D\u1ef1a v\u00e0o \u0111i\u1ec3m d\u1ecb \u1ee9ng c\u1ee7a m\u1ed9t ng\u01b0\u1eddi, h\u00e3y x\u00e1c \u0111\u1ecbnh xem h\u1ecd c\u00f3 b\u1ecb d\u1ecb \u1ee9ng v\u1edbi m\u1ed9t v\u1eadt ph\u1ea9m nh\u1ea5t \u0111\u1ecbnh hay kh\u00f4ng v\u00e0 danh s\u00e1ch \u0111\u1ea7y \u0111\u1ee7 c\u00e1c ch\u1ea5t d\u1ecb \u1ee9ng c\u1ee7a h\u1ecd.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "protein-translation": {
+                "path": "\/protein_translation.js",
+                "rank": 33,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "D\u1ecbch tr\u00ecnh t\u1ef1 RNA th\u00e0nh protein.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "sum-of-multiples": {
+                "path": "\/sum_of_multiples.js",
+                "rank": 34,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Cho m\u1ed9t s\u1ed1, t\u00ecm t\u1ed5ng c\u1ee7a t\u1ea5t c\u1ea3 c\u00e1c b\u1ed9i s\u1ed1 c\u1ee7a c\u00e1c s\u1ed1 c\u1ee5 th\u1ec3 nh\u01b0ng kh\u00f4ng bao g\u1ed3m s\u1ed1 \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "prime-factors": {
+                "path": "\/prime_factors.js",
+                "rank": 35,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh c\u00e1c th\u1eeba s\u1ed1 nguy\u00ean t\u1ed1 c\u1ee7a m\u1ed9t s\u1ed1 t\u1ef1 nhi\u00ean cho tr\u01b0\u1edbc.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "robot-name": {
+                "path": "\/robot_name.js",
+                "rank": 36,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Qu\u1ea3n l\u00fd c\u00e0i \u0111\u1eb7t nh\u00e0 m\u00e1y robot.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "clock": {
+                "path": "\/clock.js",
+                "rank": 37,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Tri\u1ec3n khai \u0111\u1ed3ng h\u1ed3 x\u1eed l\u00fd th\u1eddi gian kh\u00f4ng c\u00f3 ng\u00e0y th\u00e1ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "meetup": {
+                "path": "\/meetup.js",
+                "rank": 38,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "T\u00ednh ng\u00e0y g\u1eb7p m\u1eb7t.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "beer-song": {
+                "path": "\/beer_song.js",
+                "rank": 39,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "S\u1ea3n xu\u1ea5t l\u1eddi b\u00e0i h\u00e1t cho t\u00e1c ph\u1ea9m kinh \u0111i\u1ec3n \u0111\u01b0\u1ee3c y\u00eau th\u00edch, t\u00e1c ph\u1ea9m y\u00eau th\u00edch trong chuy\u1ebfn \u0111i th\u1ef1c t\u1ebf: 99 Bottles of Beer on the Wall.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "atbash-cipher": {
+                "path": "\/atbash_cipher.js",
+                "rank": 40,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Tri\u1ec3n khai m\u1eadt m\u00e3 atbash, m\u1ed9t h\u1ec7 th\u1ed1ng m\u00e3 h\u00f3a c\u1ed5 x\u01b0a \u0111\u01b0\u1ee3c t\u1ea1o ra \u1edf Trung \u0110\u00f4ng.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "trinary": {
+                "path": "\/trinary.js",
+                "rank": 41,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "Chuy\u1ec3n \u0111\u1ed5i s\u1ed1 ba, \u0111\u01b0\u1ee3c bi\u1ec3u th\u1ecb d\u01b0\u1edbi d\u1ea1ng chu\u1ed7i (v\u00ed d\u1ee5: '102012'), th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n t\u01b0\u01a1ng \u0111\u01b0\u01a1ng b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng c\u00e1c nguy\u00ean t\u1eafc \u0111\u1ea7u ti\u00ean.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "binary-search": {
+                "path": "\/binary_search.js",
+                "rank": 42,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Th\u1ef1c hi\u1ec7n thu\u1eadt to\u00e1n t\u00ecm ki\u1ebfm nh\u1ecb ph\u00e2n.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "phone-number": {
+                "path": "\/phone_number.js",
+                "rank": 43,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "D\u1ecdn d\u1eb9p c\u00e1c s\u1ed1 \u0111i\u1ec7n tho\u1ea1i do ng\u01b0\u1eddi d\u00f9ng nh\u1eadp \u0111\u1ec3 c\u00f3 th\u1ec3 g\u1eedi tin nh\u1eafn SMS.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "series": {
+                "path": "\/series.js",
+                "rank": 44,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Cho m\u1ed9t chu\u1ed7i ch\u1eef s\u1ed1, xu\u1ea5t ra t\u1ea5t c\u1ea3 c\u00e1c chu\u1ed7i con li\u1ec1n k\u1ec1 c\u00f3 \u0111\u1ed9 d\u00e0i `n` trong chu\u1ed7i \u0111\u00f3.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "complex-numbers": {
+                "path": "\/complex_numbers.js",
+                "rank": 45,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: medium",
+                "description": "Th\u1ef1c hi\u1ec7n s\u1ed1 ph\u1ee9c.",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
+            "food-chain": {
+                "path": "\/food_chain.js",
+                "rank": 46,
+                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
+                "description": "T\u00ecm hi\u1ec3u v\u1ec1 chu\u1ed7i th\u1ee9c \u0103n",
+                "image": "",
+                "name": "",
+                "status": 1
+            },
             "accumulate": {
                 "path": "\/accumulate.js",
                 "rank": 99,
@@ -5021,15 +5165,6 @@
             },
             "all-your-base": {
                 "path": "\/all_your_base.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "allergies": {
-                "path": "\/allergies.js",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -5064,15 +5199,6 @@
                 "name": "",
                 "status": 1
             },
-            "atbash-cipher": {
-                "path": "\/atbash_cipher.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "bank-account": {
                 "path": "\/bank_account.js",
                 "rank": 99,
@@ -5082,26 +5208,8 @@
                 "name": "",
                 "status": 1
             },
-            "beer-song": {
-                "path": "\/beer_song.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "binary": {
                 "path": "\/binary.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "binary-search": {
-                "path": "\/binary_search.js",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
@@ -5163,29 +5271,11 @@
                 "name": "",
                 "status": 1
             },
-            "clock": {
-                "path": "\/clock.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "collatz-conjecture": {
                 "path": "\/collatz_conjecture.js",
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "T\u00ednh s\u1ed1 b\u01b0\u1edbc \u0111\u1ec3 \u0111\u1ea1t t\u1edbi 1 b\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng ph\u1ecfng \u0111o\u00e1n Collatz.",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "complex-numbers": {
-                "path": "\/complex_numbers.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
                 "image": "",
                 "name": "",
                 "status": 1
@@ -5284,15 +5374,6 @@
                 "path": "\/flatten_array.js",
                 "rank": 99,
                 "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "food-chain": {
-                "path": "\/food_chain.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5451,15 +5532,6 @@
                 "name": "",
                 "status": 1
             },
-            "meetup": {
-                "path": "\/meetup.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "minesweeper": {
                 "path": "\/minesweeper.js",
                 "rank": 99,
@@ -5514,15 +5586,6 @@
                 "name": "",
                 "status": 1
             },
-            "phone-number": {
-                "path": "\/phone_number.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "pig-latin": {
                 "path": "\/pig_latin.js",
                 "rank": 99,
@@ -5550,28 +5613,10 @@
                 "name": "",
                 "status": 1
             },
-            "prime-factors": {
-                "path": "\/prime_factors.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "promises": {
                 "path": "\/promises.js",
                 "rank": 99,
                 "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "protein-translation": {
-                "path": "\/protein_translation.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
@@ -5676,15 +5721,6 @@
                 "name": "",
                 "status": 1
             },
-            "robot-name": {
-                "path": "\/robot_name.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "robot-simulator": {
                 "path": "\/robot_simulator.js",
                 "rank": 99,
@@ -5757,24 +5793,6 @@
                 "name": "",
                 "status": 1
             },
-            "secret-handshake": {
-                "path": "\/secret_handshake.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "series": {
-                "path": "\/series.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "simple-cipher": {
                 "path": "\/simple_cipher.js",
                 "rank": 99,
@@ -5829,15 +5847,6 @@
                 "name": "",
                 "status": 1
             },
-            "sum-of-multiples": {
-                "path": "\/sum_of_multiples.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
             "tournament": {
                 "path": "\/tournament.js",
                 "rank": 99,
@@ -5851,15 +5860,6 @@
                 "path": "\/transpose.js",
                 "rank": 99,
                 "difficulty": "easy",
-                "description": "",
-                "image": "",
-                "name": "",
-                "status": 1
-            },
-            "trinary": {
-                "path": "\/trinary.js",
-                "rank": 99,
-                "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
                 "image": "",
                 "name": "",
