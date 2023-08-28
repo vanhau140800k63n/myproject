@@ -24,6 +24,8 @@
             <a href="{{ route('learn.lesson_intro', 'laravel') }}">Laravel</a>
             <a href="{{ route('learn.lesson_intro', 'reactjs') }}">ReactJs</a>
             <a href="{{ route('learn.lesson_intro', 'vuejs') }}">VueJs</a>
+            <a href="{{ route('learn.lesson_intro', 'spring') }}">Spring</a>
+            <a href="{{ route('learn.lesson_intro', 'flutter') }}">Flutter</a>
         </nav>
     </div>
     <div class="footer__copyright__text">
