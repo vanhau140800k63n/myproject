@@ -1283,7 +1283,7 @@ code * {
     box-shadow: 0 0 #0000, 0 0 #0000, 0px 4px 24px 0px rgba(79, 114, 205, 0.3);
     border-radius: 5px;
     margin-bottom: 40px;
-    border: 2px solid rgb(167, 146, 186);
+    border: 2px solid #9ca3af;
 }
 
 .exercise_banner_img {
