@@ -278,7 +278,9 @@
             }
         }).done(function(data) {
             $('.icon_list img').each(function() {
-                $(this).attr('src', window.location.origin + '/' + data[$(this).attr('src')]);
+                if (!data[$(this).attr('src')].includes("https://cdn-icons-png.flaticon.com")) {
+                    $(this).attr('src', window.location.origin + '/' + data[$(this).attr('src')]);
+                }
             })
             return true;
         }).fail(function(e) {
