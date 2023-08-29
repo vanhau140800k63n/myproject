@@ -77,7 +77,7 @@
             <div class="exercise_banner">
                 <img class="exercise_banner_img" src="{{ App\Config\CommonConstants::LANG_LOGO[$course->name] }}">
                 <div class="exercise_banner_info">
-                    <div class="exercise_banner_title">Học {{ strtoupper($course->full_name) }} bắt đầu với "Hello, World!"</div>
+                    <div class="exercise_banner_title">Học {{ strtoupper($course->full_name) }} bắt đầu với Hello, World</div>
                     <div class="exercise_banner_content">Tự làm quen với các bài tập và gửi đoạn code đầu tiên của bạn bằng cách hoàn thành bài đầu tiên "Hello, World!".</div>
                     <a class="exercise_banner_btn" href="{{ route('exam.home') }}">Luyện tập</a>
                 </div>
@@ -178,7 +178,7 @@
                     <div class="catalogue_title">Mục lục</div>
                     <div class="catalogue_content">
                         <?php
-                        $catalogue_item_index = 1;
+                        $catalogue_item_index = 2;
                         ?>
                         @foreach ($lesson_detail as $catalogue_item)
                             <div class="catalogue_item_title" index="{{ ++$catalogue_item_index }}">

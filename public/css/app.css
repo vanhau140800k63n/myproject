@@ -1313,11 +1313,16 @@ code * {
     font-weight: 600;
     font-size: 16px;
     padding: 10px 20px;
-    background: #383f69;
+    background: #6a7091;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 #0000, 0 0 #0000, 0px 4px 24px 0px rgba(79, 114, 205, 0.3);
     display: inline-block;
+    transition: 0.1s;
+}
+
+.exercise_banner:hover .exercise_banner_btn {
+    background: #383f69;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
