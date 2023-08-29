@@ -132,4 +132,8 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
     {
         return $this->user->inRandomOrder()->first();
     }
+
+    public function findGoogleUser($email, $google_id) {
+        return $this->user->where('google_id', $google_id)->orWhere('email', $email)->first();
+    }
 }

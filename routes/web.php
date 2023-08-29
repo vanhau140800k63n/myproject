@@ -39,6 +39,8 @@ Route::get('/auto_html', [PostController::class, 'autoHtml'])->name('auto_html')
 Route::post('/compile_html', [PostController::class, 'compileHtml'])->name('compile_html');
 Route::get('/get_noti', [NotiController::class, 'getNoti'])->name('get_noti');
 Route::get('/random_template_banner', [TemplateController::class, 'randomTemplateBanner'])->name('random_template_banner');
+Route::get('/auth/google/callback', [AuthController::class, 'authGoogleCallback'])->name('auth_google_callback');
+Route::get('/auth/google', [AuthController::class, 'authGoogle'])->name('auth_google');
 
 Route::prefix('template')->name('template.')->group(function () {
     Route::get('/{key}', [TemplateController::class, 'listTemplate'])->name('list');

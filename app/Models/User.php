@@ -17,6 +17,7 @@ class User extends Authenticatable
         'token',
         'token_expired',
         'phone',
-        'role'
+        'role',
+        'google_id'
     ];
 }

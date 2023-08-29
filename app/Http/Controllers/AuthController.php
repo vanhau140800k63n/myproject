@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Mail;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Session;
+use Laravel\Socialite\Facades\Socialite;
+use Illuminate\Support\Facades\Hash;
+use App\Exceptions\PageException;
+use Throwable;
 
 class AuthController extends Controller
 {
@@ -268,5 +272,37 @@ class AuthController extends Controller
         $user = $this->userRepository->updateUserInfo($dataUpdate);
 
         return redirect()->back()->with('noti', 'Cập nhật thông tin thành công');
+    }
+
+    public function authGoogle()
+    {
+        return Socialite::driver('google')->redirect();
+    }
+
+    public function authGoogleCallback()
+    {
+        try {
+            $user = Socialite::driver('google')->user();
+            $findUser = $this->userRepository->findGoogleUser($user->email, $user->id);
+
+            if ($findUser) {
+                Auth::login($findUser);
+                return redirect()->route('home');
+            } else {
+                $dataGoogleUser = [
+                    'first_name' => $user->name,
+                    'email' => $user->email,
+                    'google_id' => $user->id,
+                    'password' => Hash::make('devsnevn')
+                ];
+
+                $newUser = $this->userRepository->createUser($dataGoogleUser);
+
+                Auth::login($newUser);
+                return redirect()->route('home');
+            }
+        } catch (Throwable $e) {
+            throw new PageException();
+        }
     }
 }
