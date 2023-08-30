@@ -10,6 +10,23 @@ body {
     margin: 0 auto;
 }
 
+.google-btn {}
+
+.google-btn-box {
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid rgb(205, 226, 238);
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    margin-bottom: 20px;
+}
+
+.google-btn-text {
+    font-weight: 600;
+    margin: 0 20px;
+}
+
 input {
     outline: none;
     border: none;
@@ -47,13 +64,13 @@ button:hover {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 .bg1 {
@@ -356,6 +373,7 @@ a {
     text-align: center;
     color: #c80000;
 }
+
 /*//////////////////////////////////////////////////////////////////
 [ Responsive ]*/
 

@@ -55,11 +55,11 @@
                     </div>
 
                     <a href="{{ url('auth/google') }}" class="google-btn">
-                        <div class="google-icon-wrapper">
+                        <div class="google-btn-box">
                             <img class="google-icon"
                                 src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+                            <p class="google-btn-text">Đăng nhập với Google</p>
                         </div>
-                        <p class="btn-text"><b>Sign in with google</b></p>
                     </a>
 
                     {{-- <div class="txt1 text-center">
