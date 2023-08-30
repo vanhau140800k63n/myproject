@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Config\AdminConstants;
 use App\Config\CommonConstants;
+use App\Config\PostConstants;
 use App\Exceptions\PageException;
 use App\Repositories\ActionRepositoryInterface;
 use App\Repositories\CategoryRepositoryInterface;
@@ -466,18 +467,11 @@ class PostController extends Controller
 
     public function autoHtml()
     {
-        $example = '<style>
-    /* Your code here */
-    .example {
-        color: #ed5829;
-        background: #000;
-        padding: 30px;
-    }
-</style>
-<body>
-    /* Your code here */
-    <div class="example">Example</div>
-</body>';
-        return view('pages.post.auto_html', compact('example'));
+        $example = PostConstants::AUTO_HTML_EXAMPLE;
+
+        $exam_list_json = file_get_contents('exam_list.json');
+        $exam_list = json_decode($exam_list_json, true);
+
+        return view('pages.post.auto_html', compact('example', 'exam_list'));
     }
 }

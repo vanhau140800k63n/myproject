@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('meta')
-    <meta name="description"
-        content="Xây dựng và trải nghiệm quá trình hình thành một source code html, css, js tự động">
+    <meta name="description" content="Xây dựng và trải nghiệm quá trình hình thành một source code html, css, js tự động">
     <meta name="keywords"
         content="devsne, devsnevn, Miễn phí Lập trình Khóa học, php, java, python, c++, Cpp, HTML, css, javascript">
     <meta name="robots" content="index, follow">
@@ -47,11 +46,36 @@
                     <button class="show_code_auto"> Show code </button>
                     <button class="compile_html" value="post"> Compile code </button>
                 </div>
-                <div class="post_card" id="auto_compile_html" value="{{ $example }}"
-                    lang="html" auto="0">
+                <div class="post_card" id="auto_compile_html" value="{{ $example }}" lang="html" auto="0">
                     <button class="copy_code"> Copy </button>
-                    
+
                 </div>
+            </div>
+            <div class="joined-tracks" style="margin-top: 50px">
+                @foreach ($exam_list as $key => $exam)
+                    <a class="--track e-hover-grow" href="{{ route('exam.get_exercise_info', ['language' => $key]) }}">
+                        <img class="c-icon c-track-icon" src="{{ $exam['image'] }}" alt="icon for Java track">
+                        <div class="--info">
+                            <div class="--heading">
+                                <h3 class="--title">{{ str_replace('-', ' ', $exam['name']) }}</h3>
+                                <div class="--joined"><img src="{{ asset('svg/checkmark.svg') }}" alt=""
+                                        role="presentation" class="c-icon lg:mr-8"><span class="hidden lg:block">Bắt
+                                        đầu</span>
+                                </div>
+                            </div>
+                            <ul class="--counts">
+                                <li><img src="{{ asset('svg/exercises.svg') }}" alt="Number of exercises" class="c-icon">
+                                    {{ $exam['practices_num'] }} bài tập</li>
+                                <li><img src="{{ asset('svg/concepts.svg') }}" alt="Number of concepts" class="c-icon">
+                                    {{ $exam['concepts_num'] }} chủ đề</li>
+                            </ul>
+                            <div class="--progress-bar">
+                                <div class="--fill" style="width: 0%;"></div>
+                            </div>
+                            <div class="--last-touched">Tham gia miễn phí</div>
+                        </div>
+                    </a>
+                @endforeach
             </div>
         </div>
         <div class="post_box_other">
