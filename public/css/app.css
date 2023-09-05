@@ -224,7 +224,7 @@ a {
     font-weight: 500;
     padding: 5px 15px;
     color: #fff;
-    background: linear-gradient(var(--x, 19deg), #21D4FD 0%, #B721FF 100%) var(--y, 0)/ 200%;
+    background: linear-gradient(var(--x, 19deg), #434a59 0%, #312e48 100%) var(--y, 0)/ 200%;
     border-radius: 20px;
     transition: 0.4s all;
 }
