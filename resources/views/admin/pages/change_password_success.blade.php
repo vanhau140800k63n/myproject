@@ -1,6 +1,6 @@
 @extends('admin.master_auth')
 @section('head')
-    <title>Xác minh tài khoản | DEVSNE</title>
+    <title>Xác Minh Tài Khoản | DEVSNE</title>
 @endsection
 @section('content')
     <div class="limiter">
@@ -20,6 +20,7 @@
                     </div>
                 </div>
             </div>
+            @include('admin.pages.login_banner')
         </div>
     </div>
 @endsection

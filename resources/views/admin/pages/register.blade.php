@@ -1,6 +1,6 @@
 @extends('admin.master_auth')
 @section('head')
-    <title>Đăng ký | DEVSNE</title>
+    <title>Đăng Ký | DEVSNE</title>
 @endsection
 
 @section('content')
@@ -56,22 +56,6 @@
                         </div>
                     </a>
 
-                    {{-- <div class="txt1 text-center">
-                        <span>
-                            Đăng nhập với
-                        </span>
-                    </div>
-
-                    <div class="flex-c-m">
-                        <a href="#" class="login-social-item bg1">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-
-                        <a href="#" class="login-social-item bg3">
-                            <i class="fa-brands fa-google"></i>
-                        </a>
-                    </div> --}}
-
                     <div class="flex-col-c">
                         <span class="txt1">
                             Nếu bạn đã có tài khoản
@@ -83,6 +67,7 @@
                     </div>
                 </form>
             </div>
+            @include('admin.pages.login_banner')
         </div>
     </div>
 @endsection

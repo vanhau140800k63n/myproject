@@ -1,6 +1,6 @@
 @extends('admin.master_auth')
 @section('head')
-    <title>Đổi mật khẩu | DEVSNE</title>
+    <title>Đổi Mật Khẩu | DEVSNE</title>
 @endsection
 
 @section('content')
@@ -50,6 +50,7 @@
                     </div>
                 </form>
             </div>
+            @include('admin.pages.login_banner')
         </div>
     </div>
     <div id="dropDownSelect1"></div>

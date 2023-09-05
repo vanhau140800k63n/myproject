@@ -1,6 +1,6 @@
 @extends('admin.master_auth')
 @section('head')
-    <title>Trang không đúng | DEVSNE</title>
+    <title>Trang Không Đúng | DEVSNE</title>
 @endsection
 @section('content')
     <div class="limiter">
@@ -14,6 +14,7 @@
                     </div>
                 </div>
             </div>
+            @include('admin.pages.login_banner')
         </div>
     </div>
 @endsection
