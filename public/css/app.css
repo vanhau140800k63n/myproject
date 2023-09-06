@@ -5132,7 +5132,6 @@ a.template_type_item.active {
 .contest_screen {
     width: calc(40% - 20px);
     background: #fff;
-    border-radius: 10px;
     padding: 30px;
     overflow: scroll;
     height: 100vh;
