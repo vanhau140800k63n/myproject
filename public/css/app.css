@@ -1053,7 +1053,7 @@ a {
 
 .lesson_content_title {
     font-size: 19px !important;
-    font-weight: 500;
+    font-weight: 600;
     width: 70%;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -2320,12 +2320,10 @@ code * {
     cursor: pointer;
     font-weight: 600;
     transition: 0.2s;
-    color: #7b7b9a;
 }
 
 .catalogue_item_title:hover {
     transform: translateX(2px);
-    color: #282831;
 }
 
 .api_list_title {
