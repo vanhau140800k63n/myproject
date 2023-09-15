@@ -8,6 +8,7 @@ use App\Http\Controllers\IconController;
 use App\Http\Controllers\LessonController;
 use App\Http\Controllers\NotiController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\SolutionController;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -54,6 +55,10 @@ Route::prefix('learn')->name('learn.')->group(function () {
 
 Route::prefix('post')->name('post.')->group(function () {
     Route::get('/{slug}', [PostController::class, 'getPostDetail'])->name('detail');
+});
+
+Route::prefix('solution')->name('solution.')->group(function () {
+    Route::get('/{slug}', [SolutionController::class, 'getSolutionDetail'])->name('detail');
 });
 
 Route::prefix('exam')->name('exam.')->group(function () {
