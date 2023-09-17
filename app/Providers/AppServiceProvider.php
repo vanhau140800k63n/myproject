@@ -26,6 +26,8 @@ use App\Repositories\Eloquent\OrderRepository;
 use App\Repositories\Eloquent\PLanguageRepository;
 use App\Repositories\Eloquent\PostRepository;
 use App\Repositories\Eloquent\RankingRepository;
+use App\Repositories\Eloquent\SolutionItemRepository;
+use App\Repositories\Eloquent\SolutionRepository;
 use App\Repositories\Eloquent\TemplateRepository;
 use App\Repositories\Eloquent\TemplateTypeRepository;
 use App\Repositories\Eloquent\UserRepository;
@@ -37,6 +39,8 @@ use App\Repositories\OrderRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\RankingRepositoryInterface;
+use App\Repositories\SolutionItemRepositoryInterface;
+use App\Repositories\SolutionRepositoryInterface;
 use App\Repositories\TemplateRepositoryInterface;
 use App\Repositories\TemplateTypeRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
@@ -107,6 +111,12 @@ class AppServiceProvider extends ServiceProvider
         });
         $this->app->singleton(IconRepositoryInterface::class, function () {
             return new IconRepository();
+        });
+        $this->app->singleton(SolutionRepositoryInterface::class, function () {
+            return new SolutionRepository();
+        });
+        $this->app->singleton(SolutionItemRepositoryInterface::class, function () {
+            return new SolutionItemRepository();
         });
     }
 

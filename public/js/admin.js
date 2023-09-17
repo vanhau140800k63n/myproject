@@ -30277,9 +30277,40 @@ $(document).ready(function () {
       $('.lesson_content').append('<div class="lesson_content_form" type="text" status="new"><div class="lesson_content_form_info"><input type="text" class="form-control lesson_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new"><div class="lesson_content_form_type">text</div><button class="lesson_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><textarea id="text' + text_rand + '" name="description"></textarea></div>');
       tinymce.init({
         selector: 'textarea#text' + text_rand,
-        plugins: 'code table lists image',
-        toolbar: 'undo redo | formatselect| bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table | forecolor backcolor | image',
-        images_file_types: 'jpg,svg,webp'
+        plugins: 'codesample code table lists image',
+        toolbar: 'undo redo | formatselect| bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table | forecolor backcolor | image | codesample',
+        images_file_types: 'jpg,svg,webp',
+        codesample_languages: [{
+          text: 'HTML/XML',
+          value: 'markup'
+        }, {
+          text: 'JavaScript',
+          value: 'javascript'
+        }, {
+          text: 'CSS',
+          value: 'css'
+        }, {
+          text: 'PHP',
+          value: 'php'
+        }, {
+          text: 'Ruby',
+          value: 'ruby'
+        }, {
+          text: 'Python',
+          value: 'python'
+        }, {
+          text: 'Java',
+          value: 'java'
+        }, {
+          text: 'C',
+          value: 'c'
+        }, {
+          text: 'C#',
+          value: 'csharp'
+        }, {
+          text: 'C++',
+          value: 'cpp'
+        }]
       });
     } else {
       $('.lesson_content').append('<div class="lesson_content_form" type="code" id="' + text_rand + '" code="' + val + '" status="new"><div class="lesson_content_form_info"><input type="text" class="form-control lesson_content_form_title" style="color: #fff" placeholder="Tiêu đề" status="new"><div class="lesson_content_form_type">' + val + '</div><button class="lesson_content_new_form_remove_btn btn btn-danger btn-fw"> Xóa </button></div><div class="lesson_card" id="' + val + text_rand + '"></div></div>');
@@ -30299,9 +30330,40 @@ $(document).ready(function () {
     if (type == 'text') {
       tinymce.init({
         selector: 'textarea#text-' + id,
-        plugins: 'code table lists image',
-        toolbar: 'undo redo | formatselect| bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table | forecolor backcolor | image',
-        images_file_types: 'jpg,svg,webp'
+        plugins: 'codesample code table lists image',
+        toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table | forecolor backcolor | image | codesample',
+        images_file_types: 'jpg,svg,webp',
+        codesample_languages: [{
+          text: 'HTML/XML',
+          value: 'markup'
+        }, {
+          text: 'JavaScript',
+          value: 'javascript'
+        }, {
+          text: 'CSS',
+          value: 'css'
+        }, {
+          text: 'PHP',
+          value: 'php'
+        }, {
+          text: 'Ruby',
+          value: 'ruby'
+        }, {
+          text: 'Python',
+          value: 'python'
+        }, {
+          text: 'Java',
+          value: 'java'
+        }, {
+          text: 'C',
+          value: 'c'
+        }, {
+          text: 'C#',
+          value: 'csharp'
+        }, {
+          text: 'C++',
+          value: 'cpp'
+        }]
       });
     } else {
       var content = $(this).find('.lesson_card').attr('value').replaceAll('\\n', '\n');

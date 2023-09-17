@@ -1,7 +1,7 @@
 {
     "/js/app.js": "/js/app.js?id=b19b1d210fbc2128e57c3114c4507a4b",
     "/js/code-mirror.js": "/js/code-mirror.js?id=9a777c8e57f678c1aed48943b958d2c8",
-    "/js/admin.js": "/js/admin.js?id=b49810abfebd6c40c2e63ba616a3bd5a",
+    "/js/admin.js": "/js/admin.js?id=ed9c61925a4a1ba510409fce222ba5cb",
     "/js/post_admin.js": "/js/post_admin.js?id=e465d66ee794a086c8e2510fc9f901cd",
     "/js/post.js": "/js/post.js?id=612c62328112492a9b233c92c39c50ec",
     "/js/auto.js": "/js/auto.js?id=de2b20a9ab779c8f6a090481480596a7",
@@ -10,7 +10,7 @@
     "/js/auto_add_template.js": "/js/auto_add_template.js?id=012593c7f0336015b2a58d9aa1720325",
     "/js/game_editer.js": "/js/game_editer.js?id=a581cfc532a4e951be64973182e767b5",
     "/js/contest.js": "/js/contest.js?id=bb291287cebab7936905f2f4782430bb",
-    "/css/app.css": "/css/app.css?id=24ea937ee5cc9ca7534bbd601f0a5439",
+    "/css/app.css": "/css/app.css?id=f5f421f01ce41c3eb3d49e08af75c105",
     "/css/user_detail.css": "/css/user_detail.css?id=5721dbc1ec7cee1758190e3d3bd8f387",
     "/css/lesson_update.css": "/css/lesson_update.css?id=91dede2cc07e2e48c4379f5fb72a0856",
     "/css/update.css": "/css/update.css?id=25e45a0cf7aedb41a1f62206757088f4",
