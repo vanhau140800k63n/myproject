@@ -125,18 +125,21 @@ class SolutionController extends Controller
         ];
 
         $question = $this->solutionItemRepository->create($data_question);
-        $question_comments = $req->question_comments;
 
-        foreach ($question_comments as $comment) {
-            $data_comment = [
-                'content' => $comment,
-                'solution_id' => $solution->id,
-                'user_id' => null,
-                'type' => 3,
-                'point' => null,
-                'solution_item_id' => $question->id
-            ];
-            $comment = $this->solutionItemRepository->create($data_comment);
+        if (isset($req->question_comments) && count($req->question_comments) > 0) {
+            $question_comments = $req->question_comments;
+
+            foreach ($question_comments as $comment) {
+                $data_comment = [
+                    'content' => $comment,
+                    'solution_id' => $solution->id,
+                    'user_id' => null,
+                    'type' => 3,
+                    'point' => null,
+                    'solution_item_id' => $question->id
+                ];
+                $comment = $this->solutionItemRepository->create($data_comment);
+            }
         }
 
         $answers = $req->answers;
