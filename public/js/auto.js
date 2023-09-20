@@ -94,37 +94,37 @@ $(document).ready(function () {
       type: "POST",
       dataType: 'json',
       data: {
-        url: 'https://spring.io/blog/page-' + p_url_index,
+        url: 'https://stackoverflow.com/questions?tab=votes&page=' + p_url_index,
         _token: _token
       }
     }).done(function (data) {
       $('.url_content').html(data);
-      $('.blog-post h1 a').each(function () {
+      var url_list = [];
+      $('h3.s-post-summary--content-title a').each(function () {
         var href = $(this).attr('href');
-        if (href.includes('/blog/') && !href.includes('https://')) {
-          href = 'https://spring.io' + href;
-          var _token = $('input[name="_token"]').val();
-          console.log(href);
-
-          // $.ajax({
-          //     url: domain + "admin/post/add_url_to_db",
-          //     headers: {
-          //         'Content-Type': 'application/x-www-form-urlencoded'
-          //     },
-          //     type: "POST",
-          //     dataType: 'json',
-          //     data: {
-          //         url: href,
-          //         _token: _token
-          //     }
-          // }).done(function (data) {
-          //     return true;
-          // }).fail(function (e) {
-          //     return false;
-          // });
+        if (href.includes('/questions/') && !href.includes('https://')) {
+          href = 'https://stackoverflow.com' + href;
+          url_list.push(href);
         }
       });
-
+      var _token = $('input[name="_token"]').val();
+      $.ajax({
+        url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "admin/post/add_url_to_db",
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        type: "POST",
+        dataType: 'json',
+        data: {
+          url_list: url_list,
+          _token: _token
+        }
+      }).done(function (data) {
+        location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'admin/post/auto_add_url?page=' + ++page_url_index;
+        return true;
+      }).fail(function (e) {
+        return false;
+      });
       return true;
     }).fail(function (e) {
       return false;

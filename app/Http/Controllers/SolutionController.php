@@ -93,7 +93,12 @@ class SolutionController extends Controller
                 )
             )
         );
-        $data = file_get_contents('https://stackoverflow.com/questions/1144705/best-way-to-store-a-key-value-array-in-javascript', false, $context);
+        $url = $this->contentRepository->getContentUnPublicUrl();
+        if ($url == null) {
+            return 'done';
+        }
+        $update_content = $this->contentRepository->updateContentUrl(['status' => 1], $url->id);
+        $data = file_get_contents($url->content, false, $context);
         return view('admin.pages.solution.auto', compact('data'));
     }
 

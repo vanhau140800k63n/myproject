@@ -123,12 +123,10 @@ $(document).ready(function () {
     dataType: 'json',
     data: data
   }).done(function (data) {
-    console.log(data);
+    location.reload();
     return false;
   }).fail(function (e) {
-    // if (check_auto) {
-    //     location.reload();
-    // }
+    location.reload();
     return false;
   });
 

@@ -331,18 +331,16 @@ class PostController extends Controller
 
     public function getContentUrl(Request $req)
     {
-        $content = file_get_contents($req->url);
-        if (isset($req->template_type)) {
-            $slug = explode('/', $req->url)[3];
-            $data = [
-                'slug' => $slug,
-                'title' => ucwords(str_replace('-', ' ', $slug)),
-                'count' => rand(100, 200)
-            ];
+        $context = stream_context_create(
+            array(
+                "http" => array(
+                    "header" => "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"
+                )
+            )
+        );
 
-            $template_type = $this->templateTypeRepository->addType($data);
-        }
-        return response()->json([$content, $template_type->id]);
+        $content = file_get_contents($req->url, false, $context);
+        return response()->json($content);
     }
 
     public function autoAddUrl(Request $req)
@@ -363,16 +361,20 @@ class PostController extends Controller
 
     public function autoUrlToDb(Request $req)
     {
-        $content = $this->contentRepository->findContentUrl($req->url);
-        if ($content == null) {
-            $data = [
-                'content' => $req->url,
-                'type' => 1,
-                'status' => 0,
-            ];
+        $url_list = $req->url_list;
+        foreach ($url_list as $url) {
+            $content = $this->contentRepository->findContentUrl($url);
+            if ($content == null) {
+                $data = [
+                    'content' => $url,
+                    'type' => 1,
+                    'status' => 0,
+                ];
 
-            $content = $this->contentRepository->createContentUrl($data);
+                $content = $this->contentRepository->createContentUrl($data);
+            }
         }
+
 
         return true;
     }
