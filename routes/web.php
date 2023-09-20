@@ -58,7 +58,7 @@ Route::prefix('post')->name('post.')->group(function () {
 });
 
 Route::prefix('solution')->name('solution.')->group(function () {
-    Route::get('/{slug}', [SolutionController::class, 'getSolutionDetail'])->name('detail');
+    Route::get('/{id}/{slug}', [SolutionController::class, 'getSolutionDetail'])->name('detail');
 });
 
 Route::prefix('exam')->name('exam.')->group(function () {
@@ -163,5 +163,11 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
             Route::post('/add', [TemplateController::class, 'postAddTemplateAdmin'])->name('add');
             Route::post('/update', [TemplateController::class, 'postUpdateTemplateAdmin'])->name('update');
         });
+    });
+
+    Route::prefix('solution')->name('solution.')->group(function () {
+        Route::get('/auto_add', [SolutionController::class, 'autoAdd'])->name('auto_add');
+        Route::post('/add_solution', [SolutionController::class, 'addSolution'])->name('add_solution');
+        Route::post('/add_solution_item', [SolutionController::class, 'addSolutionItem'])->name('add_solution_item');
     });
 });

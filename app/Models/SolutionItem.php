@@ -11,6 +11,11 @@ class SolutionItem extends Model
 
     protected $table = 'solution_item';
     protected $fillable = [
-        
+        'content',
+        'solution_id',
+        'user_id',
+        'type',
+        'point',
+        'solution_item_id'
     ];
 }

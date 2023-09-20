@@ -13,6 +13,8 @@ use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\ContentRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
+use App\Repositories\SolutionItemRepositoryInterface;
+use App\Repositories\SolutionRepositoryInterface;
 use App\Repositories\TemplateRepositoryInterface;
 use App\Repositories\TemplateTypeRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
@@ -33,6 +35,8 @@ class SolutionController extends Controller
     private $actionRepository;
     private $templateTypeRepository;
     private $templateRepository;
+    private $solutionRepository;
+    private $solutionItemRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
@@ -44,7 +48,9 @@ class SolutionController extends Controller
         ContentRepositoryInterface $contentRepository,
         ActionRepositoryInterface $actionRepository,
         TemplateTypeRepositoryInterface $templateTypeRepository,
-        TemplateRepositoryInterface $templateRepository
+        TemplateRepositoryInterface $templateRepository,
+        SolutionRepositoryInterface $solutionRepository,
+        SolutionItemRepositoryInterface $solutionItemRepository
     ) {
         $this->categoryRepository = $categoryRepository;
         $this->pLanguageRepository = $pLanguageRepository;
@@ -56,9 +62,105 @@ class SolutionController extends Controller
         $this->actionRepository = $actionRepository;
         $this->templateTypeRepository = $templateTypeRepository;
         $this->templateRepository = $templateRepository;
+        $this->solutionRepository = $solutionRepository;
+        $this->solutionItemRepository = $solutionItemRepository;
     }
 
-    public function getSolutionDetail(Request $req) {
-        return view('pages.solution.detail');
+    public function getSolutionDetail($id, $slug)
+    {
+        $solution = $this->solutionRepository->getSolutionBySlug($slug);
+        $question = $this->solutionItemRepository->getQuestion($solution->id);
+        $question_comments = $this->solutionItemRepository->getQuestionComments($solution->id, $question->id);
+        $answers = $this->solutionItemRepository->getAnswers($solution->id);
+        $answer_comments_list = [];
+
+        foreach ($answers as $answer) {
+            $answer_comments = $this->solutionItemRepository->getAnswerComments($solution->id, $answer->id);
+            if ($answer_comments->count() > 0) {
+                $answer_comments_list[$answer->id] = $answer_comments;
+            }
+        }
+
+        return view('pages.solution.detail', compact('solution', 'question', 'question_comments', 'answers', 'answer_comments_list'));
+    }
+
+    public function autoAdd()
+    {
+        $context = stream_context_create(
+            array(
+                "http" => array(
+                    "header" => "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"
+                )
+            )
+        );
+        $data = file_get_contents('https://stackoverflow.com/questions/1144705/best-way-to-store-a-key-value-array-in-javascript', false, $context);
+        return view('admin.pages.solution.auto', compact('data'));
+    }
+
+    public function addSolution(Request $req)
+    {
+        $title = $req->solution_title;
+        $slug = $this->makeSlug($title);
+
+        $data = [
+            'title' => $title,
+            'slug' => $slug,
+            'view' =>  rand(1000, 1000000)
+        ];
+
+        $solution = $this->solutionRepository->create($data);
+
+        $data_question = [
+            'content' => $req->question,
+            'solution_id' => $solution->id,
+            'user_id' => null,
+            'type' => 1,
+            'point' => null,
+            'solution_item_id' => null
+        ];
+
+        $question = $this->solutionItemRepository->create($data_question);
+        $question_comments = $req->question_comments;
+
+        foreach ($question_comments as $comment) {
+            $data_comment = [
+                'content' => $comment,
+                'solution_id' => $solution->id,
+                'user_id' => null,
+                'type' => 3,
+                'point' => null,
+                'solution_item_id' => $question->id
+            ];
+            $comment = $this->solutionItemRepository->create($data_comment);
+        }
+
+        $answers = $req->answers;
+
+        foreach ($answers as $item) {
+            $data_answer = [
+                'content' => $item['answer'],
+                'solution_id' => $solution->id,
+                'user_id' => null,
+                'type' => 2,
+                'point' => rand(1, 100),
+                'solution_item_id' => null
+            ];
+            $answer = $this->solutionItemRepository->create($data_answer);
+            if (isset($item['answer_comments'])) {
+                foreach ($item['answer_comments'] as $comment) {
+                    $data_comment = [
+                        'content' => $comment,
+                        'solution_id' => $solution->id,
+                        'user_id' => null,
+                        'type' => 3,
+                        'point' => null,
+                        'solution_item_id' => $answer->id
+                    ];
+                    $comment = $this->solutionItemRepository->create($data_comment);
+                }
+            }
+        }
+
+        return true;
     }
 }

@@ -11,6 +11,8 @@ class Solution extends Model
 
     protected $table = 'solution';
     protected $fillable = [
-        
+        'title',
+        'slug',
+        'view'
     ];
 }
