@@ -39,4 +39,8 @@ class IconRepository extends BaseRepository implements IconRepositoryInterface
     {
         return $this->icon->where('path', intval($data[4]))->where('index', intval($data[5]))->where('status', 1)->first();
     }
+
+    public function randomByTag($tag, $num) {
+        return $this->icon->where('tag', 'like', "%$tag%")->inRandomOrder()->take($num)->get();
+    }
 }

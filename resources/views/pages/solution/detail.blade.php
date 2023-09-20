@@ -17,7 +17,7 @@
             top: 0 !important;
         }
     </style>
-    <title> | DEVSNE</title>
+    <title> {{ $solution->title }} | DEVSNE</title>
 @endsection
 @section('content')
     <div class="sol_box">
@@ -85,6 +85,15 @@
         </div>
         <div class="_aside">
             <button class="_add_question"> Add question </button>
+            <div class="_solution_related">
+                @foreach ($random_solutions as $key => $r_solution)
+                    <nav class="_random">
+                        <img width="20" height="20" src="{{ asset($random_icons[$key]->image) }}">
+                        <a
+                            href="{{ route('solution.detail', ['id' => $r_solution->id, 'slug' => $r_solution->slug]) }}">{{ $r_solution->title }}</a>
+                    </nav>
+                @endforeach
+            </div>
         </div>
     </div>
     <div id="google_translate_element"></div>

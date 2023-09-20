@@ -11,6 +11,7 @@ use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\CommentRepositoryInterface;
 use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\ContentRepositoryInterface;
+use App\Repositories\IconRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\SolutionItemRepositoryInterface;
@@ -37,6 +38,7 @@ class SolutionController extends Controller
     private $templateRepository;
     private $solutionRepository;
     private $solutionItemRepository;
+    private $iconRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
@@ -50,7 +52,8 @@ class SolutionController extends Controller
         TemplateTypeRepositoryInterface $templateTypeRepository,
         TemplateRepositoryInterface $templateRepository,
         SolutionRepositoryInterface $solutionRepository,
-        SolutionItemRepositoryInterface $solutionItemRepository
+        SolutionItemRepositoryInterface $solutionItemRepository,
+        IconRepositoryInterface $iconRepository
     ) {
         $this->categoryRepository = $categoryRepository;
         $this->pLanguageRepository = $pLanguageRepository;
@@ -64,6 +67,7 @@ class SolutionController extends Controller
         $this->templateRepository = $templateRepository;
         $this->solutionRepository = $solutionRepository;
         $this->solutionItemRepository = $solutionItemRepository;
+        $this->iconRepository = $iconRepository;
     }
 
     public function getSolutionDetail($id, $slug)
@@ -81,7 +85,10 @@ class SolutionController extends Controller
             }
         }
 
-        return view('pages.solution.detail', compact('solution', 'question', 'question_comments', 'answers', 'answer_comments_list'));
+        $random_solutions = $this->solutionRepository->random(30);
+        $random_icons = $this->iconRepository->randomByTag('question', 30);
+
+        return view('pages.solution.detail', compact('solution', 'question', 'question_comments', 'answers', 'answer_comments_list', 'random_solutions', 'random_icons'));
     }
 
     public function autoAdd()
