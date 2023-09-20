@@ -126,7 +126,6 @@ $(document).ready(function () {
     location.reload();
     return false;
   }).fail(function (e) {
-    location.reload();
     return false;
   });
 
