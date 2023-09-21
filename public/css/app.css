@@ -6730,19 +6730,20 @@ section.exercises .exercises {
 
 .sol_box ._solution_related a {
     font-size: 12px;
-    display: -webkit-box;
+    /* display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    word-break: break-word;
+    word-break: break-word; */
     color: #5c666b;
     text-decoration: none;
+    line-height: 1.5;
 }
 
 .sol_box ._solution_related img {
     margin: 0;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 @media only screen and (min-width: 1400px) {}
