@@ -6719,6 +6719,10 @@ section.exercises .exercises {
     box-shadow: 0 0 #0000, 0 0 #0000, 0px 4px 24px 0px rgba(79, 114, 205, 0.3);
 }
 
+.sol_box ._add_question * {
+    color: #fff;
+}
+
 .sol_box ._solution_related {
     display: flex;
     flex-direction: column;
