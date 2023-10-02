@@ -6623,10 +6623,7 @@ section.exercises .exercises {
     font-weight: 600;
 }
 
-.sol_box strong {
-    font-weight: 600;
-}
-
+.sol_box strong,
 .sol_box strong * {
     font-weight: 600;
 }
@@ -6682,7 +6679,8 @@ section.exercises .exercises {
     font-size: 12px;
 }
 
-.sol_box ._author {
+.sol_box ._author,
+.sol_box ._author * {
     color: var(--color-text-author);
 }
 
@@ -6733,14 +6731,9 @@ section.exercises .exercises {
     margin: 2px 0;
 }
 
-.sol_box ._solution_related a {
+.sol_box ._solution_related a,
+.sol_box ._solution_related a * {
     font-size: 12px;
-    /* display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: break-word; */
     color: #5c666b;
     text-decoration: none;
     line-height: 1.5;
