@@ -261,7 +261,7 @@ class HomeController extends Controller
         if ($search_solutions->count() > 0) {
             $output .= '<div class="search_result_title">Thảo luận</div>';
             foreach ($search_solutions as $index => $solution) {
-                $output .= '<a href="' . route('post.detail', ['slug' => $solution->slug]) . '" class="search_result_content_item">
+                $output .= '<a href="' . route('solution.detail', ['id' => $solution->id, 'slug' => $solution->slug]) . '" class="search_result_content_item">
                     <img class="search_result_img" src="' . $search_solution_imgs[$index] . '">
                     <p class="search_result_name">' . $solution->title . '</p>
                 </a>';
