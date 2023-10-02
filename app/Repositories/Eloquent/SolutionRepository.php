@@ -19,8 +19,8 @@ class SolutionRepository extends BaseRepository implements SolutionRepositoryInt
         return $this->solution->create($data);
     }
 
-    public function getSolutionBySlug($slug) {
-        return $this->solution->where('slug', $slug)->first();
+    public function getSolutionBySlug($id, $slug) {
+        return $this->solution->where('id', $id)->where('slug', $slug)->first();
     }
 
     public function random($num) {

@@ -72,7 +72,9 @@ class SolutionController extends Controller
 
     public function getSolutionDetail($id, $slug)
     {
-        $solution = $this->solutionRepository->getSolutionBySlug($slug);
+        $solution = $this->solutionRepository->getSolutionBySlug($id, $slug);
+        if ($solution == null) throw new PageException();
+
         $question = $this->solutionItemRepository->getQuestion($solution->id);
         $question_comments = $this->solutionItemRepository->getQuestionComments($solution->id, $question->id);
         $answers = $this->solutionItemRepository->getAnswers($solution->id);
