@@ -26,4 +26,8 @@ class SolutionRepository extends BaseRepository implements SolutionRepositoryInt
     public function random($num) {
         return $this->solution->whereNotNull('slug')->where('slug', '!=', '')->inRandomOrder()->take($num)->get();
     }
+
+    public function searchKey($key, $count) {
+        return $this->solution->where('title', 'like', '%' . $key . '%')->take($count)->get();
+    }
 }

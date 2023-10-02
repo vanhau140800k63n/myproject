@@ -9,6 +9,7 @@ use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use App\Config\ExamConstants;
+use App\Repositories\SolutionRepositoryInterface;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -19,6 +20,7 @@ class HomeController extends Controller
     private $lessonRepository;
     private $categoryRepository;
     private $challengeRepository;
+    private $solutionRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
@@ -26,7 +28,8 @@ class HomeController extends Controller
         PostRepositoryInterface $postRepository,
         LessonRepositoryInterface $lessonRepository,
         CategoryRepositoryInterface $categoryRepository,
-        ChallengeRepositoryInterface $challengeRepository
+        ChallengeRepositoryInterface $challengeRepository,
+        SolutionRepositoryInterface $solutionRepository
     ) {
         $this->userRepository = $userRepository;
         $this->pLanguageRepository = $pLanguageRepository;
@@ -34,6 +37,7 @@ class HomeController extends Controller
         $this->lessonRepository = $lessonRepository;
         $this->categoryRepository = $categoryRepository;
         $this->challengeRepository = $challengeRepository;
+        $this->solutionRepository = $solutionRepository;
     }
 
     public function getHomePage()
@@ -213,7 +217,9 @@ class HomeController extends Controller
         if ($search_courses->count() < 5) {
             $search_lesson = $this->lessonRepository->searchLesson($req->key, 5 - $search_courses->count());
         }
-        $search_posts = $this->postRepository->searchPost($req->key);
+        $search_posts = $this->postRepository->searchPost($req->key, 3);
+        $search_solutions = $this->solutionRepository->searchKey($req->key, 3);
+
         if ($search_courses->count() > 0) {
             $output .= '<div class="search_result_title">Khóa học</div>';
             foreach ($search_courses as $course) {
@@ -238,16 +244,27 @@ class HomeController extends Controller
 
         if ($search_posts->count() > 0) {
             $output .= '<div class="search_result_title">Bài viết</div>';
-            $index = 0;
             foreach ($search_posts as $post) {
-                ++$index;
                 $output .= '<a href="' . route('post.detail', ['slug' => $post->slug]) . '" class="search_result_content_item">
                     <img class="search_result_img" src="' . asset($post->image) . '">
                     <p class="search_result_name">' . $post->title . '</p>
                 </a>';
-                if ($index == 5) {
-                    break;
-                }
+            }
+        }
+
+        $search_solution_imgs = [
+            'https://devsne.vn/image/icon/3iQLpVvsZ9.png',
+            'https://devsne.vn/image/icon/5xCj6vqB9F.png',
+            'https://devsne.vn/image/icon/BIUXGfbnpj.png'
+        ];
+
+        if ($search_solutions->count() > 0) {
+            $output .= '<div class="search_result_title">Thảo luận</div>';
+            foreach ($search_solutions as $index => $solution) {
+                $output .= '<a href="' . route('post.detail', ['slug' => $solution->slug]) . '" class="search_result_content_item">
+                    <img class="search_result_img" src="' . $search_solution_imgs[$index] . '">
+                    <p class="search_result_name">' . $solution->title . '</p>
+                </a>';
             }
         }
 

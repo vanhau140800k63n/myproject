@@ -11,7 +11,7 @@ interface PostRepositoryInterface
     public function getPostAdmin($id);
     public function getPostBySlug($slug);
     public function delPostAdmin($id);
-    public function searchPost($key);
+    public function searchPost($key, $count);
     public function searchPostRaw($raw, $count);
     public function getPostChangeTitle();
     public function getPostById($id);
