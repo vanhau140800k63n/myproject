@@ -6569,6 +6569,10 @@ section.exercises .exercises {
     text-decoration: underline;
 }
 
+.sol_box a * {
+    color: var(--color-url);
+}
+
 .sol_box ._comment_list {
     padding-left: 30px;
     margin-top: 20px;
