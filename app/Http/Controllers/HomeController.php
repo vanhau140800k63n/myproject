@@ -49,26 +49,6 @@ class HomeController extends Controller
 
     public function test()
     {
-        $curl = curl_init();
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => ExamConstants::SUBMIT_URL . 'compile/php' . '/index.php',
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => http_build_query([
-                // 'code' => $req->code,
-                // 'test_case' => $test_case,
-                // 'practice' => $practice,
-                // 'user_id' => Auth::id()
-            ]),
-            CURLOPT_HTTPHEADER => array(
-                'ngrok-skip-browser-warning' => '1231'
-            ),
-        ));
         return view('test');
         dd(exec('/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 --version'));
         // $json = file_get_contents('exam_list.json');
