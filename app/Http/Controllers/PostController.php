@@ -11,8 +11,10 @@ use App\Repositories\CategoryRepositoryInterface;
 use App\Repositories\CommentRepositoryInterface;
 use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\ContentRepositoryInterface;
+use App\Repositories\IconRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
+use App\Repositories\SolutionRepositoryInterface;
 use App\Repositories\TemplateRepositoryInterface;
 use App\Repositories\TemplateTypeRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
@@ -33,6 +35,8 @@ class PostController extends Controller
     private $actionRepository;
     private $templateTypeRepository;
     private $templateRepository;
+    private $solutionRepository;
+    private $iconRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
@@ -44,7 +48,9 @@ class PostController extends Controller
         ContentRepositoryInterface $contentRepository,
         ActionRepositoryInterface $actionRepository,
         TemplateTypeRepositoryInterface $templateTypeRepository,
-        TemplateRepositoryInterface $templateRepository
+        TemplateRepositoryInterface $templateRepository,
+        SolutionRepositoryInterface $solutionRepository,
+        IconRepositoryInterface $iconRepository
     ) {
         $this->categoryRepository = $categoryRepository;
         $this->pLanguageRepository = $pLanguageRepository;
@@ -56,6 +62,8 @@ class PostController extends Controller
         $this->actionRepository = $actionRepository;
         $this->templateTypeRepository = $templateTypeRepository;
         $this->templateRepository = $templateRepository;
+        $this->solutionRepository = $solutionRepository;
+        $this->iconRepository = $iconRepository;
     }
 
     public function getPostListAdmin()
@@ -228,7 +236,10 @@ class PostController extends Controller
                 $template_type = $this->templateTypeRepository->getTypeTemplateById($banner->type);
                 $banner->url = $template_type->slug;
             }
-            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'comments', 'posts_related', 'theme', 'auto', 'template_banner'));
+
+            $random_solutions = $this->solutionRepository->random(30);
+            $random_icons = $this->iconRepository->randomByTag('question', 30);
+            return view('pages.post.detail', compact('post', 'post_detail', 'category_titles', 'author', 'comments', 'posts_related', 'theme', 'auto', 'template_banner', 'random_solutions', 'random_icons'));
         }
 
         throw new PageException();
@@ -473,7 +484,9 @@ class PostController extends Controller
 
         $exam_list_json = file_get_contents('exam_list.json');
         $exam_list = json_decode($exam_list_json, true);
+        $random_solutions = $this->solutionRepository->random(30);
+        $random_icons = $this->iconRepository->randomByTag('question', 30);
 
-        return view('pages.post.auto_html', compact('example', 'exam_list'));
+        return view('pages.post.auto_html', compact('example', 'exam_list', 'random_solutions', 'random_icons'));
     }
 }

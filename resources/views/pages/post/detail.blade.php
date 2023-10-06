@@ -309,6 +309,15 @@
                         </div>
                     </div>
                 @endif
+                <div class="_solution_related">
+                    @foreach ($random_solutions as $key => $r_solution)
+                        <nav class="_random">
+                            <img width="20" height="20" src="{{ asset($random_icons[$key]->image) }}">
+                            <a
+                                href="{{ route('solution.detail', ['id' => $r_solution->id, 'slug' => $r_solution->slug]) }}">{{ $r_solution->title }}</a>
+                        </nav>
+                    @endforeach
+                </div>
                 <?php
                 $course_list = \App\Models\PLanguage::all();
                 $i = 0;

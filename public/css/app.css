@@ -6723,27 +6723,27 @@ section.exercises .exercises {
     color: #fff;
 }
 
-.sol_box ._solution_related {
+._solution_related {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
 }
 
-.sol_box ._solution_related ._random {
+._solution_related ._random {
     display: flex;
     align-items: center;
     margin: 2px 0;
 }
 
-.sol_box ._solution_related a,
-.sol_box ._solution_related a * {
+._solution_related a,
+._solution_related a * {
     font-size: 12px;
     color: #5c666b;
     text-decoration: none;
     line-height: 1.5;
 }
 
-.sol_box ._solution_related img {
+._solution_related img {
     margin: 0;
     margin-right: 8px;
 }
