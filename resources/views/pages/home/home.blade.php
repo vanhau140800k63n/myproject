@@ -110,6 +110,36 @@
                                         </div>
                                     </a>
                                 </div>
+                                <div style="display: flex; margin-top: 20px">
+                                    <a href="{{ route('exam.home') }}"
+                                        data-w-id="a8616800-07f8-0697-9681-2671b00ca6a7"
+                                        style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; margin-left: 130px"
+                                        class="hero__btn-wrap">
+                                        <div data-remodal-target="form" class="btn mod--hero w-inline-block">
+                                            <div class="btn__bg-wrap"
+                                                style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
+                                            ">
+                                                <div class="btn__bg"
+                                                    style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                                </div>
+                                            </div>
+                                            <div class="btn__txt">Luyện Tập</div>
+                                        </div>
+                                    </a>
+                                    <a href="{{ route('icon.home') }}" data-w-id="a8616800-07f8-0697-9681-2671b00ca6a7"
+                                        style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; margin-left: 30px"
+                                        class="hero__btn-wrap">
+                                        <div data-remodal-target="form" class="btn mod--hero w-inline-block">
+                                            <div class="btn__bg-wrap"
+                                                style=" background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );">
+                                                <div class="btn__bg"
+                                                    style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                                </div>
+                                            </div>
+                                            <div class="btn__txt">STACK OVERFLOW</div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                             <div data-w-id="b9bc89e3-fe08-d373-2233-6ff7b6612753" class="hero_illustr-wrap"
                                 style="opacity: 1;">
