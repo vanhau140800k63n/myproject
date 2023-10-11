@@ -30220,6 +30220,9 @@ $(document).ready(function () {
   $('.contest_screen_content table').each(function () {
     $(this).addClass('notranslate');
   });
+  $('.switch_language .back_btn').click(function () {
+    history.back();
+  });
 });
 })();
 

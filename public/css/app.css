@@ -5249,7 +5249,7 @@ select {
 }
 
 .contest_screen_content code {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .contest_screen_content p,
@@ -5579,6 +5579,12 @@ summary svg {
     align-items: center;
     justify-content: flex-end;
     margin: 20px 0;
+}
+
+.switch_language .back_btn {
+    width: 30px;
+    margin-right: auto;
+    cursor: pointer;
 }
 
 .switch_language_title {
@@ -6490,7 +6496,7 @@ section.exercises .exercises {
     display: flex;
     line-height: 2;
     --border-color: rgb(210, 209, 209);
-    --color-url: rgb(24, 40, 185);
+    --color-url: rgb(16 72 136);
     --h1-size: 28px;
     --h2-size: 24px;
     --h3-size: 22px;
