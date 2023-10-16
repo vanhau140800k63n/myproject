@@ -6144,6 +6144,7 @@ input.check-toggle-round-flat:checked+label:after {
 .text-p-large {
     font-size: 18px;
     padding: 0 50px;
+    max-width: 800px;
 }
 
 .joined-tracks {

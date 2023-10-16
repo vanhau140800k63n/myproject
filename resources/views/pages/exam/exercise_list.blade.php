@@ -24,9 +24,8 @@
                     <img class="c-icon c-track-icon" src="{{ $exam['image'] }}" alt="icon for Java track">
                     <div class="--info">
                         <div class="--heading">
-                            <h3 class="--title">{{ str_replace('-', ' ', $exam['name']) }}</h3>
-                            <div class="--joined"><img src="{{ asset('svg/checkmark.svg') }}" alt=""
-                                    role="presentation" class="c-icon lg:mr-8"><span class="hidden lg:block">Bắt đầu</span>
+                            <h3 class="--title">Bài tập {{ str_replace('-', ' ', $exam['name']) }}</h3>
+                            <div class="--joined"><span class="hidden lg:block">Bắt đầu</span>
                             </div>
                         </div>
                         <ul class="--counts">

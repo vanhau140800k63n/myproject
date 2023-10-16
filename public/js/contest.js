@@ -30112,11 +30112,17 @@ $(document).ready(function () {
     cpp: (0,_codemirror_lang_cpp__WEBPACK_IMPORTED_MODULE_6__.cpp)()
   };
   var langHolder = new _codemirror_state__WEBPACK_IMPORTED_MODULE_7__.Compartment();
+  // var tabSize = new Compartment()
   var editer = new codemirror__WEBPACK_IMPORTED_MODULE_8__.EditorView({
     extensions: [codemirror__WEBPACK_IMPORTED_MODULE_9__.basicSetup, _codemirror_theme_one_dark__WEBPACK_IMPORTED_MODULE_10__.oneDark, langHolder.of(language_list[$('.contest_editer').attr('lang')])],
     parent: document.querySelector(".contest_editer"),
     doc: $('.contest_editer').attr('value')
   });
+
+  // editer.dispatch({
+  //     effects: tabSize.reconfigure(EditorState.tabSize.of(8))
+  // })
+
   var _token = $('input[name="_token"]').val();
   $.ajax({
     url: _domain__WEBPACK_IMPORTED_MODULE_0__.domain + "exam/challenge/create_folder_test",
