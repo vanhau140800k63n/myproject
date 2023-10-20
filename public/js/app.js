@@ -2272,6 +2272,12 @@ $(document).ready(function () {
       location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'search/' + $(this).val();
     }
   });
+  $('.search_input').blur(function () {
+    $('.search_input').val('');
+    setTimeout(function () {
+      $('.search_result').hide();
+    }, 50);
+  });
 });
 
 /***/ }),

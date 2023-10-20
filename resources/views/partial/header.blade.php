@@ -8,6 +8,9 @@
             <button type="reset"></button>
         </div>
         <div class="search_result">
+            <div class="search_tutorial">
+                
+            </div>
             <div class="search_loading">
                 <div class="search_loading_title">Tìm kiếm cho:</div>
                 <div class="lds-ring">

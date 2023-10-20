@@ -597,7 +597,7 @@
                     </a>
                     <a class="home_lesson_info" href="{{ route('learn.lesson_intro', ['course' => $p_language->name]) }}"
                         style="background: {{ $p_language->color }}">
-                        Học {{ $p_language->full_name }} miễn phí
+                        Học {{ $p_language->full_name }} cơ bản
                     </a>
                 </div>
             @endforeach
