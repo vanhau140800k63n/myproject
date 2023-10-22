@@ -37,7 +37,7 @@
 
                         <div class="--last-touched">
                             <button class="--btn" style="background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );">{{ $exam['name'] }} cơ bản</button>
-                            <button class="--btn" style="background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% ); margin-left: 5px">{{ $exam['name'] }} nâng cao</button>
+                            <button class="--btn" style="background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgb(200, 212, 239) 21.4%, rgba(163,225,233,1) 57.1% ); margin-left: 5px">{{ $exam['name'] }} nâng cao</button>
                         </div>
                     </div>
                 </a>

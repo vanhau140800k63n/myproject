@@ -40,9 +40,7 @@
                                         <div class="--blurb">
                                             {{ $practice_info['description'] == '' ? 'Bài tập đang hoàn thiện' : $practice_info['description'] }}
                                         </div>
-                                    </div><img
-                                        src="https://d24y9kuxp2d7l2.cloudfront.net/assets/icons/chevron-right-4edf20ec1116acf2e371e8ff03809451274a7b32.svg"
-                                        alt="" role="presentation" class="c-icon --action-icon sm:block hidden">
+                                    </div>
                                 </a>
                             @endforeach
                         </div>
