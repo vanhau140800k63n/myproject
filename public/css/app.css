@@ -1312,7 +1312,7 @@ code * {
     font-weight: 600;
     font-size: 16px;
     padding: 10px 20px;
-    background: #6a7091;
+    background: #383f69;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 #0000, 0 0 #0000, 0px 4px 24px 0px rgba(79, 114, 205, 0.3);
@@ -1320,9 +1320,9 @@ code * {
     transition: 0.1s;
 }
 
-.exercise_banner:hover .exercise_banner_btn {
+/* .exercise_banner:hover .exercise_banner_btn {
     background: #383f69;
-}
+} */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .lesson_box {
@@ -6182,7 +6182,7 @@ input.check-toggle-round-flat:checked+label:after {
     font-weight: 600;
     line-height: 140%;
     margin-right: 12px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 .--joined {
@@ -6357,6 +6357,15 @@ section.exercises .exercises {
 .exercise_info_mid_text {
     font-weight: 700;
     font-size: 30px;
+}
+
+.--btn {
+    border: 0;
+    color: rgb(52, 49, 66);
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 

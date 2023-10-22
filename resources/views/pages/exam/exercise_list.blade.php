@@ -24,7 +24,7 @@
                     <img class="c-icon c-track-icon" src="{{ $exam['image'] }}" alt="icon for Java track">
                     <div class="--info">
                         <div class="--heading">
-                            <h3 class="--title">Bài tập {{ str_replace('-', ' ', $exam['name']) }}</h3>
+                            <h3 class="--title">Bài tập {{ $exam['name'] }}</h3>
                             <div class="--joined"><span class="hidden lg:block">Bắt đầu</span>
                             </div>
                         </div>
@@ -34,10 +34,11 @@
                             <li><img src="{{ asset('svg/concepts.svg') }}" alt="Number of concepts" class="c-icon">
                                 {{ $exam['concepts_num'] }} chủ đề</li>
                         </ul>
-                        <div class="--progress-bar">
-                            <div class="--fill" style="width: 0%;"></div>
+
+                        <div class="--last-touched">
+                            <button class="--btn" style="background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );">{{ $exam['name'] }} cơ bản</button>
+                            <button class="--btn" style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% ); margin-left: 10px">{{ $exam['name'] }} nâng cao</button>
                         </div>
-                        <div class="--last-touched">Tham gia miễn phí</div>
                     </div>
                 </a>
             @endforeach

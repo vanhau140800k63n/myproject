@@ -2268,7 +2268,7 @@ $(document).ready(function () {
   });
   $('.search_input').keydown(function (event) {
     var id = event.which;
-    if (id == 13 && $(this).val() != "") {
+    if (id == 13 && $(this).val().length > 1) {
       location.href = _domain__WEBPACK_IMPORTED_MODULE_0__.domain + 'search/' + $(this).val();
     }
   });

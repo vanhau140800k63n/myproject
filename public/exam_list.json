@@ -1,7 +1,7 @@
 {
     "cpp": {
         "image": "https:\/\/devsne.vn\/image\/icon\/r0zF74j52c.png",
-        "name": "c++",
+        "name": "C++",
         "concepts_num": 16,
         "practices_num": 73,
         "practices": {
@@ -670,7 +670,7 @@
     },
     "java": {
         "image": "https:\/\/devsne.vn\/image\/icon\/27ljez6t0k.png",
-        "name": "java",
+        "name": "Java",
         "concepts_num": 17,
         "practices_num": 140,
         "practices": {
@@ -1942,7 +1942,7 @@
     },
     "c": {
         "image": "https:\/\/devsne.vn\/image\/courses\/c.png",
-        "name": "c",
+        "name": "C",
         "concepts_num": 14,
         "practices_num": 73,
         "practices": {
@@ -2611,7 +2611,7 @@
     },
     "python": {
         "image": "https:\/\/devsne.vn\/image\/icon\/u4GCrM1sKd.png",
-        "name": "python",
+        "name": "Python",
         "concepts_num": 64,
         "practices_num": 155,
         "practices": {
@@ -4020,7 +4020,7 @@
         "concepts_num": 32,
         "practices_num": 87,
         "image": "https:\/\/devsne.vn\/image\/icon\/EZdBlVF2zI.png",
-        "name": "php",
+        "name": "PHP",
         "language": "php",
         "type": "php",
         "path_to_exercise": "",
@@ -4815,7 +4815,7 @@
         "concepts_num": 34,
         "practices_num": 149,
         "image": "https:\/\/devsne.vn\/image\/icon\/nF8yjsqeIB.png",
-        "name": "javascript",
+        "name": "Javascript",
         "language": "js",
         "type": "javascript",
         "path_to_exercise": "",
