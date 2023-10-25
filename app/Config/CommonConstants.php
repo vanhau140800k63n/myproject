@@ -22,11 +22,11 @@ final class CommonConstants
     ];
     
     public const LANG_LOGO = [
-        'py' => 'https://devsne.vn/image/icon/L8FvAJxfUQ.png',
-        'php' => 'https://devsne.vn/image/icon/WF3tNdmDoZ.png',
+        'py' => 'https://devsne.vn/image/icon/u4GCrM1sKd.png',
+        'php' => 'https://devsne.vn/image/icon/EZdBlVF2zI.png',
         'js' => 'https://devsne.vn/image/icon/nF8yjsqeIB.png',
-        'java' => 'https://devsne.vn/image/icon/UbSeQEPhuY.png',
-        'html' => 'https://devsne.vn/image/icon/g3orkMxtKd.png',
+        'java' => 'https://devsne.vn/image/icon/27ljez6t0k.png',
+        'html' => 'https://devsne.vn/image/icon/E8GgdurvK4.png',
         'cpp' => 'https://devsne.vn/image/icon/r0zF74j52c.png',
         'css' => 'https://devsne.vn/image/icon/Fe2psDrjN8.png',
         'spring' => 'https://devsne.vn/image/icon/mjhOvDXViF.png'
