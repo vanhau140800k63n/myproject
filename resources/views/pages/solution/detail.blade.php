@@ -33,7 +33,7 @@
                     <div><span>Asked </span> {{ $solution->created_at }} <span> View</span>
                         {{ number_format($solution->view) }}</div>
 
-                    <button class="_switch_language" lang='en'>
+                    <button class="_switch_language notranslate" lang='en'>
                         <img src="https://devsne.vn/image/icon/8ZU3O5N1AV.png"> Tiếng Việt
                     </button>
                 </div>
