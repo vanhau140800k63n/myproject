@@ -6526,7 +6526,7 @@ section.exercises .exercises {
     --h3-size: 22px;
     --h4-size: 20px;
     --h5-size: 18px;
-    --color-text-author: rgb(159 103 15);
+    --color-text-author: rgb(159 15 15);
 }
 
 .sol_box * {
@@ -6597,6 +6597,7 @@ section.exercises .exercises {
 .sol_box a {
     color: var(--color-url);
     text-decoration: underline;
+    font-weight: 600;
 }
 
 .sol_box a * {
@@ -6712,6 +6713,7 @@ section.exercises .exercises {
 .sol_box ._author,
 .sol_box ._author * {
     color: var(--color-text-author);
+    font-weight: 600;
 }
 
 .sol_box ._answer_info {
