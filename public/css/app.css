@@ -1538,6 +1538,15 @@ code * {
     .exercise_banner_content {
         font-size: 12px;
     }
+
+    .exercise_banner_btn {
+        font-size: 14px;
+        padding: 5px 12px;
+    }
+
+    .exercise_banner_info {
+        margin-left: 15px;
+    }
 }
 .footer_box {
     min-height: 300px;
