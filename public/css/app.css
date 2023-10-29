@@ -131,6 +131,10 @@ a {
     color: rgba(14, 143, 213, 1);
 }
 
+.header-box .logo a {
+    display: flex;
+}
+
 .header-box .search {
     width: 500px;
     position: relative;
