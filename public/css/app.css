@@ -1308,7 +1308,7 @@ code * {
     font-size: 16px;
     margin-bottom: 15px;
     font-weight: 500;
-    /* text-align: justify; */
+    text-align: justify;
 }
 
 .exercise_banner_btn {
@@ -1468,7 +1468,7 @@ code * {
 
     .lesson_content.text_box * {
         font-size: 14px;
-        line-height: 1.4;
+        line-height: 1.6;
     }
 
     .lesson_box {
