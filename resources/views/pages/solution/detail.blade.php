@@ -33,8 +33,8 @@
                     <div><span>Asked </span> {{ $solution->created_at }} <span> View</span>
                         {{ number_format($solution->view) }}</div>
 
-                    <button class="_switch_language">
-                        <img src="https://devsne.vn/image/icon/8ZU3O5N1AV.png">Vietnamese
+                    <button class="_switch_language" lang='en'>
+                        <img src="https://devsne.vn/image/icon/8ZU3O5N1AV.png"> Tiếng Việt
                     </button>
                 </div>
             </div>
@@ -107,18 +107,20 @@
             }, 'google_translate_element');
         }
         $('._switch_language').click(function() {
-            if ($(this).text().replace(/ /g, '') == 'Vietnamese') {
+            if ($(this).attr('lang') == 'en') {
+                $(this).attr('lang', 'vi');
                 var selectElement = document.querySelector('#google_translate_element select');
                 selectElement.value = 'vi';
                 selectElement.dispatchEvent(new Event('change'));
                 selectElement.value = 'vi';
                 selectElement.dispatchEvent(new Event('change'));
-                $(this).html('<img src="https://devsne.vn/image/icon/zos3frNRqM.png">Tiếng Anh');
+                $(this).html('<img src="https://devsne.vn/image/icon/zos3frNRqM.png">English');
             } else {
+                $(this).attr('lang', 'en');
                 var selectElement = document.querySelector('#google_translate_element select');
                 selectElement.value = 'en';
                 selectElement.dispatchEvent(new Event('change'));
-                $(this).html('<img src="https://devsne.vn/image/icon/8ZU3O5N1AV.png"> Vietnamese');
+                $(this).html('<img src="https://devsne.vn/image/icon/8ZU3O5N1AV.png">Tiếng Việt');
             }
         });
     </script>

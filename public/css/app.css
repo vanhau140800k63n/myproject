@@ -6640,6 +6640,7 @@ section.exercises .exercises {
 
 .sol_box p {
     margin-bottom: 0.5em;
+    /* text-indent: 20px; */
 }
 
 .sol_box h2 {
