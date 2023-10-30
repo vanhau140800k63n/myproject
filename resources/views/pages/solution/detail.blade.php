@@ -34,7 +34,7 @@
                         {{ number_format($solution->view) }}</div>
 
                     <button class="_switch_language notranslate" lang='en'>
-                        <img src="https://devsne.vn/image/icon/8ZU3O5N1AV.png"> Tiếng Việt
+                        <img src="https://devsne.vn/image/icon/8ZU3O5N1AV.png"> VN
                     </button>
                 </div>
             </div>
@@ -114,13 +114,13 @@
                 selectElement.dispatchEvent(new Event('change'));
                 selectElement.value = 'vi';
                 selectElement.dispatchEvent(new Event('change'));
-                $(this).html('<img src="https://devsne.vn/image/icon/zos3frNRqM.png">English');
+                $(this).html('<img src="https://devsne.vn/image/icon/zos3frNRqM.png">EN');
             } else {
                 $(this).attr('lang', 'en');
                 var selectElement = document.querySelector('#google_translate_element select');
                 selectElement.value = 'en';
                 selectElement.dispatchEvent(new Event('change'));
-                $(this).html('<img src="https://devsne.vn/image/icon/8ZU3O5N1AV.png">Tiếng Việt');
+                $(this).html('<img src="https://devsne.vn/image/icon/8ZU3O5N1AV.png">VN');
             }
         });
     </script>
