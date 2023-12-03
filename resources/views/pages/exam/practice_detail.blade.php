@@ -56,7 +56,7 @@
         </div>
         <main class="contest_screen">
             <div class="switch_language notranslate">
-                <img class="back_btn" src="https://devsne.vn/image/icon/rosvU0YwKh.png" > 
+                <img class="back_btn" src="https://devsne.vn/image/icon/kFeGy3c2vE.png" > 
                 <div class="switch_language_title">Đổi ngôn ngữ: </div>
                 <div class="switch">
                     <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox"
