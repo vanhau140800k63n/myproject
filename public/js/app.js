@@ -2295,7 +2295,7 @@ __webpack_require__.r(__webpack_exports__);
 $(document).ready(function () {
   $('.home_post_img').height($('.home_post_img').width() * 2 / 3);
   $('.home_post_img_cover').height($('.home_post_img').height());
-  // $('#hero').css('background-image', 'url(https://ecdn.game4v.com/g4v-content/uploads/2023/01/04202045/h%C3%ACnh-%E1%BA%A3nh_2023-01-04_202039758-1672838443-46.png)');
+  // $('#hero').css ('background-image', 'url(https://ecdn.game4v.com/g4v-content/uploads/2023/01/04202045/h%C3%ACnh-%E1%BA%A3nh_2023-01-04_202039758-1672838443-46.png)');
 
   if (navigator.userAgent.indexOf('Mac OS X') == -1) {
     $(".lesson_box_category_fixed").addClass("pc_scroll");
