@@ -159,18 +159,34 @@
             top: 430px;
             left: 222px;
             transform: translateY(-15px) translateX(0px) translateZ(15px) rotateX(104deg);
+            -webkit-transform: translateY(-15px) translateX(0px) translateZ(15px) rotateX(104deg);
+            -moz-transform: translateY(-15px) translateX(0px) translateZ(15px) rotateX(104deg);
+            -ms-transform: translateY(-15px) translateX(0px) translateZ(15px) rotateX(104deg);
+            -o-transform: translateY(-15px) translateX(0px) translateZ(15px) rotateX(104deg);
         }
 
         .mobile-layout .book-cover:hover {
             transform: rotateX(75deg) translateZ(3px) scale(0.75);
+            -webkit-transform: rotateX(75deg) translateZ(3px) scale(0.75);
+            -moz-transform: rotateX(75deg) translateZ(3px) scale(0.75);
+            -ms-transform: rotateX(75deg) translateZ(3px) scale(0.75);
+            -o-transform: rotateX(75deg) translateZ(3px) scale(0.75);
         }
 
         .mobile-layout .book-cover:hover+.preface {
             transform: translateY(-302px);
+            -webkit-transform: translateY(-302px);
+            -moz-transform: translateY(-302px);
+            -ms-transform: translateY(-302px);
+            -o-transform: translateY(-302px);
         }
 
         .mobile-layout .book-cover:hover+.preface .icon {
             transform: rotateX(180deg);
+            -webkit-transform: rotateX(180deg);
+            -moz-transform: rotateX(180deg);
+            -ms-transform: rotateX(180deg);
+            -o-transform: rotateX(180deg);
         }
 
         .mobile-layout .preface {
