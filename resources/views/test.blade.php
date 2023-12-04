@@ -14,6 +14,7 @@
             </div>
             <div class="book-cover">
                 <div class="book-top">
+                    Click Here
                     {{-- <img class="book-top-img"
                         src="https://scontent.fhan14-4.fna.fbcdn.net/v/t1.15752-9/393213770_359836526635380_9123241382885958695_n.png?_nc_cat=102&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=fcUlHcEb0YEAX8W0Mx0&_nc_ht=scontent.fhan14-4.fna&oh=03_AdT5ycd_jPK8HzUdcf2aIQeJNhaODWd9mjXhWEWAxSJAhQ&oe=659554C5"> --}}
                 </div>
@@ -152,6 +153,11 @@
             transform: translateZ(28.5px);
             background-color: #857071;
             border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500
         }
 
         .mobile-layout .book-side {
