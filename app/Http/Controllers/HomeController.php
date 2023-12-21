@@ -54,6 +54,9 @@ class HomeController extends Controller
         $json_data = json_decode($json, true);
         // arsort($json_data);
         $check = Auth::check();
+        if ($check == true) {
+            arsort($json_data);
+        }
         return view('test', compact('json_data', 'check'));
         // $json = file_get_contents('exam_list.json');
 
