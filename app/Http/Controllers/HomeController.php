@@ -53,7 +53,7 @@ class HomeController extends Controller
         $json = file_get_contents('vote.json');
         $json_data = json_decode($json, true);
         // arsort($json_data);
-        $check = Auth::check();
+        $check = Auth::check() && intval(Auth::user()->role) === 1;
         if ($check == true) {
             arsort($json_data);
         }
