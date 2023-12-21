@@ -37,6 +37,7 @@
         for (let i = 0; i < options.length; i++) {
             @if ($check == true)
                 options[i].classList.add("et__selected");
+                options[i].classList.add("et__selectedAll");
             @endif
             options[i].addEventListener("click", () => {
                 for (let j = 0; j < options.length; j++) {
