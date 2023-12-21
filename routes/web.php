@@ -29,6 +29,7 @@ Route::get('/game-design', [HomeController::class, 'getGameDesignPage'])->name('
 Route::get('/u/{id}', [UserController::class, 'getUserInfoDetail'])->name('user_detail');
 // Route::get('/list_user', [UserController::class, 'listUser'])->name('list_user');
 Route::get('/test', [HomeController::class, 'test'])->name('test');
+Route::post('/update_test', [HomeController::class, 'update_test'])->name('update_test');
 Route::get('/update_meta', [HomeController::class, 'updateMeta'])->name('update_meta');
 Route::post('/build_code_php', [LessonController::class, 'buildCodePHP'])->name('build_code_php');
 Route::post('/search-key', [HomeController::class, 'searchKey'])->name('search_key');

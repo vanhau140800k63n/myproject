@@ -9,6 +9,7 @@ use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use App\Config\ExamConstants;
+use Illuminate\Support\Facades\Auth;
 use App\Repositories\SolutionRepositoryInterface;
 use Illuminate\Http\Request;
 
@@ -49,8 +50,11 @@ class HomeController extends Controller
 
     public function test()
     {
-        return view('test');
-        dd(exec('/Library/Frameworks/Python.framework/Versions/3.11/bin/python3 --version'));
+        $json = file_get_contents('vote.json');
+        $json_data = json_decode($json, true);
+        // arsort($json_data);
+        $check = Auth::check();
+        return view('test', compact('json_data', 'check'));
         // $json = file_get_contents('exam_list.json');
 
         // // Decode the JSON file
@@ -59,6 +63,16 @@ class HomeController extends Controller
         // dd($html);
         // $data = file_get_contents('https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array');
         // dd($data);
+    }
+
+    public function update_test(Request $req)
+    {
+        $file = 'vote.json';
+        $json = file_get_contents($file);
+        $json_data = json_decode($json, true);
+        $json_data[$req->key] = (int)$json_data[$req->key] + 1;
+        file_put_contents($file, json_encode($json_data));
+        return true;
     }
 
     public function postChangeTitle()
