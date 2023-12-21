@@ -21,7 +21,7 @@
                                 </div>
                                 <span class="et__percent">{{ $json_data[$name] }}</span>
                             </div>
-                            <div class="et__progress" style="--w:{{ $json_data[$name]/count($json_data)*100 }};"></div>
+                            <div class="et__progress" style="--w:{{ $json_data[$name] }};"></div>
                         </label>
                     @endforeach
                     <button class="save"> Lưu lại</button>
