@@ -30,7 +30,7 @@
             @if ($show_filters)
                 <div class="icon_filters_item">
                     <div class="i_f_i_title">
-                        <i class="fa-regular fa-circle-check"></i>
+                        <i rel="preload" class="fa-regular fa-circle-check"></i>
                         <h3>Đã chọn</h3>
                     </div>
                     <div class="i_f_t_selected">

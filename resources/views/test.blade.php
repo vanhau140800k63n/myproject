@@ -30,7 +30,6 @@
         </section>
     </section>
     <script>
-        // getting all attributes
         const options = document.querySelectorAll(".et__box"),
             etProgressBar = document.querySelector(".et__percent");
 
