@@ -263,29 +263,29 @@
             return str.substring(str.lastIndexOf('/') + 1);
         }
 
-        var _token = $('meta[name="csrf-token"]').attr('content');
-        $.ajax({
-            url: window.location.origin + "/icon/save_icon",
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            type: "POST",
-            dataType: 'json',
-            data: {
-                icons: icons,
-                icon_tags: icon_tags,
-                _token: _token
-            }
-        }).done(function(data) {
-            $('.icon_list img').each(function() {
-                if (!data[$(this).attr('src')].includes("https://cdn-icons-png.flaticon.com")) {
-                    $(this).attr('src', window.location.origin + '/' + data[$(this).attr('src')]);
-                }
-            })
-            return true;
-        }).fail(function(e) {
-            return false;
-        });
+        // var _token = $('meta[name="csrf-token"]').attr('content');
+        // $.ajax({
+        //     url: window.location.origin + "/icon/save_icon",
+        //     headers: {
+        //         'Content-Type': 'application/x-www-form-urlencoded'
+        //     },
+        //     type: "POST",
+        //     dataType: 'json',
+        //     data: {
+        //         icons: icons,
+        //         icon_tags: icon_tags,
+        //         _token: _token
+        //     }
+        // }).done(function(data) {
+        //     $('.icon_list img').each(function() {
+        //         if (!data[$(this).attr('src')].includes("https://cdn-icons-png.flaticon.com")) {
+        //             $(this).attr('src', window.location.origin + '/' + data[$(this).attr('src')]);
+        //         }
+        //     })
+        //     return true;
+        // }).fail(function(e) {
+        //     return false;
+        // });
 
         $('.icon_search_input').keydown(function(e) {
             if (e.which == 13) {
