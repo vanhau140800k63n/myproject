@@ -161,14 +161,14 @@
         var icons = [];
         var icon_tags = [];
 
-        $('.icon_list img').each(function() {
-            var data_src = $(this).attr('data-src');
-            $(this).attr('src', data_src);
-            if (data_src.includes("https://cdn-icons-png.flaticon.com")) {
-                icons.push(data_src);
-                icon_tags.push($(this).attr('title'));
-            }
-        })
+        // $('.icon_list img').each(function() {
+        //     var data_src = $(this).attr('data-src');
+        //     $(this).attr('src', data_src);
+        //     if (data_src.includes("https://cdn-icons-png.flaticon.com")) {
+        //         icons.push(data_src);
+        //         icon_tags.push($(this).attr('title'));
+        //     }
+        // })
 
         // $('.icon_search_result').css('display', 'bl')
         $('.i_f_i_c_item').click(function() {
