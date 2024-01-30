@@ -1,6 +1,6 @@
 {
     "cpp": {
-        "image": "https:\/\/devsne.vn\/image\/icon\/r0zF74j52c.png",
+        "image": "https://cdn-icons-png.flaticon.com/128/6132/6132222.png",
         "name": "C++",
         "concepts_num": 16,
         "practices_num": 73,
@@ -55,7 +55,7 @@
                 "rank": 5,
                 "difficulty": "Luy\u1ec7n t\u1eadp",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 kh\u00f4ng gian t\u00ean b\u1eb1ng c\u00e1ch th\u1ef1c hi\u1ec7n m\u1ed9t b\u1ea5t \u0111\u1ed9ng s\u1ea3n.",
-                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -82,7 +82,7 @@
                 "rank": 8,
                 "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 m\u1ea3ng v\u00e0 vector trong C++ b\u1eb1ng c\u00e1ch ch\u1ea5m \u0111i\u1ec3m v\u00e0 s\u1eafp x\u1ebfp \u0111i\u1ec3m thi c\u1ee7a h\u1ecdc sinh.",
-                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "Ch\u1ea5m \u0111i\u1ec3m",
                 "status": 1
             },
@@ -100,7 +100,7 @@
                 "rank": 10,
                 "difficulty": "easy",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c l\u1edbp h\u1ecdc b\u1eb1ng c\u00e1ch t\u1ea1o tr\u00f2 ch\u01a1i Ng\u01b0\u1eddi ngo\u00e0i h\u00e0nh tinh cho Ellen.",
-                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "Ellen's Alien Game",
                 "status": 1
             },
@@ -118,7 +118,7 @@
                 "rank": 12,
                 "difficulty": "\u0110\u1ed9 kh\u00f3: Medium",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 ki\u1ec3u li\u1ec7t k\u00ea v\u00e0 c\u00e2u l\u1ec7nh chuy\u1ec3n \u0111\u1ed5i b\u1eb1ng c\u00e1ch ki\u1ec3m tra quy\u1ec1n c\u1ee7a t\u00e0i kho\u1ea3n ng\u01b0\u1eddi d\u00f9ng.",
-                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -669,7 +669,7 @@
         "type": "cpp"
     },
     "java": {
-        "image": "https:\/\/devsne.vn\/image\/icon\/27ljez6t0k.png",
+        "image": "https://cdn-icons-png.flaticon.com/128/226/226777.png",
         "name": "Java",
         "concepts_num": 17,
         "practices_num": 140,
@@ -1840,7 +1840,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -1867,7 +1867,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -1885,7 +1885,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/Xofs2eR9cP.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -2610,7 +2610,7 @@
         "type": "c"
     },
     "python": {
-        "image": "https:\/\/devsne.vn\/image\/icon\/u4GCrM1sKd.png",
+        "image": "https://cdn-icons-png.flaticon.com/128/5968/5968350.png",
         "name": "Python",
         "concepts_num": 64,
         "practices_num": 155,
@@ -2647,7 +2647,7 @@
                 "rank": 8,
                 "difficulty": "\u0110\u1ed9 kh\u00f3: Easy",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 m\u1ea3ng v\u00e0 vector trong C++ b\u1eb1ng c\u00e1ch ch\u1ea5m \u0111i\u1ec3m v\u00e0 s\u1eafp x\u1ebfp \u0111i\u1ec3m thi c\u1ee7a h\u1ecdc sinh.",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "Ch\u1ea5m \u0111i\u1ec3m",
                 "status": 1
             },
@@ -2656,7 +2656,7 @@
                 "rank": 10,
                 "difficulty": "easy",
                 "description": "T\u00ecm hi\u1ec3u v\u1ec1 c\u00e1c l\u1edbp h\u1ecdc b\u1eb1ng c\u00e1ch t\u1ea1o tr\u00f2 ch\u01a1i Ng\u01b0\u1eddi ngo\u00e0i h\u00e0nh tinh cho Ellen.",
-                "image": "https:\/\/devsne.vn\/image\/icon\/fHAF9zTl48.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "Ellen's Alien Game",
                 "status": 1
             },
@@ -3295,7 +3295,7 @@
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3583,7 +3583,7 @@
                 "rank": 99,
                 "difficulty": "\u0111\u1ed9 kh\u00f3: easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3853,7 +3853,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3862,7 +3862,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3871,7 +3871,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3880,7 +3880,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3889,7 +3889,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3898,7 +3898,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3907,7 +3907,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3916,7 +3916,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3925,7 +3925,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3934,7 +3934,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3943,7 +3943,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3961,7 +3961,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3970,7 +3970,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3979,7 +3979,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3988,7 +3988,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -3997,7 +3997,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -4019,7 +4019,7 @@
     "php": {
         "concepts_num": 32,
         "practices_num": 87,
-        "image": "https:\/\/devsne.vn\/image\/icon\/EZdBlVF2zI.png",
+        "image": "https://cdn-icons-png.flaticon.com/128/5968/5968332.png",
         "name": "PHP",
         "language": "php",
         "type": "php",
@@ -4570,7 +4570,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/15KHFcYSig.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1,
                 "path": "\/ordinal_number.php"
@@ -4759,7 +4759,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/dczlPZqm2R.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1,
                 "path": "\/bootstrap.sh.php"
@@ -4786,7 +4786,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/VaDw5xLRSm.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1,
                 "path": "\/pizza_pi.php"
@@ -4795,7 +4795,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/EsmOKdAoLN.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1,
                 "path": "\/sweethearts.php"
@@ -4814,7 +4814,7 @@
     "javascript": {
         "concepts_num": 34,
         "practices_num": 149,
-        "image": "https:\/\/devsne.vn\/image\/icon\/nF8yjsqeIB.png",
+        "image": "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
         "name": "Javascript",
         "language": "js",
         "type": "javascript",
@@ -5951,7 +5951,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -6005,7 +6005,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -6014,7 +6014,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -6032,7 +6032,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },
@@ -6140,7 +6140,7 @@
                 "rank": 99,
                 "difficulty": "easy",
                 "description": "",
-                "image": "https:\/\/devsne.vn\/image\/icon\/mjhOvDXViF.png",
+                "image": "https://cdn-icons-png.flaticon.com/128/5000/5000269.png",
                 "name": "",
                 "status": 1
             },

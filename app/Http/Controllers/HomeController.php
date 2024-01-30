@@ -250,9 +250,9 @@ class HomeController extends Controller
         }
 
         $search_solution_imgs = [
-            'https://devsne.vn/image/icon/3iQLpVvsZ9.png',
-            'https://devsne.vn/image/icon/5xCj6vqB9F.png',
-            'https://devsne.vn/image/icon/BIUXGfbnpj.png'
+            'https://cdn-icons-png.flaticon.com/128/2626/2626299.png',
+            'https://cdn-icons-png.flaticon.com/128/2626/2626299.png',
+            'https://cdn-icons-png.flaticon.com/128/2626/2626299.png'
         ];
 
         if ($search_solutions->count() > 0) {

@@ -22,14 +22,14 @@ final class CommonConstants
     ];
     
     public const LANG_LOGO = [
-        'py' => 'https://devsne.vn/image/icon/u4GCrM1sKd.png',
-        'php' => 'https://devsne.vn/image/icon/EZdBlVF2zI.png',
-        'js' => 'https://devsne.vn/image/icon/nF8yjsqeIB.png',
-        'java' => 'https://devsne.vn/image/icon/27ljez6t0k.png',
-        'html' => 'https://devsne.vn/image/icon/E8GgdurvK4.png',
-        'cpp' => 'https://devsne.vn/image/icon/r0zF74j52c.png',
-        'css' => 'https://devsne.vn/image/icon/Fe2psDrjN8.png',
-        'spring' => 'https://devsne.vn/image/icon/mjhOvDXViF.png'
+        'py' => 'https://cdn-icons-png.flaticon.com/128/5968/5968350.png',
+        'php' => 'https://cdn-icons-png.flaticon.com/128/5968/5968332.png',
+        'js' => 'https://cdn-icons-png.flaticon.com/128/5968/5968292.png',
+        'java' => 'https://cdn-icons-png.flaticon.com/128/226/226777.png',
+        'html' => 'https://cdn-icons-png.flaticon.com/128/5968/5968267.png',
+        'cpp' => 'https://cdn-icons-png.flaticon.com/128/6132/6132222.png',
+        'css' => 'https://cdn-icons-png.flaticon.com/128/5968/5968242.png',
+        'spring' => 'https://cdn-icons-png.flaticon.com/128/5968/5968267.png'
     ];
 
     public const DESCRIPTION = 'Hơn 1000 ... Template miễn phí cho các ứng dụng Android, iOS và website.
