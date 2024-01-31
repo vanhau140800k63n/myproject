@@ -312,7 +312,8 @@
                 <div class="_solution_related">
                     @foreach ($random_solutions as $key => $r_solution)
                         <nav class="_random">
-                            <img width="20" height="20" src="{{ asset($random_icons[$key]->image) }}">
+                            {{-- <img width="20" height="20" src="{{ asset($random_icons[$key]->image) }}"> --}}
+                            <img width="20" height="20" src="https://cdn-icons-png.flaticon.com/128/2626/2626299.png">
                             <a
                                 href="{{ route('solution.detail', ['id' => $r_solution->id, 'slug' => $r_solution->slug]) }}">{{ $r_solution->title }}</a>
                         </nav>
