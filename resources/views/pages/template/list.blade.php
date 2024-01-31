@@ -79,12 +79,12 @@
                             @endif
                         </div>
                         <?php
-                        $icon_lists = \App\Models\Icon::whereNotNull('image')
-                            ->inRandomOrder()
-                            ->take(20)
-                            ->get();
+                        // $icon_lists = \App\Models\Icon::whereNotNull('image')
+                        //     ->inRandomOrder()
+                        //     ->take(20)
+                        //     ->get();
                         ?>
-                        <div class="icon_ads">
+                        {{-- <div class="icon_ads">
                             <div class="icon_ads_lists">
                                 @foreach ($icon_lists as $icon)
                                     <a href="{{ route('icon.search', ['word' => explode(' ', $icon->tag)[0]]) }}"
@@ -97,7 +97,7 @@
                                 @endforeach
                             </div>
                             <a href="{{ route('icon.home') }}" class="icon_ads_title">Xem Thêm</a>
-                        </div>
+                        </div> --}}
                     </article>
                     @if ($template_index == 1)
                         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6922352342278341"
