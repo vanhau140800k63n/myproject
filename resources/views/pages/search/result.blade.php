@@ -23,14 +23,8 @@
                         <div class="home_post_img_cover">
                             <button class="home_post_btn_show">Xem thêm</button>
                         </div>
-                        {{-- <div class="home_post_view"><i class="fa-solid fa-eye"></i>{{ $post->view }} lượt xem</div> --}}
-                        {{-- <div class="home_post_img_title">{{ $lesson->title }}</div> --}}
                         <p class="home_post_item_title">{{ $lesson->title }}</p>
                     </a>
-                    {{-- <a href="{{ route('user_detail', ['id' => $post->author_id]) }}" class="home_post_author">
-                    <img class="home_post_author_img" src="{{ $post->author_avata }}">
-                    <div class="home_post_author_name"> {{ $post->author_name }}</div>
-                </a> --}}
                 </article>
             @endforeach
             @foreach ($posts as $post)
@@ -44,7 +38,7 @@
                         <p class="home_post_item_title">{{ $post->title }}</p>
                     </a>
                     <div class="home_post_author">
-                        <a href="{{ route('user_detail', ['id' => $post->author_id]) }}" style="display: flex">
+                        <a href="{{ route('profile', ['id' => $post->author_id]) }}" style="display: flex">
                             <img class="home_post_author_img" src="{{ asset($post->author_avata) }}">
                             <div class="home_post_author_name"> {{ $post->author_name }}</div>
                         </a>

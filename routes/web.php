@@ -25,33 +25,32 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'getHomePage'])->name('home');
-Route::get('/game-design', [HomeController::class, 'getGameDesignPage'])->name('game_design');
-Route::get('/u/{id}', [UserController::class, 'getUserInfoDetail'])->name('user_detail');
-// Route::get('/list_user', [UserController::class, 'listUser'])->name('list_user');
-Route::get('/test', [HomeController::class, 'test'])->name('test');
-Route::post('/update_test', [HomeController::class, 'update_test'])->name('update_test');
-Route::get('/update_meta', [HomeController::class, 'updateMeta'])->name('update_meta');
+Route::get('/profile/{id}', [UserController::class, 'getUserInfoDetail'])->name('profile');
 Route::post('/build_code_php', [LessonController::class, 'buildCodePHP'])->name('build_code_php');
 Route::post('/search-key', [HomeController::class, 'searchKey'])->name('search_key');
 Route::get('/search/{key}', [HomeController::class, 'search'])->name('search');
+
 Route::post('/action', [PostController::class, 'actionPost'])->name('action');
 Route::post('/add_comment_post', [PostController::class, 'addComment'])->name('add_comment_post');
 Route::post('/del_comment_post', [PostController::class, 'delComment'])->name('del_comment_post');
 Route::get('/auto_html', [PostController::class, 'autoHtml'])->name('auto_html');
 Route::post('/compile_html', [PostController::class, 'compileHtml'])->name('compile_html');
+
 Route::get('/get_noti', [NotiController::class, 'getNoti'])->name('get_noti');
 Route::get('/random_template_banner', [TemplateController::class, 'randomTemplateBanner'])->name('random_template_banner');
+
+//auth google login
 Route::get('/auth/google/callback', [AuthController::class, 'authGoogleCallback'])->name('auth_google_callback');
 Route::get('/auth/google', [AuthController::class, 'authGoogle'])->name('auth_google');
 
 Route::prefix('template')->name('template.')->group(function () {
     Route::get('/{key}', [TemplateController::class, 'listTemplate'])->name('list');
-    Route::get('/{key}-{slug}', [TemplateController::class, 'getTemplateDetail'])->name('detail')->middleware(['check.logged']);
+    // Route::get('/{key}/{slug}', [TemplateController::class, 'getTemplateDetail'])->name('detail')->middleware(['check.logged']);
 });
 
 Route::prefix('learn')->name('learn.')->group(function () {
-    Route::get('/{course}-{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
     Route::get('/{course}', [LessonController::class, 'getLessonIntro'])->name('lesson_intro');
+    Route::get('/{course}/{slug}', [LessonController::class, 'getLessonDetail'])->name('lesson_detail');
 });
 
 Route::prefix('post')->name('post.')->group(function () {
@@ -141,11 +140,11 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::get('/del', [PostController::class, 'delPostAdmin'])->name('del');
         Route::get('/duplicate/{id}', [PostController::class, 'duplicatePost'])->name('duplicate');
         Route::post('/get_content_url', [PostController::class, 'getContentUrl'])->name('get_content_url');
-        Route::get('/auto_add_url', [PostController::class, 'autoAddUrl'])->name('auto_add_url');
+        // Route::get('/auto_add_url', [PostController::class, 'autoAddUrl'])->name('auto_add_url');
         // Route::get('/auto_add_post', [PostController::class, 'autoAddPost'])->name('auto_add_post');
-        Route::post('/add_url_to_db', [PostController::class, 'autoUrlToDb'])->name('add_url_to_db');
-        Route::get('/auto_update_title_post', [PostController::class, 'autoUpdateTitlePost'])->name('auto_update_title_post');
-        Route::post('/update_title_post', [PostController::class, 'updateTitlePost'])->name('pdate_title_post');
+        // Route::post('/add_url_to_db', [PostController::class, 'autoUrlToDb'])->name('add_url_to_db');
+        // Route::get('/auto_update_title_post', [PostController::class, 'autoUpdateTitlePost'])->name('auto_update_title_post');
+        // Route::post('/update_title_post', [PostController::class, 'updateTitlePost'])->name('pdate_title_post');
     });
 
     Route::prefix('template')->name('template.')->group(function () {
@@ -155,15 +154,15 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::get('/t/add', [TemplateController::class, 'addTemplateAdmin'])->name('add');
         Route::get('/a/add_description', [TemplateController::class, 'addDescriptionAdmin'])->name('add_description');
 
-        // Route::prefix('auto')->name('auto.')->group(function () {
-        //     Route::get('/add', [TemplateController::class, 'autoAddTemplateAdmin'])->name('add');
-        //     Route::post('/post_add', [TemplateController::class, 'autoPostAddTemplateAdmin'])->name('post_add');
-        // });
-
         Route::prefix('item')->name('item.')->group(function () {
             Route::post('/add', [TemplateController::class, 'postAddTemplateAdmin'])->name('add');
             Route::post('/update', [TemplateController::class, 'postUpdateTemplateAdmin'])->name('update');
         });
+
+        // Route::prefix('auto')->name('auto.')->group(function () {
+        //     Route::get('/add', [TemplateController::class, 'autoAddTemplateAdmin'])->name('add');
+        //     Route::post('/post_add', [TemplateController::class, 'autoPostAddTemplateAdmin'])->name('post_add');
+        // });
     });
 
     Route::prefix('solution')->name('solution.')->group(function () {
@@ -172,3 +171,10 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
         Route::post('/add_solution_item', [SolutionController::class, 'addSolutionItem'])->name('add_solution_item');
     });
 });
+
+// Function not use
+// Route::get('/list_user', [UserController::class, 'listUser'])->name('list_user');
+// Route::get('/game-design', [HomeController::class, 'getGameDesignPage'])->name('game_design');
+// Route::get('/test', [HomeController::class, 'test'])->name('test');
+// Route::post('/update_test', [HomeController::class, 'update_test'])->name('update_test');
+// Route::get('/update_meta', [HomeController::class, 'updateMeta'])->name('update_meta');

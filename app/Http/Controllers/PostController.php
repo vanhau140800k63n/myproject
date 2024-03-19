@@ -318,7 +318,7 @@ class PostController extends Controller
                 'post_id' => $data['target_id']
             ]);
             $output =   '<div class="comment_item">
-                            <a href="' . route('user_detail', ['id' => $user->id]) . '" class="cmt_info">
+                            <a href="' . route('profile', ['id' => $user->id]) . '" class="cmt_info">
                                 <img class="cmt_info_img" src="' . $author_image . '">
                                 <div class="cmt_info_name"> ' . $user->last_name . ' ' . $user->first_name . ' </div>
                                 <div class="cmt_info_date"> ' . $comment->created_at . ' </div>

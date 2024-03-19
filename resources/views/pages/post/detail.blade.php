@@ -189,7 +189,7 @@
                 <div class="comment_list">
                     @foreach ($comments as $comment)
                         <article class="comment_item">
-                            <a href="{{ route('user_detail', ['id' => $comment->author_id]) }}" class="cmt_info">
+                            <a href="{{ route('profile', ['id' => $comment->author_id]) }}" class="cmt_info">
                                 <img class="cmt_info_img" src="{{ asset($comment->author_avata) }}">
                                 <div class="cmt_info_name"> {{ $comment->author_name }} </div>
                                 <div class="cmt_info_date"> {{ $comment->created_at }} </div>
@@ -291,7 +291,7 @@
             <div class="post_box_other_fixed" style="">
                 {{-- <div class="post_info_author">
                     <img class="post_author_info_img" src="{{ asset($author->avata) }}">
-                    <a href="{{ route('user_detail', ['id' => $author->id]) }}" class="post_author_info_name">
+                    <a href="{{ route('profile', ['id' => $author->id]) }}" class="post_author_info_name">
                         {{ $author->last_name . ' ' . $author->first_name }} </a>
                     <button class="post_author_btn_follow">Theo dõi</button>
                 </div> --}}
