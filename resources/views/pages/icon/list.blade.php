@@ -125,9 +125,9 @@
             </div>
             <h1> Tìm kiếm: Free {{ $word }} Icons </h1>
             <div class="icon_list">
-                @foreach ($arr as $item)
+                @foreach ($iconList as $icon)
                     <article class="icon_list_item">
-                        <img src="https://cdn-icons-png.flaticon.com/128/{{ $item->path }}/{{ $item->path . sprintf('%03d', $item->index) }}.png"
+                        <img src="https://cdn-icons-png.flaticon.com/128/{{ $icon->path }}/{{ $icon->path . sprintf('%03d', $icon->index) }}.png"
                             width="64" height="64">
                         <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button>
                         {{-- <div class="icon_ribbon left">Rotated Ribbon</div> --}}
