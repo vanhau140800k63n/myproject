@@ -127,7 +127,7 @@
             <div class="icon_list">
                 @foreach ($iconList as $icon)
                     <article class="icon_list_item">
-                        <img src="https://cdn-icons-png.flaticon.com/128/{{ $icon->path }}/{{ $icon->path . sprintf('%03d', $icon->index) }}.png"
+                        <img src="{{ $icon->image }}"
                             width="64" height="64">
                         <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button>
                     </article>
@@ -264,17 +264,7 @@
                 }
             }).done(function(data) {
                 if (data !== false) {
-                    $('.icon_list').append(``
-                        `
-                    <article class="icon_list_item">
-                        <img src="`
-                        `` + data + ``
-                        `"
-                            width="64" height="64">
-                        <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button>
-                    </article>
-                    `
-                        ``);
+                    $('.icon_list').append('<article class="icon_list_item"><img src="/' + data + '" width="64" height="64"> <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button> </article>');
 
                     getIconForKey();
                 }

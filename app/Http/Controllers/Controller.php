@@ -41,6 +41,8 @@ class Controller extends BaseController
     protected function saveIconImage($icon)
     {
         $imgUrl = 'https://cdn-icons-png.flaticon.com/128/' . $icon->path . '/' . $icon->path . sprintf('%03d', $icon->index) . '.png';
+        $icon->status = 1;
+        $icon->save();
         if ($imgUrl != "") {
             $url = str_replace(' ', '%20', $imgUrl);
             try {
