@@ -127,7 +127,7 @@
             <div class="icon_list">
                 @foreach ($iconList as $icon)
                     <article class="icon_list_item">
-                        <img src="{{ $icon->image }}"
+                        <img src="/{{ $icon->image }}"
                             width="64" height="64">
                         <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button>
                     </article>
