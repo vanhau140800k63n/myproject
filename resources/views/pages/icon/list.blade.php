@@ -275,12 +275,16 @@
                     </article>
                     `
                         ``);
+
+                    getIconForKey();
                 }
                 return true;
             }).fail(function(e) {
                 return false;
             });
         }
+
+        getIconForKey();
 
         $('.icon_search_input').keydown(function(e) {
             if (e.which == 13) {
