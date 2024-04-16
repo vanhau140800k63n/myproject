@@ -10,4 +10,5 @@ interface IconRepositoryInterface
     public function checkAddIcon($icon_path);
     public function getIconByPath($data);
     public function randomByTag($tag, $num);
+    public function searchIconByKey($key);
 }

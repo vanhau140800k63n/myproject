@@ -109,12 +109,7 @@
         </aside>
         <main class="icon_list_box">
             <?php
-            $icon_tags = \App\Models\Icon::select('tag')
-                ->distinct()
-                ->inRandomOrder()
-                ->take(20)
-                ->get()
-                ->pluck('tag');
+            $icon_tags = \App\Models\Icon::select('tag')->distinct()->inRandomOrder()->take(20)->get()->pluck('tag');
             ?>
             <div class="icon_search">
                 <input class="icon_search_input" value="{{ $word }}">
@@ -132,7 +127,8 @@
             <div class="icon_list">
                 @foreach ($arr as $item)
                     <article class="icon_list_item">
-                        {!! $item !!}
+                        <img src="https://cdn-icons-png.flaticon.com/128/{{ $item->path }}/{{ $item->path . sprintf('%03d', $item->index) }}.png"
+                            width="64" height="64">
                         <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button>
                         {{-- <div class="icon_ribbon left">Rotated Ribbon</div> --}}
                     </article>

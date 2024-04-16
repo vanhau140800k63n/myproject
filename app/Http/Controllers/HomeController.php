@@ -10,32 +10,28 @@ use App\Repositories\PostRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use App\Repositories\SolutionRepositoryInterface;
 use Illuminate\Http\Request;
+use GuzzleHttp\Client;
+
 
 class HomeController extends Controller
 {
-    private $userRepository;
     private $pLanguageRepository;
     private $postRepository;
     private $lessonRepository;
     private $categoryRepository;
-    private $challengeRepository;
     private $solutionRepository;
 
     public function __construct(
-        UserRepositoryInterface $userRepository,
         PLanguageRepositoryInterface $pLanguageRepository,
         PostRepositoryInterface $postRepository,
         LessonRepositoryInterface $lessonRepository,
         CategoryRepositoryInterface $categoryRepository,
-        ChallengeRepositoryInterface $challengeRepository,
         SolutionRepositoryInterface $solutionRepository
     ) {
-        $this->userRepository = $userRepository;
         $this->pLanguageRepository = $pLanguageRepository;
         $this->postRepository = $postRepository;
         $this->lessonRepository = $lessonRepository;
         $this->categoryRepository = $categoryRepository;
-        $this->challengeRepository = $challengeRepository;
         $this->solutionRepository = $solutionRepository;
     }
 
@@ -229,6 +225,7 @@ class HomeController extends Controller
         return view('pages.search.result', compact('lessons', 'posts', 'key'));
     }
 
+    //create sitemap for seo
     public function createSiteMap()
     {
         $priority = 0.6;
@@ -258,5 +255,9 @@ class HomeController extends Controller
                 $update = $this->postRepository->updatePost($data);
             }
         }
+    }
+
+    public function test() {
+        dd(file_get_contents('https://www.flaticon.com/free-icons/contest'));
     }
 }

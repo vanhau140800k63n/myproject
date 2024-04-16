@@ -2,62 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Config\AdminConstants;
 use App\Config\CommonConstants;
-use App\Exceptions\PageException;
-use App\Repositories\ActionRepositoryInterface;
-use App\Repositories\CategoryRepositoryInterface;
-use App\Repositories\CommentRepositoryInterface;
-use App\Repositories\ContentItemRepositoryInterface;
-use App\Repositories\ContentRepositoryInterface;
 use App\Repositories\IconRepositoryInterface;
-use App\Repositories\PLanguageRepositoryInterface;
-use App\Repositories\PostRepositoryInterface;
-use App\Repositories\TemplateRepositoryInterface;
-use App\Repositories\TemplateTypeRepositoryInterface;
-use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\File;
 use Throwable;
 
 class IconController extends Controller
 {
-    private $categoryRepository;
-    private $pLanguageRepository;
-    private $postRepository;
-    private $contentItemRepository;
-    private $userRepository;
-    private $commentReprository;
-    private $contentRepository;
-    private $actionRepository;
-    private $templateTypeRepository;
-    private $templateRepository;
     private $iconRepository;
 
     public function __construct(
-        UserRepositoryInterface $userRepository,
-        PLanguageRepositoryInterface $pLanguageRepository,
-        PostRepositoryInterface $postRepository,
-        ContentItemRepositoryInterface $contentItemRepository,
-        CategoryRepositoryInterface $categoryRepository,
-        CommentRepositoryInterface $commentReprository,
-        ContentRepositoryInterface $contentRepository,
-        ActionRepositoryInterface $actionRepository,
-        TemplateTypeRepositoryInterface $templateTypeRepository,
-        TemplateRepositoryInterface $templateRepository,
         IconRepositoryInterface $iconRepository
     ) {
-        $this->categoryRepository = $categoryRepository;
-        $this->pLanguageRepository = $pLanguageRepository;
-        $this->postRepository = $postRepository;
-        $this->contentItemRepository = $contentItemRepository;
-        $this->userRepository = $userRepository;
-        $this->commentReprository = $commentReprository;
-        $this->contentRepository = $contentRepository;
-        $this->actionRepository = $actionRepository;
-        $this->templateTypeRepository = $templateTypeRepository;
-        $this->templateRepository = $templateRepository;
         $this->iconRepository = $iconRepository;
     }
 
@@ -71,34 +27,11 @@ class IconController extends Controller
         $page_total = 1;
         $crr_page = 1;
 
-        $content = '';
-
-        try {
-            $content = file_get_contents('https://www.flaticon.com/search?word=code');
-        } catch (\Throwable $ex) {
-        }
-        if (strpos($content, $page_total_str) != false)
-            $page_total = intval(substr($content, strpos($content, $page_total_str) + strlen($page_total_str),  strpos($content, '</span>', strpos($content, $page_total_str)) - strpos($content, $page_total_str) - strlen($page_total_str)));
-
-        if (strpos($content, $index) != false)
-            $content = substr($content, strpos($content, $index), strpos($content, '</section>', strpos($content, $index)) - strpos($content, $index) + 10);
-
-        $arr = [];
-        while (strpos($content, '<img') != false) {
-            $img = substr($content, strpos($content, '<img'),  strpos($content, '>', strpos($content, '<img'))  + 1 - strpos($content, '<img'));
-            // $img_src = substr($img, strpos($img, 'data-src="') + 10,  strpos($img, '"', strpos($img, 'data-src="') + 10)  - 10 - strpos($img, 'data-src="'));
-            // $icon = $this->iconRepository->getIconByPath(explode('/', $img_src));
-            // if ($icon != null) {
-            //     $img = str_replace($img_src, asset($icon->image), $img);
-            // }
-            $content = substr($content, 0,  strpos($content, '<img ')) . substr($content, strpos($content, '>', strpos($content, '<img ')) + 1);
-            array_push($arr, $img);
-        }
+        $arr = $this->iconRepository->searchIconByKey($word);
 
         $color_filters = CommonConstants::COLER_FILTERS;
         $shape_filters =  CommonConstants::SHAPE_FILTERS;
-        shuffle($arr);
-        
+
         return view('pages.icon.list', compact('arr', 'color_filters', 'shape_filters', 'word', 'filter_selected', 'crr_page', 'page_total'));
     }
 

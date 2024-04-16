@@ -13,10 +13,10 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    protected function saveImage($url, $name)
+    private function saveImage($imgUrl, $imgName)
     {
-        if ($url != "") {
-            $url = str_replace(' ', '%20', $url);
+        if ($imgUrl != "") {
+            $url = str_replace(' ', '%20', $imgUrl);
             try {
                 $size = getimagesize($url);
                 if ($size !== false) {
@@ -25,7 +25,7 @@ class Controller extends BaseController
                     $imgFile->resize(500, null, function ($constraint) {
                         $constraint->aspectRatio();
                     });
-                    $imageName = 'image/post/' . $name . rand(1000, 9999) . '.jpg';
+                    $imageName = 'image/post/' . $imgName . rand(1000, 9999) . '.jpg';
                     $imgFile->save($imageName);
 
                     return $imageName;
@@ -38,7 +38,7 @@ class Controller extends BaseController
         return '';
     }
 
-    protected function saveIconImage($url)
+    private function saveIconImage($url)
     {
         if ($url != "") {
             $url = str_replace(' ', '%20', $url);
@@ -63,19 +63,12 @@ class Controller extends BaseController
         return false;
     }
 
-    protected function saveVideo($url) {
-        // retur $path = $request->file('video')->storeAs(
-        //     'videos_directory',
-        //     $request->file('video')->getClientOriginalName() . '.' . $request->file('video')->getClientOriginalExtension()
-        // );
-    }
-
     private function generateRandomString($length = 10)
     {
         return substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);
     }
 
-    protected function makeSlug($str)
+    private function makeSlug($str)
     {
         $str = preg_replace("/(à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ)/", 'a', $str);
         $str = preg_replace("/(è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ)/", 'e', $str);
