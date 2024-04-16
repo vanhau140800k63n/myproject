@@ -158,4 +158,16 @@ class IconController extends Controller
 
         return response()->json($res_icons);
     }
+
+    public function getIcon(Request $req)
+    {
+        if (!isset($req->key)) return response()->json(false);
+
+        $key = $req->key;
+        $icon = $this->iconRepository->getFirstIconByKeyNotActive($key);
+        if (is_null($icon)) return response()->json(false);
+
+        $imageName = $this->saveIconImage($icon);
+        return response()->json($imageName);
+    }
 }

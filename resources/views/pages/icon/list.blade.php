@@ -130,7 +130,6 @@
                         <img src="https://cdn-icons-png.flaticon.com/128/{{ $icon->path }}/{{ $icon->path . sprintf('%03d', $icon->index) }}.png"
                             width="64" height="64">
                         <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button>
-                        {{-- <div class="icon_ribbon left">Rotated Ribbon</div> --}}
                     </article>
                 @endforeach
             </div>
@@ -156,15 +155,6 @@
         var page = '{{ $crr_page }}';
         var icons = [];
         var icon_tags = [];
-
-        // $('.icon_list img').each(function() {
-        //     var data_src = $(this).attr('src');
-        //     $(this).attr('src', data_src);
-        //     if (data_src.includes("https://cdn-icons-png.flaticon.com")) {
-        //         icons.push(data_src);
-        //         icon_tags.push($(this).attr('title'));
-        //     }
-        // })
 
         $('.i_f_i_c_item').click(function() {
             if ($(this).attr('type') == 'color') {
@@ -258,29 +248,39 @@
             return str.substring(str.lastIndexOf('/') + 1);
         }
 
-        // var _token = $('meta[name="csrf-token"]').attr('content');
-        // $.ajax({
-        //     url: window.location.origin + "/icon/save_icon",
-        //     headers: {
-        //         'Content-Type': 'application/x-www-form-urlencoded'
-        //     },
-        //     type: "POST",
-        //     dataType: 'json',
-        //     data: {
-        //         icons: icons,
-        //         icon_tags: icon_tags,
-        //         _token: _token
-        //     }
-        // }).done(function(data) {
-        //     $('.icon_list img').each(function() {
-        //         if (!data[$(this).attr('src')].includes("https://cdn-icons-png.flaticon.com")) {
-        //             $(this).attr('src', window.location.origin + '/' + data[$(this).attr('src')]);
-        //         }
-        //     })
-        //     return true;
-        // }).fail(function(e) {
-        //     return false;
-        // });
+        function getIconForKey() {
+            let key = $('.icon_search_input').val();
+            var _token = $('meta[name="csrf-token"]').attr('content');
+            $.ajax({
+                url: window.location.origin + "/icon/get_icon",
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                type: "POST",
+                dataType: 'json',
+                data: {
+                    key: key,
+                    _token: _token
+                }
+            }).done(function(data) {
+                if (data !== false) {
+                    $('.icon_list').append(``
+                        `
+                    <article class="icon_list_item">
+                        <img src="`
+                        `` + data + ``
+                        `"
+                            width="64" height="64">
+                        <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button>
+                    </article>
+                    `
+                        ``);
+                }
+                return true;
+            }).fail(function(e) {
+                return false;
+            });
+        }
 
         $('.icon_search_input').keydown(function(e) {
             if (e.which == 13) {

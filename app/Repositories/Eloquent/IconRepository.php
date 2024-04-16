@@ -47,6 +47,11 @@ class IconRepository extends BaseRepository implements IconRepositoryInterface
 
     public function searchIconByKey($key)
     {
-        return $this->icon->where('tag', 'like', "%$key%")->inRandomOrder()->get();
+        return $this->icon->where('tag', 'like', "%$key%")->where('status', 1)->inRandomOrder()->get();
+    }
+
+    public function getFirstIconByKeyNotActive($key)
+    {
+        return $this->icon->where('tag', 'like', "%$key%")->where('status', 0)->first();
     }
 }

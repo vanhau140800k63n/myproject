@@ -13,7 +13,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    private function saveImage($imgUrl, $imgName)
+    protected function saveImage($imgUrl, $imgName)
     {
         if ($imgUrl != "") {
             $url = str_replace(' ', '%20', $imgUrl);
@@ -38,21 +38,20 @@ class Controller extends BaseController
         return '';
     }
 
-    private function saveIconImage($url)
+    protected function saveIconImage($icon)
     {
-        if ($url != "") {
-            $url = str_replace(' ', '%20', $url);
+        $imgUrl = 'https://cdn-icons-png.flaticon.com/128/' . $icon->path . '/' . $icon->path . sprintf('%03d', $icon->index) . '.png';
+        if ($imgUrl != "") {
+            $url = str_replace(' ', '%20', $imgUrl);
             try {
                 $size = getimagesize($url);
                 if ($size !== false) {
                     $url = file_get_contents($url);
                     $imgFile = Image::make($url);
-                    $imageName = 'image/icon/' . $this->generateRandomString(10) . '.png';
-                    while (file_exists($imageName)) {
-                        $imageName = 'image/icon/' . $this->generateRandomString(10) . '.png';
+                    $imageName = $icon->image;
+                    if (!file_exists($imageName)) {
+                        $imgFile->save($imageName);
                     }
-                    $imgFile->save($imageName);
-
                     return $imageName;
                 }
             } catch (Throwable $ex) {
@@ -68,7 +67,7 @@ class Controller extends BaseController
         return substr(str_shuffle(str_repeat($x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length / strlen($x)))), 1, $length);
     }
 
-    private function makeSlug($str)
+    protected function makeSlug($str)
     {
         $str = preg_replace("/(à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ)/", 'a', $str);
         $str = preg_replace("/(è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ)/", 'e', $str);
