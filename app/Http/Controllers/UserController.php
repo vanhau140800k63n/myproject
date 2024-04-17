@@ -29,6 +29,7 @@ class UserController extends Controller
         return view('pages.user.detail', compact('user', 'actions'));
     }
 
+    //extension
     public function listUser()
     {
         $first_name_list = ['Hoàng', 'Nguyễn', 'Phạm', 'Lê', 'Đặng', 'Phan', 'Đỗ', 'Bùi'];
