@@ -6,7 +6,6 @@ use App\Config\ExamConstants;
 use App\Exceptions\PageException;
 use App\Repositories\ChallengeAnswerRepositoryInterface;
 use App\Repositories\ChallengeRepositoryInterface;
-use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -15,18 +14,15 @@ use Illuminate\Support\Str;
 class ExamController extends Controller
 {
     private $userRepository;
-    private $pLanguageRepository;
     private $challengeRepository;
     private $challengeAnswerRepository;
 
     public function __construct(
         UserRepositoryInterface $userRepository,
-        PLanguageRepositoryInterface $pLanguageRepository,
         ChallengeRepositoryInterface $challengeRepository,
         ChallengeAnswerRepositoryInterface $challengeAnswerRepository
     ) {
         $this->userRepository = $userRepository;
-        $this->pLanguageRepository = $pLanguageRepository;
         $this->challengeRepository = $challengeRepository;
         $this->challengeAnswerRepository = $challengeAnswerRepository;
     }

@@ -7,23 +7,24 @@ use App\Repositories\LessonItemRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
-use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Throwable;
 
 class LessonController extends Controller
 {
-    private $userRepository;
     private $pLanguageRepository;
     private $lessonRepository;
     private $lessonItemRepository;
     private $postRepository;
     private $file_methods = ['fopen', 'fclose', 'fread', 'fwrite', 'file_exists', 'filesize', 'unlink', 'copy', 'rename', 'mkdir', 'opendir', 'readdir', 'closedir', 'is_readable', 'is_writable', 'exec', 'shell_exec']; // ignore if contain in code
 
-    public function __construct(UserRepositoryInterface $userRepository, PLanguageRepositoryInterface $pLanguageRepository, LessonRepositoryInterface $lessonRepository, LessonItemRepositoryInterface $lessonItemRepository, PostRepositoryInterface $postRepository)
-    {
-        $this->userRepository = $userRepository;
+    public function __construct(
+        PLanguageRepositoryInterface $pLanguageRepository,
+        LessonRepositoryInterface $lessonRepository,
+        LessonItemRepositoryInterface $lessonItemRepository,
+        PostRepositoryInterface $postRepository
+    ) {
         $this->pLanguageRepository = $pLanguageRepository;
         $this->lessonRepository = $lessonRepository;
         $this->lessonItemRepository = $lessonItemRepository;

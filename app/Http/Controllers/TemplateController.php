@@ -2,19 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Config\AdminConstants;
-use App\Config\CommonConstants;
 use App\Exceptions\PageException;
-use App\Repositories\ActionRepositoryInterface;
 use App\Repositories\CategoryRepositoryInterface;
-use App\Repositories\CommentRepositoryInterface;
-use App\Repositories\ContentItemRepositoryInterface;
 use App\Repositories\ContentRepositoryInterface;
-use App\Repositories\PLanguageRepositoryInterface;
-use App\Repositories\PostRepositoryInterface;
 use App\Repositories\TemplateRepositoryInterface;
 use App\Repositories\TemplateTypeRepositoryInterface;
-use App\Repositories\UserRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 

@@ -2,51 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Repositories\ActionRepositoryInterface;
-use App\Repositories\CategoryRepositoryInterface;
-use App\Repositories\CommentRepositoryInterface;
-use App\Repositories\ContentItemRepositoryInterface;
-use App\Repositories\ContentRepositoryInterface;
 use App\Repositories\NotiRepositoryInterface;
-use App\Repositories\OrderRepositoryInterface;
-use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
-use App\Repositories\TemplateRepositoryInterface;
 use App\Repositories\TemplateTypeRepositoryInterface;
-use App\Repositories\UserRepositoryInterface;
-use Illuminate\Http\Request;
 
 class NotiController extends Controller
 {
     private $postRepository;
-    private $contentItemRepository;
-    private $userRepository;
-    private $commentReprository;
-    private $contentRepository;
-    private $actionRepository;
-    private $templateRepository;
-    private $orderRepository;
     private $notiRepository;
     private $templateTypeRepository;
 
     public function __construct(
         PostRepositoryInterface $postRepository,
-        ContentItemRepositoryInterface $contentItemRepository,
-        CommentRepositoryInterface $commentReprository,
-        ContentRepositoryInterface $contentRepository,
-        ActionRepositoryInterface $actionRepository,
-        TemplateRepositoryInterface $templateRepository,
-        OrderRepositoryInterface $orderRepository,
         NotiRepositoryInterface $notiRepository,
         TemplateTypeRepositoryInterface $templateTypeRepository
     ) {
         $this->postRepository = $postRepository;
-        $this->contentItemRepository = $contentItemRepository;
-        $this->commentReprository = $commentReprository;
-        $this->contentRepository = $contentRepository;
-        $this->actionRepository = $actionRepository;
-        $this->templateRepository = $templateRepository;
-        $this->orderRepository = $orderRepository;
         $this->notiRepository = $notiRepository;
         $this->templateTypeRepository = $templateTypeRepository;
     }

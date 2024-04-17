@@ -3,14 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Repositories\CategoryRepositoryInterface;
-use App\Repositories\ChallengeRepositoryInterface;
 use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
-use App\Repositories\UserRepositoryInterface;
 use App\Repositories\SolutionRepositoryInterface;
 use Illuminate\Http\Request;
-use GuzzleHttp\Client;
 
 
 class HomeController extends Controller

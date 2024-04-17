@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Config\CommonConstants;
 use App\Repositories\IconRepositoryInterface;
 use Illuminate\Http\Request;
-use Throwable;
 
 class IconController extends Controller
 {
