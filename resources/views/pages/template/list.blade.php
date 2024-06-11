@@ -79,10 +79,7 @@
                             @endif
                         </div>
                         <?php
-                        $icon_lists = \App\Models\Icon::whereNotNull('image')
-                            ->inRandomOrder()
-                            ->take(20)
-                            ->get();
+                        $icon_lists = \App\Models\Icon::whereNotNull('image')->where('status', 1)->inRandomOrder()->take(20)->get();
                         ?>
                         <div class="icon_ads">
                             <div class="icon_ads_lists">
