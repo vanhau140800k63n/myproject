@@ -33,12 +33,12 @@
                             <div class="user_info_name_detail">
                                 <label class="user_info_label" for="first_name">Họ</label>
                                 <input class="user_info_input" id="first_name" type="text" name="first_name"
-                                    value="{{ $user->first_name }}">
+                                    value="{{ old('first_name', $user->first_name) }}">
                             </div>
                             <div class="user_info_name_detail">
                                 <label class="user_info_label" for="last_name">Tên</label>
                                 <input class="user_info_input" id="last_name" type="text" name="last_name"
-                                    value="{{ $user->last_name }}">
+                                    value="{{ old('last_name', $user->last_name) }}">
                             </div>
                         </div>
                         <div class="user_info_item">
@@ -50,14 +50,19 @@
                         <div class="user_info_item">
                             <label class="user_info_label" for="phone">Số điện thoại</label>
                             <input class="user_info_input" id="phone" type="text" name="phone"
-                                value="{{ $user->phone }}">
+                                value="{{ old('phone', $user->phone) }}">
                         </div>
 
                         <div class="user_info_action">
                             <button class="user_info_btn_save" type="submit">Lưu thay đổi</button>
                             <a class="user_info_btn_logout" href="{{ route('logout') }}">Đăng xuất</a>
-                            <div class="form_submit_noti"> {{ Session::get('noti') }} </div>
-                            <div class="form_submit_error"> {{ Session::get('error') }} </div>
+                            @if (session('noti'))
+                                <div class="form_submit_noti"> {{ Session::get('noti') }} </div>
+                            @elseif(session('error'))
+                                <div class="form_submit_error"> {{ Session::get('error') }} </div>
+                            @elseif($errors->any())
+                                <div class="form_submit_error"> {{ $errors->first() }} </div>
+                            @endif
                         </div>
                     </div>
                 </div>

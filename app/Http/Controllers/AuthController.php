@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Session;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Hash;
 use App\Exceptions\PageException;
+use App\Http\Requests\UpdateUserInfoRequest;
 use Throwable;
 
 class AuthController extends Controller
@@ -240,7 +241,7 @@ class AuthController extends Controller
         return view('pages.errors.error404');
     }
 
-    public function updateUserInfo(Request $req)
+    public function updateUserInfo(UpdateUserInfoRequest $req)
     {
         $data_path = null;
         if ($req->hasFile('avata')) {
@@ -255,10 +256,6 @@ class AuthController extends Controller
         }
 
         $data = $req->all();
-        if (!(array_key_exists('first_name', $data) && array_key_exists('first_name', $data) && array_key_exists('phone', $data))) {
-            return redirect()->back()->with('error', 'Cập nhật lỗi');
-        }
-
         $dataUpdate = [
             'first_name' => empty($data['first_name']) ? '' : $data['first_name'],
             'last_name' => empty($data['last_name']) ? '' : $data['last_name'],

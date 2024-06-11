@@ -25,7 +25,7 @@
                     <div class="--info">
                         <div class="--heading">
                             <h3 class="--title">Bài tập {{ $exam['name'] }}</h3>
-                            <div class="--joined"><span class="hidden lg:block">Bắt đầu</span>
+                            <div class="--joined"><span class="hidden lg:block">Luyện tập</span>
                             </div>
                         </div>
                         <ul class="--counts">
