@@ -127,8 +127,7 @@
             <div class="icon_list">
                 @foreach ($iconList as $icon)
                     <article class="icon_list_item">
-                        <img src="/{{ $icon->image }}"
-                            width="64" height="64">
+                        <img src="/{{ $icon->image }}" width="64" height="64">
                         <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button>
                     </article>
                 @endforeach
@@ -264,7 +263,9 @@
                 }
             }).done(function(data) {
                 if (data !== false) {
-                    $('.icon_list').append('<article class="icon_list_item"><img src="/' + data + '" width="64" height="64"> <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button> </article>');
+                    $('.icon_list').append('<article class="icon_list_item"><img src="/' + data +
+                        '" width="64" height="64"> <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button> </article>'
+                        );
 
                     getIconForKey();
                 }
@@ -294,44 +295,6 @@
                 slidesToScroll: 1,
             });
         }, 2000);
-
-        // $('.icon_search_input').focus(function() {
-        //     var input = $(this);
-        //     getIconSuggest(input);
-        // }).keyup(function() {
-        //     var input = $(this);
-        //     console.log(input.val());
-        //     getIconSuggest(input);
-        // })
-
-        // $('.icon_search_input').focusout(function() {
-        //     $('.icon_search_result').hide();
-        // })
-
-        // function getIconSuggest(input) {
-        //     var value = input.val();
-        //     if (value.length >= 2) {
-        //         $('.icon_search_result').show();
-        //     } else {
-        //         $('.icon_search_result').hide();
-        //         return false;
-        //     }
-
-        //     jQuery.support.cors = true;
-        //     $.ajax({
-        //         url: 'https://www.flaticon.com/ajax/autocomplete/' + value + '?type=icon',
-        //         headers: {
-        //             'Content-Type': 'application/x-www-form-urlencoded'
-        //         },
-        //         type: "GET",
-        //         dataType: 'json',
-        //     }).done(function(data) {
-
-        //         return true;
-        //     }).fail(function(e) {
-        //         return false;
-        //     });
-        // }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
         integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
