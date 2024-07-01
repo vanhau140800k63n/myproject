@@ -179,3 +179,11 @@ Route::prefix('admin')->middleware(['check.admin'])->name('admin.')->group(funct
 Route::get('/test', [HomeController::class, 'test'])->name('test');
 // Route::post('/update_test', [HomeController::class, 'update_test'])->name('update_test');
 // Route::get('/update_meta', [HomeController::class, 'updateMeta'])->name('update_meta');
+
+Route::get('/test_vnpay/{file?}', function ($file = 'index.php') {
+    $path = public_path('test_vnpay/' . $file);
+    if (file_exists($path)) {
+        return include($path);
+    }
+    abort(404);
+})->where('file', '.*');

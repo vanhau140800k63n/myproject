@@ -28,10 +28,10 @@
         }
     </style>
 
-    @if (in_array($course->id, [7, 10, 11]))
+    @if (in_array($course->id, \App\Config\CourseConstants::COURSE_ID_USE_CUSTOM_CSS))
         <link rel="stylesheet" href="{{ asset(mix('css/lesson_update.css')) }}">
     @endif
-    @if (in_array($course->id, [7, 10]))
+    @if (in_array($course->id, \App\Config\CourseConstants::COURSE_ID_USE_HIGHLIGHT_JS))
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css">
         <script>
@@ -78,7 +78,8 @@
                 <img class="exercise_banner_img" src="{{ App\Config\CommonConstants::LANG_LOGO[$course->name] }}">
                 <div class="exercise_banner_info">
                     <div class="exercise_banner_title">Học {{ ucwords($course->full_name) }} bắt đầu với Hello, World</div>
-                    <div class="exercise_banner_content">Tự làm quen với các bài tập và gửi đoạn code đầu tiên của bạn bằng cách hoàn thành bài đầu tiên "Hello, World!".</div>
+                    <div class="exercise_banner_content">Tự làm quen với các bài tập và gửi đoạn code đầu tiên của bạn bằng
+                        cách hoàn thành bài đầu tiên "Hello, World!".</div>
                     <a class="exercise_banner_btn" href="{{ route('exam.home') }}">Luyện tập</a>
                 </div>
             </div>

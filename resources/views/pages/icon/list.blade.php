@@ -100,8 +100,7 @@
                 <a href="{{ route('icon.search', ['word' => 'game']) }}">
                     <div class="i_f_i_banner_a" style="margin-top: 30px">
                         <div class="i_f_i_banner_title" style="font-weight: 600;">
-                            Free
-                            Game Icons </div>
+                            Free Game Icons </div>
                         <img class="icon_search_example" src="{{ asset('image/game_icons.png') }}">
                     </div>
                 </a>
@@ -265,7 +264,7 @@
                 if (data !== false) {
                     $('.icon_list').append('<article class="icon_list_item"><img src="/' + data +
                         '" width="64" height="64"> <button class="icon_download_btn"><i class="fa-regular fa-download fa-bounce"></i></button> </article>'
-                        );
+                    );
 
                     getIconForKey();
                 }

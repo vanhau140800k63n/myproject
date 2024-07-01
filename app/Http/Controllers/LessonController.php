@@ -8,7 +8,6 @@ use App\Repositories\LessonRepositoryInterface;
 use App\Repositories\PLanguageRepositoryInterface;
 use App\Repositories\PostRepositoryInterface;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Throwable;
 
 class LessonController extends Controller
@@ -17,7 +16,11 @@ class LessonController extends Controller
     private $lessonRepository;
     private $lessonItemRepository;
     private $postRepository;
-    private $file_methods = ['fopen', 'fclose', 'fread', 'fwrite', 'file_exists', 'filesize', 'unlink', 'copy', 'rename', 'mkdir', 'opendir', 'readdir', 'closedir', 'is_readable', 'is_writable', 'exec', 'shell_exec']; // ignore if contain in code
+    private $file_methods = [
+        'fopen', 'fclose', 'fread', 'fwrite', 'file_exists', 'filesize', 'unlink', 'copy',
+        'rename', 'mkdir', 'opendir', 'readdir', 'closedir', 'is_readable', 'is_writable',
+        'exec', 'shell_exec'
+    ]; // ignore if contain in code PHP
 
     public function __construct(
         PLanguageRepositoryInterface $pLanguageRepository,
@@ -31,6 +34,7 @@ class LessonController extends Controller
         $this->postRepository = $postRepository;
     }
 
+    /// ADMIN
     public function getCourseListAdmin()
     {
         $course_list = $this->lessonRepository->getCourseListAdmin();
@@ -130,6 +134,35 @@ class LessonController extends Controller
         return response()->json(true);
     }
 
+    public function lessonListMainAdmin(Request $req)
+    {
+        $lesson_list = $this->lessonRepository->getLessonList($req->id);
+        $output = '<option value="0">Chọn bài viết chính</option>';
+
+        foreach ($lesson_list as $lesson) {
+            $output .= '<option value="' . $lesson->id . '">' . $lesson->title . '</option>';
+        }
+
+        return response()->json($output);
+    }
+
+    public function delLessonAdmin(Request $req)
+    {
+        if (isset($req->id)) {
+            $del_lesson = $this->lessonRepository->delLessonAdmin($req->id);
+        }
+
+        return redirect()->back();
+    }
+
+    public function changeLessonItemType(Request $req)
+    {
+        $lesson_item = $this->lessonItemRepository->changeLessonItemType($req->all());
+
+        return response()->json($lesson_item);
+    }
+
+    /// USER
     public function getLessonDetail($course, $slug)
     {
         $key = $course;
@@ -138,10 +171,6 @@ class LessonController extends Controller
             $lesson_list = $this->lessonRepository->getLessonListParent($course->id);
             $lesson = $this->lessonRepository->getLessonBySlug($slug, $course->id);
             if ($lesson !== null) {
-                if (!Auth::check() || Auth::user()->role != 1) {
-                    $lesson->view += 1;
-                    $lesson->save();
-                }
                 $lesson_parent = $this->lessonRepository->getLessonById($lesson->parent);
                 $lesson_child_list = null;
                 if ($lesson_parent != null) {
@@ -149,11 +178,14 @@ class LessonController extends Controller
                 } else {
                     $lesson_child_list = $this->lessonRepository->getLessonChildList($lesson->id);
                 }
+
                 $lesson_detail = $this->lessonItemRepository->getLessonDetail($lesson->id);
+
                 $pre_lesson = $this->lessonRepository->getPreLesson($lesson->id, $course->id);
                 if ($pre_lesson !== '') {
                     $pre_lesson = route('learn.lesson_detail', ['course' => $course->name, 'slug' => $pre_lesson->slug]);
                 }
+
                 $next_lesson = $this->lessonRepository->getNextLesson($lesson->id, $course->id);
                 if ($next_lesson !== '') {
                     $next_lesson = route('learn.lesson_detail', ['course' => $course->name, 'slug' => $next_lesson->slug]);
@@ -163,7 +195,20 @@ class LessonController extends Controller
                 $raw .= ' or post.category like "' . $key . '-%"' .  ' or post.category like "%-' . $key . '-%"' . ' or post.category like "%-' . $key . '"';
                 $posts_related = $this->postRepository->searchPostRaw($raw, 10);
 
-                return view('pages.learn.lesson', compact('lesson_list', 'lesson_detail', 'course', 'lesson', 'lesson_parent', 'lesson_child_list', 'pre_lesson', 'next_lesson', 'posts_related'));
+                return view(
+                    'pages.learn.lesson',
+                    compact(
+                        'lesson_list',
+                        'lesson_detail',
+                        'course',
+                        'lesson',
+                        'lesson_parent',
+                        'lesson_child_list',
+                        'pre_lesson',
+                        'next_lesson',
+                        'posts_related'
+                    )
+                );
             }
         }
 
@@ -178,10 +223,6 @@ class LessonController extends Controller
             $lesson_list = $this->lessonRepository->getLessonListParent($course->id);
             $lesson = $this->lessonRepository->getLessonIntro($course->id);
             if ($lesson !== null) {
-                if (!Auth::check() || Auth::user()->role != 1) {
-                    $lesson->view += 1;
-                    $lesson->save();
-                }
                 $lesson_parent = $this->lessonRepository->getLessonById($lesson->parent);
                 $lesson_child_list = null;
                 if ($lesson_parent != null) {
@@ -189,7 +230,9 @@ class LessonController extends Controller
                 } else {
                     $lesson_child_list = $this->lessonRepository->getLessonChildList($lesson->id);
                 }
+
                 $lesson_detail = $this->lessonItemRepository->getLessonDetail($lesson->id);
+
                 $pre_lesson = $this->lessonRepository->getPreLesson($lesson->id, $course->id);
                 if ($pre_lesson !== '') {
                     $pre_lesson = route('learn.lesson_detail', ['course' => $course->name, 'slug' => $pre_lesson->slug]);
@@ -227,33 +270,5 @@ class LessonController extends Controller
             }
             return $message;
         }
-    }
-
-    public function lessonListMainAdmin(Request $req)
-    {
-        $lesson_list = $this->lessonRepository->getLessonList($req->id);
-        $output = '<option value="0">Chọn bài viết chính</option>';
-
-        foreach ($lesson_list as $lesson) {
-            $output .= '<option value="' . $lesson->id . '">' . $lesson->title . '</option>';
-        }
-
-        return response()->json($output);
-    }
-
-    public function delLessonAdmin(Request $req)
-    {
-        if (isset($req->id)) {
-            $del_lesson = $this->lessonRepository->delLessonAdmin($req->id);
-        }
-
-        return redirect()->back();
-    }
-
-    public function changeLessonItemType(Request $req)
-    {
-        $lesson_item = $this->lessonItemRepository->changeLessonItemType($req->all());
-
-        return response()->json($lesson_item);
     }
 }
